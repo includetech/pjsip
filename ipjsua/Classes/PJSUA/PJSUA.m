@@ -16,7 +16,6 @@
 
 PJSUA      *app;
 static pjsua_app_cfg_t  app_cfg;
-static bool             isShuttingDown;
 static char           **restartArgv;
 static int              restartArgc;
 
@@ -66,7 +65,6 @@ static void pjsuaOnStoppedCb(pj_bool_t restart,
     } else {
         displayMsg("Shutting down..");
         pj_thread_sleep(100);
-        isShuttingDown = true;
     }
 }
 
@@ -82,7 +80,6 @@ static void pjsuaOnAppConfigCb(pjsua_app_config *cfg)
     int argc = PJ_ARRAY_SIZE(pjsua_app_def_argv) -1;
     pj_status_t status;
     
-    isShuttingDown = false;
     displayMsg("Starting..");
     
     pj_bzero(&app_cfg, sizeof(app_cfg));
@@ -97,37 +94,20 @@ static void pjsuaOnAppConfigCb(pjsua_app_config *cfg)
     app_cfg.on_stopped = &pjsuaOnStoppedCb;
     app_cfg.on_config_init = &pjsuaOnAppConfigCb;
     
-    while (!isShuttingDown) {
-        status = pjsua_app_init(&app_cfg);
-        if (status != PJ_SUCCESS) {
-            char errmsg[PJ_ERR_MSG_SIZE];
-            pj_strerror(status, errmsg, sizeof(errmsg));
-            displayMsg(errmsg);
-            pjsua_app_destroy();
-            return;
-        }
-        
-        /* Setup device orientation change notification */
-        [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
-        [[NSNotificationCenter defaultCenter] addObserver:app
-                                                 selector:@selector(orientationChanged:)
-                                                     name:UIDeviceOrientationDidChangeNotification
-                                                   object:[UIDevice currentDevice]];
-        
-        status = pjsua_app_run(PJ_TRUE);
-        if (status != PJ_SUCCESS) {
-            char errmsg[PJ_ERR_MSG_SIZE];
-            pj_strerror(status, errmsg, sizeof(errmsg));
-            displayMsg(errmsg);
-        }
-        
-        [[UIDevice currentDevice] endGeneratingDeviceOrientationNotifications];
-        
+    status = pjsua_app_init(&app_cfg);
+    if (status != PJ_SUCCESS) {
+        char errmsg[PJ_ERR_MSG_SIZE];
+        pj_strerror(status, errmsg, sizeof(errmsg));
+        displayMsg(errmsg);
         pjsua_app_destroy();
+        return;
+    } else {
+       status = pj_add_account(0, "foo", "anyhting", "107.170.46.82");
+       // status = pj_make_call(0, "foo");
+        if (status != PJ_SUCCESS) {
+            NSLog(@"%@", @"Error ");
+        }
     }
-    
-    restartArgv = NULL;
-    restartArgc = 0;
 }
 
 pj_bool_t showNotification(pjsua_call_id call_id)

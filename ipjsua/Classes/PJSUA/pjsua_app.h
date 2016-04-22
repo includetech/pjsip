@@ -69,6 +69,8 @@ typedef struct pjsua_app_cfg_t
  * the provided configuration.
  */
 pj_status_t pjsua_app_init(const pjsua_app_cfg_t *app_cfg);
+pj_status_t pj_add_account(pjsua_acc_id acc_id, char *sipUser, char *password, char *sipDomain);
+pj_status_t pj_make_call(pjsua_acc_id acc_id, char *sipUser);
 
 /**
  * This will run the CLI/menu based UI.

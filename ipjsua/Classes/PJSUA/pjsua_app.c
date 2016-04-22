@@ -20,6 +20,8 @@
 #include "pjsua_app.h"
 
 #define THIS_FILE	"pjsua_app.c"
+const size_t MAX_SIP_ID_LENGTH = 50;
+const size_t MAX_SIP_REG_URI_LENGTH = 50;
 
 //#define STEREO_DEMO
 //#define TRANSPORT_ADAPTER_SAMPLE
@@ -274,64 +276,12 @@ static void on_call_state(pjsua_call_id call_id, pjsip_event *e)
 static void on_incoming_call(pjsua_acc_id acc_id, pjsua_call_id call_id,
 			     pjsip_rx_data *rdata)
 {
-    pjsua_call_info call_info;
-
-    PJ_UNUSED_ARG(acc_id);
-    PJ_UNUSED_ARG(rdata);
-
-    pjsua_call_get_info(call_id, &call_info);
-
-    if (current_call==PJSUA_INVALID_ID)
-	current_call = call_id;
-
-#ifdef USE_GUI
-    if (!showNotification(call_id))
-	return;
-#endif
-
-    /* Start ringback */
-    ring_start(call_id);
+    pjsua_call_info ci;
     
-    if (app_config.auto_answer > 0) {
-	pjsua_call_setting call_opt;
-
-	pjsua_call_setting_default(&call_opt);
-	call_opt.aud_cnt = app_config.aud_cnt;
-	call_opt.vid_cnt = app_config.vid.vid_cnt;
-
-	pjsua_call_answer2(call_id, &call_opt, app_config.auto_answer, NULL,
-			   NULL);
-    }
-    
-    if (app_config.auto_answer < 200) {
-	char notif_st[80] = {0};
-
-#if PJSUA_HAS_VIDEO
-	if (call_info.rem_offerer && call_info.rem_vid_cnt) {
-	    snprintf(notif_st, sizeof(notif_st), 
-		     "To %s the video, type \"vid %s\" first, "
-		     "before answering the call!\n",
-		     (app_config.vid.vid_cnt? "reject":"accept"),
-		     (app_config.vid.vid_cnt? "disable":"enable"));
-	}
-#endif
-
-	PJ_LOG(3,(THIS_FILE,
-		  "Incoming call for account %d!\n"
-		  "Media count: %d audio & %d video\n"
-		  "%s"
-		  "From: %s\n"
-		  "To: %s\n"
-		  "Press %s to answer or %s to reject call",
-		  acc_id,
-		  call_info.rem_aud_cnt,
-		  call_info.rem_vid_cnt,
-		  notif_st,
-		  call_info.remote_info.ptr,
-		  call_info.local_info.ptr,
-		  (app_config.use_cli?"ca a":"a"),
-		  (app_config.use_cli?"g":"h")));
-    }
+    pjsua_call_get_info(call_id, &ci);
+        
+    //    /* Automatically answer incoming calls with 200/OK */
+    pjsua_call_answer(call_id, 200, NULL, NULL);
 }
 
 /*
@@ -1590,255 +1540,34 @@ static pj_status_t app_init()
 #endif	/* PJMEDIA_VIDEO_DEV_HAS_AVI */
     }
 
-    /* Add UDP transport unless it's disabled. */
-    if (!app_config.no_udp) {
-	pjsua_acc_id aid;
-	pjsip_transport_type_e type = PJSIP_TRANSPORT_UDP;
+    // Add UDP transport.
+    {
+        // Init transport config structure
+        pjsua_transport_config cfg;
+        pjsua_transport_config_default(&cfg);
 
-	status = pjsua_transport_create(type,
-					&app_config.udp_cfg,
-					&transport_id);
-	if (status != PJ_SUCCESS)
-	    goto on_error;
-
-	/* Add local account */
-	pjsua_acc_add_local(transport_id, PJ_TRUE, &aid);
-
-	/* Adjust local account config based on pjsua app config */
-	{
-	    pjsua_acc_config acc_cfg;
-	    pjsua_acc_get_config(aid, tmp_pool, &acc_cfg);
-
-	    app_config_init_video(&acc_cfg);
-	    acc_cfg.rtp_cfg = app_config.rtp_cfg;
-	    pjsua_acc_modify(aid, &acc_cfg);
-	}
-
-	//pjsua_acc_set_transport(aid, transport_id);
-	pjsua_acc_set_online_status(current_acc, PJ_TRUE);
-
-	if (app_config.udp_cfg.port == 0) {
-	    pjsua_transport_info ti;
-	    pj_sockaddr_in *a;
-
-	    pjsua_transport_get_info(transport_id, &ti);
-	    a = (pj_sockaddr_in*)&ti.local_addr;
-
-	    tcp_cfg.port = pj_ntohs(a->sin_port);
-	}
+        // Add UDP transport.
+        status = pjsua_transport_create(PJSIP_TRANSPORT_UDP, &cfg, &transport_id);
+        if (status != PJ_SUCCESS)
+            goto on_error;
     }
+    
+    // Add TCP transport.
+    {
+        // Init transport config structure
+        pjsua_transport_config cfg;
+        pjsua_transport_config_default(&cfg);
 
-    /* Add UDP IPv6 transport unless it's disabled. */
-    if (!app_config.no_udp && app_config.ipv6) {
-	pjsua_acc_id aid;
-	pjsip_transport_type_e type = PJSIP_TRANSPORT_UDP6;
-	pjsua_transport_config udp_cfg;
-
-	udp_cfg = app_config.udp_cfg;
-	if (udp_cfg.port == 0)
-	    udp_cfg.port = 5060;
-	else
-	    udp_cfg.port += 10;
-	status = pjsua_transport_create(type,
-					&udp_cfg,
-					&transport_id);
-	if (status != PJ_SUCCESS)
-	    goto on_error;
-
-	/* Add local account */
-	pjsua_acc_add_local(transport_id, PJ_TRUE, &aid);
-
-	/* Adjust local account config based on pjsua app config */
-	{
-	    pjsua_acc_config acc_cfg;
-	    pjsua_acc_get_config(aid, tmp_pool, &acc_cfg);
-
-	    app_config_init_video(&acc_cfg);
-	    acc_cfg.rtp_cfg = app_config.rtp_cfg;
-	    acc_cfg.ipv6_media_use = PJSUA_IPV6_ENABLED;
-	    pjsua_acc_modify(aid, &acc_cfg);
-	}
-
-	//pjsua_acc_set_transport(aid, transport_id);
-	pjsua_acc_set_online_status(current_acc, PJ_TRUE);
-
-	if (app_config.udp_cfg.port == 0) {
-	    pjsua_transport_info ti;
-	    pj_sockaddr_in *a;
-
-	    pjsua_transport_get_info(transport_id, &ti);
-	    a = (pj_sockaddr_in*)&ti.local_addr;
-
-	    tcp_cfg.port = pj_ntohs(a->sin_port);
-	}
+        // Add TCP transport.
+        status = pjsua_transport_create(PJSIP_TRANSPORT_TCP, &cfg, &transport_id);
+        if (status != PJ_SUCCESS)
+            goto on_error;
     }
-
-    /* Add TCP transport unless it's disabled */
-    if (!app_config.no_tcp) {
-	pjsua_acc_id aid;
-
-	status = pjsua_transport_create(PJSIP_TRANSPORT_TCP,
-					&tcp_cfg, 
-					&transport_id);
-	if (status != PJ_SUCCESS)
-	    goto on_error;
-
-	/* Add local account */
-	pjsua_acc_add_local(transport_id, PJ_TRUE, &aid);
-
-	/* Adjust local account config based on pjsua app config */
-	{
-	    pjsua_acc_config acc_cfg;
-	    pjsua_acc_get_config(aid, tmp_pool, &acc_cfg);
-
-	    app_config_init_video(&acc_cfg);
-	    acc_cfg.rtp_cfg = app_config.rtp_cfg;
-	    pjsua_acc_modify(aid, &acc_cfg);
-	}
-
-	pjsua_acc_set_online_status(current_acc, PJ_TRUE);
-
-    }
-
-    /* Add TCP IPv6 transport unless it's disabled. */
-    if (!app_config.no_tcp && app_config.ipv6) {
-	pjsua_acc_id aid;
-	pjsip_transport_type_e type = PJSIP_TRANSPORT_TCP6;
-
-	tcp_cfg.port += 10;
-
-	status = pjsua_transport_create(type,
-					&tcp_cfg,
-					&transport_id);
-	if (status != PJ_SUCCESS)
-	    goto on_error;
-
-	/* Add local account */
-	pjsua_acc_add_local(transport_id, PJ_TRUE, &aid);
-
-	/* Adjust local account config based on pjsua app config */
-	{
-	    pjsua_acc_config acc_cfg;
-	    pjsua_acc_get_config(aid, tmp_pool, &acc_cfg);
-
-	    app_config_init_video(&acc_cfg);
-	    acc_cfg.rtp_cfg = app_config.rtp_cfg;
-	    acc_cfg.ipv6_media_use = PJSUA_IPV6_ENABLED;
-	    pjsua_acc_modify(aid, &acc_cfg);
-	}
-
-	//pjsua_acc_set_transport(aid, transport_id);
-	pjsua_acc_set_online_status(current_acc, PJ_TRUE);
-    }
-
-
-#if defined(PJSIP_HAS_TLS_TRANSPORT) && PJSIP_HAS_TLS_TRANSPORT!=0
-    /* Add TLS transport when application wants one */
-    if (app_config.use_tls) {
-
-	pjsua_acc_id acc_id;
-
-	/* Copy the QoS settings */
-	tcp_cfg.tls_setting.qos_type = tcp_cfg.qos_type;
-	pj_memcpy(&tcp_cfg.tls_setting.qos_params, &tcp_cfg.qos_params, 
-		  sizeof(tcp_cfg.qos_params));
-
-	/* Set TLS port as TCP port+1 */
-	tcp_cfg.port++;
-	status = pjsua_transport_create(PJSIP_TRANSPORT_TLS,
-					&tcp_cfg, 
-					&transport_id);
-	tcp_cfg.port--;
-	if (status != PJ_SUCCESS)
-	    goto on_error;
-	
-	/* Add local account */
-	pjsua_acc_add_local(transport_id, PJ_FALSE, &acc_id);
-
-	/* Adjust local account config based on pjsua app config */
-	{
-	    pjsua_acc_config acc_cfg;
-	    pjsua_acc_get_config(acc_id, tmp_pool, &acc_cfg);
-
-	    app_config_init_video(&acc_cfg);
-	    acc_cfg.rtp_cfg = app_config.rtp_cfg;
-	    pjsua_acc_modify(acc_id, &acc_cfg);
-	}
-
-	pjsua_acc_set_online_status(acc_id, PJ_TRUE);
-    }
-
-    /* Add TLS IPv6 transport unless it's disabled. */
-    if (app_config.use_tls && app_config.ipv6) {
-	pjsua_acc_id aid;
-	pjsip_transport_type_e type = PJSIP_TRANSPORT_TLS6;
-
-	tcp_cfg.port += 10;
-
-	status = pjsua_transport_create(type,
-					&tcp_cfg,
-					&transport_id);
-	if (status != PJ_SUCCESS)
-	    goto on_error;
-
-	/* Add local account */
-	pjsua_acc_add_local(transport_id, PJ_TRUE, &aid);
-
-	/* Adjust local account config based on pjsua app config */
-	{
-	    pjsua_acc_config acc_cfg;
-	    pjsua_acc_get_config(aid, tmp_pool, &acc_cfg);
-
-	    app_config_init_video(&acc_cfg);
-	    acc_cfg.rtp_cfg = app_config.rtp_cfg;
-	    acc_cfg.ipv6_media_use = PJSUA_IPV6_ENABLED;
-	    pjsua_acc_modify(aid, &acc_cfg);
-	}
-
-	//pjsua_acc_set_transport(aid, transport_id);
-	pjsua_acc_set_online_status(current_acc, PJ_TRUE);
-    }
-
-#endif
-
+    
     if (transport_id == -1) {
 	PJ_LOG(1,(THIS_FILE, "Error: no transport is configured"));
 	status = -1;
 	goto on_error;
-    }
-
-
-    /* Add accounts */
-    for (i=0; i<app_config.acc_cnt; ++i) {
-	app_config.acc_cfg[i].rtp_cfg = app_config.rtp_cfg;
-	app_config.acc_cfg[i].reg_retry_interval = 300;
-	app_config.acc_cfg[i].reg_first_retry_interval = 60;
-
-	app_config_init_video(&app_config.acc_cfg[i]);
-
-	status = pjsua_acc_add(&app_config.acc_cfg[i], PJ_TRUE, NULL);
-	if (status != PJ_SUCCESS)
-	    goto on_error;
-	pjsua_acc_set_online_status(current_acc, PJ_TRUE);
-    }
-
-    /* Add buddies */
-    for (i=0; i<app_config.buddy_cnt; ++i) {
-	status = pjsua_buddy_add(&app_config.buddy_cfg[i], NULL);
-	if (status != PJ_SUCCESS) {
-	    PJ_PERROR(1,(THIS_FILE, status, "Error adding buddy"));
-	    goto on_error;
-	}
-    }
-
-    /* Optionally disable some codec */
-    for (i=0; i<app_config.codec_dis_cnt; ++i) {
-	pjsua_codec_set_priority(&app_config.codec_dis[i],
-				 PJMEDIA_CODEC_PRIO_DISABLED);
-#if PJSUA_HAS_VIDEO
-	pjsua_vid_codec_set_priority(&app_config.codec_dis[i],
-				     PJMEDIA_CODEC_PRIO_DISABLED);
-#endif
     }
 
     /* Optionally set codec orders */
@@ -1851,14 +1580,6 @@ static pj_status_t app_init()
 #endif
     }
 
-    /* Use null sound device? */
-#ifndef STEREO_DEMO
-    if (app_config.null_audio) {
-	status = pjsua_set_null_snd_dev();
-	if (status != PJ_SUCCESS)
-	    return status;
-    }
-#endif
 
     if (app_config.capture_dev  != PJSUA_INVALID_ID ||
         app_config.playback_dev != PJSUA_INVALID_ID) 
@@ -1896,6 +1617,57 @@ pj_status_t pjsua_app_init(const pjsua_app_cfg_t *cfg)
     if (app_config.use_cli) {
 	status = cli_init();
     } 
+    return status;
+}
+
+pj_status_t pj_add_account(pjsua_acc_id acc_id, char *sipUser, char *password, char *sipDomain)
+{
+    pj_status_t status;
+    status = pjsua_start();
+    if (status != PJ_SUCCESS)
+        return status;
+        
+    pjsua_acc_config cfg;
+    
+    pjsua_acc_config_default(&cfg);
+    
+    // Account ID
+    char sipId[MAX_SIP_ID_LENGTH];
+    sprintf(sipId, "sip:%s@%s", sipUser, sipDomain);
+    cfg.id = pj_str(sipId);
+    
+    // Reg URI
+    char regUri[MAX_SIP_REG_URI_LENGTH];
+    sprintf(regUri, "sip:%s%s", sipDomain, ";transport=TCP");
+    cfg.reg_uri = pj_str(regUri);
+    
+    // Account cred info
+    cfg.cred_count = 1;
+    cfg.cred_info[0].scheme = pj_str("digest");
+    cfg.cred_info[0].realm = pj_str(sipDomain);
+    cfg.cred_info[0].username = pj_str(sipUser);
+    cfg.cred_info[0].data_type = PJSIP_CRED_DATA_PLAIN_PASSWD;
+    cfg.cred_info[0].data = pj_str(password);
+    cfg.vid_in_auto_show = PJ_TRUE;
+    cfg.vid_out_auto_transmit = PJ_TRUE;
+    cfg.vid_cap_dev = PJMEDIA_VID_DEFAULT_CAPTURE_DEV;
+    status = pjsua_acc_add(&cfg, PJ_TRUE, &acc_id);
+
+    return status;
+}
+
+pj_status_t pj_make_call(pjsua_acc_id acc_id, char *sipUser) {
+    pj_status_t status;
+
+    char destUri[MAX_SIP_REG_URI_LENGTH];
+    sprintf(destUri, "sip:%s@%s:5060", sipUser, "107.170.46.82");
+    
+    pj_str_t uri = pj_str(destUri);
+    pjsua_call_setting settings;
+    settings.aud_cnt = 1;
+    settings.vid_cnt = 0;
+    status = pjsua_call_make_call(acc_id, &uri, 0, NULL, NULL, NULL);
+
     return status;
 }
 

@@ -9,14 +9,14 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ipjsua/Classes/Application/AppDelegate.m"
-            timestampString = "482950349.257788"
+            filePath = "ipjsua/Classes/PJSUA/pjsua_app.c"
+            timestampString = "483013737.493722"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
-            landmarkName = "-application:didFinishLaunchingWithOptions:"
-            landmarkType = "5">
+            startingLineNumber = "1666"
+            endingLineNumber = "1666"
+            landmarkName = "pj_make_call()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -25,14 +25,14 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ipjsua/Classes/Application/AppDelegate.m"
-            timestampString = "482950350.463854"
+            filePath = "ipjsua/Classes/PJSUA/pjsua_app.c"
+            timestampString = "483013728.502808"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "-applicationDidBecomeActive:"
-            landmarkType = "5">
+            startingLineNumber = "279"
+            endingLineNumber = "279"
+            landmarkName = "on_incoming_call()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
