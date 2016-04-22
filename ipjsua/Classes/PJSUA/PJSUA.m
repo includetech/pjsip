@@ -19,6 +19,7 @@ static pjsua_app_cfg_t  app_cfg;
 static char           **restartArgv;
 static int              restartArgc;
 
+static void on_incoming_call(pjsua_acc_id acc_id, pjsua_call_id call_id, pjsip_rx_data *rdata);
 
 @implementation PJSUA
 
@@ -93,7 +94,8 @@ static void pjsuaOnAppConfigCb(pjsua_app_config *cfg)
     app_cfg.on_started = &pjsuaOnStartedCb;
     app_cfg.on_stopped = &pjsuaOnStoppedCb;
     app_cfg.on_config_init = &pjsuaOnAppConfigCb;
-    
+    app_config.cfg.cb.on_incoming_call = &on_incoming_call;
+
     status = pjsua_app_init(&app_cfg);
     if (status != PJ_SUCCESS) {
         char errmsg[PJ_ERR_MSG_SIZE];
@@ -102,6 +104,7 @@ static void pjsuaOnAppConfigCb(pjsua_app_config *cfg)
         pjsua_app_destroy();
         return;
     } else {
+        
        status = pj_add_account(0, "receiver", "anyhting", "107.170.46.82");
         if (status != PJ_SUCCESS) {
             NSLog(@"%@", @"Error ");
@@ -112,26 +115,6 @@ static void pjsuaOnAppConfigCb(pjsua_app_config *cfg)
             // NSLog(@"%@", @"NO Error ");
         });
     }
-}
-
-pj_bool_t showNotification(pjsua_call_id call_id)
-{
-    // Create a new notification
-    UILocalNotification* alert = [[UILocalNotification alloc] init];
-    if (alert)
-    {
-        alert.repeatInterval = 0;
-        alert.alertBody = @"Incoming call received...";
-        /* This action just brings the app to the FG, it doesn't
-         * automatically answer the call (unless you specify the
-         * --auto-answer option).
-         */
-        alert.alertAction = @"Activate app";
-        
-        [[UIApplication sharedApplication] presentLocalNotificationNow:alert];
-    }
-    
-    return PJ_FALSE;
 }
 
 void displayWindow(pjsua_vid_win_id wid)
@@ -177,6 +160,56 @@ void displayWindow(pjsua_vid_win_id wid)
     
     
 #endif
+}
+
+pj_bool_t showNotification(pjsua_call_id call_id)
+{
+    // Create a new notification
+    UILocalNotification* alert = [[UILocalNotification alloc] init];
+    if (alert)
+    {
+        alert.repeatInterval = 0;
+        alert.alertBody = @"Incoming call received...";
+        /* This action just brings the app to the FG, it doesn't
+         * automatically answer the call (unless you specify the
+         * --auto-answer option).
+         */
+        alert.alertAction = @"Activate app";
+        
+        [[UIApplication sharedApplication] presentLocalNotificationNow:alert];
+    }
+    
+    return PJ_FALSE;
+}
+
+static void on_incoming_call(pjsua_acc_id acc_id, pjsua_call_id call_id,
+                             pjsip_rx_data *rdata)
+{
+    pjsua_call_info ci;
+    pjsua_call_get_info(call_id, &ci);
+    
+    pjsua_call_setting settings;
+    settings.aud_cnt = 1;
+    settings.vid_cnt = 1;
+    
+    //    /* Automatically answer incoming calls with 200/OK */
+    pjsua_call_answer2(call_id, &settings, 200, NULL, NULL);
+    
+    // Get the window of call
+    int vid_idx;
+    pjsua_vid_win_id wid = -1;
+    
+    vid_idx = pjsua_call_get_vid_stream_idx(call_id);
+    if (vid_idx >= 0) {
+        pjsua_call_info ci;
+        
+        pjsua_call_get_info(call_id, &ci);
+        wid = ci.media[vid_idx].stream.vid.win_in;
+        pjsua_vid_win_set_show(wid, PJ_TRUE);
+    }
+
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"SHOWCALLWINDOW" object:@(wid)];
 }
 
 @end

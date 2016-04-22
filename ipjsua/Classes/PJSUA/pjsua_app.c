@@ -283,8 +283,21 @@ static void on_incoming_call(pjsua_acc_id acc_id, pjsua_call_id call_id,
     settings.aud_cnt = 1;
     settings.vid_cnt = 1;
     
-    //    /* Automatically answer incoming calls with 200/OK */
+    // /* Automatically answer incoming calls with 200/OK */
     pjsua_call_answer2(call_id, &settings, 200, NULL, NULL);
+    
+    // Get the window of call
+    int vid_idx;
+    pjsua_vid_win_id wid = -1;
+    
+    vid_idx = pjsua_call_get_vid_stream_idx(call_id);
+    if (vid_idx >= 0) {
+        pjsua_call_info ci;
+        
+        pjsua_call_get_info(call_id, &ci);
+        wid = ci.media[vid_idx].stream.vid.win_in;
+        pjsua_vid_win_set_show(wid, PJ_TRUE);
+    }
 }
 
 /*
@@ -1306,8 +1319,7 @@ static pj_status_t app_init()
 	(*app_cfg.on_config_init)(&app_config);
 
     /* Initialize pjsua */
-    status = pjsua_init(&app_config.cfg, &app_config.log_cfg,
-			&app_config.media_cfg);
+    status = pjsua_init(&app_config.cfg, &app_config.log_cfg, &app_config.media_cfg);
     if (status != PJ_SUCCESS) {
 	pj_pool_release(tmp_pool);
 	return status;

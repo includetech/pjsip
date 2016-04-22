@@ -59,6 +59,7 @@
 		54EE79171CC93569002C475D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54EE79161CC93569002C475D /* Main.storyboard */; };
 		54EE79481CC93EF3002C475D /* libopenh264.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54EE79461CC93EF3002C475D /* libopenh264.a */; };
 		54EE794B1CC93F9A002C475D /* libopenh264.a in CopyFiles */ = {isa = PBXBuildFile; fileRef = 54EE79461CC93EF3002C475D /* libopenh264.a */; };
+		54EE795C1CCA888B002C475D /* CallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54EE795B1CCA888B002C475D /* CallViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -139,6 +140,8 @@
 		54EE79161CC93569002C475D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		54EE79461CC93EF3002C475D /* libopenh264.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopenh264.a; sourceTree = "<group>"; };
 		54EE794D1CC94B65002C475D /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		54EE795A1CCA888B002C475D /* CallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallViewController.h; sourceTree = "<group>"; };
+		54EE795B1CCA888B002C475D /* CallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -398,6 +401,8 @@
 		54EE790C1CC9350D002C475D /* View Contollers */ = {
 			isa = PBXGroup;
 			children = (
+				54EE795A1CCA888B002C475D /* CallViewController.h */,
+				54EE795B1CCA888B002C475D /* CallViewController.m */,
 			);
 			path = "View Contollers";
 			sourceTree = "<group>";
@@ -480,6 +485,7 @@
 				54EE790D1CC9350D002C475D /* AppDelegate.m in Sources */,
 				54EE79111CC9350D002C475D /* pjsua_app_config.c in Sources */,
 				54EE79121CC9350D002C475D /* pjsua_app_legacy.c in Sources */,
+				54EE795C1CCA888B002C475D /* CallViewController.m in Sources */,
 				54EE79101CC9350D002C475D /* pjsua_app_common.c in Sources */,
 				54EE790E1CC9350D002C475D /* pjsua_app.c in Sources */,
 				54EE79151CC9352B002C475D /* PJSUA.m in Sources */,

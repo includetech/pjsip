@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <pjsua-lib/pjsua.h>
 
 @interface PJSUA : NSObject
 
