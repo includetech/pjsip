@@ -1665,7 +1665,7 @@ pj_status_t pj_make_call(pjsua_acc_id acc_id, char *sipUser) {
     pj_str_t uri = pj_str(destUri);
     pjsua_call_setting settings;
     settings.aud_cnt = 1;
-    settings.vid_cnt = 0;
+    settings.vid_cnt = 1;
     status = pjsua_call_make_call(acc_id, &uri, 0, NULL, NULL, NULL);
 
     return status;
