@@ -102,11 +102,15 @@ static void pjsuaOnAppConfigCb(pjsua_app_config *cfg)
         pjsua_app_destroy();
         return;
     } else {
-       status = pj_add_account(0, "foo", "anyhting", "107.170.46.82");
-       // status = pj_make_call(0, "foo");
+       status = pj_add_account(0, "receiver", "anyhting", "107.170.46.82");
         if (status != PJ_SUCCESS) {
             NSLog(@"%@", @"Error ");
         }
+        
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+           //pj_status_t status = pj_make_call(0, "receiver");
+            // NSLog(@"%@", @"NO Error ");
+        });
     }
 }
 

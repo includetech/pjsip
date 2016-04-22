@@ -277,11 +277,14 @@ static void on_incoming_call(pjsua_acc_id acc_id, pjsua_call_id call_id,
 			     pjsip_rx_data *rdata)
 {
     pjsua_call_info ci;
-    
     pjsua_call_get_info(call_id, &ci);
-        
+    
+    pjsua_call_setting settings;
+    settings.aud_cnt = 1;
+    settings.vid_cnt = 1;
+    
     //    /* Automatically answer incoming calls with 200/OK */
-    pjsua_call_answer(call_id, 200, NULL, NULL);
+    pjsua_call_answer2(call_id, &settings, 200, NULL, NULL);
 }
 
 /*
