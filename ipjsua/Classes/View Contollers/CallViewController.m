@@ -29,13 +29,30 @@
         [[PJSUA sharedInstance] pjsuaStart];
         self.pjsuaStarted = YES;
         
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(10.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            [self displayCallWindow:0];
-        });
+        [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(updateWindow) userInfo:nil repeats:YES];
     }
 }
 
-- (void)displayCallWindow:(pjsua_vid_win_id)wid
+- (void)updateWindow {
+    
+    NSArray *subviews = self.view.subviews;
+    for (UIView *view in subviews) {
+        [view removeFromSuperview];
+    }
+    
+    [self displayCallWindow];
+}
+
+- (void)displayVideoPreview {
+    pjsua_vid_win_id wid = pjsua_vid_preview_get_win(0);
+    [self displayWindow:wid];
+}
+
+- (void)displayCallWindow {
+    [self displayWindow:0];
+}
+
+- (void)displayWindow:(pjsua_vid_win_id)wid
 {
     int i, last;
     

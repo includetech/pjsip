@@ -111,7 +111,7 @@ static void pjsuaOnAppConfigCb(pjsua_app_config *cfg)
         }
         
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-           //pj_status_t status = pj_make_call(0, "receiver");
+          // pj_status_t status = pj_make_call(0, "receiver");
             // NSLog(@"%@", @"NO Error ");
         });
     }

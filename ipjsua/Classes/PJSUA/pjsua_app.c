@@ -1674,14 +1674,22 @@ pj_status_t pj_add_account(pjsua_acc_id acc_id, char *sipUser, char *password, c
 pj_status_t pj_make_call(pjsua_acc_id acc_id, char *sipUser) {
     pj_status_t status;
 
+    pjsua_vid_preview_param param;
+    param.rend_id = PJMEDIA_VID_DEFAULT_CAPTURE_DEV;
+    param.show = PJ_TRUE;
+    param.wnd_flags = 1;
+    pjsua_vid_preview_param_default(&param);
+    pjsua_vid_preview_start(PJMEDIA_VID_DEFAULT_CAPTURE_DEV, &param);
+
+    
     char destUri[MAX_SIP_REG_URI_LENGTH];
     sprintf(destUri, "sip:%s@%s:5060", sipUser, "107.170.46.82");
-    
+    pjsua_call_id call_id;
     pj_str_t uri = pj_str(destUri);
     pjsua_call_setting settings;
     settings.aud_cnt = 1;
     settings.vid_cnt = 1;
-    status = pjsua_call_make_call(acc_id, &uri, 0, NULL, NULL, NULL);
+    status = pjsua_call_make_call(acc_id, &uri, 0, NULL, NULL, &call_id);
 
     return status;
 }
