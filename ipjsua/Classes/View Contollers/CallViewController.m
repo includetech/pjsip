@@ -8,6 +8,7 @@
 
 #import "CallViewController.h"
 #import "PJSUA.h"
+#define SERVER @"107.170.46.82"
 
 @interface CallViewController ()
 
@@ -19,6 +20,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(displayCallWindow) name:@"incoming" object:nil];
+
     // Do any additional setup after loading the view.
 }
 
@@ -26,8 +29,15 @@
     [super viewDidAppear:animated];
     
     if (!self.pjsuaStarted) {
-        [[PJSUA sharedInstance] pjsuaStart];
+        
+        int status = -1;
+        status = [[PJSIP sharedPJSIP] addAccountWithUsername:@"foo" password:@"foo" toServer:SERVER];
         self.pjsuaStarted = YES;
+        
+//        if (status == 0) {
+//            [[PJSIP sharedPJSIP] makeCallTo:@"foo"];
+//            [self displayVideoPreview];
+//        }
         
         [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(updateWindow) userInfo:nil repeats:YES];
     }
@@ -37,6 +47,7 @@
     
     NSArray *subviews = self.view.subviews;
     for (UIView *view in subviews) {
+        
         [view removeFromSuperview];
     }
     
@@ -44,11 +55,13 @@
 }
 
 - (void)displayVideoPreview {
+    
     pjsua_vid_win_id wid = pjsua_vid_preview_get_win(0);
     [self displayWindow:wid];
 }
 
 - (void)displayCallWindow {
+    
     [self displayWindow:0];
 }
 

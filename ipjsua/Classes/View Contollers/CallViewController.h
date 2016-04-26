@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PJSIP.h"
 
 @interface CallViewController : UIViewController
 
