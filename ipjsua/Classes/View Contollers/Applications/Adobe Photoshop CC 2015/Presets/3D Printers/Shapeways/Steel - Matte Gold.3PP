@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Printer>
+	<Version value='1' />
+	<PrintLocation value='Shapeways.com' />
+	<UploadURL value='http://www.adobe.com/go/psuploadtoshapeways' />
+	<PrintVolume X='330' Y='190' Z='228' />
+	<PrinterResolution X='1' Y='1' Z='1' />
+	<MeshRepairResolution value='7' />
+	<PrinterHeads value='1' />
+	<PrinterSupportsUSB flag='0' />
+	<PreferredFileFormat value='stl' />
+	<NeedsZip flag='1' />
+	<Quality value='high'>
+		<MeshRepairResolution value='8' />
+	</Quality>
+	<Quality value='medium'>
+		<MeshRepairResolution value='7' />
+	</Quality>
+	<Quality value='low'>
+		<MeshRepairResolution value='6' />
+	</Quality>
+</Printer>
+<Materials>
+	<Material name='Matte Gold Steel'>
+		<NeedsRaft flag='0' />
+		<NeedsSupports flag='0' />
+		<NeedsEscapeHoles flag='0' />
+		<MinimumWallThickness value='3' />
+		<PricePerCubicCM value='5.00' />
+		<PartCount value='10.00' />
+		<Diffuse R='0.8431' G='0.7647' B='0.5257' />
+		<Specular R='0.7300' G='0.5983' B='0.3139' />
+		<Illumination R='0' G='0' B='0' />
+		<Ambient R='0' G='0' B='0' />
+		<Shine value='0.20' />
+		<Reflection value='0.20' />
+		<Roughness value='0.6' />
+		<Bump value='0' />
+		<Opacity value='1' />
+		<Refraction value='1.051' />
+	</Material>
+</Materials>

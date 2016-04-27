@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xmp_definitions>
+  <xmp_schema prefix='DICOM' namespace='http://ns.adobe.com/DICOM/' label='$$$/xmp/DICOM_label=DICOM' description='$$$/xmp/DICOM_description=Properties defined by DICOM'>
+  <xmp_property name='PatientName' category='external' description='$$$/xmp/DICOM/PatientName_description=Name of Patient' label='$$$/xmp/DICOM/PatientName_label=Patient Name' type='text'/>
+	<xmp_property name='PatientID' category='external' description='$$$/xmp/DICOM/PatientID_description=ID of patient' label='$$$/xmp/DICOM/PatientID_label=Patient ID' type='text'/>
+	<xmp_property name='PatientSex' category='external' description='$$$/xmp/DICOM/PatientSex_description=Sex of patient' label='$$$/xmp/DICOM/PatientSex_label=Patient Sex' type='text'/>
+	<xmp_property name='PatientDOB' category='external' description='$$$/xmp/DICOM/PatientDOB_description=Birthdate of patient' label='$$$/xmp/DICOM/PatientDOB_label=Date of Birth' type='date'/>
+	<xmp_property name='StudyID' category='external' description='$$$/xmp/DICOM/StudyID_description=ID of study' label='$$$/xmp/DICOM/StudyID_label=Study ID' type='text'/>
+	<xmp_property name='StudyPhysician' category='external' description='$$$/xmp/DICOM/StudyPhysician_description=Name of referring physician' label='$$$/xmp/DICOM/StudyPhysician_label=Referring Physician' type='text'/>
+	<xmp_property name='StudyDateTime' category='external' description='$$$/xmp/DICOM/StudyDateTime_description=Date when study was created' label='$$$/xmp/DICOM/StudyDateTime_label=Study Date' type='date'/>
+	<xmp_property name='StudyDescription' category='external' description='$$$/xmp/DICOM/StudyDescription_description=Description of study' label='$$$/xmp/DICOM/StudyDescription_label=Study Description' type='text'/>
+	<xmp_property name='SeriesNumber' category='external' description='$$$/xmp/DICOM/SeriesNumber_description=Number of series' label='$$$/xmp/DICOM/SeriesNumber_label=Series Number' type='text'/>
+	<xmp_property name='SeriesModality' category='external' description='$$$/xmp/DICOM/SeriesModality_description=Modality used to create the data' label='$$$/xmp/DICOM/SeriesModality_label=Modality' type='text'/>
+	<xmp_property name='SeriesDateTime' category='external' description='$$$/xmp/DICOM/SeriesDateTime_description=Date when series was captured' label='$$$/xmp/DICOM/SeriesDateTime_label=Series Date' type='date'/>
+	<xmp_property name='SeriesDescription' category='external' description='$$$/xmp/DICOM/SeriesDescription_description=Description of Series' label='$$$/xmp/DICOM/SeriesDescription_label=Series Description' type='text'/>
+	<xmp_property name='EquipmentInstitution' category='external' description='$$$/xmp/DICOM/EquipmentInstitution_description=Institution name' label='$$$/xmp/DICOM/EquipmentInstitution_label=Equipment Institution' type='text'/>
+	<xmp_property name='EquipmentManufacturer' category='external' description='$$$/xmp/DICOM/EquipmentManufacturer_description=ManufacturerName' label='$$$/xmp/DICOM/EquipmentManufacturer_label=Equipment Manufacturer' type='text'/>
+  <xmp_property name='FileInfoTransferSyntax' category='internal' description='$$$/xmp/DICOM/FileInfoTransferSyntax_description=Coding scheme of device' label='$$$/xmp/DICOM/FileInfoTransferSyntax_label=Transfer Syntax' type='text'/>
+	<xmp_property name='FileInfoPhotometricInterpretation' category='internal' description='$$$/xmp/DICOM/FileInfoPhotometricInterpretation_description=Pixel color format' label='$$$/xmp/DICOM/FileInfoPhotometricInterpretation_label=Photometric Interpretation' type='text'/>
+	<xmp_property name='FileInfoImageWidth' category='internal' description='$$$/xmp/DICOM/FileInfoImageWidth_description=Width, pixels' label='$$$/xmp/DICOM/FileInfoImageWidth_label=Image Width' type='integer'/>
+	<xmp_property name='FileInfoImageHeight' category='internal' description='$$$/xmp/DICOM/FileInfoImageHeight_description=Height, pixels' label='$$$/xmp/DICOM/FileInfoImageHeight_label=Image Height' type='integer'/>
+	<xmp_property name='FileInfoBitsPerPixel' category='internal' description='$$$/xmp/DICOM/FileInfoBitsPerPixel_description=Bit-depth' label='$$$/xmp/DICOM/FileInfoBitsPerPixel_label=Bits Per Pixel' type='integer'/>
+	<xmp_property name='FileInfoFrames' category='internal' description='$$$/xmp/DICOM/FileInfoFrames_description=Number of frames' label='$$$/xmp/DICOM/FileInfoFrames_label=Frames' type='integer'/>
+  </xmp_schema>
+</xmp_definitions>

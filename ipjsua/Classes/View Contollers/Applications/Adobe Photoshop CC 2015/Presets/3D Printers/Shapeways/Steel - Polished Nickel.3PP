@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Printer>
+	<Version value='1' />
+	<PrintLocation value='Shapeways.com' />
+	<UploadURL value='http://www.adobe.com/go/psuploadtoshapeways' />
+	<PrintVolume X='330' Y='190' Z='228' />
+	<PrinterResolution X='1' Y='1' Z='1' />
+	<MeshRepairResolution value='7' />
+	<PrinterHeads value='1' />
+	<PrinterSupportsUSB flag='0' />
+	<PreferredFileFormat value='stl' />
+	<NeedsZip flag='1' />
+	<Quality value='high'>
+		<MeshRepairResolution value='8' />
+	</Quality>
+	<Quality value='medium'>
+		<MeshRepairResolution value='7' />
+	</Quality>
+	<Quality value='low'>
+		<MeshRepairResolution value='6' />
+	</Quality>
+</Printer>
+<Materials>
+	<Material name='Polished Nickel Steel'>
+		<NeedsRaft flag='0' />
+		<NeedsSupports flag='0' />
+		<NeedsEscapeHoles flag='0' />
+		<MinimumWallThickness value='3' />
+		<PricePerCubicCM value='5.00' />
+		<PartCount value='10.00' />
+		<Diffuse R='0.7000' G='0.6935' B='0.6860' />
+		<Specular R='0.9800' G='0.9682' B='0.9408' />
+		<Illumination R='0' G='0' B='0' />
+		<Ambient R='0.0201' G='0.0201' B='0.0201' />
+		<Shine value='0.42' />
+		<Reflection value='0.32' />
+		<Roughness value='0.08' />
+		<Bump value='0' />
+		<Opacity value='1' />
+		<Refraction value='1.051' />
+	</Material>
+</Materials>

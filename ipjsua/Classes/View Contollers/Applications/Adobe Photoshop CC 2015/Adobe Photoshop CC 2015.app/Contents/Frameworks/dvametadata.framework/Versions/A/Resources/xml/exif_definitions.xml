@@ -1,0 +1,255 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xmp_definitions>
+  <xmp_schema prefix='exif' namespace='http://ns.adobe.com/exif/1.0/' description='$$$/xmp/exif_description=Properties defined solely by EXIF.' label='$$$/xmp/exif_label=EXIF Schema For EXIF-Specific Properties'>
+    <xmp_property name='ExifVersion' category='internal' type='openchoice' description='$$$/xmp/exif/ExifVersion_description=EXIF tag 36864, 0x9000. EXIF version number.' element_type='text' label='$$$/xmp/exif/ExifVersion_label=EXIF Version'/>
+    <xmp_property name='FlashpixVersion' category='internal' type='openchoice' description='$$$/xmp/exif/FlashpixVersion_description=EXIF tag 40960, 0xA000. Version of FlashPix.' element_type='text' label='$$$/xmp/exif/FlashpixVersion_label=Flashpix Version'/>
+    <xmp_property name='ColorSpace' category='internal' type='closedchoice' description='$$$/xmp/exif/ColorSpace_description=EXIF tag 40961, 0xA001. Color space information.' element_type='integer' label='$$$/xmp/exif/ColorSpace_label=Color Space'>
+      <xmp_choice raw_value='1' label='$$$/xmp/exif/ColorSpace/0=SRGB'/>
+      <xmp_choice raw_value='65535' label='$$$/xmp/exif/ColorSpace/1=Uncalibrated'/>
+    </xmp_property>
+    <xmp_property name='ComponentsConfiguration' category='internal' type='closedchoice' description='$$$/xmp/exif/ComponentsConfiguration_description=EXIF tag 37121, 0x9101. Configuration of components in data.' element_type='seq of integer' label='$$$/xmp/exif/ComponentsConfiguration_label=Components Configuration'>
+      <xmp_choice raw_value='[4 5 6 0]' label='$$$/xmp/exif/ComponentsConfiguration/0=RGB'/>
+      <xmp_choice raw_value='[1 2 3 4]' label='$$$/xmp/exif/ComponentsConfiguration/1=Other'/>
+    </xmp_property>
+    <xmp_property name='CompressedBitsPerPixel' category='internal' type='rational' description='$$$/xmp/exif/CompressedBitsPerPixel_description=EXIF tag 37122, 0x9102. Compression mode used for a compressed image is indicated in unit bits per pixel.' label='$$$/xmp/exif/CompressedBitsPerPixel_label=Compressed Bits Per Pixel'/>
+    <xmp_property name='PixelXDimension' category='internal' type='integer' description='$$$/xmp/exif/PixelXDimension_description=EXIF tag 40962, 0xA002. Valid image width, in pixels.' label='$$$/xmp/exif/PixelXDimension_label=Pixel X Dimension'/>
+    <xmp_property name='PixelYDimension' category='internal' type='integer' description='$$$/xmp/exif/PixelYDimension_description=EXIF tag 40963, 0xA003. Valid image height, in pixels.' label='$$$/xmp/exif/PixelYDimension_label=Pixel Y Dimension'/>
+    <xmp_property name='UserComment' category='external' type='langalt' description='$$$/xmp/exif/UserComment_description=EXIF tag 37510, 0x9286. Comments from user.' label='$$$/xmp/exif/UserComment_label=User Comment'/>
+    <xmp_property name='RelatedSoundFile' category='internal' type='text' description='$$$/xmp/exif/RelatedSoundFile_description=EXIF tag 40964, 0xA004. An &quot;8.3&quot; file name for the related sound file.' label='$$$/xmp/exif/RelatedSoundFile_label=Related Sound File'/>
+    <xmp_property name='DateTimeOriginal' category='internal' type='date' description='$$$/xmp/exif/DateTimeOriginal_description=EXIF tags 36867, 0x9003 (primary) and 37521, 0x9291 (subseconds). Date and time when original image was generated, in ISO 8601 format. Includes the EXIF SubSecTimeOriginal data.' label='$$$/xmp/exif/DateTimeOriginal_label=Date Time Original'/>
+    <xmp_property name='DateTimeDigitized' category='internal' type='date' description='$$$/xmp/exif/DateTimeDigitized_description=EXIF tag 36868, 0x9004 (primary) and 37522, 0x9292 (subseconds). Date and time when image was stored as digital data, can be the same as DateTimeOriginal if originally stored in digital form. Stored in ISO 8601 format. Includes the EXIF SubSecTimeDigitized data.' label='$$$/xmp/exif/DateTimeDigitized_label=Date Time Digitized'/>
+    <xmp_property name='ExposureTime' category='internal' type='rational' description='$$$/xmp/exif/ExposureTime_description=EXIF tag 33434, 0x829A. Exposure time in seconds.' label='$$$/xmp/exif/ExposureTime_label=Exposure Time'/>
+    <xmp_property name='FNumber' category='internal' type='rational' description='$$$/xmp/exif/FNumber_description=EXIF tag 33437, 0x829D. F number.' label='$$$/xmp/exif/FNumber_label=F-Stop'/>
+    <xmp_property name='ExposureProgram' category='internal' type='closedchoice' description='$$$/xmp/exif/ExposureProgram_description=EXIF tag 34850, 0x8822. Class of program used for exposure.' element_type='integer' label='$$$/xmp/exif/ExposureProgram_label=Exposure Program'>
+      <xmp_choice raw_value='0' label='$$$/xmp/exif/ExposureProgram/0=Not defined'/>
+      <xmp_choice raw_value='1' label='$$$/xmp/exif/ExposureProgram/1=Manual'/>
+      <xmp_choice raw_value='2' label='$$$/xmp/exif/ExposureProgram/2=Normal program'/>
+      <xmp_choice raw_value='3' label='$$$/xmp/exif/ExposureProgram/3=Aperture priority'/>
+      <xmp_choice raw_value='4' label='$$$/xmp/exif/ExposureProgram/4=Shutter priority'/>
+      <xmp_choice raw_value='5' label='$$$/xmp/exif/ExposureProgram/5=Creative program biased toward depth of field)'/>
+      <xmp_choice raw_value='6' label='$$$/xmp/exif/ExposureProgram/6=Action program (biased toward fast shutter speed)'/>
+      <xmp_choice raw_value='7' label='$$$/xmp/exif/ExposureProgram/7=Portrait mode (for closeup photos with the background out of focus)'/>
+      <xmp_choice raw_value='8' label='$$$/xmp/exif/ExposureProgram/8=Landscape mode (for landscape photos with the background in focus)'/>
+    </xmp_property>
+    <xmp_property name='SpectralSensitivity' category='internal' type='text' description='$$$/xmp/exif/SpectralSensitivity_description=EXIF tag 34852, 0x8824. Spectral sensitivity of each channel.' label='$$$/xmp/exif/SpectralSensitivity_label=Spectral Sensitivity'/>
+    <xmp_property name='ISOSpeedRatings' category='internal' type='seq' description='$$$/xmp/exif/ISOSpeedRatings_description=EXIF tag 34855, 0x8827. ISO Speed and ISO Latitude of the input device as specified in ISO 12232.' element_type='integer' label='$$$/xmp/exif/ISOSpeedRatings_label=ISO Speed Ratings'/>
+    <xmp_property name='OECF' category='internal' type='oecf/sfr' description='$$$/xmp/exif/OECF_description=EXIF tag 34856, 0x8828. Opto-Electoric Conversion Function as specified in ISO 14524.' label='$$$/xmp/exif/OECF_label=OECF'/>
+    <xmp_property name='ShutterSpeedValue' category='internal' type='rational' description='$$$/xmp/exif/ShutterSpeedValue_description=EXIF tag 37377, 0x9201. Shutter speed, unit is APEX. See Annex C of the EXIF specification.' label='$$$/xmp/exif/ShutterSpeedValue_label=Shutter Speed Value'/>
+    <xmp_property name='ApertureValue' category='internal' type='rational' description='$$$/xmp/exif/ApertureValue_description=EXIF tag 37378, 0x9202. Lens aperture, unit is APEX.' label='$$$/xmp/exif/ApertureValue_label=Aperture Value'/>
+    <xmp_property name='BrightnessValue' category='internal' type='rational' description='$$$/xmp/exif/BrightnessValue_description=EXIF tag 37379, 0x9203. Brightness, unit is APEX.' label='$$$/xmp/exif/BrightnessValue_label=Brightness Value'/>
+    <xmp_property name='ExposureBiasValue' category='internal' type='rational' description='$$$/xmp/exif/ExposureBiasValue_description=EXIF tag 37380, 0x9204. Exposure bias, unit is APEX.' label='$$$/xmp/exif/ExposureBiasValue_label=Exposure Bias Value'/>
+    <xmp_property name='MaxApertureValue' category='internal' type='rational' description='$$$/xmp/exif/MaxApertureValue_description=EXIF tag 37381, 0x9205. Smallest F number of lens, in APEX.' label='$$$/xmp/exif/MaxApertureValue_label=Max Aperture Value'/>
+    <xmp_property name='SubjectDistance' category='internal' type='rational' description='$$$/xmp/exif/SubjectDistance_description=EXIF tag 37382, 0x9206. Distance to subject, in meters.' label='$$$/xmp/exif/SubjectDistance_label=Subject Distance'/>
+    <xmp_property name='MeteringMode' category='internal' type='closedchoice' description='$$$/xmp/exif/MeteringMode_description=EXIF tag 37383, 0x9207. Metering mode.' element_type='integer' label='$$$/xmp/exif/MeteringMode_label=Metering Mode'>
+      <xmp_choice raw_value='1' label='$$$/xmp/exif/MeteringMode/0=Average'/>
+      <xmp_choice raw_value='2' label='$$$/xmp/exif/MeteringMode/1=Centerweighted-Average'/>
+      <xmp_choice raw_value='3' label='$$$/xmp/exif/MeteringMode/2=Spot'/>
+      <xmp_choice raw_value='4' label='$$$/xmp/exif/MeteringMode/3=Multispot'/>
+      <xmp_choice raw_value='5' label='$$$/xmp/exif/MeteringMode/4=Pattern'/>
+      <xmp_choice raw_value='6' label='$$$/xmp/exif/MeteringMode/5=Partial'/>
+      <xmp_choice raw_value='255' label='$$$/xmp/exif/MeteringMode/6=Other'/>
+    </xmp_property>
+    <xmp_property name='LightSource' category='internal' type='closedchoice' description='$$$/xmp/exif/LightSource_description=EXIF tag 37384, 0x9208. EXIF tag , 0x. Light source.' element_type='integer' label='$$$/xmp/exif/LightSource_label=Light Source'>
+      <xmp_choice raw_value='0' label='$$$/xmp/exif/LightSource/Default=Unknown'/>
+      <xmp_choice raw_value='1' label='$$$/xmp/exif/LightSource/0=Daylight'/>
+      <xmp_choice raw_value='2' label='$$$/xmp/exif/LightSource/1=Fluorescent'/>
+      <xmp_choice raw_value='3' label='$$$/xmp/exif/LightSource/2=Tungsten'/>
+      <xmp_choice raw_value='4' label='$$$/xmp/exif/LightSource/3=Flash'/>
+      <xmp_choice raw_value='9' label='$$$/xmp/exif/LightSource/4=Fine weather'/>
+      <xmp_choice raw_value='10' label='$$$/xmp/exif/LightSource/5=Cloudy weather'/>
+      <xmp_choice raw_value='11' label='$$$/xmp/exif/LightSource/6=Shade'/>
+      <xmp_choice raw_value='12' label='$$$/xmp/exif/LightSource/7=Daylight fluorescent (D 5700 - 7100K)'/>
+      <xmp_choice raw_value='13' label='$$$/xmp/exif/LightSource/8=Day white fluorescent (N 4600 - 5400K)'/>
+      <xmp_choice raw_value='14' label='$$$/xmp/exif/LightSource/9=Cool white fluorescent (W 3900 - 4500K)'/>
+      <xmp_choice raw_value='15' label='$$$/xmp/exif/LightSource/10=White fluorescent (WW 3200 - 3700K)'/>
+      <xmp_choice raw_value='17' label='$$$/xmp/exif/LightSource/11=Standard light A'/>
+      <xmp_choice raw_value='8' label='$$$/xmp/exif/LightSource/12=Standard light B'/>
+      <xmp_choice raw_value='19' label='$$$/xmp/exif/LightSource/13=Standard light C'/>
+      <xmp_choice raw_value='20' label='$$$/xmp/exif/LightSource/14=D55'/>
+      <xmp_choice raw_value='21' label='$$$/xmp/exif/LightSource/15=D65'/>
+      <xmp_choice raw_value='22' label='$$$/xmp/exif/LightSource/16=D75'/>
+      <xmp_choice raw_value='23' label='$$$/xmp/exif/LightSource/17=D50'/>
+      <xmp_choice raw_value='24' label='$$$/xmp/exif/LightSource/18=ISO studio tungsten'/>
+      <xmp_choice raw_value='255' label='$$$/xmp/exif/LightSource/19=Other'/>
+    </xmp_property>
+    <xmp_property name='Flash' category='internal' type='flash' description='$$$/xmp/exif/Flash_description=Flash usage data' label='$$$/xmp/exif/Flash_label=Flash'/>
+    <xmp_property name='FocalLength' category='internal' type='rational' description='$$$/xmp/exif/FocalLength_description=EXIF tag 37386, 0x920A. Focal length of the lens, in millimeters.' label='$$$/xmp/exif/FocalLength_label=Focal Length'/>
+    <xmp_property name='SubjectArea' category='internal' type='seq' description='$$$/xmp/exif/SubjectArea_description=EXIF tag 37396, 0x9214. The location and area of the main subject in the overall scene.' element_type='integer' label='$$$/xmp/exif/SubjectArea_label=Subject Area'/>
+    <xmp_property name='FlashEnergy' category='internal' type='rational' description='$$$/xmp/exif/FlashEnergy_description=EXIF tag 41483, 0xA20B. Strobe energy during image capture.' label='$$$/xmp/exif/FlashEnergy_label=Flash Energy'/>
+    <xmp_property name='SpatialFrequencyResponse' category='internal' type='oecf/sfr' description='$$$/xmp/exif/SpatialFrequencyResponse_description=EXIF tag 41484, 0xA20C. Input device spatial frequency table and SFR values as specified in ISO 12233.' label='$$$/xmp/exif/SpatialFrequencyResponse_label=Spatial Frequency Response'/>
+    <xmp_property name='FocalPlaneXResolution' category='internal' type='rational' description='$$$/xmp/exif/FocalPlaneXResolution_description=EXIF tag 41486, 0xA20E. Horizontal focal resolution, measured pixels per unit.' label='$$$/xmp/exif/FocalPlaneXResolution_label=Focal Plane X Resolution'/>
+    <xmp_property name='FocalPlaneYResolution' category='internal' type='rational' description='$$$/xmp/exif/FocalPlaneYResolution_description=EXIF tag 41487, 0xA20F. Vertical focal resolution, measured in pixels per unit.' label='$$$/xmp/exif/FocalPlaneYResolution_label=Focal Plane Y Resolution'/>
+    <xmp_property name='FocalPlaneResolutionUnit' category='internal' type='closedchoice' description='$$$/xmp/exif/FocalPlaneResolutionUnit_description=EXIF tag 41488, 0xA210. Unit used for FocalPlaneXResolution and FocalPlaneYResolution. 2 = inches 3 = centimeters' element_type='integer' label='$$$/xmp/exif/FocalPlaneResolutionUnit_label=Focal Plane Resolution Unit'>
+      <xmp_choice raw_value='2' label='$$$/xmp/exif/FocalPlaneResolutionUnit/0=Inches'/>
+      <xmp_choice raw_value='3' label='$$$/xmp/exif/FocalPlaneResolutionUnit/1=Centimeters'/>
+    </xmp_property>
+    <xmp_property name='SubjectLocation' category='internal' type='seq' description='$$$/xmp/exif/SubjectLocation_description=EXIF tag 41492, 0xA214. Location of the main subject of the scene. The first value is the horizontal pixel and the second value is the vertical pixel at which the main subject appears.' element_type='integer' label='$$$/xmp/exif/SubjectLocation_label=Subject Location'/>
+    <xmp_property name='ExposureIndex' category='internal' type='rational' description='$$$/xmp/exif/ExposureIndex_description=EXIF tag 41493, 0xA215. Exposure index of input device.' label='$$$/xmp/exif/ExposureIndex_label=Exposure Index'/>
+    <xmp_property name='SensingMethod' category='internal' type='closedchoice' description='$$$/xmp/exif/SensingMethod_description=EXIF tag 41495, 0xA217. Image sensor type on input device.' element_type='integer' label='$$$/xmp/exif/SensingMethod_label=Sensing Method'>
+      <xmp_choice raw_value='1' label='$$$/xmp/exif/SensingMethod/0=Not defined'/>
+      <xmp_choice raw_value='2' label='$$$/xmp/exif/SensingMethod/1=One-chip color area sensor'/>
+      <xmp_choice raw_value='3' label='$$$/xmp/exif/SensingMethod/2=Two-chip color area sensor'/>
+      <xmp_choice raw_value='4' label='$$$/xmp/exif/SensingMethod/3=Three-chip color area sensor'/>
+      <xmp_choice raw_value='5' label='$$$/xmp/exif/SensingMethod/4=Color sequential area sensor'/>
+      <xmp_choice raw_value='7' label='$$$/xmp/exif/SensingMethod/5=Trilinear sensor'/>
+      <xmp_choice raw_value='8' label='$$$/xmp/exif/SensingMethod/6=Color sequential linear sensor'/>
+    </xmp_property>
+    <xmp_property name='FileSource' category='internal' type='closedchoice' description='$$$/xmp/exif/FileSource_description=EXIF tag 41728, 0xA300. Indicates image source.' element_type='integer' label='$$$/xmp/exif/FileSource_label=File Source'>
+      <xmp_choice raw_value='3' label='$$$/xmp/exif/FileSource/0=3 (DSC) is the only choice.'/>
+    </xmp_property>
+    <xmp_property name='SceneType' category='internal' type='closedchoice' description='$$$/xmp/exif/SceneType_description=EXIF tag 41729, 0xA301. Indicates the type of scene.' element_type='integer' label='$$$/xmp/exif/SceneType_label=Scene Type'>
+      <xmp_choice raw_value='1' label='$$$/xmp/exif/SceneType/0=1 (directly photographed image) is the only choice.'/>
+    </xmp_property>
+    <xmp_property name='CFAPattern' category='internal' type='cfapattern' description='$$$/xmp/exif/CFAPattern_description=EXIF tag 41730, 0xA302. Color filter array geometric pattern of the image sense.' label='$$$/xmp/exif/CFAPattern_label=CFA Pattern'/>
+    <xmp_property name='CustomRendered' category='internal' type='closedchoice' description='$$$/xmp/exif/CustomRendered_description=EXIF tag 41985, 0xA401. Indicates the use of special processing on image data.' element_type='integer' label='$$$/xmp/exif/CustomRendered_label=Custom Rendered'>
+      <xmp_choice raw_value='0' label='$$$/xmp/exif/CustomRendered/0=Normal process'/>
+      <xmp_choice raw_value='1' label='$$$/xmp/exif/CustomRendered/1=Custom process'/>
+    </xmp_property>
+    <xmp_property name='ExposureMode' category='internal' type='closedchoice' description='$$$/xmp/exif/ExposureMode_description=EXIF tag 41986, 0xA402. Indicates the exposure mode set when the image was shot.' element_type='integer' label='$$$/xmp/exif/ExposureMode_label=Exposure Mode'>
+      <xmp_choice raw_value='0' label='$$$/xmp/exif/ExposureMode/0=Auto exposure'/>
+      <xmp_choice raw_value='1' label='$$$/xmp/exif/ExposureMode/1=Manual exposure'/>
+      <xmp_choice raw_value='2' label='$$$/xmp/exif/ExposureMode/2=Auto bracket'/>
+    </xmp_property>
+    <xmp_property name='WhiteBalance' category='internal' type='closedchoice' description='$$$/xmp/exif/WhiteBalance_description=EXIF tag 41987, 0xA403. Indicates the white balance mode set when the image was shot.' element_type='integer' label='$$$/xmp/exif/WhiteBalance_label=White Balance'>
+      <xmp_choice raw_value='0' label='$$$/xmp/exif/WhiteBalance/0=Auto white balance'/>
+      <xmp_choice raw_value='1' label='$$$/xmp/exif/WhiteBalance/1=Manual white balance'/>
+    </xmp_property>
+    <xmp_property name='DigitalZoomRatio' category='internal' type='rational' description='$$$/xmp/exif/DigitalZoomRatio_description=EXIF tag 41988, 0xA404. Indicates the digital zoom ratio when the image was shot.' label='$$$/xmp/exif/DigitalZoomRatio_label=Digital Zoom Ratio'/>
+    <xmp_property name='FocalLengthIn35mmFilm' category='internal' type='integer' description='$$$/xmp/exif/FocalLengthIn35mmFilm_description=EXIF tag 41989, 0xA405. Indicates the equivalent focal length assuming a 35mm film camera, in mm. A value of 0 means the focal length is unknown. Note that this tag differs from the FocalLength tag.' label='$$$/xmp/exif/FocalLengthIn35mmFilm_label=Focal Length In 35mm Film'/>
+    <xmp_property name='SceneCaptureType' category='internal' type='closedchoice' description='$$$/xmp/exif/SceneCaptureType_description=EXIF tag 41990, 0xA406. Indicates the type of scene that was shot.' element_type='integer' label='$$$/xmp/exif/SceneCaptureType_label=Scene Capture Type'>
+      <xmp_choice raw_value='0' label='$$$/xmp/exif/SceneCaptureType/0=Standard'/>
+      <xmp_choice raw_value='1' label='$$$/xmp/exif/SceneCaptureType/1=Landscape'/>
+      <xmp_choice raw_value='2' label='$$$/xmp/exif/SceneCaptureType/2=Portrait'/>
+      <xmp_choice raw_value='3' label='$$$/xmp/exif/SceneCaptureType/3=Night scene'/>
+    </xmp_property>
+    <xmp_property name='GainControl' category='internal' type='closedchoice' description='$$$/xmp/exif/GainControl_description=EXIF tag 41991, 0xA407. Indicates the degree of overall image gain adjustment.' element_type='integer' label='$$$/xmp/exif/GainControl_label=Gain Control'>
+      <xmp_choice raw_value='0' label='$$$/xmp/exif/GainControl/0=None'/>
+      <xmp_choice raw_value='1' label='$$$/xmp/exif/GainControl/1=Low gain up'/>
+      <xmp_choice raw_value='2' label='$$$/xmp/exif/GainControl/2=High gain up'/>
+      <xmp_choice raw_value='3' label='$$$/xmp/exif/GainControl/3=Low gain down'/>
+      <xmp_choice raw_value='4' label='$$$/xmp/exif/GainControl/4=High gain down'/>
+    </xmp_property>
+    <xmp_property name='Contrast' category='internal' type='closedchoice' description='$$$/xmp/exif/Contrast_description=EXIF tag 41992, 0xA408. Indicates the direction of contrast processing applied by the camera.' element_type='integer' label='$$$/xmp/exif/Contrast_label=Contrast'>
+      <xmp_choice raw_value='0' label='$$$/xmp/exif/Contrast/0=Normal'/>
+      <xmp_choice raw_value='1' label='$$$/xmp/exif/Contrast/1=Soft'/>
+      <xmp_choice raw_value='2' label='$$$/xmp/exif/Contrast/2=Hard'/>
+    </xmp_property>
+    <xmp_property name='Saturation' category='internal' type='closedchoice' description='$$$/xmp/exif/Saturation_description=EXIF tag 41993, 0xA409. Indicates the direction of saturation processing applied by the camera.' element_type='integer' label='$$$/xmp/exif/Saturation_label=Saturation'>
+      <xmp_choice raw_value='0' label='$$$/xmp/exif/Saturation/0=Normal'/>
+      <xmp_choice raw_value='1' label='$$$/xmp/exif/Saturation/1=Low saturation'/>
+      <xmp_choice raw_value='2' label='$$$/xmp/exif/Saturation/2=High saturation'/>
+    </xmp_property>
+    <xmp_property name='Sharpness' category='internal' type='closedchoice' description='$$$/xmp/exif/Sharpness_description=EXIF tag 41994, 0xA40A. Indicates the direction of sharpness processing applied by the camera.' element_type='integer' label='$$$/xmp/exif/Sharpness_label=Sharpness'>
+      <xmp_choice raw_value='0' label='$$$/xmp/exif/Sharpness/0=Normal'/>
+      <xmp_choice raw_value='1' label='$$$/xmp/exif/Sharpness/1=Soft'/>
+      <xmp_choice raw_value='2' label='$$$/xmp/exif/Sharpness/2=Hard'/>
+    </xmp_property>
+    <xmp_property name='DeviceSettingDescription' category='internal' type='devicesettings' description='$$$/xmp/exif/DeviceSettingDescription_description=EXIF tag 41995, 0xA40B. Indicates information on the picture-taking conditions of a particular camera model.' label='$$$/xmp/exif/DeviceSettingDescription_label=Device Setting Description'/>
+    <xmp_property name='SubjectDistanceRange' category='internal' type='closedchoice' description='$$$/xmp/exif/SubjectDistanceRange_description=EXIF tag 41996, 0xA40C. Indicates the distance to the subject.' element_type='integer' label='$$$/xmp/exif/SubjectDistanceRange_label=Subject Distance Range'>
+      <xmp_choice raw_value='0' label='$$$/xmp/exif/SubjectDistanceRange/0=Unknown'/>
+      <xmp_choice raw_value='1' label='$$$/xmp/exif/SubjectDistanceRange/1=Macro'/>
+      <xmp_choice raw_value='2' label='$$$/xmp/exif/SubjectDistanceRange/2=Close view'/>
+      <xmp_choice raw_value='3' label='$$$/xmp/exif/SubjectDistanceRange/3=Distant view'/>
+    </xmp_property>
+    <xmp_property name='ImageUniqueID' category='internal' type='text' description='$$$/xmp/exif/ImageUniqueID_description=EXIF tag 42016, 0xA420. An identifier assigned uniquely to each image. It is recorded as a 32 character ASCII string, equivalent to hexadecimal notation and 128-bit fixed length.' label='$$$/xmp/exif/ImageUniqueID_label=Image Unique ID'/>
+    <xmp_property name='GPSVersionID' category='internal' type='text' description='$$$/xmp/exif/GPSVersionID_description=Version number of the GPS metadata recorded' label='$$$/xmp/exif/GPSVersionID_label=GPS Version ID'/>
+    <xmp_property name='GPSLatitude' category='internal' type='gpscoordinate' description='$$$/xmp/exif/GPSLatitude_description=Indicates latitude.' label='$$$/xmp/exif/GPSLatitude_label=GPS Latitude'/>
+    <xmp_property name='GPSLongitude' category='internal' type='gpscoordinate' description='$$$/xmp/exif/GPSLongitude_description=Indicates longitude.' label='$$$/xmp/exif/GPSLongitude_label=GPS Longitude'/>
+    <xmp_property name='GPSAltitudeRef' category='internal' type='closedchoice' description='$$$/xmp/exif/GPSAltitudeRef_description=Indicates whether the altitude is above or below sea level.' element_type='integer' label='$$$/xmp/exif/GPSAltitudeRef_label=GPS Altitude Ref'>
+      <xmp_choice raw_value='0' label='$$$/xmp/exif/GPSAltitudeRef/0=Above sea level'/>
+      <xmp_choice raw_value='1' label='$$$/xmp/exif/GPSAltitudeRef/1=Below sea level'/>
+    </xmp_property>
+    <xmp_property name='GPSAltitude' category='internal' type='rational' description='$$$/xmp/exif/GPSAltitude_description=Indicates altitude in meters.' label='$$$/xmp/exif/GPSAltitude_label=GPS Altitude'/>
+    <xmp_property name='GPSTimeStamp' category='internal' type='date' description='$$$/xmp/exif/GPSTimeStamp_description=Time recorded by the GPS receiver in Coordinated Universal Time (UTC)' label='$$$/xmp/exif/GPSTimeStamp_label=GPS Time Stamp'/>
+    <xmp_property name='GPSSatellites' category='internal' type='text' description='$$$/xmp/exif/GPSSatellites_description=Satellite information, format is unspecified.' label='$$$/xmp/exif/GPSSatellites_label=GPS Satellites'/>
+    <xmp_property name='GPSStatus' category='internal' type='closedchoice' description='$$$/xmp/exif/GPSStatus_description=Status of GPS receiver at image creation time.' element_type='text' label='$$$/xmp/exif/GPSStatus_label=GPS Status'>
+      <xmp_choice raw_value='A' label='$$$/xmp/exif/GPSStatus/0=Measurement in progress'/>
+      <xmp_choice raw_value='V' label='$$$/xmp/exif/GPSStatus/1=Measurement is interoperability'/>
+    </xmp_property>
+    <xmp_property name='GPSMeasureMode' category='internal' type='closedchoice' description='$$$/xmp/exif/GPSMeasureMode_description=GPS measurement mode, Text type: 2 = two-dimensional measurement 3 = three-dimensional measurement.' element_type='text' label='$$$/xmp/exif/GPSMeasureMode_label=GPS Measure Mode'>
+      <xmp_choice raw_value='2' label='$$$/xmp/exif/GPSMeasureMode_description/0=2-dimensional measurement'/>
+      <xmp_choice raw_value='3' label='$$$/xmp/exif/GPSMeasureMode_description/1=3-dimensional measurement'/>
+    </xmp_property>
+		
+    <xmp_property name='GPSDOP' category='internal' type='rational' description='$$$/xmp/exif/GPSDOP_description=Degree of precision for GPS data.' label='$$$/xmp/exif/GPSDOP_label=GPS Degree of Precision'/>
+    <xmp_property name='GPSSpeedRef' category='internal' type='closedchoice' description='$$$/xmp/exif/GPSSpeedRef_description=Units used to speed measurement.' element_type='text' label='$$$/xmp/exif/GPSSpeedRef_label=GPS Speed Ref'>
+      <xmp_choice raw_value='K' label='$$$/xmp/exif/GPSSpeedRef/0=Kilometers per hour'/>
+      <xmp_choice raw_value='M' label='$$$/xmp/exif/GPSSpeedRef/1=Miles per hour'/>
+      <xmp_choice raw_value='N' label='$$$/xmp/exif/GPSSpeedRef/2=Knots'/>
+    </xmp_property>
+    <xmp_property name='GPSSpeed' category='internal' type='rational' description='$$$/xmp/exif/GPSSpeed_description=Speed of GPS receiver movement.' label='$$$/xmp/exif/GPSSpeed_label=GPS Speed'/>
+    <xmp_property name='GPSTrackRef' category='internal' type='closedchoice' description='$$$/xmp/exif/GPSTrackRef_description=Reference for movement direction.' element_type='text' label='$$$/xmp/exif/GPSTrackRef_label=GPS Track Ref'>
+      <xmp_choice raw_value='T' label='$$$/xmp/exif/GPSTrackRef/0=True direction'/>
+      <xmp_choice raw_value='M' label='$$$/xmp/exif/GPSTrackRef/1=Magnetic direction'/>
+    </xmp_property>
+    <xmp_property name='GPSTrack' category='internal' type='rational' description='$$$/xmp/exif/GPSTrack_description=Direction of GPS movement, values range from 0 to 359.99.' label='$$$/xmp/exif/GPSTrack_label=GPS Track'/>
+    <xmp_property name='GPSImgDirectionRef' category='internal' type='closedchoice' description='$$$/xmp/exif/GPSImgDirectionRef_description=Reference for movement direction.' element_type='text' label='$$$/xmp/exif/GPSImgDirectionRef_label=GPS Img Direction Ref'>
+      <xmp_choice raw_value='T' label='$$$/xmp/exif/GPSImgDirectionRef/0=True direction'/>
+      <xmp_choice raw_value='M' label='$$$/xmp/exif/GPSImgDirectionRef/1=Magnetic direction'/>
+    </xmp_property>
+    <xmp_property name='GPSImgDirection' category='internal' type='rational' description='$$$/xmp/exif/GPSImgDirection_description=Direction of image when captured, values range from 0 to 359.99.' label='$$$/xmp/exif/GPSImgDirection_label=GPS Img Direction'/>
+    <xmp_property name='GPSMapDatum' category='internal' type='text' description='$$$/xmp/exif/GPSMapDatum_description=Geodetic survey data.' label='$$$/xmp/exif/GPSMapDatum_label=GPS Map Datum'/>
+    <xmp_property name='GPSDestLatitude' category='internal' type='gpscoordinate' description='$$$/xmp/exif/GPSDestLatitude_description=Indicates destination latitude.' label='$$$/xmp/exif/GPSDestLatitude_label=GPS Dest Latitude'/>
+    <xmp_property name='GPSDestLongitude' category='internal' type='gpscoordinate' description='$$$/xmp/exif/GPSDestLongitude_description=Indicates destination longitude.' label='$$$/xmp/exif/GPSDestLongitude_label=GPS Dest Longitude'/>
+    <xmp_property name='GPSDestBearingRef' category='internal' type='closedchoice' description='$$$/xmp/exif/GPSDestBearingRef_description=Reference for movement direction.' element_type='text' label='$$$/xmp/exif/GPSDestBearingRef_label=GPS Dest Bearing Ref'>
+      <xmp_choice raw_value='T' label='$$$/xmp/exif/GPSDestBearingRef/0=True direction'/>
+      <xmp_choice raw_value='M' label='$$$/xmp/exif/GPSDestBearingRef/1=Magnetic direction'/>
+    </xmp_property>
+    <xmp_property name='GPSDestBearing' category='internal' type='rational' description='$$$/xmp/exif/GPSDestBearing_description=Destination bearing, values from 0 to 359.99.' label='$$$/xmp/exif/GPSDestBearing_label=GPS Dest Bearing'/>
+    <xmp_property name='GPSDestDistanceRef' category='internal' type='closedchoice' description='$$$/xmp/exif/GPSDestDistanceRef_description=Units used for speed measurement.' element_type='text' label='$$$/xmp/exif/GPSDestDistanceRef_label=GPS Dest Distance Ref'>
+      <xmp_choice raw_value='K' label='$$$/xmp/exif/GPSDestDistanceRef/0=Kilometers'/>
+      <xmp_choice raw_value='M' label='$$$/xmp/exif/GPSDestDistanceRef/1=Miles'/>
+      <xmp_choice raw_value='N' label='$$$/xmp/exif/GPSDestDistanceRef/2=Nautical Miles'/>
+    </xmp_property>
+    <xmp_property name='GPSDestDistance' category='internal' type='rational' description='$$$/xmp/exif/GPSDestDistance_description=Distance to destination.' label='$$$/xmp/exif/GPSDestDistance_label=GPS Dest Distance'/>
+    <xmp_property name='GPSProcessingMethod' category='internal' type='text' description='$$$/xmp/exif/GPSProcessingMethod_description=A character string recording the name of the method used for location finding.' label='$$$/xmp/exif/GPSProcessingMethod_label=GPS Processing Method'/>
+    <xmp_property name='GPSAreaInformation' category='internal' type='text' description='$$$/xmp/exif/GPSAreaInformation_description=A character string recording the name of the GPS area.' label='$$$/xmp/exif/GPSAreaInformation_label=GPS Area Information'/>
+    <xmp_property name='GPSDifferential' category='internal' type='closedchoice' description='$$$/xmp/exif/GPSDifferential_description=Indicates whether differential correction is applied to the GPS receiver.' element_type='integer' label='$$$/xmp/exif/GPSDifferential_label=GPS Differential'>
+      <xmp_choice raw_value='0' label='$$$/xmp/exif/GPSDifferential/0=Without correction'/>
+      <xmp_choice raw_value='1' label='$$$/xmp/exif/GPSDifferential/1=Correction applied'/>
+    </xmp_property>
+	<!-- new in Exif 2.3 but mapped into exif namespace for backward compatibility -->
+	<xmp_property name='GPSHPositioningError' category='internal' type='rational' description='$$$/xmp/exif/GPSHPositioningError_description=Indicates the GPS horizontal positioning errors in meters' label='$$$/xmp/exif/GPSHPositioningError_label=GPS Horizontal Positioning Error'/>
+  </xmp_schema>
+  <xmp_type name='flash' description='$$$/xmp/exif/flash_description=A structure describing the flash state.' label='$$$/xmp/exif/flash_label=Flash'>
+    <xmp_field prefix='exif' name='Fired' type='boolean' namespace='http://ns.adobe.com/exif/1.0/' description='$$$/xmp/exif/flash/Fired_description=True if flash fired.' label='$$$/xmp/exif/flash/Fired_label=Fired'>
+      <xmp_choice raw_value='True' label='$$$/xmp/exif/Flash/Fired/True=Fired'/>
+      <xmp_choice raw_value='False' label='$$$/xmp/exif/Flash/Fired/False=Did not fire'/>
+    </xmp_field>
+    <xmp_field prefix='exif' name='Return' type='closedchoice' namespace='http://ns.adobe.com/exif/1.0/' description='$$$/xmp/exif/flash/Return_description=Whether strobe return is supported and if supported, detected.' element_type='text' label='$$$/xmp/exif/flash/Return_label=Return'>
+      <xmp_choice raw_value='0' label='$$$/xmp/exif/flash/Return/0=No strobe return detection'/>
+      <xmp_choice raw_value='2' label='$$$/xmp/exif/flash/Return/1=Strobe return light not detected'/>
+      <xmp_choice raw_value='3' label='$$$/xmp/exif/flash/Return/2=Strobe return light detected'/>
+    </xmp_field>
+    <xmp_field prefix='exif' name='Mode' type='closedchoice' namespace='http://ns.adobe.com/exif/1.0/' description='$$$/xmp/exif/flash/Mode_description=The flash mode.' element_type='text' label='$$$/xmp/exif/flash/Mode_label=Mode'>
+      <xmp_choice raw_value='0' label='$$$/xmp/exif/flash/Mode/0=Unknown'/>
+      <xmp_choice raw_value='1' label='$$$/xmp/exif/flash/Mode/1=Compulsory flash firing'/>
+      <xmp_choice raw_value='2' label='$$$/xmp/exif/flash/Mode/2=Compulsory flash suppression'/>
+      <xmp_choice raw_value='3' label='$$$/xmp/exif/flash/Mode/3=Auto mode'/>
+    </xmp_field>
+    <xmp_field prefix='exif' name='Function' type='boolean' namespace='http://ns.adobe.com/exif/1.0/' description='$$$/xmp/exif/flash/Function_description=True if flash function is not present.' label='$$$/xmp/exif/flash/Function_label=Function'>
+        <xmp_choice raw_value='True' label='$$$/xmp/exif/Flash/Function/True=Flash function not present'/>
+        <xmp_choice raw_value='False' label='$$$/xmp/exif/Flash/Function/False=Flash function present'/>
+	</xmp_field>
+    <xmp_field prefix='exif' name='RedEyeMode' type='boolean' namespace='http://ns.adobe.com/exif/1.0/' description='$$$/xmp/exif/flash/RedEyeMode_description=True if red-eye reduction is supported.' label='$$$/xmp/exif/flash/RedEyeMode_label=Red Eye Mode'>
+        <xmp_choice raw_value='True' label='$$$/xmp/exif/Flash/RedEyeMode/True=Red-eye reduction'/>
+        <xmp_choice raw_value='False' label='$$$/xmp/exif/Flash/RedEyeMode/False=No red-eye reduction'/>
+	</xmp_field>
+  </xmp_type>
+  <xmp_type name='oecf/sfr' description='$$$/xmp/exif/oecf/sfr_description=A structure describing the OECF/SFR.' label='$$$/xmp/exif/oecf/sfr_label=OECF/SFR'>
+    <xmp_field prefix='exif' name='Columns' type='integer' namespace='http://ns.adobe.com/exif/1.0/' description='$$$/xmp/exif/oecf/sfr/Columns_description=Number of columns, n.' label='$$$/xmp/exif/oecf/sfr/Columns_label=Columns'/>
+    <xmp_field prefix='exif' name='Rows' type='integer' namespace='http://ns.adobe.com/exif/1.0/' description='$$$/xmp/exif/oecf/sfr/Rows_description=Number of rows, m.' label='$$$/xmp/exif/oecf/sfr/Rows_label=Rows'/>
+    <xmp_field prefix='exif' name='Names' type='seq' namespace='http://ns.adobe.com/exif/1.0/' description='$$$/xmp/exif/oecf/sfr/Names_description=Column item names, n entries.' element_type='text' label='$$$/xmp/exif/oecf/sfr/Names_label=Names'/>
+    <xmp_field prefix='exif' name='Values' type='seq' namespace='http://ns.adobe.com/exif/1.0/' description='$$$/xmp/exif/oecf/sfr/Values_description=OECF/SFR values, sequence should be in order: value 0,0 ... value n - 1, 0 value 0, m - 1 ... value n - 1, m - 1.' element_type='rational' label='$$$/xmp/exif/oecf/sfr/Values_label=Values'/>
+  </xmp_type>
+  <xmp_type name='cfapattern' description='$$$/xmp/exif/cfapattern_description=A structure describing the CFA pattern' label='$$$/xmp/exif/cfapattern_label=CFA Pattern'>
+    <xmp_field prefix='exif' name='Columns' type='integer' namespace='http://ns.adobe.com/exif/1.0/' description='$$$/xmp/exif/cfapattern/Columns_description=Number of columns, n.' label='$$$/xmp/exif/cfapattern/Columns_label=Columns'/>
+    <xmp_field prefix='exif' name='Rows' type='integer' namespace='http://ns.adobe.com/exif/1.0/' description='$$$/xmp/exif/cfapattern/Rows_description=Number of rows, m.' label='$$$/xmp/exif/cfapattern/Rows_label=Rows'/>
+    <xmp_field prefix='exif' name='Values' type='seq' namespace='http://ns.adobe.com/exif/1.0/' description='$$$/xmp/exif/cfapattern/Values_description=CFA values, sequence should be in order: value 0,0 ... value n - 1, 0 value 0, m - 1 ... value n - 1, m - 1.' element_type='integer' label='$$$/xmp/exif/cfapattern/Values_label=Values'/>
+  </xmp_type>
+  <xmp_type name='devicesettings' description='$$$/xmp/exif/devicesettings_description=A structure describing the device settings.' label='$$$/xmp/exif/devicesettings_label=Device Settings'>
+    <xmp_field prefix='exif' name='Columns' type='integer' namespace='http://ns.adobe.com/exif/1.0/' description='$$$/xmp/exif/devicesettings/Columns_description=Display columns.' label='$$$/xmp/exif/devicesettings/Columns_label=Columns'/>
+    <xmp_field prefix='exif' name='Rows' type='integer' namespace='http://ns.adobe.com/exif/1.0/' description='$$$/xmp/exif/devicesettings/Rows_description=Display rows.' label='$$$/xmp/exif/devicesettings/Rows_label=Rows'/>
+    <xmp_field prefix='exif' name='Settings' type='seq' namespace='http://ns.adobe.com/exif/1.0/' description='$$$/xmp/exif/devicesettings/Settings_description=Camera settings, in order.' element_type='text' label='$$$/xmp/exif/devicesettings/Settings_label=Settings'/>
+  </xmp_type>
+</xmp_definitions>

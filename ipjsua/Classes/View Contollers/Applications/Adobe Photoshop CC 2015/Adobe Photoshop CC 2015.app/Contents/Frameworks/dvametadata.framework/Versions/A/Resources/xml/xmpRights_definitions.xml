@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xmp_definitions>
+  <xmp_schema prefix='xmpRights' namespace='http://ns.adobe.com/xap/1.0/rights/' description='$$$/xmp/xmpRights_description=This schema includes properties related to rights management. These properties specify information regarding the legal restrictions associated with a resource.' label='$$$/xmp/xmpRights_label=Rights Management'>
+    <xmp_property name='Certificate' category='external' type='url' description='$$$/xmp/xmpRights/Certificate_description=Online rights management certificate.' label='$$$/xmp/xmpRights/Certificate_label=Certificate'/>
+    <xmp_property name='Marked' category='external' type='boolean' description='$$$/xmp/xmpRights/Marked_description=Indicates that this is a rights-managed resource.' label='$$$/xmp/xmpRights/Marked_label=Marked'/>
+    <xmp_property name='Owner' category='external' type='bag' description='$$$/xmp/xmpRights/Owner_description=An unordered array specifying the legal owner(s) of a resource.' element_type='propername' label='$$$/xmp/xmpRights/Owner_label=Owner'/>
+    <xmp_property name='UsageTerms' category='external' type='langalt' description='$$$/xmp/xmpRights/UsageTerms_description=Text instructions on how a resource can be legally used.' label='$$$/xmp/xmpRights/UsageTerms_label=Rights Usage Terms'/>
+    <xmp_property name='WebStatement' category='external' type='url' description='$$$/xmp/xmpRights/WebStatement_description=The location of a web page describing the owner and/or rights statement for this resource.' label='$$$/xmp/xmpRights/WebStatement_label=Web Statement'/>
+  </xmp_schema>
+</xmp_definitions>

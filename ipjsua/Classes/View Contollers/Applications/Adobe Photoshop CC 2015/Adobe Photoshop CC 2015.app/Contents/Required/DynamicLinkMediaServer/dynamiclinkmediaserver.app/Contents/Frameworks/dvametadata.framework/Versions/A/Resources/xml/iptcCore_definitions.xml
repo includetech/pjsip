@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xmp_definitions>
+	<xmp_schema prefix='Iptc4xmpCore' namespace='http://iptc.org/std/Iptc4xmpCore/1.0/xmlns/' description='$$$/xmp/Iptc4xmpCore_description=IPTC Photo Metadata provides data about photographs and the values can be processed by software. Each individual metadata entity is called a property and they are grouped into Administrative, Descriptive and Rights Related properties.' label='$$$/xmp/Iptc4xmpCore_label=IPTC Core Properties'>
+		<!-- Contact Info -->
+		<xmp_property name='CreatorContactInfo' category='external' type='CreatorContactInfo' description="$$$/xmp/Iptc4xmpCore/CreatorContactInfo_description=The photographer's contact information" label='$$$/xmp/Iptc4xmpCore/CreatorContactInfo_label=IPTC Contact'/>
+
+		<!-- Image -->
+		<xmp_property name='IntellectualGenre' category='external' type='text' description='$$$/xmp/Iptc4xmpCore/IntellectualGenre_description=Enter a term to describe the nature of this image in terms of its intellectual or journalistic characteristics (examples at: http://www.newscodes.org/)' label='$$$/xmp/Iptc4xmpCore/IntellectualGenre_label=Intellectual Genre'/>
+		<xmp_property name='Scene' category='external' type='bag' element_type='text' description='$$$/xmp/Iptc4xmpCore/Scene_description=Enter only values from the IPTC Scene NewsCodes Controlled Vocabulary (see: http://www.newscodes.org/)' label='$$$/xmp/Iptc4xmpCore/Scene_label=IPTC Scene Code'/>
+		<xmp_property name='Location' category='external' type='text' description='$$$/xmp/Iptc4xmpCore/Location_description=Enter the name of the Sublocation pictured in this image' label='$$$/xmp/Iptc4xmpCore/Location_label=Sublocation' deprecated="true"/>
+		<xmp_property name='CountryCode' category='external' type='locale' description='$$$/xmp/Iptc4xmpCore/CountryCode_description=Enter the 2 or 3 letter ISO 3166 Country Code of the Country pictured in this image' label='$$$/xmp/Iptc4xmpCore/CountryCode_label=ISO Country Code' deprecated="true"/>
+
+		<!-- Content -->
+		<xmp_property name='SubjectCode' category='external' type='bag' element_type='text' description="$$$/xmp/Iptc4xmpCore/SubjectCode_description=Enter only values from the IPTC Subject NewsCode Controlled Vocabulary (see: http://www.newscodes.org/)" label='$$$/xmp/Iptc4xmpCore/SubjectCode_label=IPTC Subject Code'/>
+	</xmp_schema>
+	
+	<!-- Types -->
+	<xmp_type name='CreatorContactInfo' label="$$$/xmp/Iptc4xmpCore/CreatorContactInfo_label=IPTC Contact" description="$$$/xmp/Iptc4xmpCore/CreatorContactInfo_description=The photographer's contact information">
+		<xmp_field prefix='Iptc4xmpCore' name='CiAdrExtadr' type='text' namespace='http://iptc.org/std/Iptc4xmpCore/1.0/xmlns/' label='$$$/xmp/Iptc4xmpCore/CiAdrExtadr_label=Address' description='$$$/xmp/Iptc4xmpCore/CiAdrExtadr_description=Enter Address for the person that created this image'/>
+		<xmp_field prefix='Iptc4xmpCore' name='CiAdrCity' type='text' namespace='http://iptc.org/std/Iptc4xmpCore/1.0/xmlns/' label='$$$/xmp/Iptc4xmpCore/CiAdrCity_label=City' description='$$$/xmp/Iptc4xmpCore/CiAdrCity_description=Enter the City for the address of the person that created this image'/>
+		<xmp_field prefix='Iptc4xmpCore' name='CiAdrRegion' type='text' namespace='http://iptc.org/std/Iptc4xmpCore/1.0/xmlns/' label='$$$/xmp/Iptc4xmpCore/CiAdrRegion_label=State/Province' description='$$$/xmp/Iptc4xmpCore/CiAdrRegion_description=Enter the State for the address of the person that created this image'/>
+		<xmp_field prefix='Iptc4xmpCore' name='CiAdrPcode' type='text' namespace='http://iptc.org/std/Iptc4xmpCore/1.0/xmlns/' label='$$$/xmp/Iptc4xmpCore/CiAdrPcode_label=Postal Code' description='$$$/xmp/Iptc4xmpCore/CiAdrPcode_description=Enter the Postal Code for the address of the person that created this imag'/>
+		<xmp_field prefix='Iptc4xmpCore' name='CiAdrCtry' type='text' namespace='http://iptc.org/std/Iptc4xmpCore/1.0/xmlns/' label='$$$/xmp/Iptc4xmpCore/CiAdrCtry_label=Country' description='$$$/xmp/Iptc4xmpCore/CiAdrCtry_description=Enter the Country name for the address of the person that created this image'/>
+		<xmp_field prefix='Iptc4xmpCore' name='CiTelWork' type='text' namespace='http://iptc.org/std/Iptc4xmpCore/1.0/xmlns/' label='$$$/xmp/Iptc4xmpCore/CiTelWork_label=Phone(s)' description='$$$/xmp/Iptc4xmpCore/CiTelWork_description=Enter the work Phone number(s) for the person that created this image, using the international format, such as +1 (123) 456789'/>
+		<xmp_field prefix='Iptc4xmpCore' name='CiEmailWork' type='text' namespace='http://iptc.org/std/Iptc4xmpCore/1.0/xmlns/' label='$$$/xmp/Iptc4xmpCore/CiEmailWork_label=E-Mail(s)' description='$$$/xmp/Iptc4xmpCore/CiEmailWork_description=Enter the work Email address(es) for the person that created this image, such as name@domain.com'/>
+		<xmp_field prefix='Iptc4xmpCore' name='CiUrlWork' type='text' namespace='http://iptc.org/std/Iptc4xmpCore/1.0/xmlns/' label='$$$/xmp/Iptc4xmpCore/CiUrlWork_label=Website(s)' description='$$$/xmp/Iptc4xmpCore/CiUrlWork_description=Enter the work Web URL(s) for the person that created this image, such as http://www.domain.com/'/>
+	</xmp_type>
+</xmp_definitions>

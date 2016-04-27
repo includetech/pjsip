@@ -1,0 +1,62 @@
+/*  CSS Document                             */
+@charset "UTF-8";
+
+/* Global Styles */
+
+.hello_test_base_font_def {
+	font-family: "Lucida Grande", "Tahoma", sans-serif;
+	font-size: 12px; font-weight: normal; 
+	color: #000;
+	margin: 0px; padding: 0px;
+}
+h1 { font-size: 16px; font-weight: bold; }
+h2 { font-size: 14px; font-weight: bold; }
+p  { font-size: 12px; margin-left: 40px; text-indent: -25px; }
+
+.hello_test_error   { color: #A00; }
+.hello_test_success { color: #0A0; }
+
+
+/* Sectional Styles */
+
+#hello_test_registration_test {
+	background-color: #eeeeee; 
+    padding: 10px;
+}
+
+#hello_test_content_test { 
+	border-top-style: solid; 
+    border-top-color: #aaaaaa; 
+    border-top-width: 1px;
+	background-color: #eeeeee;
+    padding: 10px;
+}
+
+#hello_test_JSON_test { 
+	border-top-style: solid; 
+    border-top-color: #aaaaaa; 
+    border-top-width: 1px;
+	background-color: #eeeeee;
+    padding: 10px;
+}
+
+#hello_test_callback_test { 
+	border-top-style: solid; 
+    border-top-color: #aaaaaa; 
+    border-top-width: 1px;
+	background-color: #eeeeee; 
+    padding: 10px;
+}
+
+#hello_test_functional_test { 
+	border-top-style: solid; 
+    border-top-color: #aaaaaa; 
+    border-top-width: 1px;
+	background-color: #eeeeee; 
+    padding: 10px;
+}
+#hello_test_functional_test a { display: block; text-decoration: none; color: #000; }
+#hello_test_functional_test a:hover { background-color: #cccccc; }
+#hello_test_functional_test form { font-size: 14px; }
+#hello_test_functional_test label { padding-left: 3px; }
+#hello_test_functional_test button { font-size: 14px; margin: 0px; margin-left: 20px; width: 120px; height: 30px; }

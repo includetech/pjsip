@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildDate</key>
+	<string>2015/04/28:18:15:43</string>
+	<key>BuildID</key>
+	<string>32699</string>
+	<key>BuildVersion</key>
+	<string>1.563170</string>
+	<key>CFBundleExecutable</key>
+	<string>AdbePM</string>
+	<key>CFBundleGetInfoString</key>
+	<string>AdbePM 2.3.00.32699, Copyright 2012-2014 Adobe Systems Incorporated.</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.adobe.PM</string>
+	<key>CFBundleName</key>
+	<string>AdbePM</string>
+	<key>CFBundlePackageType</key>
+	<string>FMWK</string>
+	<key>CFBundleShortVersionString</key>
+	<string>AdbePM 2.3.00.32699</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>2.3.00.32699</string>
+	<key>Configuration</key>
+	<string>AdbePM Release</string>
+</dict>
+</plist>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Printer>
+	<Version value='1' />
+	<PrintLocation value='Shapeways.com' />
+	<PrintVolume X='230' Y='180' Z='310' />
+	<PrinterResolution X='5' Y='5' Z='5' />
+	<MeshRepairResolution value='7' />
+	<PrinterHeads value='1' />
+	<PrinterSupportsUSB flag='0' />
+	<PreferredFileFormat value='stl' />
+	<NeedsZip flag='1' />
+	<Quality value='high'>
+		<MeshRepairResolution value='8' />
+	</Quality>
+	<Quality value='medium'>
+		<MeshRepairResolution value='7' />
+	</Quality>
+	<Quality value='low'>
+		<MeshRepairResolution value='6' />
+	</Quality>
+</Printer>
+<Materials>
+	<Material name='Yellow, Strong and Flexible Plastic'>
+		<NeedsRaft flag='0' />
+		<NeedsSupports flag='0' />
+		<NeedsEscapeHoles flag='0' />
+		<MinimumWallThickness value='0.7' />
+		<PricePerCubicCM value='0.28' />
+		<PricePerCubicCMMachineSpace value='0.21' />
+		<PricePerPart value='2.5' />
+		<Diffuse R='0.988' G='0.890' B='0.255' />
+		<Specular R='1.000' G='0.969' B='0.451' />
+		<Illumination R='0' G='0' B='0' />
+		<Ambient R='0.0400' G='0.0400' B='0.0400' />
+		<Shine value='0.26' />
+		<Reflection value='0.04' />
+		<Roughness value='0.4' />
+		<Bump value='0' />
+		<Opacity value='1' />
+		<Refraction value='1.003' />
+	</Material>
+</Materials>

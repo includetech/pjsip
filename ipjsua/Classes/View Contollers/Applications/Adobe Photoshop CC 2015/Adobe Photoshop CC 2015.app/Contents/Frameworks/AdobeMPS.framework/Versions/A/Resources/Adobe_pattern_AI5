@@ -1,0 +1,804 @@
+%%BeginResource: procset Adobe_pattern_AI5 2.0 0
+%%Title: (Universal Adobe Illustrator (R) Version 5.0 Pattern Operators)
+%%Version: 2.0 0
+%%CreationDate: (9/24/96) ()
+%%Copyright: ((C) 1987-1993 Adobe Systems Incorporated All Rights Reserved)
+currentpacking true setpacking
+userdict /Adobe_Illustrator_AI5 known not {
+	userdict /Adobe_Illustrator_AI5 90 dict put
+} if
+userdict /Adobe_Illustrator_AI5 get begin
+/@
+{
+} def
+/&
+{
+} def
+/dp
+{
+	dup null eq
+	{
+		pop
+		_dp 0 ne
+		{
+			0 1 _dp 1 sub _dl mod
+			{
+				_da exch get 3 get
+			} for
+			_dp 1 sub _dl mod 1 add packedarray
+			_da 0 get aload pop 8 -1 roll 5 -1 roll pop 4 1 roll
+			definepattern pop
+		} if
+	}
+	{
+		_dp 0 ne _dp _dl mod 0 eq and
+		{
+			null dp
+		} if
+		7 packedarray _da exch _dp _dl mod exch put
+		_dp _dl mod _da 0 get 4 get 2 packedarray
+		/_dp _dp 1 add def
+	} ifelse
+} def
+/E
+{
+	_ed begin
+	dup 0 get type /arraytype ne
+	{
+		0
+		{
+			dup 1 add index type /arraytype eq
+			{
+				1 add
+			}
+			{
+				exit
+			} ifelse
+		} loop
+		array astore
+	} if
+	/_dd exch def
+	/_ury exch def
+	/_urx exch def
+	/_lly exch def
+	/_llx exch def
+	/_n exch def
+	/_y 0 def
+	/_dl 4 def
+	/_dp 0 def
+	/_da _dl array def
+	0 1 _dd length 1 sub
+	{
+		/_d exch _dd exch get def
+		0 2 _d length 2 sub
+		{
+			/_x exch def
+			/_c _d _x get _ ne def
+			/_r _d _x 1 add get cvlit def
+			_r _ ne
+			{
+				_urx _llx sub _ury _lly sub
+				[
+				1 0 0 1 0 0
+				]
+				[
+				/save cvx
+				_llx neg _lly neg /translate cvx
+				_c
+				{
+					nc /begin cvx
+				} if
+				_r dup type /stringtype eq
+				{
+					cvx
+				}
+				{
+					{
+						exec
+					} /forall cvx
+				} ifelse
+				_c
+				{
+					/end cvx
+				} if
+				/restore cvx
+				] cvx
+				/_fn 12 _n length add string def
+				_y _fn cvs pop
+				/_y _y 1 add def
+				_fn 12 _n putinterval
+				_fn _c false dp
+				_d exch _x 1 add exch put
+			} if
+		} for
+	} for
+	null dp
+	_n _dd /_pd
+ end
+	xput
+} def
+/fc
+{
+	_fm dup concatmatrix pop
+} def
+/p
+{
+	/_fm exch ddef
+	9 -2 roll _pm translate fc
+	7 -2 roll _pm scale fc
+	5 -1 roll _pm rotate fc
+	4 -2 roll exch 0 ne
+	{
+		dup _pm rotate fc
+		1 -1 _pm scale fc
+		neg _pm rotate fc
+	}
+	{
+		pop
+	} ifelse
+	dup _pm rotate fc
+	exch dup sin exch cos div 1 0 0 1 0 6 2 roll
+	_pm astore fc
+	neg _pm rotate fc
+	_pd exch get /_fdd exch ddef
+	/_pf
+	{
+		save
+		/_doClip 0 ddef
+		0 1 _fdd length 1 sub
+		{
+			/_fd exch _fdd exch get ddef
+			_fd
+			0 2 _fd length 2 sub
+			{
+				gsave
+				2 copy get dup _ ne
+				{
+					cvx exec _fc
+				}
+				{
+					pop
+				} ifelse
+				2 copy 1 add get dup _ ne
+				{
+					aload pop findfont _fm
+					patternfill
+				}
+				{
+					pop
+					fill
+				} ifelse
+				grestore
+				pop
+			} for
+			pop
+		} for
+		restore
+		newpath
+	} ddef
+	/_psf
+	{
+		save
+		/_doClip 0 ddef
+		0 1 _fdd length 1 sub
+		{
+			/_fd exch _fdd exch get ddef
+			_fd
+			0 2 _fd length 2 sub
+			{
+				gsave
+				2 copy get dup _ ne
+				{
+					cvx exec _fc
+				}
+				{
+					pop
+				} ifelse
+				2 copy 1 add get dup _ ne
+				{
+					aload pop findfont _fm
+					9 copy 6 npop patternashow
+				}
+				{
+					pop
+					6 copy 3 npop ashow
+				} ifelse
+				grestore
+				pop
+			} for
+			pop
+		} for
+		restore
+		sw rmoveto
+	} ddef
+	/_pjsf
+	{
+		save
+		/_doClip 0 ddef
+		0 1 _fdd length 1 sub
+		{
+			/_fd exch _fdd exch get ddef
+			_fd
+			0 2 _fd length 2 sub
+			{
+				gsave
+				2 copy get dup _ ne
+				{
+					cvx exec _fc
+				}
+				{
+					pop
+				} ifelse
+				2 copy 1 add get dup _ ne
+				{
+					aload pop findfont _fm
+					12 copy 6 npop patternawidthshow
+				}
+				{
+					pop 9 copy 3 npop awidthshow
+				} ifelse
+				grestore
+				pop
+			} for
+			pop
+		} for
+		restore
+		swj rmoveto
+	} ddef
+	/_lp /none ddef
+} def
+/sc
+{
+	_sm dup concatmatrix pop
+} def
+/P
+{
+	/_sm exch ddef
+	9 -2 roll _pm translate sc
+	7 -2 roll _pm scale sc
+	5 -1 roll _pm rotate sc
+	4 -2 roll exch 0 ne
+	{
+		dup _pm rotate sc
+		1 -1 _pm scale sc
+		neg _pm rotate sc
+	}
+	{
+		pop
+	} ifelse
+	dup _pm rotate sc
+	exch dup sin exch cos div 1 0 0 1 0 6 2 roll
+	_pm astore sc
+	neg _pm rotate sc
+	_pd exch get /_sdd exch ddef
+	/_ps
+	{
+		save
+		/_doClip 0 ddef
+		0 1 _sdd length 1 sub
+		{
+			/_sd exch _sdd exch get ddef
+			_sd
+			0 2 _sd length 2 sub
+			{
+				gsave
+				2 copy get dup _ ne
+				{
+					cvx exec _sc
+				}
+				{
+					pop
+				} ifelse
+				2 copy 1 add get dup _ ne
+				{
+					aload pop findfont _sm
+					patternstroke
+				}
+				{
+					pop stroke
+				} ifelse
+				grestore
+				pop
+			} for
+			pop
+		} for
+		restore
+		newpath
+	} ddef
+	/_pss
+	{
+		save
+		/_doClip 0 ddef
+		0 1 _sdd length 1 sub
+		{
+			/_sd exch _sdd exch get ddef
+			_sd
+			0 2 _sd length 2 sub
+			{
+				gsave
+				2 copy get dup _ ne
+				{
+					cvx exec _sc
+				}
+				{
+					pop
+				} ifelse
+				2 copy 1 add get dup _ ne
+				{
+					aload pop findfont _sm
+					10 copy 6 npop patternashowstroke
+				}
+				{
+					pop 7 copy 3 npop ss
+				} ifelse
+				grestore
+				pop
+			} for
+			pop
+		} for
+		restore
+		pop sw rmoveto
+	} ddef
+	/_pjss
+	{
+		save
+		/_doClip 0 ddef
+		0 1 _sdd length 1 sub
+		{
+			/_sd exch _sdd exch get ddef
+			_sd
+			0 2 _sd length 2 sub
+			{
+				gsave
+				2 copy get dup _ ne
+				{
+					cvx exec _sc
+				}
+				{
+					pop
+				} ifelse
+				2 copy 1 add get dup _ ne
+				{
+					aload pop findfont _sm
+					13 copy 6 npop patternawidthshowstroke
+				}
+				{
+					pop 10 copy 3 npop jss
+				} ifelse
+				grestore
+				pop
+			} for
+			pop
+		} for
+		restore
+		pop swj rmoveto
+	} ddef
+	/_lp /none ddef
+} def
+end
+userdict /Adobe_pattern_AI5 18 dict dup begin
+put
+/initialize
+{
+	pop pop
+} def
+/initialize2
+{
+	/definepattern where
+	{
+		pop
+	}
+	{
+	 begin
+	 begin
+		Adobe_pattern_AI5 begin
+		Adobe_pattern_AI5
+		{
+			dup xcheck
+			{
+				bind
+			} if
+			pop pop
+		} forall
+		mark
+		cachestatus 7 1 roll pop pop pop pop exch pop exch
+		{
+			{
+				10000 add
+				dup 2 index gt
+				{
+					exit
+				} if
+				dup setcachelimit
+			} loop
+		} stopped
+		cleartomark
+	 end 	
+		
+	 end
+	 end
+		
+		Adobe_pattern_AI5 begin
+	} ifelse
+} def
+/terminate
+{
+} def
+/terminate2
+{
+	currentdict Adobe_pattern_AI5 eq
+	{
+	 end
+	} if
+} def
+errordict
+/nocurrentpoint
+{
+	pop
+	stop
+} put
+errordict
+/invalidaccess
+{
+	pop
+	stop
+} put
+/patternencoding
+256 array def
+0 1 255
+{
+	patternencoding exch ( ) 2 copy exch 0 exch put cvn put
+} for
+/definepattern
+{
+	17 dict begin
+	/uniform exch def
+	/cache exch def
+	/key exch def
+	/procarray exch def
+	/mtx exch matrix invertmatrix def
+	/height exch def
+	/width exch def
+	/ctm matrix currentmatrix def
+	/ptm matrix def
+	/str 32 string def
+	/slice 9 dict def
+	slice /s 1 put
+	slice /q 256 procarray length div sqrt floor cvi put
+	slice /b 0 put
+	/FontBBox
+	[
+	0 0 0 0
+	] def
+	/FontMatrix mtx matrix copy def
+	/Encoding patternencoding def
+	/FontType 3 def
+	/BuildChar
+	{
+		exch
+	 begin
+		/setstrokeadjust where {pop true setstrokeadjust} if
+		slice begin
+		dup q dup mul mod s idiv /i exch def
+		dup q dup mul mod s mod /j exch def
+		q dup mul idiv procarray exch get
+		/xl j width s div mul def
+		/xg j 1 add width s div mul def
+		/yl i height s div mul def
+		/yg i 1 add height s div mul def
+		uniform
+		{
+			1 1
+		}
+		{
+			width 0 dtransform
+			dup mul exch dup mul add sqrt dup 1 add exch div
+			0 height dtransform
+			dup mul exch dup mul add sqrt dup 1 add exch div
+		} ifelse
+		width 0 cache
+		{
+			xl 4 index mul yl 4 index mul xg 6 index mul yg 6 index mul
+			setcachedevice
+		}
+		{
+			setcharwidth
+		} ifelse
+		gsave
+		scale
+		newpath
+		xl yl moveto
+		xg yl lineto
+		xg yg lineto
+		xl yg lineto
+		closepath
+		clip
+		newpath
+	 end
+	 end
+		exec
+		grestore
+	} def
+	key currentdict definefont
+ end
+} def
+/patterncachesize
+{
+	gsave
+	newpath
+	0 0 moveto
+	width 0 lineto
+	width height lineto
+	0 height lineto
+	closepath
+	patternmatrix setmatrix
+	pathbbox
+	exch ceiling 4 -1 roll floor sub 3 1 roll
+	ceiling exch floor sub
+	mul 1 add
+	grestore
+} def
+/patterncachelimit
+{
+	cachestatus 7 1 roll 6 npop 8 mul
+} def
+/patternpath
+{
+	exch dup begin
+	setfont
+	ctm setmatrix
+	concat
+	slice exch /b exch slice /q get dup mul mul put
+	FontMatrix concat
+	uniform
+	{
+		width 0 dtransform round width div exch round width div exch
+		0 height dtransform round height div exch height div exch
+		0 0 transform round exch round exch
+		ptm astore setmatrix
+	}
+	{
+		ptm currentmatrix pop
+	} ifelse
+	{
+		currentpoint
+	} stopped not
+	{
+		2 npop
+		pathbbox
+		true
+		4 index 3 index eq
+		4 index 3 index eq
+		and
+		{
+			pop false
+			{
+				{
+					2 npop
+				}
+				{
+					3 npop true
+				}
+				{
+					7 npop true
+				}
+				{
+					pop true
+				} pathforall
+			} stopped
+			{
+				5 npop true
+			} if
+		} if
+		{
+			height div ceiling height mul 4 1 roll
+			width div ceiling width mul 4 1 roll
+			height div floor height mul 4 1 roll
+			width div floor width mul 4 1 roll
+			2 index sub height div ceiling cvi exch
+			3 index sub width div ceiling cvi exch
+			4 2 roll moveto
+			FontMatrix mtx invertmatrix
+			dup dup 4 get exch 5 get rmoveto
+			ptm ptm concatmatrix pop
+			slice /s
+			patterncachesize patterncachelimit div ceiling sqrt ceiling cvi
+			dup slice /q get gt
+			{
+				pop slice /q get
+			} if
+			put
+			0 1 slice /s get dup mul 1 sub
+			{
+				slice /b get add
+				gsave
+				0 1 str length 1 sub
+				{
+					str exch 2 index put
+				} for
+				pop
+				dup
+				{
+					gsave
+					ptm setmatrix
+					1 index str length idiv
+					{
+						str show
+					} repeat
+					1 index str length mod str exch 0 exch getinterval show
+					grestore
+					0 height rmoveto
+				} repeat
+				grestore
+			} for
+			2 npop
+		}
+		{
+			4 npop
+		} ifelse
+	} if
+ end
+} def
+/patternclip
+{
+	_eo {eoclip} {clip} ifelse
+} def
+/patternstrokepath
+{
+	strokepath
+} def
+/patternmatrix
+matrix def
+/patternfill
+{
+	dup type /dicttype eq
+	{
+		Adobe_pattern_AI5 /patternmatrix get
+	} if
+	gsave
+	patternclip
+	Adobe_pattern_AI5 /patternpath get exec
+	grestore
+	newpath
+} def
+/patternstroke
+{
+	dup type /dicttype eq
+	{
+		Adobe_pattern_AI5 /patternmatrix get
+	} if
+	gsave
+	patternstrokepath
+	true
+	{
+		{
+			{
+				newpath
+				moveto
+			}
+			{
+				lineto
+			}
+			{
+				curveto
+			}
+			{
+				closepath
+				3 copy
+				Adobe_pattern_AI5 /patternfill get exec
+			} pathforall
+			3 npop
+		} stopped
+		{
+			5 npop
+			patternclip
+			Adobe_pattern_AI5 /patternfill get exec
+		} if
+	}
+	{
+		patternclip
+		Adobe_pattern_AI5 /patternfill get exec
+	} ifelse
+	grestore
+	newpath
+} def
+/patternashow
+{
+	3 index type /dicttype eq
+	{
+		Adobe_pattern_AI5 /patternmatrix get 4 1 roll
+	} if
+	{
+		2 npop (0) exch
+		2 copy 0 exch put pop
+		gsave
+		false charpath currentpoint
+		6 index 6 index 6 index
+		Adobe_pattern_AI5 /patternfill get exec
+		grestore
+		newpath moveto
+		2 copy rmoveto
+	} exch cshow
+	5 npop
+} def
+/patternawidthshow
+{
+	6 index type /dicttype eq
+	{
+		Adobe_pattern_AI5 /patternmatrix get 7 1 roll
+	} if
+	{
+		2 npop (0) exch
+		2 copy 0 exch put
+		gsave
+		_sp eq
+		{
+			5 index 5 index rmoveto
+		} if
+		false charpath currentpoint
+		9 index 9 index 9 index
+		Adobe_pattern_AI5 /patternfill get exec
+		grestore
+		newpath moveto
+		2 copy rmoveto
+	} exch cshow
+	8 npop
+} def
+/patternashowstroke
+{
+	4 index type /dicttype eq
+	{
+		patternmatrix /patternmatrix get 5 1 roll
+	} if
+	4 1 roll
+	{
+		2 npop (0) exch
+		2 copy 0 exch put pop
+		gsave
+		false charpath
+		currentpoint
+		4 index setmatrix
+		7 index 7 index 7 index
+		Adobe_pattern_AI5 /patternstroke get exec
+		grestore
+		newpath moveto
+		2 copy rmoveto
+	} exch cshow
+	6 npop
+} def
+/patternawidthshowstroke
+{
+	7 index type /dicttype eq
+	{
+		patternmatrix /patternmatrix get 8 1 roll
+	} if
+	7 1 roll
+	{
+		2 npop (0) exch
+		2 copy 0 exch put
+		gsave
+		_sp eq
+		{
+			5 index 5 index rmoveto
+		} if
+		false charpath currentpoint
+		7 index setmatrix
+		10 index 10 index 10 index
+		Adobe_pattern_AI5 /patternstroke get exec
+		grestore
+		newpath moveto
+		2 copy rmoveto
+	} exch cshow
+	9 npop
+} def
+end
+setpacking
+userdict /Adobe_pattern_AI3 known not
+{
+	userdict /Adobe_pattern_AI3 2 dict put 
+} if
+userdict /Adobe_pattern_AI3 get begin
+/initialize { } def
+/terminate { } def
+end
+%%EndResource

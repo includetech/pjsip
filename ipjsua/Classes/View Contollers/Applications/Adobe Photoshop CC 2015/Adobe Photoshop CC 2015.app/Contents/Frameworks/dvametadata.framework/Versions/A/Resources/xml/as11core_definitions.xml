@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xmp_definitions>
+  <xmp_schema prefix='as11c' namespace='http://amwa.tv/mxf/as/11/core/' description='$$$/xmp/as11c_description=AS-11 Core metadata.' label='$$$/xmp/as11c_label=AS-11 Core'>
+    <xmp_property name='seriesTitle' category='external' type='text' description='$$$/xmp/as11c/seriesTitle_description=(*Required) The final title of a grouping of publishable assets with sharing identification and branding linked by common characters, subject matter, style or story.' label='$$$/xmp/as11c/seriesTitle_label=Series Title *'/>
+    <xmp_property name='programmeTitle' category='external' type='text' description='$$$/xmp/as11c/programmeTitle_description=(*Required) The title of a Programme Version for a specific purpose.' label='$$$/xmp/as11c/programmeTitle_label=Programme Title *'/>
+    <xmp_property name='episodeTitleNumber' category='external' type='text' description='$$$/xmp/as11c/episodeTitleNumber_description=(*Required) Final episode name and or number used to identify an individual episode.' label='$$$/xmp/as11c/episodeTitleNumber_label=Episode Title Number *'/>
+	<xmp_property name='shimName' category='internal' type='openchoice' description='$$$/xmp/as11c/shimName_description=The name of the AS-11 shim specification to which the associated MXF file conforms.' element_type='text' label='$$$/xmp/as11c/shimName_label=Shim Name'>
+	  <xmp_choice raw_value='UK DPP HD' label='$$$/xmp/as11c/shimName/ukDppHd=UK DPP HD'/>
+      <xmp_choice raw_value='UK DPP SD' label='$$$/xmp/as11c/shimName/ukDppSd=UK DPP SD'/>
+	</xmp_property>
+	<xmp_property name='shimVersion' category='internal' type='openchoice' description='$$$/xmp/as11c/shimVersion_description=The version of the AS-11 shim specification to which the associated MXF file conforms.' element_type='text' label='$$$/xmp/as11c/shimVersion_label=Shim Version'>
+	      <xmp_choice raw_value='1.1' label='$$$/xmp/as11c/shimVersion/1.1=1.1'/>
+	</xmp_property>
+	<xmp_property name='audioTrackLayout' category='external' type='openchoice' description='$$$/xmp/as11c/audioTrackLayout_description=(*Required) The set of permissible EBU R 48 and EBU R 123 track allocation names.' element_type='integer' label='$$$/xmp/as11c/audioTrackLayout_label=Audio Track Layout *'>
+		<xmp_choice raw_value='0' label='$$$/xmp/as11c/audioTrackLayout/0=EBU R 48: 1a'/>
+		<xmp_choice raw_value='1' label='$$$/xmp/as11c/audioTrackLayout/1=EBU R 48: 1b'/>
+		<xmp_choice raw_value='2' label='$$$/xmp/as11c/audioTrackLayout/2=EBU R 48: 1c'/>
+		<xmp_choice raw_value='3' label='$$$/xmp/as11c/audioTrackLayout/3=EBU R 48: 2a'/>
+		<xmp_choice raw_value='4' label='$$$/xmp/as11c/audioTrackLayout/4=EBU R 48: 2b'/>
+		<xmp_choice raw_value='5' label='$$$/xmp/as11c/audioTrackLayout/5=EBU R 48: 2c'/>
+		<xmp_choice raw_value='6' label='$$$/xmp/as11c/audioTrackLayout/6=EBU R 48: 3a'/>
+		<xmp_choice raw_value='7' label='$$$/xmp/as11c/audioTrackLayout/7=EBU R 48: 3b'/>
+		<xmp_choice raw_value='8' label='$$$/xmp/as11c/audioTrackLayout/8=EBU R 48: 4a'/>
+		<xmp_choice raw_value='9' label='$$$/xmp/as11c/audioTrackLayout/9=EBU R 48: 4b'/>
+		<xmp_choice raw_value='10' label='$$$/xmp/as11c/audioTrackLayout/10=EBU R 48: 4c'/>
+		<xmp_choice raw_value='11' label='$$$/xmp/as11c/audioTrackLayout/11=EBU R 48: 5a'/>
+		<xmp_choice raw_value='12' label='$$$/xmp/as11c/audioTrackLayout/12=EBU R 48: 5b'/>
+		<xmp_choice raw_value='13' label='$$$/xmp/as11c/audioTrackLayout/13=EBU R 48: 6a'/>
+		<xmp_choice raw_value='14' label='$$$/xmp/as11c/audioTrackLayout/14=EBU R 48: 6b'/>
+		<xmp_choice raw_value='15' label='$$$/xmp/as11c/audioTrackLayout/15=EBU R 48: 7a'/>
+		<xmp_choice raw_value='16' label='$$$/xmp/as11c/audioTrackLayout/16=EBU R 48: 7b'/>
+		<xmp_choice raw_value='17' label='$$$/xmp/as11c/audioTrackLayout/17=EBU R 48: 8a'/>
+		<xmp_choice raw_value='18' label='$$$/xmp/as11c/audioTrackLayout/18=EBU R 48: 8b'/>
+		<xmp_choice raw_value='19' label='$$$/xmp/as11c/audioTrackLayout/19=EBU R 48: 8c'/>
+		<xmp_choice raw_value='20' label='$$$/xmp/as11c/audioTrackLayout/20=EBU R 48: 9a'/>
+		<xmp_choice raw_value='21' label='$$$/xmp/as11c/audioTrackLayout/21=EBU R 48: 9b'/>
+		<xmp_choice raw_value='22' label='$$$/xmp/as11c/audioTrackLayout/22=EBU R 48: 10a'/>
+		<xmp_choice raw_value='23' label='$$$/xmp/as11c/audioTrackLayout/23=EBU R 48: 11a'/>
+		<xmp_choice raw_value='24' label='$$$/xmp/as11c/audioTrackLayout/24=EBU R 48: 11b'/>
+		<xmp_choice raw_value='25' label='$$$/xmp/as11c/audioTrackLayout/25=EBU R 48: 11c'/>
+		<xmp_choice raw_value='26' label='$$$/xmp/as11c/audioTrackLayout/26=EBU R 123: 2a'/>
+		<xmp_choice raw_value='27' label='$$$/xmp/as11c/audioTrackLayout/27=EBU R 123: 4a'/>
+		<xmp_choice raw_value='28' label='$$$/xmp/as11c/audioTrackLayout/28=EBU R 123: 4b'/>
+		<xmp_choice raw_value='29' label='$$$/xmp/as11c/audioTrackLayout/29=EBU R 123: 4c'/>
+		<xmp_choice raw_value='30' label='$$$/xmp/as11c/audioTrackLayout/30=EBU R 123: 8a'/>
+		<xmp_choice raw_value='31' label='$$$/xmp/as11c/audioTrackLayout/31=EBU R 123: 8b'/>
+		<xmp_choice raw_value='32' label='$$$/xmp/as11c/audioTrackLayout/32=EBU R 123: 8c'/>
+		<xmp_choice raw_value='33' label='$$$/xmp/as11c/audioTrackLayout/33=EBU R 123: 8d'/>
+		<xmp_choice raw_value='34' label='$$$/xmp/as11c/audioTrackLayout/34=EBU R 123: 8e'/>
+		<xmp_choice raw_value='35' label='$$$/xmp/as11c/audioTrackLayout/35=EBU R 123: 8f'/>
+		<xmp_choice raw_value='36' label='$$$/xmp/as11c/audioTrackLayout/36=EBU R 123: 8g'/>
+		<xmp_choice raw_value='37' label='$$$/xmp/as11c/audioTrackLayout/37=EBU R 123: 8h'/>
+		<xmp_choice raw_value='38' label='$$$/xmp/as11c/audioTrackLayout/38=EBU R 123: 8i'/>
+		<xmp_choice raw_value='39' label='$$$/xmp/as11c/audioTrackLayout/39=EBU R 123: 12a'/>
+		<xmp_choice raw_value='40' label='$$$/xmp/as11c/audioTrackLayout/40=EBU R 123: 12b'/>
+		<xmp_choice raw_value='41' label='$$$/xmp/as11c/audioTrackLayout/41=EBU R 123: 12c'/>
+		<xmp_choice raw_value='42' label='$$$/xmp/as11c/audioTrackLayout/42=EBU R 123: 12d'/>
+		<xmp_choice raw_value='43' label='$$$/xmp/as11c/audioTrackLayout/43=EBU R 123: 12e'/>
+		<xmp_choice raw_value='44' label='$$$/xmp/as11c/audioTrackLayout/44=EBU R 123: 12f'/>
+		<xmp_choice raw_value='45' label='$$$/xmp/as11c/audioTrackLayout/45=EBU R 123: 12g'/>
+		<xmp_choice raw_value='46' label='$$$/xmp/as11c/audioTrackLayout/46=EBU R 123: 12h'/>
+		<xmp_choice raw_value='47' label='$$$/xmp/as11c/audioTrackLayout/47=EBU R 123: 16a'/>
+		<xmp_choice raw_value='48' label='$$$/xmp/as11c/audioTrackLayout/48=EBU R 123: 16b'/>
+		<xmp_choice raw_value='49' label='$$$/xmp/as11c/audioTrackLayout/49=EBU R 123: 16c'/>
+		<xmp_choice raw_value='50' label='$$$/xmp/as11c/audioTrackLayout/50=EBU R 123: 16d'/>
+		<xmp_choice raw_value='51' label='$$$/xmp/as11c/audioTrackLayout/51=EBU R 123: 16e'/>
+		<xmp_choice raw_value='52' label='$$$/xmp/as11c/audioTrackLayout/52=EBU R 123: 16f'/>
+		<xmp_choice raw_value='255' label='$$$/xmp/as11c/audioTrackLayout/255=Undefined'/>
+	</xmp_property>
+	<xmp_property name='primaryAudioLanguage' category='external' type='locale' description='$$$/xmp/as11c/primaryAudioLanguage_description=(*Required) Primary audio language used in the Programme Version.'  label='$$$/xmp/as11c/primaryAudioLanguage_label=Primary Audio Language *'/>
+	<xmp_property name='closedCaptionsPresent' category='external' type='boolean' description='$$$/xmp/as11c/closedCaptionsPresent_description=(*Required) This status is to be set if the delivered programme contains any embedded (out of vision) subtitling information for the hard of hearing.'  label='$$$/xmp/as11c/closedCaptionsPresent_label=Closed Captions Present *'/>
+	<xmp_property name='closedCaptionsType' category='external' type='openchoice' description='$$$/xmp/as11c/closedCaptionsType_description=This describes the editorial description of the out of vision subtitling employed within the delivered programme.' element_type='integer' label='$$$/xmp/as11c/closedCaptionsType_label=Closed Captions Type'>	  
+	  <xmp_choice raw_value='0' label='$$$/xmp/as11c/closedCaptionsType/0=Hard of Hearing'/>
+      <xmp_choice raw_value='1' label='$$$/xmp/as11c/closedCaptionsType/1=Translation'/>
+	</xmp_property>
+	<xmp_property name='closedCaptionsLanguage' category='external' type='locale' description='$$$/xmp/as11c/closedCaptionsLanguage_description=This describes the primary language of the embedded subtitle data.' label='$$$/xmp/as11c/closedCaptionsLanguage_label=Closed Captions Language'/>
+  </xmp_schema>
+</xmp_definitions>

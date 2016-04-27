@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xmp_definitions>
+  <xmp_schema prefix='as11s' namespace='http://ns.adobe.com/mxf/as/11/structural/' description='$$$/xmp/as11s_description=AS-11 Structural Metadata.' label='$$$/xmp/as11s_label=AS-11 Structural'>
+    <xmp_property name='videoBitRate' category='internal' type='openchoice' description='$$$/xmp/as11s/videoBitRate_description=The total video bit rate of the encoded file in bits per second.' element_type='integer' label='$$$/xmp/as11s/videoBitRate_label=Video Bit Rate'>
+	  <xmp_choice raw_value='100' label='$$$/xmp/as11s/videoBitRate/0=100'/>
+      <xmp_choice raw_value='50' label='$$$/xmp/as11s/videoBitRate/1=50'/>
+    </xmp_property>
+    <xmp_property name='videoCodec' category='internal' type='openchoice' description='$$$/xmp/as11s/videoCodec_description=The video codec employed for the creation of the file.' element_type='text' label='$$$/xmp/as11s/videoCodec_label=Video Codec'>
+	  <xmp_choice raw_value='AVC-Intra' label='$$$/xmp/as11s/videoCodec/avcIntra=AVC-Intra'/>
+      <xmp_choice raw_value='D10' label='$$$/xmp/as11s/videoCodec/d10=D10'/>
+    </xmp_property>
+	<xmp_property name='videoCodecParameters' category='internal' type='openchoice' description='$$$/xmp/as11s/videoCodecParameters_description=The detailed codec profile and level information used to create the file.' element_type='text' label='$$$/xmp/as11s/videoCodecParameters_label=Video Codec Parameters'>
+	  <xmp_choice raw_value='High 4:2:2 level 4.1' label='$$$/xmp/as11s/videoCodecParameters/high422level41=High 4:2:2 level 4.1'/>
+      <xmp_choice raw_value='4:2:2 P@ML' label='$$$/xmp/as11s/videoCodecParameters/422paml=4:2:2 P@ML'/>
+    </xmp_property>
+	<xmp_property name='pictureFormat' category='internal' type='openchoice' description='$$$/xmp/as11s/pictureFormat_description=The signal standard (frame resolution and aspect ratio) of the encoded file.' element_type='text' label='$$$/xmp/as11s/pictureFormat_label=Picture Format'>
+	  <xmp_choice raw_value='1080i50 16:9' label='$$$/xmp/as11s/pictureFormat/1080i50169=1080i50 16:9'/>
+      <xmp_choice raw_value='576i 16:9' label='$$$/xmp/as11s/pictureFormat/576i169=576i 16:9'/>
+      <xmp_choice raw_value='576i 4:3' label='$$$/xmp/as11s/pictureFormat/576i43=576i 4:3'/>
+    </xmp_property>
+	<xmp_property name='afd' category='external' type='closedchoice' description='$$$/xmp/as11s/afd_description=(*Required) The Active Format Description (AFD) is a 4-bit code describing a video picture in terms of the aspect ratio and other characteristics of the active image within the coded frame.' element_type='integer' label='$$$/xmp/as11s/afd_label=Active Format Description Code *'>
+	  <xmp_choice raw_value='' label='$$$/xmp/as11s/afd/unsetValue=(Select Value)'/>
+	  <xmp_choice raw_value='0' label='$$$/xmp/as11s/afd/0=Undefined'/>
+      <xmp_choice raw_value='1' label='$$$/xmp/as11s/afd/1=1'/>
+      <xmp_choice raw_value='2' label='$$$/xmp/as11s/afd/2=2'/>
+      <xmp_choice raw_value='3' label='$$$/xmp/as11s/afd/3=3'/>
+      <xmp_choice raw_value='4' label='$$$/xmp/as11s/afd/4=4'/>
+      <xmp_choice raw_value='5' label='$$$/xmp/as11s/afd/5=5'/>
+      <xmp_choice raw_value='6' label='$$$/xmp/as11s/afd/6=6'/>
+      <xmp_choice raw_value='7' label='$$$/xmp/as11s/afd/7=7'/>
+      <xmp_choice raw_value='8' label='$$$/xmp/as11s/afd/8=8'/>
+      <xmp_choice raw_value='9' label='$$$/xmp/as11s/afd/9=9'/>
+      <xmp_choice raw_value='10' label='$$$/xmp/as11s/afd/10=10'/>
+      <xmp_choice raw_value='11' label='$$$/xmp/as11s/afd/11=11'/>
+      <xmp_choice raw_value='12' label='$$$/xmp/as11s/afd/12=12'/>
+      <xmp_choice raw_value='13' label='$$$/xmp/as11s/afd/13=13'/>
+      <xmp_choice raw_value='14' label='$$$/xmp/as11s/afd/14=14'/>
+      <xmp_choice raw_value='15' label='$$$/xmp/as11s/afd/15=15'/>
+    </xmp_property>
+	<xmp_property name='audioSamplingFrequency' category='internal' type='openchoice' description='$$$/xmp/as11s/audioSamplingFrequency_description=The audio sampling frequency used in kHz.' element_type='integer' label='$$$/xmp/as11s/audioSamplingFrequency_label=Audio Sampling Frequency'>
+	  <xmp_choice raw_value='48' label='$$$/xmp/as11s/audioSamplingFrequency/48=48'/>
+    </xmp_property>
+	<xmp_property name='audioBitDepth' category='internal' type='openchoice' description='$$$/xmp/as11s/audioBitDepth_description=No. of  quantisation bits in the audio signal.' element_type='integer' label='$$$/xmp/as11s/audioBitDepth_label=Audio Bit Depth'>
+	  <xmp_choice raw_value='24' label='$$$/xmp/as11s/audioBitDepth/24=24'/>
+    </xmp_property>
+	<xmp_property name='audioCodecParameters' category='internal' type='openchoice' description='$$$/xmp/as11s/audioCodecParameters_description=No. of  quantisation bits in the audio signal.' element_type='text' label='$$$/xmp/as11s/audioCodecParameters_label=Audio Codec Parameters'>
+	  <xmp_choice raw_value='24' label='$$$/xmp/as11s/audioCodecParameters/24=24'/>
+    </xmp_property>
+  </xmp_schema>
+</xmp_definitions>

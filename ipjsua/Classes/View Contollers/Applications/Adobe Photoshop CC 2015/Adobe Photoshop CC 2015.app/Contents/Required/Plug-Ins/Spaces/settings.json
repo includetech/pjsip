@@ -1,0 +1,8 @@
+{
+	"debuggingPort": 9234,
+	"enableDeveloperContextMenu": false,
+	"cef_command_line_arguments_disabled": ["show-fps-counter"],
+	"allow_open_gl_canvas": true,
+	"serialize_use_legacy_keywords": true,
+	"serialize_use_legacy_encoding": true
+}

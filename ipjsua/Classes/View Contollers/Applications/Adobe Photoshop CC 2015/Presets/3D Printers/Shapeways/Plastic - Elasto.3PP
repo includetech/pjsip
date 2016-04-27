@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Printer>
+	<Version value='1' />
+	<PrintLocation value='Shapeways.com' />
+	<UploadURL value='http://www.adobe.com/go/psuploadtoshapeways' />
+	<PrintVolume X='300' Y='300' Z='250' />
+	<PrinterResolution X='1' Y='1' Z='1' />
+	<MeshRepairResolution value='7' />
+	<PrinterHeads value='1' />
+	<PrinterSupportsUSB flag='0' />
+	<PreferredFileFormat value='stl' />
+	<NeedsZip flag='1' />
+	<Quality value='high'>
+		<MeshRepairResolution value='8' />
+	</Quality>
+	<Quality value='medium'>
+		<MeshRepairResolution value='7' />
+	</Quality>
+	<Quality value='low'>
+		<MeshRepairResolution value='6' />
+	</Quality>
+</Printer>
+<Materials>
+	<Material name='Elasto Plastic'>
+		<NeedsRaft flag='0' />
+		<NeedsSupports flag='0' />
+		<NeedsEscapeHoles flag='0' />
+		<MinimumWallThickness value='0.8' />
+		<PricePerCubicCM value='0.42' />
+		<PricePerCubicCMMachineSpace value='0.26' />
+		<PricePerPart value='1.5' />
+		<Diffuse R='0.9216' G='0.8883' B='0.7553' />
+		<Specular R='0.4200' G='0.4177' B='0.3738' />
+		<Illumination R='0' G='0' B='0' />
+		<Ambient R='0.1100' G='0.1090' B='0.0979' />
+		<Shine value='0.12' />
+		<Reflection value='0.03' />
+		<Roughness value='0.78' />
+		<Bump value='0' />
+		<Opacity value='1' />
+		<Refraction value='1.070' />
+	</Material>
+</Materials>

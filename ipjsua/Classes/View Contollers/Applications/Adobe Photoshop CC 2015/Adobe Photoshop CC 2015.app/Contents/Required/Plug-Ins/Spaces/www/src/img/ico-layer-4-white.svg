@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewBox="0 0 22 18">
+    <title>
+        vector
+    </title>
+    <path fill="#F7F6EE" d="M4.74 14.934c-.408 0-.74-.347-.74-.773V2.58c0-.427.33-.774.74-.774H17.2c.406 0 .737.347.737.774v11.58c0 .427-.33.774-.738.774H4.74zm0-12.58c-.117 0-.212.1-.212.222V14.16c0 .122.095.22.21.22H17.2c.117 0 .212-.098.212-.22V2.576c0-.122-.095-.22-.21-.22H4.74zM2 0h4v4H2z"/>
+    <path fill="#373737" d="M3 1h2v2H3z"/>
+    <path fill="#F7F6EE" d="M16 0h4v4h-4z"/>
+    <path fill="#373737" d="M17 1h2v2h-2z"/>
+    <path fill="#F7F6EE" d="M2 13h4v4H2z"/>
+    <path fill="#373737" d="M3 14h2v2H3z"/>
+    <path fill="#F7F6EE" d="M16 13h4v4h-4z"/>
+    <path fill="#373737" d="M17 14h2v2h-2z"/>
+</svg>

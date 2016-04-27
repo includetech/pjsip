@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-294.5 389 16 16" enable-background="new -294.5 389 16 16">
+    <title>
+        ico-swap-black
+    </title>
+    <path fill="#CECDC6" d="M-283.5 391h5v12h-5z"/>
+    <path fill="#373737" d="M-282.5 392h3v10h-3z"/>
+    <path fill="#CECDC6" d="M-294.5 391h5v12h-5z"/>
+    <path fill="#373737" d="M-293.5 392h3v10h-3z"/>
+    <g fill="none" stroke="#82817E">
+        <path stroke-linecap="square" d="M-288.1 399.5h4"/>
+        <path d="M-289.1 399.5l2.3 2.3"/>
+        <path stroke-linecap="square" d="M-287.2 397.5l-2 2"/>
+    </g>
+    <g fill="none" stroke="#82817E">
+        <path stroke-linecap="square" d="M-284.9 394h-3.9"/>
+        <path d="M-283.9 394l-2.3-2.3"/>
+        <path stroke-linecap="square" d="M-285.9 396l2-2"/>
+    </g>
+</svg>

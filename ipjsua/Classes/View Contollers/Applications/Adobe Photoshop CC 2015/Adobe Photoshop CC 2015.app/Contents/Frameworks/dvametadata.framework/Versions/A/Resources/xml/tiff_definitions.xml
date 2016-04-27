@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xmp_definitions>
+  <xmp_schema prefix='tiff' namespace='http://ns.adobe.com/tiff/1.0/' description='$$$/xmp/tiff_description=EXIF properties for TIFF-derived data.' label='$$$/xmp/tiff_label=EXIF Schema For TIFF Properties'>
+    <xmp_property name='ImageWidth' category='internal' type='integer' description='$$$/xmp/tiff/ImageWidth_description=Image width in pixels.' label='$$$/xmp/tiff/ImageWidth_label=Image Width'/>
+    <xmp_property name='ImageLength' category='internal' type='integer' description='$$$/xmp/tiff/ImageLength_description=Image height in pixels.' label='$$$/xmp/tiff/ImageLength_label=Image Length'/>
+    <xmp_property name='BitsPerSample' category='internal' type='seq' description='$$$/xmp/tiff/BitsPerSample_description=Number of bits per component in each channel.' element_type='integer' label='$$$/xmp/tiff/BitsPerSample_label=Bits Per Sample'/>
+    <xmp_property name='Compression' category='internal' type='closedchoice' description='$$$/xmp/tiff/Compression_description=Compression scheme.' element_type='integer' label='$$$/xmp/tiff/Compression_label=Compression'>
+      <xmp_choice raw_value='1' label='$$$/xmp/tiff/Compression/0=Uncompressed'/>
+      <xmp_choice raw_value='2' label='$$$/xmp/tiff/Compression/1=2'/>
+      <xmp_choice raw_value='3' label='$$$/xmp/tiff/Compression/2=3'/>
+      <xmp_choice raw_value='4' label='$$$/xmp/tiff/Compression/3=4'/>
+      <xmp_choice raw_value='5' label='$$$/xmp/tiff/Compression/4=5'/>
+      <xmp_choice raw_value='6' label='$$$/xmp/tiff/Compression/5=JPEG'/>
+    </xmp_property>
+    <xmp_property name='PhotometricInterpretation' category='internal' type='closedchoice' description='$$$/xmp/tiff/PhotometricInterpretation_description=Pixel Composition.' element_type='integer' label='$$$/xmp/tiff/PhotometricInterpretation_label=Photometric Interpretation'>
+      <xmp_choice raw_value='2' label='$$$/xmp/tiff/PhotometricInterpretation/0=RGB'/>
+      <xmp_choice raw_value='6' label='$$$/xmp/tiff/PhotometricInterpretation/1=YCbCr'/>
+    </xmp_property>
+    <xmp_property name='Orientation' category='internal' type='closedchoice' description='$$$/xmp/tiff/Orientation_description=Orientation.' element_type='integer' label='$$$/xmp/tiff/Orientation_label=Orientation'>
+      <xmp_choice raw_value='1' label='$$$/xmp/tiff/Orientation/0=1 (Normal)'/>
+      <xmp_choice raw_value='2' label='$$$/xmp/tiff/Orientation/1=2 (Flipped horizontally)'/>
+      <xmp_choice raw_value='3' label='$$$/xmp/tiff/Orientation/2=3 (Rotated 180#{deg})'/>
+      <xmp_choice raw_value='4' label='$$$/xmp/tiff/Orientation/3=4 (Flipped vertically)'/>
+      <xmp_choice raw_value='5' label='$$$/xmp/tiff/Orientation/4=5 (Rotated 90#{deg} CCW and flipped vertically)'/>
+      <xmp_choice raw_value='6' label='$$$/xmp/tiff/Orientation/5=6 (Rotated 90#{deg} CW)'/>
+      <xmp_choice raw_value='7' label='$$$/xmp/tiff/Orientation/6=7 (Rotated 90#{deg} CW and flipped vertically)'/>
+      <xmp_choice raw_value='8' label='$$$/xmp/tiff/Orientation/7=8 (Rotated 90#{deg} CCW)'/>
+    </xmp_property>
+    <xmp_property name='SamplesPerPixel' category='internal' type='integer' description='$$$/xmp/tiff/SamplesPerPixel_description=Number of components per pixel.' label='$$$/xmp/tiff/SamplesPerPixel_label=Samples Per Pixel'/>
+    <xmp_property name='PlanarConfiguration' category='internal' type='closedchoice' description='$$$/xmp/tiff/PlanarConfiguration_description=Data layout.' element_type='integer' label='$$$/xmp/tiff/PlanarConfiguration_label=Planar Configuration'>
+      <xmp_choice raw_value='1' label='$$$/xmp/tiff/PlanarConfiguration/0=Chunky'/>
+      <xmp_choice raw_value='2' label='$$$/xmp/tiff/PlanarConfiguration/1=Planar'/>
+    </xmp_property>
+    <xmp_property name='YCbCrSubSampling' category='internal' type='closedchoice' description='$$$/xmp/tiff/YCbCrSubSampling_description=Sampling ratio of chrominance components.' element_type='seq of integer' label='$$$/xmp/tiff/YCbCrSubSampling_label=YCb Cr Sub Sampling'>
+      <xmp_choice raw_value='[2, 1]' label='$$$/xmp/tiff/YCbCrSubSampling/0=YCbCr4:2:2'/>
+      <xmp_choice raw_value='[2, 2]' label='$$$/xmp/tiff/YCbCrSubSampling/1=YCbCr4:2:0'/>
+    </xmp_property>
+    <xmp_property name='YCbCrPositioning' category='internal' type='closedchoice' description='$$$/xmp/tiff/YCbCrPositioning_description=Position of chrominance vs. luminance components.' element_type='integer' label='$$$/xmp/tiff/YCbCrPositioning_label=YCb Cr Positioning'>
+      <xmp_choice raw_value='1' label='$$$/xmp/tiff/YCbCrPositioning/0=Centered'/>
+      <xmp_choice raw_value='2' label='$$$/xmp/tiff/YCbCrPositioning/1=Co-sited'/>
+    </xmp_property>
+    <xmp_property name='XResolution' category='internal' type='rational' description='$$$/xmp/tiff/XResolution_description=Horizontal resolution in pixels per unit.' label='$$$/xmp/tiff/XResolution_label=X Resolution'/>
+    <xmp_property name='YResolution' category='internal' type='rational' description='$$$/xmp/tiff/YResolution_description=Vertical resolution in pixels per unit.' label='$$$/xmp/tiff/YResolution_label=Y Resolution'/>
+    <xmp_property name='ResolutionUnit' category='internal' type='closedchoice' description='$$$/xmp/tiff/ResolutionUnit_description=Unit used for XResolution and YResolution.' element_type='integer' label='$$$/xmp/tiff/ResolutionUnit_label=Resolution Unit'>
+      <xmp_choice raw_value='2' label='$$$/xmp/tiff/ResolutionUnit/0=Inches'/>
+      <xmp_choice raw_value='3' label='$$$/xmp/tiff/ResolutionUnit/1=Centimeters'/>
+    </xmp_property>
+    <xmp_property name='TransferFunction' category='internal' type='seq' description='$$$/xmp/tiff/TransferFunction_description=Transfer function for image described in tabular style with 3 * 256 entries.' element_type='integer' label='$$$/xmp/tiff/TransferFunction_label=Transfer Function'/>
+    <xmp_property name='WhitePoint' category='internal' type='seq' description='$$$/xmp/tiff/WhitePoint_description=Chromaticity of white point.' element_type='rational' label='$$$/xmp/tiff/WhitePoint_label=White Point'/>
+    <xmp_property name='PrimaryChromaticities' category='internal' type='seq' description='$$$/xmp/tiff/PrimaryChromaticities_description=Chromaticity of the three primary colors.' element_type='rational' label='$$$/xmp/tiff/PrimaryChromaticities_label=Primary Chromaticities'/>
+    <xmp_property name='YCbCrCoefficients' category='internal' type='seq' description='$$$/xmp/tiff/YCbCrCoefficients_description=Matrix coefficients for RGB to YCbCr transformation.' element_type='rational' label='$$$/xmp/tiff/YCbCrCoefficients_label=YCb Cr Coefficients'/>
+    <xmp_property name='ReferenceBlackWhite' category='internal' type='seq' description='$$$/xmp/tiff/ReferenceBlackWhite_description=Reference black and white point values.' element_type='rational' label='$$$/xmp/tiff/ReferenceBlackWhite_label=Reference Black White'/>
+    <xmp_property name='DateTime' category='internal' type='date' description='$$$/xmp/tiff/DateTime_description=Date and time of image creation (no time zone in EXIF), stored in ISO 8601 format, not the original EXIF format. This property includes the value for the EXIF SubSecTime attribute. NOTE: This property is stored in XMP as xmp:ModifyDate.' label='$$$/xmp/tiff/DateTime_label=Date Time'/>
+    <xmp_property name='ImageDescription' category='external' type='langalt' description='$$$/xmp/tiff/ImageDescription_description=Description of the image. NOTE: This property is stored in XMP as dc:description.' label='$$$/xmp/tiff/ImageDescription_label=Image Description'/>
+    <xmp_property name='Make' category='internal' type='propername' description='$$$/xmp/tiff/Make_description=Manufacturer of recording equipment.' label='$$$/xmp/tiff/Make_label=Make'/>
+    <xmp_property name='Model' category='internal' type='propername' description='$$$/xmp/tiff/Model_description=Model name or number of equipment.' label='$$$/xmp/tiff/Model_label=Model'/>
+    <xmp_property name='Software' category='internal' type='agentname' description='$$$/xmp/tiff/Software_description=Software or firmware used to generate image. NOTE: This property is stored in XMP as xmp:CreatorTool.' label='$$$/xmp/tiff/Software_label=Software'/>
+    <xmp_property name='Artist' category='external' type='propername' description='$$$/xmp/tiff/Artist_description=Camera owner, photographer or image creator. NOTE: This property is stored in XMP as the first item in the dc:creator array.' label='$$$/xmp/tiff/Artist_label=Artist'/>
+    <xmp_property name='Copyright' category='external' type='langalt' description='$$$/xmp/tiff/Copyright_description=Copyright information. NOTE: This property is stored in XMP as dc:rights.' label='$$$/xmp/tiff/Copyright_label=Copyright'/>
+  </xmp_schema>
+</xmp_definitions>

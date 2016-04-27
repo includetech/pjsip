@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xmp_definitions>
+  <xmp_schema prefix='pdf' namespace='http://ns.adobe.com/pdf/1.3/' description='$$$/xmp/pdf_description=This schema specifies properties used with Adobe PDF documents.' label='$$$/xmp/pdf_label=Adobe PDF'>
+    <xmp_property name='Keywords' category='external' type='text' description='$$$/xmp/pdf/Keywords_description=Keywords.' label='$$$/xmp/pdf/Keywords_label=Keywords'/>
+    <xmp_property name='PDFVersion' category='internal' type='text' description='$$$/xmp/pdf/PDFVersion_description=The PDF file version (for example: 1.0, 1.3, and so on).' label='$$$/xmp/pdf/PDFVersion_label=PDFVersion'/>
+    <xmp_property name='Producer' category='internal' type='agentname' description='$$$/xmp/pdf/Producer_description=The name of the tool that created the PDF document.' label='$$$/xmp/pdf/Producer_label=Producer'/>
+  </xmp_schema>
+</xmp_definitions>

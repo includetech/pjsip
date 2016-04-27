@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xmp_definitions>
+  <xmp_schema prefix='dc' namespace='http://purl.org/dc/elements/1.1/' description='$$$/xmp/dc_description=Commonly used properties.' label='$$$/xmp/dc_label=Dublin Core'>
+    <xmp_property name='contributor' category='external' type='bag' description='$$$/xmp/dc/contributor_description=Content contributor(s)' element_type='propername' label='$$$/xmp/dc/contributor_label=Contributor'/>
+    <xmp_property name='coverage' category='external' type='text' description='$$$/xmp/dc/coverage_description=Scope of content.' label='$$$/xmp/dc/coverage_label=Coverage'/>
+    <xmp_property name='creator' category='external' type='seq' description='$$$/xmp/dc/creator_description=An entity primarily responsible for making the resource. The authors of the resource (listed in order of precedence, if significant).' element_type='propername' label='$$$/xmp/dc/creator_label=Author'/>
+    <xmp_property name='date' category='external' type='seq' description='$$$/xmp/dc/date_description=Significant date(s) with descriptions.' element_type='date' label='$$$/xmp/dc/date_label=Date'/>
+    <xmp_property name='description' category='external' type='langalt' description='$$$/xmp/dc/description_description=A textual description of the content of the resource. Multiple values may be present for different languages.' label='$$$/xmp/dc/description_label=Description'/>
+    <xmp_property name='format' category='internal' type='mimetype' description='$$$/xmp/dc/format_description=The file format used when saving the resource. Tools and applications should set this property to the save format of the data. It may include appropriate qualifiers.' label='$$$/xmp/dc/format_label=Format'/>
+    <xmp_property name='identifier' category='external' type='text' description='$$$/xmp/dc/identifier_description=Unique identifier of the resource.' label='$$$/xmp/dc/identifier_label=Identifier'/>
+    <xmp_property name='language' category='internal' type='bag' description='$$$/xmp/dc/language_description=Language used in content.' element_type='locale' label='$$$/xmp/dc/language_label=Language'/>
+    <xmp_property name='publisher' category='external' type='bag' description='$$$/xmp/dc/publisher_description=Name' element_type='propername' label='$$$/xmp/dc/publisher_label=Publisher'/>
+    <xmp_property name='relation' category='internal' type='bag' description='$$$/xmp/dc/relation_description=Relationships to other documents.' element_type='text' label='$$$/xmp/dc/relation_label=Relation'/>
+    <xmp_property name='rights' category='external' type='langalt' description='$$$/xmp/dc/rights_description=Information about rights held in and over the resource.' label='$$$/xmp/dc/rights_label=Copyright Notice'/>
+    <xmp_property name='source' category='external' type='text' description='$$$/xmp/dc/source_description=Unique identifier of source which content came from.' label='$$$/xmp/dc/source_label=Source'/>
+    <xmp_property name='subject' category='external' type='bag' description='$$$/xmp/dc/subject_description=An unordered array of descriptive phrases or keywords that specify the topic of the content of the resource.' element_type='text' label='$$$/xmp/dc/subject_label=Keywords'/>
+    <xmp_property name='title' category='external' type='langalt' description='$$$/xmp/dc/title_description=The title of the document, or the name given to the resource. Typically, it will be a name by which the resource is formally known.' label='$$$/xmp/dc/title_label=Title'/>
+    <xmp_property name='type' category='external' type='bag' description='$$$/xmp/dc/type_description=Example: poem, article.' element_type='text' label='$$$/xmp/dc/type_label=Type'/>
+  </xmp_schema>
+</xmp_definitions>

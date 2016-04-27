@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Printer>
+  <Version value="1" />
+  <PrintLocation value="i.materialise.com" />
+  <PrintVolume X="88.00" Y="63.00" Z="125.00" />
+  <MeshRepairResolution value="7" />
+  <PrinterHeads value="1" />
+  <PrinterSupportsUSB flag="0" />
+  <PreferredFileFormat value="stl" />
+  <NeedsZip flag="1" />
+  <FullColor flag="0" />
+  <UploadURL value="http://i.materialise.com/3dprintlab/03d3b119-7e58-415f-b167-f20d9cbe16bd/170d6e35-8f0d-4f92-8408-2d3e095c256e/9c31bfc6-dba0-40c1-8cc0-048d9df487af" />
+  <PrinterResolution X="3.33" Y="3.33" Z="3.33" />
+  <Quality value="high">
+    <MeshRepairResolution value="8" />
+    <MinMeshRepairResolution value="6" />
+  </Quality>
+  <Quality value="medium">
+    <MeshRepairResolution value="7" />
+    <MinMeshRepairResolution value="5" />
+  </Quality>
+  <Quality value="low">
+    <MeshRepairResolution value="6" />
+    <MinMeshRepairResolution value="5" />
+  </Quality>
+</Printer>
+<Materials>
+  <Material name="Brass Natural PU Coated">
+    <NeedsRaft flag="0" />
+    <NeedsSupports flag="0" />
+    <NeedsEscapeHoles flag="0" />
+    <MinimumWallThickness value="0.50" />
+    <PricePerCubicCM value="20.00" />
+    <Handling value="5.00" />
+    <Diffuse R="0.63" G="0.6" B="0.36" />
+    <Specular R="0.1" G="0.1" B="0.1" />
+    <Illumination R="0" G="0" B="0" />
+    <Ambient R="0" G="0" B="0" />
+    <Shine value="0.9" />
+    <Reflection value="0.9" />
+    <Roughness value="0" />
+    <Bump value="0" />
+    <Opacity value="1" />
+    <Refraction value="1" />
+  </Material>
+</Materials>

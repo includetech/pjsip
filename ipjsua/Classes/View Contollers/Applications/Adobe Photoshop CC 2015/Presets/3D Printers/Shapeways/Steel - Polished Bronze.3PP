@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Printer>
+	<Version value='1' />
+	<PrintLocation value='Shapeways.com' />
+	<UploadURL value='http://www.adobe.com/go/psuploadtoshapeways' />
+	<PrintVolume X='762' Y='393' Z='393' />
+	<PrinterResolution X='1' Y='1' Z='1' />
+	<MeshRepairResolution value='7' />
+	<PrinterHeads value='1' />
+	<PrinterSupportsUSB flag='0' />
+	<PreferredFileFormat value='stl' />
+	<NeedsZip flag='1' />
+	<Quality value='high'>
+		<MeshRepairResolution value='8' />
+	</Quality>
+	<Quality value='medium'>
+		<MeshRepairResolution value='7' />
+	</Quality>
+	<Quality value='low'>
+		<MeshRepairResolution value='6' />
+	</Quality>
+</Printer>
+<Materials>
+	<Material name='Polished Bronze Steel'>
+		<NeedsRaft flag='0' />
+		<NeedsSupports flag='0' />
+		<NeedsEscapeHoles flag='0' />
+		<MinimumWallThickness value='3' />
+		<PricePerCubicCM value='5.00' />
+		<PartCount value='6.00' />
+		<Diffuse R='0.5400' G='0.4018' B='0.2808' />
+		<Specular R='1.2440' G='1.0450' B='0.6469' />
+		<Illumination R='0' G='0' B='0' />
+		<Ambient R='0.0106' G='0.0099' B='0.0077' />
+		<Shine value='0.59' />
+		<Reflection value='0.71' />
+		<Roughness value='0.14' />
+		<Bump value='0' />
+		<Opacity value='1' />
+		<Refraction value='1.052' />
+	</Material>
+</Materials>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<views xmlns="http://ns.adobe.com/metadata/ui/1.0/">
+
+	<!-- 
+		GPS Data
+		Contains GPS related Exif properties.
+	-->	
+	<view
+		xmlns:exif="http://ns.adobe.com/exif/1.0/"
+		name="com.adobe.xmp.view.gps"
+	    label="$$$/metadataui/view/gpsdata_label=GPS Data"
+	    description="$$$/metadataui/view/gpsdata_description=Contains the EXIF GPS tag properties."
+		version="1.0">
+
+		<section
+			label="$$$/metadataui/view/gpsdata/camera_location_label=Camera Location"
+			description="$$$/metadataui/view/gpsdata/camera_location_description=Information about the camera location">
+
+			<formatter
+				label="$$$/xmp/exif/custom/GPSPosition_label=Position" 
+				description="$$$/xmp/exif/custom/GPSPosition_description=Latitude and longitude of GPS measurement position."
+				separator="$$$/metadataui/view/separator/comma_spaces=,  ">
+			  	<property name="exif:GPSLatitude" />
+			  	<property name="exif:GPSLongitude" />
+			</formatter>
+		
+			<formatter
+				label="$$$/xmp/exif/custom/GPSAltitude_label=Altitude"
+				descriptionRef="exif:GPSAltitude"
+				separator="">
+				<property name="exif:GPSAltitudeRef">
+					<!-- use minus sign for below sea level -->
+			        <choice value='0' label=''/>
+			        <choice value='1' label='-'/>
+				</property>
+				<property name="exif:GPSAltitude" format="$$$/metadataui/format/meters_short=@0 m" />
+			</formatter>
+
+			<formatter
+				label="$$$/xmp/exif/custom/GPSImgDirection_label=Image Direction"
+				descriptionRef="exif:GPSImgDirection" 
+				format="$$$/metadataui/format/gps/direction=@0#{deg} (@1)">
+				<property name="exif:GPSImgDirection" />
+				<property name="exif:GPSImgDirectionRef"/>
+			</formatter>
+		</section>
+		
+		<section
+			label="$$$/metadataui/view/gpsdata/subject_location_label=Subject Location"
+			description="$$$/metadataui/view/gpsdata/subject_location_description=Information about the subject location">
+
+			<formatter
+				label="$$$/xmp/exif/custom/GPSDestinaton_label=Destination" 
+				description="$$$/xmp/exif/custom/GPSDestination_description=Latitude and longitude of GPS destination position"
+				separator="$$$/metadataui/view/separator/comma_spaces=,  ">
+				<property name="exif:GPSDestLatitude" />
+				<property name="exif:GPSDestLongitude" />
+			</formatter>
+
+			<formatter
+				label="$$$/xmp/exif/custom/GPSDestBearing_label=Bearing"
+				descriptionRef="exif:GPSDestBearing"
+				format="$$$/metadataui/format/gps/direction=@0#{deg} (@1)">
+				<property name="exif:GPSDestBearing" />
+				<property name="exif:GPSDestBearingRef"/>
+			</formatter>
+
+			<formatter
+				label="$$$/xmp/exif/custom/GPSDestDistance_label=Distance"
+				descriptionRef="exif:GPSDestDistance"
+				separator=" ">
+			  	<property name="exif:GPSDestDistance"/>
+				<property name="exif:GPSDestDistanceRef">
+					<!-- use short form for distance unit -->
+			        <choice value='K' label='$$$/metadataui/format/unit/kilometer=km'/>
+			        <choice value='M' label='$$$/metadataui/format/unit/miles=mi'/>
+			        <choice value='N' label='$$$/metadataui/format/unit/nautical_mile=NM'/>
+				</property>
+			</formatter>
+		</section>
+		
+		<section>
+		  	<property
+				name="exif:GPSTimeStamp"
+				label="$$$/xmp/exif/custom/GPSTimeStamp=Time Stamp (GMT)"/>
+
+			<formatter
+				label="$$$/xmp/exif/custom/GPSReceiverMovement_label=Receiver Movement"
+				description="$$$/xmp/exif/custom/GPSReceiverMovement_description=Speed and direction of GPS receiver movement"
+				format="$$$/xmp/exif/custom/GPSReceiverMovement_format=@0 @1 at @2#{deg} (@3)">
+				<property name="exif:GPSSpeed" />
+				<property name="exif:GPSSpeedRef">
+					<!-- use short form for speed unit -->
+			        <choice value='K' label='$$$/metadataui/format/unit/kilometers_per_hour=km/h'/>
+			        <choice value='M' label='$$$/metadataui/format/unit/miles_per_hour=mph'/>
+			        <choice value='N' label='$$$/metadataui/format/unit/knots=kn'/>
+				</property>
+				<property name="exif:GPSTrack" />
+				<property name="exif:GPSTrackRef"/>
+			</formatter>
+
+		  	<property
+				name="exif:GPSProcessingMethod"
+				label="$$$/xmp/exif/custom/GPSProcessingMethod_label=Processing Method"/>
+
+			<property
+				name="exif:GPSMapDatum"
+				label="$$$/xmp/exif/custom/GPSMapDatum_label=Map Datum"/>
+
+			<property
+				name="exif:GPSAreaInformation"
+				label="$$$/xmp/exif/custom/GPSAreaInformation_label=Area Information"/>
+
+			<property
+				name="exif:GPSDifferential"
+				label="$$$/xmp/exif/custom/GPSDifferential_label=Differential correction"/>
+
+			<separator />
+
+		  	<property
+				name="exif:GPSVersionID"
+				label="$$$/xmp/exif/custom/GPSVersionID_label=Tag version"/>
+		</section>
+	</view>
+</views>

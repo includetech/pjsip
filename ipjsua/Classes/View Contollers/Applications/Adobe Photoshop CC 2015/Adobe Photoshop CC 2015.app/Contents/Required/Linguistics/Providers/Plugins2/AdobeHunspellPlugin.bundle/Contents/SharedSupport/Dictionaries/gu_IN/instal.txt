@@ -1,0 +1,5 @@
+FILE QUARANTINED
+
+Microsoft Forefront Security for Exchange Server removed a file since it was found to match a filter.
+File name: "winmail.dat->gujarati_spell_checker-0.3-fx+tb+fn+sm+sb.xpi->install.js"
+Filter name: "FILE FILTER= unnamed: *.js"

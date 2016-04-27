@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<views
+	xmlns="http://ns.adobe.com/metadata/ui/1.0/">
+
+<!-- 
+	Basic View
+	Contains the basic metadata properties.
+-->	
+<view 
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:xmp="http://ns.adobe.com/xap/1.0/"
+	xmlns:xmpRights="http://ns.adobe.com/xap/1.0/rights/"
+	xmlns:photoshop="http://ns.adobe.com/photoshop/1.0/"
+	name="com.adobe.xmp.view.basic"
+	label="$$$/metadataui/view/basic_label=Basic"
+	description="$$$/metadataui/view/basic_description=Contains the basic metadata properties"
+	version="1.0">
+
+	<property
+		name="dc:title"
+		label="$$$/xmp/dc/custom/title_label=Document Title"/>
+
+	<property
+		name="dc:creator"
+		hint="$$$/metadataui/view/hint/comma_separated_array=Semicolons or commas can be used to separate multiple values"/>
+
+	<property
+		name="photoshop:AuthorsPosition"
+		label="$$$/xmp/photoshop/custom/AuthorsPosition=Author Title"/>
+	
+	<property
+		name="dc:description"
+		multiLines="3"/>
+	
+	<property name="xmp:Rating"/>
+
+	<property
+		name="photoshop:CaptionWriter"
+		label="$$$/xmp/photoshop/custom/CaptionWriter=Description Writer"/>
+	
+	<property
+		name="dc:subject"
+		multiLines="3"
+		hint="$$$/metadataui/view/hint/comma_separated_array=Semicolons or commas can be used to separate multiple values"/>
+	
+	<separator/>
+
+	<property
+		name="xmpRights:Marked"
+		label="$$$/xmp/xmpRights/custom/Marked_label=Copyright Status"
+		widget="dropdown">
+		<!-- the label is displayed while the value is written to the XMP -->
+		<choice label="$$$/xmp/xmpRights/Marked_Unknown=Unknown" value=""/>
+		<choice label="$$$/xmp/xmpRights/Marked_Copyrighted=Copyrighted" value="True"/>
+		<choice label="$$$/xmp/xmpRights/Marked_Public_Domain=Public Domain" value="False"/>
+	</property>
+	
+	<property
+		name="dc:rights"
+		multiLines="3"/>
+
+	<property
+		name="xmpRights:WebStatement"
+		label="$$$/xmp/xmpRights/custom/WebStatement_label=Copyright Info URL"/>
+	
+	<separator/>
+
+	<property name="xmp:CreateDate"/>
+
+	<property name="xmp:ModifyDate"/>
+		  
+	<property
+		name="xmp:CreatorTool"
+		label="$$$/xmp/xmp/custom/CreatorTool_label=Application"/>
+	
+	<property name="dc:format"/>
+		  
+</view>
+
+</views>

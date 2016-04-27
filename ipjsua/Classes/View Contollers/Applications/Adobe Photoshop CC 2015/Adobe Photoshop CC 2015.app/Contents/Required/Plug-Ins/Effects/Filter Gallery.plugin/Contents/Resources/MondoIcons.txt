@@ -1,0 +1,1580 @@
+{
+	Name: "Mondo Cursor Source File",
+	Version: "1.0",
+
+	Icons: { 
+
+		Plus: {
+			HighResolution: {
+				Normal: "icons_x2/PlusN.png",
+				RollOver: "icons_x2/PlusR.png"
+			},
+			LowResolution: {
+				Normal: "icons/PlusN.png",
+				RollOver: "icons/PlusR.png"
+			}
+		},
+
+		Minus: {
+			HighResolution: {
+				Normal: "icons_x2/MinusN.png",
+				RollOver: "icons_x2/MinusR.png"
+			},
+			LowResolution: {
+				Normal: "icons/MinusN.png",
+				RollOver: "icons/MinusR.png"
+			}
+		},
+
+		ZoomInMtn: {
+			HighResolution: {
+				Normal: "icons_x2/ZoomInMtnN.png",
+				RollOver: "icons_x2/ZoomInMtnR.png"
+			},
+			LowResolution: {
+				Normal: "icons/ZoomInMtnN.png",
+				RollOver: "icons/ZoomInMtnR.png"
+			}
+		},
+
+		ZoomOutMtn: {
+			HighResolution: {
+				Normal: "icons_x2/ZoomOutMtnN.png",
+				RollOver: "icons_x2/ZoomOutMtnR.png"
+			},
+			LowResolution: {
+				Normal: "icons/ZoomOutMtnN.png",
+				RollOver: "icons/ZoomOutMtnR.png"
+			}
+		},
+
+		PopoutRightAqua: {
+			HighResolution: {
+				Dimmed: "icons_x2/PopoutRightAquaI.png",
+				Normal: "icons_x2/PopoutRightAquaN.png",
+				Selected: "icons_x2/PopoutRightAquaP.png"
+			},
+			LowResolution: {
+				Dimmed: "icons/PopoutRightAquaI.png",
+				Normal: "icons/PopoutRightAquaN.png",
+				Selected: "icons/PopoutRightAquaP.png"
+			}
+		},
+
+		PopoutRightGraphite: {
+			HighResolution: {
+				Dimmed: "icons_x2/PopoutRightAquaI.png",
+				Normal: "icons_x2/PopoutRightGraphiteN.png",
+				Selected: "icons_x2/PopoutRightGraphiteP.png"
+			},
+			LowResolution: {
+				Dimmed: "icons/PopoutRightAquaI.png",
+				Normal: "icons/PopoutRightGraphiteN.png",
+				Selected: "icons/PopoutRightGraphiteP.png"
+			}
+		},
+
+		Flyout: {
+			HighResolution: {
+				Normal: "icons_x2/FlyoutN_Mac.png",
+				RollOver: "icons_x2/FlyoutN_Mac.png",
+				Selected: "icons_x2/FlyoutP_Mac.png"
+			},
+			LowResolution: {
+				Normal: "icons/FlyoutN_Mac.png",
+				RollOver: "icons/FlyoutN_Mac.png",
+				Selected: "icons/FlyoutP_Mac.png"
+			}
+		},
+
+		FlyoutX: {
+			HighResolution: {
+				Normal: "icons_x2/FlyoutN_MacX.png",
+				RollOver: "icons_x2/FlyoutN_MacX.png",
+				Selected: "icons_x2/FlyoutP_MacX.png"
+			},
+			LowResolution: {
+				Normal: "icons/FlyoutN_MacX.png",
+				RollOver: "icons/FlyoutN_MacX.png",
+				Selected: "icons/FlyoutP_MacX.png"
+			}
+		},
+
+		UpDnPopupArrows: {
+			HighResolution: {
+				Normal: "icons_x2/UpDnPopupArrowsN.png",
+				RollOver: "icons_x2/UpDnPopupArrowsR.png"
+			},
+			LowResolution: {
+				Normal: "icons/UpDnPopupArrowsN.png",
+				RollOver: "icons/UpDnPopupArrowsR.png"
+			}
+		},
+
+		OWLFlyout: {
+			HighResolution: {
+				Normal: "icons_x2/P_Flyout_N_L.png",
+				RollOver: "icons_x2/P_Flyout_R_L.png",
+				Selected: "icons_x2/P_Flyout_D_L.png"
+			},
+			LowResolution: {
+				Normal: "icons/P_Flyout_N_L.png",
+				RollOver: "icons/P_Flyout_R_L.png",
+				Selected: "icons/P_Flyout_D_L.png"
+			}
+		},
+
+		FolderClose: {
+			HighResolution: {
+				Normal: "icons_x2/FolderCloseN.png",
+				RollOver: "icons_x2/FolderCloseR.png"
+			},
+			LowResolution: {
+				Normal: "icons/FolderCloseN.png",
+				RollOver: "icons/FolderCloseR.png"
+			}
+		},
+
+		FolderOpen: {
+			HighResolution: {
+				Normal: "icons_x2/FolderOpenN.png",
+				RollOver: "icons_x2/FolderOpenR.png"
+			},
+			LowResolution: {
+				Normal: "icons/FolderOpenN.png",
+				RollOver: "icons/FolderOpenR.png"
+			}
+		},
+
+		DiscloseChevronDown: {
+			HighResolution: {
+				Normal: "icons_x2/DiscloseChevronDownN.png"
+			},
+			LowResolution: {
+				Normal: "icons/DiscloseChevronDownN.png"
+			}
+		},
+
+		DiscloseChevronUp: {
+			HighResolution: {
+				Normal: "icons_x2/DiscloseChevronUpN.png"
+			},
+			LowResolution: {
+				Normal: "icons/DiscloseChevronUpN.png"
+			}
+		},
+
+		DiscloseRight: {
+			HighResolution: {
+				Normal: "icons_x2/DiscloseRightXMac.png"
+			},
+			LowResolution: {
+				Normal: "icons/DiscloseRightXMac.png"
+			}
+		},
+
+		DiscloseDown: {
+			HighResolution: {
+				Normal: "icons_x2/DiscloseDownXMac.png"
+			},
+			LowResolution: {
+				Normal: "icons/DiscloseDownXMac.png"
+			}
+		},
+
+		Eye: {
+			HighResolution: {
+				Normal: "icons_x2/SP_x2_Visibility_Xs_N.png",
+				RollOver: "icons_x2/SP_x2_Visibility_Xs_N.png"
+			},
+			LowResolution: {
+				Normal: "icons/SP_Visibility_Xs_N.png",
+				RollOver: "icons/SP_Visibility_Xs_N.png"
+			}
+		},
+
+		New: {
+			HighResolution: {
+				Normal: "icons_x2/SP_x2_New_Md_N.png",
+				RollOver: "icons_x2/SP_x2_New_Md_N.png"
+			},
+			LowResolution: {
+				Normal: "icons/SP_New_Md_N.png",
+				RollOver: "icons/SP_New_Md_N.png"
+			}
+		},
+
+		Trash: {
+			HighResolution: {
+				Normal: "icons_x2/SP_x2_Delete_Md_N.png",
+				RollOver: "icons_x2/SP_x2_Delete_Md_N.png"
+			},
+			LowResolution: {
+				Normal: "icons/SP_Delete_Md_N.png",
+				RollOver: "icons/SP_Delete_Md_N.png"
+			}
+		},
+
+
+
+
+		TabFrontLeftNoGrip: {
+			HighResolution: {
+				Normal: "icons_x2/P_TabFrontLeftNoGrip_N.png"
+			},
+			LowResolution: {
+				Normal: "icons/P_TabFrontLeftNoGrip_N.png"
+			}
+		},
+
+		TabFrontLeftFill: {
+			HighResolution: {
+				Normal: "icons_x2/P_TabFrontLeftFill_N.png"
+			},
+			LowResolution: {
+				Normal: "icons/P_TabFrontLeftFill_N.png"
+			}
+		},
+
+		TabFrontCenter: {
+			HighResolution: {
+				Normal: "icons_x2/P_TabFrontCenter_N.png"
+			},
+			LowResolution: {
+				Normal: "icons/P_TabFrontCenter_N.png"
+			}
+		},
+
+		TabFrontCenterFill: {
+			HighResolution: {
+				Normal: "icons_x2/P_TabFrontCenterFill_N.png"
+			},
+			LowResolution: {
+				Normal: "icons/P_TabFrontCenterFill_N.png"
+			}
+		},
+
+		TabFrontRight: {
+			HighResolution: {
+				Normal: "icons_x2/P_TabFrontRight_N.png"
+			},
+			LowResolution: {
+				Normal: "icons/P_TabFrontRight_N.png"
+			}
+		},
+
+		TabFrontRightFill: {
+			HighResolution: {
+				Normal: "icons_x2/P_TabFrontRightFill_N.png"
+			},
+			LowResolution: {
+				Normal: "icons/P_TabFrontRightFill_N.png"
+			}
+		},
+
+		TabBackLeft: {
+			HighResolution: {
+				Normal: "icons_x2/P_TabBackLeft_N.png"
+			},
+			LowResolution: {
+				Normal: "icons/P_TabBackLeft_N.png"
+			}
+		},
+
+		TabBackLeftFill: {
+			HighResolution: {
+				Normal: "icons_x2/P_TabBackLeftFill_N.png"
+			},
+			LowResolution: {
+				Normal: "icons/P_TabBackLeftFill_N.png"
+			}
+		},
+
+		TabBackCenter: {
+			HighResolution: {
+				Normal: "icons_x2/P_TabBackCenter_N.png"
+			},
+			LowResolution: {
+				Normal: "icons/P_TabBackCenter_N.png"
+			}
+		},
+
+		TabBackCenterFill: {
+			HighResolution: {
+				Normal: "icons_x2/P_TabBackCenterFill_N.png"
+			},
+			LowResolution: {
+				Normal: "icons/P_TabBackCenterFill_N.png"
+			}
+		},
+
+		TabBackRight: {
+			HighResolution: {
+				Normal: "icons_x2/P_TabBackRight_N.png"
+			},
+			LowResolution: {
+				Normal: "icons/P_TabBackRight_N.png"
+			}
+		},
+
+		TabBackRightFill: {
+			HighResolution: {
+				Normal: "icons_x2/P_TabBackRightFill_N.png"
+			},
+			LowResolution: {
+				Normal: "icons/P_TabBackRightFill_N.png"
+			}
+		},
+
+		TabCycle: {
+			HighResolution: {
+				Normal: "icons_x2/P_TabCycle_N.png"
+			},
+			LowResolution: {
+				Normal: "icons/P_TabCycle_N.png"
+			}
+		},
+
+		TabFlyoutShape: {
+			HighResolution: {
+				Normal: "icons_x2/P_FlyoutShape.png"
+			},
+			LowResolution: {
+				Normal: "icons/P_FlyoutShape.png"
+			}
+		},
+
+		TabFlyoutShapeFill: {
+			HighResolution: {
+				Normal: "icons_x2/P_FlyoutShapeFill.png"
+			},
+			LowResolution: {
+				Normal: "icons/P_FlyoutShapeFill.png"
+			}
+		},
+
+		TabOptionFlyout: {
+			HighResolution: {
+				Normal: "icons_x2/P_OptionFlyout2_N.png",
+				RollOver: "icons_x2/P_OptionFlyout2_R.png",
+				Selected: "icons_x2/P_OptionFlyout2_R.png"
+			},
+			LowResolution: {
+				Normal: "icons/P_OptionFlyout2_N.png",
+				RollOver: "icons/P_OptionFlyout2_R.png",
+				Selected: "icons/P_OptionFlyout2_R.png"
+			}
+		},
+
+		Tb2FrontLeftNoGrip: {
+			HighResolution: {
+				Normal: "icons_x2/N_TabFrontLeftNoGrip_N.png"
+			},
+			LowResolution: {
+				Normal: "icons/N_TabFrontLeftNoGrip_N.png"
+			}
+		},
+
+		Tb2FrontLeftFill: {
+			HighResolution: {
+				Normal: "icons_x2/N_TabFrontLeftFill_N.png"
+			},
+			LowResolution: {
+				Normal: "icons/N_TabFrontLeftFill_N.png"
+			}
+		},
+
+		Tb2FrontCenter: {
+			HighResolution: {
+				Normal: "icons_x2/N_TabFrontCenter_N.png"
+			},
+			LowResolution: {
+				Normal: "icons/N_TabFrontCenter_N.png"
+			}
+		},
+
+		Tb2FrontCenterFill: {
+			HighResolution: {
+				Normal: "icons_x2/N_TabFrontCenterFill_N.png"
+			},
+			LowResolution: {
+				Normal: "icons/N_TabFrontCenterFill_N.png"
+			}
+		},
+
+		Tb2FrontRight: {
+			HighResolution: {
+				Normal: "icons_x2/N_TabFrontRight_N.png"
+			},
+			LowResolution: {
+				Normal: "icons/N_TabFrontRight_N.png"
+			}
+		},
+
+		Tb2FrontRightFill: {
+			HighResolution: {
+				Normal: "icons_x2/N_TabFrontRightFill_N.png"
+			},
+			LowResolution: {
+				Normal: "icons/N_TabFrontRightFill_N.png"
+			}
+		},
+
+		Tb2BackLeft: {
+			HighResolution: {
+				Normal: "icons_x2/N_TabBackLeft_N.png"
+			},
+			LowResolution: {
+				Normal: "icons/N_TabBackLeft_N.png"
+			}
+		},
+
+		Tb2BackLeftFill: {
+			HighResolution: {
+				Normal: "icons_x2/N_TabBackLeftFill_N.png"
+			},
+			LowResolution: {
+				Normal: "icons/N_TabBackLeftFill_N.png"
+			}
+		},
+
+		Tb2BackCenter: {
+			HighResolution: {
+				Normal: "icons_x2/N_TabBackCenter_N.png"
+			},
+			LowResolution: {
+				Normal: "icons/N_TabBackCenter_N.png"
+			}
+		},
+
+		Tb2BackCenterFill: {
+			HighResolution: {
+				Normal: "icons_x2/N_TabBackCenterFill_N.png"
+			},
+			LowResolution: {
+				Normal: "icons/N_TabBackCenterFill_N.png"
+			}
+		},
+
+		Tb2BackRight: {
+			HighResolution: {
+				Normal: "icons_x2/N_TabBackRight_N.png"
+			},
+			LowResolution: {
+				Normal: "icons/N_TabBackRight_N.png"
+			}
+		},
+
+		Tb2BackRightFill: {
+			HighResolution: {
+				Normal: "icons_x2/N_TabBackRightFill_N.png"
+			},
+			LowResolution: {
+				Normal: "icons/N_TabBackRightFill_N.png"
+			}
+		},
+
+		Tb2Cycle: {
+			HighResolution: {
+				Normal: "icons_x2/P_TabCycle_N.png"
+			},
+			LowResolution: {
+				Normal: "icons/P_TabCycle_N.png"
+			}
+		},
+
+		Tb2FlyoutShape: {
+			HighResolution: {
+				Normal: "icons_x2/N_FlyoutShape.png"
+			},
+			LowResolution: {
+				Normal: "icons/N_FlyoutShape.png"
+			}
+		},
+
+		Tb2FlyoutShapeFill: {
+			HighResolution: {
+				Normal: "icons_x2/N_FlyoutShapeFill.png"
+			},
+			LowResolution: {
+				Normal: "icons/N_FlyoutShapeFill.png"
+			}
+		},
+
+		Tb2OptionFlyout: {
+			HighResolution: {
+				Normal: "icons_x2/N_OptionFlyout2_N.png",
+				RollOver: "icons_x2/N_OptionFlyout2_R.png",
+				Selected: "icons_x2/N_OptionFlyout2_R.png"
+			},
+			LowResolution: {
+				Normal: "icons/N_OptionFlyout2_N.png",
+				RollOver: "icons/N_OptionFlyout2_R.png",
+				Selected: "icons/N_OptionFlyout2_R.png"
+			}
+		},
+
+		PopupDnArrowLg: {
+			HighResolution: {
+				Normal: "icons_x2/PopupDnArrowLgN.png",
+				RollOver: "icons_x2/PopupDnArrowLgR.png"
+			},
+			LowResolution: {
+				Normal: "icons/PopupDnArrowLgN.png",
+				RollOver: "icons/PopupDnArrowLgR.png"
+			}
+		},
+
+		PopupDnArrowMd: {
+			HighResolution: {
+				Normal: "icons_x2/PopupDnArrowMdN.png",
+				RollOver: "icons_x2/PopupDnArrowMdR.png"
+			},
+			LowResolution: {
+				Normal: "icons/PopupDnArrowMdN.png",
+				RollOver: "icons/PopupDnArrowMdR.png"
+			}
+		},
+
+		PopupDnArrowSm: {
+			HighResolution: {
+				Normal: "icons_x2/PopupDnArrowSmN.png",
+				RollOver: "icons_x2/PopupDnArrowSmR.png"
+			},
+			LowResolution: {
+				Normal: "icons/PopupDnArrowSmN.png",
+				RollOver: "icons/PopupDnArrowSmR.png"
+			}
+		},
+
+		PopupLfArrowLg: {
+			HighResolution: {
+				Normal: "icons_x2/PopupLfArrowLgN.png",
+				RollOver: "icons_x2/PopupLfArrowLgR.png"
+			},
+			LowResolution: {
+				Normal: "icons/PopupLfArrowLgN.png",
+				RollOver: "icons/PopupLfArrowLgR.png"
+			}
+		},
+
+		PopupLfArrowMd: {
+			HighResolution: {
+				Normal: "icons_x2/PopupLfArrowMdN.png",
+				RollOver: "icons_x2/PopupLfArrowMdR.png"
+			},
+			LowResolution: {
+				Normal: "icons/PopupLfArrowMdN.png",
+				RollOver: "icons/PopupLfArrowMdR.png"
+			}
+		},
+
+		PopupLfArrowSm: {
+			HighResolution: {
+				Normal: "icons_x2/PopupLfArrowSmN.png",
+				RollOver: "icons_x2/PopupLfArrowSmR.png"
+			},
+			LowResolution: {
+				Normal: "icons/PopupLfArrowSmN.png",
+				RollOver: "icons/PopupLfArrowSmR.png"
+			}
+		},
+
+		PopupRtArrowLg: {
+			HighResolution: {
+				Normal: "icons_x2/PopupRtArrowLgN.png",
+				RollOver: "icons_x2/PopupRtArrowLgR.png"
+			},
+			LowResolution: {
+				Normal: "icons/PopupRtArrowLgN.png",
+				RollOver: "icons/PopupRtArrowLgR.png"
+			}
+		},
+
+		PopupRtArrowMd: {
+			HighResolution: {
+				Normal: "icons_x2/PopupRtArrowMdN.png",
+				RollOver: "icons_x2/PopupRtArrowMdR.png"
+			},
+			LowResolution: {
+				Normal: "icons/PopupRtArrowMdN.png",
+				RollOver: "icons/PopupRtArrowMdR.png"
+			}
+		},
+
+		PopupRtArrowSm: {
+			HighResolution: {
+				Normal: "icons_x2/PopupRtArrowSmN.png",
+				RollOver: "icons_x2/PopupRtArrowSmR.png"
+			},
+			LowResolution: {
+				Normal: "icons/PopupRtArrowSmN.png",
+				RollOver: "icons/PopupRtArrowSmR.png"
+			}
+		},
+
+		PopupUpArrowLg: {
+			HighResolution: {
+				Normal: "icons_x2/PopupUpArrowLgN.png",
+				RollOver: "icons_x2/PopupUpArrowLgR.png"
+			},
+			LowResolution: {
+				Normal: "icons/PopupUpArrowLgN.png",
+				RollOver: "icons/PopupUpArrowLgR.png"
+			}
+		},
+
+		PopupUpArrowMd: {
+			HighResolution: {
+				Normal: "icons_x2/PopupUpArrowMdN.png",
+				RollOver: "icons_x2/PopupUpArrowMdR.png"
+			},
+			LowResolution: {
+				Normal: "icons/PopupUpArrowMdN.png",
+				RollOver: "icons/PopupUpArrowMdR.png"
+			}
+		},
+
+		PopupUpArrowSm: {
+			HighResolution: {
+				Normal: "icons_x2/PopupUpArrowSmN.png",
+				RollOver: "icons_x2/PopupUpArrowSmR.png"
+			},
+			LowResolution: {
+				Normal: "icons/PopupUpArrowSmN.png",
+				RollOver: "icons/PopupUpArrowSmR.png"
+			}
+		},
+
+
+
+		SliderDnButtonLg: {
+			HighResolution: {
+				Dimmed: "icons_x2/SliderDnButtonLgXMacI.png",
+				Normal: "icons_x2/SliderDnButtonLgXMacN.png",
+				Selected: "icons_x2/SliderDnButtonLgXMacP.png"
+			},
+			LowResolution: {
+				Dimmed: "icons/SliderDnButtonLgXMacI.png",
+				Normal: "icons/SliderDnButtonLgXMacN.png",
+				Selected: "icons/SliderDnButtonLgXMacP.png"
+			}
+		},
+
+		SliderDnButtonSm: {
+			HighResolution: {
+				Dimmed: "icons_x2/SliderDnButtonSmXMacI.png",
+				Normal: "icons_x2/SliderDnButtonSmXMacN.png",
+				Selected: "icons_x2/SliderDnButtonSmXMacP.png"
+			},
+			LowResolution: {
+				Dimmed: "icons/SliderDnButtonSmXMacI.png",
+				Normal: "icons/SliderDnButtonSmXMacN.png",
+				Selected: "icons/SliderDnButtonSmXMacP.png"
+			}
+		},
+
+		SliderLfButtonLg: {
+			HighResolution: {
+				Dimmed: "icons_x2/SliderLfButtonLgXMacI.png",
+				Normal: "icons_x2/SliderLfButtonLgXMacN.png",
+				Selected: "icons_x2/SliderLfButtonLgXMacP.png"
+			},
+			LowResolution: {
+				Dimmed: "icons/SliderLfButtonLgXMacI.png",
+				Normal: "icons/SliderLfButtonLgXMacN.png",
+				Selected: "icons/SliderLfButtonLgXMacP.png"
+			}
+		},
+
+		SliderLfButtonSm: {
+			HighResolution: {
+				Dimmed: "icons_x2/SliderLfButtonSmXMacI.png",
+				Normal: "icons_x2/SliderLfButtonSmXMacN.png",
+				Selected: "icons_x2/SliderLfButtonSmXMacP.png"
+			},
+			LowResolution: {
+				Dimmed: "icons/SliderLfButtonSmXMacI.png",
+				Normal: "icons/SliderLfButtonSmXMacN.png",
+				Selected: "icons/SliderLfButtonSmXMacP.png"
+			}
+		},
+
+		SliderRtButtonLg: {
+			HighResolution: {
+				Dimmed: "icons_x2/SliderRtButtonLgXMacI.png",
+				Normal: "icons_x2/SliderRtButtonLgXMacN.png",
+				Selected: "icons_x2/SliderRtButtonLgXMacP.png"
+			},
+			LowResolution: {
+				Dimmed: "icons/SliderRtButtonLgXMacI.png",
+				Normal: "icons/SliderRtButtonLgXMacN.png",
+				Selected: "icons/SliderRtButtonLgXMacP.png"
+			}
+		},
+
+		SliderRtButtonSm: {
+			HighResolution: {
+				Dimmed: "icons_x2/SliderRtButtonSmXMacI.png",
+				Normal: "icons_x2/SliderRtButtonSmXMacN.png",
+				Selected: "icons_x2/SliderRtButtonSmXMacP.png"
+			},
+			LowResolution: {
+				Dimmed: "icons/SliderRtButtonSmXMacI.png",
+				Normal: "icons/SliderRtButtonSmXMacN.png",
+				Selected: "icons/SliderRtButtonSmXMacP.png"
+			}
+		},
+
+		SliderUpButtonLg: {
+			HighResolution: {
+				Dimmed: "icons_x2/SliderUpButtonLgXMacI.png",
+				Normal: "icons_x2/SliderUpButtonLgXMacN.png",
+				Selected: "icons_x2/SliderUpButtonLgXMacP.png"
+			},
+			LowResolution: {
+				Dimmed: "icons/SliderUpButtonLgXMacI.png",
+				Normal: "icons/SliderUpButtonLgXMacN.png",
+				Selected: "icons/SliderUpButtonSmXMacP.png"
+			}
+		},
+
+		SliderUpButtonSm: {
+			HighResolution: {
+				Dimmed: "icons_x2/SliderUpButtonSmXMacI.png",
+				Normal: "icons_x2/SliderUpButtonSmXMacN.png",
+				Selected: "icons_x2/SliderUpButtonSmXMacP.png"
+			},
+			LowResolution: {
+				Dimmed: "icons/SliderUpButtonSmXMacI.png",
+				Normal: "icons/SliderUpButtonSmXMacN.png",
+				Selected: "icons/SliderUpButtonSmXMacP.png"
+			}
+		},
+
+
+		SliderGrooveLeft: {
+			HighResolution: {
+				Normal: "icons_x2/SliderGrooveLeftXMac.png"
+			},
+			LowResolution: {
+				Normal: "icons/SliderGrooveLeftXMac.png"
+			}
+		},
+
+		SliderGrooveHMid: {
+			HighResolution: {
+				Normal: "icons_x2/SliderGrooveHMidXMac.png"
+			},
+			LowResolution: {
+				Normal: "icons/SliderGrooveHMidXMac.png"
+			}
+		},
+
+		SliderGrooveRight: {
+			HighResolution: {
+				Normal: "icons_x2/SliderGrooveRightXMac.png"
+			},
+			LowResolution: {
+				Normal: "icons/SliderGrooveRightXMac.png"
+			}
+		},
+
+		SliderGrooveTop: {
+			HighResolution: {
+				Normal: "icons_x2/SliderGrooveTopXMac.png"
+			},
+			LowResolution: {
+				Normal: "icons/SliderGrooveTopXMac.png"
+			}
+		},
+
+		SliderGrooveVMid: {
+			HighResolution: {
+				Normal: "icons_x2/SliderGrooveVMidXMac.png"
+			},
+			LowResolution: {
+				Normal: "icons/SliderGrooveVMidXMac.png"
+			}
+		},
+
+		SliderGrooveBottom: {
+			HighResolution: {
+				Normal: "icons_x2/SliderGrooveBottomXMac.png"
+			},
+			LowResolution: {
+				Normal: "icons/SliderGrooveBottomXMac.png"
+			}
+		},
+
+		Dial: {
+			HighResolution: {
+				Dimmed: "icons_x2/DialMacD.png",
+				Normal: "icons_x2/DialMacN.png"
+			},
+			LowResolution: {
+				Dimmed: "icons/DialMacD.png",
+				Normal: "icons/DialMacN.png"
+			}
+		},
+
+		DialHub: {
+			HighResolution: {
+				Normal: "icons_x2/DialHub.png"
+			},
+			LowResolution: {
+				Normal: "icons/DialHub.png"
+			}
+		},
+
+		ZoomBack: {
+			HighResolution: {
+				Normal: "icons_x2/P_ZoomBackground_38x18.png"
+			},
+			LowResolution: {
+				Normal: "icons/P_ZoomBackground_38x18.png"
+			}
+		},
+
+		ZoomPlus: {
+			HighResolution: {
+				Normal: "icons_x2/P_Plus_Sm_N.png",
+				RollOver: "icons_x2/P_Plus_Sm_R.png",
+				Selected: "icons_x2/P_Plus_Sm_N.png"
+			},
+			LowResolution: {
+				Normal: "icons/P_Plus_Sm_N.png",
+				RollOver: "icons/P_Plus_Sm_R.png",
+				Selected: "icons/P_Plus_Sm_N.png"
+			}
+		},
+
+		ZoomMinus: {
+			HighResolution: {
+				Normal: "icons_x2/P_Minus_Sm_N.png",
+				RollOver: "icons_x2/P_Minus_Sm_R.png",
+				Selected: "icons_x2/P_Minus_Sm_N.png"
+			},
+			LowResolution: {
+				Normal: "icons/P_Minus_Sm_N.png",
+				RollOver: "icons/P_Minus_Sm_R.png",
+				Selected: "icons/P_Minus_Sm_N.png"
+			}
+		},
+
+		BSB1H_Track: {
+			HighResolution: {
+				Dimmed: "icons_x2/BSB1H_Track_I.png",
+				Normal: "icons_x2/BSB1H_Track_N.png"
+			},
+			LowResolution: {
+				Dimmed: "icons/BSB1H_Track_I.png",
+				Normal: "icons/BSB1H_Track_N.png"
+			}
+		},
+
+		BSB1H_ThumbLeft: {
+			HighResolution: {
+				Normal: "icons_x2/BSB1H_ThumbLeft_N.png",
+				RollOver: "icons_x2/BSB1H_ThumbLeft_R.png",
+				Selected: "icons_x2/BSB1H_ThumbLeft_P.png"
+			},
+			LowResolution: {
+				Normal: "icons/BSB1H_ThumbLeft_N.png",
+				RollOver: "icons/BSB1H_ThumbLeft_R.png",
+				Selected: "icons/BSB1H_ThumbLeft_P.png"
+			}
+		},
+
+		BSB1H_ThumbMid: {
+			HighResolution: {
+				Normal: "icons_x2/BSB1H_ThumbMid_N.png",
+				RollOver: "icons_x2/BSB1H_ThumbMid_R.png",
+				Selected: "icons_x2/BSB1H_ThumbMid_P.png"
+			},
+			LowResolution: {
+				Normal: "icons/BSB1H_ThumbMid_N.png",
+				RollOver: "icons/BSB1H_ThumbMid_R.png",
+				Selected: "icons/BSB1H_ThumbMid_P.png"
+			}
+		},
+
+		BSB1H_ThumbRight: {
+			HighResolution: {
+				Normal: "icons_x2/BSB1H_ThumbRight_N.png",
+				RollOver: "icons_x2/BSB1H_ThumbRight_R.png",
+				Selected: "icons_x2/BSB1H_ThumbRight_P.png"
+			},
+			LowResolution: {
+				Normal: "icons/BSB1H_ThumbRight_N.png",
+				RollOver: "icons/BSB1H_ThumbRight_R.png",
+				Selected: "icons/BSB1H_ThumbRight_P.png"
+			}
+		},
+
+		BSB1H_Grip: {
+			HighResolution: {
+				Normal: "icons_x2/BSB1H_Grip_N.png"
+			},
+			LowResolution: {
+				Normal: "icons/BSB1H_Grip_N.png"
+			}
+		},
+
+		BSB1H_BtnLeft: {
+			HighResolution: {
+				Dimmed: "icons_x2/BSB1H_BtnLeft_I.png",
+				Normal: "icons_x2/BSB1H_BtnLeft_N.png",
+				RollOver: "icons_x2/BSB1H_BtnLeft_R.png",
+				Selected: "icons_x2/BSB1H_BtnLeft_P.png"
+			},
+			LowResolution: {
+				Dimmed: "icons/BSB1H_BtnLeft_I.png",
+				Normal: "icons/BSB1H_BtnLeft_N.png",
+				RollOver: "icons/BSB1H_BtnLeft_R.png",
+				Selected: "icons/BSB1H_BtnLeft_P.png"
+			}
+		},
+
+		BSB1H_BtnRight: {
+			HighResolution: {
+				Dimmed: "icons_x2/BSB1H_BtnRight_I.png",
+				Normal: "icons_x2/BSB1H_BtnRight_N.png",
+				RollOver: "icons_x2/BSB1H_BtnRight_R.png",
+				Selected: "icons_x2/BSB1H_BtnRight_P.png"
+			},
+			LowResolution: {
+				Dimmed: "icons/BSB1H_BtnRight_I.png",
+				Normal: "icons/BSB1H_BtnRight_N.png",
+				RollOver: "icons/BSB1H_BtnRight_R.png",
+				Selected: "icons/BSB1H_BtnRight_P.png"
+			}
+		},
+
+		BSB1V_Track: {
+			HighResolution: {
+				Dimmed: "icons_x2/BSB1V_Track_I.png",
+				Normal: "icons_x2/BSB1V_Track_N.png"
+			},
+			LowResolution: {
+				Dimmed: "icons/BSB1V_Track_I.png",
+				Normal: "icons/BSB1V_Track_N.png"
+			}
+		},
+
+		BSB1V_ThumbTop: {
+			HighResolution: {
+				Normal: "icons_x2/BSB1V_ThumbTop_N.png",
+				RollOver: "icons_x2/BSB1V_ThumbTop_R.png",
+				Selected: "icons_x2/BSB1V_ThumbTop_P.png"
+			},
+			LowResolution: {
+				Normal: "icons/BSB1V_ThumbTop_N.png",
+				RollOver: "icons/BSB1V_ThumbTop_R.png",
+				Selected: "icons/BSB1V_ThumbTop_P.png"
+			}
+		},
+
+		BSB1V_ThumbMid: {
+			HighResolution: {
+				Normal: "icons_x2/BSB1V_ThumbMid_N.png",
+				RollOver: "icons_x2/BSB1V_ThumbMid_R.png",
+				Selected: "icons_x2/BSB1V_ThumbMid_P.png"
+			},
+			LowResolution: {
+				Normal: "icons/BSB1V_ThumbMid_N.png",
+				RollOver: "icons/BSB1V_ThumbMid_R.png",
+				Selected: "icons/BSB1V_ThumbMid_P.png"
+			}
+		},
+
+		BSB1V_ThumbBottom: {
+			HighResolution: {
+				Normal: "icons_x2/BSB1V_ThumbBottom_N.png",
+				RollOver: "icons_x2/BSB1V_ThumbBottom_R.png",
+				Selected: "icons_x2/BSB1V_ThumbBottom_P.png"
+			},
+			LowResolution: {
+				Normal: "icons/BSB1V_ThumbBottom_N.png",
+				RollOver: "icons/BSB1V_ThumbBottom_R.png",
+				Selected: "icons/BSB1V_ThumbBottom_P.png"
+			}
+		},
+
+		BSB1V_Grip: {
+			HighResolution: {
+				Normal: "icons_x2/BSB1V_Grip_N.png"
+			},
+			LowResolution: {
+				Normal: "icons/BSB1V_Grip_N.png"
+			}
+		},
+
+		BSB1V_BtnUp: {
+			HighResolution: {
+				Dimmed: "icons_x2/BSB1V_BtnUp_I.png",
+				Normal: "icons_x2/BSB1V_BtnUp_N.png",
+				RollOver: "icons_x2/BSB1V_BtnUp_R.png",
+				Selected: "icons_x2/BSB1V_BtnUp_P.png"
+			},
+			LowResolution: {
+				Dimmed: "icons/BSB1V_BtnUp_I.png",
+				Normal: "icons/BSB1V_BtnUp_N.png",
+				RollOver: "icons/BSB1V_BtnUp_R.png",
+				Selected: "icons/BSB1V_BtnUp_P.png"
+			}
+		},
+
+		BSB1V_BtnDown: {
+			HighResolution: {
+				Dimmed: "icons_x2/BSB1V_BtnDown_I.png",
+				Normal: "icons_x2/BSB1V_BtnDown_N.png",
+				RollOver: "icons_x2/BSB1V_BtnDown_R.png",
+				Selected: "icons_x2/BSB1V_BtnDown_P.png"
+			},
+			LowResolution: {
+				Dimmed: "icons/BSB1V_BtnDown_I.png",
+				Normal: "icons/BSB1V_BtnDown_N.png",
+				RollOver: "icons/BSB1V_BtnDown_R.png",
+				Selected: "icons/BSB1V_BtnDown_P.png"
+			}
+		},
+
+		SBH_Background: {
+			HighResolution: {
+				Normal: "icons_x2/SBH_Background.png"
+			},
+			LowResolution: {
+				Normal: "icons/SBH_Background.png"
+			}
+		},
+
+		SBH_ThumbLeft: {
+			HighResolution: {
+				Normal: "icons_x2/SBH_ThumbLeft.png"
+			},
+			LowResolution: {
+				Normal: "icons/SBH_ThumbLeft.png"
+			}
+		},
+
+		SBH_ThumbMid: {
+			HighResolution: {
+				Normal: "icons_x2/SBH_ThumbMid.png"
+			},
+			LowResolution: {
+				Normal: "icons/SBH_ThumbMid.png"
+			}
+		},
+
+		SBH_ThumbRight: {
+			HighResolution: {
+				Normal: "icons_x2/SBH_ThumbRight.png"
+			},
+			LowResolution: {
+				Normal: "icons/SBH_ThumbRight.png"
+			}
+		},
+
+		SBH_BtnLeft: {
+			HighResolution: {
+				Normal: "icons_x2/SBH_BtnLeft_N.png",
+				Selected: "icons_x2/SBH_BtnLeft_R.png"
+			},
+			LowResolution: {
+				Normal: "icons/SBH_BtnLeft_N.png",
+				Selected: "icons/SBH_BtnLeft_R.png"
+			}
+		},
+
+		SBH_BtnRight: {
+			HighResolution: {
+				Normal: "icons_x2/SBH_BtnRight_N.png",
+				Selected: "icons_x2/SBH_BtnRight_R.png"
+			},
+			LowResolution: {
+				Normal: "icons/SBH_BtnRight_N.png",
+				Selected: "icons/SBH_BtnRight_R.png"
+			}
+		},
+
+		SBV_Background: {
+			HighResolution: {
+				Normal: "icons_x2/SBV_Background.png"
+			},
+			LowResolution: {
+				Normal: "icons/SBV_Background.png"
+			}
+		},
+
+		SBV_ThumbTop: {
+			HighResolution: {
+				Normal: "icons_x2/SBV_ThumbTop.png"
+			},
+			LowResolution: {
+				Normal: "icons/SBV_ThumbTop.png"
+			}
+		},
+
+		SBV_ThumbMid: {
+			HighResolution: {
+				Normal: "icons_x2/SBV_ThumbMid.png"
+			},
+			LowResolution: {
+				Normal: "icons/SBV_ThumbMid.png"
+			}
+		},
+
+		SBV_ThumbBottom: {
+			HighResolution: {
+				Normal: "icons_x2/SBV_ThumbBottom.png"
+			},
+			LowResolution: {
+				Normal: "icons/SBV_ThumbBottom.png"
+			}
+		},
+
+		SBV_BtnUp: {
+			HighResolution: {
+				Normal: "icons_x2/SBV_BtnUp_N.png",
+				Selected: "icons_x2/SBV_BtnUp_R.png"
+			},
+			LowResolution: {
+				Normal: "icons/SBV_BtnUp_N.png",
+				Selected: "icons/SBV_BtnUp_R.png"
+			}
+		},
+
+		SBV_BtnDown: {
+			HighResolution: {
+				Normal: "icons_x2/SBV_BtnDown_N.png",
+				Selected: "icons_x2/SBV_BtnDown_R.png"
+			},
+			LowResolution: {
+				Normal: "icons/SBV_BtnDown_N.png",
+				Selected: "icons/SBV_BtnDown_R.png"
+			}
+		},
+
+		Slider2DnButton: {
+			HighResolution: {
+				Dimmed: "icons_x2/Slider2DnBtnI.png",
+				Normal: "icons_x2/Slider2DnBtnN.png",
+				RollOver: "icons_x2/Slider2DnBtnR.png",
+				Selected: "icons_x2/Slider2DnBtnP.png"
+			},
+			LowResolution: {
+				Dimmed: "icons/Slider2DnBtnI.png",
+				Normal: "icons/Slider2DnBtnN.png",
+				RollOver: "icons/Slider2DnBtnR.png",
+				Selected: "icons/Slider2DnBtnP.png"
+			}
+		},
+
+		Slider2LfButton: {
+			HighResolution: {
+				Dimmed: "icons_x2/Slider2LfBtnI.png",
+				Normal: "icons_x2/Slider2LfBtnN.png",
+				RollOver: "icons_x2/Slider2LfBtnR.png",
+				Selected: "icons_x2/Slider2LfBtnP.png"
+			},
+			LowResolution: {
+				Dimmed: "icons/Slider2LfBtnI.png",
+				Normal: "icons/Slider2LfBtnN.png",
+				RollOver: "icons/Slider2LfBtnR.png",
+				Selected: "icons/Slider2LfBtnP.png"
+			}
+		},
+
+		Slider2RtButton: {
+			HighResolution: {
+				Dimmed: "icons_x2/Slider2RtBtnI.png",
+				Normal: "icons_x2/Slider2RtBtnN.png",
+				RollOver: "icons_x2/Slider2RtBtnR.png",
+				Selected: "icons_x2/Slider2RtBtnP.png"
+			},
+			LowResolution: {
+				Dimmed: "icons/Slider2RtBtnI.png",
+				Normal: "icons/Slider2RtBtnN.png",
+				RollOver: "icons/Slider2RtBtnR.png",
+				Selected: "icons/Slider2RtBtnP.png"
+			}
+		},
+
+		Slider2UpButton: {
+			HighResolution: {
+				Dimmed: "icons_x2/Slider2UpBtnI.png",
+				Normal: "icons_x2/Slider2UpBtnN.png",
+				RollOver: "icons_x2/Slider2UpBtnR.png",
+				Selected: "icons_x2/Slider2UpBtnP.png"
+			},
+			LowResolution: {
+				Dimmed: "icons/Slider2UpBtnI.png",
+				Normal: "icons/Slider2UpBtnN.png",
+				RollOver: "icons/Slider2UpBtnR.png",
+				Selected: "icons/Slider2UpBtnP.png"
+			}
+		},
+
+		Slider2GrooveLeft: {
+			HighResolution: {
+				Normal: "icons_x2/Slider2GrooveLeft.png"
+			},
+			LowResolution: {
+				Normal: "icons/Slider2GrooveLeft.png"
+			}
+		},
+
+		Slider2GrooveHMid: {
+			HighResolution: {
+				Normal: "icons_x2/Slider2GrooveHMid.png"
+			},
+			LowResolution: {
+				Normal: "icons/Slider2GrooveHMid.png"
+			}
+		},
+
+		Slider2GrooveRight: {
+			HighResolution: {
+				Normal: "icons_x2/Slider2GrooveRight.png"
+			},
+			LowResolution: {
+				Normal: "icons/Slider2GrooveRight.png"
+			}
+		},
+
+		Slider2GrooveTop: {
+			HighResolution: {
+				Normal: "icons_x2/Slider2GrooveTop.png"
+			},
+			LowResolution: {
+				Normal: "icons/Slider2GrooveTop.png"
+			}
+		},
+
+		Slider2GrooveVMid: {
+			HighResolution: {
+				Normal: "icons_x2/Slider2GrooveVMid.png"
+			},
+			LowResolution: {
+				Normal: "icons/Slider2GrooveVMid.png"
+			}
+		},
+
+		Slider2GrooveBottom: {
+			HighResolution: {
+				Normal: "icons_x2/Slider2GrooveBottom.png"
+			},
+			LowResolution: {
+				Normal: "icons/Slider2GrooveBottom.png"
+			}
+		},
+
+		Slider3DnButton: {
+			HighResolution: {
+				Dimmed: "icons_x2/Slider3DnBtnI.png",
+				Normal: "icons_x2/Slider3DnBtnN.png",
+				RollOver: "icons_x2/Slider3DnBtnR.png",
+				Selected: "icons_x2/Slider3DnBtnP.png"
+			},
+			LowResolution: {
+				Dimmed: "icons/Slider3DnBtnI.png",
+				Normal: "icons/Slider3DnBtnN.png",
+				RollOver: "icons/Slider3DnBtnR.png",
+				Selected: "icons/Slider3DnBtnP.png"
+			}
+		},
+
+		Slider3LfButton: {
+			HighResolution: {
+				Dimmed: "icons_x2/Slider3LfBtnI.png",
+				Normal: "icons_x2/Slider3LfBtnN.png",
+				RollOver: "icons_x2/Slider3LfBtnR.png",
+				Selected: "icons_x2/Slider3LfBtnP.png"
+			},
+			LowResolution: {
+				Dimmed: "icons/Slider3LfBtnI.png",
+				Normal: "icons/Slider3LfBtnN.png",
+				RollOver: "icons/Slider3LfBtnR.png",
+				Selected: "icons/Slider3LfBtnP.png"
+			}
+		},
+
+		Slider3RtButton: {
+			HighResolution: {
+				Dimmed: "icons_x2/Slider3RtBtnI.png",
+				Normal: "icons_x2/Slider3RtBtnN.png",
+				RollOver: "icons_x2/Slider3RtBtnR.png",
+				Selected: "icons_x2/Slider3RtBtnP.png"
+			},
+			LowResolution: {
+				Dimmed: "icons/Slider3RtBtnI.png",
+				Normal: "icons/Slider3RtBtnN.png",
+				RollOver: "icons/Slider3RtBtnR.png",
+				Selected: "icons/Slider3RtBtnP.png"
+			}
+		},
+
+		Slider3UpButton: {
+			HighResolution: {
+				Dimmed: "icons_x2/Slider3UpBtnI.png",
+				Normal: "icons_x2/Slider3UpBtnN.png",
+				RollOver: "icons_x2/Slider3UpBtnR.png",
+				Selected: "icons_x2/Slider3UpBtnP.png"
+			},
+			LowResolution: {
+				Dimmed: "icons/Slider3UpBtnI.png",
+				Normal: "icons/Slider3UpBtnN.png",
+				RollOver: "icons/Slider3UpBtnR.png",
+				Selected: "icons/Slider3UpBtnP.png"
+			}
+		},
+
+		Slider3GrooveLeft: {
+			HighResolution: {
+				Normal: "icons_x2/Slider3GrooveLeft.png"
+			},
+			LowResolution: {
+				Normal: "icons/Slider3GrooveLeft.png"
+			}
+		},
+
+		Slider3GrooveHMid: {
+			HighResolution: {
+				Normal: "icons_x2/Slider3GrooveHMid.png"
+			},
+			LowResolution: {
+				Normal: "icons/Slider3GrooveHMid.png"
+			}
+		},
+
+		Slider3GrooveRight: {
+			HighResolution: {
+				Normal: "icons_x2/Slider3GrooveRight.png"
+			},
+			LowResolution: {
+				Normal: "icons/Slider3GrooveRight.png"
+			}
+		},
+
+		Slider3GrooveTop: {
+			HighResolution: {
+				Normal: "icons_x2/Slider3GrooveTop.png"
+			},
+			LowResolution: {
+				Normal: "icons/Slider3GrooveTop.png"
+			}
+		},
+
+		Slider3GrooveVMid: {
+			HighResolution: {
+				Normal: "icons_x2/Slider3GrooveVMid.png"
+			},
+			LowResolution: {
+				Normal: "icons/Slider3GrooveVMid.png"
+			}
+		},
+
+		Slider3GrooveBottom: {
+			HighResolution: {
+				Normal: "icons_x2/Slider3GrooveBottom.png"
+			},
+			LowResolution: {
+				Normal: "icons/Slider3GrooveBottom.png"
+			}
+		},
+
+		IconTabBox: {
+			HighResolution: {
+				Normal: "icons_x2/IconTabBoxN.png",
+				Selected: "icons_x2/IconTabBoxP.png"
+			},
+			LowResolution: {
+				Normal: "icons/IconTabBoxN.png",
+				Selected: "icons/IconTabBoxP.png"
+			}
+		},
+
+		IconTabFlyout: {
+			HighResolution: {
+				Dimmed: "icons_x2/IconTabFlyoutI.png",
+				Normal: "icons_x2/IconTabFlyoutN.png"
+			},
+			LowResolution: {
+				Dimmed: "icons/IconTabFlyoutI.png",
+				Normal: "icons/IconTabFlyoutN.png"
+			}
+		},
+
+		IconTabFillTop: {
+			HighResolution: {
+				Normal: "icons_x2/IconTabFillTop.png"
+			},
+			LowResolution: {
+				Normal: "icons/IconTabFillTop.png"
+			}
+		},
+
+		IconTabFillTopFront: {
+			HighResolution: {
+				Normal: "icons_x2/IconTabFillTopFront.png"
+			},
+			LowResolution: {
+				Normal: "icons/IconTabFillTopFront.png"
+			}
+		},
+
+		IconTabFillBottom: {
+			HighResolution: {
+				Normal: "icons_x2/IconTabFillBottom.png"
+			},
+			LowResolution: {
+				Normal: "icons/IconTabFillBottom.png"
+			}
+		},
+
+		OwlTabBackCont: {
+			HighResolution: {
+				Normal: "icons_x2/OwlTabBackContN.png",
+				Selected: "icons_x2/OwlTabBackContP.png"
+			},
+			LowResolution: {
+				Normal: "icons/OwlTabBackContN.png",
+				Selected: "icons/OwlTabBackContP.png"
+			}
+		},
+
+		OwlTabBackEdge: {
+			HighResolution: {
+				Normal: "icons_x2/OwlTabBackEdgeN.png",
+				Selected: "icons_x2/OwlTabBackEdgeP.png"
+			},
+			LowResolution: {
+				Normal: "icons/OwlTabBackEdgeN.png",
+				Selected: "icons/OwlTabBackEdgeP.png"
+			}
+		},
+
+		OwlTabFrontCont: {
+			HighResolution: {
+				Normal: "icons_x2/OwlTabFrontContN.png",
+				Selected: "icons_x2/OwlTabFrontContP.png"
+			},
+			LowResolution: {
+				Normal: "icons/OwlTabFrontContN.png",
+				Selected: "icons/OwlTabFrontContP.png"
+			}
+		},
+
+		OwlTabFrontEdge: {
+			HighResolution: {
+				Normal: "icons_x2/OwlTabFrontEdgeN.png",
+				Selected: "icons_x2/OwlTabFrontEdgeP.png"
+			},
+			LowResolution: {
+				Normal: "icons/OwlTabFrontEdgeN.png",
+				Selected: "icons/OwlTabFrontEdgeP.png"
+			}
+		},
+
+		OwlTabDivider: {
+			HighResolution: {
+				Normal: "icons_x2/OwlTabDivider.png"
+			},
+			LowResolution: {
+				Normal: "icons/OwlTabDivider.png"
+			}
+		},
+
+		OwlTabFlyoutD: {
+			HighResolution: {
+				Normal: "icons_x2/OwlTabFlyoutDN.png",
+				RollOver: "icons_x2/OwlTabFlyoutDR.png",
+				Selected: "icons_x2/OwlTabFlyoutDP.png"
+			},
+			LowResolution: {
+				Normal: "icons/OwlTabFlyoutDN.png",
+				RollOver: "icons/OwlTabFlyoutDR.png",
+				Selected: "icons/OwlTabFlyoutDP.png"
+			}
+		},
+
+		OwlTabFlyoutL: {
+			HighResolution: {
+				Normal: "icons_x2/OwlTabFlyoutLN.png",
+				RollOver: "icons_x2/OwlTabFlyoutLR.png",
+				Selected: "icons_x2/OwlTabFlyoutLP.png"
+			},
+			LowResolution: {
+				Normal: "icons/OwlTabFlyoutLN.png",
+				RollOver: "icons/OwlTabFlyoutLR.png",
+				Selected: "icons/OwlTabFlyoutLP.png"
+			}
+		},
+
+		About: {
+			HighResolution: {
+				Normal: "icons_x2/About.png"
+			},
+			LowResolution: {
+				Normal: "icons/About.png"
+			}
+		},
+			
+		CheckBoxes: {
+			MacOnly: {
+				HighResolution: {
+					Normal: "icons_x2/MacCheckBox_x2.png"
+				},
+				
+				LowResolution: {
+					Normal: "icons/MacCheckBox.png"
+				}
+			},
+
+			WinOnly: {
+				HighResolution: {
+					Normal: "icons_x2/WinCheckBox_x2.png"
+				},
+
+				LowResolution: {
+					Normal: "icons/WinCheckBox.png"
+				}
+			}
+		},
+
+		RadioButtons: {
+			MacOnly: {
+				HighResolution: {
+					Normal: "icons_x2/MacRadioButtons_x2.png"
+				},
+				
+				LowResolution: {
+					Normal: "icons/MacRadioButtons.png"
+				}
+			},
+
+			WinOnly: {
+				HighResolution: {
+					Normal: "icons_x2/WinRadioButtons_x2.png"
+				},
+
+				LowResolution: {
+					Normal: "icons/WinRadioButtons.png"
+				}
+			}
+		},
+
+		EditFrame: {
+			WinOnly: {
+				HighResolution: {
+					Normal: "icons_x2/EditWidgetFrame_x2.png"
+				},
+
+				LowResolution: {
+					Normal: "icons/EditWidgetFrame.png"
+				}
+			}
+		}
+	}
+}

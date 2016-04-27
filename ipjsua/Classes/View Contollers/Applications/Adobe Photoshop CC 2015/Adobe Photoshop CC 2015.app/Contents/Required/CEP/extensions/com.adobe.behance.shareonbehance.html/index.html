@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Share on Behance</title>
+  <link rel="stylesheet" type="text/css" href="css/app.css">
+</head>
+<body ondragover="return false;" ondragstart="return false;" ondrop="return false;">
+  <div class="loading">
+    <div class="behance-logo">Bēhance</div>
+    <div class="loading-message" data-locale="Loading"></div>
+  </div>
+  <div class="error">
+    <h1 class="error-message">Sorry, there was an error with your request</h1>
+    <h3 class="error-sub-message">Please close this window and try again.</h3>
+    <div class="help">Still Having Trouble? <a class="help-link">Contact Behance Help</a> and reference error: Unknown error.</div>
+    <div class="form-controls">
+      <button class="close-button">Close</button>
+    </div>
+  </div>
+  <div class="proxy">
+    <h1 class="proxy-message">Proxy credentials required</h1>
+    <h3 class="proxy-sub-message">Please enter your proxy credentials to continue.</h3>
+    <div class="proxy-form">
+      <div class="proxy-form-elem"><span class="proxy-username-label">Username:</span><input id="proxy-username" required></div>
+      <div class="proxy-form-elem"><span class="proxy-password-label">Password:</span><input id="proxy-password" type="password" required></div>
+    </div>
+    <div class="form-controls">
+      <button class="proxy-close-button">Close</button>
+      <button class="proxy-login-button">Login</button>
+    </div>
+  </div>
+  <iframe class="behance-iframe" nodejs-disabled="true"></iframe>
+</body>
+<script type="text/javascript">
+  window.require = undefined;
+</script>
+<script data-main="js/main" src="js/lib/require.js"></script>
+</html>

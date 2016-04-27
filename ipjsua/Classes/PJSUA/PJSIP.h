@@ -15,7 +15,7 @@
 +(PJSIP *)sharedPJSIP;
 -(pj_status_t)startPJSIP;
 -(pj_status_t)addAccountWithUsername:(NSString *)username password:(NSString *)password toServer:(NSString *)server;
-- (void) makeCallTo:(NSString *)user;
+- (pj_status_t) makeCallTo:(NSString *)user;
 
 @property (nonatomic) int accountID;
 

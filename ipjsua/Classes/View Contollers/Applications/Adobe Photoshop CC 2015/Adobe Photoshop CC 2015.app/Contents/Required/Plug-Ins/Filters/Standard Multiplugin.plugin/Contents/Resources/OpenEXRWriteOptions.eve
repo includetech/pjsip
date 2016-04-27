@@ -1,0 +1,142 @@
+
+PDialog(placement:			place_row,
+		 margin:			4,
+		 window_title:		'$$$/AdobePlugin/OpenEXR/OpenEXRWriteOptions=OpenEXR Write Options',
+		 window_features:	kWin_CanMove +
+							kWin_CanSize +
+							kWin_HasSizeBox +
+							kWin_LiveResize +
+							kWin_CanTarget +
+							kWin_CanBullseye,
+		 window_position_x:	-50,
+		 window_position_y:	-33,
+		 view_id:			'Project/OpenEXR')
+{
+	text_font = kFont_UIMedium;
+	label_font = kFont_UIMedium;
+	bold_label_font = kFont_UIMediumBold;
+	control_font = kFont_UIMedium;
+	push_button_font = kFont_UILarge;
+
+	CFramePane(placement:		place_column,
+			   horizontal:		align_fill,
+			   vertical:		align_fill,
+			   margin:			4,
+			   view_binding:	kBind_Sizeable)
+	{
+		CGroupPane(placement:		place_column,
+				   horizontal:		align_fill,
+				   vertical:		align_fill,
+				   margin_top:		0,
+				   view_id:		'OpenEXRFormat/AlphaChannelGroup',
+				   view_binding:	kBind_FixedTop + kBind_XSizeable,
+				   frame_style:		kFramePrimaryGroup)
+		{
+			CFrameInsert(placement:			place_row,
+						 horizontal:		align_fill,
+						 vertical:			align_top,
+						 margin_left:		13,
+						 margin_right:		13,
+						 view_binding:		kBind_FixedTop + kBind_XSizeable)
+			{
+				CStaticText(horizontal:			align_left,
+							vertical:			align_center,
+							view_binding:		kBind_FixedTopLeft,
+							view_options:		kView_NoOptions,
+							text:			'$$$/AdobePlugin/GroupLabel/AlphaChannel=Alpha Channel Data',
+							text_align_x:		kAlign_Left,
+							text_align_y:		kAlign_Center,
+							static_group_title:	true);
+			}
+			CRadioButton(view_binding:		kBind_FixedTopLeft,
+						 view_id:			'OpenEXRFormat/AlphaAsTransparency',
+						 cushion:			2,
+						 cushion_left:			4,
+						 button_label:		'$$$/AdobePlugin/Radio/AlphaUseTransparency=Use Transparency');
+			CRadioButton(view_binding:		kBind_FixedTopLeft,
+						 view_id:			'OpenEXRFormat/AlphaAsAlphaChannel',
+						 cushion:			2,
+						 cushion_left:			4,
+						 button_label:		'$$$/AdobePlugin/Radio/AlphaUseAlphaChennel=Use Alpha Channel');
+		}
+		CGroupPane(placement:		place_column,
+				   horizontal:		align_fill,
+				   vertical:		align_fill,
+				   margin_top:		0,
+				   view_id:			'OpenEXRFormat/CompressionGroup',
+				   view_binding:	kBind_FixedTop + kBind_XSizeable,
+				   frame_style:		kFramePrimaryGroup)
+		{
+			CFrameInsert(placement:			place_row,
+						 horizontal:		align_fill,
+						 vertical:			align_top,
+						 margin_left:		13,
+						 margin_right:		13,
+						 view_binding:		kBind_FixedTop + kBind_XSizeable)
+			{
+				CStaticText(horizontal:			align_left,
+							vertical:			align_center,
+							view_binding:		kBind_FixedTopLeft,
+							view_options:		kView_NoOptions,
+							text:				'$$$/AdobePlugin/GroupLabel/Compression=Compression',
+							text_align_x:		kAlign_Left,
+							text_align_y:		kAlign_Center,
+							static_group_title:	true);
+			}
+			CRadioButton(view_binding:		kBind_FixedTopLeft,
+						 view_id:			'OpenEXRFormat/CompressionNone',
+						 cushion:			2,
+						 cushion_left:		4,
+						 button_label:		'$$$/AdobePlugin/Radio/CompressionNone=None');
+			CRadioButton(view_binding:		kBind_FixedTopLeft,
+						 view_id:			'OpenEXRFormat/CompressionZlib',
+						 cushion:			2,
+						 cushion_left:		4,
+						 button_label:		'$$$/AdobePlugin/Radio/CompressionZlib=Zlib');
+			CRadioButton(view_binding:		kBind_FixedTopLeft,
+						 view_id:			'OpenEXRFormat/CompressionPIZ',
+						 cushion:			2,
+						 cushion_left:		4,
+						 button_label:		'$$$/AdobePlugin/Radio/CompressionPIZ=Wavelet');
+			CRadioButton(view_binding:		kBind_FixedTopLeft,
+						 view_id:			'OpenEXRFormat/CompressionRLE',
+						 cushion:			2,
+						 cushion_left:		4,
+						 button_label:		'$$$/AdobePlugin/Radio/CompressionRLE=RLE');
+			CRadioButton(view_binding:		kBind_FixedTopLeft,
+						 view_id:			'OpenEXRFormat/CompressionPXR24',
+						 cushion:			2,
+						 cushion_left:		4,
+						 button_label:		'$$$/AdobePlugin/Radio/CompressionPXR24=PXR24 on 32 bit');
+		}
+	}
+	CFramePane(placement:		place_column,
+			   horizontal:		align_right,
+			   vertical:		align_fill,
+			   view_binding:	kBind_FixedRight + kBind_YSizeable)
+	{
+		CFramePane(placement:		place_column,
+				   horizontal:		align_fill,
+				   vertical:		align_top,
+				   margin:			8,
+				   spacing:			8,
+				   view_binding:	kBind_FixedTopRight)
+		{
+			CPushButton(width:			100,
+						horizontal:		align_center,
+						vertical:		align_top,
+						view_binding:	kBind_FixedTopRight,
+						view_id:		'Project/Dialog/OKButton',
+						button_label:	'$$$/AdobePlugin/Shared/OK=OK',
+						default_button:	true);
+			CPushButton(width:			100,
+						horizontal:		align_center,
+						vertical:		align_top,
+						view_options:	kView_SupressSurrenders,
+						view_binding:	kBind_FixedTopRight,
+						view_id:		'Project/Dialog/CancelButton',
+						button_label:	'$$$/AdobePlugin/Shared/Cancel=Cancel',
+						cancel_button:	true);
+		}
+	}
+}

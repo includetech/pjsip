@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewBox="0 0 22 18">
+    <title>
+        vector
+    </title>
+    <g fill="#999795">
+        <circle cx="11.905" cy="10.593" r=".896"/>
+        <circle cx="17.879" cy="16.567" r=".896"/>
+        <circle cx="17.879" cy="13.58" r=".896"/>
+        <circle cx="14.892" cy="10.593" r=".896"/>
+        <circle cx="17.879" cy="10.593" r=".896"/>
+        <circle cx="14.892" cy="16.567" r=".896"/>
+        <circle cx="11.905" cy="16.567" r=".896"/>
+        <circle cx="11.905" cy="13.58" r=".896"/>
+    </g>
+    <path fill="none" stroke="#F7F6EE" stroke-width=".75" stroke-linecap="square" stroke-miterlimit="10" d="M3.225 13.476h5.16m-5.16 0V2.536M15.05 7.35V2.62M3.225 2.537h11.667"/>
+</svg>

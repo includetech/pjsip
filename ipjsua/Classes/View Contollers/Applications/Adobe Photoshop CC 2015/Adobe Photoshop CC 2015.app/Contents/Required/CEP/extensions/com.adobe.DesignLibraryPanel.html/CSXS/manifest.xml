@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ExtensionManifest Version="5.0" ExtensionBundleId="com.adobe.DesignLibraries.angular.2015" ExtensionBundleVersion="2.0.20" ExtensionBundleName="DesignLibrary" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" DevBundleVersion="0.2.505">
+  <ExtensionList>
+    <Extension Id="com.adobe.DesignLibraries.angular" Version="2.0.20"/>
+  </ExtensionList>
+  <ExecutionEnvironment>
+    <HostList>
+      <Host Name="ILST" Version="[19.0,19.9]"/>
+      <Host Name="PHXS" Version="[16.0,16.9]"/>
+      <Host Name="PHSP" Version="[16.0,16.9]"/>
+      <Host Name="PPRO" Version="[9.0,9.9]"/>
+      <Host Name="IDSN" Version="[11.0,11.9]"/>
+      <Host Name="AEFT" Version="[13.5,13.9]"/>
+    </HostList>
+    <LocaleList>
+      <Locale Code="All"/>
+    </LocaleList>
+    <RequiredRuntimeList>
+      <RequiredRuntime Name="CSXS" Version="5.0"/>
+    </RequiredRuntimeList>
+  </ExecutionEnvironment>
+  <DispatchInfoList>
+    <Extension Id="com.adobe.DesignLibraries.angular">
+      <DispatchInfo>
+        <Resources>
+          <MainPath>./index.html</MainPath>
+          <CEFCommandLine>
+            <Parameter>--ignore-certificate-errors</Parameter>
+            <Parameter>--high-dpi-support=1</Parameter>
+          </CEFCommandLine>
+          <ScriptPath>./jsx/core.jsx</ScriptPath>
+        </Resources>
+        <Lifecycle>
+          <AutoVisible>true</AutoVisible>
+        </Lifecycle>
+        <UI>
+          <Type>Panel</Type>
+          <Menu>%DL_LIBRARIES_PANEL_NAME</Menu>
+          <Geometry>
+            <Size>
+              <Height>300</Height>
+              <Width>239</Width>
+            </Size>
+            <MinSize>
+              <Height>165</Height>
+              <Width>239</Width>
+            </MinSize>
+          </Geometry>
+          <Icons>
+            <Icon Type="Normal">./images/IconLight.png</Icon>
+            <Icon Type="RollOver">./images/IconLight.png</Icon>
+            <Icon Type="DarkNormal">./images/IconDark.png</Icon>
+            <Icon Type="DarkRollOver">./images/IconDark.png</Icon>
+          </Icons>
+        </UI>
+      </DispatchInfo>
+      <DispatchInfo Host="IDSN">
+        <UI>
+          <Menu>%DL_LIBRARIES_PANEL_NAME_ID</Menu>
+        </UI>
+      </DispatchInfo>
+    </Extension>
+  </DispatchInfoList>
+</ExtensionManifest>

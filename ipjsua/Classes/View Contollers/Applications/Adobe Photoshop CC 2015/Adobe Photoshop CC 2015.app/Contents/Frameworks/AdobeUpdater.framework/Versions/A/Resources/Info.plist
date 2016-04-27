@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildDate</key>
+	<string>"Wed Apr 16 2008 19:28:10"</string>
+	<key>BuildVersion</key>
+	<string>"52.338651"</string>
+	<key>CFBundleExecutable</key>
+	<string>AdobeUpdater</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleGetInfoString</key>
+	<string>AdobeUpdater 6.0.0.1452, Copyright � 2002-2008 by Adobe Systems Incorporated. All rights reserved.</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.adobe.ESD.AdobeUpdaterLibFramework</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>AdobeUpdater</string>
+	<key>CFBundlePackageType</key>
+	<string>FMWK</string>
+	<key>CFBundleShortVersionString</key>
+	<string>AdobeUpdater 6.0.0.1452</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>6.0.0.1452</string>
+	<key>ProductVersion</key>
+	<string>6.0.0.1452 (BuildVersion: 52.338651; BuildDate: Wed Apr 16 2008 19:28:10)</string>
+</dict>
+</plist>

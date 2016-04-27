@@ -55,12 +55,13 @@
 		54EE79101CC9350D002C475D /* pjsua_app_common.c in Sources */ = {isa = PBXBuildFile; fileRef = 54EE79071CC9350D002C475D /* pjsua_app_common.c */; };
 		54EE79111CC9350D002C475D /* pjsua_app_config.c in Sources */ = {isa = PBXBuildFile; fileRef = 54EE79091CC9350D002C475D /* pjsua_app_config.c */; };
 		54EE79121CC9350D002C475D /* pjsua_app_legacy.c in Sources */ = {isa = PBXBuildFile; fileRef = 54EE790B1CC9350D002C475D /* pjsua_app_legacy.c */; };
-		54EE79151CC9352B002C475D /* PJSUA.m in Sources */ = {isa = PBXBuildFile; fileRef = 54EE79141CC9352B002C475D /* PJSUA.m */; };
 		54EE79171CC93569002C475D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54EE79161CC93569002C475D /* Main.storyboard */; };
 		54EE79481CC93EF3002C475D /* libopenh264.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54EE79461CC93EF3002C475D /* libopenh264.a */; };
 		54EE794B1CC93F9A002C475D /* libopenh264.a in CopyFiles */ = {isa = PBXBuildFile; fileRef = 54EE79461CC93EF3002C475D /* libopenh264.a */; };
-		54EE795C1CCA888B002C475D /* CallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54EE795B1CCA888B002C475D /* CallViewController.m */; };
 		A246C2161CCFCB30003C8C8F /* PJSIP.m in Sources */ = {isa = PBXBuildFile; fileRef = A246C2151CCFCB30003C8C8F /* PJSIP.m */; };
+		A2EC61EF1CD0D8B20069CA1C /* CallerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EC61EE1CD0D8B20069CA1C /* CallerViewController.m */; };
+		A2EC61F21CD0D97C0069CA1C /* ReceiverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EC61F11CD0D97C0069CA1C /* ReceiverViewController.m */; };
+		A2EC61F51CD0F8B50069CA1C /* PJSUA.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EC61F41CD0F8B50069CA1C /* PJSUA.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -136,15 +137,17 @@
 		54EE79091CC9350D002C475D /* pjsua_app_config.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pjsua_app_config.c; sourceTree = "<group>"; };
 		54EE790A1CC9350D002C475D /* pjsua_app_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pjsua_app_config.h; sourceTree = "<group>"; };
 		54EE790B1CC9350D002C475D /* pjsua_app_legacy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pjsua_app_legacy.c; sourceTree = "<group>"; };
-		54EE79131CC9352B002C475D /* PJSUA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJSUA.h; sourceTree = "<group>"; };
-		54EE79141CC9352B002C475D /* PJSUA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJSUA.m; sourceTree = "<group>"; };
 		54EE79161CC93569002C475D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		54EE79461CC93EF3002C475D /* libopenh264.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopenh264.a; sourceTree = "<group>"; };
 		54EE794D1CC94B65002C475D /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
-		54EE795A1CCA888B002C475D /* CallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallViewController.h; sourceTree = "<group>"; };
-		54EE795B1CCA888B002C475D /* CallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallViewController.m; sourceTree = "<group>"; };
 		A246C2141CCFCB30003C8C8F /* PJSIP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJSIP.h; sourceTree = "<group>"; };
 		A246C2151CCFCB30003C8C8F /* PJSIP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJSIP.m; sourceTree = "<group>"; };
+		A2EC61ED1CD0D8B20069CA1C /* CallerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CallerViewController.h; path = "View Contollers/CallerViewController.h"; sourceTree = "<group>"; };
+		A2EC61EE1CD0D8B20069CA1C /* CallerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CallerViewController.m; path = "View Contollers/CallerViewController.m"; sourceTree = "<group>"; };
+		A2EC61F01CD0D97C0069CA1C /* ReceiverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReceiverViewController.h; sourceTree = "<group>"; };
+		A2EC61F11CD0D97C0069CA1C /* ReceiverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReceiverViewController.m; sourceTree = "<group>"; };
+		A2EC61F31CD0F8B50069CA1C /* PJSUA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJSUA.h; sourceTree = "<group>"; };
+		A2EC61F41CD0F8B50069CA1C /* PJSUA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJSUA.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -389,8 +392,8 @@
 			children = (
 				A246C2141CCFCB30003C8C8F /* PJSIP.h */,
 				A246C2151CCFCB30003C8C8F /* PJSIP.m */,
-				54EE79131CC9352B002C475D /* PJSUA.h */,
-				54EE79141CC9352B002C475D /* PJSUA.m */,
+				A2EC61F31CD0F8B50069CA1C /* PJSUA.h */,
+				A2EC61F41CD0F8B50069CA1C /* PJSUA.m */,
 				54EE79041CC9350D002C475D /* pjsua_app.c */,
 				54EE79051CC9350D002C475D /* pjsua_app.h */,
 				54EE79061CC9350D002C475D /* pjsua_app_cli.c */,
@@ -406,8 +409,10 @@
 		54EE790C1CC9350D002C475D /* View Contollers */ = {
 			isa = PBXGroup;
 			children = (
-				54EE795A1CCA888B002C475D /* CallViewController.h */,
-				54EE795B1CCA888B002C475D /* CallViewController.m */,
+				A2EC61ED1CD0D8B20069CA1C /* CallerViewController.h */,
+				A2EC61EE1CD0D8B20069CA1C /* CallerViewController.m */,
+				A2EC61F01CD0D97C0069CA1C /* ReceiverViewController.h */,
+				A2EC61F11CD0D97C0069CA1C /* ReceiverViewController.m */,
 			);
 			path = "View Contollers";
 			sourceTree = "<group>";
@@ -490,12 +495,13 @@
 				54EE790D1CC9350D002C475D /* AppDelegate.m in Sources */,
 				54EE79111CC9350D002C475D /* pjsua_app_config.c in Sources */,
 				54EE79121CC9350D002C475D /* pjsua_app_legacy.c in Sources */,
-				54EE795C1CCA888B002C475D /* CallViewController.m in Sources */,
+				A2EC61F21CD0D97C0069CA1C /* ReceiverViewController.m in Sources */,
 				A246C2161CCFCB30003C8C8F /* PJSIP.m in Sources */,
 				54EE79101CC9350D002C475D /* pjsua_app_common.c in Sources */,
 				54EE790E1CC9350D002C475D /* pjsua_app.c in Sources */,
-				54EE79151CC9352B002C475D /* PJSUA.m in Sources */,
 				54EE790F1CC9350D002C475D /* pjsua_app_cli.c in Sources */,
+				A2EC61F51CD0F8B50069CA1C /* PJSUA.m in Sources */,
+				A2EC61EF1CD0D8B20069CA1C /* CallerViewController.m in Sources */,
 				3AF0581516F050780046B835 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

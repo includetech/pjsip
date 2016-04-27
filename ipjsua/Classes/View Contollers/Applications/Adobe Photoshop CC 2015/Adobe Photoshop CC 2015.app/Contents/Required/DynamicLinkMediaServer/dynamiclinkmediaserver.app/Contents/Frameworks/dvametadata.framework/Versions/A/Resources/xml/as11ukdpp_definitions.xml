@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xmp_definitions>
+  <xmp_schema prefix='as11u' namespace='http://amwa.tv/mxf/as/11/ukdpp/' description='$$$/xmp/as11u_description=AS-11 UK DPP Metadata.' label='$$$/xmp/as11u_label=AS-11 UK DPP'>
+
+    <xmp_property name='productionNumber' category='external' type='uri' description='$$$/xmp/as11u/productionNumber_description=(*Required) A unique number used to identify an individual Programme Version. Also known as Programme Number, Clock Number or Material ID.' label='$$$/xmp/as11u/productionNumber_label=Production Number *'/>
+    <xmp_property name='synopsis' category='external' type='text' description='$$$/xmp/as11u/synopsis_description=(*Required) Descriptive summary of the content of no more than 250 characters suitable to be utilised for EPG/billings purposes.' label='$$$/xmp/as11u/synopsis_label=Synopsis *'/>
+    <xmp_property name='originator' category='external' type='text' description='$$$/xmp/as11u/originator_description=(*Required) Company responsible for creating asset.'  label='$$$/xmp/as11u/originator_label=Originator *'/>
+    <xmp_property name='copyrightYear' category='external' type='date' description='$$$/xmp/as11u/copyrightYear_description=(*Required) Year in which the production was completed.'  label='$$$/xmp/as11u/copyrightYear_label=Copyright Year *'/>
+    <xmp_property name='otherIdentifier' category='external' type='uri' description='$$$/xmp/as11u/otherIdentifier_description=A unique code that can be used to identify a piece of content.'  label='$$$/xmp/as11u/otherIdentifier_label=Other Identifier'/>
+    <xmp_property name='otherIdentifierType' category='external' type='text' description='$$$/xmp/as11u/otherIdentifierType_description=Description of other identifier.'  label='$$$/xmp/as11u/otherIdentifierType_label=Other Identifier Type'/>
+    <xmp_property name='genre' category='external' type='text' description='$$$/xmp/as11u/genre_description=A genre categorising the whole asset.' label='$$$/xmp/as11u/genre_label=Genre'/>
+    <xmp_property name='distributor' category='external' type='bag' description='$$$/xmp/as11u/distributor_description=The name of the  person or company/companies providing the content.' element_type='propername' label='$$$/xmp/as11u/distributor_label=Distributor'/>
+	
+    <xmp_property name='pictureRatio' category='external' type='openchoice' description='$$$/xmp/as11u/pictureRatio_description=(*Required) This will be used by the broadcaster in addition to the AFD field and the Picture Format to further determine the editorial aspect ratio of the Programme.' element_type='text' label='$$$/xmp/as11u/pictureRatio_label=Picture Ratio *'>
+      <xmp_choice raw_value='4:3' label='$$$/xmp/as11u/pictureRatio/43=4:3'/>
+      <xmp_choice raw_value='14:9' label='$$$/xmp/as11u/pictureRatio/149=14:9'/>
+      <xmp_choice raw_value='15:9' label='$$$/xmp/as11u/pictureRatio/159=15:9'/>
+      <xmp_choice raw_value='16:9' label='$$$/xmp/as11u/pictureRatio/169=16:9'/>
+      <xmp_choice raw_value='37:20' label='$$$/xmp/as11u/pictureRatio/3720=37:20'/>
+      <xmp_choice raw_value='21:9' label='$$$/xmp/as11u/pictureRatio/219=21:9'/>
+      <xmp_choice raw_value='12:5' label='$$$/xmp/as11u/pictureRatio/125=12:5'/>
+    </xmp_property>
+    <xmp_property name='threeD' category='external' type='boolean' description='$$$/xmp/as11u/threeD_description=(*Required) This will be set if the material is 3D.' label='$$$/xmp/as11u/threeD_label=3D *'/>
+    <xmp_property name='threeDType' category='external' type='openchoice' description='$$$/xmp/as11u/threeDType_description=This allows the description of the type of 3D being delivered but does not define how the 3D was created, e.g., CGI, shot in 3D, derived from a 2D image etc.' element_type='integer' label='$$$/xmp/as11u/threeDType_label=3D Type'>
+      <xmp_choice raw_value='0' label='$$$/xmp/as11u/pictureRatio/0=Side by side'/>
+      <xmp_choice raw_value='1' label='$$$/xmp/as11u/pictureRatio/1=Dual'/>
+      <xmp_choice raw_value='2' label='$$$/xmp/as11u/pictureRatio/2=Left eye only'/>
+      <xmp_choice raw_value='3' label='$$$/xmp/as11u/pictureRatio/3=Right eye only'/>
+    </xmp_property>	
+    <xmp_property name='productPlacement' category='external' type='boolean' description='$$$/xmp/as11u/productPlacement_description=Editorial content contains any product placement.' label='$$$/xmp/as11u/productPlacement_label=Product Placement'/>
+    <xmp_property name='psePass' category='external' type='closedchoice' description='$$$/xmp/as11u/psePass_description=(*Required) Status of any flashing and pattern analyser test carried out on the material for PSE.' element_type='integer' label='$$$/xmp/as11u/psePass_label=PSE Pass *'>
+	  <xmp_choice raw_value='' label='$$$/xmp/as11u/psePass/unsetValue=(Select Value)'/>
+      <xmp_choice raw_value='0' label='$$$/xmp/as11u/psePass/0=Yes'/>
+      <xmp_choice raw_value='1' label='$$$/xmp/as11u/psePass/1=No'/>
+      <xmp_choice raw_value='2' label='$$$/xmp/as11u/psePass/2=Not tested'/>
+    </xmp_property>
+    <xmp_property name='pseManufacturer' category='external' type='text' description='$$$/xmp/as11u/pseManufacturer_description=Product used to carry out the PSE analysis.'  label='$$$/xmp/as11u/pseManufacturer_label=PSE Manufacturer'/>
+    <xmp_property name='pseVersion' category='external' type='text' description='$$$/xmp/as11u/pseVersion_description=Version of algorithm used to carry out the PSE analysis.'  label='$$$/xmp/as11u/pseVersion_label=PSE Version'/>
+    <xmp_property name='videoComments' category='external' type='bag' description='$$$/xmp/as11u/videoComments_description=The comments which illustrate the subjective quality and any known artefacts or defects (inc. intentional) within the video content discovered during production / post production / or any subsequent technical QC/Review process.' element_type='text' label='$$$/xmp/as11u/videoComments_label=Video Comments'/>
+	
+
+    <xmp_property name='secondaryAudioLanguage' category='external' type='locale' description='$$$/xmp/as11u/secondaryAudioLanguage_description=Secondary audio language used in the Programme Version.'  label='$$$/xmp/as11u/secondaryAudioLanguage_label=Secondary Audio Language'/>
+    <xmp_property name='tertiaryAudioLanguage' category='external' type='locale' description='$$$/xmp/as11u/tertiaryAudioLanguage_description=Tertiary audio language used in the Programme Version.'  label='$$$/xmp/as11u/tertiaryAudioLanguage_label=Tertiary Audio Language'/>
+    <xmp_property name='compliantAudioStandard' category='external' type='openchoice' description='$$$/xmp/as11u/compliantAudioStandard_description=(*Required) Details of any compliant audio standard used to constrain the dynamic range of the audio tracks during programme production.' element_type='integer' label='$$$/xmp/as11u/compliantAudioStandard_label=Compliant Audio Standard *'>
+	  <xmp_choice raw_value='0' label='$$$/xmp/as11u/compliantAudioStandard/0=None'/>
+      <xmp_choice raw_value='1' label='$$$/xmp/as11u/compliantAudioStandard/1=EBU R 128'/>
+    </xmp_property>
+	
+    <xmp_property name='audioComments' category='external' type='bag' description='$$$/xmp/as11u/audioComments_description=The comments which illustrate the subjective quality and any known artefacts or defects (inc. intentional) within the audio content discovered during production / post production / or any subsequent technical QC/Review process.' element_type='text' label='$$$/xmp/as11u/audioComments_label=Audio Comments'/>
+
+
+
+	
+    <xmp_property name='lineUpStart' category='internal' type='timecode' description='$$$/xmp/as11u/lineUpStart_description=Timecode for start of line up test signals.' label='$$$/xmp/as11u/lineUpStart_label=Line Up Start'/>
+    <xmp_property name='identClockStart' category='internal' type='timecode' description='$$$/xmp/as11u/identClockStart_description=Timecode for start of the initial ident or countdown clock.' label='$$$/xmp/as11u/identClockStart_label=Ident Clock Start'/>
+    <xmp_property name='totalNoOfParts' category='internal' type='integer' description='$$$/xmp/as11u/totalNoOfParts_description=The total number of parts contained within the file.' label='$$$/xmp/as11u/totalNoOfParts_label=Total No Of Parts'/>
+    <xmp_property name='programmeDuration' category='internal' type='time' description='$$$/xmp/as11u/programmeDuration_description=Total of all part durations, i.e. sum of all repeated group of part durations.' label='$$$/xmp/as11u/programmeDuration_label=Programme Duration'/>
+	
+
+	
+    <xmp_property name='audioDescriptionPresent' category='external' type='boolean' description='$$$/xmp/as11u/audioDescriptionPresent_description=(*Required) This status is to be set if the delivered programme contains any audio description for the visually impaired.' label='$$$/xmp/as11u/audioDescriptionPresent_label=Audio Description Present *'/>
+    <xmp_property name='audioDescriptionType' category='external' type='openchoice' description='$$$/xmp/as11u/audioDescriptionType_description=This describes the format of the audio description employed within the delivered programme.' element_type='integer' label='$$$/xmp/as11u/audioDescriptionType_label=Audio Description Type'>
+	  <xmp_choice raw_value='0' label='$$$/xmp/as11u/audioDescriptionType/0=Control data / Narration'/>
+      <xmp_choice raw_value='1' label='$$$/xmp/as11u/audioDescriptionType/1=AD Mix'/>
+    </xmp_property>
+    <xmp_property name='openCaptionsPresent' category='external' type='boolean' description='$$$/xmp/as11u/openCaptionsPresent_description=(*Required) This status is to be set if the delivered programme contains any visible (in vision) subtitling information for the hard of hearing.' label='$$$/xmp/as11u/openCaptionsPresent_label=Open Captions Present *'/>
+	<xmp_property name='opencaptionsType' category='external' type='openchoice' description='$$$/xmp/as11u/opencaptionsType_description=This describes the editorial description of the in vision subtitling employed within the delivered programme.' element_type='integer' label='$$$/xmp/as11u/opencaptionsType_label=Open Captions Type'>
+	  <xmp_choice raw_value='0' label='$$$/xmp/as11u/opencaptionsType/0=Hard of Hearing'/>
+      <xmp_choice raw_value='1' label='$$$/xmp/as11u/opencaptionsType/1=Translation'/>
+    </xmp_property>
+    <xmp_property name='openCaptionsLanguage' category='external' type='locale' description='$$$/xmp/as11u/openCaptionsLanguage_description=This describes the primary language of the in vision subtitle data.'  label='$$$/xmp/as11u/openCaptionsLanguage_label=Open Captions Language'/>
+	<xmp_property name='signingPresent' category='external' type='openchoice' description='$$$/xmp/as11u/signingPresent_description=(*Required) This status is to be set if the delivered programme contains any in vision signing for the hard of hearing.' element_type='integer' label='$$$/xmp/as11u/signingPresent_label=Signing Present *'>
+	  <xmp_choice raw_value='0' label='$$$/xmp/as11u/signingPresent/0=Yes'/>
+      <xmp_choice raw_value='1' label='$$$/xmp/as11u/signingPresent/1=No'/>
+      <xmp_choice raw_value='2' label='$$$/xmp/as11u/signingPresent/2=Signer only'/>
+    </xmp_property>
+    <xmp_property name='signLanguage' category='external' type='openchoice' description='$$$/xmp/as11u/signLanguage_description=This describes the primary language of the in vision subtitle data.' element_type='integer' label='$$$/xmp/as11u/signLanguage_label=Sign Language'>	  
+	  <xmp_choice raw_value='0' label='$$$/xmp/as11u/signLanguage/0=BSL (British Sign Language)'/>
+      <xmp_choice raw_value='1' label='$$$/xmp/as11u/signLanguage/1=BSL (Makaton)'/>
+    </xmp_property>
+	
+	
+
+    <xmp_property name='completionDate' category='external' type='date' description='$$$/xmp/as11u/completionDate_description=(*Required) Date of completion of the edit prior to delivery of the final programme.'  label='$$$/xmp/as11u/completionDate_label=Completion Date *'/>
+    <xmp_property name='TextlessElementsExist' category='external' type='boolean' description='$$$/xmp/as11u/TextlessElementsExist_description=(*Required) Status of whether the final delivered programme includes any textless elements.'  label='$$$/xmp/as11u/TextlessElementsExist_label=Textless Elements Exist *'/>
+    <xmp_property name='programmeHasText' category='external' type='boolean' description='$$$/xmp/as11u/programmeHasText_description=(*Required) Date of completion of the edit prior to delivery of the final programme.'  label='$$$/xmp/as11u/programmeHasText_label=Programme Has Text *'/>
+    <xmp_property name='programmeTextLanguage' category='external' type='locale' description='$$$/xmp/as11u/programmeTextLanguage_description=Primary text language used in the programme version. '  label='$$$/xmp/as11u/programmeTextLanguage_label=Programme Text Language'/>
+	
+	<xmp_property name='contactEmail' category='external' type='text' description='$$$/xmp/as11u/contactEmail_description=(*Required) The email address of the SPOC (Single Point Of Contact) for the use of the recipient regarding any delivery or technical issues encountered with the delivered file.'  label='$$$/xmp/as11u/contactEmail_label=Contact Email *'/>
+    <xmp_property name='contactTelephoneNumber' category='external' type='text' description='$$$/xmp/as11u/contactTelephoneNumber_description=(*Required) The direct telephone number of the SPOC (Single Point Of Contact) for the use of the recipient regarding any delivery or technical issues encountered with the delivered file. '  label='$$$/xmp/as11u/contactTelephoneNumber_label=Contact Telephone Number *'/>
+	
+  </xmp_schema>
+</xmp_definitions>

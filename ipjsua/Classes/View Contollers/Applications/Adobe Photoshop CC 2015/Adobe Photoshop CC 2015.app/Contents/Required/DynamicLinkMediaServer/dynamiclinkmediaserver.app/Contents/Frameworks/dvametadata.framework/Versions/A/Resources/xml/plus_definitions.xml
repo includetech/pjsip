@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xmp_definitions>
+	<!-- PLUS Properties -->
+	<xmp_schema prefix='plus' namespace='http://ns.useplus.org/ldf/xmp/1.0/' description='$$$/xmp/plus_description=The Picture Licensing Universal System (PLUS) is an integrated system of standards designed to simplify and facilitate image licensing.' label='$$$/xmp/plus_label=PLUS Standard Properties'>
+
+		<xmp_property name='ImageSupplier' category='external' type='seq' element_type='ImageSupplierDetail' description='$$$/xmp/plus/ImageSupplier_description=Enter the identifier for the most recent supplier of this image - note that this might not be the creator or owner of the image' label='$$$/xmp/plus/ImageSupplier_label=Image Supplier'/>
+		<xmp_property name='ImageSupplierImageID' category='external' type='text' description='$$$/xmp/plus/ImageSupplierImageID_description=Optional identifier assigned by the Image Supplier to the image' label='$$$/xmp/plus/ImageSupplierImageID_label=Supplier&apos;s Image ID'/>
+		<xmp_property name='Version' category='external' type='text' description='$$$/xmp/plus/Version_description=The version number of the PLUS standards in place at the time of the transaction' label='$$$/xmp/plus/Version_label=PLUS Version'/>
+		<xmp_property name='CopyrightOwner' category='external' type='seq' element_type='CopyrightOwnerDetail' description='$$$/xmp/plus/CopyrightOwner_description=Enter the owner or owners of the copyright in the licensed image' label='$$$/xmp/plus/CopyrightOwner_label=Copyright Owner'/>
+		<xmp_property name='ImageCreator' category='external' type='seq' element_type='ImageCreatorDetail' description='$$$/xmp/plus/ImageCreator_description=Enter the creator or creators of this image' label='$$$/xmp/plus/ImageCreator_label=Image Creator'/>
+		<xmp_property name='Licensor' category='external' type='seq' element_type='LicensorDetail' description='$$$/xmp/plus/Licensor_description=Enter the person or company that should be contacted for obtaining a license for this image' label='$$$/xmp/plus/Licensor_label=Licensor'/>
+		<xmp_property name='MinorModelAgeDisclosure' category='external' type='closedchoice' element_type='url' description='$$$/xmp/plus/MinorModelAgeDisclosure_description=Enter the age of the youngest model pictured in this image, at the time that this image was made' label='$$$/xmp/plus/MinorModelAgeDisclosure_label=Minor Model Age Disclosure'>
+			<xmp_choice raw_value='' label='$$$/xmp/choice/unsetValue_label=(Select value)'/>
+			<xmp_choice raw_value='http://ns.useplus.org/ldf/vocab/AG-UNK' label='$$$/xmp/plus/vocab/AG-UNK=Age Unknown'/>
+			<xmp_choice raw_value='http://ns.useplus.org/ldf/vocab/AG-A25' label='$$$/xmp/plus/vocab/AG-A25=Age 25 or Over'/>
+			<xmp_choice raw_value='http://ns.useplus.org/ldf/vocab/AG-A24' label='$$$/xmp/plus/vocab/AG-A24=Age 24'/>
+			<xmp_choice raw_value='http://ns.useplus.org/ldf/vocab/AG-A23' label='$$$/xmp/plus/vocab/AG-A23=Age 23'/>
+			<xmp_choice raw_value='http://ns.useplus.org/ldf/vocab/AG-A22' label='$$$/xmp/plus/vocab/AG-A22=Age 22'/>
+			<xmp_choice raw_value='http://ns.useplus.org/ldf/vocab/AG-A21' label='$$$/xmp/plus/vocab/AG-A21=Age 21'/>
+			<xmp_choice raw_value='http://ns.useplus.org/ldf/vocab/AG-A20' label='$$$/xmp/plus/vocab/AG-A20=Age 20'/>
+			<xmp_choice raw_value='http://ns.useplus.org/ldf/vocab/AG-A19' label='$$$/xmp/plus/vocab/AG-A19=Age 19'/>
+			<xmp_choice raw_value='http://ns.useplus.org/ldf/vocab/AG-A18' label='$$$/xmp/plus/vocab/AG-A18=Age 18'/>
+			<xmp_choice raw_value='http://ns.useplus.org/ldf/vocab/AG-A17' label='$$$/xmp/plus/vocab/AG-A17=Age 17'/>
+			<xmp_choice raw_value='http://ns.useplus.org/ldf/vocab/AG-A16' label='$$$/xmp/plus/vocab/AG-A16=Age 16'/>
+			<xmp_choice raw_value='http://ns.useplus.org/ldf/vocab/AG-A15' label='$$$/xmp/plus/vocab/AG-A15=Age 15'/>
+			<xmp_choice raw_value='http://ns.useplus.org/ldf/vocab/AG-U14' label='$$$/xmp/plus/vocab/AG-U14=Age 14 or Under'/>
+		</xmp_property>
+		<xmp_property name='ModelReleaseID' category='external' type='bag' element_type='text' description='$$$/xmp/plus/ModelReleaseID_description=Enter an identifier for each Model Release' label='$$$/xmp/plus/ModelReleaseID_label=Model Release Identifier'/>
+		<xmp_property name='ModelReleaseStatus' category='external' type='closedchoice' element_type='url' description='$$$/xmp/plus/ModelReleaseStatus_description=Select one of the values for summarising the availability and scope of model releases authorising usage of the likenesses of persons appearing in the photograph' label='$$$/xmp/plus/ModelReleaseStatus_label=Model Release Status'>
+			<xmp_choice raw_value='' label='$$$/xmp/choice/unsetValue_label=(Select value)'/>
+			<xmp_choice raw_value='http://ns.useplus.org/ldf/vocab/MR-NON' label='$$$/xmp/plus/vocab/MR-NON=None'/>
+			<xmp_choice raw_value='http://ns.useplus.org/ldf/vocab/MR-NAP' label='$$$/xmp/plus/vocab/MR-NAP=Not Applicable'/>
+			<xmp_choice raw_value='http://ns.useplus.org/ldf/vocab/MR-UMR' label='$$$/xmp/plus/vocab/MR-UMR=Unlimited Model Releases'/>
+			<xmp_choice raw_value='http://ns.useplus.org/ldf/vocab/MR-LMR' label='$$$/xmp/plus/vocab/MR-LMR=Limited or Incomplete Model Releases'/>
+		</xmp_property>
+		<xmp_property name='PropertyReleaseID' category='external' type='bag' element_type='text' description='$$$/xmp/plus/PropertyReleaseID_description=Enter an identifier for each Property Release	' label='$$$/xmp/plus/PropertyReleaseID_label=Property Release Identifier'/>
+		<xmp_property name='PropertyReleaseStatus' category='external' type='closedchoice' element_type='url' description='$$$/xmp/plus/PropertyReleaseStatus_description=Select one of the values for summarising the availability and scope of property releases authorising usage of the properties appearing in the photograph' label='$$$/xmp/plus/PropertyReleaseStatus_label=Property Release Status'>
+			<xmp_choice raw_value='' label='$$$/xmp/choice/unsetValue_label=(Select value)'/>
+			<xmp_choice raw_value='http://ns.useplus.org/ldf/vocab/PR-NON' label='$$$/xmp/plus/vocab/PR-NON=None'/>
+			<xmp_choice raw_value='http://ns.useplus.org/ldf/vocab/PR-NAP' label='$$$/xmp/plus/vocab/PR-NAP=Not Applicable'/>
+			<xmp_choice raw_value='http://ns.useplus.org/ldf/vocab/PR-UPR' label='$$$/xmp/plus/vocab/PR-UPR=Unlimited Property Releases'/>
+			<xmp_choice raw_value='http://ns.useplus.org/ldf/vocab/PR-LPR' label='$$$/xmp/plus/vocab/PR-LPR=Limited or Incomplete Property Releases'/>
+		</xmp_property>
+
+	</xmp_schema>
+
+	
+	<!-- Types -->
+	
+	<xmp_type name='ImageSupplierDetail' label='$$$/xmp/plus/ImageSupplierDetail_label=Image Supplier Detail' description='$$$/xmp/plus/ImageSupplierDetail_description=Contains properties that provide for an Image Supplier'>
+		<xmp_field prefix='plus' name='ImageSupplierName' type='propername' namespace='http://ns.useplus.org/ldf/xmp/1.0/' label='$$$/xmp/plus/ImageSupplierName_label=Image Supplier Name' description='$$$/xmp/plus/ImageSupplierName_description=Name for the most recent supplier of this image - note that this might not be the creator or owner of the image'/>
+		<xmp_field prefix='plus' name='ImageSupplierID' type='text' namespace='http://ns.useplus.org/ldf/xmp/1.0/' label='$$$/xmp/plus/ImageSupplierID_label=Image Supplier ID' description='$$$/xmp/plus/ImageSupplierID_description=Optional PLUS-ID identifying the Image Supplier'/>
+	</xmp_type>
+
+	<xmp_type name='CopyrightOwnerDetail' label='$$$/xmp/plus/CopyrightOwnerDetail_label=Copyright Owner Detail' description='$$$/xmp/plus/CopyrightOwnerDetail_description=Contains properties that provide for a Copyright Owner'>
+		<xmp_field prefix='plus' name='CopyrightOwnerName' type='propername' namespace='http://ns.useplus.org/ldf/xmp/1.0/' label='$$$/xmp/plus/CopyrightOwnerName_label=Name' description='$$$/xmp/plus/CopyrightOwnerName_description=Name of Copyright Owner'/>
+		<xmp_field prefix='plus' name='CopyrightOwnerID' type='text' namespace='http://ns.useplus.org/ldf/xmp/1.0/' label='$$$/xmp/plus/CopyrightOwnerID_label=Identifier' description='$$$/xmp/plus/CopyrightOwnerID_description=Optional PLUS-ID identifying each Copyright Owner'/>
+	</xmp_type>
+
+	<xmp_type name='ImageCreatorDetail' label='$$$/xmp/plus/ImageCreatorDetail_label=Image Creator Detail' description='$$$/xmp/plus/ImageCreatorDetail_description=Contains properties that provide for an Image Creator'>
+		<xmp_field prefix='plus' name='ImageCreatorName' type='propername' namespace='http://ns.useplus.org/ldf/xmp/1.0/' label='$$$/xmp/plus/ImageCreatorName_label=Name' description='$$$/xmp/plus/ImageCreatorName_description=Name of Image Creator'/>
+		<xmp_field prefix='plus' name='ImageCreatorID' type='text' namespace='http://ns.useplus.org/ldf/xmp/1.0/' label='$$$/xmp/plus/ImageCreatorID_label=Identifier' description='$$$/xmp/plus/ImageCreatorID_description=Optional PLUS-ID identifying each Image Creator'/>
+	</xmp_type>
+
+	<xmp_type name='LicensorDetail' label='$$$/xmp/plus/LicensorDetail_label=Licensor Detail' description='$$$/xmp/plus/LicensorDetail_description=Contains properties that provide for a Licensor'>
+		<xmp_field prefix='plus' name='LicensorName' type='propername' namespace='http://ns.useplus.org/ldf/xmp/1.0/' label='$$$/xmp/plus/LicensorName_label=Name' description='$$$/xmp/plus/LicensorName_description=Name of each Licensor'/>
+		<xmp_field prefix='plus' name='LicensorID' type='text' namespace='http://ns.useplus.org/ldf/xmp/1.0/' label='$$$/xmp/plus/LicensorID_label=Identifier' description='$$$/xmp/plus/LicensorID_description=Optional PLUS-ID identifying each Licensor'/>
+		<xmp_field prefix='plus' name='LicensorStreetAddress' type='text' namespace='http://ns.useplus.org/ldf/xmp/1.0/' label='$$$/xmp/plus/LicensorStreetAddress_label=Address' description='$$$/xmp/plus/LicensorStreetAddress_description=Licensor street address'/>
+		<xmp_field prefix='plus' name='LicensorExtendedAddress' type='text' namespace='http://ns.useplus.org/ldf/xmp/1.0/' label='$$$/xmp/plus/LicensorExtendedAddress_label=Address Detail' description='$$$/xmp/plus/LicensorExtendedAddress_description=Additional Licensor mailing address details'/>
+		<xmp_field prefix='plus' name='LicensorCity' type='text' namespace='http://ns.useplus.org/ldf/xmp/1.0/' label='$$$/xmp/plus/LicensorCity_label=City' description='$$$/xmp/plus/LicensorCity_description=Licensor City name'/>
+		<xmp_field prefix='plus' name='LicensorRegion' type='text' namespace='http://ns.useplus.org/ldf/xmp/1.0/' label='$$$/xmp/plus/LicensorRegion_label=State or Province' description='$$$/xmp/plus/LicensorRegion_description=Licensor State or Province name'/>
+		<xmp_field prefix='plus' name='LicensorPostalCode' type='text' namespace='http://ns.useplus.org/ldf/xmp/1.0/' label='$$$/xmp/plus/LicensorPostalCode_label=Postal Code' description='$$$/xmp/plus/LicensorPostalCode_description=Licensor Postal Code or Zip Code'/>
+		<xmp_field prefix='plus' name='LicensorCountry' type='text' namespace='http://ns.useplus.org/ldf/xmp/1.0/' label='$$$/xmp/plus/LicensorCountry_label=Country' description='$$$/xmp/plus/LicensorCountry_description=Licensor Country name'/>
+		<xmp_field prefix='plus' name='LicensorTelephoneType1' type='closedchoice' element_type='url' namespace='http://ns.useplus.org/ldf/xmp/1.0/' label='$$$/xmp/plus/LicensorTelephoneType1_label=Phone Type 1' description='$$$/xmp/plus/LicensorTelephoneType1_description=First Licensor Telephone Type'>
+			<xmp_choice raw_value='' label='$$$/xmp/choice/unsetValue_label=(Select value)'/>
+			<xmp_choice raw_value='http://ns.useplus.org/ldf/vocab/work' label='$$$/xmp/plus/vocab/work=work'/>
+			<xmp_choice raw_value='http://ns.useplus.org/ldf/vocab/cell' label='$$$/xmp/plus/vocab/cell=cell'/>
+			<xmp_choice raw_value='http://ns.useplus.org/ldf/vocab/fax' label='$$$/xmp/plus/vocab/fax=fax'/>
+			<xmp_choice raw_value='http://ns.useplus.org/ldf/vocab/home' label='$$$/xmp/plus/vocab/home=home'/>
+			<xmp_choice raw_value='http://ns.useplus.org/ldf/vocab/pager' label='$$$/xmp/plus/vocab/pager=pager'/>
+		</xmp_field>
+		<xmp_field prefix='plus' name='LicensorTelephone1' type='text' namespace='http://ns.useplus.org/ldf/xmp/1.0/' label='$$$/xmp/plus/LicensorTelephone1_label=Phone Number 1' description='$$$/xmp/plus/LicensorTelephone1_description=First Licensor Telephone Number'/>
+		<xmp_field prefix='plus' name='LicensorTelephoneType2' type='closedchoice' element_type='url' namespace='http://ns.useplus.org/ldf/xmp/1.0/' label='$$$/xmp/plus/LicensorTelephoneType2_label=Phone Type 2' description='$$$/xmp/plus/LicensorTelephoneType2_description=Second Licensor Telephone Type'>
+			<xmp_choice raw_value='' label='$$$/xmp/choice/unsetValue_label=(Select value)'/>
+			<xmp_choice raw_value='http://ns.useplus.org/ldf/vocab/work' label='$$$/xmp/plus/vocab/work=work'/>
+			<xmp_choice raw_value='http://ns.useplus.org/ldf/vocab/cell' label='$$$/xmp/plus/vocab/cell=cell'/>
+			<xmp_choice raw_value='http://ns.useplus.org/ldf/vocab/fax' label='$$$/xmp/plus/vocab/fax=fax'/>
+			<xmp_choice raw_value='http://ns.useplus.org/ldf/vocab/home' label='$$$/xmp/plus/vocab/home=home'/>
+			<xmp_choice raw_value='http://ns.useplus.org/ldf/vocab/pager' label='$$$/xmp/plus/vocab/pager=pager'/>
+		</xmp_field>
+		<xmp_field prefix='plus' name='LicensorTelephone2' type='text' namespace='http://ns.useplus.org/ldf/xmp/1.0/' label='$$$/xmp/plus/LicensorTelephone2_label=Phone Number 2' description='$$$/xmp/plus/LicensorTelephone2_description=Second Licensor Telephone Number'/>
+		<xmp_field prefix='plus' name='LicensorEmail' type='text' namespace='http://ns.useplus.org/ldf/xmp/1.0/' label='$$$/xmp/plus/LicensorEmail_label=Email address' description='$$$/xmp/plus/LicensorEmail_description=Licensor Email address'/>
+		<xmp_field prefix='plus' name='LicensorURL' type='url' namespace='http://ns.useplus.org/ldf/xmp/1.0/' label='$$$/xmp/plus/LicensorURL_label=Web address' description='$$$/xmp/plus/LicensorURL_description=Licensor world wide web address'/>
+	</xmp_type>
+
+</xmp_definitions>

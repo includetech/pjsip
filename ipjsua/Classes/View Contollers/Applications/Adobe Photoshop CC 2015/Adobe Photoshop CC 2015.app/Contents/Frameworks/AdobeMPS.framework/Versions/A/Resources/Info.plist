@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildDate</key>
+	<string>2015/03/11-23:42:10</string>
+	<key>BuildVersion</key>
+	<string>79.562263</string>
+	<key>CFBundleExecutable</key>
+	<string>AdobeMPS</string>
+	<key>CFBundleGetInfoString</key>
+	<string>AdobeMPS 5.8.1.34307, © 1993-2009 Adobe Systems Incorporated. All Rights Reserved.</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.adobe.MPS</string>
+	<key>CFBundleName</key>
+	<string>AdobeMPS</string>
+	<key>CFBundlePackageType</key>
+	<string>FMWK</string>
+	<key>CFBundleShortVersionString</key>
+	<string>AdobeMPS 5.8.1.34307</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>5.8.1.34307</string>
+	<key>Configuration</key>
+	<string>Release</string>
+	<key>MPSVersion</key>
+	<string>Br 79-CGM 36; EMF 101; EXP 92; PICT 84; PS3 328; WMF 64</string>
+</dict>
+</plist>

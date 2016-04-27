@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildDate</key>
+	<string>2015/03/30-23:40:42</string>
+	<key>BuildID</key>
+	<string>34401</string>
+	<key>BuildMachineOSBuild</key>
+	<string>12F45</string>
+	<key>BuildVersion</key>
+	<string>79.157747</string>
+	<key>CFBundleExecutable</key>
+	<string>AdobeXMPFiles</string>
+	<key>CFBundleGetInfoString</key>
+	<string>Adobe XMP Files 5.6 -f 146, Copyright 2002-2014, Adobe Systems Incorporated. All Rights Reserved.</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.adobe.AdobeXMPFiles</string>
+	<key>CFBundleName</key>
+	<string>AdobeXMPFiles</string>
+	<key>CFBundlePackageType</key>
+	<string>FMWK</string>
+	<key>CFBundleShortVersionString</key>
+	<string>Adobe XMP Files 5.6 -f 146</string>
+	<key>CFBundleSignature</key>
+	<string>XMP </string>
+	<key>CFBundleVersion</key>
+	<string>79.157747</string>
+	<key>Configuration</key>
+	<string>Release</string>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTPlatformBuild</key>
+	<string>5A3005</string>
+	<key>DTPlatformVersion</key>
+	<string>GM</string>
+	<key>DTSDKBuild</key>
+	<string>12F37</string>
+	<key>DTSDKName</key>
+	<string>macosx10.8</string>
+	<key>DTXcode</key>
+	<string>0502</string>
+	<key>DTXcodeBuild</key>
+	<string>5A3005</string>
+	<key>FileVersion</key>
+	<string>5.6 -f 146, 79.157747, 2015/03/30-23:40:42</string>
+	<key>ProductName</key>
+	<string>Adobe XMP Files</string>
+	<key>ProductVersion</key>
+	<string>5.6</string>
+</dict>
+</plist>

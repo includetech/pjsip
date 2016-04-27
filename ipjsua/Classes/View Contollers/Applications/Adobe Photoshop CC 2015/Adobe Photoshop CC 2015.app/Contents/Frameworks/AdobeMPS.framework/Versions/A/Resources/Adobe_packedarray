@@ -1,0 +1,14 @@
+%%BeginResource: procset Adobe_packedarray 3.0 0
+%%Title: (Universal Packed Array Operators)
+%%Version: 3.0 0
+%%CreationDate: (9/24/96) ()
+%%Copyright: ((C) 1987-1990 Adobe Systems Incorporated All Rights Reserved)
+userdict /Adobe_packedarray known not
+{
+	userdict /Adobe_packedarray 2 dict put 
+} if
+userdict /Adobe_packedarray get begin
+/initialize { } def
+/terminate { } def
+end
+%%EndResource

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <string name="create" data-url="create.html" align="left" active="false"  counter="false">Create</string>
+   <string name="newfeature" data-url="whats-new.html" align="left" active="false" counter="true">New Features</string>
+   <string name="getstarted" data-url="get-started.html" align="left" active="true" counter="true">Getting Started</string>
+   <string name="tipsntechniques" data-url="tips-techniques.html" align="left" active="false" counter="true">Tips &amp; Techniques</string>
+   <string name="specialoffer" data-url="special-offer.html" align="right" active="false" counter="false">Days Left in Your Trial  :<![CDATA[ <strong>Join Now</strong>]]></string>
+</resources>

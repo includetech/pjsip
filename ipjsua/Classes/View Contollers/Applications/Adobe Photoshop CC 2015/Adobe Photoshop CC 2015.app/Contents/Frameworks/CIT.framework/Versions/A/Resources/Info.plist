@@ -1,0 +1,40 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+ <key>CFBundleIdentifier</key>
+ <string>com.adobe.CIT</string>
+ <key>CFBundleExecutable</key>
+ <string>CIT</string>
+ <key>CFBundleName</key>
+ <string>CIT</string>
+ <key>CFBundleShortVersionString</key>
+ <string>2.3.7.33275</string>
+ <key>CFBundlePackageType</key>
+ <string>FMWK</string>
+ <key>CFBundleSignature</key>
+ <string>CIT </string>
+ <key>CFBundleVersion</key>
+ <string>2.3.7.33275</string>
+ <key>BuildDate</key>
+ <string>2014/08/06-10:06:40</string>
+ <key>BuildVersion</key>
+ <string>156750</string>
+ <key>BuildID</key>
+ <string>33275</string>
+ <key>Configuration</key>
+ <string>Release</string>
+ <key>FileVersion</key>
+ <string>2.3.7.33275</string>
+ <key>ProductName</key>
+ <string>Adobe CIT</string>
+ <key>ProductVersion</key>
+ <string>2.3.7</string>
+ <key>NSHumanReadableCopyright</key>
+ <string>Copyright 2011, Adobe Systems Incorporated. All Rights Reserved. </string>
+ <key>CFBundleInfoDictionaryVersion</key>
+ <string>6.0</string>
+</dict>
+</plist>

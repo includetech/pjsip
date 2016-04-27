@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xmp_definitions>
+  <xmp_schema prefix='crs' namespace='http://ns.adobe.com/camera-raw-settings/1.0/' description='$$$/xmp/crs_description=Properties for image files produced in camera raw mode.' label='$$$/xmp/crs_label=Camera Raw'>
+    <xmp_property name='AutoBrightness' category='internal' type='boolean' description='$$$/xmp/crs/AutoBrightness_description=When true, &quot;Brightness&quot; is automatically adjusted.' label='$$$/xmp/crs/AutoBrightness_label=Auto Brightness'/>
+    <xmp_property name='AutoContrast' category='internal' type='boolean' description='$$$/xmp/crs/AutoContrast_description=When true, &quot;Contrast&quot; is automatically adjusted.' label='$$$/xmp/crs/AutoContrast_label=Auto Contrast'/>
+    <xmp_property name='AutoExposure' category='internal' type='boolean' description='$$$/xmp/crs/AutoExposure_description=When true, &quot;Exposure&quot; is automatically adjusted.' label='$$$/xmp/crs/AutoExposure_label=Auto Exposure'/>
+    <xmp_property name='AutoShadows' category='internal' type='boolean' description='$$$/xmp/crs/AutoShadows_description=When true,&quot;Shadows&quot; is automatically adjusted.' label='$$$/xmp/crs/AutoShadows_label=Auto Shadows'/>
+    <xmp_property name='BlueHue' category='internal' type='integer' max='100' description='$$$/xmp/crs/BlueHue_description=&quot;Blue Hue&quot; setting.' min='-100' label='$$$/xmp/crs/BlueHue_label=Blue Hue'/>
+    <xmp_property name='BlueSaturation' category='internal' type='integer' max='100' description='$$$/xmp/crs/BlueSaturation_description=&quot;Blue Saturation&quot; setting.' min='-100' label='$$$/xmp/crs/BlueSaturation_label=Blue Saturation'/>
+    <xmp_property name='Brightness' category='internal' type='integer' max='150' description='$$$/xmp/crs/Brightness_description=&quot;Brightness&quot; setting.' min='0' label='$$$/xmp/crs/Brightness_label=Brightness'/>
+    <xmp_property name='CameraProfile' category='internal' type='text' description='$$$/xmp/crs/CameraProfile_description=&quot;Camera Profile&quot; setting.' label='$$$/xmp/crs/CameraProfile_label=Camera Profile'/>
+    <xmp_property name='ChromaticAberrationB' category='internal' type='integer' max='100' description='$$$/xmp/crs/ChromaticAberrationB_description=&quot;Chomatic Aberration, Fix Blue/Yellow Fringe&quot; setting.' min='-100' label='$$$/xmp/crs/ChromaticAberrationB_label=Chromatic Aberration B'/>
+    <xmp_property name='ChromaticAberrationR' category='internal' type='integer' max='100' description='$$$/xmp/crs/ChromaticAberrationR_description=&quot;Chomatic Aberration, Fix Red/Cyan Fringe&quot; setting.' min='-100' label='$$$/xmp/crs/ChromaticAberrationR_label=Chromatic Aberration R'/>
+    <xmp_property name='ColorNoiseReduction' category='internal' type='integer' max='100' description='$$$/xmp/crs/ColorNoiseReduction_description=&quot;Color Noise Reducton&quot; setting.' min='0' label='$$$/xmp/crs/ColorNoiseReduction_label=Color Noise Reduction'/>
+    <xmp_property name='Contrast' category='internal' type='integer' max='100' description='$$$/xmp/crs/Contrast_description=Contrast setting.' min='-50' label='$$$/xmp/crs/Contrast_label=Contrast'/>
+    <xmp_property name='CropTop' category='internal' type='real' description='$$$/xmp/crs/CropTop_description=When &quot;Has Crop&quot; is true, top of crop rectangle.' label='$$$/xmp/crs/CropTop_label=Crop Top'/>
+    <xmp_property name='CropLeft' category='internal' type='real' description='$$$/xmp/crs/CropLeft_description=When &quot;Has Crop&quot; is true, left of crop rectangle.' label='$$$/xmp/crs/CropLeft_label=Crop Left'/>
+    <xmp_property name='CropBottom' category='internal' type='real' description='$$$/xmp/crs/CropBottom_description=When &quot;Has Crop&quot; is true, bottom of crop rectangle.' label='$$$/xmp/crs/CropBottom_label=Crop Bottom'/>
+    <xmp_property name='CropRight' category='internal' type='real' description='$$$/xmp/crs/CropRight_description=When &quot;Has Crop&quot; is true, right of crop rectangle.' label='$$$/xmp/crs/CropRight_label=Crop Right'/>
+    <xmp_property name='CropAngle' category='internal' type='real' description='$$$/xmp/crs/CropAngle_description=When &quot;Has Crop&quot; is true, angle of crop rectangle.' label='$$$/xmp/crs/CropAngle_label=Crop Angle'/>
+    <xmp_property name='CropWidth' category='internal' type='real' description='$$$/xmp/crs/CropWidth_description=Width of resulting cropped image in CropUnits units.' label='$$$/xmp/crs/CropWidth_label=Crop Width'/>
+    <xmp_property name='CropHeight' category='internal' type='real' description='$$$/xmp/crs/CropHeight_description=Height of resulting cropped image in CropUnits units.' label='$$$/xmp/crs/CropHeight_label=Crop Height'/>
+    <xmp_property name='CropUnits' category='internal' type='integer' description='$$$/xmp/crs/CropUnits_description=Units for Crop Width and Crop Height. One of: 0=pixels 1=inches 2=cm.' label='$$$/xmp/crs/CropUnits_label=Crop Units'/>
+    <xmp_property name='Exposure' category='internal' type='real' max='4.0' description='$$$/xmp/crs/Exposure_description=&quot;Exposure&quot; setting.' min='-4.0' label='$$$/xmp/crs/Exposure_label=Exposure'/>
+    <xmp_property name='GreenHue' category='internal' type='integer' max='100' description='$$$/xmp/crs/GreenHue_description=&quot;Green Hue&quot; setting.' min='-100' label='$$$/xmp/crs/GreenHue_label=Green Hue'/>
+    <xmp_property name='GreenSaturation' category='internal' type='integer' max='100' description='$$$/xmp/crs/GreenSaturation_description=&quot;Green Saturation&quot; setting.' min='-100' label='$$$/xmp/crs/GreenSaturation_label=Green Saturation'/>
+    <xmp_property name='HasCrop' category='internal' type='boolean' description='$$$/xmp/crs/HasCrop_description=When true, image has a cropping rectangle.' label='$$$/xmp/crs/HasCrop_label=Has Crop'/>
+    <xmp_property name='HasSettings' category='internal' type='boolean' description='$$$/xmp/crs/HasSettings_description=When true, non-default camera raw settings.' label='$$$/xmp/crs/HasSettings_label=Has Settings'/>
+    <xmp_property name='LuminanceSmoothing' category='internal' type='integer' max='100' description='$$$/xmp/crs/LuminanceSmoothing_description=&quot;Luminance Smoothing&quot; setting.' min='0' label='$$$/xmp/crs/LuminanceSmoothing_label=Luminance Smoothing'/>
+    <xmp_property name='RawFileName' category='internal' type='text' description='$$$/xmp/crs/RawFileName_description=File name for raw file (not a complete path).' label='$$$/xmp/crs/RawFileName_label=Raw File Name'/>
+    <xmp_property name='RedHue' category='internal' type='integer' max='100' description='$$$/xmp/crs/RedHue_description=&quot;Red Hue&quot; setting.' min='-100' label='$$$/xmp/crs/RedHue_label=Red Hue'/>
+    <xmp_property name='RedSaturation' category='internal' type='integer' max='100' description='$$$/xmp/crs/RedSaturation_description=&quot;Red Saturation&quot; setting.' min='-100' label='$$$/xmp/crs/RedSaturation_label=Red Saturation'/>
+    <xmp_property name='Saturation' category='internal' type='integer' max='100' description='$$$/xmp/crs/Saturation_description=&quot;Saturation&quot; setting.' min='-100' label='$$$/xmp/crs/Saturation_label=Saturation'/>
+    <xmp_property name='Shadows' category='internal' type='integer' max='100' description='$$$/xmp/crs/Shadows_description=&quot;Shadows&quot; setting.' min='0' label='$$$/xmp/crs/Shadows_label=Shadows'/>
+    <xmp_property name='ShadowTint' category='internal' type='integer' max='100' description='$$$/xmp/crs/ShadowTint_description=&quot;Shadow Tint&quot; setting.' min='-100' label='$$$/xmp/crs/ShadowTint_label=Shadow Tint'/>
+    <xmp_property name='Sharpness' category='internal' type='integer' max='100' description='$$$/xmp/crs/Sharpness_description=&quot;Sharpness&quot; setting.' min='0' label='$$$/xmp/crs/Sharpness_label=Sharpness'/>
+    <xmp_property name='Temperature' category='internal' type='integer' max='50000' description='$$$/xmp/crs/Temperature_description=&quot;Temperature&quot; setting.' min='2000' label='$$$/xmp/crs/Temperature_label=Temperature'/>
+    <xmp_property name='Tint' category='internal' type='integer' max='150' description='$$$/xmp/crs/Tint_description=&quot;Tint&quot; setting.' min='-150' label='$$$/xmp/crs/Tint_label=Tint'/>
+    <xmp_property name='ToneCurve' category='internal' type='seq' description='$$$/xmp/crs/ToneCurve_description=Array of points (Integer, Integer) defining a &quot;Tone Curve.&quot;' element_type='(integer, integer)' label='$$$/xmp/crs/ToneCurve_label=Tone Curve'/>
+    <xmp_property name='ToneCurveName' category='internal' type='openchoice' description='$$$/xmp/crs/ToneCurveName_description=The name of the Tone Curve described by ToneCurve.' element_type='text' label='$$$/xmp/crs/ToneCurveName_label=Tone Curve Name'>
+      <xmp_choice raw_value='Linear' label='$$$/xmp/crs/ToneCurveName/0=Linear'/>
+      <xmp_choice raw_value='Medium Contrast' label='$$$/xmp/crs/ToneCurveName/1=Medium Contrast'/>
+      <xmp_choice raw_value='Strong Contrast' label='$$$/xmp/crs/ToneCurveName/2=Strong Contrast'/>
+      <xmp_choice raw_value='Custom' label='$$$/xmp/crs/ToneCurveName/3=Custom'/>
+    </xmp_property>
+    <xmp_property name='Version' category='internal' type='text' description='$$$/xmp/crs/Version_description=Version of Camera Raw plugin.' label='$$$/xmp/crs/Version_label=Version'/>
+    <xmp_property name='VignetteAmount' category='internal' type='integer' max='100' description='$$$/xmp/crs/VignetteAmount_description=&quot;Vignetting Amount&quot; setting.' min='-100' label='$$$/xmp/crs/VignetteAmount_label=Vignette Amount'/>
+    <xmp_property name='VignetteMidpoint' category='internal' type='integer' max='100' description='$$$/xmp/crs/VignetteMidpoint_description=&quot;Vignetting Midpoint&quot; setting.' min='0' label='$$$/xmp/crs/VignetteMidpoint_label=Vignette Midpoint'/>
+    <xmp_property name='WhiteBalance' category='internal' type='closedchoice' description='$$$/xmp/crs/WhiteBalance_description=Setting' element_type='text' label='$$$/xmp/crs/WhiteBalance_label=White Balance'>
+      <xmp_choice raw_value='As Shot' label='$$$/xmp/crs/WhiteBalance/0=As Shot'/>
+      <xmp_choice raw_value='Auto' label='$$$/xmp/crs/WhiteBalance/1=Auto'/>
+      <xmp_choice raw_value='Daylight' label='$$$/xmp/crs/WhiteBalance/2=Daylight'/>
+      <xmp_choice raw_value='Cloudy' label='$$$/xmp/crs/WhiteBalance/3=Cloudy'/>
+      <xmp_choice raw_value='Shade' label='$$$/xmp/crs/WhiteBalance/4=Shade'/>
+      <xmp_choice raw_value='Tungsten' label='$$$/xmp/crs/WhiteBalance/5=Tungsten'/>
+      <xmp_choice raw_value='Fluorescent' label='$$$/xmp/crs/WhiteBalance/6=Fluorescent'/>
+      <xmp_choice raw_value='Flash' label='$$$/xmp/crs/WhiteBalance/7=Flash'/>
+      <xmp_choice raw_value='Custom' label='$$$/xmp/crs/WhiteBalance/8=Custom'/>
+    </xmp_property>
+  </xmp_schema>
+  <!-- workaround to fix parser error (unknown element type) -->
+  <xmp_type name='(integer, integer)' extends='text' description='' label=''/>
+</xmp_definitions>

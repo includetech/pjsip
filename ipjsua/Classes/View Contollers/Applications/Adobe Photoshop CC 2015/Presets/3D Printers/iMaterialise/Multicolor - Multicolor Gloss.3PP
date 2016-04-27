@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Printer>
+  <Version value="1" />
+  <PrintLocation value="i.materialise.com" />
+  <PrintVolume X="254.00" Y="381.00" Z="204.00" />
+  <MeshRepairResolution value="7" />
+  <PrinterHeads value="1" />
+  <PrinterSupportsUSB flag="0" />
+  <PreferredFileFormat value="obj" />
+  <NeedsZip flag="1" />
+  <FullColor flag="1" />
+  <UploadURL value="http://i.materialise.com/3dprintlab/03d3b119-7e58-415f-b167-f20d9cbe16bd/38cb671d-4df6-458c-9f17-85cf3d28b990/58487032-23f5-49dd-9904-1b82c6b58758" />
+  <PrinterResolution X="1.25" Y="1.25" Z="1.25" />
+  <Quality value="high">
+    <MeshRepairResolution value="8" />
+    <MinMeshRepairResolution value="6" />
+  </Quality>
+  <Quality value="medium">
+    <MeshRepairResolution value="7" />
+    <MinMeshRepairResolution value="5" />
+  </Quality>
+  <Quality value="low">
+    <MeshRepairResolution value="6" />
+    <MinMeshRepairResolution value="5" />
+  </Quality>
+</Printer>
+<Materials>
+  <Material name="Multicolor Multicolor Gloss">
+    <NeedsRaft flag="0" />
+    <NeedsSupports flag="0" />
+    <NeedsEscapeHoles flag="1" />
+    <MinimumWallThickness value="1.50" />
+    <PricePerCubicCM value="0.74" />
+    <Handling value="10.70" />
+    <Diffuse R="0.57" G="0.57" B="0.57" />
+    <Specular R="0.73" G="0.73" B="0.73" />
+    <Illumination R="0" G="0" B="0" />
+    <Ambient R="0" G="0" B="0" />
+    <Shine value="0.67" />
+    <Reflection value="0.11" />
+    <Roughness value="0.04" />
+    <Bump value="0" />
+    <Opacity value="1" />
+    <Refraction value="1" />
+  </Material>
+</Materials>

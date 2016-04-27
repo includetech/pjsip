@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xmp_definitions>
+	<!-- IPTC Extension Properties -->
+	<xmp_schema prefix='Iptc4xmpExt' namespace='http://iptc.org/std/Iptc4xmpExt/2008-02-29/' description='$$$/xmp/Iptc4xmpExt_description=IPTC Extension is a standard to extend the set of IPTC Core fields. It provides new additional metadata and it refines some of the existing ones.' label='$$$/xmp/Iptc4xmpExt_label=IPTC Extension Properties'>
+
+		<xmp_property name='AddlModelInfo' category='external' type='text' description='$$$/xmp/Iptc4xmpExt/AddlModelInfo_description=Enter information like ethnicity or other details about the model(s) in this image' label='$$$/xmp/Iptc4xmpExt/AddlModelInfo_label=Additional Model Info'/>
+		<xmp_property name='ArtworkOrObject' category='external' type='bag' element_type='ArtworkOrObjectDetails' description='$$$/xmp/Iptc4xmpExt/ArtworkOrObject_description=Enter details about artwork or objects shown in this image' label='$$$/xmp/Iptc4xmpExt/ArtworkOrObject_label=Artwork or Object'/>
+		<xmp_property name='OrganisationInImageCode' category='external' type='bag' element_type='text' description='$$$/xmp/Iptc4xmpExt/OrganisationInImageCode_description=Enter an identifier for the controlled vocabulary, then a colon, and finally the code from the vocabulary assigned to the organisation shown in this image (e.g. nasdaq:companyA)' label='$$$/xmp/Iptc4xmpExt/OrganisationInImageCode_label=Code of featured Organisation'/>
+		<xmp_property name='CVterm' category='external' type='text' description='$$$/xmp/Iptc4xmpExt/CVterm_description=Enter an identifier for the controlled vocabulary, then a colon, and finally the code from the vocabulary assigned to the term' label='$$$/xmp/Iptc4xmpExt/CVterm_label=Controlled Vocabulary Term'/>
+		<xmp_property name='LocationShown' category='external' type='bag' element_type='LocationDetails' description='$$$/xmp/Iptc4xmpExt/LocationShown_description=Enter the details about a location which is shown in this image' label='$$$/xmp/Iptc4xmpExt/LocationShown_label=Location shown'/>
+		<xmp_property name='ModelAge' category='external' type='bag' element_type='integer' description='$$$/xmp/Iptc4xmpExt/ModelAge_description=Enter the age of the human model(s) at the time this image was made' label='$$$/xmp/Iptc4xmpExt/ModelAge_label=Model Age'/>
+		<xmp_property name='OrganisationInImageName' category='external' type='bag' element_type='text' description='$$$/xmp/Iptc4xmpExt/OrganisationInImageName_description=Enter the name of the organisation which is featured by this image' label='$$$/xmp/Iptc4xmpExt/OrganisationInImageName_label=Name of featured Organisation'/>
+		<xmp_property name='PersonInImage' category='external' type='bag' element_type='text' description='$$$/xmp/Iptc4xmpExt/PersonInImage_description=Enter the name of the person shown in this image' label='$$$/xmp/Iptc4xmpExt/PersonInImage_label=Person shown'/>
+		<xmp_property name='DigImageGUID' category='internal' type='text' description='$$$/xmp/Iptc4xmpExt/DigImageGUID_description=Globally unique identifier for the item. It is created and applied by the creator of the item at the time of its creation. This value shall not be changed after that time' label='$$$/xmp/Iptc4xmpExt/DigImageGUID_label=Digital Image Identifier'/>
+		<!-- Deprecated, replaced by DigitalSourceType
+			<xmp_property name='DigitalSourcefileType' category='external' type='uri' description='$ $ $/xmp/Iptc4xmpExt/DigitalSourcefileType_description=The type of the source digital file' label='$ $ $/xmp/Iptc4xmpExt/DigitalSourcefileType_label=Physical type of original photo' deprecated='true'/>
+		-->	
+		<xmp_property name='DigitalSourceType' category='external' type='closedchoice' element_type='uri' description='$$$/xmp/Iptc4xmpExt/DigitalSourceType_description=Select one of the values for identifying the type of the source of the digital image from the controlled vocabulary' label='$$$/xmp/Iptc4xmpExt/DigitalSourceType_label=Digital Source Type'>
+			<xmp_choice raw_value='' label='$$$/xmp/choice/unsetValue_label=(Select value)'/>
+			<xmp_choice raw_value='http://cv.iptc.org/newscodes/digitalsourcetype/digitalCapture' label='$$$/xmp/Iptc4xmpExt/DigitalSourceType/1=Original digital capture of a real life scene'/>
+			<xmp_choice raw_value='http://cv.iptc.org/newscodes/digitalsourcetype/negativeFilm' label='$$$/xmp/Iptc4xmpExt/DigitalSourceType/2=Digitised from a negative on film'/>
+			<xmp_choice raw_value='http://cv.iptc.org/newscodes/digitalsourcetype/positiveFilm' label='$$$/xmp/Iptc4xmpExt/DigitalSourceType/3=Digitised from a positive on film'/>
+			<xmp_choice raw_value='http://cv.iptc.org/newscodes/digitalsourcetype/print' label='$$$/xmp/Iptc4xmpExt/DigitalSourceType/4=Digitised from a print on non-transparent medium'/>
+			<xmp_choice raw_value='http://cv.iptc.org/newscodes/digitalsourcetype/softwareImage' label='$$$/xmp/Iptc4xmpExt/DigitalSourceType/5=Created by software'/>
+		</xmp_property>
+		<xmp_property name='Event' category='external' type='langalt' description='$$$/xmp/Iptc4xmpExt/Event_description=Enter the name or description of the event where this image was taken' label='$$$/xmp/Iptc4xmpExt/Event_label=Event'/>
+		<xmp_property name='RegistryId' category='external' type='bag' element_type='RegistryEntryDetails' description='$$$/xmp/Iptc4xmpExt/RegistryId_description=Enter IDs for this image and the registry issuing the image ID' label='$$$/xmp/Iptc4xmpExt/RegistryId_label=Registry Entry'/>
+		<!-- Deprecated
+			<xmp_property name='IptcLastEdited' category='external' type='date' description='$ $ $/xmp/Iptc4xmpExt/IptcLastEdited_description=The public use of this property is deprecated by IPTC Extension version 1.1. It may only still be used by a private user interface for a use scoped to a company. If used this field should be a timestamp of the latest change applied to any of the fields. One may infer no metadata value has been applied after this date.' label='$ $ $/xmp/Iptc4xmpExt/IptcLastEdited_label=IPTC Fields Last Edited' deprecated='true'/>
+		-->	
+		<xmp_property name='LocationCreated' category='external' type='bag' element_type='LocationDetails' description='$$$/xmp/Iptc4xmpExt/LocationCreated_description=Enter the details about a location where this image was created' label='$$$/xmp/Iptc4xmpExt/LocationCreated_label=Location created'/>
+		<xmp_property name='MaxAvailHeight' category='external' type='integer' description='$$$/xmp/Iptc4xmpExt/MaxAvailHeight_description=Enter the maximum available height in pixels of the original photo from which this photo has been derived by downsizing' label='$$$/xmp/Iptc4xmpExt/MaxAvailHeight_label=Max. available Height'/>
+		<xmp_property name='MaxAvailWidth' category='external' type='integer' description='$$$/xmp/Iptc4xmpExt/MaxAvailWidth_description=Enter the maximum available width in pixels of the original photo from which this photo has been derived by downsizing' label='$$$/xmp/Iptc4xmpExt/MaxAvailWidth_label=Max. available Width'/>
+	</xmp_schema>
+	
+	
+	<!-- Types -->
+	
+	<xmp_type name='ArtworkOrObjectDetails' label='$$$/xmp/Iptc4xmpExt/ArtworkOrObjectDetails_label=Artwork or Object in the Image Details' description='$$$/xmp/Iptc4xmpExt/ArtworkOrObjectDetails_description=A structured datatype for details about artwork or an object in an image. Includes a Copyright Notice, a Creator, a Date Created, a Source, a Source Inventory Number and a Title.'>
+	
+		<xmp_field prefix='Iptc4xmpExt' name='AOTitle' type='langalt' namespace='http://iptc.org/std/Iptc4xmpExt/2008-02-29/' label='$$$/xmp/Iptc4xmpExt/AOTitle_label=Title' description='$$$/xmp/Iptc4xmpExt/AOTitle_description=Enter the verbal and human readable name of the artwork or object in this image'/>
+		<xmp_field prefix='Iptc4xmpExt' name='AODateCreated' type='date' namespace='http://iptc.org/std/Iptc4xmpExt/2008-02-29/' label='$$$/xmp/Iptc4xmpExt/AODateCreated_label=Date created' description='$$$/xmp/Iptc4xmpExt/AODateCreated_description=Enter the date and optionally the time when the artwork or object in this image was created'/>
+		<xmp_field prefix='Iptc4xmpExt' name='AOCreator' type='seq' element_type='propername' namespace='http://iptc.org/std/Iptc4xmpExt/2008-02-29/' label='$$$/xmp/Iptc4xmpExt/AOCreator_label=Creator' description='$$$/xmp/Iptc4xmpExt/AOCreator_description=Enter the name of the artist who has created artwork or an object in this image'/>
+		<xmp_field prefix='Iptc4xmpExt' name='AOSource' type='text' namespace='http://iptc.org/std/Iptc4xmpExt/2008-02-29/' label='$$$/xmp/Iptc4xmpExt/AOSource_label=Source' description='$$$/xmp/Iptc4xmpExt/AOSource_description=Enter the name of the organisation or body holding and registering the artwork or object in this image for inventory purposes'/>
+		<xmp_field prefix='Iptc4xmpExt' name='AOSourceInvNo' type='text' namespace='http://iptc.org/std/Iptc4xmpExt/2008-02-29/' label='$$$/xmp/Iptc4xmpExt/AOSourceInvNo=Source inventory number' description='$$$/xmp/Iptc4xmpExt/AOSourceInvNo_description=Enter the inventory number issued by the organisation or body holding and registering the artwork or object in this image'/>
+		<xmp_field prefix='Iptc4xmpExt' name='AOCopyrightNotice' type='text' namespace='http://iptc.org/std/Iptc4xmpExt/2008-02-29/' label='$$$/xmp/Iptc4xmpExt/AOCopyrightNotice_label=Copyright notice' description='$$$/xmp/Iptc4xmpExt/AOCopyrightNotice_description=Enter any necessary copyright notice for claiming the intellectual property for artwork or an object in this image'/>
+		
+	</xmp_type>
+
+	<xmp_type name='LocationDetails' label='$$$/xmp/Iptc4xmpExt/LocationDetails_label=Location Details' description='$$$/xmp/Iptc4xmpExt/LocationDetails_description=A structured datatype for details of a location. It includes a Sublocation, a City, a Province or State, a Country (Name and ISO-Code) and a World Region.'>
+	
+		<xmp_field prefix='Iptc4xmpExt' name='Sublocation' type='text' namespace='http://iptc.org/std/Iptc4xmpExt/2008-02-29/' label='$$$/xmp/Iptc4xmpExt/Sublocation_label=Sublocation' description='$$$/xmp/Iptc4xmpExt/Sublocation_description=Enter the name of the Sublocation'/>
+		<xmp_field prefix='Iptc4xmpExt' name='City' type='text' namespace='http://iptc.org/std/Iptc4xmpExt/2008-02-29/' label='$$$/xmp/Iptc4xmpExt/City_label=City' description='$$$/xmp/Iptc4xmpCore/City_description=Enter the name of the City'/>
+		<xmp_field prefix='Iptc4xmpExt' name='ProvinceState' type='text' namespace='http://iptc.org/std/Iptc4xmpExt/2008-02-29/' label='$$$/xmp/Iptc4xmpExt/ProvinceState_label=Province/State' description='$$$/xmp/Iptc4xmpExt/ProvinceState_description=Enter the name of the Province or State'/>
+		<xmp_field prefix='Iptc4xmpExt' name='CountryName' type='text' namespace='http://iptc.org/std/Iptc4xmpExt/2008-02-29/' label='$$$/xmp/Iptc4xmpExt/CountryName_label=Country Name' description='$$$/xmp/Iptc4xmpExt/CountryName_description=Enter the name of the Country'/>
+		<xmp_field prefix='Iptc4xmpExt' name='CountryCode' type='text' namespace='http://iptc.org/std/Iptc4xmpExt/2008-02-29/' label='$$$/xmp/Iptc4xmpExt/CountryCode_label=Country ISO-Code' description='$$$/xmp/Iptc4xmpExt/CountryCode_description=Enter the 2 or 3 letter ISO 3166 Country Code of the Country'/>
+		<xmp_field prefix='Iptc4xmpExt' name='WorldRegion' type='text' namespace='http://iptc.org/std/Iptc4xmpExt/2008-02-29/' label='$$$/xmp/Iptc4xmpExt/WorldRegion_label=World Region' description='$$$/xmp/Iptc4xmpExt/WorldRegion_description=Enter the name of the World Region'/>
+		
+	</xmp_type>
+
+	<xmp_type name='RegistryEntryDetails' label='$$$/xmp/Iptc4xmpExt/RegistryEntryDetails_label=Registry Entry Details' description='$$$/xmp/Iptc4xmpExt/RegistryEntryDetails_description=A structured datatype for an entry in a registry, includes the id issued by the registry and the registry&apos;s id'>
+
+		<xmp_field prefix='Iptc4xmpExt' name='RegOrgId' type='text' namespace='http://iptc.org/std/Iptc4xmpExt/2008-02-29/' label='$$$/xmp/Iptc4xmpExt/RegOrgId_label=Organisation Identifier' description='$$$/xmp/Iptc4xmpExt/RegOrgId_description=Enter the identifier for the registry which issued the corresponding Registry Image ID'/>
+		<xmp_field prefix='Iptc4xmpExt' name='RegItemId' type='text' namespace='http://iptc.org/std/Iptc4xmpExt/2008-02-29/' label='$$$/xmp/Iptc4xmpExt/RegItemId_label=Item Identifier' description='$$$/xmp/Iptc4xmpExt/RegItemId_description=Enter the unique identifier created by a registry and applied by the creator of the digital image. This value shall not be changed after being applied'/>
+	
+	</xmp_type>
+
+</xmp_definitions>

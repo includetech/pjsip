@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Printer>
+	<Version value='1' />
+	<PrintLocation value='Shapeways.com' />
+	<UploadURL value='http://www.adobe.com/go/psuploadtoshapeways' />
+	<PrintVolume X='178' Y='152' Z='127' />
+	<PrinterResolution X='10' Y='10' Z='10' />
+	<MeshRepairResolution value='7' />
+	<PrinterHeads value='1' />
+	<PrinterSupportsUSB flag='0' />
+	<PreferredFileFormat value='stl' />
+  <RemoveUnintendedLooseComponents flag='1' />
+	<NeedsZip flag='1' />
+	<Quality value='high'>
+		<MeshRepairResolution value='8' />
+	</Quality>
+	<Quality value='medium'>
+		<MeshRepairResolution value='7' />
+	</Quality>
+	<Quality value='low'>
+		<MeshRepairResolution value='6' />
+	</Quality>
+</Printer>
+<Materials>
+	<Material name='Frosted Ultra Detail Acrylic'>
+		<NeedsRaft flag='0' />
+		<NeedsSupports flag='0' />
+		<NeedsEscapeHoles flag='0' />
+		<MinimumWallThickness value='0.6' />
+		<PricePerCubicCM value='3.49' />
+		<Handling value='5.0' />
+		<Diffuse R='0.9408' G='0.9600' B='0.9593' />
+		<Specular R='0.5684' G='0.5800' B='0.5796' />
+		<Illumination R='0' G='0' B='0' />
+		<Ambient R='0.1372' G='0.1400' B='0.1399' />
+		<Shine value='0.28' />
+		<Reflection value='0.06' />
+		<Roughness value='0.68' />
+		<Bump value='0' />
+		<Opacity value='0.78' />
+		<Refraction value='1.011' />
+	</Material>
+</Materials>

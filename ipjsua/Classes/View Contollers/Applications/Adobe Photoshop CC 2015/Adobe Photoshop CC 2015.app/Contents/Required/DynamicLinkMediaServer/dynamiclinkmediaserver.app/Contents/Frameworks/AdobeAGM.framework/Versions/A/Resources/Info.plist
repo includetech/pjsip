@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildDate</key>
+	<string>2014/02/11-18:18:11</string>
+	<key>BuildID</key>
+	<string>32392</string>
+	<key>BuildVersion</key>
+	<string>79.552081</string>
+	<key>CFBundleExecutable</key>
+	<string>AdobeAGM</string>
+	<key>CFBundleGetInfoString</key>
+	<string>AdobeAGM 4.30.32.32392, Copyright 2012 Adobe Systems Incorporated.</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.adobe.AGM</string>
+	<key>CFBundleName</key>
+	<string>AdobeAGM</string>
+	<key>CFBundlePackageType</key>
+	<string>FMWK</string>
+	<key>CFBundleShortVersionString</key>
+	<string>AdobeAGM 4.30.32.32392</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>4.30.32.32392</string>
+	<key>Configuration</key>
+	<string>AGM Min Release MT</string>
+</dict>
+</plist>

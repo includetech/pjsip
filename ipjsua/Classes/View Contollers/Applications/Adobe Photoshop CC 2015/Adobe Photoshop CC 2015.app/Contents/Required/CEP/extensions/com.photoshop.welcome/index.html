@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+	<head>  
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+	
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<script type="text/javascript" src="./offline/scripts/PhotoshopJS/CSInterface.js"></script>  
+		<script type="text/javascript" src="./offline/scripts/PhotoshopJS/photoshop.js"></script>
+		
+		<script>
+		function redirectToAppropriateHelloPage()
+		{
+			
+			var location = "./offline/index.html";
+			
+			if(window.navigator.onLine == true)
+			{
+				location = "https://helpx.adobe.com/photoshop/hello/v1_6/index.html";
+				logPIPEvent("ProjectHello", "Interaction", "DisplayRemoteHello");
+			}
+			else
+				logPIPEvent("ProjectHello", "Interaction", "DisplayOfflineHello");
+			
+			window.location = location;
+		}
+		</script>
+	
+	</head>
+	<body onload = "redirectToAppropriateHelloPage()">
+	</body>
+	
+	
+</html>

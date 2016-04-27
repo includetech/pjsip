@@ -1,0 +1,10 @@
+{
+  "name": "ws",
+  "version": "0.4.31",
+  "dependencies": {
+    "options": {
+      "version": "0.0.5",
+      "from": "options@>=0.0.5"
+    }
+  }
+}

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Printer>
+	<Version value='1' />
+	<PrintLocation value='Local' />
+	<PrintVolume X='1000' Y='1000' Z='1000' />
+    <SupportColor R='1.0' G='0.369' B='0.0' />
+    <RaftColor R='1.0' G='0.671' B='0.0' />
+    <CleaningTowerColor R='1.0' G='0.886' B='0.0' />
+	<PrinterResolution X='3' Y='3' Z='10' />
+	<MeshRepairResolution value='7' />
+	<PrinterHeads value='1' />
+	<PrinterSupportsUSB flag='0' />
+	<PreferredFileFormat value='stl' />
+	<Supports>
+		<MinSlope value='30.0' />
+		<TopConnectorMaxDistanceOnOutline value='5.0' />	
+		<TopConnectorMaxEccentricityOnOutline value='0.5' />
+		<ExtraSlopeData>
+		        <MinSlope value='45.0' />
+		        <TopConnectorMaxDistanceOnOutline value='25.0' />	
+				<TopConnectorMaxEccentricityOnOutline value='7' />
+		</ExtraSlopeData>
+	</Supports>
+	<Quality value='high'>
+		<MeshRepairResolution value='9' />
+	</Quality>
+	<Quality value='medium'>
+		<MeshRepairResolution value='7' />
+	</Quality>
+	<Quality value='low'>
+		<MeshRepairResolution value='6' />
+	</Quality>
+</Printer>
+
+<Materials>
+	<Material name='ABS'>
+		<NeedsRaft flag='0' />
+		<NeedsSupports flag='0' />
+		<NeedsEscapeHoles flag='0' />
+		<MaterialType value='ABS' />
+		<HeadTemperature value='215' />
+		<MaxPlatformTemperature value='100' />
+		<FilamentDiameter value='1.8' />
+		<Diffuse R='0.9' G='0.87' B='0.77' />
+		<Specular R='0.35' G='0.35' B='0.3' />
+		<Illumination R='0' G='0' B='0' />
+		<Ambient R='0' G='0' B='0' />
+		<Shine value='0.125' />
+		<Reflection value='0.02' />
+		<Roughness value='0.02' />
+		<Bump value='0.1' />
+		<Opacity value='0.995' />
+		<Refraction value='1.014' />
+		<PreviewVolumeNoiseDisplay>
+			<NoiseOn flag='1' />
+			<NoiseMagnitude value='0.6' />
+			<HigherFrequencyMagnitudeReduction value='2.0' />
+			<HigherFrequencyLookupOffset value='1.5' />
+			<CubicCentimeterLookupScale value='5.0' />
+		</PreviewVolumeNoiseDisplay>
+	</Material>
+</Materials>
+

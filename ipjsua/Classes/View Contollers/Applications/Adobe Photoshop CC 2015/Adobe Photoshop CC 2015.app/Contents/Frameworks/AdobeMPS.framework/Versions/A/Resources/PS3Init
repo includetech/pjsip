@@ -1,0 +1,199 @@
+% @(#)CM_VerSion startup.ps 2017 1.2 17642.eco sum= 59644 2017.012
+% @(#)CM_VerSion startup.ps highend 1.2 16708.eco sum= 59644 2017.801
+%!
+
+% File: startup.ps
+
+% (c) Copyright 1990-1994 Adobe Systems Incorporated.
+% All rights reserved.
+
+% Patents Pending
+
+% NOTICE:  All information contained herein is the property of
+% Adobe Systems Incorporated.  Many of the intellectual and
+% technical concepts contained herein are proprietary to Adobe,
+% are protected as trade secrets, and are made available only to
+% Adobe licensees for their internal use.  Any reproduction or
+% dissemination of this software is strictly forbidden unless
+% prior written permission is obtained from Adobe.
+
+% PostScript and Display PostScript are trademarks of Adobe Systems
+% Incorporated which may be registered in certain jurisdictions.
+
+%
+% This is a module of the fledgeling/debugging Distiller test product.
+%
+% This file is run as a "startjob", i.e. "outside the server loop",
+% after the PostScript server has been initialized but just before
+% PSRIPInitialize returns.
+% 
+
+<<
+    % enable / disable thumbnail generation
+    /DoThumbnails false
+
+    % enable / disable compressed text and graphics
+    /LZWEncodePages false
+    /ASCII85EncodePages true
+    
+    % font embedding
+    /EmbedAllFonts true
+    /SubsetFonts true
+    /AlwaysEmbed []
+    /NeverEmbed []
+	
+    % image parameters
+    /ConvertCMYKImagesToRGB true
+    /DownsampleColorImages true
+    /ColorImageResolution 72
+    /AntiAliasColorImages false
+    /ColorImageDepth -1    % can be -1, 1, 2, 4, or 8; -1 means outbps = inbps
+    /EncodeColorImages false
+    /ColorImageFilter /DCTEncode
+    /ColorImageDict <<
+	[
+		{	% jpeg low
+			/QFactor 0.1
+			/HSamples [1 1 1 1]
+			/VSamples [1 1 1 1]
+		}
+		{	% jpeg medium-low
+			/QFactor 0.25
+			/HSamples [1 1 1 1]
+			/VSamples [1 1 1 1]
+		}
+		{	% jpeg medium
+			/QFactor 0.5
+			/HSamples [2 1 1 2]
+			/VSamples [2 1 1 2]
+			/Blend 1
+		}
+		{	% jpeg medium-high
+			/QFactor 0.9
+			/HSamples [2 1 1 2]
+			/VSamples [2 1 1 2]
+			/Blend 1
+		}
+		{	% jpeg high
+			/QFactor 1.3
+			/HSamples [2 1 1 2]
+			/VSamples [2 1 1 2]
+			/Blend 1
+		}
+	] 2 get exec
+	>>
+
+    /DownsampleGrayImages true
+    /GrayImageResolution 72
+    /AntiAliasGrayImages false
+    /GrayImageDepth -1
+    /EncodeGrayImages false
+    /GrayImageFilter /DCTEncode
+    /GrayImageDict <<
+	[
+		{	% jpeg low
+			/QFactor 0.1
+			/HSamples [1 1 1 1]
+			/VSamples [1 1 1 1]
+		}
+		{	% jpeg medium-low
+			/QFactor 0.25
+			/HSamples [1 1 1 1]
+			/VSamples [1 1 1 1]
+		}
+		{	% jpeg medium
+			/QFactor 0.5
+			/HSamples [2 1 1 2]
+			/VSamples [2 1 1 2]
+			/Blend 1
+		}
+		{	% jpeg medium-high
+			/QFactor 0.9
+			/HSamples [2 1 1 2]
+			/VSamples [2 1 1 2]
+			/Blend 1
+		}
+		{	% jpeg high
+			/QFactor 1.3
+			/HSamples [2 1 1 2]
+			/VSamples [2 1 1 2]
+			/Blend 1
+		}
+	] 2 get exec
+	>>
+
+    /DownsampleMonoImages true
+    /MonoImageResolution 300
+    /AntiAliasMonoImages false
+    /MonoImageDepth -1
+    /EncodeMonoImages false
+    /MonoImageFilter /CCITTFaxEncode
+    /MonoImageData <</K -1>>
+	
+    % device independent color
+    /OutputCSD true
+>> setdistillerparams
+  % The above is a convenience, to avoid making a new VM when testing
+
+%
+% Configure the default output device to have 144 dpi resolution
+%
+<< /HWResolution [ 144 144 ] /OutputPage false >> setpagedevice
+
+% Redefine the PostScript definefont operator
+%
+% This is a hack made necessary by the strange way that Illustrator-generated EPS
+% files and native Illustrator files (pre version 9) define fonts for vertical writing
+% direction for Asian fonts. The AI-idiom is as follows:
+%
+%   [/_MS-Gothic-90ms-RKSJ-V/MS-Gothic 1 1 0 TZ
+%
+% where TZ is an AI-defined procedure which does a findfont on MS-Gothic (in this case)
+% then creates a new font dict from the dict that findfont returns, and adds some
+% private keys to it (/FontDirection, /FontScript, and /FontRequest), and sets the
+% Encoding vector. Finally, 'definefont' is called with the new font dict, defining
+% a font with name == the first argument to the TZ proc (in the case above,
+% _MS-Gothic-90ms-RKSJ-V). 
+%
+% Notice that this name (_MS-Gothic-90ms-RKSJ-V) is composed of a base font (MS-Gothic)
+% and a CMap (90ms-RKSJ-V). The CMap name can be any valid CMap; note the 'V' at the end.
+% This designates a vertical writing direction, but the PS interpreter will only do
+% vertical writing if a font has a WMode key with value == 1. The 'definefont' sequence
+% described above does not add a WMode key to the font dict, so even though the resulting
+% composite font uses a vertical writing CMap, the horizontal metrics will be used,
+% resulting in incorrect text placement.
+%
+% Because MPS uses CoolType as its font resource server, if Illustrator generated PS
+% code that did a findfont on MS-Gothic-90ms-RKSJ-V, everything would be fine, because
+% CoolType would create a font definition with the correct WMode setting. However, AI
+% chooses not to do this, but instead create the composite font via definefont. Here's
+% where our hack comes in: we redefined the definefont operator in order to recognize
+% this case. We examine each font that is defined, looking for the presence of the
+% Illustrator private keys (/FontDirection, /FontScript, and /FontRequest), and if
+% we find them, we assume the font dict was Illustrator-generated. If FontDirection
+% is 1 (meaning vertical writing) we add a WMode entry to the dict with value 1
+% to force the font definition to be consistent with the CMap being used.
+%
+% NOTE: this is a heuristic which could be tricked into doing the wrong thing, but we
+% believe that looking for all these keys virtually guarantees correct identification.
+%
+% Invocation: /fontname <font dict> definefont
+
+/definefont {
+    dup begin
+        % If the font dict has /FontDirection, /FontScript, and /FontRequest keys,
+        % we assume it's an Illustrator-defined font
+        currentdict /FontDirection known
+          currentdict /FontScript known currentdict /FontRequest known and and
+        {
+            % 'FontDirection == 1' means 'vertical writing direction', so we add
+            % a WMode entry to the font dict to let the PS interpreter know
+            % the intended writing mode.
+            FontDirection 1 eq {
+                /WMode 1 def
+            } if
+        } if
+    end
+    % Now execute the 'real' definefont operator
+    systemdict /definefont get exec
+} bind def

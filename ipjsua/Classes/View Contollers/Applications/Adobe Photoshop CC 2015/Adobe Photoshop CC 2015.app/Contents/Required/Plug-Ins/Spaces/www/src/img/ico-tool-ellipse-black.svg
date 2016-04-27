@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="1 1 20 20" enable-background="new 1 1 20 20">
+    <title>
+        ico-ellipse-black
+    </title>
+    <g opacity=".8">
+        <path opacity=".24" fill="#929185" d="M11 20.5c-5.238 0-9.5-4.262-9.5-9.5S5.762 1.5 11 1.5s9.5 4.262 9.5 9.5-4.262 9.5-9.5 9.5z"/>
+        <path fill="#46443A" d="M11 2c4.963 0 9 4.037 9 9s-4.037 9-9 9-9-4.037-9-9 4.037-9 9-9m0-1C5.477 1 1 5.477 1 11s4.477 10 10 10 10-4.477 10-10S16.523 1 11 1z"/>
+    </g>
+</svg>

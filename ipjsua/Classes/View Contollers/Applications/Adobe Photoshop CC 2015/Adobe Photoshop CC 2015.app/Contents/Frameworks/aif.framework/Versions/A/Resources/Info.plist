@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildDate</key>
+	<string>0000/00/00-00:00:00</string>
+	<key>BuildID</key>
+	<string>1</string>
+	<key>BuildVersion</key>
+	<string>1.</string>
+	<key>CFBundleExecutable</key>
+	<string>aif</string>
+	<key>CFBundleGetInfoString</key>
+	<string>Adobe Image Foundation Library 6.0.00.1, (C) 2014 Adobe Systems Incorporated.</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.adobe.aif</string>
+	<key>CFBundleName</key>
+	<string>aif</string>
+	<key>CFBundlePackageType</key>
+	<string>FMWK</string>
+	<key>CFBundleShortVersionString</key>
+	<string>Adobe Image Foundation Library 6.0.00.1</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>6.0.00.1</string>
+	<key>Configuration</key>
+	<string>aif</string>
+</dict>
+</plist>

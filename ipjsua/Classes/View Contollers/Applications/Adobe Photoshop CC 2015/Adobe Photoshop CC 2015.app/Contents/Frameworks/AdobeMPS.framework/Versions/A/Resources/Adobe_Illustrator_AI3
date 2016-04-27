@@ -1,0 +1,3941 @@
+%%BeginResource: procset Adobe_Illustrator_AI3 2.0 0
+%%Title: (Universal Adobe Illustrator (R) Version 3.0 Full Prolog)
+%%Version: 2.0 0
+%%CreationDate: (9/24/96) ()
+%%Copyright: ((C) 1987-1994 Adobe Systems Incorporated All Rights Reserved)
+userdict /Adobe_level2_AI5 25 dict dup begin
+	put
+	/packedarray where not
+	{
+		userdict begin
+		/packedarray
+		{
+			array astore readonly
+		} bind def
+		/setpacking /pop load def
+		/currentpacking false def
+	 end
+		0
+	} if
+	pop
+	userdict /defaultpacking currentpacking put true setpacking
+	/initialize
+	{
+	} bind def
+	/initialize2
+	{
+		Adobe_level2_AI5 begin
+	} bind def
+	/terminate
+	{
+	} bind def
+	/terminate2
+	{
+		currentdict Adobe_level2_AI5 eq
+		{
+		 end
+		} if
+	} bind def
+	mark
+	/setcustomcolor where not
+	{
+		/findcmykcustomcolor
+		{
+			5 packedarray
+		} bind def
+		/setcustomcolor
+		{
+			exch aload pop pop
+			4
+			{
+				4 index mul 4 1 roll
+			} repeat
+			5 -1 roll pop
+			setcmykcolor
+		}
+		def
+	} if
+	
+	/gt38? mark {version cvr cvx exec} stopped {cleartomark true} {38 gt exch pop} ifelse def
+	userdict /deviceDPI 72 0 matrix defaultmatrix dtransform dup mul exch dup mul add sqrt put
+	userdict /level2?
+	systemdict /languagelevel known dup
+	{
+		pop systemdict /languagelevel get 2 ge
+	} if
+	put
+/level2ScreenFreq
+{
+ begin
+		60
+		HalftoneType 1 eq
+		{
+			pop Frequency
+		} if
+		HalftoneType 2 eq
+		{
+			pop GrayFrequency
+		} if
+		HalftoneType 5 eq
+		{
+			pop Default level2ScreenFreq
+		} if
+ end
+} bind def
+userdict /currentScreenFreq  
+	level2? {currenthalftone level2ScreenFreq} {currentscreen pop pop} ifelse put
+level2? not
+	{
+		/setcmykcolor where not
+		{
+			/setcmykcolor
+			{
+				exch .11 mul add exch .59 mul add exch .3 mul add
+				1 exch sub setgray
+			} def
+		} if
+		/currentcmykcolor where not
+		{
+			/currentcmykcolor
+			{
+				0 0 0 1 currentgray sub
+			} def
+		} if
+		/setoverprint where not
+		{
+			/setoverprint /pop load def
+		} if
+		/selectfont where not
+		{
+			/selectfont
+			{
+				exch findfont exch
+				dup type /arraytype eq
+				{
+					makefont
+				}
+				{
+					scalefont
+				} ifelse
+				setfont
+			} bind def
+		} if
+		/cshow where not
+		{
+			/cshow
+			{
+				[
+				0 0 5 -1 roll aload pop
+				] cvx bind forall
+			} bind def
+		} if
+	} if
+	cleartomark
+	/anyColor?
+	{
+		add add add 0 ne
+	} bind def
+	/testColor
+	{
+		gsave
+		setcmykcolor currentcmykcolor
+		grestore
+	} bind def
+	/testCMYKColorThrough
+	{
+		testColor anyColor?
+	} bind def
+	userdict /composite?
+	level2?
+	{
+		gsave 1 1 1 1 setcmykcolor currentcmykcolor grestore
+		add add add 4 eq
+	}
+	{
+		1 0 0 0 testCMYKColorThrough
+		0 1 0 0 testCMYKColorThrough
+		0 0 1 0 testCMYKColorThrough
+		0 0 0 1 testCMYKColorThrough
+		and and and
+	} ifelse
+	put
+	composite? not
+	{
+		userdict begin
+		gsave
+		/cyan? 1 0 0 0 testCMYKColorThrough def
+		/magenta? 0 1 0 0 testCMYKColorThrough def
+		/yellow? 0 0 1 0 testCMYKColorThrough def
+		/black? 0 0 0 1 testCMYKColorThrough def
+		grestore
+		/isCMYKSep? cyan? magenta? yellow? black? or or or def
+		/customColor? isCMYKSep? not def
+	 end
+	} if
+ end defaultpacking setpacking
+
+userdict /defaultpacking currentpacking put true setpacking
+userdict /Adobe_blend_AI5 72 dict dup begin
+put
+/bd
+{
+	bind def
+} bind def
+/xs
+{
+	exch store
+} bd
+/nullProc
+{
+	{
+	}
+} def
+/initialize
+{
+	pop pop
+} def
+/initialize2
+{
+	pop pop
+	Adobe_blend_AI5 begin
+		Adobe_blend_AI5_vars begin
+			/_contoneDevice where
+			{
+				pop
+			}
+			{
+				/_contoneDevice false def	
+			} ifelse
+					
+			/_dpiThreshold where
+			{
+				pop
+			}
+			{	
+				/_dpiThreshold 600 def
+			} ifelse
+			
+			/_screenFreqThreshold where
+			{
+				pop
+			}
+			{	
+				/_screenFreqThreshold 150 def
+			} ifelse
+			
+			/tRectOK? deviceDPI _dpiThreshold le currentScreenFreq _screenFreqThreshold le and _contoneDevice not and def
+	/invertXfer
+	{
+		[
+		{
+			1 exch sub
+				} /exec load systemdict/currenttransfer get exec /exec load
+				] cvx systemdict/settransfer get exec
+			} bd
+			/spotDict 3 dict dup begin
+				/nSpots 2 def
+				/spot1 7 dict def
+				/spot2 7 dict def
+		 end
+			def
+			composite?
+			{
+				/_setgray_ /setgray load def
+				/_fill_ /fill load def
+				/_image_ /image load def
+			}
+			{
+				/_setgray_ systemdict/setgray get def
+				/_fill_ systemdict/fill get def
+				/_image_ systemdict/image get def
+			} ifelse
+		} bd
+/terminate
+{
+} bd
+/terminate2
+{
+	currentdict Adobe_blend_AI5_vars eq
+	{
+		end
+		currentdict Adobe_blend_AI5 eq
+		{
+		end
+		} if
+	} if
+} bd
+/_compositeSpotDevice where
+{
+ begin
+		_compositeSpotDevice 0 ne {userdict /composite? true put} if
+ end
+}
+{
+	/_compositeSpotDevice 0 def	
+} ifelse
+	
+/nullString () def
+/d255 256 array def
+0 1 255
+{
+	d255 exch dup 255 div put
+} bind for
+/d255- 256 array def
+0 1 255
+{
+	d255- exch 1 d255 2 index get sub put
+} bind for
+/dUserSpace matrix defaultmatrix def
+currentdict /Adobe_blend_AI5_vars 89 dict dup begin
+put
+{
+	/f /F /s /S /b /B
+}
+{
+	null def
+} bind forall
+/byte 1 string def
+/sSave null def
+/setSSave
+{
+	save /sSave exch store
+} bind def
+/Bm null def
+/doBlend null def
+/startC? false def
+/endC? false def
+/fCMYK? null def
+/startTint 0 def
+/endTint 0 def
+/bSMatrix matrix def
+/bUMatrix matrix def
+/dMatrix matrix def
+/inLine? true def
+/pTState? false def
+/bHi? false def
+/yHi 0 def
+/xHi 0 def
+/noImg /lv1Fix where
+{
+	pop lv1Fix
+}
+{
+	false
+} ifelse
+def
+/ccAry1 5 array def
+/ccTint 0 def
+/spotColor? false def
+/colorimage? true def
+[
+/tint1Data
+/tint2Data
+/spotDict
+/bAxis
+/ubAxis
+/pChange
+/optimize?
+/nSamples
+/sInc
+/blendProc
+/_bn
+/xBCInc
+/yBCInc
+/bInc
+/bRender
+/cBName
+/cBType
+/nColors
+/color?
+/blend?
+/colorType
+/cData
+/cDataLen
+/bDataLen
+/rampPoint
+/midPoint
+/endPoint
+/blendLength
+/blackData
+/yeData
+/mgData
+/cyData
+/cnt1
+/ndx
+/_fill
+/tmp
+counttomark
+{
+	null def
+} bind
+repeat
+pop
+currentdict
+end
+currentdict
+end
+exch
+begin
+begin
+/unitSq
+{
+	0 0 moveto 0 1 lineto 1 1 lineto 1 0 lineto closepath
+} bd
+/gMark
+{
+	counttomark 2 add -1 roll
+} bd
+/setCustomColor
+{
+	dup /ccTint exch store
+	1 exch sub 6 1 roll
+	ccAry1 astore
+	exch setcustomcolor
+} bd
+/currentCustomColor
+{
+	ccAry1 aload pop ccTint
+} bd
+/nsetcustomcolor where 
+{
+	pop
+}
+{
+	/nsetcustomcolor
+	{
+		pop setcmykcolor	
+	} bd
+} ifelse
+/nsetcustomcolorend where 
+{
+	pop
+}
+{
+	/nsetcustomcolorend
+	{
+	} bd
+} ifelse
+/setBSpace
+{
+	newpath bUMatrix astore concat unitSq
+} bd
+/setCStop
+{
+	dup 0 eq
+	{
+		pop
+		
+		spotColor?
+			{
+			dup 1 exch sub /ccTint exch def
+			ccAry1 4 /Black put
+			} if
+		setgray
+	}
+	{
+		1 eq
+		{
+			setcmykcolor
+		}
+		{
+			composite? not colorType 2 lt and
+			{
+				forceCMYK
+			}
+			{
+				setCustomColor
+			} ifelse
+		} ifelse
+	} ifelse
+} bd
+/makeByte
+{
+	/tmp 0 store
+	255 mul cvi
+	8 string 8
+	{
+		dup tmp 3 index put /tmp tmp 1 add store
+	} repeat
+	exch pop
+} bd
+/setImgSpace
+{
+	cDataLen 1 8
+	2 index 0 0 1 0 0 dMatrix astore
+} bd
+/bwImage
+{
+	setImgSpace cData /_image_ load
+	{
+		exec
+	} stopped
+	{
+		$error /errorname get /undefinedresult ne
+		{
+			stop
+		}
+		{
+			pop pop pop pop pop
+		} ifelse
+	} if
+} bd
+level2?
+{
+	/bFill
+	{
+		_fill
+	} def
+	/bCImg
+	{
+		/cDataLen bDataLen store
+		setImgSpace
+		setSSave
+		expandSpot
+		cyData mgData yeData cData
+		expandCMYK
+		true 4 spotDict
+		{
+			ncolorimage
+		} stopped
+		{
+			$error /errorname get /undefinedresult ne
+			{
+				stop
+			}
+			{
+				10
+				{
+					pop
+				} repeat
+			} ifelse
+		} if
+		sSave restore
+	} bd
+} if
+/expandOne
+{
+			dup type /stringtype ne
+			{
+				cDataLen string
+				exch
+				dup 0 ne
+				{
+					255 mul cvi
+					0 1 cDataLen 1 sub
+					{
+						3 copy
+						exch put pop
+					} for
+				} if
+				pop
+			} if
+} bd
+/expandSpot
+{
+	spotColor?
+	{
+		spotDict begin
+			spot1 begin
+				tintImage type /nulltype ne
+				{
+					tintImage expandOne /tintImage exch def
+				} if
+		  end
+			spot2 begin
+				tintImage type /nulltype ne
+				{
+					tintImage expandOne /tintImage exch def
+				} if
+		  end
+	 end
+	} if
+} bd
+/expandCMYK
+{
+	4
+	{
+		expandOne 4 1 roll
+	} repeat
+} bd
+/colorimage where dup
+{
+	exch pop
+	
+	/ncolorimage where
+	{
+		pop
+	}
+	{
+		/ncolorimage {pop colorimage} bd
+	} ifelse
+} if
+not
+{
+	/ncolorimage where 
+	{
+		pop
+	}
+	{
+		/colorimage? false store
+		/ncolorimage
+		{
+			pop pop pop
+	
+		setSSave
+		/blackData xs
+		/yeData xs
+		/mgData xs
+		/cyData xs
+		/cnt1 0 store
+		[
+		byte dup 0
+		cyData dup type /stringtype eq
+		{
+			/cnt1 cvx /get cvx d255 /exch cvx /get cvx .3 /mul cvx
+		}
+		{
+			.3 mul
+		} ifelse
+		mgData dup type /stringtype eq
+		{
+			/cnt1 cvx /get cvx d255 /exch cvx /get cvx .59 /mul cvx
+		}
+		{
+			.59 mul
+		} ifelse
+		yeData dup type /stringtype eq
+		{
+			/cnt1 cvx /get cvx d255 /exch cvx /get cvx .11 /mul cvx
+		}
+		{
+			.11 mul
+		} ifelse
+		blackData dup type /stringtype eq
+		{
+			/cnt1 cvx /get cvx d255 /exch cvx /get cvx
+		} if
+		/add cvx /add cvx /add cvx 1 /exch cvx /sub cvx
+		/dup cvx 0 /lt cvx
+		{
+			pop 0
+		} /if cvx
+		/dup cvx 1 /gt cvx
+		{
+			pop 1
+		} /if cvx
+		255 /mul cvx /cvi cvx
+		256 /mod cvx
+		/dup cvx 0 /lt cvx
+		{
+			pop 0
+		} /if cvx
+		/put cvx
+		/cnt1 dup cvx 1 /add cvx /store cvx
+		] cvx
+		bind
+			_image_ 
+		sSave restore
+	} bd
+	} ifelse
+} if
+level2? not
+{
+	/bCImg
+	{
+		/cDataLen bDataLen store
+		setImgSpace
+		setSSave
+		expandSpot
+		cyData mgData yeData cData
+		colorimage? 
+		{
+			expandCMYK
+		} if
+		true 4 spotDict
+		{
+			ncolorimage
+		} stopped
+		{
+			$error /errorname get /undefinedresult ne
+			{
+				stop
+			}
+			{
+				10
+				{
+					pop
+				} repeat
+			} ifelse
+		} if
+		sSave restore
+	} bd
+	/bwFill
+	{
+		setSSave
+		/cDataLen 8 store
+		/cData currentgray makeByte store
+		bwImage
+		sSave restore
+	} bd
+	/c1ImgFill
+	{
+		setSSave
+		/cDataLen 8 store
+		setImgSpace
+		spotColor?
+		{
+			spotDict begin
+				spot1 begin
+					currentCustomColor makeByte /tintImage exch def
+					/name exch def
+					/spot_K exch def
+					/spot_Y exch def
+					/spot_M exch def
+					/spot_C exch def
+			 end
+				spot2 initSpotData
+		 end
+		} if
+		currentcmykcolor
+		4
+		{
+			makeByte 4 1 roll
+		} repeat
+		true 4 spotDict
+		{
+			ncolorimage
+		} stopped
+		{
+			$error /errorname get /undefinedresult ne
+			{
+				stop
+			}
+			{
+				10
+				{
+					pop
+				} repeat
+			} ifelse
+		} if
+		sSave restore
+	} bd
+	/bFill
+	noImg
+	{
+		{
+			_fill
+		}
+	}
+	{
+		{
+			color?
+			{
+				c1ImgFill
+			}
+			{
+				bwFill
+			} ifelse
+		}
+	} ifelse
+	bd
+} if
+composite?
+{
+	/bCFun
+	{
+		color?
+		{
+			cyData dup type /stringtype eq
+			{
+				/ndx cvx /get cvx d255 /exch cvx /get cvx
+			} if
+			mgData dup type /stringtype eq
+			{
+				/ndx cvx /get cvx d255 /exch cvx /get cvx
+			} if
+			yeData dup type /stringtype eq
+			{
+				/ndx cvx /get cvx d255 /exch cvx /get cvx
+			} if
+			cData dup type /stringtype eq
+			{
+				/ndx cvx /get cvx d255 /exch cvx /get cvx
+			} if
+			spotColor?
+			{
+				spotDict begin
+					/spotDict cvx /begin cvx
+					spot1 begin
+						tintImage dup type /stringtype eq
+						{
+							/ndx cvx /get cvx d255- /exch cvx /get cvx
+						}
+						{
+							dup type /nulltype ne 
+							{
+								name type /nametype ne {1 exch sub} if
+							} if
+						} ifelse
+				 end
+					/spot1 cvx /tintValue 3 -1 /roll cvx /put cvx
+					spot2 begin
+						tintImage dup type /stringtype eq
+						{
+							/ndx cvx /get cvx d255- /exch cvx /get cvx
+						}
+						{
+							dup type /nulltype ne 
+							{
+								name type /nametype ne {1 exch sub} if
+							} if
+						} ifelse
+				 end
+					/spot2 cvx /tintValue 3 -1 /roll cvx /put cvx
+					/end cvx
+			 end
+				/spotDict cvx
+				/nsetcustomcolor cvx
+			}
+			{
+				/setcmykcolor cvx
+			} ifelse
+		}
+		{
+			cData /ndx cvx /get cvx
+			d255 /exch cvx /get cvx
+			/setgray cvx
+		} ifelse
+	} bd
+	/Bc
+	{
+		newpath
+		gsave
+		setBSpace
+		nColors 1 eq
+		{
+			pop pop
+			setCStop
+		} if
+		bFill
+		grestore
+	} bd
+	/linealBm
+	{
+		/nColors dup load 1 sub store
+		newpath
+		gsave
+		setBSpace
+		blend?
+		{
+			linImg
+		}
+		{
+			bFill
+		} ifelse
+		grestore
+		nColors 1 gt
+		{
+			getRData
+		} if
+	} bd
+	/rdBm
+	{
+		/nColors dup load 1 sub store
+		_fill
+		gsave
+		bUMatrix astore concat
+		bHi?
+		{
+			xHi yHi bUMatrix idtransform /yHi exch store /xHi exch store
+			rampPoint 1 lt
+			{
+				1 rampPoint sub dup xHi mul exch yHi mul translate
+			} if
+		} if
+		nColors
+		{
+			0 0 rampPoint 0 360 arc
+			_fill
+			blend? bHi? or
+			{
+				rdBlend
+			} if
+			nColors 1 gt
+			{
+				getRData
+			} if
+			/nColors dup load 1 sub store
+		} repeat
+		/nColors 1 store
+		grestore
+	} bd
+	/cGetRData
+	{
+		setCStop
+		/blend?
+		cData type /stringtype eq
+		dup not color? and
+		{
+			pop
+			cyData type /stringtype eq
+			mgData type /stringtype eq
+			yeData type /stringtype eq
+			or or
+		} if
+		store
+	} def
+	/cGetRData
+} if
+/eCStop
+{
+	mark
+	1 index 3 mul 3 add dup 8 gt
+	{
+		pop 8
+	} if
+	1 roll
+	cleartomark
+} bd
+composite? not
+{
+	/knockOut
+	level2?
+	{
+		{
+			0 0 0 0 setcmykcolor _fill
+		}
+	}
+	{
+		/bFill noImg
+		{
+			{
+				_fill
+			}
+		}
+		{
+			{
+				_of true eq
+				{
+					currentgray 1 ne
+					{
+						bwFill
+					} if
+				}
+				{
+					bwFill
+				} ifelse
+			}
+		} ifelse
+		def
+		/whiteByte 1 makeByte def
+		noImg
+		{
+			{
+				0 0 0 0 setcmykcolor _fill
+			}
+		}
+		{
+			{
+				cBType 0 eq
+				{
+					setSSave
+					/cData whiteByte store
+					/cDataLen 8 store
+					bwImage
+					sSave restore
+				}
+				{
+					_fill
+				} ifelse
+			}
+		} ifelse
+	} ifelse
+	bd
+	/bCFun
+	{
+		cData dup type /stringtype ne
+		{
+			color?
+			{
+				1 exch sub
+			} if
+		}
+		{
+			/ndx cvx /get cvx
+			color? customColor? not and
+			{
+				d255-
+			}
+			{
+				d255
+			} ifelse
+			/exch cvx /get cvx
+		} ifelse
+		/_setgray_ cvx
+	} bd
+	/eCCBlend
+	{
+		dup 3 eq
+		{
+			pop
+			mark 7 1 roll
+			6 copy ccThrough? dup /blend? xs
+			{
+				/startC? true store
+				setCustomColor
+				customColor?
+				{
+					/cData tint1Data store
+					setCDataLen
+				} if
+				/endC?
+				3 index 3 eq
+				{
+					4 index 1 ne
+				}
+				{
+					false
+				} ifelse
+				store
+			} if
+			cleartomark
+			stop
+		} if
+		1 eq
+		{
+			pop pop pop
+		} if
+		pop
+		/startC? false store
+		6
+		{
+			8 index
+		} repeat
+		ccThrough? dup /blend? xs
+		{
+			/endC? true store
+			blend? not
+			{
+				stop
+			} if
+			customColor?
+			{
+				/cData tint1Data store
+				setCDataLen
+			} if
+		} if
+	} bd
+	/handleOP
+	{
+		_of not
+		{
+			knockOut
+		} if
+	} bd
+	/handleROP
+	{
+		_of not
+		{
+			0 0 0 0 setcmykcolor _fill
+		}
+		{
+			newpath	
+		} ifelse
+	} bd
+	/rdBm
+	{
+		/nColors dup load 1 sub store
+		blend? 
+		{
+			_fill
+		}
+		{
+			handleROP
+		} ifelse
+		gsave
+		bUMatrix astore concat
+		bHi?
+		{
+			xHi yHi bUMatrix idtransform /yHi exch store /xHi exch store
+			rampPoint 1 lt
+			{
+				1 rampPoint sub dup xHi mul exch yHi mul translate
+			} if
+		} if
+		nColors
+		{
+			0 0 rampPoint 0 360 arc
+			blend?
+			{
+				cData type /stringtype ne bHi? not and
+				{
+					cData color?
+					{
+						1 exch sub
+					} if
+					_setgray_ 
+					_fill_ 
+				}
+				{
+					cData type /stringtype ne
+					{
+						/cDataLen 1 store
+						/bDataLen 1 store
+					} if
+					rdBlend
+				} ifelse
+			}
+			{
+				
+				handleROP
+				
+				pTState?
+				{
+					/bAxis rampPoint endPoint sub store
+					xHi bAxis mul yHi bAxis mul translate
+				} if
+			} ifelse
+				
+			nColors 1 gt
+			{
+				getRData
+			} if
+			/nColors dup load 1 sub store
+		} repeat
+		/nColors 1 store
+		grestore
+	} bd
+	/ccThrough?
+	{
+		gsave
+		pop 0 setCustomColor
+		currentcmykcolor
+		grestore
+		anyColor?
+	} bd
+	/forceCMYK
+	{
+		exch pop
+		1 exch sub 5 1 roll
+		4
+		{
+			4 index mul 4 1 roll
+		} repeat
+		0
+		cCMYKData dup /cData ne
+		{
+			dup /yeData eq
+			{
+				pop 1 add
+			}
+			{
+				/mgData eq
+				{
+					2
+				}
+				{
+					3
+				} ifelse
+				add
+			} ifelse
+			0
+		} if
+		pop
+		index
+		0 eq
+		{
+			pop pop pop pop 0 0 0 0
+		} if
+		setcmykcolor
+		pop
+		/fCMYK? true store
+	} bd
+	/endCapSepBc
+	{
+		pop pop
+		dup 0 eq
+		{
+			pop
+			setgray
+		}
+		{
+			1 eq
+			{
+				setcmykcolor
+			}
+			{
+				colorType 1 eq
+				{
+					forceCMYK
+				}
+				{
+					fCMYK?
+					{
+						forceCMYK
+					}
+					{
+						setCustomColor
+					} ifelse
+				} ifelse
+			} ifelse
+		} ifelse
+		currentcmykcolor anyColor? 
+		blend? and
+		{
+			bFill
+		}
+		{
+			handleOP
+		} ifelse
+		
+	} bd
+} if
+/cCMYKData 0 def
+composite? dup not
+{
+	pop customColor?
+} if
+not
+{
+	/cCMYKData
+	/cyData /mgData /yeData /cData
+	black? not
+	{
+		yellow?
+		{
+			exch
+		}
+		{
+			magenta?
+			{
+				3
+			}
+			{
+				4
+			} ifelse
+			-1 roll
+		} ifelse
+	} if
+	4 1 roll pop pop pop
+	store
+	/Bc
+	{
+		gsave
+		setBSpace
+		nColors 1 gt
+		{
+			
+			blend? currentcmykcolor anyColor? and
+			{
+				bFill
+			}
+			{
+				handleOP
+			} ifelse
+		}
+		{
+			endCapSepBc
+		} ifelse
+		grestore
+		newpath
+	} bd
+	/linealBm
+	{
+		/nColors dup load 1 sub store
+		newpath
+		gsave
+		setBSpace
+		blend?
+		{
+			cCMYKData load dup type /stringtype eq
+			{
+				dup length /cDataLen xs
+				/cData xs
+				gsave
+				colorType 0 ne noImg not and
+				{
+					invertXfer
+				} if
+				linImg
+				grestore
+			}
+			{
+				pop bFill
+			} ifelse
+		}
+		{
+			handleOP
+		} ifelse
+		grestore
+		nColors 1 gt
+		{
+			getRData
+		} if
+	} bd
+	/cmykGetRData
+	{
+		/fCMYK? false store
+		blend?
+		{
+			{
+				cmykDataProcs colorType get exec
+			} stopped
+			pop
+			blend?
+			{
+				/cData cCMYKData load store
+				setCDataLen
+			} if
+		} if
+	} def
+	/cmykDataProcs
+	[
+	{
+		pop
+		black? dup /blend? xs
+		{
+			setgray
+			0
+		} if
+		pop
+	}
+	{
+		cCMYKData load dup type /stringtype ne
+		{
+			0 0 0
+			cyan? not
+			{
+				4 magenta?
+				{
+					1
+				}
+				{
+					yellow?
+					{
+						2
+					}
+					{
+						3
+					} ifelse
+				} ifelse
+				roll
+			} if
+			4 copy add add add 0 eq
+			{
+				/blend? false store
+			} if
+			
+			setcmykcolor
+			/startC? true store
+			/endC? true store
+			eCStop
+			stop
+		} if
+		pop
+		dup 0 eq
+		{
+			pop
+			setgray
+		}
+		{
+			1 eq
+			{
+				setcmykcolor
+			}
+			{
+				forceCMYK
+			} ifelse
+		} ifelse
+	} bind
+	/eCCBlend load
+	{
+		cBType 1 eq
+		{
+			tint1Data tint2Data
+			/tint1Data xs
+			/tint2Data xs
+		} if
+		0 eq
+		{
+			black?
+			{
+				setgray
+			}
+			{
+				0 0 0 4 -1 roll 1 exch sub setcmykcolor
+			} ifelse
+			black?
+			{
+				/blend? true store
+			} if
+			6
+			{
+				8 index
+			} repeat
+			ccThrough?
+			{
+				/blend? true store
+			}
+			{
+				black?
+				{
+					/cData tint1Data store
+					setCDataLen
+				}
+				{
+					/blend? false store
+				} ifelse
+			} ifelse
+		}
+		{
+			mark 7 1 roll
+			6 copy ccThrough?
+			{
+				forceCMYK
+				pop
+				stop
+			} if
+			9 index 0 eq
+			{
+				black? dup /blend? xs
+				{
+					pop 1 setgray
+					/cData tint2Data store
+					setCDataLen
+					0
+				} if
+				pop
+			}
+			{
+				/blend?
+				6
+				{
+					16 index
+				} repeat
+				ccThrough?
+				store
+				blend?
+				{
+					forceCMYK
+				} if
+			} ifelse
+			cleartomark
+		} ifelse
+	} bind
+	] def
+	/cmykGetRData
+} if
+composite? dup not
+{
+	pop isCMYKSep?
+} if
+not
+{
+	/endCapSepBc
+	{
+		/white? false store
+		pop pop
+		dup 0 eq
+		{
+			pop
+			/white? 1 index 1 eq store
+			setgray
+		}
+		{
+			1 eq
+			{
+				setcmykcolor
+			}
+			{
+				setCustomColor
+			} ifelse
+		} ifelse
+%
+		currentcmykcolor anyColor?
+		endC? or
+		blend? and
+		{
+			bFill
+		}
+		{
+			handleOP
+		} ifelse
+	} bd
+	/Bc
+	{
+		gsave
+		setBSpace
+		nColors 1 gt
+		{
+			blend? startC? and
+			{
+				bFill
+			}
+			{
+				handleOP
+			} ifelse
+		}
+		{
+			endCapSepBc
+		} ifelse
+		grestore
+		newpath
+	} bd
+	/linealBm
+	{
+		/nColors dup load 1 sub store
+		newpath
+		gsave
+		setBSpace
+		blend?
+		{
+			cData type /stringtype eq
+			{
+				linImg
+			}
+			{
+				bFill
+			} ifelse
+		}
+		{
+			handleOP
+		} ifelse
+		grestore
+		nColors 1 gt
+		{
+			getRData
+		} if
+	} bd
+	/discardCMY
+	{
+		counttomark 4 add -3 roll pop pop pop
+	} bd
+	/testTopCC
+	{
+		6 copy ccThrough?
+	} bd
+	/getCRamp
+	{
+		{
+			ccDataProcs colorType 2 sub get exec
+		} stopped pop
+		blend? cDataLen 0 eq and
+		{
+			/cDataLen bDataLen store
+		} if
+	} bd
+	/ccGetRData
+	{
+		/fCMYK? false store
+		/startC? false store
+		/endC? false store
+		colorType 2 lt
+		{
+			/blend? false def
+		} if
+		blend?
+		{
+			getCRamp
+		}
+		{
+			setCStop
+		} ifelse
+		blend?
+		{
+			/blend? cData 1 ne store
+			blend?
+			{
+				cData dup type /stringtype ne
+				{
+					1 exch sub /cData xs 0
+				} if
+				pop
+			} if
+		} if
+	} def
+	/ccDataProcs
+	[
+	/eCCBlend load
+	{
+		cBType 1 eq
+		{
+			tint1Data tint2Data
+			/tint1Data xs
+			/tint2Data xs
+		} if
+		0 eq
+		{
+			/blend? false store
+			pop
+		}
+		{
+			mark 7 1 roll
+			testTopCC
+			{
+				/blend? 1 index 1 ne store
+				/startC? blend? store
+				/endC? false store
+				blend? not
+				{
+					cleartomark stop
+				} if
+				/cData tint1Data store
+				setCDataLen
+				setCustomColor
+				pop
+				stop
+			} if
+			cleartomark
+		} ifelse
+		2 index 0 eq
+		{
+			/blend? false store
+		}
+		{
+			mark 6
+			{
+				9 index
+			} repeat
+			testTopCC dup /blend? xs
+			{
+				/blend? 1 index 1 ne store
+				/endC? blend? store
+				/startC? false store
+				blend? not
+				{
+					cleartomark stop
+				} if
+				/cData tint2Data store
+				setCDataLen
+			} if
+			cleartomark
+		} ifelse
+	} bind
+	] def
+	/ccGetRData
+} if
+load Adobe_blend_AI5_vars /getData 3 -1 roll put
+/setCDataLen
+{
+	/cDataLen 0 cData dup type /stringtype eq
+	{
+		length exch
+	} if
+	pop store
+} bd
+/initSpotData
+{
+ begin
+		/name null def
+		/tintImage null def
+		/tintValue null def
+		/spot_C  null def
+		/spot_M  null def
+		/spot_Y  null def
+		/spot_K  null def
+ end
+} bd
+/getRData
+{
+	/colorType gMark store
+	_compositeSpotDevice 0 ne
+	{
+		spotDict begin
+			spot1 initSpotData
+			spot2 initSpotData
+	 end
+		/spotColor? colorType 2 eq colorType 3 eq or def
+	} 
+	{
+		/spotColor? false store
+	} ifelse
+	/blend? true store
+	0 0 0 0 setcmykcolor
+	100 div /rampPoint xs
+% (between 13 and 87%) 
+	100 div /midPoint xs
+	dup 0 eq
+	{
+		2
+	}
+	{
+		dup 1 eq
+		{
+			5
+		}
+		{
+			_compositeSpotDevice 0 ne
+			{
+				spotDict begin
+					spot1 begin
+						/name 3 index def
+						/spot_K 4 index def
+						/spot_Y 5 index def
+						/spot_M 6 index def
+						/spot_C 7 index def
+				 end
+			 end
+			} if
+			7
+		} ifelse
+	} ifelse
+	/tmp exch def
+	tmp index 100 div /endPoint xs
+	_compositeSpotDevice 0 ne
+	{
+		tmp 2 add index 3 eq
+		{
+			/tmp tmp 4 add def
+			tmp index dup 
+			spotDict begin
+				spot1/name get ne
+				{
+					spot2 begin
+						/name exch def
+						/spot_K tmp 2 add index def
+						/spot_Y tmp 3 add index def
+						/spot_M tmp 4 add index def
+						/spot_C tmp 5 add index def
+				 end
+				}
+				{
+					pop
+				} ifelse
+		 end
+		} if
+	} if
+	/color? colorType 0 gt store
+	
+	colorType 3 eq
+	{
+		/tint2Data gMark store
+	} if
+	
+	colorType 2 ge
+	{
+		/tint1Data gMark store
+	} if
+	_compositeSpotDevice 0 ne
+	{
+		spotDict begin
+		
+			colorType 2 ge
+			{
+				colorType 3 eq
+				{
+					spot2 begin
+						/tintImage cBType 0 eq {tint2Data} {tint1Data} ifelse def
+						name null eq {/name /Black def} if
+				 end
+				} if
+				spot1 begin
+					/tintImage cBType 0 eq colorType 2 eq or {tint1Data} {tint2Data} ifelse def
+					colorType 2 eq 
+					{
+						name null eq 
+						{
+							/name spot2/name get def
+							spot2/name null put
+						} if
+					}
+					{
+						name null eq {/name /Black def} if
+					} ifelse
+			 end
+			} if
+	 end
+	} if
+	
+	/cData gMark store
+	setCDataLen
+	colorType 0 gt
+	{
+		counttomark 4 add -3 roll
+		/yeData xs
+		/mgData xs
+		/cyData xs
+	} if
+	blend?
+	{
+		/bDataLen
+		cDataLen dup 0 eq color? and
+		{
+			[
+			cyData mgData yeData
+			]
+			{
+				dup type /stringtype eq
+				{
+					length exch pop exit
+				} if
+				pop
+			} forall
+		} if
+		store
+		bDataLen 0 eq
+		{
+			/bDataLen 1 store
+		} if
+		getData
+		blend?
+		{
+			composite? cDataLen 0 eq and
+			{
+				/cDataLen bDataLen store
+			} if
+		} if
+	}
+	{
+		setCStop
+	} ifelse
+} bd
+/Bg
+{
+	0 0 0 0 setcmykcolor
+	6
+	{
+		pop
+	} repeat
+	/blendLength xs
+	pop pop pop
+	/cBName xs
+	/bRender xs
+	bRender 2 ne
+	{
+		composite? not
+		{
+			_of setoverprint
+		} if
+		_eo {eoclip} {clip} ifelse
+		_bn cBName 2 copy known
+		{
+			get
+			mark exch aload pop
+			/cBType xs
+			/nColors xs
+			mark exch aload pop
+			0 0
+		} if
+		pop pop
+		getRData
+		cBType 0 eq
+		{
+			/linealBm
+		}
+		{
+			bHi?
+			{
+				/pTState? nColors 2 gt store
+			} if
+			/doBlend /rdBlend load store
+			/rdBm
+		} ifelse
+	}
+	{
+		inLine? not
+		{
+			mark mark
+		} if
+		/Bc dup
+		{
+			cleartomark mark
+		} bd
+		/nullProc
+	} ifelse
+	load /Bm xs
+} bd
+/linImg
+noImg
+{
+	{
+		newpath doRctBlend
+	}
+}
+{
+	{
+		/doBlend
+		color? composite? and
+		{
+			/bCImg
+		}
+		{
+			/bwImage
+		} ifelse
+		load
+		store
+	
+		0 0 moveto
+		tRectOK? composite? and
+		{
+			{
+				mark
+				0 1 dtransform atan cvi 90 mod 0 eq
+				1 0 dtransform atan cvi 90 mod 0 eq
+			} stopped
+			{
+				cleartomark
+			}
+			{
+				and exch pop
+				{
+					newpath
+					doRctBlend
+				}
+				{
+					doBlend
+				} ifelse
+			} ifelse
+		}
+		{
+			doBlend
+		} ifelse
+	} 
+} ifelse
+bd
+/doRctBlend
+{
+	gsave
+	/sInc 1 store
+	/nSamples bDataLen store
+	/bInc 1 bDataLen div store
+	/ubAxis 1 0 dtransform dUserSpace idtransform dup mul exch dup mul add sqrt store
+	/pChange ubAxis 0 eq
+	{
+		0
+	}
+	{
+		bDataLen ubAxis div
+	} ifelse
+	store
+	pChange .5 gt noImg not and dup /optimize? xs
+	{
+		/nSamples ubAxis 2 div round cvi dup 1 le
+		{
+			pop 2
+		} if
+		store
+		/bInc 1 nSamples div store
+		/sInc bDataLen 1 sub nSamples 1 sub div store
+	} if
+	0
+	nSamples
+	[
+	/dup cvx
+	optimize?
+	{
+		/round cvx /cvi cvx
+	} if
+	/ndx /exch cvx /store cvx
+	bCFun
+	/rectfill where dup
+	{
+		exch pop _compositeSpotDevice 1 ne and
+	} if
+	{
+		0 0 bInc 1 /rectfill cvx	
+	}
+	{
+		0 0 /moveto cvx
+		bInc 0 /lineto cvx
+		bInc 1 /lineto cvx
+		0 1 /lineto cvx
+		/closepath cvx
+		/_fill_ cvx
+	} ifelse
+	bInc 0 /translate cvx
+	sInc /add cvx
+	] cvx
+	bind
+	repeat
+	pop
+	spotColor? {nsetcustomcolorend} if
+	
+	grestore
+} bd
+/rdPrep
+{
+	/nSamples bDataLen dup 0 eq
+	{
+		pop 1
+	} if
+	store
+	/sInc -1 store
+	/bAxis rampPoint endPoint sub store
+	/bInc bAxis bDataLen div neg store
+	/optimize? false store
+	tRectOK?
+	{
+		/ubAxis
+		bAxis 0 dtransform dUserSpace idtransform dup mul exch dup mul add sqrt
+		0 bAxis dtransform dUserSpace idtransform dup mul exch dup mul add sqrt
+		2 copy lt
+		{
+			exch
+		} if
+		pop store
+		/pChange ubAxis 0 eq
+		{
+			0
+		}
+		{
+			bDataLen ubAxis div
+		} ifelse
+		store
+		pChange .5 gt noImg not and dup /optimize? xs
+		{
+			/nSamples ubAxis 2 div round cvi dup 1 le
+			{
+				pop 2
+			} if
+			store
+			/bInc bAxis nSamples div neg store
+			/sInc bDataLen 1 sub nSamples 1 sub div neg store
+		} if
+	} if
+	bHi?
+	{
+		/xBCInc xHi bAxis mul nSamples div store
+		/yBCInc yHi bAxis mul nSamples div store
+	} if
+} bd
+/rdBlend
+{
+	newpath
+	gsave
+	rdPrep
+	rampPoint
+	bDataLen 1 sub
+	nSamples
+	[
+	/dup cvx
+	optimize?
+	{
+		/round cvx /cvi cvx
+	} if
+	/ndx /exch cvx /store cvx
+	bCFun
+	0 0 3 /index cvx 0 360 /arc cvx /_fill_ cvx
+	/exch cvx bInc /add cvx /exch cvx
+	sInc /add cvx
+	bHi?
+	{
+		xBCInc yBCInc /translate cvx
+	} if
+	] cvx
+	bind
+	repeat
+	pop pop
+	spotColor? {nsetcustomcolorend} if
+	grestore
+	pTState?
+	{
+		xHi bAxis mul yHi bAxis mul translate
+	} if
+} bd
+/Bh
+{
+	pop pop
+	/pTState? false store
+	2 copy 0 ne exch 0 ne or dup /bHi? xs
+	{
+		/yHi xs
+		/xHi xs
+		0 0
+	} if
+	pop pop
+} bd
+/BD
+{
+	inLine? not
+	{
+		] nColors cBType
+		count 3 eq
+		{
+			pop pop pop
+			/nColors 2 def
+			/cBType 0 def
+			[
+			<
+			FFFEFDFCFBFAF9F8F7F6F5F4F3F2F1F0EFEEEDECEBEAE9E8E7E6E5E4E3E2E1E0DFDEDDDCDBDAD9D8
+			D7D6D5D4D3D2D1D0CFCECDCCCBCAC9C8C7C6C5C4C3C2C1C0BFBEBDBCBBBAB9B8B7B6B5B4B3B2B1B0
+			AFAEADACABAAA9A8A7A6A5A4A3A2A1A09F9E9D9C9B9A999897969594939291908F8E8D8C8B8A8988
+			87868584838281807F7E7D7C7B7A797877767574737271706F6E6D6C6B6A69686766656463626160
+			5F5E5D5C5B5A595857565554535251504F4E4D4C4B4A494847464544434241403F3E3D3C3B3A3938
+			37363534333231302F2E2D2C2B2A292827262524232221201F1E1D1C1B1A19181716151413121110
+			0F0E0D0C0B0A09080706050403020100
+			>
+			0 %_Br
+			[
+			0 0 50 100 %_Bs
+			1 0 50 0 %_Bs
+			] nColors cBType
+		} if
+		] _bn cBName 3 -1 roll put
+		end
+	} if
+} bd
+/Bn
+{
+1 add dict
+dup nullString null put
+/_bn xs
+} bd
+/Bd
+{
+Adobe_blend_AI5_vars begin
+	3 -1 roll dup nullString eq dup
+	{
+		setSSave
+	} if
+	/inLine? exch def
+	/cBName exch def
+	/nColors exch def
+	/cBType exch def
+} bd
+/Bb
+{
+	sSave null eq
+	{
+		Adobe_blend_AI5_vars begin
+		setSSave
+	} if
+	composite?
+	{
+		/_fill /fill load store
+	}
+	{
+		/__fill /fill load store
+			/_fill
+			{
+				_of true eq
+				{
+					currentgray 1 ne
+					{
+						__fill
+					} if
+				}
+				{
+					__fill
+				} ifelse
+			} def
+	} ifelse
+	/fill
+	{
+	} def
+	} bd
+	/BB
+	{
+	/cBType xs
+	cleartomark cleartomark
+	cBType dup
+	bRender
+	sSave dup type /savetype eq
+	{
+		restore 0
+	} if
+	pop
+	currentdict Adobe_blend_AI5_vars eq
+	{
+	 end
+	} if
+	2 ne exch 0 gt and
+	{
+		2 eq
+		{
+			s
+		}
+		{
+			S
+		} ifelse
+	}
+	{
+		pop newpath
+	} ifelse
+} bd
+currentdict readonly pop
+end
+end
+defaultpacking setpacking
+
+userdict /defaultpacking currentpacking put true setpacking
+systemdict begin
+userdict /Adobe_screens_AI5 15 dict dup begin
+put
+/initialize
+{
+} def
+/initialize2
+{
+	Adobe_screens_AI5 begin
+	/screenid
+		deviceDPI 600 gt composite? not or
+		{
+		-1
+		}
+		{
+			deviceDPI currentScreenFreq 
+			dup dup 60 ge exch 150 le and deviceDPI 300 le and
+		{
+			pop 60
+		} if
+		div 1.41421 div 0.5 add cvi
+		} ifelse
+	def
+	
+	2 screenid eq
+	{
+		/customsize 16 def
+		/customdata /customdata2 def
+		setcustomscreen
+	} if
+	
+	3 screenid eq
+	{
+		/customsize 24 def
+		/customdata /customdata3 def
+		setcustomscreen
+	} if
+	
+	4 screenid eq
+	{
+		/customsize 16 def
+		/customdata /customdata4 def
+		setcustomscreen
+	} if
+	
+	5 screenid eq
+	{
+		/customsize 20 def
+		/customdata /customdata5 def
+		setcustomscreen
+	} if
+	
+	6 screenid eq
+	{
+		/customsize 24 def
+		/customdata /customdata6 def
+		setcustomscreen
+	} if
+	
+	7 screenid eq
+	{
+		/customsize 28 def
+		/customdata /customdata7 def
+		setcustomscreen
+	} if
+	
+	8 screenid eq
+	{
+		/customsize 16 def
+		/customdata /customdata8 def
+		setcustomscreen
+	} if
+} def
+/terminate
+{
+} def
+/terminate2
+{
+	currentdict Adobe_screens_AI5 eq
+	{
+	 end
+	} if
+} def
+/setcustomscreen
+{
+	deviceDPI customsize div 0
+	{
+		1 add 2 div customsize mul cvi exch
+		1 add 2 div customsize mul cvi exch
+		customsize mul add
+		customdata load exch get 256 div
+	} setscreen
+} def
+/customdata2 28 28 mul string def
+currentfile customdata2 readhexstring
+4180E8694988E2634382EA6B4B8AE061A01939C8A81737C2A21B3BCAAA1636C0
+F8795998F6775796FA7B5B9AF57656952ED8B80727D6B60F2FDABA0626D5B50E
+4E8DE6674786EE6F4F8EE5664685ED6EAD1434C6A61F3FCEAE1232C5A51E3ECD
+F3745493FE7F5F9EF1725291FD7E5E9D24D3B30C2CDEBE0222D1B10A2ADDBD04
+4483EB6C4C8BE1624281E96A4A89E364A31C3CCBAB1535C1A11A3AC9A91838C3
+FB7C5C9BF4755594F97A5A99F778589730DBBB0525D4B40D2DD9B90828D7B710
+508FE4654584EC6D4D8CE7684887EF70AF1131C4A41D3DCCAC1333C7A72040CF
+F0715190FC7D5D9CF2735392FF80609F21D0B00929DCBC0323D2B20B2BDFBF01
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000
+pop pop
+/customdata3 28 28 mul string def
+currentfile customdata3 readhexstring
+011DC7F5E73D0421CBF3E43A021EC8F6E83E0522CCF2E43A2B648BC4A0762F68
+8AC39E732C658CC5A177306989C29D72D5B6521A6192D9B55219608FD6B6531B
+6193DAB451185F8FFCEE440C28D2FCED430B27D1FDEF450C29D3FBEC420A26D0
+BEA77D366F83BCA77C356E87BFA87E377082BBA67B346D86145B99E0AE4A1259
+98DFB14E155C9AE1AD4A115897DEB04D0623CDF4E63C0420CAF8EA400723CDF4
+E53B031FC9F7E93F316988C19F752E678EC6A378326A88C09F742D668DC6A278
+DBB350175E91D8B8551C6395DCB24F165D90D7B7541C6294FAEC420925CFFFF1
+470E2BD5F9EB410824CEFEF0460D2AD4BAA57A336C85BEAA80397180B9A47933
+6B84BDA97F387181105797DDAF4C145A9CE3AB480F5696DDAE4B13599BE2AC49
+021EC8F6E83E0522CCF2E43A011DC7F5E73D0421CBF3E43A2C658CC5A1773069
+89C29D722B648BC4A0762F688AC39E73D6B6531B6193DAB451185F8FD5B6521A
+6192D9B55219608FFDEF450C29D3FBEC420A26D0FCEE440C28D2FCED430B27D1
+BFA87E377082BBA67B346D86BEA77D366F83BCA77C356E87155C9AE1AD4A1158
+97DEB04D145B99E0AE4A125998DFB14E0723CDF4E53B031FC9F7E93F0623CDF4
+E63C0420CAF8EA40326A88C09F742D668DC6A278316988C19F752E678EC6A378
+DCB24F165D90D7B7541C6294DBB350175E91D8B8551C6395F9EB410824CEFEF0
+460D2AD4FAEC420925CFFFF1470E2BD5B9A479336B84BDA97F387181BAA57A33
+6C85BEAA803971800F5696DDAE4B13599BE2AC49105797DDAF4C145A9CE3AB48
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000
+pop pop
+/customdata4 28 28 mul string def
+currentfile customdata4 readhexstring
+1139B8E0FAD2531B133BBAE2F8D05119417180A6AE9A7B4B437382A5AD987949
+C08867272F6F92CAC28A66262E6E90C8E8DE5F070F37B6F2EADD5E060E36B5F0
+FED6571F173FBEE6FDD5561E163EBDE5AB9E7F4F477786A1A99D7E4E467685A3
+2C6C96CEC68E62222A6A95CDC58D64240C34B3F6EED95A020A32B1F5EDDB5C04
+143CBBE3F9D1521A123AB9E1FBD3541C447483A4AC997A4A427281A7AF9B7C4C
+C38B65252D6D91C9C1896828307093CBEBDC5D050D35B4F1E9DF60081038B7F3
+FCD4551D153DBCE4FFD758201840BFE7A89C7D4D457584A2AA9F8050487887A0
+296994CCC48C63232B6B97CFC78F61210931B0F4ECDA5B030B33B2F7EFD85901
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000
+pop pop
+/customdata5 28 28 mul string def
+currentfile customdata5 readhexstring
+010B34C3EBFCF7CE3F16020C35C4EDFBF6CD3E15102552A4D6EADDB5632B1126
+54A5D5EADCB3622A3958768499C19E8C7C5E3A59778498C19D8B7B5DC8A99370
+47334C7587AFC9AA936F46324B7485AEF1E5BC6B1E0A2351A3D8F2E4BC6A1E09
+2351A2D7FFF9D14219050F38C6EFFEF9D04118040E37C6EFE8E0B7662D142856
+A8D3E7DFB7652D132856A7D4BF9C8E7F603D5B7A8195BE9A8E7E603C5B798297
+314A7389B2CCAD906D442F497289B1CBAC926E4508214FA1DBF4E2B9671B0720
+4EA0DAF4E3BA691C030D36C5EDFBF6CD3F16010C34C3ECFDF8CF4017122654A6
+D4E9DDB4622A112553A5D6EBDEB5642C3B59788397C09C8B7C5D3A58778599C2
+9E8C7D5FCAAB926E46314B7486AFC8AA947048334D7587B0F2E4BB691D082250
+A1D8F1E6BD6B1F0A2452A3D9FDF8CF4118030E36C5EEFFFAD1421A050F38C7F0
+E6DFB6642C132755A7D3E8E1B8662E152957A8D2BE9A8D7E5F3B5A798296BF9B
+8F80613D5C7B80952F487188B1CAAC916D443049728AB3CCAE906C43061F4D9F
+DAF3E2BA681C07214FA0DBF5E1B8671A00000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000
+pop pop
+/customdata6 28 28 mul string def
+currentfile customdata6 readhexstring
+081A44B6E0F2FDECC150250C091B45B6E1F3FCEBC04F240C1D336199C7D8DCD3
+A56C37221E33619AC8D7DBD2A46B36214864798091AEB1958C7E694C49657A81
+90ADB0948B7D684BB99D8475593C405C7888A1BEBA9E8574583B3F5B7888A0BD
+E4CBAA712E1215326098CFE8E4CCA9712D1114315F97CEE7F5F1C6552B040719
+43B5DFFAF6F0C6542A03061842B4DEF9FFEDC352270E0B1C47B8E3F4FEECC251
+260D0A1C46B7E2F4DAD5A76E39232035639CCAD5D9D4A66D38231F34629BC9D6
+AF938E806A4E4A677C838FABAE928D7F694D4A667B828FAC3E5A778AA3BFBC9F
+8772563A3D597689A2BEBB9F8673573A14305E97D1EAE6CDA76F2B0F132F5D96
+D0E9E5CDA8702C10051742B3DDFCF8EEC4522801041641B2DDFBF7EFC5532902
+091B45B6E1F3FCEBC04F240C081A44B6E0F2FDECC150250C1E33619AC8D7DBD2
+A46B36211D336199C7D8DCD3A56C372249657A8190ADB0948B7D684B48647980
+91AEB1958C7E694CBA9E8574583B3F5B7888A0BDB99D8475593C405C7888A1BE
+E4CCA9712D1114315F97CEE7E4CBAA712E1215326098CFE8F6F0C6542A030618
+42B4DEF9F5F1C6552B04071943B5DFFAFEECC251260D0A1C46B7E2F4FFEDC352
+270E0B1C47B8E3F4D9D4A66D38231F34629BC9D6DAD5A76E39232035639CCAD5
+AE928D7F694D4A667B828FACAF938E806A4E4A677C838FAB3D597689A2BEBB9F
+8673573A3E5A778AA3BFBC9F8772563A132F5D96D0E9E5CDA8702C1014305E97
+D1EAE6CDA76F2B0F041641B2DDFBF7EFC5532902051742B3DDFCF8EEC4522801
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000
+pop pop
+/customdata7 28 28 mul string def
+currentfile customdata7 readhexstring
+01061B44B7E1F5FEFBE6BD4A210C01071B45B8E1F6FDFBE6BC4A200B09132A54
+A7D1EAF5EED9B05D331609142B55A8D2EAF4EED9AF5C32161D2D3D6993C1CBE0
+CEC59B7140301E2E3D6A93C0CADFCDC49A713F3047576C7B828DA2B6A48F867E
+6F5A48576C7C828CA1B6A38F867E6E59BAAA958A78634E4451667A8498ADBAAB
+968977624E4350657A8398ADE3D4C99F7539251A273C6892C2D7E4D4C89E7539
+241A273B6891C1D6F8F2DDB460371005122A53A7D0ECF9F2DDB360360F051229
+53A6D0EBFFFDE8BE4C220D03081D46B9E3F7FFFCE7BD4B210D02071C46B8E2F7
+F3F0DBB15E34180B152C56A9D3E8F3EFDAB05D34170A142C55A9D2E9DFCCC69C
+7341321F2F3F6B94BFC9DECCC59C7241311F2E3E6A94BFCAB5A38E8780705B49
+596D7D808BA0B4A28D877F6F5B48586D7C818BA043506479859AAFBCAC978876
+614C424F64798499AEBBAB968977624D19263B6791C3D8E5D6C79D7337231825
+3A6690C3D7E5D5C79E74382304112952A5CFEDFAF0DBB25E350E03102851A5CE
+ECF9F1DCB25F360E01071B45B8E1F6FDFBE6BC4A200B01061B44B7E1F5FEFBE6
+BD4A210C09142B55A8D2EAF4EED9AF5C321609132A54A7D1EAF5EED9B05D3316
+1E2E3D6A93C0CADFCDC49A713F301D2D3D6993C1CBE0CEC59B71403048576C7C
+828CA1B6A38F867E6E5947576C7B828DA2B6A48F867E6F5ABAAB968977624E43
+50657A8398ADBAAA958A78634E4451667A8498ADE4D4C89E7539241A273B6891
+C1D6E3D4C99F7539251A273C6892C2D7F9F2DDB360360F05122953A6D0EBF8F2
+DDB460371005122A53A7D0ECFFFCE7BD4B210D02071C46B8E2F7FFFDE8BE4C22
+0D03081D46B9E3F7F3EFDAB05D34170A142C55A9D2E9F3F0DBB15E34180B152C
+56A9D3E8DECCC59C7241311F2E3E6A94BFCADFCCC69C7341321F2F3F6B94BFC9
+B4A28D877F6F5B48586D7C818BA0B5A38E8780705B49596D7D808BA0424F6479
+8499AEBBAB968977624D43506479859AAFBCAC978876614C18253A6690C3D7E5
+D5C79E74382319263B6791C3D8E5D6C79D73372303102851A5CEECF9F1DCB25F
+360E04112952A5CFEDFAF0DBB25E350E
+pop pop
+/customdata8 28 28 mul string def
+currentfile customdata8 readhexstring
+050F2747B6D6EEF8FEF4DCBC4D2D1507111D375F9EC6E0E9EBE6CCA4653D1F13
+2939556F8EA8C1D1D3C3AE9475573B2B4961717D808999B1B39B8B867F73634B
+B8A090827A6A5A42445C6C7C8492A2BAD8C8AA97785232222434546E8DACCADA
+F0E2CFA768401A0A0C1C365E9DC5E4F2FAF7DFBF50301802040E2646B5D5EDFC
+FFF5DDBD4E2E160806102848B7D7EFF9EAE7CDA5663E2014121E38609FC7E1E8
+D2C2AF9576583C2C2A3A56708FA9C0D0B29A8A878074644C4A62727E818898B0
+435B6B7B8593A3BBB9A19183796959412333536D8CADCBDBD9C9AB9677513121
+0B1B355D9CC4E5F3F1E3CEA6673F1909030D2545B4D4ECFDFBF6DEBE4F2F1701
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000
+pop pop
+end
+end
+defaultpacking setpacking
+
+userdict /Adobe_customcolor known not
+{
+	userdict /Adobe_customcolor 2 dict put 
+} if
+userdict /Adobe_customcolor get begin
+/initialize { } def
+/terminate { } def
+end
+currentpacking true setpacking
+userdict /Adobe_cshow 14 dict dup begin put
+/initialize
+{
+} def
+/initialize2
+{
+	Adobe_cshow begin
+	Adobe_cshow
+	{
+		dup xcheck
+		{
+			bind
+		} if
+		pop pop
+	} forall
+ end
+	Adobe_cshow begin
+} def
+/terminate
+{
+} def
+/terminate2
+{
+currentdict Adobe_cshow eq
+	{
+ end
+	} if
+} def
+/cforall
+{
+	/_lobyte 0 ddef
+	/_hibyte 0 ddef
+	/_cproc exch ddef
+	/_cscript currentfont /FontScript known { currentfont /FontScript get } { -1 } ifelse ddef
+	{
+		/_lobyte exch ddef
+		_hibyte 0 eq
+		_cscript 1 eq
+		_lobyte 129 ge _lobyte 159 le and
+		_lobyte 224 ge _lobyte 252 le and or and
+		_cscript 2 eq
+		_lobyte 161 ge _lobyte 254 le and and
+		_cscript 3 eq
+		_lobyte 161 ge _lobyte 254 le and and
+    	_cscript 25 eq
+		_lobyte 161 ge _lobyte 254 le and and
+    	_cscript -1 eq
+		or or or or and
+		{
+			/_hibyte _lobyte ddef
+		}
+		{
+			_hibyte 256 mul _lobyte add
+			_cproc
+			/_hibyte 0 ddef
+		} ifelse
+	} forall
+} def
+/cstring
+{
+	dup 256 lt
+	{
+		(s) dup 0 4 3 roll put
+	}
+	{
+		dup 256 idiv exch 256 mod
+		(hl) dup dup 0 6 5 roll put 1 4 3 roll put
+	} ifelse
+} def
+/clength
+{
+	0 exch
+	{ 256 lt { 1 } { 2 } ifelse add } cforall
+} def
+/hawidthshow
+{
+	{
+		dup cstring
+		show
+		_hvax _hvay rmoveto
+		_hvwb eq { _hvcx _hvcy rmoveto } if
+	} cforall
+} def
+/vawidthshow
+{
+	{
+		dup 255 le
+		_charorientation 1 eq
+		and
+		{
+			-90 rotate
+			0 _fontRotateAdjust rmoveto
+			cstring
+			_hvcx _hvcy _hvwb _hvax _hvay 6 -1 roll awidthshow
+			0 _fontRotateAdjust neg rmoveto
+			90 rotate
+		}
+		{
+			currentpoint
+			_fontHeight sub
+			exch _hvay sub exch _hvax sub
+			2 index _hvwb eq { exch _hvcy sub exch _hvcx sub } if
+			3 2 roll
+			cstring
+			dup stringwidth pop 2 div neg _fontAscent neg rmoveto
+			show
+			moveto
+		} ifelse
+	} cforall
+} def
+/hvawidthshow
+{
+	6 1 roll
+	/_hvay exch ddef
+	/_hvax exch ddef
+	/_hvwb exch ddef
+	/_hvcy exch ddef
+	/_hvcx exch ddef
+	_lineorientation 0 eq { hawidthshow } { vawidthshow } ifelse
+} def
+/hvwidthshow
+{
+	0 0 3 -1 roll hvawidthshow
+} def
+/hvashow
+{
+	0 0 0 6 -3 roll hvawidthshow
+} def
+/hvshow
+{
+	0 0 0 0 0 6 -1 roll hvawidthshow
+} def
+currentdict readonly pop end
+setpacking
+
+currentpacking true setpacking
+userdict /Adobe_Illustrator_AI5_vars 107 dict dup begin
+put
+/_eo false def
+/_lp /none def
+/_pf
+{
+} def
+/_ps
+{
+} def
+/_psf
+{
+} def
+/_pss
+{
+} def
+/_pjsf
+{
+} def
+/_pjss
+{
+} def
+/_pola 0 def
+/_doClip 0 def
+/cf currentflat def
+/_lineorientation 0 def
+/_charorientation 0 def
+/_yokoorientation 0 def
+/_tm matrix def
+/_renderStart
+[
+/e0 /r0 /a0 /o0 /e1 /r1 /a1 /i0
+] def
+/_renderEnd
+[
+null null null null /i1 /i1 /i1 /i1
+] def
+/_render -1 def
+/_shift [0 0] def
+/_ax 0 def
+/_ay 0 def
+/_cx 0 def
+/_cy 0 def
+/_leading
+[
+0 0
+] def
+/_ctm matrix def
+/_mtx matrix def
+/_sp 16#020 def
+/_hyphen (-) def
+/_fontSize 0 def
+/_fontAscent 0 def
+/_fontDescent 0 def
+/_fontHeight 0 def
+/_fontRotateAdjust 0 def
+/Ss 256 string def
+Ss 0 (fonts/) putinterval
+/_cnt 0 def
+/_scale [1 1] def
+/_nativeEncoding 0 def
+/_useNativeEncoding 0 def
+/_tempEncode 0 def
+/_pntr 0 def
+/_tDict 2 dict def
+/_hfname 100 string def
+/_hffound false def
+/Tx
+{
+} def
+/Tj
+{
+} def
+/CRender
+{
+} def
+/_AI3_savepage
+{
+} def
+/_gf null def
+/_cf 4 array def
+/_rgbf 3 array def
+/_if null def
+/_of false def
+/_fc
+{
+} def
+/_gs null def
+/_cs 4 array def
+/_rgbs 3 array def
+/_is null def
+/_os false def
+/_sc
+{
+} def
+/_pd 1 dict def
+/_ed 15 dict def
+/_pm matrix def
+/_fm null def
+/_fd null def
+/_fdd null def
+/_sm null def
+/_sd null def
+/_sdd null def
+/_i null def
+/_lobyte 0 def
+/_hibyte 0 def
+/_cproc null def
+/_cscript 0 def
+/_hvax 0 def
+/_hvay 0 def
+/_hvwb 0 def
+/_hvcx 0 def
+/_hvcy 0 def
+/_bitfont null def
+/_bitlobyte 0 def
+/_bithibyte 0 def
+/_bitkey null def
+/_bitdata null def
+/_bitindex 0 def
+/discardSave null def
+/buffer 256 string def
+/beginString null def
+/endString null def
+/endStringLength null def
+/layerCnt 1 def
+/layerCount 1 def
+/perCent (%) 0 get def
+/perCentSeen? false def
+/newBuff null def
+/newBuffButFirst null def
+/newBuffLast null def
+/clipForward? false def
+end
+userdict /Adobe_Illustrator_AI5 known not {
+	userdict /Adobe_Illustrator_AI5 94 dict put
+} if
+userdict /Adobe_Illustrator_AI5 get begin
+/initialize
+{
+	userdict /Adobe_cshow known {
+		Adobe_cshow /initialize2 get exec
+	} if
+	userdict /Adobe_level2_AI5 known {
+		Adobe_level2_AI5 /initialize2 get exec
+	} if
+	userdict /Adobe_screens_AI5 known {
+		Adobe_screens_AI5 /initialize2 get exec
+	} if
+	userdict /Adobe_typography_AI5 known {
+		Adobe_Illustrator_AI5_vars Adobe_Illustrator_AI5 Adobe_typography_AI5 /initialize2 get exec
+	} if
+	userdict /Adobe_blend_AI5 known {
+		Adobe_Illustrator_AI5_vars Adobe_Illustrator_AI5 Adobe_blend_AI5 /initialize2 get exec
+	} if
+	userdict /Adobe_pattern_AI5 known {
+		Adobe_Illustrator_AI5_vars Adobe_Illustrator_AI5 Adobe_pattern_AI5 /initialize2 get exec
+	} if
+	userdict /Adobe_ColorImage_AI6 known {
+		Adobe_ColorImage_AI6 /initialize2 get exec
+	} if
+
+	Adobe_Illustrator_AI5 dup begin
+	Adobe_Illustrator_AI5_vars begin
+	discardDict
+	{
+		bind pop pop
+	} forall
+	dup /nc get begin
+	{
+		dup xcheck 1 index type /operatortype ne and
+		{
+			bind
+		} if
+		pop pop
+	} forall
+ end
+	newpath
+} def
+/terminate
+{
+	end
+	end
+	userdict /Adobe_ColorImage_AI6 known {
+		Adobe_ColorImage_AI6 /terminate2 get exec
+	} if
+	userdict /Adobe_pattern_AI5 known {
+		Adobe_pattern_AI5 /terminate2 get exec
+	} if
+	userdict /Adobe_blend_AI5 known {
+		Adobe_blend_AI5 /terminate2 get exec
+	} if
+	userdict /Adobe_cshow known {
+		Adobe_cshow /terminate2 get exec
+	} if
+	userdict /Adobe_typography_AI5 known {
+		Adobe_typography_AI5 /terminate2 get exec
+	} if
+	userdict /Adobe_screens_AI5 known {
+		Adobe_screens_AI5 /terminate2 get exec
+	} if
+	userdict /Adobe_level2_AI5 known {
+		Adobe_level2_AI5 /terminate2 get exec
+	} if
+} def
+/_
+null def
+/ddef
+{
+	Adobe_Illustrator_AI5_vars 3 1 roll put
+} def
+/xput
+{
+	dup load dup length exch maxlength eq
+	{
+		dup dup load dup
+		length 2 mul dict copy def
+	} if
+	load begin
+	def
+ end
+} def
+/npop
+{
+	{
+		pop
+	} repeat
+} def
+/hswj
+{
+	dup stringwidth 3 2 roll
+	{
+		_hvwb eq { exch _hvcx add exch _hvcy add } if
+		exch _hvax add exch _hvay add
+	} cforall
+} def
+/vswj
+{
+	0 0 3 -1 roll
+	{
+		dup 255 le
+		_charorientation 1 eq
+		and
+		{
+			dup cstring stringwidth 5 2 roll
+			_hvwb eq { exch _hvcy sub exch _hvcx sub } if
+			exch _hvay sub exch _hvax sub
+			4 -1 roll sub exch
+			3 -1 roll sub exch
+		}
+		{
+			_hvwb eq { exch _hvcy sub exch _hvcx sub } if
+			exch _hvay sub exch _hvax sub
+			_fontHeight sub
+		} ifelse
+	} cforall
+} def
+/swj
+{
+	6 1 roll
+	/_hvay exch ddef
+	/_hvax exch ddef
+	/_hvwb exch ddef
+	/_hvcy exch ddef
+	/_hvcx exch ddef
+	_lineorientation 0 eq { hswj } { vswj } ifelse
+} def
+/sw
+{
+	0 0 0 6 3 roll swj
+} def
+/vjss
+{
+	4 1 roll
+	{
+		dup cstring
+		dup length 1 eq
+		_charorientation 1 eq
+		and
+		{
+			-90 rotate
+			currentpoint
+			_fontRotateAdjust add
+			moveto
+			gsave
+			false charpath currentpoint
+			5 index setmatrix stroke
+			grestore
+			_fontRotateAdjust sub
+			moveto
+			_sp eq
+			{
+				5 index 5 index rmoveto
+			} if
+			2 copy rmoveto
+			90 rotate
+		}
+		{
+			currentpoint
+			_fontHeight sub
+			5 index sub
+			3 index _sp eq
+			{
+				9 index sub
+			} if
+	
+			currentpoint
+			exch 4 index stringwidth pop 2 div sub
+			exch _fontAscent sub
+			moveto
+	
+			gsave
+			2 index false charpath
+			6 index setmatrix stroke
+			grestore
+	
+			moveto pop pop
+		} ifelse
+	} cforall
+	6 npop
+} def
+/hjss
+{
+	4 1 roll
+	{
+		dup cstring
+		gsave
+		false charpath currentpoint
+		5 index setmatrix stroke
+		grestore
+		moveto
+		_sp eq
+		{
+			5 index 5 index rmoveto
+		} if
+		2 copy rmoveto
+	} cforall
+	6 npop
+} def
+/jss
+{
+	_lineorientation 0 eq { hjss } { vjss } ifelse
+} def
+/ss
+{
+	0 0 0 7 3 roll jss
+} def
+/vjsp
+{
+	4 1 roll
+	{
+		dup cstring
+		dup length 1 eq
+		_charorientation 1 eq
+		and
+		{
+			-90 rotate
+			currentpoint
+			_fontRotateAdjust add
+			moveto
+			false charpath
+            currentpoint
+			_fontRotateAdjust sub
+			moveto
+			_sp eq
+			{
+				5 index 5 index rmoveto
+			} if
+			2 copy rmoveto
+			90 rotate
+		}
+		{
+			currentpoint
+			_fontHeight sub
+			5 index sub
+			3 index _sp eq
+			{
+				9 index sub
+			} if
+	
+			currentpoint
+			exch 4 index stringwidth pop 2 div sub
+			exch _fontAscent sub
+			moveto
+	
+			2 index false charpath
+	
+			moveto pop pop
+		} ifelse
+	} cforall
+	6 npop
+} def
+/hjsp
+{
+    4 1 roll
+    {
+        dup cstring
+        false charpath
+        _sp eq
+        {
+            5 index 5 index rmoveto
+        } if
+        2 copy rmoveto
+    } cforall
+    6 npop
+} def
+/jsp
+{
+	matrix currentmatrix
+    _lineorientation 0 eq {hjsp} {vjsp} ifelse
+} def
+/sp
+{
+    matrix currentmatrix
+    0 0 0 7 3 roll
+    _lineorientation 0 eq {hjsp} {vjsp} ifelse
+} def
+/pl
+{
+	transform
+	0.25 sub round 0.25 add exch
+	0.25 sub round 0.25 add exch
+	itransform
+} def
+/setstrokeadjust where
+{
+	pop true setstrokeadjust
+	/c
+	{
+		curveto
+	} def
+	/C
+	/c load def
+	/v
+	{
+		currentpoint 6 2 roll curveto
+	} def
+	/V
+	/v load def
+	/y
+	{
+		2 copy curveto
+	} def
+	/Y
+	/y load def
+	/l
+	{
+		lineto
+	} def
+	/L
+	/l load def
+	/m
+	{
+		moveto
+	} def
+}
+{
+	/c
+	{
+		pl curveto
+	} def
+	/C
+	/c load def
+	/v
+	{
+		currentpoint 6 2 roll pl curveto
+	} def
+	/V
+	/v load def
+	/y
+	{
+		pl 2 copy curveto
+	} def
+	/Y
+	/y load def
+	/l
+	{
+		pl lineto
+	} def
+	/L
+	/l load def
+	/m
+	{
+		pl moveto
+	} def
+} ifelse
+/d
+{
+	setdash
+} def
+/cf
+{
+} def
+/i
+{
+	dup 0 eq
+	{
+		pop cf
+	} if
+	setflat
+} def
+/j
+{
+	setlinejoin
+} def
+/J
+{
+	setlinecap
+} def
+/M
+{
+	setmiterlimit
+} def
+/w
+{
+	setlinewidth
+} def
+/XR
+{
+	0 ne
+	/_eo exch ddef
+} def
+/H
+{
+} def
+/h
+{
+	closepath
+} def
+/N
+{
+	_pola 0 eq
+	{
+		_doClip 1 eq
+		{
+			_eo {eoclip} {clip} ifelse /_doClip 0 ddef
+		} if
+		newpath
+	}
+	{
+		/CRender
+		{
+			N
+		} ddef
+	} ifelse
+} def
+/n
+{
+	N
+} def
+/F
+{
+	_pola 0 eq
+	{
+		_doClip 1 eq
+		{
+			gsave _pf grestore _eo {eoclip} {clip} ifelse newpath /_lp /none ddef _fc
+			/_doClip 0 ddef
+		}
+		{
+			_pf
+		} ifelse
+	}
+	{
+		/CRender
+		{
+			F
+		} ddef
+	} ifelse
+} def
+/f
+{
+	closepath
+	F
+} def
+/S
+{
+	_pola 0 eq
+	{
+		_doClip 1 eq
+		{
+			gsave _ps grestore _eo {eoclip} {clip} ifelse newpath /_lp /none ddef _sc
+			/_doClip 0 ddef
+		}
+		{
+			_ps
+		} ifelse
+	}
+	{
+		/CRender
+		{
+			S
+		} ddef
+	} ifelse
+} def
+/s
+{
+	closepath
+	S
+} def
+/B
+{
+	_pola 0 eq
+	{
+		_doClip 1 eq
+		gsave F grestore
+		{
+			gsave S grestore _eo {eoclip} {clip} ifelse newpath /_lp /none ddef _sc
+			/_doClip 0 ddef
+		}
+		{
+			S
+		} ifelse
+	}
+	{
+		/CRender
+		{
+			B
+		} ddef
+	} ifelse
+} def
+/b
+{
+	closepath
+	B
+} def
+/W
+{
+	/_doClip 1 ddef
+} def
+/*
+{
+	count 0 ne
+	{
+		dup type /stringtype eq
+		{
+			pop
+		} if
+	} if
+	newpath
+} def
+/u
+{
+} def
+/U
+{
+} def
+/q
+{
+	_pola 0 eq
+	{
+		gsave
+	} if
+} def
+/Q
+{
+	_pola 0 eq
+	{
+		grestore
+	} if
+} def
+/*u
+{
+	_pola 1 add /_pola exch ddef
+} def
+/*U
+{
+	_pola 1 sub /_pola exch ddef
+	_pola 0 eq
+	{
+		CRender
+	} if
+} def
+/D
+{
+	pop
+} def
+/*w
+{
+} def
+/*W
+{
+} def
+/`
+{
+	/_i save ddef
+	clipForward?
+	{
+		nulldevice
+	} if
+	6 1 roll 4 npop
+	concat pop
+	userdict begin
+	/showpage
+	{
+	} def
+	0 setgray
+	0 setlinecap
+	1 setlinewidth
+	0 setlinejoin
+	10 setmiterlimit
+	[] 0 setdash
+	/setstrokeadjust where {pop false setstrokeadjust} if
+	newpath
+	0 setgray
+	false setoverprint
+} def
+/~
+{
+ end
+	_i restore
+} def
+/O
+{
+	0 ne
+	/_of exch ddef
+	/_lp /none ddef
+} def
+/R
+{
+	0 ne
+	/_os exch ddef
+	/_lp /none ddef
+} def
+/g
+{
+	/_gf exch ddef
+	/_fc
+	{
+		_lp /fill ne
+		{
+			_of setoverprint
+			_gf setgray
+			/_lp /fill ddef
+		} if
+	} ddef
+	/_pf
+	{
+		_fc
+		_eo {eofill} {fill} ifelse
+	} ddef
+	/_psf
+	{
+		_fc
+		hvashow
+	} ddef
+	/_pjsf
+	{
+		_fc
+		hvawidthshow
+	} ddef
+	/_lp /none ddef
+} def
+/G
+{
+	/_gs exch ddef
+	/_sc
+	{
+		_lp /stroke ne
+		{
+			_os setoverprint
+			_gs setgray
+			/_lp /stroke ddef
+		} if
+	} ddef
+	/_ps
+	{
+		_sc
+		stroke
+	} ddef
+	/_pss
+	{
+		_sc
+		ss
+	} ddef
+	/_pjss
+	{
+		_sc
+		jss
+	} ddef
+	/_lp /none ddef
+} def
+/k
+{
+	_cf astore pop
+	/_fc
+	{
+		_lp /fill ne
+		{
+			_of setoverprint
+			_cf aload pop setcmykcolor
+			/_lp /fill ddef
+		} if
+	} ddef
+	/_pf
+	{
+		_fc
+		_eo {eofill} {fill} ifelse
+	} ddef
+	/_psf
+	{
+		_fc
+		hvashow
+	} ddef
+	/_pjsf
+	{
+		_fc
+		hvawidthshow
+	} ddef
+	/_lp /none ddef
+} def
+/K
+{
+	_cs astore pop
+	/_sc
+	{
+		_lp /stroke ne
+		{
+			_os setoverprint
+			_cs aload pop setcmykcolor
+			/_lp /stroke ddef
+		} if
+	} ddef
+	/_ps
+	{
+		_sc
+		stroke
+	} ddef
+	/_pss
+	{
+		_sc
+		ss
+	} ddef
+	/_pjss
+	{
+		_sc
+		jss
+	} ddef
+	/_lp /none ddef
+} def
+/Cr
+{
+	_rgbf astore pop
+	/_fc
+	{
+		_lp /fill ne
+		{
+			_of setoverprint
+			_rgbf aload pop setrgbcolor
+			/_lp /fill ddef
+		} if
+	} ddef
+	/_pf
+	{
+		_fc
+		_eo {eofill} {fill} ifelse
+	} ddef
+	/_psf
+	{
+		_fc
+		hvashow
+	} ddef
+	/_pjsf
+	{
+		_fc
+		hvawidthshow
+	} ddef
+	/_lp /none ddef
+} def
+/CR
+{
+	_rgbs astore pop
+	/_sc
+	{
+		_lp /stroke ne
+		{
+			_os setoverprint
+			_rgbs aload pop setrgbcolor
+			/_lp /stroke ddef
+		} if
+	} ddef
+	/_ps
+	{
+		_sc
+		stroke
+	} ddef
+	/_pss
+	{
+		_sc
+		ss
+	} ddef
+	/_pjss
+	{
+		_sc
+		jss
+	} ddef
+	/_lp /none ddef
+} def
+/Cx
+{
+	exch
+	/_gf exch ddef
+	0 eq
+	{
+		findcmykcustomcolor
+	}
+	{
+		findrgbcustomcolor
+	} ifelse
+	/_if exch ddef
+	/_fc
+	{
+		_lp /fill ne
+		{
+			_of setoverprint
+			_if _gf 1 exch sub setcustomcolor
+			/_lp /fill ddef
+		} if
+	} ddef
+	/_pf
+	{
+		_fc
+		_eo {eofill} {fill} ifelse
+	} ddef
+	/_psf
+	{
+		_fc
+		ashow
+	} ddef
+	/_pjsf
+	{
+		_fc
+		awidthshow
+	} ddef
+	/_lp /none ddef
+} def
+/CX
+{
+	exch
+	/_gs exch ddef
+	0 eq
+	{
+		findcmykcustomcolor
+	}
+	{
+		findrgbcustomcolor
+	} ifelse
+	/_is exch ddef
+	/_sc
+	{
+		_lp /stroke ne
+		{
+			_os setoverprint
+			_is _gs 1 exch sub setcustomcolor
+			/_lp /stroke ddef
+		} if
+	} ddef
+	/_ps
+	{
+		_sc
+		stroke
+	} ddef
+	/_pss
+	{
+		_sc
+		ss
+	} ddef
+	/_pjss
+	{
+		_sc
+		jss
+	} ddef
+	/_lp /none ddef
+} def
+
+/x
+{
+	/_gf exch ddef
+	findcmykcustomcolor
+	/_if exch ddef
+	/_fc
+	{
+		_lp /fill ne
+		{
+			_of setoverprint
+			_if _gf 1 exch sub setcustomcolor
+			/_lp /fill ddef
+		} if
+	} ddef
+	/_pf
+	{
+		_fc
+		_eo {eofill} {fill} ifelse
+	} ddef
+	/_psf
+	{
+		_fc
+		ashow
+	} ddef
+	/_pjsf
+	{
+		_fc
+		awidthshow
+	} ddef
+	/_lp /none ddef
+} def
+/X
+{
+	/_gs exch ddef
+	findcmykcustomcolor
+	/_is exch ddef
+	/_sc
+	{
+		_lp /stroke ne
+		{
+			_os setoverprint
+			_is _gs 1 exch sub setcustomcolor
+			/_lp /stroke ddef
+		} if
+	} ddef
+	/_ps
+	{
+		_sc
+		stroke
+	} ddef
+	/_pss
+	{
+		_sc
+		ss
+	} ddef
+	/_pjss
+	{
+		_sc
+		jss
+	} ddef
+	/_lp /none ddef
+} def
+/A
+{
+	pop
+} def
+/annotatepage
+{
+userdict /annotatepage 2 copy known {get exec} {pop pop} ifelse
+} def
+/XT {
+	pop pop
+} def
+/discard
+{
+	save /discardSave exch store
+	discardDict begin
+	/endString exch store
+	gt38?
+	{
+		2 add
+	} if
+	load
+	stopped
+	pop
+ end
+	discardSave restore
+} bind def
+userdict /discardDict 7 dict dup begin
+put
+/pre38Initialize
+{
+	/endStringLength endString length store
+	/newBuff buffer 0 endStringLength getinterval store
+	/newBuffButFirst newBuff 1 endStringLength 1 sub getinterval store
+	/newBuffLast newBuff endStringLength 1 sub 1 getinterval store
+} def
+/shiftBuffer
+{
+	newBuff 0 newBuffButFirst putinterval
+	newBuffLast 0
+	currentfile read not
+	{
+	stop
+	} if
+	put
+} def
+0
+{
+	pre38Initialize
+	mark
+	currentfile newBuff readstring exch pop
+	{
+		{
+			newBuff endString eq
+			{
+				cleartomark stop
+			} if
+			shiftBuffer
+		} loop
+	}
+	{
+	stop
+	} ifelse
+} def
+1
+{
+	pre38Initialize
+	/beginString exch store
+	mark
+	currentfile newBuff readstring exch pop
+	{
+		{
+			newBuff beginString eq
+			{
+				/layerCount dup load 1 add store
+			}
+			{
+				newBuff endString eq
+				{
+					/layerCount dup load 1 sub store
+					layerCount 0 eq
+					{
+						cleartomark stop
+					} if
+				} if
+			} ifelse
+			shiftBuffer
+		} loop
+	} if
+} def
+2
+{
+	mark
+	{
+		currentfile buffer readline not
+		{
+		stop
+		} if
+		endString eq
+		{
+			cleartomark stop
+		} if
+	} loop
+} def
+3
+{
+	/beginString exch store
+	/layerCnt 1 store
+	mark
+	{
+		currentfile buffer readline not
+		{
+		stop
+		} if
+		dup beginString eq
+		{
+			pop /layerCnt dup load 1 add store
+		}
+		{
+			endString eq
+			{
+				layerCnt 1 eq
+				{
+					cleartomark stop
+				}
+				{
+					/layerCnt dup load 1 sub store
+				} ifelse
+			} if
+		} ifelse
+	} loop
+} def
+end
+userdict /clipRenderOff 15 dict dup begin
+put
+{
+	/n /N /s /S /f /F /b /B
+}
+{
+	{
+		_doClip 1 eq
+		{
+			/_doClip 0 ddef _eo {eoclip} {clip} ifelse
+		} if
+		newpath
+	} def
+} forall
+/Tr /pop load def
+/Bb {} def
+/BB /pop load def
+/Bg {12 npop} def
+/Bm {6 npop} def
+/Bc /Bm load def
+/Bh {4 npop} def
+end
+/Lb
+{
+	4 npop
+	6 1 roll
+	pop
+	4 1 roll
+	pop pop pop
+	0 eq
+	{
+		0 eq
+		{
+			(%AI5_BeginLayer) 1 (%AI5_EndLayer--) discard
+		}
+		{
+			
+			/clipForward? true def
+			
+			/Tx /pop load def
+			/Tj /pop load def
+			
+			currentdict end clipRenderOff begin begin
+		} ifelse
+	}
+	{
+		0 eq
+		{
+			save /discardSave exch store
+		} if
+	} ifelse
+} bind def
+/LB
+{
+	discardSave dup null ne
+	{
+		restore
+	}
+	{
+		pop
+		clipForward?
+		{
+			currentdict
+		 end
+		 end
+		 begin
+					
+			/clipForward? false ddef
+		} if
+	} ifelse
+} bind def
+/Pb
+{
+	pop pop
+	0 (%AI5_EndPalette) discard
+} bind def
+/Np
+{
+	0 (%AI5_End_NonPrinting--) discard
+} bind def
+/Ln /pop load def
+/Ap
+/pop load def
+/Ar
+{
+	72 exch div
+	0 dtransform dup mul exch dup mul add sqrt
+	dup 1 lt
+	{
+		pop 1
+	} if
+	setflat
+} def
+/Mb
+{
+	q
+} def
+/Md
+{
+} def
+/MB
+{
+	Q
+} def
+/nc 4 dict def
+nc begin
+/setgray
+{
+	pop
+} bind def
+/setcmykcolor
+{
+	4 npop
+} bind def
+/setrgbcolor
+{
+	3 npop
+} bind def
+/setcustomcolor
+{
+	2 npop
+} bind def
+currentdict readonly pop
+end
+end
+setpacking
+
+userdict /Adobe_IllustratorA_AI5 known not
+{
+	userdict /Adobe_IllustratorA_AI5 2 dict put 
+} if
+userdict /Adobe_IllustratorA_AI5 get begin
+/initialize
+{
+	Adobe_Illustrator_AI5 /initialize get exec
+} def
+/terminate
+{
+	Adobe_Illustrator_AI5 /terminate get exec
+} def
+end
+userdict /Adobe_IllustratorA_AI5_vars known not
+{
+	userdict /Adobe_IllustratorA_AI5_vars 1 dict put 
+} if
+
+userdict /Adobe_Illustrator_AI3 known not
+{
+	userdict /Adobe_Illustrator_AI3 2 dict put 
+} if
+userdict /Adobe_Illustrator_AI3 get begin
+/initialize {
+	Adobe_Illustrator_AI5 /initialize get exec
+} def
+/terminate {
+	Adobe_Illustrator_AI5 /terminate get exec
+} def
+end
+
+userdict /Adobe_IllustratorA_AI3 known not
+{
+	userdict /Adobe_IllustratorA_AI3 2 dict put 
+} if
+userdict /Adobe_IllustratorA_AI3 get begin
+/initialize
+{
+	Adobe_Illustrator_AI5 /initialize get exec
+} def
+/terminate
+{
+	Adobe_Illustrator_AI5 /terminate get exec
+} def
+end
+%%EndResource

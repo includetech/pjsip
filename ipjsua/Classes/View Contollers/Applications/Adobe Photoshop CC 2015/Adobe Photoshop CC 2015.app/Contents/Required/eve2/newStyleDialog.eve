@@ -1,0 +1,57 @@
+layout colorSwatchName
+    {
+    constant:
+        vStyleThumbSize : 75;
+
+    view TNewStyleDialog(name: '$$$/Dialog/NewStyleName/Title=New Style',
+                         target_id: 'name',
+                         placement: place_row,
+                         margin: 15,
+                         isResizable: false)
+        {
+        TBevelViewDown ()
+            {
+            TStylePreview(identifier: 'ptch',
+                          height: vStyleThumbSize,
+                          width: vStyleThumbSize);
+            }
+
+        column()
+            {
+            TEditText (identifier: 'name',
+                       name: '$$$/Dialog/StyleName/Name=&Name:',
+                       width: 16 * 20,
+                       max_chars: 240);
+
+            TCheckBox(name: '$$$/Dialog/NewStyle/IncludeLayerEffects=Include Layer &Effects',
+                      identifier: 'usfx',
+                      tooltip: '$$$/Dialog/NewStyle/ToolTip/IncludeFX=Include the current layer effects in the new style');
+
+            TCheckBox(name: '$$$/Dialog/NewStyle/IncludeBlendOptions=Include Layer &Blending Options',
+                      identifier: 'usbd',
+                      tooltip: '$$$/Dialog/NewStyle/ToolTip/IncludeBlend=Include the current blending options in the new style');
+
+            row(spacing: 4)
+                {
+                TCheckBox(identifier: @addToLibrary,
+                          name: '$$$/Dialog/ColorSwatchName/AddToCurrentLibrary=Add to my current library.');
+
+                TStaticText(identifier: @learnMoreLink,
+                            name: '$$$/Dialog/ColorSwatchName/LibraryLearnMore=Learn more about Libraries', 
+                            wincontrol: false);
+                }
+            }
+
+        column(child_horizontal: align_fill)
+            {
+            TButton(name: "$$$/ControlsStrings/OK=OK",
+                    identifier: @ok,
+                    dismiss: true,
+                    default: true);
+
+            TButton(name: "$$$/ControlsStrings/Cancel=Cancel",
+                    identifier: @cancel,
+                    dismiss: true);
+            }
+        }
+    }

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Printer>
+	<Version value='1' />
+	<PrintLocation value='3D Hubs' />
+	<UploadURL value='https://www.3dhubs.com/3dprint/printertype/plaster/material/monochrome' />
+	<PrintVolume X='200' Y='250' Z='330' />
+	<PrinterResolution X='5' Y='5' Z='5' />
+	<MeshRepairResolution value='7' />
+	<PrinterHeads value='1' />
+	<PrinterSupportsUSB flag='0' />
+	<PreferredFileFormat value='stl' />
+  <RemoveUnintendedLooseComponents flag='1' />
+	<NeedsZip flag='1' />
+	<Quality value='high'>
+		<MeshRepairResolution value='8' />
+	</Quality>
+	<Quality value='medium'>
+		<MeshRepairResolution value='7' />
+	</Quality>
+	<Quality value='low'>
+		<MeshRepairResolution value='6' />
+	</Quality>
+</Printer>
+<Materials>
+	<Material name='Sandstone - Monochrome Sandstone'>
+		<NeedsRaft flag='0' />
+		<NeedsSupports flag='0' />
+		<NeedsEscapeHoles flag='0' />
+		<MinimumWallThickness value='0.8' />
+		<MinimumWallThicknessFeatureSize value='0.9' />
+		<PricePerCubicCM value='1.5' />
+		<Handling value='10.0' />
+		<Diffuse R='0.97' G='0.97' B='0.97' />
+		<Specular R='0.97' G='0.97' B='0.97' />
+		<Illumination R='0' G='0' B='0' />
+		<Ambient R='0.04' G='0.04' B='0.04' />
+		<Shine value='0.26' />
+		<Reflection value='0.04' />
+		<Roughness value='1' />
+		<Bump value='0' />
+		<Opacity value='1' />
+		<Refraction value='1.003' />
+	</Material>
+</Materials>

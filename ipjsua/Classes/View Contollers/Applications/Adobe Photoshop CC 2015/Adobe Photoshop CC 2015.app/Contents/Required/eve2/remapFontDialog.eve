@@ -1,0 +1,44 @@
+layout remapFontDialog
+    {
+    view TMissingFontDialog(identifier : @remapFontDialog,
+                            placement  : place_column,
+                            qDebugDraw : false,
+                            margin     : 20,
+                            name       : "$$$/Dialog/ReplaceFontsDialog/Title=Replace Fonts")
+        {
+        TStaticText(identifier : @missingFontTextDump,
+                    horizontal : align_fill,
+                    autoWrap   : true,
+                    name       : "$$$/Dialog/ReplaceFontsDialog/Prompt=Place your text here.");
+
+        TScroller(identifier     : @scroller, 
+                  horizontal     : align_fill,
+                  vertical       : align_fill,
+                  verticalScroll : true,
+                  placement      : place_row)
+            {
+            TMissingFontListView(identifier : @missingFontCells,
+                                 horizontal : align_fill,
+                                 vertical   : align_fill,
+                                 width      : 500,
+                                 height     : 300);
+            }
+
+        row(horizontal : align_fill,
+            spacing    : gGap)
+            {
+            TButton (name       : "$$$/ControlsStrings/Cancel=Cancel",
+                     dismiss    : true,
+                     horizontal : align_right,
+                     identifier : @cancel,
+                     width      : 100);
+
+            TButton (name       : "$$$/ControlsStrings/ReplaceFonts=Replace Fonts",
+                     identifier : @ok,
+                     horizontal : align_right,
+                     default    : true,
+                     dismiss    : true,
+                     width      : 100);
+            }
+        }
+    }

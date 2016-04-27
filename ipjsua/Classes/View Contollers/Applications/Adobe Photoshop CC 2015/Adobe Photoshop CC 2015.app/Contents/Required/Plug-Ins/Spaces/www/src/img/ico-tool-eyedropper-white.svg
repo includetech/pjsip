@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25px" height="25px"
+	 viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve">
+<title>ico-eyedropper-black</title>
+<path opacity="0.8" fill="#9C9B90" enable-background="new    " d="M12.5,2.286c-5.532,0-10.017,4.485-10.017,10.017H5.26
+	c0-3.998,3.241-7.239,7.239-7.239V2.286H12.5z"/>
+<path opacity="0.8" fill="#9C9B90" enable-background="new    " d="M12.79,22.494c5.532,0,10.017-4.485,10.017-10.017H20.03
+	c0,3.998-3.241,7.239-7.239,7.239L12.79,22.494L12.79,22.494z"/>
+<g>
+	<circle fill="none" stroke="#F7F6EE" stroke-miterlimit="10" cx="12.5" cy="12.5" r="10.434"/>
+</g>
+<path fill="none" stroke="#46443A" stroke-miterlimit="10" d="M12.73,22.987"/>
+<line fill="none" stroke="#F7F6EE" stroke-miterlimit="10" x1="12.5" y1="-0.587" x2="12.5" y2="7.891"/>
+<line fill="none" stroke="#F7F6EE" stroke-miterlimit="10" x1="12.5" y1="18.522" x2="12.5" y2="27"/>
+<path fill="none" stroke="#F7F6EE" stroke-width="0.5" stroke-miterlimit="10" d="M5.34,12.303c0-3.954,3.206-7.16,7.16-7.16"/>
+<g>
+	<line fill="none" stroke="#46443A" stroke-miterlimit="10" x1="-0.906" y1="12.5" x2="3.22" y2="12.5"/>
+	<line fill="none" stroke="#F7F6EE" stroke-miterlimit="10" x1="-0.719" y1="12.5" x2="7.759" y2="12.5"/>
+</g>
+<line fill="none" stroke="#F7F6EE" stroke-miterlimit="10" x1="26.719" y1="12.5" x2="18.241" y2="12.5"/>
+<g>
+	<line fill="none" stroke="#F7F6EE" stroke-width="0.75" stroke-miterlimit="10" x1="12.5" y1="9.53" x2="12.5" y2="15.47"/>
+	<line fill="none" stroke="#F7F6EE" stroke-width="0.75" stroke-miterlimit="10" x1="9.5" y1="12.5" x2="15.5" y2="12.5"/>
+</g>
+<path fill="none" stroke="#F7F6EE" stroke-width="0.5" stroke-miterlimit="10" d="M19.89,12.303c0,3.954-3.206,7.16-7.16,7.16"/>
+</svg>

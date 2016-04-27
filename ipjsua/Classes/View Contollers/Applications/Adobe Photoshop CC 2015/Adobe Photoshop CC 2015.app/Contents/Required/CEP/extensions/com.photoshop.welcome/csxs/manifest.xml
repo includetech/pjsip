@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ExtensionManifest Version="5.0" ExtensionBundleId="com.photoshop.Welcome" ExtensionBundleVersion="1.0.0"
+		ExtensionBundleName="Welcome" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<ExtensionList>
+		<Extension Id="com.photoshop.Welcome.extension1" Version="1.0" />
+	</ExtensionList>
+	<ExecutionEnvironment>
+		<HostList>
+			<Host Name="PHXS" Version="[14.0,99.9]" />
+		</HostList>
+		<LocaleList>
+			<Locale Code="en_US"/>
+			<Locale Code="en_GB"/>
+			<Locale Code="en_AE"/>
+			<Locale Code="en_IL"/>
+		</LocaleList>
+		<RequiredRuntimeList>
+			<RequiredRuntime Name="CSXS" Version="5.0" />
+
+		</RequiredRuntimeList>
+	</ExecutionEnvironment>
+	<DispatchInfoList>
+		<Extension Id="com.photoshop.Welcome.extension1">
+			<DispatchInfo >
+				<Resources>
+				<MainPath>./index.html</MainPath>
+				<ScriptPath>./Hello.jsx</ScriptPath>
+				<CEFCommandLine>
+                        <Parameter>--proxy-auto-detect</Parameter>
+				</CEFCommandLine>
+				</Resources>
+				<Lifecycle>
+					<AutoVisible>true</AutoVisible>
+				</Lifecycle>
+				<UI>
+					<Type>Modeless</Type>
+					<Menu>Welcome</Menu>
+					<Geometry>
+						<Size>
+							<Height>656</Height>
+							<Width>858</Width>
+						</Size>
+						<MaxSize>
+							<Height>40000</Height>
+							<Width>858</Width>
+						</MaxSize>
+						<MinSize>
+							<Height>538</Height>
+							<Width>858</Width>
+						</MinSize>
+					</Geometry>
+				</UI>
+			</DispatchInfo>
+		</Extension>
+	</DispatchInfoList>
+</ExtensionManifest>

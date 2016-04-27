@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Printer>
+	<Version value='1' />
+	<PrintLocation value='Shapeways.com' />
+	<UploadURL value='http://www.adobe.com/go/psuploadtoshapeways' />
+	<PrintVolume X='89' Y='89' Z='100' />
+	<PrinterResolution X='8' Y='8' Z='8' />
+	<MeshRepairResolution value='7' />
+	<PrinterHeads value='1' />
+	<PrinterSupportsUSB flag='0' />
+	<PreferredFileFormat value='stl' />
+	<NeedsZip flag='1' />
+	<Quality value='high'>
+		<MeshRepairResolution value='8' />
+	</Quality>
+	<Quality value='medium'>
+		<MeshRepairResolution value='7' />
+	</Quality>
+	<Quality value='low'>
+		<MeshRepairResolution value='6' />
+	</Quality>
+</Printer>
+<Materials>
+	<Material name='Bronze - Polished'>
+		<NeedsRaft flag='0' />
+		<NeedsSupports flag='0' />
+		<NeedsEscapeHoles flag='0' />
+		<MinimumWallThickness value='0.8' />
+		<PricePerCubicCM value='18.00' />
+		<Handling value='20.00' />
+		<Diffuse R='0.7765' G='0.5621' B='0.2548' />
+		<Specular R='1.0775' G='0.8751' B='0.6454' />
+		<Illumination R='0' G='0' B='0' />
+		<Ambient R='0' G='0' B='0' />
+		<Shine value='0.58' />
+		<Reflection value='0.83' />
+		<Roughness value='0.07' />
+		<Bump value='0' />
+		<Opacity value='1' />
+		<Refraction value='1.031' />
+	</Material>
+</Materials>

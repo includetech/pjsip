@@ -1,0 +1,53 @@
+layout colorSwatchName
+    {
+    view TSwatchNameDialog(name: '$$$/Dialog/ColorSwatchName=Color Swatch Name',
+                           target_id: 'name',
+                           placement: place_row,
+                           margin: 15,
+                           isResizable: false)
+        {
+        row(vertical: align_fill)
+            {
+            TBevelViewDown()
+                {
+                TColorPatch (identifier: 'ptch',
+                             frame: gIconButtonBevelFrame,
+                             height: 50,
+                             width: 50);
+                }
+
+            column(vertical: align_fill)
+                {
+                row(child_vertical: align_center)
+                    {
+                    TEditText(identifier: 'name',
+                              name: '$$$/Dialog/ColorSwatchName/Name=Name:',
+                              width: 16 * 20,
+                              max_chars: 240);
+                    }            
+
+                row(spacing: 4)
+                    {
+                    TCheckBox(identifier: @addToLibrary,
+                              name: '$$$/Dialog/ColorSwatchName/AddToCurrentLibrary=Add to my current library.');
+
+                    TStaticText(identifier: @learnMoreLink,
+                                name: '$$$/Dialog/ColorSwatchName/LibraryLearnMore=Learn more about Libraries', 
+                                wincontrol: false);
+                    }
+                }
+            }
+
+        column(child_horizontal: align_fill)
+            {
+            TButton(name: "$$$/ControlsStrings/OK=OK",
+                    identifier: @ok,
+                    dismiss: true,
+                    default: true);
+
+            TButton(name: "$$$/ControlsStrings/Cancel=Cancel",
+                    identifier: @cancel,
+                    dismiss: true);
+            }
+        }
+    }

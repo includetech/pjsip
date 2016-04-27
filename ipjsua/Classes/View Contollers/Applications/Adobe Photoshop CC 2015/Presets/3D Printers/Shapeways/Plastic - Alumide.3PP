@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Printer>
+	<Version value='1' />
+	<PrintLocation value='Shapeways.com' />
+	<UploadURL value='http://www.adobe.com/go/psuploadtoshapeways' />
+	<PrintVolume X='310' Y='230' Z='180' />
+	<MeshRepairResolution value='7' />
+	<PrinterResolution X='5' Y='5' Z='5' />
+	<PrinterHeads value='1' />
+	<PrinterSupportsUSB flag='0' />
+	<PreferredFileFormat value='stl' />
+	<NeedsZip flag='1' />
+	<Quality value='high'>
+		<MeshRepairResolution value='8' />
+	</Quality>
+	<Quality value='medium'>
+		<MeshRepairResolution value='7' />
+	</Quality>
+	<Quality value='low'>
+		<MeshRepairResolution value='6' />
+	</Quality>
+</Printer>
+<Materials>
+	<Material name='Alumide'>
+		<NeedsRaft flag='0' />
+		<NeedsSupports flag='0' />
+		<NeedsEscapeHoles flag='0' />
+		<MinimumWallThickness value='1.5' />
+		<PricePerCubicCM value='1.75' />
+		<Handling value='1.50' />
+		<Diffuse R='0.8100' G='0.8100' B='0.8100' />
+		<Specular R='0.7100' G='0.7100' B='0.7100' />
+		<Illumination R='0' G='0' B='0' />
+		<Ambient R='0.0300' G='0.0300' B='0.0300' />
+		<Shine value='0.26' />
+		<Reflection value='0.01' />
+		<Roughness value='0.33' />
+		<Bump value='0.0' />
+		<Opacity value='1' />
+		<Refraction value='1.005' />
+		<PreviewVolumeNoiseDisplay>
+			<NoiseOn flag='1' />
+			<NoiseMagnitude value='0.9' />
+			<HigherFrequencyMagnitudeReduction value='2.0' />
+			<HigherFrequencyLookupOffset value='1.5' />
+			<CubicCentimeterLookupScale value='5.0' />
+		</PreviewVolumeNoiseDisplay>
+	</Material>
+</Materials>

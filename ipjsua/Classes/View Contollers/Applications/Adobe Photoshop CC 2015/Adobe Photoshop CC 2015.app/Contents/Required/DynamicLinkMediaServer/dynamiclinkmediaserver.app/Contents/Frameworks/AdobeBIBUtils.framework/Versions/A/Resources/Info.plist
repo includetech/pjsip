@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildDate</key>
+	<string>2014/02/11-18:18:11</string>
+	<key>BuildID</key>
+	<string>32392</string>
+	<key>BuildVersion</key>
+	<string>79.552081</string>
+	<key>CFBundleExecutable</key>
+	<string>AdobeBIBUtils</string>
+	<key>CFBundleGetInfoString</key>
+	<string>AdobeBIBUtils 1.1.01, Copyright 2012 Adobe Systems Incorporated.</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.adobe.BIBUtils</string>
+	<key>CFBundleName</key>
+	<string>AdobeBIBUtils</string>
+	<key>CFBundlePackageType</key>
+	<string>FMWK</string>
+	<key>CFBundleShortVersionString</key>
+	<string>AdobeBIBUtils 1.1.01</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.1.01</string>
+	<key>Configuration</key>
+	<string>BIBUtils Release MT</string>
+</dict>
+</plist>

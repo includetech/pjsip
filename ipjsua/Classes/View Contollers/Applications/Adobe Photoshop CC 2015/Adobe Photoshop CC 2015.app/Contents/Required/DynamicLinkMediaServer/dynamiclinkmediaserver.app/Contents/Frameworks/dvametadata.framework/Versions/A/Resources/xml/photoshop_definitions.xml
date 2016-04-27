@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xmp_definitions>
+  <xmp_schema prefix='photoshop' namespace='http://ns.adobe.com/photoshop/1.0/' description='$$$/xmp/photoshop_description=This schema specifies properties used by Adobe Photoshop.' label='$$$/xmp/photoshop_label=Photoshop'>
+    <xmp_property name='AuthorsPosition' category='external' type='text' description='$$$/xmp/photoshop/AuthorsPosition_description=Job Title of the person listed in the Creator field' label='$$$/xmp/photoshop/AuthorsPosition_label=Author#{rsquo}s Position'/>
+    <xmp_property name='CaptionWriter' category='external' type='propername' description='$$$/xmp/photoshop/CaptionWriter_description=Name of the person involved in writing, editing or correcting the description of the image' label='$$$/xmp/photoshop/CaptionWriter_label=Caption Writer'/>
+    <xmp_property name='Category' category='external' type='text' description='$$$/xmp/photoshop/Category_description=Category. Limited to 3 7-bit ASCII characters.' label='$$$/xmp/photoshop/Category_label=Category'/>
+    <xmp_property name='City' category='external' type='text' description='$$$/xmp/photoshop/City_description=Name of the City pictured in this image' label='$$$/xmp/photoshop/City_label=City'/>
+    <xmp_property name='Country' category='external' type='text' description='$$$/xmp/photoshop/Country_description=Name of the Country pictured in this image' label='$$$/xmp/photoshop/Country_label=Country'/>
+    <xmp_property name='Credit' category='external' type='text' description='$$$/xmp/photoshop/Credit_description=Enter who should be credited when this image is published' label='$$$/xmp/photoshop/Credit_label=Credit Line'/>
+    <xmp_property name='DateCreated' category='external' type='date' description='$$$/xmp/photoshop/DateCreated_description=The date the intellectual content of the document was created (rather than the creation date of the physical representation). For example, a photo taken during the American Civil War would have a creation date during that epoch (1861-1865) rather than the date the photo was digitized for archiving.' label='$$$/xmp/photoshop/DateCreated_label=Date Created'/>
+    <xmp_property name='Headline' category='external' type='text' description='$$$/xmp/photoshop/Headline_description=Brief publishable synopsis or summary of the contents of this image' label='$$$/xmp/photoshop/Headline_label=Headline'/>
+    <xmp_property name='History' category='external' type='text' description='$$$/xmp/photoshop/History_description=The Photoshop History displays an accumulated log of edit history that has been done to the document. The logging capability can be turned on via the PS preference dialog under General>History Log.' label='$$$/xmp/photoshop/History_label=History'/>    
+    <xmp_property name='Instructions' category='external' type='text' description='$$$/xmp/photoshop/Instructions_description=Information about embargoes, or other restrictions not covered by the Rights Usage field' label='$$$/xmp/photoshop/Instructions_label=Instructions'/>
+    <xmp_property name='Source' category='external' type='text' description='$$$/xmp/photoshop/Source_description=Original owner of the copyright of this image' label='$$$/xmp/photoshop/Source_label=Source'/>
+    <xmp_property name='State' category='external' type='text' description='$$$/xmp/photoshop/State_description=Name of the Province or State pictured in this image' label='$$$/xmp/photoshop/State_label=State/Province'/>
+    <xmp_property name='SupplementalCategories' category='external' type='bag' description='$$$/xmp/photoshop/SupplementalCategories_description=Supplemental category.' element_type='text' label='$$$/xmp/photoshop/SupplementalCategories_label=Supplemental Categories'/>
+    <xmp_property name='TransmissionReference' category='external' type='text' description='$$$/xmp/photoshop/TransmissionReference_description=Original transmission reference.' label='$$$/xmp/photoshop/TransmissionReference_label=Transmission Reference'/>
+    <xmp_property name='Urgency' category='external' type='closedchoice' element_type='integer' description='$$$/xmp/photoshop/Urgency_description=Urgency.' label='$$$/xmp/photoshop/Urgency_label=Urgency'>
+		<xmp_choice raw_value="" label='$$$/xmp/choice/unsetValue_label=(Select value)'/>
+		<xmp_choice raw_value="1" label="$$$/xmp/photoshop/Urgency_High=High"/>
+		<xmp_choice raw_value="2" label="$$$/xmp/photoshop/Urgency_2=2"/>
+		<xmp_choice raw_value="3" label="$$$/xmp/photoshop/Urgency_3=3"/>
+		<xmp_choice raw_value="4" label="$$$/xmp/photoshop/Urgency_4=4"/>
+		<xmp_choice raw_value="5" label="$$$/xmp/photoshop/Urgency_Normal=Normal"/>
+		<xmp_choice raw_value="6" label="$$$/xmp/photoshop/Urgency_6=6"/>
+		<xmp_choice raw_value="7" label="$$$/xmp/photoshop/Urgency_7=7"/>
+		<xmp_choice raw_value="8" label="$$$/xmp/photoshop/Urgency_Low=Low"/>
+	</xmp_property>
+  </xmp_schema>
+</xmp_definitions>

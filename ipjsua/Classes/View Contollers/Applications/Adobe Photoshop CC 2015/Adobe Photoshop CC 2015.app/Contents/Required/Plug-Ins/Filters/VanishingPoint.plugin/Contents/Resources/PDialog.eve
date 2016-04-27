@@ -1,0 +1,1161 @@
+PDialog(placement:			place_row,
+		 margin:			0,
+	 	 window_title:		'$$$/VanishingPoint/Title/Default=Vanishing Point',
+		 window_features:	kWin_CanMove +
+							kWin_CanSize +
+							kWin_CanTarget +
+							kWin_CanBullseye,
+		 window_position_x:	-50,
+		 window_position_y:	-33,
+		 view_id:			'Project/Dialog')
+{
+	text_font = kFont_UIMicro;
+	label_font = kFont_UIMicro;
+	bold_label_font = kFont_UIMicroBold;
+	control_font = kFont_UIMicro;
+	push_button_font = kFont_UILarge;
+	menu_font = kFont_UIMicro;
+	kControlSpacing = 30;
+	kComboWidth = 100;
+	kLabelSpace = 2;
+
+	CSwitchPane(placement:	place_offscreen,
+			horizontal:		align_left,
+			vertical:		align_fill,
+			view_binding:	kBind_FixedLeft + kBind_YSizeable,
+			view_id:		'fantasia/tool/switcher',
+			case_id:		'fantasia/tool/standard')
+	{
+	CCasePane (	horizontal:		align_fill,
+				vertical:		align_fill,
+				view_binding:	kBind_FixedLeft + kBind_YSizeable,
+				view_id:		'fantasia/tool/premium')			    	   
+		{
+		CFramePane(placement:		place_column,
+					horizontal:		align_left,
+					vertical:		align_fill,
+					margin_top:		4,
+					margin_left:	5,
+					margin_bottom:	0,
+					margin_right:	5,
+					spacing:		2,
+					view_binding:	kBind_FixedLeft + kBind_YSizeable)
+		{
+				CToolGrid(placement:	place_offscreen,
+						horizontal:	align_center,
+						vertical:		align_top,
+						view_binding:	kBind_FixedTopLeft,
+						cell_count_x:	1,
+						cell_count_y:	2,
+						tool_frame:	kToolFrame_Normal)
+				{
+					CToolButton(tool_set:		'fantasia/tool/set/main',
+								view_id:		'fantasia/tool/arrow',
+								view_tip:		'$$$/VanishingPoint/ToolPalette/Tips/Arrow=Edit Plane Tool (V)',
+								frame_interior:	0);
+					CToolButton(tool_set:		'fantasia/tool/set/main',
+								view_id:		'fantasia/tool/create',
+								view_tip:		'$$$/VanishingPoint/ToolPalette/Tips/Create=Create Plane Tool (C)',
+								frame_interior:	1);
+				}
+				CToolGrid(placement:	place_offscreen,
+						horizontal:	align_center,
+						vertical:		align_top,
+						view_binding:	kBind_FixedTopLeft,
+						cell_count_x:	1,
+						cell_count_y:	1,
+						tool_frame:	kToolFrame_TDiv)
+				{
+					CToolButton(tool_set:		'fantasia/tool/set/main',
+								view_id:		'fantasia/tool/marquee',
+								view_tip:		'$$$/VanishingPoint/ToolPalette/Tips/PerspectMarquee=Marquee Tool (M)',
+								frame_interior:	0);
+				}
+				CToolGrid(placement:	place_offscreen,
+						horizontal:	align_center,
+						vertical:		align_top,
+						view_binding:	kBind_FixedTopLeft,
+						cell_count_x:	1,
+						cell_count_y:	2,
+						tool_frame:	kToolFrame_TDiv)
+				{
+					CToolButton(tool_set:		'fantasia/tool/set/main',
+								view_id:		'fantasia/tool/stamp',
+								view_tip:		'$$$/VanishingPoint/ToolPalette/Tips/PerspectStamp=Stamp Tool (S)',
+								frame_interior:	0);
+					CToolButton(tool_set:		'fantasia/tool/set/main',
+								view_id:		'fantasia/tool/brush',
+								view_tip:		'$$$/VanishingPoint/ToolPalette/Tips/PerspectBrush=Brush Tool (B)',
+								frame_interior:	1);
+				}
+				CToolGrid(placement:	place_offscreen,
+						horizontal:	align_center,
+						vertical:		align_top,
+						view_binding:	kBind_FixedTopLeft,
+						cell_count_x:	1,
+						cell_count_y:	1,
+						tool_frame:	kToolFrame_TDiv)
+				{
+					CToolButton(tool_set:		'fantasia/tool/set/main',
+								view_id:		'fantasia/tool/transform',
+								view_tip:		'$$$/VanishingPoint/ToolPalette/Tips/Transform=Transform Tool (T)',
+								frame_interior:	0);
+				}
+				CToolGrid(placement:	place_offscreen,
+						horizontal:	align_center,
+						vertical:		align_top,
+						view_binding:	kBind_FixedTopLeft,
+						cell_count_x:	1,
+						cell_count_y:	2,
+						tool_frame:	kToolFrame_TDiv)
+				{
+					CToolButton(tool_set:		'fantasia/tool/set/main',
+								view_id:		'fantasia/tool/eyedropper',
+								view_tip:		'$$$/VanishingPoint/ToolPalette/Tips/Eyedropper=Eyedropper Tool (I)',
+								frame_interior:	0);
+					CToolButton(tool_set:		'fantasia/tool/set/main',
+								view_id:		'fantasia/tool/measure',
+								view_tip:		'$$$/VanishingPoint/ToolPalette/Tips/Measure=Measure Tool (R)',
+								frame_interior:	1);
+				}
+				CToolGrid(placement:	place_offscreen,
+						horizontal:	align_center,
+						vertical:		align_top,
+						view_binding:	kBind_FixedTopLeft,
+						cell_count_x:	1,
+						cell_count_y:	2,
+						tool_frame:	kToolFrame_TDiv)
+				{
+					CToolButton(tool_set:		'fantasia/tool/set/main',
+								view_id:		'fantasia/tool/hand',
+								view_tip:		'$$$/VanishingPoint/ToolPalette/Tips/Hand=Hand Tool (H)',
+								frame_interior:	0);
+					CToolButton(tool_set:		'fantasia/tool/set/main',
+								view_id:		'fantasia/tool/zoom',
+								view_tip:		'$$$/VanishingPoint/ToolPalette/Tips/Zoom=Zoom Tool (Z)',
+								frame_interior:	1);
+				}
+		}
+			}
+	CCasePane (	horizontal:		align_fill,
+				vertical:		align_fill,
+				view_binding:	kBind_FixedLeft + kBind_YSizeable,
+				view_id:		'fantasia/tool/standard')			    	   
+		{
+		CFramePane(placement:		place_column,
+					horizontal:		align_left,
+					vertical:		align_fill,
+					margin_top:		4,
+					margin_left:	5,
+					margin_bottom:	0,
+					margin_right:	5,
+					spacing:		2,
+					view_binding:	kBind_FixedLeft + kBind_YSizeable)
+		{
+				CToolGrid(placement:	place_offscreen,
+						horizontal:	align_center,
+						vertical:		align_top,
+						view_binding:	kBind_FixedTopLeft,
+						cell_count_x:	1,
+						cell_count_y:	2,
+						tool_frame:	kToolFrame_Normal)
+				{
+					CToolButton(tool_set:		'fantasia/tool/set/main',
+								view_id:		'fantasia/tool/arrow',
+								view_tip:		'$$$/VanishingPoint/ToolPalette/Tips/Arrow=Edit Plane Tool (V)',
+								frame_interior:	0);
+					CToolButton(tool_set:		'fantasia/tool/set/main',
+								view_id:		'fantasia/tool/create',
+								view_tip:		'$$$/VanishingPoint/ToolPalette/Tips/Create=Create Plane Tool (C)',
+								frame_interior:	1);
+				}
+				CToolGrid(placement:	place_offscreen,
+						horizontal:	align_center,
+						vertical:		align_top,
+						view_binding:	kBind_FixedTopLeft,
+						cell_count_x:	1,
+						cell_count_y:	1,
+						tool_frame:	kToolFrame_TDiv)
+				{
+					CToolButton(tool_set:		'fantasia/tool/set/main',
+								view_id:		'fantasia/tool/marquee',
+								view_tip:		'$$$/VanishingPoint/ToolPalette/Tips/PerspectMarquee=Marquee Tool (M)',
+								frame_interior:	0);
+				}
+				CToolGrid(placement:	place_offscreen,
+						horizontal:	align_center,
+						vertical:		align_top,
+						view_binding:	kBind_FixedTopLeft,
+						cell_count_x:	1,
+						cell_count_y:	2,
+						tool_frame:	kToolFrame_TDiv)
+				{
+					CToolButton(tool_set:		'fantasia/tool/set/main',
+								view_id:		'fantasia/tool/stamp',
+								view_tip:		'$$$/VanishingPoint/ToolPalette/Tips/PerspectStamp=Stamp Tool (S)',
+								frame_interior:	0);
+					CToolButton(tool_set:		'fantasia/tool/set/main',
+								view_id:		'fantasia/tool/brush',
+								view_tip:		'$$$/VanishingPoint/ToolPalette/Tips/PerspectBrush=Brush Tool (B)',
+								frame_interior:	1);
+				}
+				CToolGrid(placement:	place_offscreen,
+						horizontal:	align_center,
+						vertical:		align_top,
+						view_binding:	kBind_FixedTopLeft,
+						cell_count_x:	1,
+						cell_count_y:	1,
+						tool_frame:	kToolFrame_TDiv)
+				{
+					CToolButton(tool_set:		'fantasia/tool/set/main',
+								view_id:		'fantasia/tool/transform',
+								view_tip:		'$$$/VanishingPoint/ToolPalette/Tips/Transform=Transform Tool (T)',
+								frame_interior:	0);
+				}
+				CToolGrid(placement:	place_offscreen,
+						horizontal:	align_center,
+						vertical:		align_top,
+						view_binding:	kBind_FixedTopLeft,
+						cell_count_x:	1,
+						cell_count_y:	1,
+						tool_frame:	kToolFrame_TDiv)
+				{
+					CToolButton(tool_set:		'fantasia/tool/set/main',
+								view_id:		'fantasia/tool/eyedropper',
+								view_tip:		'$$$/VanishingPoint/ToolPalette/Tips/Eyedropper=Eyedropper Tool (I)',
+								frame_interior:	0);
+				}
+				CToolGrid(placement:	place_offscreen,
+						horizontal:	align_center,
+						vertical:		align_top,
+						view_binding:	kBind_FixedTopLeft,
+						cell_count_x:	1,
+						cell_count_y:	2,
+						tool_frame:	kToolFrame_TDiv)
+				{
+					CToolButton(tool_set:		'fantasia/tool/set/main',
+								view_id:		'fantasia/tool/hand',
+								view_tip:		'$$$/VanishingPoint/ToolPalette/Tips/Hand=Hand Tool (H)',
+								frame_interior:	0);
+					CToolButton(tool_set:		'fantasia/tool/set/main',
+								view_id:		'fantasia/tool/zoom',
+								view_tip:		'$$$/VanishingPoint/ToolPalette/Tips/Zoom=Zoom Tool (Z)',
+								frame_interior:	1);
+				}
+		}
+			}
+	}
+	
+	CFramePane(placement:		place_column,
+				horizontal:		align_fill,
+				vertical:		align_fill,
+				margin_top:		0,
+				margin_left:	0,
+				margin_bottom:	0,
+				margin_right:	0,
+				spacing:		0,
+				view_binding:	kBind_Sizeable)
+	{
+		CFramePane(placement:	place_row,
+				horizontal:		align_fill,
+				vertical:		align_fill,
+				view_binding:	kBind_SizeRight)
+		{
+				
+			CFramePane(placement:		place_column,
+						horizontal:		align_fill,
+						vertical:		align_top,
+						margin:			8,
+						spacing:		8,
+						view_binding:	kBind_Sizeable)
+			{
+				OptionsBar(placement:	place_offscreen,
+						horizontal:		align_fill,
+						vertical:		align_fill,
+						margin:			0,
+						spacing:		8,
+						view_binding:	kBind_Sizeable,
+						case_id:		'fantasia/tool/arrow')
+				{
+				CCasePane (horizontal:		align_fill,
+			    		vertical:		align_fill,
+			    		view_binding:	kBind_FixedTopLeft,
+			    		view_id:			'fantasia/tool/arrow')			    	   
+					{
+				    
+					CFramePane (placement:		place_row,
+								horizontal:		align_left,
+								vertical:		align_fill,
+								view_binding:	kBind_FixedTopLeft,
+								spacing:		kControlSpacing)
+						{
+							CFlyoutPopup (	horizontal:		align_left,
+											vertical:		align_center,
+											view_binding:	kBind_FixedTopLeft,
+											margin:			5,
+											view_id:		'fantasia/optionsbar/shared/Flyout',
+											view_tip:		'$$$/VanishingPoint/optionsbar/shared/Flyout=Settings and commands for Vanishing Point.'								
+											);
+							CPane(placement:	place_row,
+								horizontal:		align_left,
+								vertical:		align_fill,
+								spacing:		kLabelSpace,
+								view_target:	true,
+								view_binding:	kBind_XSizeable + kBind_FixedTop)
+							{
+								CStaticText(horizontal:		align_left,
+											vertical:		align_center,
+											view_binding:	kBind_FixedTopLeft,
+											view_id:		'fantasia/optionsbar/shared/gridsize/label',
+											view_tip:		'$$$/VanishingPoint/optionsbar/shared/gridsize/tip=Set the size of the grid on planes.',
+											text:			'$$$/VanishingPoint/optionsbar/shared/gridsize/label=Grid Size:',
+											scrub_id:		'fantasia/optionsbar/shared/gridsize',
+											text_align_x:	kAlign_Right,
+											text_align_y:	kAlign_Center);
+								CEditPopupSlider(horizontal:		align_left,
+												vertical:			align_center,
+												view_options:		kView_NoFocusOnClick,
+												view_binding:		kBind_FixedTopLeft,
+												view_id:			'fantasia/optionsbar/shared/gridsize',
+												control_font:		kFont_UIMicro,
+												number_format:		kNumber_Decimal,
+												max_characters:	  	7,
+												text_digits:	 	7,
+												slider_value:		100,
+												slider_minimum:	 	1,
+												slider_maximum:		1000,
+												minor_increment:	1,
+												major_increment:	20);
+							}
+							CPane(placement:	place_row,
+								horizontal:		align_left,
+								vertical:		align_fill,
+								spacing:		kLabelSpace,
+								view_target:	true,
+								view_binding:	kBind_XSizeable + kBind_FixedTop)
+							{
+								CStaticText(horizontal:		align_left,
+											vertical:		align_center,
+											view_binding:	kBind_FixedTopLeft,
+											view_id:		'fantasia/optionsbar/shared/planeangle/label',
+											view_tip:		'$$$/VanishingPoint/optionsbar/shared/planeangle/tip=Set the angle between the selected plane and its parent.',
+											text:			'$$$/VanishingPoint/optionsbar/shared/planeangle/label=Angle:',
+											scrub_id:		'fantasia/optionsbar/shared/planeangle',
+											text_align_x:	kAlign_Right,
+											text_align_y:	kAlign_Center);
+								CEditPopupSlider(horizontal:		align_left,
+												vertical:			align_center,
+												view_options:		kView_NoFocusOnClick,
+												view_binding:		kBind_FixedTopLeft,
+												view_id:			'fantasia/optionsbar/shared/planeangle',
+												control_font:		kFont_UIMicro,
+												number_format:		kNumber_Decimal,
+												max_characters:	  	7,
+												text_digits:	 	7,
+												slider_value:		90,
+												slider_minimum:	 	0,
+												slider_maximum:		360,
+												minor_increment:	1,
+												major_increment:	15);
+							}
+						}
+					}
+				CCasePane (horizontal:		align_fill,
+			    		vertical:		align_fill,
+			    		view_binding:	kBind_FixedTopLeft,
+			    		view_id:			'fantasia/tool/create',
+			    		view_options:	kView_NoOptions + kView_Invisible)			    	   
+					{
+				    
+					CFramePane (placement:		place_row,
+								horizontal:		align_left,
+								vertical:		align_fill,
+								view_binding:	kBind_FixedTopLeft,
+								spacing:		kControlSpacing)
+						{
+							CFlyoutPopup (	horizontal:		align_left,
+											vertical:		align_center,
+											view_binding:	kBind_FixedTopLeft,
+											margin:			5,
+											view_id:		'fantasia/optionsbar/shared/Flyout',
+											view_tip:		'$$$/VanishingPoint/optionsbar/shared/Flyout=Settings and commands for Vanishing Point.'								
+											);
+							CPane(placement:		place_row,
+								horizontal:		align_left,
+								vertical:		align_fill,
+								spacing:			kLabelSpace,
+								view_target:		true,
+								view_binding:		kBind_XSizeable + kBind_FixedTop)
+							{
+								CStaticText(horizontal:		align_left,
+											vertical:		align_center,
+											view_binding:	kBind_FixedTopLeft,
+											view_id:		'fantasia/optionsbar/shared/gridsize/label',
+											view_tip:		'$$$/VanishingPoint/optionsbar/shared/gridsize/tip=Set the size of the grid on planes.',
+											text:			'$$$/VanishingPoint/optionsbar/shared/gridsize/label=Grid Size:',
+											scrub_id:		'fantasia/optionsbar/shared/gridsize',
+											text_align_x:	kAlign_Right,
+											text_align_y:	kAlign_Center);
+								CEditPopupSlider(horizontal:		align_left,
+												vertical:			align_center,
+												view_options:		kView_NoFocusOnClick,
+												view_binding:		kBind_FixedTopLeft,
+												view_id:			'fantasia/optionsbar/shared/gridsize',
+												control_font:		kFont_UIMicro,
+												number_format:		kNumber_Decimal,
+												max_characters:	  	7,
+												text_digits:		7,
+												slider_value:		100,
+												slider_minimum:	 	1,
+												slider_maximum:		1000,
+												minor_increment:	1,
+												major_increment:	20);
+							}
+							CPane(placement:	place_row,
+								horizontal:		align_left,
+								vertical:		align_fill,
+								spacing:		kLabelSpace,
+								view_target:	true,
+								view_binding:	kBind_XSizeable + kBind_FixedTop)
+							{
+								CStaticText(horizontal:		align_left,
+											vertical:		align_center,
+											view_binding:	kBind_FixedTopLeft,
+											view_id:		'fantasia/optionsbar/shared/planeangle/label',
+											view_tip:		'$$$/VanishingPoint/optionsbar/shared/planeangle/tip=Set the angle between the selected plane and its parent.',
+											text:			'$$$/VanishingPoint/optionsbar/shared/planeangle/label=Angle:',
+											scrub_id:		'fantasia/optionsbar/shared/planeangle',
+											text_align_x:	kAlign_Right,
+											text_align_y:	kAlign_Center);
+								CEditPopupSlider(horizontal:		align_left,
+												vertical:			align_center,
+												view_options:		kView_NoFocusOnClick,
+												view_binding:		kBind_FixedTopLeft,
+												view_id:			'fantasia/optionsbar/shared/planeangle',
+												control_font:		kFont_UIMicro,
+												number_format:		kNumber_Decimal,
+												max_characters:	  	7,
+												text_digits:	 	7,
+												slider_value:		90,
+												slider_minimum:	 	0,
+												slider_maximum:		360,
+												minor_increment:	1,
+												major_increment:	15);
+							}
+						}
+					}
+				CCasePane (horizontal:		align_fill,
+			    		vertical:		align_fill,
+			    		view_binding:	kBind_FixedTopLeft,
+			    		view_id:			'fantasia/tool/marquee',
+			    		view_options:	kView_NoOptions + kView_Invisible)			    	   
+					{
+				    
+					CFramePane (placement:		place_row,
+								horizontal:		align_left,
+								vertical:		align_fill,
+								view_binding:	kBind_FixedTopLeft,
+								spacing:		kControlSpacing)
+						{
+							CFlyoutPopup (	horizontal:		align_left,
+											vertical:		align_center,
+											view_binding:	kBind_FixedTopLeft,
+											margin:			5,
+											view_id:		'fantasia/optionsbar/shared/Flyout',
+											view_tip:		'$$$/VanishingPoint/optionsbar/shared/Flyout=Settings and commands for Vanishing Point.'								
+											);
+							CPane(placement:		place_row,
+								horizontal:		align_left,
+								vertical:		align_fill,
+								spacing:			kLabelSpace,
+								view_target:		true,
+								view_binding:		kBind_XSizeable + kBind_FixedTop)
+							{
+								CStaticText(horizontal:		align_left,
+											vertical:		align_center,
+											view_binding:	kBind_FixedTopLeft,
+											view_id:		'fantasia/optionsbar/marquee/hardness/label',
+											view_tip:		'$$$/VanishingPoint/optionsbar/marquee/hardness/tip=Set the feather of the edge.',
+											text:			'$$$/VanishingPoint/optionsbar/marquee/hardness/label=Feather:',
+											scrub_id:		'fantasia/optionsbar/marquee/hardness',
+											text_align_x:	kAlign_Right,
+											text_align_y:	kAlign_Center);
+								CEditPopupSlider(horizontal:		align_left,
+												vertical:			align_center,
+												view_options:		kView_NoFocusOnClick,
+												view_binding:		kBind_FixedTopLeft,
+												view_id:			'fantasia/optionsbar/marquee/hardness',
+												control_font:		kFont_UIMicro,
+												max_characters:	  	2,
+												text_digits:		2,
+												slider_value:		1,
+												slider_minimum:	 	0,
+												slider_maximum:		50,
+												minor_increment:	1,
+												major_increment:	5);
+							}
+							CPane(placement:		place_row,
+								horizontal:		align_left,
+								vertical:		align_fill,
+								spacing:			kLabelSpace,
+								view_target:		true,
+								view_binding:		kBind_XSizeable + kBind_FixedTop)
+							{
+								CStaticText(horizontal:		align_left,
+											vertical:		align_center,
+											view_binding:	kBind_FixedTopLeft,
+											view_id:		'fantasia/optionsbar/marquee/opacity/label',
+											view_tip:		'$$$/VanishingPoint/optionsbar/marquee/opacity/tip=Set the opacity of the copy.',
+											text:			'$$$/VanishingPoint/optionsbar/marquee/opacity/label=Opacity:',
+											scrub_id:		'fantasia/optionsbar/marquee/opacity',
+											text_align_x:	kAlign_Right,
+											text_align_y:	kAlign_Center);
+								CEditPopupSlider(horizontal:		align_left,
+												vertical:			align_center,
+												view_options:		kView_NoFocusOnClick,
+												view_binding:		kBind_FixedTopLeft,
+												view_id:			'fantasia/optionsbar/marquee/opacity',
+												control_font:		kFont_UIMicro,
+												max_characters:	  	3,
+												text_digits:		3,
+												slider_value:		100,
+												slider_minimum:	 	0,
+												slider_maximum:		100,
+												minor_increment:	1,
+												major_increment:	10);
+							}
+							CPane(placement:		place_row,
+								horizontal:		align_left,
+								vertical:		align_fill,
+								spacing:			kLabelSpace,
+								view_target:		true,
+								view_binding:		kBind_XSizeable + kBind_FixedTop)
+							{
+								CStaticText(horizontal:		align_left,
+											vertical:		align_center,
+											view_binding:	kBind_FixedTopLeft,
+											view_id:		'fantasia/optionsbar/marquee/blending/label',
+											view_tip:		'$$$/VanishingPoint/optionsbar/marquee/blending/tip=Set the blend post process for the copy.',
+											text:			'$$$/VanishingPoint/optionsbar/marquee/blending/label=Heal:',
+											text_align_x:	kAlign_Right,
+											text_align_y:	kAlign_Center);
+								CRadioPopup (horizontal:		align_left,
+										vertical:		align_center,
+										view_binding:	kBind_FixedTopLeft,
+										width:			kComboWidth,
+										view_id:			'fantasia/optionsbar/marquee/blending');
+							}
+							CPane(placement:		place_row,
+								horizontal:		align_left,
+								vertical:		align_fill,
+								spacing:			kLabelSpace,
+								view_target:		true,
+								view_binding:		kBind_XSizeable + kBind_FixedTop)
+							{
+								CStaticText(horizontal:		align_left,
+											vertical:		align_center,
+											view_binding:	kBind_FixedTopLeft,
+											view_id:		'fantasia/optionsbar/marquee/movemode/label',
+											view_tip:		'$$$/VanishingPoint/optionsbar/marquee/movemode/tip=Set the mode for moving the marquee.',
+											text:			'$$$/VanishingPoint/optionsbar/marquee/movemode/label=Move Mode:',
+											text_align_x:	kAlign_Right,
+											text_align_y:	kAlign_Center);
+								CRadioPopup (horizontal:		align_left,
+										vertical:		align_center,
+										view_binding:	kBind_FixedTopLeft,
+										width:			kComboWidth,
+										view_id:			'fantasia/optionsbar/marquee/movemode');
+							}
+						}
+					}
+				CCasePane (horizontal:		align_fill,
+			    		vertical:		align_fill,
+			    		view_binding:	kBind_FixedTopLeft,
+			    		view_id:			'fantasia/tool/stamp',
+			    		view_options:	kView_NoOptions + kView_Invisible)			    	   
+					{
+				    
+					CFramePane (placement:		place_row,
+								horizontal:		align_left,
+								vertical:		align_fill,
+								view_binding:	kBind_FixedTopLeft,
+								spacing:		kControlSpacing)
+						{
+							CFlyoutPopup (	horizontal:		align_left,
+											vertical:		align_center,
+											view_binding:	kBind_FixedTopLeft,
+											margin:			5,
+											view_id:		'fantasia/optionsbar/shared/Flyout',
+											view_tip:		'$$$/VanishingPoint/optionsbar/shared/Flyout=Settings and commands for Vanishing Point.'								
+											);
+							CPane(placement:		place_row,
+								horizontal:		align_left,
+								vertical:		align_fill,
+								spacing:			kLabelSpace,
+								view_target:		true,
+								view_binding:		kBind_XSizeable + kBind_FixedTop)
+							{
+								CStaticText(horizontal:		align_left,
+											vertical:		align_center,
+											view_binding:	kBind_FixedTopLeft,
+											view_id:		'fantasia/optionsbar/clone/width/label',
+											view_tip:		'$$$/VanishingPoint/optionsbar/clone/width/tip=Set the size of the brush ([) (]).',
+											text:			'$$$/VanishingPoint/optionsbar/clone/width/label=Diameter:',
+											scrub_id:		'fantasia/optionsbar/clone/width',
+											text_align_x:	kAlign_Right,
+											text_align_y:	kAlign_Center);
+								CEditPopupSlider(horizontal:		align_left,
+												vertical:			align_center,
+												view_options:		kView_NoFocusOnClick,
+												view_binding:		kBind_FixedTopLeft,
+												view_id:			'fantasia/optionsbar/clone/width',
+												control_font:		kFont_UIMicro,
+												max_characters:	  	3,
+												text_digits:		3,
+												slider_value:		1,
+												slider_minimum:	 	1,
+												slider_maximum:		500,
+												minor_increment:	5,
+												major_increment:	10);
+							}
+							CPane(placement:		place_row,
+								horizontal:		align_left,
+								vertical:		align_fill,
+								spacing:			kLabelSpace,
+								view_target:		true,
+								view_binding:		kBind_XSizeable + kBind_FixedTop)
+							{
+								CStaticText(horizontal:		align_left,
+											vertical:		align_center,
+											view_binding:	kBind_FixedTopLeft,
+											view_id:		'fantasia/optionsbar/clone/hardness/label',
+											view_tip:		'$$$/VanishingPoint/optionsbar/clone/hardness/tip=Set the hardness of the brush ({) (}).',
+											text:			'$$$/VanishingPoint/optionsbar/clone/hardness/label=Hardness:',
+											scrub_id:		'fantasia/optionsbar/clone/hardness',
+											text_align_x:	kAlign_Right,
+											text_align_y:	kAlign_Center);
+								CEditPopupSlider(horizontal:		align_left,
+												vertical:			align_center,
+												view_options:		kView_NoFocusOnClick,
+												view_binding:		kBind_FixedTopLeft,
+												view_id:			'fantasia/optionsbar/clone/hardness',
+												control_font:		kFont_UIMicro,
+												max_characters:	  	3,
+												text_digits:		3,
+												slider_value:		1,
+												slider_minimum:	 	0,
+												slider_maximum:		100,
+												minor_increment:	1,
+												major_increment:	5);
+							}
+							CPane(placement:		place_row,
+								horizontal:		align_left,
+								vertical:		align_fill,
+								spacing:			kLabelSpace,
+								view_target:		true,
+								view_binding:		kBind_XSizeable + kBind_FixedTop)
+							{
+								CStaticText(horizontal:		align_left,
+											vertical:		align_center,
+											view_binding:	kBind_FixedTopLeft,
+											view_id:		'fantasia/optionsbar/clone/opacity/label',
+											view_tip:		'$$$/VanishingPoint/optionsbar/clone/opacity/tip=Set the opacity of the brush.',
+											text:			'$$$/VanishingPoint/optionsbar/clone/opacity/label=Opacity:',
+											scrub_id:		'fantasia/optionsbar/clone/opacity',
+											text_align_x:	kAlign_Right,
+											text_align_y:	kAlign_Center);
+								CEditPopupSlider(horizontal:		align_left,
+												vertical:			align_center,
+												view_options:		kView_NoFocusOnClick,
+												view_binding:		kBind_FixedTopLeft,
+												view_id:			'fantasia/optionsbar/clone/opacity',
+												control_font:		kFont_UIMicro,
+												max_characters:	  	3,
+												text_digits:		3,
+												slider_value:		100,
+												slider_minimum:	 	1,
+												slider_maximum:		100,
+												minor_increment:	1,
+												major_increment:	10);
+							}
+							CPane(placement:		place_row,
+								horizontal:		align_left,
+								vertical:		align_fill,
+								spacing:			kLabelSpace,
+								view_target:		true,
+								view_binding:		kBind_XSizeable + kBind_FixedTop)
+							{
+								CStaticText(horizontal:		align_left,
+											vertical:		align_center,
+											view_binding:	kBind_FixedTopLeft,
+											view_id:		'fantasia/optionsbar/clone/blending/label',
+											view_tip:		'$$$/VanishingPoint/optionsbar/clone/blending/tip=Set the blend post process for the brush.',
+											text:			'$$$/VanishingPoint/optionsbar/clone/blending/label=Heal:',
+											text_align_x:	kAlign_Right,
+											text_align_y:	kAlign_Center);
+								CRadioPopup (horizontal:		align_left,
+										vertical:		align_center,
+										view_binding:	kBind_FixedTopLeft,
+										width:			kComboWidth,
+										view_id:			'fantasia/optionsbar/clone/blending');
+							}
+							CCheckButton (horizontal:		align_left,
+										vertical:			align_center,
+										view_options:		kView_NoFocusOnClick,
+										view_binding:		kBind_FixedTopRight,
+										view_id:			'fantasia/optionsbar/clone/align',
+										view_tip:			'$$$/VanishingPoint/optionsbar/clone/align/tip=Keep brush source in sync with the destination.',
+										button_label:		'$$$/VanishingPoint/optionsbar/clone/align/label=Aligned',
+										button_value:		kOn);
+						}
+					}
+				CCasePane (horizontal:		align_fill,
+			    		vertical:		align_fill,
+			    		view_binding:	kBind_FixedTopLeft,
+			    		view_id:			'fantasia/tool/transform',
+			    		view_options:	kView_NoOptions + kView_Invisible)			    	   
+					{
+				    
+					CFramePane (placement:		place_row,
+								horizontal:		align_left,
+								vertical:		align_fill,
+								view_binding:	kBind_FixedTopLeft,
+								spacing:		kControlSpacing)
+						{
+							CFlyoutPopup (	horizontal:		align_left,
+											vertical:		align_center,
+											view_binding:	kBind_FixedTopLeft,
+											margin:			5,
+											view_id:		'fantasia/optionsbar/shared/Flyout',
+											view_tip:		'$$$/VanishingPoint/optionsbar/shared/Flyout=Settings and commands for Vanishing Point.'								
+											);
+							CCheckButton (horizontal:		align_left,
+										vertical:			align_center,
+										view_options:		kView_NoFocusOnClick,
+										view_binding:		kBind_FixedTopRight,
+										view_id:			'fantasia/optionsbar/transform/flip',
+										view_tip:			'$$$/VanishingPoint/optionsbar/transform/flip/tip=Flip the copy.',
+										button_label:		'$$$/VanishingPoint/optionsbar/transform/flip/label=Flip',
+										button_value:		kOn);
+							CCheckButton (horizontal:		align_left,
+										vertical:			align_center,
+										view_options:		kView_NoFocusOnClick,
+										view_binding:		kBind_FixedTopRight,
+										view_id:			'fantasia/optionsbar/transform/flop',
+										view_tip:			'$$$/VanishingPoint/optionsbar/transform/flop/tip=Flop the copy.',
+										button_label:		'$$$/VanishingPoint/optionsbar/transform/flop/label=Flop',
+										button_value:		kOn);
+						}
+					}
+				CCasePane (horizontal:		align_fill,
+			    		vertical:		align_fill,
+			    		view_binding:	kBind_FixedTopLeft,
+			    		view_id:			'fantasia/tool/eyedropper',
+			    		view_options:	kView_NoOptions + kView_Invisible)			    	   
+					{
+				    
+					CFramePane (placement:		place_row,
+								horizontal:		align_left,
+								vertical:		align_fill,
+								view_binding:	kBind_FixedTopLeft,
+								spacing:		kControlSpacing)
+						{
+							CFlyoutPopup (	horizontal:		align_left,
+											vertical:		align_center,
+											view_binding:	kBind_FixedTopLeft,
+											margin:			5,
+											view_id:		'fantasia/optionsbar/shared/Flyout',
+											view_tip:		'$$$/VanishingPoint/optionsbar/shared/Flyout=Settings and commands for Vanishing Point.'								
+											);
+							CPane(placement:		place_row,
+								horizontal:		align_left,
+								vertical:		align_fill,
+								spacing:			kLabelSpace,
+								view_target:		true,
+								view_binding:		kBind_XSizeable + kBind_FixedTop)
+							{
+								CStaticText(horizontal:		align_left,
+											vertical:		align_center,
+											view_binding:	kBind_FixedTopLeft,
+											view_id:		'fantasia/optionsbar/brush/color/label',
+											view_tip:		'$$$/VanishingPoint/optionsbar/brush/color/tip=Set the color of the brush.',
+											text:			'$$$/VanishingPoint/optionsbar/brush/color/label=Brush Color:',
+											text_align_x:	kAlign_Right,
+											text_align_y:	kAlign_Center);
+														
+								CLEColorPane(horizontal:	align_center,
+											vertical:		align_center,
+											height:			16,
+											view_binding:	kBind_FixedTopLeft,
+											view_id:		'fantasia/optionsbar/brush/color');
+							}
+						}
+					}
+				CCasePane (horizontal:		align_fill,
+			    		vertical:		align_fill,
+			    		view_binding:	kBind_FixedTopLeft,
+			    		view_id:			'fantasia/tool/measure',
+			    		view_options:	kView_NoOptions + kView_Invisible)			    	   
+					{
+				    
+					CFramePane (placement:		place_row,
+								horizontal:		align_left,
+								vertical:		align_fill,
+								view_binding:	kBind_FixedTopLeft,
+								spacing:		kControlSpacing)
+						{
+							CFlyoutPopup (	horizontal:		align_left,
+											vertical:		align_center,
+											view_binding:	kBind_FixedTopLeft,
+											margin:			5,
+											view_id:		'fantasia/optionsbar/shared/Flyout',
+											view_tip:		'$$$/VanishingPoint/optionsbar/shared/Flyout=Settings and commands for Vanishing Point.'								
+											);
+							CPane(placement:		place_row,
+								horizontal:		align_left,
+								vertical:		align_fill,
+								spacing:			kLabelSpace,
+								view_target:		true,
+								view_binding:		kBind_XSizeable + kBind_FixedTop)
+							{
+								CStaticText(horizontal:		align_left,
+											vertical:		align_center,
+											view_binding:	kBind_FixedTopLeft,
+											view_id:		'fantasia/optionsbar/measure/length/label',
+											view_tip:		'$$$/VanishingPoint/optionsbar/measure/length/tip=Set the length of a selected measurement.',
+											text:			'$$$/VanishingPoint/optionsbar/measure/length/label=Length:',
+											scrub_id:		'fantasia/optionsbar/measure/length',
+											text_align_x:	kAlign_Right,
+											text_align_y:	kAlign_Center);
+								CEditPopupSlider(horizontal:		align_left,
+												vertical:			align_center,
+												view_options:		kView_NoFocusOnClick,
+												view_binding:		kBind_FixedTopLeft,
+												view_id:			'fantasia/optionsbar/measure/length',
+												control_font:		kFont_UIMicro,
+												number_format:		kNumber_Decimal,
+												max_characters:	  	7,
+												text_digits:		7,
+												slider_value:		10,
+												slider_minimum:	 	1,
+												slider_maximum:		999,
+												minor_increment:	1,
+												major_increment:	100);
+							}
+							CCheckButton (horizontal:		align_left,
+										vertical:			align_center,
+										view_options:		kView_NoFocusOnClick,
+										view_binding:		kBind_FixedTopRight,
+										view_id:			'fantasia/optionsbar/measure/linkMeasureWithGridSize',
+										view_tip:			'$$$/VanishingPoint/optionsbar/measure/linkMeasureWithGridSize/tip=Link Measurement Units with Grid Size.',
+										button_label:		'$$$/VanishingPoint/optionsbar/measure/linkMeasureWithGridSize/label=Link Measurements to Grid',
+										button_value:		kOn);
+						}
+					}
+				CCasePane (horizontal:		align_fill,
+			    		vertical:		align_fill,
+			    		view_binding:	kBind_FixedTopLeft,
+			    		view_id:			'fantasia/tool/brush',
+			    		view_options:	kView_NoOptions + kView_Invisible)			    	   
+					{
+				    
+					CFramePane (placement:		place_row,
+								horizontal:		align_left,
+								vertical:		align_fill,
+								view_binding:	kBind_FixedTopLeft,
+								spacing:		kControlSpacing)
+						{
+							CFlyoutPopup (	horizontal:		align_left,
+											vertical:		align_center,
+											view_binding:	kBind_FixedTopLeft,
+											margin:			5,
+											view_id:		'fantasia/optionsbar/shared/Flyout',
+											view_tip:		'$$$/VanishingPoint/optionsbar/shared/Flyout=Settings and commands for Vanishing Point.'								
+											);
+							CPane(placement:		place_row,
+								horizontal:		align_left,
+								vertical:		align_fill,
+								spacing:			kLabelSpace,
+								view_target:		true,
+								view_binding:		kBind_XSizeable + kBind_FixedTop)
+							{
+								CStaticText(horizontal:		align_left,
+											vertical:		align_center,
+											view_binding:	kBind_FixedTopLeft,
+											view_id:		'fantasia/optionsbar/brush/width/label',
+											view_tip:		'$$$/VanishingPoint/optionsbar/brush/width/tip=Set the size of the brush ([) (]).',
+											text:			'$$$/VanishingPoint/optionsbar/brush/width/label=Diameter:',
+											scrub_id:		'fantasia/optionsbar/brush/width',
+											text_align_x:	kAlign_Right,
+											text_align_y:	kAlign_Center);
+								CEditPopupSlider(horizontal:		align_left,
+												vertical:			align_center,
+												view_options:		kView_NoFocusOnClick,
+												view_binding:		kBind_FixedTopLeft,
+												view_id:			'fantasia/optionsbar/brush/width',
+												control_font:		kFont_UIMicro,
+												max_characters:	  	3,
+												text_digits:		3,
+												slider_value:		1,
+												slider_minimum:	 	1,
+												slider_maximum:		500,
+												minor_increment:	5,
+												major_increment:	10);
+							}
+							CPane(placement:		place_row,
+								horizontal:		align_left,
+								vertical:		align_fill,
+								spacing:			kLabelSpace,
+								view_target:		true,
+								view_binding:		kBind_XSizeable + kBind_FixedTop)
+							{
+								CStaticText(horizontal:		align_left,
+											vertical:		align_center,
+											view_binding:	kBind_FixedTopLeft,
+											view_id:		'fantasia/optionsbar/brush/hardness/label',
+											view_tip:		'$$$/VanishingPoint/optionsbar/brush/hardness/tip=Set the hardness of the brush ({) (}).',
+											text:			'$$$/VanishingPoint/optionsbar/brush/hardness/label=Hardness:',
+											scrub_id:		'fantasia/optionsbar/brush/hardness',
+											text_align_x:	kAlign_Right,
+											text_align_y:	kAlign_Center);
+								CEditPopupSlider(horizontal:		align_left,
+												vertical:			align_center,
+												view_options:		kView_NoFocusOnClick,
+												view_binding:		kBind_FixedTopLeft,
+												view_id:			'fantasia/optionsbar/brush/hardness',
+												control_font:		kFont_UIMicro,
+												max_characters:	  	3,
+												text_digits:		3,
+												slider_value:		1,
+												slider_minimum:	 	0,
+												slider_maximum:		100,
+												minor_increment:	1,
+												major_increment:	5);
+							}
+							CPane(placement:		place_row,
+								horizontal:		align_left,
+								vertical:		align_fill,
+								spacing:			kLabelSpace,
+								view_target:		true,
+								view_binding:		kBind_XSizeable + kBind_FixedTop)
+							{
+								CStaticText(horizontal:		align_left,
+											vertical:		align_center,
+											view_binding:	kBind_FixedTopLeft,
+											view_id:		'fantasia/optionsbar/brush/opacity/label',
+											view_tip:		'$$$/VanishingPoint/optionsbar/brush/opacity/tip=Set the opacity of the brush.',
+											text:			'$$$/VanishingPoint/optionsbar/brush/opacity/label=Opacity:',
+											scrub_id:		'fantasia/optionsbar/brush/opacity',
+											text_align_x:	kAlign_Right,
+											text_align_y:	kAlign_Center);
+								CEditPopupSlider(horizontal:		align_left,
+												vertical:			align_center,
+												view_options:		kView_NoFocusOnClick,
+												view_binding:		kBind_FixedTopLeft,
+												view_id:			'fantasia/optionsbar/brush/opacity',
+												control_font:		kFont_UIMicro,
+												max_characters:	  	3,
+												text_digits:		3,
+												slider_value:		100,
+												slider_minimum:	 	1,
+												slider_maximum:		100,
+												minor_increment:	1,
+												major_increment:	10);
+							}
+							CPane(placement:		place_row,
+								horizontal:		align_left,
+								vertical:		align_fill,
+								spacing:			kLabelSpace,
+								view_target:		true,
+								view_binding:		kBind_XSizeable + kBind_FixedTop)
+							{
+								CStaticText(horizontal:		align_left,
+											vertical:		align_center,
+											view_binding:	kBind_FixedTopLeft,
+											view_id:		'fantasia/optionsbar/brush/blending/label',
+											view_tip:		'$$$/VanishingPoint/optionsbar/brush/blending/tip=Set the blend post process for the brush.',
+											text:			'$$$/VanishingPoint/optionsbar/brush/blending/label=Heal:',
+											text_align_x:	kAlign_Right,
+											text_align_y:	kAlign_Center);
+								CRadioPopup (horizontal:		align_left,
+										vertical:		align_center,
+										view_binding:	kBind_FixedTopLeft,
+										width:			kComboWidth,
+										view_id:			'fantasia/optionsbar/brush/blending');
+							}
+							CPane(placement:		place_row,
+								horizontal:		align_left,
+								vertical:		align_fill,
+								spacing:			kLabelSpace,
+								view_target:		true,
+								view_binding:		kBind_XSizeable + kBind_FixedTop)
+							{
+								CStaticText(horizontal:		align_left,
+											vertical:		align_center,
+											view_binding:	kBind_FixedTopLeft,
+											view_id:		'fantasia/optionsbar/brush/color/label',
+											view_tip:		'$$$/VanishingPoint/optionsbar/brush/color/tip=Set the color of the brush.',
+											text:			'$$$/VanishingPoint/optionsbar/brush/color/label=Brush Color:',
+											text_align_x:	kAlign_Right,
+											text_align_y:	kAlign_Center);
+														
+								CLEColorPane(horizontal:	align_center,
+											vertical:		align_center,
+											height:			16,
+											view_binding:	kBind_FixedTopLeft,
+											view_id:		'fantasia/optionsbar/brush/color');
+							}
+						}
+					}
+				CCasePane (horizontal:		align_fill,
+			    		vertical:		align_fill,
+			    		view_binding:	kBind_FixedTopLeft,
+			    		view_id:			'fantasia/tool/hand',
+			    		view_options:	kView_NoOptions + kView_Invisible)			    	   
+					{
+				    
+					CFramePane (placement:		place_row,
+								horizontal:		align_left,
+								vertical:		align_fill,
+								view_binding:	kBind_FixedTopLeft,
+								spacing:		kControlSpacing)
+						{
+							CFlyoutPopup (	horizontal:		align_left,
+											vertical:		align_center,
+											view_binding:	kBind_FixedTopLeft,
+											margin:			5,
+											view_id:		'fantasia/optionsbar/shared/Flyout',
+											view_tip:		'$$$/VanishingPoint/optionsbar/shared/Flyout=Settings and commands for Vanishing Point.'								
+											);
+						}
+					}
+				CCasePane (horizontal:		align_fill,
+			    		vertical:		align_fill,
+			    		view_binding:	kBind_FixedTopLeft,
+			    		view_id:			'fantasia/tool/zoom',
+			    		view_options:	kView_NoOptions + kView_Invisible)			    	   
+					{
+				    
+					CFramePane (placement:		place_row,
+								horizontal:		align_left,
+								vertical:		align_fill,
+								view_binding:	kBind_FixedTopLeft,
+								spacing:		kControlSpacing)
+						{
+							CFlyoutPopup (	horizontal:		align_left,
+											vertical:		align_center,
+											view_binding:	kBind_FixedTopLeft,
+											margin:			5,
+											view_id:		'fantasia/optionsbar/shared/Flyout',
+											view_tip:		'$$$/VanishingPoint/optionsbar/shared/Flyout=Settings and commands for Vanishing Point.'								
+											);
+						}
+					}
+				}
+				CFramePane(placement:	place_column,
+						horizontal:		align_fill,
+						vertical:		align_top,
+						frame_style:	kFramePrimaryGroup,
+						margin:			0,
+						spacing:		0,
+						view_binding:	kBind_Sizeable)
+				{
+					CFramePane(placement:	place_row,
+							horizontal:		align_fill,
+							vertical:		align_fill,
+							margin:			3,
+							spacing:		4,
+							view_binding:	kBind_Sizeable)
+					{
+						CStaticImage (width:		23,
+									  height:		23,
+									  horizontal:	align_left,
+									  vertical:		align_center,
+									  view_tip:		'$$$/VanishingPoint/optionsbar/shared/helpicon=Look here for tips on working with tools and using modifier keys.',								
+									  view_binding:	kBind_FixedTopLeft,
+									  icon:			'P_Info_Md.png');
+						CStaticText(horizontal:		align_fill,
+						vertical:		align_center,
+						view_binding:	kBind_Sizeable,
+						view_id:		'fantasia/help_text',
+						text:			'$$$/VanishingPoint/help_text/no_not_localize=sizing holder',
+						text_align_x:	kAlign_Left,
+						text_align_y:	kAlign_Center);
+					}
+				}
+			}
+
+			CFramePane(placement:	place_column,
+					horizontal:		align_right,
+					vertical:		align_top,
+					margin:			5,
+					spacing:		8,
+					view_binding:	kBind_FixedTopRight)
+			{
+				CPushButton(width:			140,
+							horizontal:		align_fill,
+							vertical:		align_top,
+							view_binding:	kBind_FixedTopRight,
+							view_id:		'Project/Dialog/OKButton',
+							button_label:	'$$$/VanishingPoint/OKButton=OK',
+							default_button:	true);
+				CPushButton(width:			140,
+							horizontal:		align_fill,
+							vertical:		align_top,
+							view_options:	kView_SupressSurrenders,
+							view_binding:	kBind_FixedTopRight,
+							view_id:		'Project/Dialog/CancelButton',
+							button_label:	'$$$/VanishingPoint/CancelButton=Cancel',
+							cancel_button:	true);
+			}
+		}
+		CFramePane(placement:	place_row,
+				horizontal:		align_fill,
+				vertical:		align_fill,
+				margin_top:		0,
+				margin_left:	0,
+				margin_bottom:	0,
+				margin_right:	0,
+				spacing:		0,
+				view_binding:	kBind_Sizeable)
+		{		
+			CFramePane(placement:	place_column,
+					horizontal:		align_fill,
+					vertical:		align_fill,
+					margin:			0,
+					view_binding:	kBind_Sizeable)
+			{
+				CScroller(		placement:				place_offscreen,
+								horizontal:				align_fill,
+								vertical:				align_fill,
+								view_options:			kView_Target,
+								view_binding:			kBind_Sizeable,
+								view_id:				'Project/Dialog/CanvasScroller',
+								scroller_attributes:	kScroller_XBar +
+														kScroller_YBar +
+														kScroller_SizeBox +
+														kScroller_WellFrame,
+								scroller_gap_left:		kZoomCombo_DefaultWidth)
+				{
+					CZoomProgressCombo(frame_interior:	kInterior_ScrollerGapLeft,
+									view_binding:	kBind_FixedBottomLeft,
+									view_id:			'Project/Dialog/ZoomCombo',
+									in_scroll_gap:	true);
+					CanvasViewPane(	width:				512,
+									height:				512,
+									frame_interior:		kInterior_ScrollerPane,
+									view_options:			kView_Target +
+															kView_Bullseye +
+															kView_ChunkyScroll +
+															kView_DrawBuffer,
+									view_binding:			kBind_Sizeable + kBind_Scrollable,
+									view_id:				'Project/Dialog/CanvasView',
+									zoom_min:				 '0.001',
+									zoom_max:				'16.000',
+									fit_in_view_cushion:	3,
+									view_draw_buffer:	true);
+				}
+			}
+		}
+	}
+}

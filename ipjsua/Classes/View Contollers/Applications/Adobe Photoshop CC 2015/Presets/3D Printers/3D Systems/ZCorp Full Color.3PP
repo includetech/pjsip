@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Printer>
+	<Version value='1' />
+	<PrintLocation value='Local' />
+	<PrintVolume X='250' Y='380' Z='200' />
+	<PrinterResolution X='4.5' Y='4.5' Z='4.5' />
+	<MeshRepairResolution value='7' />
+	<PrinterHeads value='1' />
+	<PrinterSupportsUSB flag='0' />
+	<PreferredFileFormat value='wrl' />
+	<NeedsZip flag='0' />
+	<FullColor flag='1' />
+	<Quality value='high'>
+		<MeshRepairResolution value='8' />
+	</Quality>
+	<Quality value='medium'>
+		<MeshRepairResolution value='7' />
+	</Quality>
+	<Quality value='low'>
+		<MeshRepairResolution value='6' />
+	</Quality>
+</Printer>
+<Materials>
+	<Material name='Sandstone'>
+		<NeedsRaft flag='0' />
+		<NeedsSupports flag='0' />
+		<NeedsEscapeHoles flag='1' />
+		<MinimumWallThickness value='2' featureSize='2' />
+		<PricePerCubicCM value='0.75' />
+		<PricePrefix value='$' />
+		<PriceSuffix value=' USD' />
+		<Handling value='3.0' />
+		<Diffuse R='0.8' G='0.7' B='0.58' />
+		<Specular R='0.145' G='0.127' B='0.111' />
+		<Illumination R='0' G='0' B='0' />
+		<Ambient R='0' G='0' B='0' />
+		<Shine value='0.25' />
+		<Reflection value='0.05' />
+		<Roughness value='0.4' />
+		<Bump value='0.1' />
+		<Opacity value='1' />
+		<Refraction value='1' />
+	</Material>
+</Materials>

@@ -1,0 +1,9 @@
+<svg width="21" height="7" viewBox="0 0 21 7" xmlns="http://www.w3.org/2000/svg">
+    <title>
+        connected
+    </title>
+    <g transform="translate(-1540 -74) translate(1540 75)" stroke="#E9E9E8" fill="none" fill-rule="evenodd">
+        <path d="M.5 2.5h20" stroke-linecap="square"/>
+        <circle fill="#D8D8D8" cx="10.5" cy="2.5" r="2.5"/>
+    </g>
+</svg>

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xmp_definitions>
+  <xmp_schema prefix='xmpCA' namespace='http://ns.adobe.com/xmp/1.0/ContentAnalysis/' description='$$$/xmp/xmpCA_description=Properties used for Content Analysis.' label='$$$/xmp/xmpCA_label=Content Analysis'>
+    <xmp_property name='analyzers' category='internal' type='bag' description='$$$/xmp/xmpCA/analyzers_description=List of analyzers performed on media.' element_type='analyzer' label='$$$/xmp/xmpCA/analyzers_label=Analyzers'/>
+  </xmp_schema>
+  <xmp_type name='analyzer' description='$$$/xmp/xmpCA/analyzer_description=Analyzer details.' label='$$$/xmp/xmpCA/analyzer_label=Analyzer'>
+    <xmp_field prefix='xmpCA' name='type' type='openchoice' namespace='http://ns.adobe.com/xmp/1.0/ContentAnalysis/' description='$$$/xmp/xmpCA/analyzer/type_description=What kind of Content Analysis was performed.' element_type='text' label='$$$/xmp/xmpCA/analyzer/type_label=Type'/>
+    <xmp_field prefix='xmpCA' name='version' type='real' namespace='http://ns.adobe.com/xmp/1.0/ContentAnalysis/' description='$$$/xmp/xmpCA/analyzer/version_description=Version number of analyzer.' label='$$$/xmp/xmpCA/analyzer/version_label=Version'/>
+    <xmp_field prefix='xmpCA' name='manufacturer' type='text' namespace='http://ns.adobe.com/xmp/1.0/ContentAnalysis/' description='$$$/xmp/xmpCA/analyzer/manufacturer_description=Name of analyzer manufacture.' label='$$$/xmp/xmpCA/analyzer/manufacturer_label=Manufacturer'/>
+    <xmp_field prefix='xmpCA' name='performed' type='date' namespace='http://ns.adobe.com/xmp/1.0/ContentAnalysis/' description='$$$/xmp/xmpCA/analyzer/performed_description=Time of last successful analysis.' label='$$$/xmp/xmpCA/analyzer/performed_label=Last successful analysis'/>
+  </xmp_type>    
+</xmp_definitions>

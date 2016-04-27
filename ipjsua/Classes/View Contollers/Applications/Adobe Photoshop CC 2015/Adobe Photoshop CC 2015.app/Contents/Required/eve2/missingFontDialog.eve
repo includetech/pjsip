@@ -1,0 +1,126 @@
+layout missingFontDialog
+    {
+    view TMissingFontDialog(identifier         : @missingFontDialog,
+                            placement          : place_column,
+                            qDebugDraw         : false,
+                            name               : "$$$/Dialog/MissingFontsDialog/Title=Missing Fonts",
+                            dboxProcIdentifier : -1,
+                            isResizable        : true)
+        {
+        TView(horizontal : align_fill,
+              placement  : place_row,
+              identifier : @blackRibbon,
+              margin     : [ 10, 20, 10, 20 ])
+            {
+            TIconImageView(iconRootName : "CCLogoWithLabel",
+                           vertical     : align_center);
+
+            TView(placement        : place_overlay,
+                  vertical         : align_center,
+                  horizontal       : align_right,
+                  child_vertical   : align_center,
+                  child_horizontal : align_right)
+                {
+                TView(identifier : @fontSyncUIEnabled,
+                      placement  : place_row,
+                      spacing    : gGap)
+                    {
+                    TStaticText(identifier : @typekitIsOn,
+                                font       : staticSmallFont,
+                                wincontrol : false,
+                                name       : "$$$/Dialog/MissingFontsDialog/TypekitOn=Typekit is On");
+
+                    TIconImageView(iconRootName : "TypekitFontSyncEnabled");
+                    }
+
+                TView(identifier : @fontSyncUINotEntitled,
+                      placement  : place_row,
+                      spacing    : gGap)
+                    {
+                    TStaticText(identifier : @typekitIsNotEntitled,
+                                font       : staticSmallFont,
+                                wincontrol : false,
+                                name       : "$$$/Dialog/MissingFontsDialog/TypekitNotEntitled=Typekit has been disabled by your IT administrator");
+
+                    TIconImageView(identifier   : @typekitIsNotEntitledIcon,
+                                   iconRootName : "TypekitFontSyncDisabled");
+                    }
+
+                TView(identifier : @fontSyncUIDisabled,
+                      placement  : place_row,
+                      spacing    : gGap)
+                    {
+                    TStaticText(identifier : @typekitIsOff,
+                                wincontrol : false,
+                                font       : staticSmallFont,
+                                name       : "$$$/Dialog/MissingFontsDialog/TypekitOff=Typekit is Off");
+
+                    TIconImageView(identifier   : @typekitIsOffIcon,
+                                   iconRootName : "TypekitFontSyncDisabled");
+                    }
+                }
+            }
+
+        column(margin     : [ 0, 20, 20, 20 ],
+               horizontal : align_fill,
+               vertical   : align_fill)
+            {
+            row(horizontal : align_fill)
+                {
+                TView(placement : place_overlay,
+                      vertical  : align_center)
+                    {
+                    TIconImageView(iconRootName : "Typekit_Large_Logo",
+                                   identifier   : @typekitIcon);
+
+                    TIconImageView(iconRootName : "Typekit_Alert",
+                                   identifier   : @alertIcon);
+
+                    TIconSeriesView (width      : 64,
+                                     height     : 64,
+                                     identifier : @spinner);
+                    }
+
+                TStaticText(identifier : @missingFontTextDump,
+                            horizontal : align_fill,
+                            vertical   : align_center,
+                            autoWrap   : true,
+                            name       : "$$$/Dialog/MissingFontsDialog/Prompt=Stub");
+                }
+
+            TScroller(identifier     : @scroller, 
+                      horizontal     : align_fill,
+                      vertical       : align_fill,
+                      verticalScroll : true,
+                      placement      : place_row)
+                {
+                TMissingFontListView(identifier : @missingFontCells,
+                                     horizontal : align_fill,
+                                     vertical   : align_fill,
+                                     width      : 500,
+                                     height     : 180);
+                }
+
+            row(horizontal     : align_fill,
+                spacing        : gGap,
+                child_vertical : align_center)
+                {
+                TCheckBox(identifier : @dontShowOnDocumentOpen,
+                          name       : "$$$/Dialog/MissingFontsDialog/DontShowOnDocumentOpen=Don't show on document open");
+
+                TButton (name       : "$$$/ControlsStrings/Cancel=Cancel",
+                         dismiss    : true,
+                         horizontal : align_right,
+                         identifier : @cancel,
+                         width      : 100);
+
+                TButton (name       : "$$$/Dialog/MissingFontsDialog/ResolveFonts=Resolve Fonts",
+                         identifier : @ok,
+                         horizontal : align_right,
+                         default    : true,
+                         dismiss    : true,
+                         width      : 100);
+                }
+            }
+        }
+    }

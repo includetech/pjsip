@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Printer>
+  <Version value='1' />
+  <PrintLocation value='Local' />
+  <PreferredFileFormat value='makerbot' />
+  
+  <PrinterFirmwareSignature value='replicator5-z18-1head-pla@rep5Z18pla' />
+  <USBIDs>
+  	<USBID VID='23C1' PID='B015'/>
+  </USBIDs>
+  <PrinterUSBDriverURLWIN value='http://www.makerbot.com/makerware/' />
+  <PrinterUSBDriverURLMAC value='http://www.makerbot.com/makerware/' />
+
+  <PrintVolume X='280' Y='280' Z='440' />
+    <SupportColor R='1.0' G='0.369' B='0.0' />
+    <RaftColor R='1.0' G='0.671' B='0.0' />
+    <CleaningTowerColor R='1.0' G='0.886' B='0.0' />
+    <Thumbnails>
+	<Thumbnail Filename="thumbnail_55x40.png" Width=55 Height=40/>
+	<Thumbnail Filename="thumbnail_110x80.png" Width=110 Height=80/>
+	<Thumbnail Filename="thumbnail_320x200.png" Width=320 Height=200/>
+    </Thumbnails>
+  <MaxCoordinates X='280' Y='280' Z='440' />
+  <PrinterResolution X='3' Y='3' Z='10' />
+	<MeshRepairResolution value='7' />
+  <PrinterHeads value='1' />  
+  <PrinterSupportsUSB flag='1' />	
+	<FansPerHead value='2' />
+  <MoveStepsPerMM X='88.573186' Y='88.573186' Z='400' />
+  <RealShapeOffset value='0' />
+  <NozzleThickness value='0.4' />
+  <AxialHomingSupported flag='1' />
+	<HeatedPlatformSupported flag='0' />
+	<ExtrudersWaitForHeatedPlatform flag='0' />
+  <NegativeCoordinatesSupported flag='1' />
+	<ResetExtrusionLength flag='0' />
+	<PrinterHeadOffset id='1' X='33' Y='0' />
+	<AnchorLength value='15' />
+	<GCODE_WaitForCorrectTempCommandId value='6' />
+	<GCODE_SetTempForWaitForCorrectTempCommand flag='0' />
+	<GCODE_SetAbsExtruderModeCommandId value='-1' />
+	<GCODE_DisableMotorsCommandId value='18' />
+	<GCODE_SetPlatformTempCommandId value='109' />
+	<FilamentLoadFeedrate value='70' />
+	<FilamentLoadExtrusionLength value='50' />
+	<FilamentUnloadRetractionLength	value='30' />
+  <Quality value='high'>
+	<MeshRepairResolution value='8' />
+    <LayerThickness value='0.25' />
+		<ExtrusionWidth value='0.5' />    
+    <MaxHorizontalTraversalFeedrate value='6000' />
+    <MinHorizontalFeedrate value='350' />
+		<StartHorizontalTraversalFeedrate value='1100' />
+		<HorizontalTraversalAccelerationTime value='0.3' />	  
+    <MaxVerticalTraversalFeedrate value='1100' />
+		<TraversalZOffset value='0.35' />
+    <OutlineFeedrate value='1800' />
+		<InteriorOutlineFeedrate value='2000' />
+		<SolidFillFeedrate value='2600' />
+		<LatticeFillFeedrate value='3400' />
+		<RaftFirstLayerFeedrate value='2080' />
+		<RaftFeedrate value='2600' />
+		<RaftFirstLayerFill value='0.2' />
+		<RaftFill value='0.4' />
+    <RetractionFeedrate value='500' />
+    <RetractionLength value='0.1' />
+		<ExtraAfterRetractionMoveLength value='0.50' />
+		<OutlineOverlap value='0.05' />
+		<SolidFillOverlap value='0.135' />
+		<SolidFillOutlineOverlap value='0.5' />    		
+		<FirstLayerRelativeSpeed value='0.75' />
+		<FirstLayerRelativeExtrusion value='1.25' />
+		<LatticeFillPattern value='CrossDiagonal' />
+		<NozzleRelZOffset value='0.7' />
+		<FanDisabledForFirstLayers fanId='1' value='1' />
+  </Quality>
+  <Quality value='medium'>
+    <MeshRepairResolution value='7' />
+    <LayerThickness value='0.25' />
+  </Quality>
+  <Quality value='low'>
+    <MeshRepairResolution value='6' />
+    <LayerThickness value='0.25' />
+  </Quality>
+  <Supports>
+		<ExtraSupportShells value='3' />
+    <ReferenceSupportSize value='1.75' />
+    <RealReferenceSupportSize value='1.75' />
+    <ReferenceSupportHeight value='20' />			
+    <MinSupportSize value='2.0' />
+    <TopConnectorSize value='1.40' />
+  </Supports>
+</Printer>
+<Materials>
+	<Material name='PLA'>
+		<NeedsRaft flag='1' />
+		<NeedsSupports flag='1' />
+		<NeedsEscapeHoles flag='0' />
+		<MaterialType value='PLA' />
+		<HeadTemperature value='215' />
+		<MaxPlatformTemperature value='0' />
+		<FilamentDiameter value='1.75' />
+		<ExtrusionMultiplier value='0.91' />
+		<TimeToSolidify value='5' />
+		<Diffuse R='0.9' G='0.87' B='0.77' />
+		<Specular R='0.35' G='0.35' B='0.3' />
+		<Illumination R='0' G='0' B='0' />
+		<Ambient R='0' G='0' B='0' />
+		<Shine value='0.25' />
+		<Reflection value='0.03' />
+		<Roughness value='0.01' />
+		<Bump value='0.1' />
+		<Opacity value='0.925' />
+		<Refraction value='1.018' />
+		<PreviewVolumeNoiseDisplay>
+			<NoiseOn flag='1' />
+			<NoiseMagnitude value='0.6' />
+			<HigherFrequencyMagnitudeReduction value='2.0' />
+			<HigherFrequencyLookupOffset value='1.5' />
+			<CubicCentimeterLookupScale value='5.0' />
+		</PreviewVolumeNoiseDisplay>
+	</Material>
+</Materials>
+<PrintPlateLeveling>
+
+<!- 	  DisplayPointIndex is the index of the displayed point in the dialog that's closest to the current checkpoint, following this convention:
+
+	  0-----1-----2
+	  |     |     |
+	  |     |     |
+	  3-----4-----5
+	  |     |     |
+	  |     |     |
+	  6-----7-----8 
+
+	  (0 is farther left corner, 2 is farther right corner,  8 is near right corner, etc.)
+
+-->
+	<NormalizedHomePosition X='1.0' Y='1.0' DisplayPointIndex='2' />
+	<Rivets>
+		<Rivet0 X='0.5' Y='1.0' />
+		<Rivet1 X='0.8' Y='0.0' />
+		<Rivet2 X='0.2' Y='0.0' />
+	</Rivets>
+	<Checkpoints>
+		<Checkpoint0 X='0.5' Y='1.0' ControlRivet='0' DisplayPointIndex='1' />
+		<Checkpoint1 X='0.8' Y='0.0' ControlRivet='1' DisplayPointIndex='8' />
+		<Checkpoint2 X='0.2' Y='0.0' ControlRivet='2' DisplayPointIndex='6' />
+		<Checkpoint3 X='0.5' Y='1.0' ControlRivet='0' DisplayPointIndex='1' />
+		<Checkpoint4 X='0.95' Y='0.0' ControlRivet='1' DisplayPointIndex='8' />
+		<Checkpoint5 X='0.05' Y='0.0' ControlRivet='2' DisplayPointIndex='6' />
+		<Checkpoint6 X='0.5' Y='0.5'  ControlRivet='100' DisplayPointIndex='4' />
+	</Checkpoints>
+</PrintPlateLeveling>

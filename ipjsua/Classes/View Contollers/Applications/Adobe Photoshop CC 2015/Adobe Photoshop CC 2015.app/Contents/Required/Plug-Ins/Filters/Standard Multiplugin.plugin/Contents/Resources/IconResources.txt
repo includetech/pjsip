@@ -1,0 +1,46 @@
+{
+	Name: "Icon Source File",
+	Version: "1.0",
+	LowResolutionDataFile: "IconsLowRes.dat",
+	HighResolutionDataFile: "IconsHighRes.dat",
+
+	Include: [
+		"MondoIcons.txt",
+		"MondoCursors.txt"
+		],
+	Icons: {
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

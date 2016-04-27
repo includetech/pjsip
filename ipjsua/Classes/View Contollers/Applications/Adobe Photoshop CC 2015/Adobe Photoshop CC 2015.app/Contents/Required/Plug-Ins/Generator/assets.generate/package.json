@@ -1,0 +1,32 @@
+{
+  "name": "generator-assets",
+  "version": "2.3.0-dev",
+  "description": "Asset generation plug-in for Photoshop Generator",
+  "main": "main.js",
+  "generator-core-version": "^3.4.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adobe-photoshop/generator-assets"
+  },
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "scripts": {
+    "test": "node node_modules/.bin/nodeunit test"
+  },
+  "dependencies": {
+    "fs-extra": "^0.16.3",
+    "q": "~1.0",
+    "svgobjectmodelgenerator": "git+ssh://git@git.corp.adobe.com:WebPA/svgObjectModelGenerator.git#release-0.4",
+    "tmp": "~0.0.24"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-jshint": "~0.10",
+    "grunt-contrib-nodeunit": "~0.3",
+    "grunt-jscs": "~0.6.1",
+    "grunt-peg": "~1.2",
+    "nodeunit": "~0.8",
+    "pegjs": "~0.8",
+    "jscs-trailing-whitespace-in-source": "0.0.1"
+  }
+}

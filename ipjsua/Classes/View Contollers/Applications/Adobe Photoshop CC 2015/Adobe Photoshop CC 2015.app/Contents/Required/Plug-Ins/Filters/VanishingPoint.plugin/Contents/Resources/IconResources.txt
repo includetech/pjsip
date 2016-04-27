@@ -1,0 +1,346 @@
+{
+	Name: "Icon Source File",
+	Version: "1.0",
+	LowResolutionDataFile: "IconsLowRes.dat",
+	HighResolutionDataFile: "IconsHighRes.dat",
+
+	Include: [
+		"MondoIcons.txt",
+		"MondoCursors.txt"
+		],
+	Icons: {
+    
+           Alpha_2000: {
+			HighResolution: {
+				HotX: 2,
+				HotY: 2,
+				Normal: "cursor_x2/Cur_x2_DirectSelectPlane_2_2.png"
+			},
+			LowResolution: {
+				HotX: 1,
+				HotY: 1,
+				Normal: "cursor_x1/Cur_DirectSelectPlane_1_1.png"
+			}
+		},
+		Alpha_2001: {
+			HighResolution: {
+				HotX: 18,
+				HotY: 18,
+				Normal: "cursor_x2/Cur_x2_CubeCrossSelection_18_18.png"
+			},
+			LowResolution: {
+				HotX: 9,
+				HotY: 9,
+				Normal: "cursor_x1/Cur_CubeCrossSelection_9_9.png"
+			}
+		},
+		Alpha_2002: {
+			HighResolution: {
+				HotX: 2,
+				HotY: 2,
+				Normal: "cursor_x2/Cur_x2_MoveCopyChange_2_2.png"
+			},
+			LowResolution: {
+				HotX: 1,
+				HotY: 1,
+				Normal: "cursor_x1/Cur_MoveCopyChange_1_1.png"
+			}
+		},
+		Alpha_2003: {
+			HighResolution: {
+				HotX: 2,
+				HotY: 2,
+				Normal: "cursor_x2/Cur_x2_DirectSelect_2_2.png"
+			},
+			LowResolution: {
+				HotX: 1,
+				HotY: 1,
+				Normal: "cursor_x1/Cur_DirectSelect_1_1.png"
+			}
+		},
+		Alpha_2004: {
+			HighResolution: {
+				HotX: 2,
+				HotY: 2,
+				Normal: "cursor_x2/Cur_x2_DirectMoveSelection_2_2.png"
+			},
+			LowResolution: {
+				HotX: 1,
+				HotY: 1,
+				Normal: "cursor_x1/Cur_DirectMoveSelection_1_1.png"
+			}
+		},
+		Alpha_2005: {
+			HighResolution: {
+				HotX: 2,
+				HotY: 2,
+				Normal: "cursor_x2/Cur_x2_MovePlane_2_2.png"
+			},
+			LowResolution: {
+				HotX: 1,
+				HotY: 1,
+				Normal: "cursor_x1/Cur_MovePlane_1_1.png"
+			}
+		},
+		Alpha_2006: {
+			HighResolution: {
+				HotX: 2,
+				HotY: 2,
+				Normal: "cursor_x2/Cur_x2_Move_2_2.png"
+			},
+			LowResolution: {
+				HotX: 1,
+				HotY: 1,
+				Normal: "cursor_x1/Cur_Move_1_1.png"
+			}
+		},
+		Alpha_2007: {
+			HighResolution: {
+				HotX: 18,
+				HotY: 18,
+				Normal: "cursor_x2/Cur_x2_CreatePlane_18_18.png"
+			},
+			LowResolution: {
+				HotX: 9,
+				HotY: 9,
+				Normal: "cursor_x1/Cur_CreatePlane_9_9.png"
+			}
+		},
+		Alpha_2008: {
+			HighResolution: {
+				HotX: 2,
+				HotY: 2,
+				Normal: "cursor_x2/Cur_x2_DirectMovePoint_2_2.png"
+			},
+			LowResolution: {
+				HotX: 1,
+				HotY: 1,
+				Normal: "cursor_x1/Cur_DirectMovePoint_1_1.png"
+			}
+		},
+		Alpha_2009: {
+			HighResolution: {
+				HotX: 2,
+				HotY: 2,
+				Normal: "cursor_x2/Cur_x2_MeasureAdd_2_2.png"
+			},
+			LowResolution: {
+				HotX: 1,
+				HotY: 1,
+				Normal: "cursor_x1/Cur_MeasureAdd_1_1.png"
+			}
+		},
+		Alpha_2010: {
+			HighResolution: {
+				HotX: 2,
+				HotY: 2,
+				Normal: "cursor_x2/Cur_x2_MeasureMovePoint_2_2.png"
+			},
+			LowResolution: {
+				HotX: 1,
+				HotY: 1,
+				Normal: "cursor_x1/Cur_MeasureMovePoint_1_1.png"
+			}
+		},
+		Alpha_2011: {
+			HighResolution: {
+				HotX: 2,
+				HotY: 2,
+				Normal: "cursor_x2/Cur_x2_Measure_2_2.png"
+			},
+			LowResolution: {
+				HotX: 1,
+				HotY: 1,
+				Normal: "cursor_x1/Cur_Measure_1_1.png"
+			}
+		},
+		Alpha_2012: {
+			HighResolution: {
+				HotX: 2,
+				HotY: 2,
+				Normal: "cursor_x2/Cur_x2_MeasureCopy_2_2.png"
+			},
+			LowResolution: {
+				HotX: 1,
+				HotY: 1,
+				Normal: "cursor_x1/Cur_MeasureCopy_1_1.png"
+			}
+		},            
+
+        TB_createPlane: {
+			HighResolution: {
+				Dark: "icons_x2/SP_x2_CreateSurface_Lg_N_D.png",
+				Normal: "icons_x2/SP_x2_CreateSurface_Lg_N.png"
+				
+			},
+			LowResolution: {
+				Dark: "icons/SP_CreateSurface_Lg_N_D.png",
+				Normal: "icons/SP_CreateSurface_Lg_N.png"
+			}
+		},
+
+         TB_hand: {
+			HighResolution: {
+				Dark: "icons_x2/SP_x2_Pan_Lg_N_D.png",
+				Normal: "icons_x2/SP_x2_Pan_Lg_N.png"
+				
+			},
+			LowResolution: {
+				Dark: "icons/SP_Pan_Lg_N_D.png",
+				Normal: "icons/SP_Pan_Lg_N.png"
+			}
+		},
+
+         TB_clonebrush: {
+			HighResolution: {
+				Dark: "icons_x2/SP_x2_Clone_Lg_N_D.png",
+				Normal: "icons_x2/SP_x2_Clone_Lg_N.png"
+				
+			},
+			LowResolution: {
+				Dark: "icons/SP_Clone_Lg_N_D.png",
+				Normal: "icons/SP_Clone_Lg_N.png"
+			}
+		},
+
+         TB_planeSelect: {
+			HighResolution: {
+				Dark: "icons_x2/SP_x2_RectSelect_Lg_N_D.png",
+				Normal: "icons_x2/SP_x2_RectSelect_Lg_N.png"
+				
+			},
+			LowResolution: {
+				Dark: "icons/SP_RectSelect_Lg_N_D.png",
+				Normal: "icons/SP_RectSelect_Lg_N.png"
+			}
+		},
+
+         TB_editPlane: {
+			HighResolution: {
+				Dark: "icons_x2/SP_x2_Select_Lg_N_D.png",
+				Normal: "icons_x2/SP_x2_Select_Lg_N.png"
+				
+			},
+			LowResolution: {
+				Dark: "icons/SP_Select_Lg_N_D.png",
+				Normal: "icons/SP_Select_Lg_N.png"
+			}
+		},
+
+         TB_zoom: {
+			HighResolution: {
+				Dark: "icons_x2/SP_x2_Magnification_Lg_N_D.png",
+				Normal: "icons_x2/SP_x2_Magnification_Lg_N.png"
+				
+			},
+			LowResolution: {
+				Dark: "icons/SP_Magnification_Lg_N_D.png",
+				Normal: "icons/SP_Magnification_Lg_N.png"
+			}
+		},
+
+         TB_paintbrush: {
+			HighResolution: {
+				Dark: "icons_x2/SP_x2_Brush_Lg_N_D.png",
+				Normal: "icons_x2/SP_x2_Brush_Lg_N.png"
+				
+			},
+			LowResolution: {
+				Dark: "icons/SP_Brush_Lg_N_D.png",
+				Normal: "icons/SP_Brush_Lg_N.png"
+			}
+		},
+
+         TB_eyedropper: {
+			HighResolution: {
+				Dark: "icons_x2/SP_x2_Sampler_Lg_N_D.png",
+				Normal: "icons_x2/SP_x2_Sampler_Lg_N.png"
+				
+			},
+			LowResolution: {
+				Dark: "icons/SP_Sampler_Lg_N_D.png",
+				Normal: "icons/SP_Sampler_Lg_N.png"
+			}
+		},
+
+        TB_measure: {
+			HighResolution: {
+				Dark: "icons_x2/SP_x2_Measure_Lg_N_D.png",
+				Normal: "icons_x2/SP_x2_Measure_Lg_N.png"
+				
+			},
+			LowResolution: {
+				Dark: "icons/SP_Measure_Lg_N_D.png",
+				Normal: "icons/SP_Measure_Lg_N.png"
+			}
+		},
+
+        TB_transform: {
+			HighResolution: {
+				Dark: "icons_x2/SP_x2_FreeTransform_Lg_N_D.png",
+				Normal: "icons_x2/SP_x2_FreeTransform_Lg_N.png"
+				
+			},
+			LowResolution: {
+				Normal: "icons/SP_FreeTransform_Lg_N.png"
+			}
+		},
+
+        ToolSettings: {
+			HighResolution: {
+				Dark: "icons_x2/SP_x2_Settings_Sm_N_D.png",
+				Normal: "icons_x2/SP_x2_Settings_Sm_N.png"
+				
+			},
+			LowResolution: {
+				Dark: "icons/SP_Settings_Sm_N_D.png",
+				Normal: "icons/SP_Settings_Sm_N.png"
+			}
+		},
+
+        P_Info_Md: {
+			HighResolution: {
+				Dark: "icons_x2/SP_x2_PL_Info_N_D.png",
+				Normal: "icons_x2/SP_x2_PL_Info_N.png"
+				
+			},
+			LowResolution: {
+				Dark: "icons/SP_PL_Info_N_D.png",
+				Normal: "icons/SP_PL_Info_N.png"
+			}
+		}
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xmp_definitions>
+	<!-- Definitions taken from the "Exif 2.3 metadata for XMP" specification (CIPA DC-010-2012) -->
+	<xmp_schema prefix='exifEX' namespace='http://cipa.jp/exif/1.0/' description='$$$/xmp/exifEX_description=Properties defined by EXIF, version 2.21 or later' label='$$$/xmp/exifEX_label=EXIF Schema For Extended EXIF Properties'>
+		<xmp_property name='Gamma' category='internal' type='rational' description='$$$/xmp/exifEX/Gamma_description=Indicates the value of coefficient gamma.' label='$$$/xmp/exifEX/Gamma_label=Gamma'/>
+		<xmp_property name='PhotographicSensitivity' category='internal' type='integer' description='$$$/xmp/exifEX/PhotographicSensitivity_description=Indicates the sensitivity of the camera.' label='$$$/xmp/exifEX/PhotographicSensitivity_label=Photographic Sensitivity'/>
+		<xmp_property name='SensitivityType' category='internal' type='closedchoice' element_type="integer" description='$$$/xmp/exifEX/SensitivityType_description=Indicates which parameters are used for Photographic Sensitivity.' label='$$$/xmp/exifEX/SensitivityType_label=Sensitivity Type'>
+			<xmp_choice raw_value='0' label='$$$/xmp/exifEX/SensitivityType/0=Unknown'/>
+			<xmp_choice raw_value='1' label='$$$/xmp/exifEX/SensitivityType/1=Standard output sensitivity (SOS)'/>
+			<xmp_choice raw_value='2' label='$$$/xmp/exifEX/SensitivityType/2=Recommended exposure index (REI)'/>
+			<xmp_choice raw_value='3' label='$$$/xmp/exifEX/SensitivityType/3=ISO speed'/>
+			<xmp_choice raw_value='4' label='$$$/xmp/exifEX/SensitivityType/4=Standard output sensitivity (SOS) and recommended exposure index (REI)'/>
+			<xmp_choice raw_value='5' label='$$$/xmp/exifEX/SensitivityType/5=Standard output sensitivity (SOS) and ISO speed'/>
+			<xmp_choice raw_value='6' label='$$$/xmp/exifEX/SensitivityType/6=Recommended exposure index (REI) and ISO speed'/>
+			<xmp_choice raw_value='7' label='$$$/xmp/exifEX/SensitivityType/7=Standard output sensitivity (SOS) and recommended exposure index (REI) and ISO speed'/>
+		</xmp_property>
+		<xmp_property name='StandardOutputSensitivity' category='internal' type='integer' description='$$$/xmp/exifEX/StandardOutputSensitivity_description=Indicates the standard output sensitivity value of a camera or input device.' label='$$$/xmp/exifEX/StandardOutputSensitivity_label=Standard Output Sensitivity'/>
+		<xmp_property name='RecommendedExposureIndex' category='internal' type='integer' description='$$$/xmp/exifEX/RecommendedExposureIndex_description=Indicates the recommended exposure index value of a camera or input device.' label='$$$/xmp/exifEX/RecommendedExposureIndex_label=Recommended Exposure Index'/>
+		<xmp_property name='ISOSpeed' category='internal' type='integer' description='$$$/xmp/exifEX/ISOSpeed_description=Indicates the ISO speed value of a camera or input device.' label='$$$/xmp/exifEX/ISOSpeed_label=ISO Speed'/>
+		<xmp_property name='ISOSpeedLatitudeyyy' category='internal' type='integer' description='$$$/xmp/exifEX/ISOSpeedLatitudeyyy_description=Indicates the ISO speed latitude yyy value of a camera or input device.' label='$$$/xmp/exifEX/ISOSpeedLatitudeyyy_label=ISO Speed Latitude yyy'/>
+		<xmp_property name='ISOSpeedLatitudezzz' category='internal' type='integer' description='$$$/xmp/exifEX/ISOSpeedLatitudezzz_description=Indicates the ISO speed latitude zzz value of a camera or input device.' label='$$$/xmp/exifEX/ISOSpeedLatitudezzz_label=ISO Speed Latitude zzz'/>
+		<xmp_property name='CameraOwnerName' category='internal' type='text' description='$$$/xmp/exifEX/CameraOwnerName_description=Name of the camera owner.' label='$$$/xmp/exifEX/CameraOwnerName_label=Camera Owner Name'/>
+		<xmp_property name='BodySerialNumber' category='internal' type='text' description='$$$/xmp/exifEX/BodySerialNumber_description=The serial number of the camera or camera body used to take the photograph.' label='$$$/xmp/exifEX/BodySerialNumber_label=Body Serial Number'/>
+		<xmp_property name='LensSpecification' category='internal' type='seq' element_type="rational" description='$$$/xmp/exifEX/LensSpecification_description=notes minimum focal length, maximum focal length, minimum F number in the minimum focal length, and minimum F number in the maximum focal length, which are specification information for the lens that was used in photography.' label='$$$/xmp/exifEX/LensSpecification_label=Lens Specification'/>
+		<xmp_property name='LensMake' category='internal' type='propername' description='$$$/xmp/exifEX/LensMake_description=The lens manufacturer.' label='$$$/xmp/exifEX/LensMake_label=Lens Make'/>
+		<xmp_property name='LensModel' category='internal' type='text' description='$$$/xmp/exifEX/LensModel_description=The lens#{rsquo}s model name and model number.' label='$$$/xmp/exifEX/LensModel_label=Lens Model'/>
+		<xmp_property name='LensSerialNumber' category='internal' type='text' description='$$$/xmp/exifEX/LensSerialNumber_description=The serial number of the interchangeable lens that was used in photography.' label='$$$/xmp/exifEX/LensSerialNumber_label=Lens Serial Number'/>
+		<xmp_property name='InteroperabilityIndex' category='internal' type='closedchoice' element_type="text" description='$$$/xmp/exifEX/InteroperabilityIndex_description=Indicates the identification of the Interoperability rule.#{endl}#{quot}R98#{quot} = Indicates a file conforming to R98 file specification of Recommended Exif Interoperability Rules (Exif R 98) or to DCF basic file stipulated by Design Rule for Camera File System (DCF).#{endl}#{quot}THM#{quot} = Indicates a file conforming to DCF thumbnail file stipulated by Design rule for Camera File System.#{endl}#{quot}R03#{quot} = Indicates a file conforming to DCF Option File stipulated by Design rule for Camera File System.' label='$$$/xmp/exifEX/InteroperabilityIndex_label=Interoperability Index'>
+			<xmp_choice raw_value='R98' label='R98'/>
+			<xmp_choice raw_value='THM' label='THM'/>
+			<xmp_choice raw_value='R03' label='R03'/>
+		</xmp_property>
+		<!--
+			New in Exif 2.3 but mapped into exif namespace for backward compatibility.
+			Added here because older versions of XMPFiles consolidate to Exif data into exifEX namespace
+		-->
+		<xmp_property name='GPSHPositioningError' category='internal' type='rational' description='$$$/xmp/exif/GPSHPositioningError_description=Indicates the GPS horizontal positioning errors in meters' label='$$$/xmp/exif/GPSHPositioningError_label=GPS Horizontal Positioning Error'/>
+	</xmp_schema> 	
+</xmp_definitions>

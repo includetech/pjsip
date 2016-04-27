@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<views xmlns="http://ns.adobe.com/metadata/ui/1.0/">
+
+<!-- 
+	Camera Data
+	Contains the most important TIFF and Exif properties.
+-->	
+<view
+	xmlns:adobe="http://ns.adobe.com/xmp/aggregate/1.0/"
+	xmlns:tiff="http://ns.adobe.com/tiff/1.0/"
+	xmlns:exif="http://ns.adobe.com/exif/1.0/"
+	xmlns:exifEX="http://cipa.jp/exif/1.0/"
+	name="com.adobe.xmp.view.camera"
+    label="$$$/metadataui/view/camera_label=Camera Data"
+    description="$$$/metadataui/view/camera_description=Contains the most important TIFF and Exif properties."
+	version="1.0">
+
+	<section
+		label="$$$/metadataui/view/camera_info=Camera Information"
+		description="$$$/metadataui/view/camera_info_description=Technical information about the camera model and lens">
+	  
+	    <property name="tiff:Make"/>
+
+		<!-- 
+			The formatter widget appends all properties given in it's body.
+			If they have a "format" attribute, the placeholder {0} is replaced with the property value.  
+			e.g. Canon PowerShot A620   S/N: ABC12345
+		-->
+		<formatter
+			labelRef="tiff:Model"
+			description="$$$/xmp/tiff/custom/ModelAndSerialNumber/description=Camera model and serial number"
+			separator="$$$/metadataui/view/separator/default=;   ">
+		    <property name="tiff:Model"/>
+	    	<property name="exifEX:BodySerialNumber" format="$$$/xmp/exifEX/SerialNumber_format=S/N: @0"/>
+		</formatter>
+
+		<property
+			name="exifEX:CameraOwnerName"
+			label="$$$/xmp/exifEX/custom/CameraOwnerName=Owner"/>	
+		
+		<!-- Lens appends these three properties exifEX:LensMake exifEX:LensModel exifEX:LensSerialNumber,
+			 e.g. Canon;   SuperLens;   S/N: ABC4711 -->
+		<formatter 
+			label="$$$/xmp/exifEX/custom/LensInfo_label=Lens"
+			description="$$$/xmp/exifEX/LensInfo_description=Lens manufacturer and description"
+			separator="$$$/metadataui/view/separator/default=;   ">
+		    <property name="exifEX:LensMake"/>
+		    <property name="exifEX:LensModel"/>
+	    	<property name="exifEX:LensSerialNumber" format="$$$/xmp/exifEX/SerialNumber_format=S/N: @0"/>
+		</formatter>
+	</section>
+
+	<section
+		label="$$$/metadataui/view/camera_shotinfo=Shot Information"
+		description="$$$/metadataui/view/camera_shotinfo_description=Information about the shot settings">
+	
+		<!-- 
+			Focal length and focal length in 35mm are appended, 
+			e.g. 200.0 mm   (in 35mm: 90.0 mm)
+		-->
+		<formatter 
+			labelRef="exif:FocalLength"
+			description="$$$/xmp/exif/custom/FocalLength_description=Focal length of the lens"
+			separator="$$$/metadataui/view/separator/spaces=   ">
+			<property name="exif:FocalLength" format="$$$/xmp/exif/FocalLength_format=@0 mm"/>
+			<property name="exif:FocalLengthIn35mmFilm" format="$$$/xmp/exif/FocalLengthIn35mmFilm_format=(in 35mm: @0 mm)"/>
+		</formatter>
+
+		<!-- Exposure consists of five properties that are converted and combined in a human readable way. -->
+		<formatter 
+			label="$$$/xmp/exif/custom/Exposure_label=Exposure"
+			description="$$$/xmp/exif/custom/Exposure_description=Exposure information: shutter speed, aperture and ISO speed in the first line. Exposure program and metering mode in the second line."
+			separator="$$$/metadataui/view/separator/default=;   ">
+
+		    <!-- Note: exif:ShutterSpeedValue OR exif:ExposureTime -->
+			<property name="adobe:ShutterSpeed"/>
+
+			<property name="exif:FNumber" format="$$$/xmp/exif/FNumber_format=f/@0"/>
+
+		    <!-- Note: can handle different sensitivity types introduced with Exif 2.3 --> 
+			<property name="adobe:PhotographicSensitivity"/>
+
+			<property name="exif:ExposureProgram"/>
+
+			<property name="exif:MeteringMode" format="$$$/xmp/exif/MeteringMode_format=@0 metering"/>
+		</formatter>
+	
+		<!--
+			This is an internal property that looks at exif:PixelXDimension and exif:PixelYDimension
+			but also takes tiff:Orientation into account
+		-->
+		<property name="adobe:ImageSize" />
+	
+		<property name="tiff:Orientation" />
+	
+		<!-- adobe:ImageResolution takes tiff:Orientation into account -->
+		<formatter
+			separator="$$$/metadataui/view/separator/single_space= "
+			labelRef="adobe:ImageResolution"
+			descriptionRef="adobe:ImageResolution">
+
+			<property name="adobe:ImageResolution"/>
+			<property name="tiff:ResolutionUnit">
+				<!-- more descriptive labels than in schema -->
+				<choice label="$$$/xmp/tiff/custom/ResolutionUnit/2=Pixel per Inch" value="2"/>
+				<choice label="$$$/xmp/tiff/custom/ResolutionUnit/3=Pixel per Centimeter" value="3"/>
+			</property>
+		</formatter>
+	
+		<!-- TODO: use struct formatting -->
+		<formatter 
+				labelRef="exif:Flash"
+				descriptionRef="exif:Flash"
+				separator="$$$/metadataui/view/separator/linefeed=#{lf}"
+				required_path="exif:Flash/exif:Fired">
+
+			<property name="exif:Flash/exif:Fired" />
+			<property name="exif:Flash/exif:Return"/>
+			<property name="exif:Flash/exif:Mode"/>
+			<property name="exif:Flash/exif:Function"/>
+			<property name="exif:Flash/exif:RedEyeMode"/>
+		</formatter>
+		
+	</section>
+</view>
+
+</views>

@@ -1,0 +1,29 @@
+layout missingFontCell
+    {
+    view TMissingFontCellView(identifier     : @missingFontCell,
+                              placement      : place_column,
+                              noGrowVertical : true,
+                              spacing        : 0,
+                              qDebugDraw     : false)
+        {
+        TView(margin     : [ 10, 10, 10, 26 ],
+              spacing    : gGap,
+              placement  : place_row,
+              horizontal : align_fill)
+            {
+            TStaticText(identifier : @missingFontText,
+                        horizontal : align_fill,
+                        vertical   : align_center,
+                        autoWrap   : true,
+                        name       : "$$$/private/MissingFontCell/Stub=Stub");
+
+            ZMenuPopup(uniqueID   : true,
+                       width      : 200,
+                       identifier : @missingFontPopup,
+                       horizontal : align_right,
+                       vertical   : align_center);
+           }
+
+        TNarrowGroupSeparator(height: 1, horizontal: align_fill);
+        }
+    }

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<Printer>
+	<Version value='1' />
+	<PrintLocation value='Sculpteo.com' />
+	<PrintVolume X='170' Y='160' Z='150' />
+	<PrinterResolution X='5' Y='5' Z='10' />
+	<MeshRepairResolution value='8' />
+	<PrinterHeads value='1' />
+	<PrinterSupportsUSB flag='0' />
+	<PreferredFileFormat value='stl' />
+	<NeedsZip flag='1' />
+	<Quality value='high'>
+		<MeshRepairResolution value='8' />
+	</Quality>
+	<Quality value='medium'>
+		<MeshRepairResolution value='7' />
+	</Quality>
+	<Quality value='low'>
+		<MeshRepairResolution value='6' />
+	</Quality>
+</Printer>
+
+<Materials>
+	<Material name='Plastic - Yellow'>
+		<NeedsRaft flag='0' />
+		<NeedsSupports flag='0' />
+		<NeedsEscapeHoles flag='0' />
+		<MinimumWallThickness value='1.0' /> 
+		<PricePerCubicCM value='1.53' />
+		<Handling value='4.1' />
+		<Diffuse R='1.0' G='1.0' B='0.15' />
+		<Specular R='0.1' G='0.1' B='0.1' />
+		<Illumination R='0' G='0' B='0' />
+		<Ambient R='1.0' G='1.0' B='0.15' />
+		<Shine value='0.2' />
+		<Reflection value='0.15' />
+		<Roughness value='0.01' />
+		<Bump value='0' />
+		<Opacity value='1' />
+		<Refraction value='1' />
+        </Material>
+</Materials>

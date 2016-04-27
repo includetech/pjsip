@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Printer>
+	<Version value='1' />
+	<PrintLocation value='Shapeways.com' />
+	<PrintVolume X='75' Y='75' Z='50' />
+	<PrinterResolution X='10' Y='10' Z='10' />
+	<MeshRepairResolution value='7' />
+	<PrinterHeads value='1' />
+	<PrinterSupportsUSB flag='0' />
+	<PreferredFileFormat value='stl' />
+	<NeedsZip flag='1' />
+	<Quality value='high'>
+		<MeshRepairResolution value='8' />
+	</Quality>
+	<Quality value='medium'>
+		<MeshRepairResolution value='7' />
+	</Quality>
+	<Quality value='low'>
+		<MeshRepairResolution value='6' />
+	</Quality>
+</Printer>
+<Materials>
+	<Material name='Castable Wax'>
+		<NeedsRaft flag='0' />
+		<NeedsSupports flag='0' />
+		<NeedsEscapeHoles flag='0' />
+		<MinimumWallThickness value='0.8' />
+		<PricePerCubicCM value='8' />
+		<Handling value='10' />
+		<Diffuse R='0.061' G='0.069' B='0.785' />
+		<Specular R='0.349' G='0.490' B='0.969' />
+		<Illumination R='0.005' G='0.022' B='0.055' />
+		<Ambient R='0' G='0' B='0.06' />
+		<Shine value='0.35' />
+		<Reflection value='0.04' />
+		<Roughness value='0.02' />
+		<Bump value='0' />
+		<Opacity value='1' />
+		<Refraction value='1.075' />
+		<PreviewVolumeNoiseDisplay>
+			<NoiseOn flag='1' />
+			<NoiseMagnitude value='0.9' />
+			<HigherFrequencyMagnitudeReduction value='2.0' />
+			<HigherFrequencyLookupOffset value='1.5' />
+			<CubicCentimeterLookupScale value='5.0' />
+		</PreviewVolumeNoiseDisplay>
+	</Material>
+</Materials>

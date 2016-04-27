@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12px" height="16px"
+	 viewBox="0 0 12 16" enable-background="new 0 0 12 16" xml:space="preserve">
+<title>visibility</title>
+<g id="Ds-v7.2">
+	<g id="black" transform="translate(-153.000000, -149.000000)">
+		<g id="visibility" transform="translate(153.000000, 149.000000)">
+			<path id="Shape-2" fill="#5E5D5A" d="M4.831,7.833C4.831,8.522,5.364,9.1,6,9.1
+				s1.169-0.578,1.169-1.267S6.636,6.567,6,6.567S4.831,7.144,4.831,7.833L4.831,7.833z M6.738,11.933C8.8,11.433,12,8.467,12,8.467
+				s-2.369-4-5.538-4.433C6.277,4,5.662,4,5.538,4C2.462,4.333,0,8.567,0,8.567s2.677,2.867,5.231,3.3
+				C5.508,12,6.431,12,6.738,11.933L6.738,11.933z M3.077,8.033C3.077,6.37,4.376,5.026,6,5.026s2.923,1.343,2.923,3.007
+				S7.624,11.007,6,11.007S3.077,9.664,3.077,8.033L3.077,8.033z"/>
+		</g>
+	</g>
+</g>
+<g>
+	
+		<rect x="-0.465" y="7.219" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -3.5985 6.6251)" fill="#5E5D5A" width="13.326" height="0.875"/>
+</g>
+</svg>

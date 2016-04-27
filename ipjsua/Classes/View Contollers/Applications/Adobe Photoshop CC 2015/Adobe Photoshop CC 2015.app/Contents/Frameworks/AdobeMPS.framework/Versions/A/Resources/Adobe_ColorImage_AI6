@@ -1,0 +1,523 @@
+%%BeginProcSet: Adobe_ColorImage_AI6 2.0 0
+userdict /Adobe_ColorImage_AI6 known not
+{
+	userdict /Adobe_ColorImage_AI6 24 dict put 
+} if
+userdict /Adobe_ColorImage_AI6 get begin
+	
+	/initialize
+	{
+	} def
+	/initialize2
+	{ 
+		Adobe_ColorImage_AI6 begin
+		Adobe_ColorImage_AI6
+		{
+			dup type /arraytype eq
+			{
+				dup xcheck
+				{
+					bind
+				} if
+			} if
+			pop pop
+		} forall
+	} def
+	/terminate { } def
+	/terminate2 { end } def
+	
+	currentdict /Adobe_ColorImage_AI6_Vars known not
+	{
+		/Adobe_ColorImage_AI6_Vars 15 dict def
+	} if
+	
+	Adobe_ColorImage_AI6_Vars begin
+		/channelcount 0 def
+		/sourcecount 0 def
+		/sourcearray 4 array def
+		/plateindex -1 def
+		/XIMask 0 def
+		/XIBinary 0 def
+		/XIChannelCount 0 def
+		/XIBitsPerPixel 0 def
+		/XIImageHeight 0 def
+		/XIImageWidth 0 def
+		/XIImageMatrix null def
+		/XIBuffer null def
+		/XIDataProc null def
+		/XIVersion 6 def
+ end
+	
+	/WalkRGBString null def
+	/WalkCMYKString null def
+	
+	/StuffRGBIntoGrayString null def
+	/RGBToGrayImageProc null def
+	/StuffCMYKIntoGrayString null def
+	/CMYKToGrayImageProc null def
+	/ColorImageCompositeEmulator null def
+	
+	/SeparateCMYKImageProc null def
+	
+	/FourEqual null def
+	/TestPlateIndex null def
+	
+	currentdict /_colorimage known not
+	{
+		/colorimage where
+		{
+			/colorimage get /_colorimage exch def
+		}
+		{
+			/_colorimage null def
+		} ifelse
+	} if
+	
+	/_currenttransfer systemdict /currenttransfer get def
+	
+	/colorimage null def
+	/XI null def
+	
+	
+	/WalkRGBString
+	{
+		0 3 index
+	
+		dup length 1 sub 0 3 3 -1 roll
+		{
+			3 getinterval { } forall
+	
+			5 index exec
+	
+			3 index
+		} for
+		
+		 5 { pop } repeat
+	
+	} def
+	
+	
+	/WalkCMYKString
+	{
+		0 3 index
+	
+		dup length 1 sub 0 4 3 -1 roll
+		{
+			4 getinterval { } forall
+			
+			6 index exec
+			
+			3 index
+			
+		} for
+		
+		5 { pop } repeat
+		
+	} def
+	
+	
+	/StuffRGBIntoGrayString
+	{
+		.11 mul exch
+		
+		.59 mul add exch
+		
+		.3 mul add
+		
+		cvi 3 copy put
+		
+		pop 1 add
+	} def
+	
+	
+	/RGBToGrayImageProc
+	{	
+		Adobe_ColorImage_AI6_Vars begin 
+			sourcearray 0 get exec
+			dup length 3 idiv string
+			dup 3 1 roll 
+			
+			/StuffRGBIntoGrayString load exch
+			WalkRGBString
+	 end
+	} def
+	
+	
+	/StuffCMYKIntoGrayString
+	{
+		exch .11 mul add
+		
+		exch .59 mul add
+		
+		exch .3 mul add
+		
+		dup 255 gt { pop 255 } if
+		
+		255 exch sub cvi 3 copy put
+		
+		pop 1 add
+	} def
+	
+	
+	/CMYKToGrayImageProc
+	{	
+		Adobe_ColorImage_AI6_Vars begin
+			sourcearray 0 get exec
+			dup length 4 idiv string
+			dup 3 1 roll 
+			
+			/StuffCMYKIntoGrayString load exch
+			WalkCMYKString
+	 end
+	} def
+	
+	
+	/ColorImageCompositeEmulator
+	{
+		pop true eq
+		{
+			Adobe_ColorImage_AI6_Vars /sourcecount get 5 add { pop } repeat
+		}
+		{
+			Adobe_ColorImage_AI6_Vars /channelcount get 1 ne
+			{
+				Adobe_ColorImage_AI6_Vars begin
+					sourcearray 0 3 -1 roll put
+				
+					channelcount 3 eq 
+					{ 
+						/RGBToGrayImageProc 
+					}
+					{ 
+						/CMYKToGrayImageProc
+					} ifelse
+					load
+			 end
+			} if
+			image
+		} ifelse
+	} def
+	
+	
+	/SeparateCMYKImageProc
+	{	
+		Adobe_ColorImage_AI6_Vars begin
+	
+			sourcecount 0 ne
+			{
+				sourcearray plateindex get exec
+			}
+			{			
+				sourcearray 0 get exec
+				
+				dup length 4 idiv string
+				
+				0 2 index
+				
+				plateindex 4 2 index length 1 sub
+				{
+					get 255 exch sub
+					
+					3 copy put pop 1 add
+					
+					2 index
+				} for
+	
+				pop pop exch pop
+			} ifelse
+	 end
+	} def
+		
+	
+	/FourEqual
+	{
+		4 index ne
+		{
+			pop pop pop false
+		}
+		{
+			4 index ne
+			{
+				pop pop false
+			}
+			{
+				4 index ne
+				{
+					pop false
+				}
+				{
+					4 index eq
+				} ifelse
+			} ifelse
+		} ifelse
+	} def
+	
+	
+	/TestPlateIndex
+	{
+		Adobe_ColorImage_AI6_Vars begin
+			/plateindex -1 def
+	
+			/setcmykcolor where
+			{
+				pop
+				gsave
+				1 0 0 0 setcmykcolor systemdict /currentgray get exec 1 exch sub
+				0 1 0 0 setcmykcolor systemdict /currentgray get exec 1 exch sub
+				0 0 1 0 setcmykcolor systemdict /currentgray get exec 1 exch sub
+				0 0 0 1 setcmykcolor systemdict /currentgray get exec 1 exch sub
+				grestore
+	
+				1 0 0 0 FourEqual 
+				{ 
+					/plateindex 0 def
+				}
+				{
+					0 1 0 0 FourEqual
+					{ 
+						/plateindex 1 def
+					}
+					{
+						0 0 1 0 FourEqual
+						{
+							/plateindex 2 def
+						}
+						{
+							0 0 0 1 FourEqual
+							{ 
+								/plateindex 3 def
+							}
+							{
+								0 0 0 0 FourEqual
+								{
+									/plateindex 5 def
+								} if
+							} ifelse
+						} ifelse
+					} ifelse
+				} ifelse
+				pop pop pop pop
+			} if
+			plateindex
+	 end
+	} def
+	
+	
+	/colorimage
+	{
+		Adobe_ColorImage_AI6_Vars begin
+			/channelcount 1 index def
+			/sourcecount 2 index 1 eq { channelcount 1 sub } { 0 } ifelse def
+	
+			4 sourcecount add index dup 
+			8 eq exch 1 eq or not
+	 end
+		
+		{
+			/_colorimage load null ne
+			{
+				_colorimage
+			}
+			{
+				Adobe_ColorImage_AI6_Vars /sourcecount get
+				7 add { pop } repeat
+			} ifelse
+		}
+		{
+			dup 3 eq
+			TestPlateIndex
+			dup -1 eq exch 5 eq or or
+			{
+				/_colorimage load null eq
+				{
+					ColorImageCompositeEmulator
+				}
+				{
+					dup 1 eq
+					{
+						pop pop image
+					}
+					{
+						Adobe_ColorImage_AI6_Vars /plateindex get 5 eq
+						{
+							gsave
+							
+							0 _currenttransfer exec
+							1 _currenttransfer exec
+							eq
+							{ 0 _currenttransfer exec 0.5 lt }
+							{ 0 _currenttransfer exec 1 _currenttransfer exec gt } ifelse
+							
+							{ { pop 0 } } { { pop 1 } } ifelse
+							systemdict /settransfer get exec
+						} if
+						
+						_colorimage
+						
+						Adobe_ColorImage_AI6_Vars /plateindex get 5 eq
+						{
+							grestore
+						} if
+					} ifelse
+				} ifelse
+			}
+			{
+				dup 1 eq
+				{
+					pop pop
+					image
+				}
+				{
+					pop pop
+	
+					Adobe_ColorImage_AI6_Vars begin
+						sourcecount -1 0
+						{			
+							exch sourcearray 3 1 roll put
+						} for
+	
+						/SeparateCMYKImageProc load
+				 end
+	
+					systemdict /image get exec
+				} ifelse
+			} ifelse
+		} ifelse
+	} def
+	
+	/XG
+	{
+		pop pop
+	} def
+	
+	/XF
+	{
+		13 {pop} repeat
+	} def
+	
+	/Xh
+	{
+		Adobe_ColorImage_AI6_Vars begin
+			gsave
+			/XIMask exch 0 ne def
+			/XIImageHeight exch def
+			/XIImageWidth exch def
+			/XIImageMatrix exch def
+			0 0 moveto
+			XIImageMatrix concat
+			XIImageWidth XIImageHeight scale
+			
+			XIMask
+			{
+				/_lp /null ddef
+				_fc
+				/_lp /imagemask ddef
+			}
+			if
+			/XIVersion 7 def
+	 end
+	} def
+	
+	/XH
+	{
+		Adobe_ColorImage_AI6_Vars begin
+			/XIVersion 6 def
+			grestore
+	 end
+	} def
+	
+	/OPIimage
+	{
+		Adobe_ColorImage_AI6_Vars begin
+			XIMask
+			{
+				imagemask
+			}
+			{
+				image
+			}
+			ifelse
+	 end
+	} def
+	
+	/XI
+	{
+		Adobe_ColorImage_AI6_Vars begin
+			gsave
+			/XIMask exch 0 ne def
+			/XIBinary exch 0 ne def
+			pop
+			pop
+			/XIChannelCount exch def
+			/XIBitsPerPixel exch def
+			/XIImageHeight exch def
+			/XIImageWidth exch def
+			pop pop pop pop
+			/XIImageMatrix exch def
+			XIBitsPerPixel 1 eq
+			{
+				XIImageWidth 8 div ceiling cvi
+			}
+			{
+				XIImageWidth XIChannelCount mul
+			} ifelse
+			/XIBuffer exch string def
+			XIBinary
+			{
+				/XIDataProc { currentfile XIBuffer readstring pop } def
+				XIVersion 6 le
+				{
+					currentfile 128 string readline pop pop
+				}
+				if
+			}
+			{
+				/XIDataProc { currentfile XIBuffer readhexstring pop } def
+			} ifelse
+			
+			XIVersion 6 le
+			{
+				0 0 moveto
+				XIImageMatrix concat
+				XIImageWidth XIImageHeight scale
+				XIMask
+				{
+					/_lp /null ddef
+					_fc
+					/_lp /imagemask ddef
+				} if
+			} if
+			
+			XIMask
+			{
+				XIImageWidth XIImageHeight
+				false
+				[ XIImageWidth 0 0 XIImageHeight neg 0 0 ]
+				/XIDataProc load
+				imagemask
+			}
+			{
+				XIImageWidth XIImageHeight
+				XIBitsPerPixel
+				[ XIImageWidth 0 0 XIImageHeight neg 0 0 ]
+				/XIDataProc load
+				
+				XIChannelCount 1 eq
+				{
+					gsave
+					0 setgray
+					image
+					grestore
+				}
+				{
+					false
+					XIChannelCount
+					colorimage
+				} ifelse
+			} ifelse
+			grestore
+	 end
+	} def
+	
+end
+%%EndProcSet

@@ -1,0 +1,269 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xmp_definitions>
+  <xmp_schema prefix='xmpDM' namespace='http://ns.adobe.com/xmp/1.0/DynamicMedia/' description='$$$/xmp/xmpDM_description=Properties used for dynamic media' label='$$$/xmp/xmpDM_label=Dynamic Media'>
+    <xmp_property name='projectRef' category='internal' type='projectlink' description='$$$/xmp/xmpDM/projectRef_description=Project this file was created in' label='$$$/xmp/xmpDM/projectRef_label=Project Reference'/>
+    <xmp_property name='videoFrameRate' category='internal' type='real' description='$$$/xmp/xmpDM/videoFrameRate_description=The video frame rate. For example: 29.97' label='$$$/xmp/xmpDM/videoFrameRate_label=Video Frame Rate'/>
+    <xmp_property name='videoFrameSize' category='internal' type='dimensions' description='$$$/xmp/xmpDM/videoFrameSize_description=The frame size. For example: w:720, h: 480, unit:pixels' label='$$$/xmp/xmpDM/videoFrameSize_label=Video Frame Size'/>
+    <xmp_property name='videoPixelAspectRatio' category='internal' type='rational' description='$$$/xmp/xmpDM/videoPixelAspectRatio_description=Expressed as width/height' label='$$$/xmp/xmpDM/videoPixelAspectRatio_label=Video Pixel Aspect Ratio'/>
+    <xmp_property name='videoPixelDepth' category='internal' type='closedchoice' description='$$$/xmp/xmpDM/videoPixelDepth_description=Size in bits of each color component of a pixel' element_type='text' label='$$$/xmp/xmpDM/videoPixelDepth_label=Video Pixel Depth'>
+      <xmp_choice raw_value='8Int' label='$$$/xmp/xmpDM/videoPixelDepth/0=8Int'/>
+      <xmp_choice raw_value='16Int' label='$$$/xmp/xmpDM/videoPixelDepth/1=16Int'/>
+      <xmp_choice raw_value='24Int' label='$$$/xmp/xmpDM/videoPixelDepth/5=24Int'/>
+      <xmp_choice raw_value='32Int' label='$$$/xmp/xmpDM/videoPixelDepth/2=32Int'/>
+      <xmp_choice raw_value='32Float' label='$$$/xmp/xmpDM/videoPixelDepth/3=32Float'/>
+      <xmp_choice raw_value='Other' label='$$$/xmp/xmpDM/videoPixelDepth/4=Other'/>
+    </xmp_property>
+    <xmp_property name='videoColorSpace' category='internal' type='closedchoice' element_type='text' description='$$$/xmp/xmpDM/videoColorSpace_description=Example: sRGB, CCIR-601 or CCIR-709' label='$$$/xmp/xmpDM/videoColorSpace_label=Video Color Space'>
+      <xmp_choice raw_value='sRGB' label='$$$/xmp/xmpDM/videoColorSpace/0=sRGB(used by Photoshop)'/>
+      <xmp_choice raw_value='CCIR-601' label='$$$/xmp/xmpDM/videoColorSpace/1=CCIR-601(used for NTSC)'/>
+      <xmp_choice raw_value='CCIR-709' label='$$$/xmp/xmpDM/videoColorSpace/2=CCIR-709(used for HD)'/>
+    </xmp_property>
+    <xmp_property name='videoAlphaMode' category='internal' type='closedchoice' element_type='text' description='$$$/xmp/xmpDM/videoAlphaMode_description=Example: straight or pre-multiplied' label='$$$/xmp/xmpDM/videoAlphaMode_label=Video Alpha Mode'>
+      <xmp_choice raw_value='none' label='$$$/xmp/xmpDM/videoAlphaMode/2=None'/>
+      <xmp_choice raw_value='straight' label='$$$/xmp/xmpDM/videoAlphaMode/0=Straight'/>
+      <xmp_choice raw_value='pre-multiplied' label='$$$/xmp/xmpDM/videoAlphaMode/1=Pre-multiplied'/>
+    </xmp_property>
+    <xmp_property name='videoAlphaPremultipleColor' category='internal' type='colorant' description='$$$/xmp/xmpDM/videoAlphaPremultipleColor_description=A color in CMYK or RGB to be used as the pre-multiple color when alpha mode is pre-multiplied.' label='$$$/xmp/xmpDM/videoAlphaPremultipleColor_label=Video Alpha Premultiple Color'/>
+    <xmp_property name='videoAlphaUnityIsTransparent' category='internal' type='boolean' description='$$$/xmp/xmpDM/videoAlphaUnityIsTransparent_description=True = clear; false = opaque' label='$$$/xmp/xmpDM/videoAlphaUnityIsTransparent_label=Video Alpha Unity Transparency'/>
+    <xmp_property name='videoCompressor' category='internal' type='text' description='$$$/xmp/xmpDM/videoCompressor_description=Video compression used. Example: JPEG.' label='$$$/xmp/xmpDM/videoCompressor_label=Video Compressor'/>
+    <xmp_property name='videoFieldOrder' category='internal' type='closedchoice' element_type='text' description='$$$/xmp/xmpDM/videoFieldOrder_description=Example: upper, lower or progressive' label='$$$/xmp/xmpDM/videoFieldOrder_label=Video Field Order'>
+      <xmp_choice raw_value='Upper' label='$$$/xmp/xmpDM/videoFieldOrder/0=Upper'/>
+      <xmp_choice raw_value='Lower' label='$$$/xmp/xmpDM/videoFieldOrder/1=Lower'/>
+      <xmp_choice raw_value='Progressive' label='$$$/xmp/xmpDM/videoFieldOrder/2=Progressive'/>
+    </xmp_property>
+    <xmp_property name='pullDown' category='internal' type='closedchoice' description='$$$/xmp/xmpDM/pullDown_description=Sampling phase for film to video conversion, example: 3:2.' element_type='text' label='$$$/xmp/xmpDM/pullDown_label=Pull Down'>
+      <xmp_choice raw_value='WSSWW' label='$$$/xmp/xmpDM/pullDown/0=WSSWW'/>
+      <xmp_choice raw_value='SSWWW' label='$$$/xmp/xmpDM/pullDown/1=SSWWW'/>
+      <xmp_choice raw_value='SWWWS' label='$$$/xmp/xmpDM/pullDown/2=SWWWS'/>
+      <xmp_choice raw_value='WWWSS' label='$$$/xmp/xmpDM/pullDown/3=WWWSS'/>
+      <xmp_choice raw_value='WWSSW' label='$$$/xmp/xmpDM/pullDown/4=WWSSW'/>
+      <xmp_choice raw_value='WWWSW' label='$$$/xmp/xmpDM/pullDown/5=WWWSW'/>
+      <xmp_choice raw_value='WWSWW' label='$$$/xmp/xmpDM/pullDown/6=WWSWW'/>
+      <xmp_choice raw_value='WSWWW' label='$$$/xmp/xmpDM/pullDown/7=WSWWW'/>
+      <xmp_choice raw_value='SWWWW' label='$$$/xmp/xmpDM/pullDown/8=SWWWW'/>
+      <xmp_choice raw_value='WWWWS' label='$$$/xmp/xmpDM/pullDown/9=WWWWS'/>
+    </xmp_property>
+    <xmp_property name='audioSampleRate' category='internal' type='integer' description='$$$/xmp/xmpDM/audioSampleRate_description=The audio sample rate. Can be any value, but commonly 32000, 41100, or 48000 Hz.' label='$$$/xmp/xmpDM/audioSampleRate_label=Audio Sample Rate'/>
+    <xmp_property name='audioSampleType' category='internal' type='closedchoice' element_type='text' description='$$$/xmp/xmpDM/audioSampleType_description=The audio sample type.' label='$$$/xmp/xmpDM/audioSampleType_label=Audio Sample Type'>
+      <xmp_choice raw_value='8Int' label='$$$/xmp/xmpDM/audioSampleType/0=8Int'/>
+      <xmp_choice raw_value='16Int' label='$$$/xmp/xmpDM/audioSampleType/1=16Int'/>
+      <xmp_choice raw_value='24Int' label='$$$/xmp/xmpDM/audioSampleType/4=24Int'/>
+      <xmp_choice raw_value='32Int' label='$$$/xmp/xmpDM/audioSampleType/2=32Int'/>
+      <xmp_choice raw_value='32Float' label='$$$/xmp/xmpDM/audioSampleType/3=32Float'/>
+      <xmp_choice raw_value='Compressed' label='$$$/xmp/xmpDM/audioSampleType/5=Compressed'/>
+      <xmp_choice raw_value='Packed' label='$$$/xmp/xmpDM/audioSampleType/6=Packed'/>
+      <xmp_choice raw_value='Other' label='$$$/xmp/xmpDM/audioSampleType/7=Other'/>
+    </xmp_property>
+    <xmp_property name='audioChannelType' category='internal' type='closedchoice' element_type='text' description='$$$/xmp/xmpDM/audioChannelType_description=The audio channel type.' label='$$$/xmp/xmpDM/audioChannelType_label=Audio Channel Type'>
+      <xmp_choice raw_value='Mono' label='$$$/xmp/xmpDM/audioChannelType/0=Mono'/>
+      <xmp_choice raw_value='Stereo' label='$$$/xmp/xmpDM/audioChannelType/1=Stereo'/>
+      <xmp_choice raw_value='5.1' label='$$$/xmp/xmpDM/audioChannelType/2=5.1'/>
+      <xmp_choice raw_value='7.1' label='$$$/xmp/xmpDM/audioChannelType/3=7.1'/>
+      <xmp_choice raw_value='16 Channel' label='$$$/xmp/xmpDM/audioChannelType/4=16 Channel'/>
+      <xmp_choice raw_value='Other' label='$$$/xmp/xmpDM/audioChannelType/5=Other'/>
+    </xmp_property>
+    <xmp_property name='audioCompressor' category='internal' type='text' description='$$$/xmp/xmpDM/audioCompressor_description=The audio compression used. Example: MP3.' label='$$$/xmp/xmpDM/audioCompressor_label=Audio Compressor'/>
+    <xmp_property name='speakerPlacement' category='external' type='text' description='$$$/xmp/xmpDM/speakerPlacement_description=Angle from center front, in degrees, example: Left = -30, Center = 0, Right = 30' label='$$$/xmp/xmpDM/speakerPlacement_label=Speaker Placement'/>
+    <xmp_property name='fileDataRate' category='internal' type='rational' description='$$$/xmp/xmpDM/fileDataRate_description=The file data rate in megabytes per second. For example: &quot;36/10&quot; = 3.6 MB/sec' label='$$$/xmp/xmpDM/fileDataRate_label=File Data Rate'/>
+    <xmp_property name='tapeName' category='external' type='text' description='$$$/xmp/xmpDM/tapeName_description=The name of the tape from which the clip was captured, as set during the capture process.' label='$$$/xmp/xmpDM/tapeName_label=Tape Name'/>
+    <xmp_property name='altTapeName' category='external' type='text' description='$$$/xmp/xmpDM/altTapeName_description=An alternative tape name, set via the project window or timecode dialog in Premiere. If an alternative name has been set and has not been reverted, that name is displayed.' label='$$$/xmp/xmpDM/altTapeName_label=Alternate Tape Name'/>
+    <xmp_property name='startTimecode' category='internal' type='timecode' description='$$$/xmp/xmpDM/startTimecode_description=The timecode of the first frame of video in the file, as obtained from the device control.' label='$$$/xmp/xmpDM/startTimecode_label=Start Timecode'/>
+    <xmp_property name='altTimecode' category='external' type='timecode' description='$$$/xmp/xmpDM/altTimecode_description=A timecode set by the user. When specified, it is used instead of the startTimecode.' label='$$$/xmp/xmpDM/altTimecode_label=Alternate Timecode'/>
+    <xmp_property name='duration' category='internal' type='time' description='$$$/xmp/xmpDM/duration_description=The duration of the media file.' label='$$$/xmp/xmpDM/duration_label=Duration'/>
+    <xmp_property name='scene' category='external' type='text' description='$$$/xmp/xmpDM/scene_description=Name or number of scene' label='$$$/xmp/xmpDM/scene_label=Scene'/>
+    <xmp_property name='shotName' category='external' type='text' description='$$$/xmp/xmpDM/shotName_description=The name of the shot or take.' label='$$$/xmp/xmpDM/shotName_label=Shot Name'/>
+    <xmp_property name='shotNumber' category='external' type='text' description='$$$/xmp/xmpDM/shotNumber_description=Number of shot' label='$$$/xmp/xmpDM/shotNumber_label=Shot Number'/>
+    <xmp_property name='shotDate' category='external' type='date' description='$$$/xmp/xmpDM/shotDate_description=Date and time shot was recorded' label='$$$/xmp/xmpDM/shotDate_label=Shot Date'/>
+    <xmp_property name='shotLocation' category='external' type='text' description='$$$/xmp/xmpDM/shotLocation_description=Shot Location: Where shot was recorded' label='$$$/xmp/xmpDM/shotLocation_label=Shot Location'/>
+    <xmp_property name='logComment' category='external' type='text' description='$$$/xmp/xmpDM/logComment_description=Editorial note about the clip' label='$$$/xmp/xmpDM/logComment_label=Log Comment'/>
+    <xmp_property name='markers' category='internal' type='seq' description='$$$/xmp/xmpDM/markers_description=List of markers' element_type='marker' label='$$$/xmp/xmpDM/markers_label=Markers'/>
+    <xmp_property name='contributedMedia' category='internal' type='bag' description='$$$/xmp/xmpDM/contributedMedia_description=List of all media used to create this media' element_type='media' label='$$$/xmp/xmpDM/contributedMedia_label=Contributed Media'/>
+    <xmp_property name='absPeakAudioFilePath' category='internal' type='uri' description='$$$/xmp/xmpDM/absPeakAudioFilePath_description=The absolute path to the peak audio file.' label='$$$/xmp/xmpDM/absPeakAudioFilePath_label=Absolute Peak Audio File Path'/>
+    <xmp_property name='relativePeakAudioFilePath' category='internal' type='uri' description='$$$/xmp/xmpDM/relativePeakAudioFilePath_description=The relative path to the peak audio file.' label='$$$/xmp/xmpDM/relativePeakAudioFilePath_label=Relative Peak Audio File Path'/>
+    <xmp_property name='videoModDate' category='internal' type='date' description='$$$/xmp/xmpDM/videoModDate_description=Date and time video was last modified' deprecated='true' label='$$$/xmp/xmpDM/videoModDate_label=Video Modification Date'/>
+    <xmp_property name='audioModDate' category='internal' type='date' description='$$$/xmp/xmpDM/audioModDate_description=Date and time audio was last modified' deprecated='true' label='$$$/xmp/xmpDM/audioModDate_label=Audio Modification Date'/>
+    <xmp_property name='metadataModDate' category='internal' type='date' description='$$$/xmp/xmpDM/metadataModDate_description=Date and time metadata was last modified' deprecated='true' label='$$$/xmp/xmpDM/metadataModDate_label=Metadata Modification Date'/>
+    <xmp_property name='artist' category='external' type='text' description='$$$/xmp/xmpDM/artist_description=The name of the artist or artists.' label='$$$/xmp/xmpDM/artist_label=Artist'/>
+    <xmp_property name='album' category='external' type='text' description='$$$/xmp/xmpDM/album_description=The name of the album.' label='$$$/xmp/xmpDM/album_label=Album'/>
+    <xmp_property name='trackNumber' category='external' type='integer' description='$$$/xmp/xmpDM/trackNumber_description=A numeric value indicating the order of the audio file within its original recording.' min='0' label='$$$/xmp/xmpDM/trackNumber_label=Audio Track Number'/>
+    <xmp_property name='genre' category='external' type='text' description='$$$/xmp/xmpDM/genre_description=The name of the genre.' label='$$$/xmp/xmpDM/genre_label=Genre'/>
+    <xmp_property name='releaseDate' category='external' type='date' description='$$$/xmp/xmpDM/releaseDate_description=When the recording was released to public' label='$$$/xmp/xmpDM/releaseDate_label=Release Date'/>
+    <xmp_property name='composer' category='external' type='text' description='$$$/xmp/xmpDM/composer_description=The composer#{lsquo}s name.' label='$$$/xmp/xmpDM/composer_label=Composer'/>
+    <xmp_property name='engineer' category='external' type='text' description='$$$/xmp/xmpDM/engineer_description=The engineer#{lsquo}s name.' label='$$$/xmp/xmpDM/engineer_label=Engineer'/>
+    <xmp_property name='partOfCompilation' category='external' type='boolean' description='$$$/xmp/xmpDM/partOfCompilation_description=Part of compilation. True or False.' label='$$$/xmp/xmpDM/partOfCompilation_label=Part of Compilation'/>
+    <xmp_property name='lyrics' category='external' type='text' description='$$$/xmp/xmpDM/lyrics_description=Lyrics text. No association with timecode.' label='$$$/xmp/xmpDM/lyrics_label=Lyrics'/>
+    <xmp_property name='discNumber' category='external' type='text' description='$$$/xmp/xmpDM/discNumber_description=If in a multi-disc set, might contain total number of discs; example: 2/3' label='$$$/xmp/xmpDM/discNumber_label=Disc Number'/>
+    <xmp_property name='tempo' category='internal' type='real' description='$$$/xmp/xmpDM/tempo_description=Music pace: example 120 BPM' label='$$$/xmp/xmpDM/tempo_label=Tempo'/>
+    <xmp_property name='instrument' category='external' type='text' description='$$$/xmp/xmpDM/instrument_description=Name of musical instrument(s)' label='$$$/xmp/xmpDM/instrument_label=Instrument'/>
+    <xmp_property name='introTime' category='internal' type='time' description='$$$/xmp/xmpDM/introTime_description=Lead time for queuing music' label='$$$/xmp/xmpDM/introTime_label=Intro Time'/>
+    <xmp_property name='outCue' category='internal' type='time' description='$$$/xmp/xmpDM/outCue_description=Time to begin fading out' label='$$$/xmp/xmpDM/outCue_label=Out Cue'/>
+    <xmp_property name='relativeTimestamp' category='internal' type='time' description='$$$/xmp/xmpDM/relativeTimestamp_description=Start time of media inside the audio project' label='$$$/xmp/xmpDM/relativeTimestamp_label=Relative Timestamp'/>
+    <xmp_property name='loop' category='internal' type='boolean' description='$$$/xmp/xmpDM/loop_description=True = seamless looping' label='$$$/xmp/xmpDM/loop_label=Loop'/>
+    <xmp_property name='numberOfBeats' category='internal' type='real' description='$$$/xmp/xmpDM/numberOfBeats_description=Number of beats in a music file or loop' label='$$$/xmp/xmpDM/numberOfBeats_label=Number Of Beats'/>
+    <xmp_property name='key' category='internal' type='closedchoice' description='$$$/xmp/xmpDM/key_description=Key of the music; Example: C, C#, D' element_type='text' label='$$$/xmp/xmpDM/key_label=Root Note'>
+      <xmp_choice raw_value='A' label='$$$/xmp/xmpDM/key/9=A'/>
+      <xmp_choice raw_value='A#' label='$$$/xmp/xmpDM/key/10=A#'/>
+      <xmp_choice raw_value='B' label='$$$/xmp/xmpDM/key/11=B'/>
+      <xmp_choice raw_value='C' label='$$$/xmp/xmpDM/key/0=C'/>
+      <xmp_choice raw_value='C#' label='$$$/xmp/xmpDM/key/1=C#'/>
+      <xmp_choice raw_value='D' label='$$$/xmp/xmpDM/key/2=D'/>
+      <xmp_choice raw_value='D#' label='$$$/xmp/xmpDM/key/3=D#'/>
+      <xmp_choice raw_value='E' label='$$$/xmp/xmpDM/key/4=E'/>
+      <xmp_choice raw_value='F' label='$$$/xmp/xmpDM/key/5=F'/>
+      <xmp_choice raw_value='F#' label='$$$/xmp/xmpDM/key/6=F#'/>
+      <xmp_choice raw_value='G' label='$$$/xmp/xmpDM/key/7=G'/>
+      <xmp_choice raw_value='G#' label='$$$/xmp/xmpDM/key/8=G#'/>
+    </xmp_property>
+    <xmp_property name='stretchMode' category='internal' type='closedchoice' element_type='text' description='$$$/xmp/xmpDM/stretchMode_description=Example: Fixed length, Time-scale' label='$$$/xmp/xmpDM/stretchMode_label=Audio Stretch Mode'>
+      <xmp_choice raw_value='Fixed length' label='$$$/xmp/xmpDM/stretchMode/0=Fixed length'/>
+      <xmp_choice raw_value='Time-Scale' label='$$$/xmp/xmpDM/stretchMode/1=Time-Scale'/>
+      <xmp_choice raw_value='Resample' label='$$$/xmp/xmpDM/stretchMode/2=Resample'/>
+      <xmp_choice raw_value='Beat Splice' label='$$$/xmp/xmpDM/stretchMode/3=Beat Splice'/>
+      <xmp_choice raw_value='Hybrid' label='$$$/xmp/xmpDM/stretchMode/4=Hybrid'/>
+    </xmp_property>
+    <xmp_property name='timeScaleParams' category='internal' type='timescalestretch' description='$$$/xmp/xmpDM/timeScaleParams_description=Additional Time-Scale parameters' label='$$$/xmp/xmpDM/timeScaleParams_label=Audio Stretch Mode Time-Scale'/>
+    <xmp_property name='resampleParams' category='internal' type='resamplestretch' description='$$$/xmp/xmpDM/resampleParams_description=Additional Resample parameters' label='$$$/xmp/xmpDM/resampleParams_label=Audio Stretch Mode Resample'/>
+    <xmp_property name='beatSpliceParams' category='internal' type='beatsplicestretch' description='$$$/xmp/xmpDM/beatSpliceParams_description=Additional Beat Splice parameters' label='$$$/xmp/xmpDM/beatSpliceParams_label=Audio Stretch Mode Beat Splice'/>
+    <xmp_property name='timeSignature' category='internal' type='closedchoice' element_type='text' description='$$$/xmp/xmpDM/timeSignature_description=Example: 2/4, 3/4, 4/4' label='$$$/xmp/xmpDM/timeSignature_label=Music Time Signature'>
+      <xmp_choice raw_value='2/4' label='$$$/xmp/xmpDM/timeSignature/0=2/4'/>
+      <xmp_choice raw_value='3/4' label='$$$/xmp/xmpDM/timeSignature/1=3/4'/>
+      <xmp_choice raw_value='4/4' label='$$$/xmp/xmpDM/timeSignature/2=4/4'/>
+      <xmp_choice raw_value='5/4' label='$$$/xmp/xmpDM/timeSignature/3=5/4'/>
+      <xmp_choice raw_value='7/4' label='$$$/xmp/xmpDM/timeSignature/4=7/4'/>
+      <xmp_choice raw_value='6/8' label='$$$/xmp/xmpDM/timeSignature/5=6/8'/>
+      <xmp_choice raw_value='9/8' label='$$$/xmp/xmpDM/timeSignature/6=9/8'/>
+      <xmp_choice raw_value='12/8' label='$$$/xmp/xmpDM/timeSignature/7=12/8'/>
+      <xmp_choice raw_value='other' label='$$$/xmp/xmpDM/timeSignature/8=Other'/>
+    </xmp_property>
+    <xmp_property name='scaleType' category='internal' type='closedchoice' element_type='text' description='$$$/xmp/xmpDM/scaleType_description=Musical scale used in the music; Example: Major, Minor, Both, Neither.' label='$$$/xmp/xmpDM/scaleType_label=Musical Scale Type'>
+      <xmp_choice raw_value='Major' label='$$$/xmp/xmpDM/scaleType/0=Major'/>
+      <xmp_choice raw_value='Minor' label='$$$/xmp/xmpDM/scaleType/1=Minor'/>
+      <xmp_choice raw_value='Both' label='$$$/xmp/xmpDM/scaleType/2=Both'/>
+      <xmp_choice raw_value='Neither' label='$$$/xmp/xmpDM/scaleType/3=Neither'/>
+    </xmp_property>
+    <xmp_property name='comment' category='external' type='text' description='$$$/xmp/xmpDM/comment_description=Item comments.' label='$$$/xmp/xmpDM/comment_label=Comment'/>
+    <xmp_property name='takeNumber' category='external' type='integer' description='$$$/xmp/xmpDM/takeNumber_description=Take number.' min='1' label='$$$/xmp/xmpDM/takeNumber_label=Take Number'/>
+    <xmp_property name='client' category='external' type='text' description='$$$/xmp/xmpDM/client_description=The name of the client.' label='$$$/xmp/xmpDM/client_label=Client'/>
+    <xmp_property name='good' category='external' type='boolean' description='$$$/xmp/xmpDM/good_description=Preferred shots or takes are marked good.' label='$$$/xmp/xmpDM/good_label=Good'/>
+    <xmp_property name='projectName' category='external' type='text' description='$$$/xmp/xmpDM/projectName_description=Name.' label='$$$/xmp/xmpDM/projectName_label=Project Name'/>
+    <xmp_property name='director' category='external' type='text' description='$$$/xmp/xmpDM/director_description=Director.' label='$$$/xmp/xmpDM/director_label=Director'/>
+    <xmp_property name='directorPhotography' category='external' type='text' description='$$$/xmp/xmpDM/directorPhotography_description=Director of Photography.' label='$$$/xmp/xmpDM/directorPhotography_label=Director Photography'/>
+    <xmp_property name='cameraLabel' category='external' type='text' description='$$$/xmp/xmpDM/cameraLabel_description=Name of the camera.' label='$$$/xmp/xmpDM/cameraLabel_label=Camera Label'/>
+    <xmp_property name='cameraModel' category='external' type='text' description='$$$/xmp/xmpDM/cameraModel_description=Manufacturer model number.' label='$$$/xmp/xmpDM/cameraModel_label=Camera Model'/>
+    <xmp_property name='cameraMove' category='external' type='openchoice' description='$$$/xmp/xmpDM/cameraMove_description=Movement of the camera during the shot. Examples: pan left, dolly out.' element_type='text' label='$$$/xmp/xmpDM/cameraMove_label=Camera Move'>
+       <xmp_choice raw_value='Aerial' label='$$$/xmp/xmpDM/cameraMove/Aerial=Aerial'/>
+       <xmp_choice raw_value='Boom Up' label='$$$/xmp/xmpDM/cameraMove/BoomUp=Boom Up'/>
+       <xmp_choice raw_value='Boom Down' label='$$$/xmp/xmpDM/cameraMove/BoomDown=Boom Down'/>
+       <xmp_choice raw_value='Crane Up' label='$$$/xmp/xmpDM/cameraMove/CraneUp=Crane Up'/>
+       <xmp_choice raw_value='Crane Down' label='$$$/xmp/xmpDM/cameraMove/CraneDown=Crane Down'/>
+       <xmp_choice raw_value='Dolly In' label='$$$/xmp/xmpDM/cameraMove/DollyIn=Dolly In'/>
+       <xmp_choice raw_value='Dolly Out' label='$$$/xmp/xmpDM/cameraMove/DollyOut=Dolly Out'/>
+       <xmp_choice raw_value='Pan Left' label='$$$/xmp/xmpDM/cameraMove/PanLeft=Pan Left'/>
+       <xmp_choice raw_value='Pan Right' label='$$$/xmp/xmpDM/cameraMove/PanRight=Pan Right'/>
+       <xmp_choice raw_value='Pedestal Up' label='$$$/xmp/xmpDM/cameraMove/PedestalUp=Pedestal Up'/>
+       <xmp_choice raw_value='Pedestal Down' label='$$$/xmp/xmpDM/cameraMove/PedestalDown=Pedestal Down'/>
+       <xmp_choice raw_value='Tilt Up' label='$$$/xmp/xmpDM/cameraMove/TiltUp=Tilt Up'/>
+       <xmp_choice raw_value='Tilt Down' label='$$$/xmp/xmpDM/cameraMove/TiltDown=Tilt Down'/>
+       <xmp_choice raw_value='Tracking' label='$$$/xmp/xmpDM/cameraMove/Tracking=Tracking'/>
+       <xmp_choice raw_value='Truck Left' label='$$$/xmp/xmpDM/cameraMove/TruckLeft=Truck Left'/>
+       <xmp_choice raw_value='Truck Right' label='$$$/xmp/xmpDM/cameraMove/TruckRight=Truck Right'/>
+       <xmp_choice raw_value='Zoom In' label='$$$/xmp/xmpDM/cameraMove/ZoomIn=Zoom In'/>
+       <xmp_choice raw_value='Zoom Out' label='$$$/xmp/xmpDM/cameraMove/ZoomOut=Zoom Out'/>
+    </xmp_property>
+    <xmp_property name='shotSize' category='external' type='openchoice' description='$$$/xmp/xmpDM/shotSize=The size, or scale or the shot framing' element_type='text' label='$$$/xmp/xmpDM/shotSize_label=Shot Size'>
+      <xmp_choice raw_value='ECU' label='$$$/xmp/xmpDM/shotSize/ECU=ECU'/>
+      <xmp_choice raw_value='MCU' label='$$$/xmp/xmpDM/shotSize/MCU=MCU'/>
+      <xmp_choice raw_value='CU' label='$$$/xmp/xmpDM/shotSize/CU=CU'/>
+      <xmp_choice raw_value='MS' label='$$$/xmp/xmpDM/shotSize/MS=MS'/>
+      <xmp_choice raw_value='WS' label='$$$/xmp/xmpDM/shotSize/WS=WS'/>
+      <xmp_choice raw_value='MWS' label='$$$/xmp/xmpDM/shotSize/MWS=MWS'/>
+      <xmp_choice raw_value='EWS' label='$$$/xmp/xmpDM/shotSize/EWS=EWS'/>
+    </xmp_property>
+    <xmp_property name='cameraAngle' category='external' type='openchoice' description='$$$/xmp/xmpDM/cameraAngle=Orientation of camera (angle) to subject in a static shot' element_type='text' label='$$$/xmp/xmpDM/cameraAngle_label=Camera Angle'>
+      <xmp_choice raw_value='Low Angle' label='$$$/xmp/xmpDM/cameraAngle/lowAngle=Low Angle'/>
+      <xmp_choice raw_value='Eye Level' label='$$$/xmp/xmpDM/cameraAngle/eyeLevel=Eye Level'/>
+      <xmp_choice raw_value='High Angle' label='$$$/xmp/xmpDM/cameraAngle/highAngle=High Angle'/>
+      <xmp_choice raw_value='Overhead Shot' label='$$$/xmp/xmpDM/cameraAngle/overheadShot=Overhead Shot'/>
+      <xmp_choice raw_value='Birds Eye Shot' label='$$$/xmp/xmpDM/cameraAngle/birdsEyeShot=Birds Eye Shot'/>
+      <xmp_choice raw_value='Dutch Angle' label='$$$/xmp/xmpDM/cameraAngle/dutchAngle=Dutch Angle'/>
+      <xmp_choice raw_value='POV' label='$$$/xmp/xmpDM/cameraAngle/pov=POV'/>
+      <xmp_choice raw_value='Over the Shoulder' label='$$$/xmp/xmpDM/cameraAngle/overTheShoulder=Over the Shoulder'/>
+      <xmp_choice raw_value='Reaction Shot' label='$$$/xmp/xmpDM/cameraAngle/reactionShot=Reaction Shot'/>
+    </xmp_property>
+    <xmp_property name='shotDay' category='external' type='text' description='$$$/xmp/xmpDM/shotDay_description=The day or date in a multi-day shoot' label='$$$/xmp/xmpDM/shotDay_label=Day of Shoot'/>
+  </xmp_schema>
+  <xmp_type name='beatsplicestretch' description='$$$/xmp/xmpDM/beatsplicestretch_description=A set of parameters used when stretching audio using the Beat Splice stretch mode' label='$$$/xmp/xmpDM/beatsplicestretch_label=Beat Splice Stretch'>
+    <xmp_field prefix='xmpDM' name='useFileBeatsMarker' type='boolean' namespace='http://ns.adobe.com/xmp/1.0/DynamicMedia/' description='$$$/xmp/xmpDM/beatsplicestretch/useFileBeatsMarker_description=When true, the file&apos;s beat markers are used for stretching. Otherwise the rise and duration fields are used to automatically locate the beats.' label='$$$/xmp/xmpDM/beatsplicestretch/useFileBeatsMarker_label=Use File Beats Marker'/>
+    <xmp_field prefix='xmpDM' name='riseInDecibel' type='real' namespace='http://ns.adobe.com/xmp/1.0/DynamicMedia/' description='$$$/xmp/xmpDM/beatsplicestretch/riseInDecibel_description=Amount sound must increase in decibels (dB) to detect a beat' label='$$$/xmp/xmpDM/beatsplicestretch/riseInDecibel_label=Rise In Decibel'/>
+    <xmp_field prefix='xmpDM' name='riseInTimeDuration' type='time' namespace='http://ns.adobe.com/xmp/1.0/DynamicMedia/' description='$$$/xmp/xmpDM/beatsplicestretch/riseInTimeDuration_description=Duration of time used to measure the decibel (dB) increase for locating beats' label='$$$/xmp/xmpDM/beatsplicestretch/riseInTimeDuration_label=Rise In Time Duration'/>
+  </xmp_type>
+  <xmp_type name='marker' description='$$$/xmp/xmpDM/marker_description=Location of significant event in sequence' label='$$$/xmp/xmpDM/marker_label=Marker'>
+    <xmp_field prefix='xmpDM' name='startTime' type='time' namespace='http://ns.adobe.com/xmp/1.0/DynamicMedia/' description='$$$/xmp/xmpDM/marker/startTime_description=Timeline position of marker' label='$$$/xmp/xmpDM/marker/startTime_label=Start Time'/>
+    <xmp_field prefix='xmpDM' name='duration' type='time' namespace='http://ns.adobe.com/xmp/1.0/DynamicMedia/' description='$$$/xmp/xmpDM/marker/duration_description=Length of marker in sequence' label='$$$/xmp/xmpDM/marker/duration_label=Duration'/>
+    <xmp_field prefix='xmpDM' name='comment' type='text' namespace='http://ns.adobe.com/xmp/1.0/DynamicMedia/' description='$$$/xmp/xmpDM/marker/comment_description=Marker description' label='$$$/xmp/xmpDM/marker/comment_label=Comment'/>
+    <xmp_field prefix='xmpDM' name='name' type='text' namespace='http://ns.adobe.com/xmp/1.0/DynamicMedia/' description='$$$/xmp/xmpDM/marker/name_description=Marker name, example: DVD Chapter name' label='$$$/xmp/xmpDM/marker/name_label=Name'/>
+    <xmp_field prefix='xmpDM' name='location' type='uri' namespace='http://ns.adobe.com/xmp/1.0/DynamicMedia/' description='$$$/xmp/xmpDM/marker/location_description=The URL to be launched' label='$$$/xmp/xmpDM/marker/location_label=URL Location'/>
+    <xmp_field prefix='xmpDM' name='target' type='text' namespace='http://ns.adobe.com/xmp/1.0/DynamicMedia/' description='$$$/xmp/xmpDM/marker/target_description=URL text following the # sign' label='$$$/xmp/xmpDM/marker/target_label=URL Target'/>
+    <xmp_field prefix='xmpDM' name='type' type='closedchoice' namespace='http://ns.adobe.com/xmp/1.0/DynamicMedia/' description='$$$/xmp/xmpDM/marker/type_description=Example: Cue Point' element_type='text' label='$$$/xmp/xmpDM/marker/type_label=Type'>
+      <xmp_choice raw_value='Chapter' label='$$$/xmp/xmpDM/marker/type/0=Chapter'/>
+      <xmp_choice raw_value='Cue' label='$$$/xmp/xmpDM/marker/type/1=Cue'/>
+      <xmp_choice raw_value='Beat' label='$$$/xmp/xmpDM/marker/type/2=Beat'/>
+      <xmp_choice raw_value='Track' label='$$$/xmp/xmpDM/marker/type/3=Track'/>
+      <xmp_choice raw_value='Index' label='$$$/xmp/xmpDM/marker/type/4=Index'/>
+    </xmp_field>
+  </xmp_type>
+  <xmp_type name='projectlink' description='$$$/xmp/xmpDM/projectlink_description=Video file type and project file path' label='$$$/xmp/xmpDM/projectlink_label=Project Link'>
+    <xmp_field prefix='xmpDM' name='type' type='closedchoice' namespace='http://ns.adobe.com/xmp/1.0/DynamicMedia/' description='$$$/xmp/xmpDM/projectlink/type_description=The file type.' element_type='text' label='$$$/xmp/xmpDM/projectlink/type_label=Type'>
+      <xmp_choice raw_value='movie' label='$$$/xmp/xmpDM/projectlink/type/0=Movie'/>
+      <xmp_choice raw_value='still' label='$$$/xmp/xmpDM/projectlink/type/1=Still'/>
+      <xmp_choice raw_value='audio' label='$$$/xmp/xmpDM/projectlink/type/2=Audio'/>
+      <xmp_choice raw_value='custom' label='$$$/xmp/xmpDM/projectlink/type/3=Custom'/>
+    </xmp_field>
+    <xmp_field prefix='xmpDM' name='path' type='uri' namespace='http://ns.adobe.com/xmp/1.0/DynamicMedia/' description='$$$/xmp/xmpDM/projectlink/path_description=File path of the project that created this media.' label='$$$/xmp/xmpDM/projectlink/path_label=Path'/>
+  </xmp_type>
+  <xmp_type name='media' description='$$$/xmp/xmpDM/media_description=A reference to a media asset. This is typically a local file, but can be anything that can be specified with a URL. Contains information about usage in the parent media (typically a sequence), and the associated media rights.' label='$$$/xmp/xmpDM/media_label=Media'>
+    <xmp_field prefix='xmpDM' name='path' type='uri' namespace='http://ns.adobe.com/xmp/1.0/DynamicMedia/' description='$$$/xmp/xmpDM/media/path_description=Media file path' label='$$$/xmp/xmpDM/media/path_label=Path'/>
+    <xmp_field prefix='xmpDM' name='track' type='text' namespace='http://ns.adobe.com/xmp/1.0/DynamicMedia/' description='$$$/xmp/xmpDM/media/track_description=Name or number of track containing this media' label='$$$/xmp/xmpDM/media/track_label=Track'/>
+    <xmp_field prefix='xmpDM' name='startTime' type='time' namespace='http://ns.adobe.com/xmp/1.0/DynamicMedia/' description='$$$/xmp/xmpDM/media/startTime_description=Media start location in sequence' label='$$$/xmp/xmpDM/media/startTime_label=Start Time'/>
+    <xmp_field prefix='xmpDM' name='duration' type='time' namespace='http://ns.adobe.com/xmp/1.0/DynamicMedia/' description='$$$/xmp/xmpDM/media/duration_description=Length of media in sequence' label='$$$/xmp/xmpDM/media/duration_label=Duration'/>
+    <xmp_field prefix='xmpDM' name='managed' type='boolean' namespace='http://ns.adobe.com/xmp/1.0/DynamicMedia/' description='$$$/xmp/xmpDM/media/managed_description=When true, this is a rights-managed resource.' label='$$$/xmp/xmpDM/media/managed_label=Managed'/>
+    <xmp_field prefix='xmpDM' name='webStatement' type='uri' namespace='http://ns.adobe.com/xmp/1.0/DynamicMedia/' description='$$$/xmp/xmpDM/media/webStatement_description=URL of web page describing ownership and/or rights for this media' label='$$$/xmp/xmpDM/media/webStatement_label=Web Copyright Statement'/>
+  </xmp_type>
+  <xmp_type name='resamplestretch' description='$$$/xmp/xmpDM/resamplestretch_description=A set of parameters used when stretching audio using the Resample stretch mode' label='$$$/xmp/xmpDM/resamplestretch_label=Resample Stretch'>
+    <xmp_field prefix='xmpDM' name='quality' type='closedchoice' namespace='http://ns.adobe.com/xmp/1.0/DynamicMedia/' element_type='text' description='$$$/xmp/xmpDM/media/quality_description=Example: High, Medium, Low' label='$$$/xmp/xmpDM/resamplestretch/quality_label=Quality'>
+      <xmp_choice raw_value='High' label='$$$/xmp/xmpDM/resamplestretch/quality/0=High'/>
+      <xmp_choice raw_value='Medium' label='$$$/xmp/xmpDM/resamplestretch/quality/1=Medium'/>
+      <xmp_choice raw_value='Low' label='$$$/xmp/xmpDM/resamplestretch/quality/2=Low'/>
+    </xmp_field>
+  </xmp_type>
+  <xmp_type name='time' description='$$$/xmp/xmpDM/time_description=A representation of a time value in seconds. This is similar to After Effect&apos;s TDB, or QuickTime&apos;s representation of time. They each have a value, and the scale of the value. For example, if the scale is the rational 1/25 (PAL 25fps), and the value is 50, the time is 2 seconds.' label='$$$/xmp/xmpDM/time_label=Time'>
+    <xmp_field prefix='xmpDM' name='value' type='integer' namespace='http://ns.adobe.com/xmp/1.0/DynamicMedia/' description='$$$/xmp/xmpDM/time/value_description=The time value in the specified scale.' label='$$$/xmp/xmpDM/time/value_label=Value'/>
+    <xmp_field prefix='xmpDM' name='scale' type='rational' namespace='http://ns.adobe.com/xmp/1.0/DynamicMedia/' description='$$$/xmp/xmpDM/time/scale_description=The scale for the time value. For NTSC, use 1001/30000, or the less accurate 100/2997. For PAL, use 1/25.' label='$$$/xmp/xmpDM/time/scale_label=Scale'/>
+  </xmp_type>
+  <xmp_type name='timecode' description='$$$/xmp/xmpDM/timecode_description=A time value in video.' label='$$$/xmp/xmpDM/timecode_label=Timecode'>
+    <xmp_field prefix='xmpDM' name='timeValue' type='text' namespace='http://ns.adobe.com/xmp/1.0/DynamicMedia/' description='$$$/xmp/xmpDM/timecode/timeValue_description=A time value in the specified format. Time values use a colon delimiter in all formats except 2997drop, which uses a semicolon. The four fields indicate hours, minutes, seconds, and frames: hh:mm:ss:ff The actual duration in seconds depends on the format.' label='$$$/xmp/xmpDM/timecode/timeValue_label=Time Value'/>
+    <xmp_field prefix='xmpDM' name='timeFormat' type='closedchoice' namespace='http://ns.adobe.com/xmp/1.0/DynamicMedia/' element_type='text' description='$$$/xmp/xmpDM/timecode/timeFormat_description=Example: 25Timecode, 2997DropTimecode' label='$$$/xmp/xmpDM/timecode/timeFormat_label=Time Format'>
+      <xmp_choice raw_value='' label='$$$/xmp/choice/unsetValue_label=(Select value)'/>
+      <xmp_choice raw_value='24Timecode' label='$$$/xmp/xmpDM/timecode/timeFormat/0=24Timecode'/>
+      <xmp_choice raw_value='25Timecode' label='$$$/xmp/xmpDM/timecode/timeFormat/1=25Timecode'/>
+      <xmp_choice raw_value='2997DropTimecode' label='$$$/xmp/xmpDM/timecode/timeFormat/2=2997DropTimecode'/>
+      <xmp_choice raw_value='2997NonDropTimecode' label='$$$/xmp/xmpDM/timecode/timeFormat/3=2997NonDropTimecode'/>
+      <xmp_choice raw_value='30Timecode' label='$$$/xmp/xmpDM/timecode/timeFormat/4=30Timecode'/>
+      <xmp_choice raw_value='50Timecode' label='$$$/xmp/xmpDM/timecode/timeFormat/5=50Timecode'/>
+      <xmp_choice raw_value='5994DropTimecode' label='$$$/xmp/xmpDM/timecode/timeFormat/6=5994DropTimecode'/>
+      <xmp_choice raw_value='5994NonDropTimecode' label='$$$/xmp/xmpDM/timecode/timeFormat/7=5994NonDropTimecode'/>
+      <xmp_choice raw_value='60Timecode' label='$$$/xmp/xmpDM/timecode/timeFormat/8=60Timecode'/>
+      <xmp_choice raw_value='23976Timecode' label='$$$/xmp/xmpDM/timecode/timeFormat/9=23976Timecode'/>
+	  <xmp_choice raw_value='Frames' label='$$$/xmp/xmpDM/timecode/timeFormat/10=Frames'/>
+	</xmp_field>
+  </xmp_type>
+  <xmp_type name='timescalestretch' description='$$$/xmp/xmpDM/timescalestretch_description=A set of parameters used when stretching audio using the Time-Scale stretch mode' label='$$$/xmp/xmpDM/timescalestretch_label=Time Scale Stretch'>
+    <xmp_field prefix='xmpDM' name='quality' type='closedchoice' namespace='http://ns.adobe.com/xmp/1.0/DynamicMedia/' element_type='text' description='$$$/xmp/xmpDM/quality_description=Example: High, Medium, Low' label='$$$/xmp/xmpDM/timescalestretch/quality_label=Quality'>
+      <xmp_choice raw_value='High' label='$$$/xmp/xmpDM/timescalestretch/quality/0=High'/>
+      <xmp_choice raw_value='Medium' label='$$$/xmp/xmpDM/timescalestretch/quality/1=Medium'/>
+      <xmp_choice raw_value='Low' label='$$$/xmp/xmpDM/timescalestretch/quality/2=Low'/>
+    </xmp_field>
+    <xmp_field prefix='xmpDM' name='frameSize' type='real' namespace='http://ns.adobe.com/xmp/1.0/DynamicMedia/' description='$$$/xmp/xmpDM/timescalestretch/frameSize_description=Splices per beat' label='$$$/xmp/xmpDM/timescalestretch/frameSize_label=Frame Size'/>
+    <xmp_field prefix='xmpDM' name='frameOverlappingPercentage' type='real' namespace='http://ns.adobe.com/xmp/1.0/DynamicMedia/' description='$$$/xmp/xmpDM/timescalestretch/frameOverlappingPercentage_description=Percent of overlap between frames' label='$$$/xmp/xmpDM/timescalestretch/frameOverlappingPercentage_label=Frame Overlapping Percentage'/>
+  </xmp_type>
+</xmp_definitions>

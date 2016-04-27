@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+    <title>
+        ico-rectangle-black
+    </title>
+    <g opacity=".9">
+        <path opacity=".24" fill="#929185" d="M1.417 1.417h19.167v19.167H1.417z"/>
+        <path fill="#46443A" d="M20.083 1.917v18.167H1.917V1.917h18.166m1-1H.917v20.167h20.167V.917z"/>
+    </g>
+</svg>

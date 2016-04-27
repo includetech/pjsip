@@ -1,0 +1,42 @@
+========----SOFTASM.COM----=========
+ -------  How To  Install? --------
+
+1- Open the dmg file "Photoshop_CC_2015.dmg" and install as a trial, you will need to log in if you don’t have an Adobe account you can create one for free here: https://goo.gl/XvOv2i
+
+
+2. Finish the installation and close it. 
+
+
+
+   (Note: You can update it but only before you crack, NOT after. However you don’t have to, it doesn’t make a big difference)
+
+
+
+
+3. Now go to crack folder and copy the amtlib.framework folder.
+
+4. Navigate to: Applications > Adobe Photoshop CC 2015 > Adobe Photoshop CC 2015 (right click the icon) > Show package contents > Contents,
+   and paste into the ‘framework’ folder. When asked click ‘replace’ (this is IMPORTANT!)
+
+
+
+
+5. Now Adobe Photoshop CC 2015 should be cracked. That's all. Enjoy the final full version.
+
+How to know if you have done it right: When it isn’t cracked a window will show up when you open the application, asking to ‘Continue Trial’.
+
+When it is cracked it won’t show up. 
+
+
+Note: if you have the Creative Cloud Manager it will maybe say that you only have x days left.
+
+Don’t worry, if the ‘continue trial’ window doesn’t show up, it’s cracked! :)
+
+
+Enjoy!
+
+========----SOFTASM.COM----=========
+  -------   E N J O Y !   --------
+
+For More Information, or if you have found any installation problem
+Contact us on: SOFTASM.COM

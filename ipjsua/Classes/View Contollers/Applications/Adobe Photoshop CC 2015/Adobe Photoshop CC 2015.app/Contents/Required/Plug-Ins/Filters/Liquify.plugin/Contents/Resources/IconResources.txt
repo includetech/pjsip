@@ -1,0 +1,264 @@
+{
+	HighResolutionDataFile: "LiquifyIconsHighRes.dat",
+	Include: [
+		"MondoIcons.txt",
+		"MondoCursors.txt"
+		],
+	Icons: {
+		SP_Warp_Lg: {
+			HighResolution: {
+				Dark: "icons_x2/SP_x2_Warp_Lg_N_D.png",
+				Normal: "icons_x2/SP_x2_Warp_Lg_N.png"
+			},
+			LowResolution: {
+				Dark: "icons/SP_Warp_Lg_N_D.png",
+				Normal: "icons/SP_Warp_Lg_N.png"
+			}
+		},
+
+		SP_Reconstruct_Lg: {
+			HighResolution: {
+				Dark: "icons_x2/SP_x2_Reconstruct_Lg_N_D.png",
+				Normal: "icons_x2/SP_x2_Reconstruct_Lg_N.png"
+			},
+			LowResolution: {
+				Dark: "icons/SP_Reconstruct_Lg_N_D.png",
+				Normal: "icons/SP_Reconstruct_Lg_N.png"
+			}
+		},
+
+		SP_Smooth_Lg: {
+			HighResolution: {
+				Dark: "icons_x2/SP_x2_Smooth_Lg_N_D.png",
+				Normal: "icons_x2/SP_x2_Smooth_Lg_N.png"
+			},
+			LowResolution: {
+				Dark: "icons/SP_Smooth_Lg_N_D.png",
+				Normal: "icons/SP_Smooth_Lg_N.png"
+			}
+		},
+
+		SP_TwirlCW_Lg: {
+			HighResolution: {
+				Dark: "icons_x2/SP_x2_TwirlCW_Lg_N_D.png",
+				Normal: "icons_x2/SP_x2_TwirlCW_Lg_N.png"
+			},
+			LowResolution: {
+				Dark: "icons/SP_TwirlCW_Lg_N_D.png",
+				Normal: "icons/SP_TwirlCW_Lg_N.png"
+			}
+		},
+
+		SP_TwirlCCW_Lg: {
+			HighResolution: {
+				Dark: "icons_x2/SP_x2_TwirlCCW_Lg_N_D.png",
+				Normal: "icons_x2/SP_x2_TwirlCCW_Lg_N.png"
+			},
+			LowResolution: {
+				Dark: "icons/SP_TwirlCCW_Lg_N_D.png",
+				Normal: "icons/SP_TwirlCCW_Lg_N.png"
+			}
+		},
+
+		SP_Pucker_Lg: {
+			HighResolution: {
+				Dark: "icons_x2/SP_x2_Pucker_Lg_N_D.png",
+				Normal: "icons_x2/SP_x2_Pucker_Lg_N.png"
+			},
+			LowResolution: {
+				Dark: "icons/SP_Pucker_Lg_N_D.png",
+				Normal: "icons/SP_Pucker_Lg_N.png"
+			}
+		},
+
+		SP_Bloat_Lg: {
+			HighResolution: {
+				Dark: "icons_x2/SP_x2_Bloat_Lg_N_D.png",
+				Normal: "icons_x2/SP_x2_Bloat_Lg_N.png"
+			},
+			LowResolution: {
+				Dark: "icons/SP_Bloat_Lg_N_D.png",
+				Normal: "icons/SP_Bloat_Lg_N.png"
+			}
+		},
+
+		SP_ShiftPixelsRToL_Lg: {
+			HighResolution: {
+				Dark: "icons_x2/SP_x2_ShiftPixelsRToL_Lg_N_D.png",
+				Normal: "icons_x2/SP_x2_ShiftPixelsRToL_Lg_N.png"
+			},
+			LowResolution: {
+				Dark: "icons/SP_ShiftPixelsRToL_Lg_N_D.png",
+				Normal: "icons/SP_ShiftPixelsRToL_Lg_N.png"
+			}
+		},
+
+		SP_ShiftPixelsLToR_Lg: {
+			HighResolution: {
+				Dark: "icons_x2/SP_x2_ShiftPixelsLToR_Lg_N_D.png",
+				Normal: "icons_x2/SP_x2_ShiftPixelsLToR_Lg_N.png"
+			},
+			LowResolution: {
+				Dark: "icons/SP_ShiftPixelsLToR_Lg_N_D.png",
+				Normal: "icons/SP_ShiftPixelsLToR_Lg_N.png"
+			}
+		},
+
+		SP_Reflect_Lg: {
+			HighResolution: {
+				Dark: "icons_x2/SP_x2_Reflect_Lg_N_D.png",
+				Normal: "icons_x2/SP_x2_Reflect_Lg_N.png"
+			},
+			LowResolution: {
+				Dark: "icons/SP_Reflect_Lg_N_D.png",
+				Normal: "icons/SP_Reflect_Lg_N.png"
+			}
+		},
+
+		SP_Turbulence_Lg: {
+			HighResolution: {
+				Dark: "icons_x2/SP_x2_Turbulence_Lg_N_D.png",
+				Normal: "icons_x2/SP_x2_Turbulence_Lg_N.png"
+			},
+			LowResolution: {
+				Dark: "icons/SP_Turbulence_Lg_N_D.png",
+				Normal: "icons/SP_Turbulence_Lg_N.png"
+			}
+		},
+
+		SP_Freeze_Md: {
+			HighResolution: {
+				Dark: "icons_x2/SP_x2_Freeze_Md_N_D.png",
+				Normal: "icons_x2/SP_x2_Freeze_Md_N.png"
+			},
+			LowResolution: {
+				Dark: "icons/SP_Freeze_Md_N_D.png",
+				Normal: "icons/SP_Freeze_Md_N.png"
+			}
+		},
+
+		SP_Thaw_Lg: {
+			HighResolution: {
+				Dark: "icons_x2/SP_x2_Thaw_Lg_N_D.png",
+				Normal: "icons_x2/SP_x2_Thaw_Lg_N.png"
+			},
+			LowResolution: {
+				Dark: "icons/SP_Thaw_Lg_N_D.png",
+				Normal: "icons/SP_Thaw_Lg_N.png"
+			}
+		},
+
+		SP_Pan_Lg: {
+			HighResolution: {
+				Dark: "icons_x2/SP_x2_Pan_Lg_N_D.png",
+				Normal: "icons_x2/SP_x2_Pan_Lg_N.png"
+			},
+			LowResolution: {
+				Dark: "icons/SP_Pan_Lg_N_D.png",
+				Normal: "icons/SP_Pan_Lg_N.png"
+			}
+		},
+
+		SP_Magnification_Lg: {
+			HighResolution: {
+				Dark: "icons_x2/SP_x2_Magnification_Lg_N_D.png",
+				Normal: "icons_x2/SP_x2_Magnification_Lg_N.png"
+			},
+			LowResolution: {
+				Dark: "icons/SP_Magnification_Lg_N_D.png",
+				Normal: "icons/SP_Magnification_Lg_N.png"
+			}
+		},
+
+		SP_LiquifyMaskCopy_29x20: {
+			HighResolution: {
+				Dark: "icons_x2/SP_x2_LiquifyMaskCopy_29x20_N_D.png",
+				Normal: "icons_x2/SP_x2_LiquifyMaskCopy_29x20_N.png"
+			},
+			LowResolution: {
+				Dark: "icons/SP_LiquifyMaskCopy_29x20_N_D.png",
+				Normal: "icons/SP_LiquifyMaskCopy_29x20_N.png"
+			}
+		},
+
+		SP_LiquifyMaskThaw_29x20: {
+			HighResolution: {
+				Dark: "icons_x2/SP_x2_LiquifyMaskThaw_29x20_N_D.png",
+				Normal: "icons_x2/SP_x2_LiquifyMaskThaw_29x20_N.png"
+			},
+			LowResolution: {
+				Dark: "icons/SP_LiquifyMaskThaw_29x20_N_D.png",
+				Normal: "icons/SP_LiquifyMaskThaw_29x20_N.png"
+			}
+		},
+
+		SP_LiquifyMaskFreeze_29x20: {
+			HighResolution: {
+				Dark: "icons_x2/SP_x2_LiquifyMaskFreeze_29x20_N_D.png",
+				Normal: "icons_x2/SP_x2_LiquifyMaskFreeze_29x20_N.png"
+			},
+			LowResolution: {
+				Dark: "icons/SP_LiquifyMaskFreeze_29x20_N_D.png",
+				Normal: "icons/SP_LiquifyMaskFreeze_29x20_N.png"
+			}
+		},
+
+		SP_LiquifyMaskCross_29x20: {
+			HighResolution: {
+				Dark: "icons_x2/SP_x2_LiquifyMaskCross_29x20_N_D.png",
+				Normal: "icons_x2/SP_x2_LiquifyMaskCross_29x20_N.png"
+			},
+			LowResolution: {
+				Dark: "icons/SP_LiquifyMaskCross_29x20_N_D.png",
+				Normal: "icons/SP_LiquifyMaskCross_29x20_N.png"
+			}
+		},
+
+		SP_LiquifyMaskInv_29x20: {
+			HighResolution: {
+				Dark: "icons_x2/SP_x2_LiquifyMaskInv_29x20_N_D.png",
+				Normal: "icons_x2/SP_x2_LiquifyMaskInv_29x20_N.png"
+			},
+			LowResolution: {
+				Dark: "icons/SP_LiquifyMaskInv_29x20_N_D.png",
+				Normal: "icons/SP_LiquifyMaskInv_29x20_N.png"
+			}
+		}
+	},
+	LowResolutionDataFile: "LiquifyIconsLowRes.dat",
+	Name: "Liquify Icon Source File",
+	Version: "1.0"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

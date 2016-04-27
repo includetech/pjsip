@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Printer>
+	<Version value='1' />
+	<PrintLocation value='Local' />
+	<PrintVolume X='174.9' Y='239.4' Z='150' />
+	<PrinterResolution X='10' Y='10' Z='10' />
+	<PrinterHeads value='1' />
+	<PreferredFileFormat value='wrl' />
+	<PrinterSupportsUSB flag='0' />
+	<MeshRepairResolution value='7' />
+	<NeedsZip flag='0' />
+	<FullColor flag='1' />
+</Printer>
+<Materials>
+	<Material name='Color'>
+		<NeedsRaft flag='0' />
+		<NeedsSupports flag='0' />
+		<NeedsEscapeHoles flag='0' />
+		<MinimumWallThickness value='3' featureSize='3' />
+		<Diffuse R='1.0' G='1.0' B='1.0' />
+		<Specular R='0.0' G='0.0' B='0.0' />
+		<Illumination R='0' G='0' B='0' />
+		<Ambient R='0' G='0' B='0' />
+		<Shine value='0.0' />
+		<Reflection value='0.0' />
+		<Roughness value='0.0' />
+		<Bump value='0.0' />
+		<Opacity value='1' />
+		<Refraction value='1' />
+	</Material>
+</Materials>

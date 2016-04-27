@@ -1,0 +1,22 @@
+/*
+** Copyright (C) 2012 Apple Inc.
+** All rights reserved.
+*/
+
+ div.formset input[type="text"].code{width:300px;margin-right:8px;}
+a.terms{font-size:12px;color:#446D96;font-weight:bold;float:left;}
+section.redeem-header{display:-webkit-box;-webkit-box-align:center;height:300px;margin-bottom:15px;border:none;text-align:left;background:url(images/redeem/redeem_artwork.jpg) 0 0 no-repeat,url(images/redeem/panel_gradient.jpg) 0 0 no-repeat;}
+body.app-store section.redeem-header{background:url(images/redeem/mac_app_artwork.png) 60px 0 no-repeat,url(images/redeem/panel_gradient.jpg) 0 0 no-repeat;}
+div.redeem-fields,div.redeem-message{max-width:478px;margin:10px 0 0 410px;padding:0;}
+div.inline-page-errors{min-height:12px;margin:8px 0 12px;color:#ee2e24;width:auto;}
+div.redeem-fields a.see-all{color:#777;font-weight:bold;}
+div.inline-page-errors a.see-all{color:#ee2e24;font-weight:bold;}
+div.formset.error #redeemButton{outline:none;}
+div.redeem-message{margin-top:0;}
+div.redeem-message h2{font-size:14px;font-weight:bold;}
+div.redeem-message p{font-size:14px;line-height:22px;margin:0;}
+div.redeem-message p:last-of-type{margin-bottom:8px;}
+div.redeem-message #doneButton{margin-left:6px;}
+div.terms{margin:75px 0 10px;font-size:13px;color:#777;padding:0 100px;}
+div.terms h3{font-weight:bold;margin-bottom:6px;}
+div.terms p.redeem-terms{margin-top:10px;}

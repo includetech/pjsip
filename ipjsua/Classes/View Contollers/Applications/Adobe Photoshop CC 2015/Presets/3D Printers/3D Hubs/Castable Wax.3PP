@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Printer>
+	<Version value='1' />
+	<PrintLocation value='3D Hubs' />
+	<UploadURL value='https://www.3dhubs.com/3dprint/material/wax/printertype/inkjet/sla/wax' />
+	<PrintVolume X='125' Y='125' Z='165' />
+	<PrinterResolution X='5' Y='5' Z='5' />
+	<MeshRepairResolution value='7' />
+	<PrinterHeads value='1' />
+	<PrinterSupportsUSB flag='0' />
+	<PreferredFileFormat value='stl' />
+  <RemoveUnintendedLooseComponents flag='1' />
+	<NeedsZip flag='1' />
+	<Quality value='high'>
+		<MeshRepairResolution value='8' />
+	</Quality>
+	<Quality value='medium'>
+		<MeshRepairResolution value='7' />
+	</Quality>
+	<Quality value='low'>
+		<MeshRepairResolution value='6' />
+	</Quality>
+</Printer>
+<Materials>
+	<Material name='Castable Wax'>
+		<NeedsRaft flag='0' />
+		<NeedsSupports flag='0' />
+		<NeedsEscapeHoles flag='0' />
+		<MinimumWallThickness value='0.8' />
+		<MinimumWallThicknessFeatureSize value='0.9' />
+		<PricePerCubicCM value='1.5' />
+		<Handling value='10.0' />
+		<Diffuse R='0.16' G='0.36' B='0.49' />
+		<Specular R='0.9700' G='0.9700' B='0.9700' />
+		<Illumination R='0.08' G='0.08' B='0.08' />
+		<Ambient R='1.0000' G='0.0440' B='0.0440' />
+		<Shine value='0.8' />
+		<Reflection value='0.5' />
+		<Roughness value='0.4' />
+		<Bump value='0' />
+		<Opacity value='0.8' />
+		<Refraction value='1.5' />
+	</Material>
+</Materials>

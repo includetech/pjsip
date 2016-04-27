@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Printer>
+	<Version value='1' />
+	<PrintLocation value='Shapeways.com' />
+	<UploadURL value='http://www.adobe.com/go/psuploadtoshapeways' />
+	<PrintVolume X='89' Y='89' Z='100' />
+	<PrinterResolution X='8' Y='8' Z='8' />
+	<MeshRepairResolution value='7' />
+	<PrinterHeads value='1' />
+	<PrinterSupportsUSB flag='0' />
+	<PreferredFileFormat value='stl' />
+	<NeedsZip flag='1' />
+	<Quality value='high'>
+		<MeshRepairResolution value='8' />
+	</Quality>
+	<Quality value='medium'>
+		<MeshRepairResolution value='7' />
+	</Quality>
+	<Quality value='low'>
+		<MeshRepairResolution value='6' />
+	</Quality>
+</Printer>
+<Materials>
+	<Material name='Gold 18k'>
+		<NeedsRaft flag='0' />
+		<NeedsSupports flag='0' />
+		<NeedsEscapeHoles flag='0' />
+		<MinimumWallThickness value='0.85' />
+		<MinimumWallThicknessFeatureSize value='0.95' />
+		<PricePerCubicCM value='800.00' />
+		<Handling value='100.00' />
+		<Diffuse R='1.1734' G='1.0475' B='0.6900' />
+		<Specular R='1.3899' G='1.1247' B='0.8830' />
+		<Illumination R='0' G='0' B='0' />
+		<Ambient R='0' G='0' B='0' />
+		<Shine value='0.82' />
+		<Reflection value='0.92' />
+		<Roughness value='0.00' />
+		<Bump value='0' />
+		<Opacity value='1' />
+		<Refraction value='1.042' />
+	</Material>
+</Materials>

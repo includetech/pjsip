@@ -1,0 +1,12 @@
+layout my_dialog
+{
+	view dva_dialog(name: '$$$/dvacapitoningui/CaptionSettingsDialog/CaptionSidecarSettings=Caption Sidecar Settings', identifier:'CaptionSidecarSettingsDialog')
+	{
+		column(child_horizontal: align_fill, horizontal: align_fill)
+		{
+			dva_popup(identifier:'FileFormatPopupID', label:'$$$/dvacaptioningui/CaptionSettingsDialog/FileFormat=File Format:', minWidth:250, topSpace:3);
+			dva_popup(identifier:'TimeDisplayPopupID', label:'$$$/dvacaptioningui/CaptionSettingsDialog/FrameRate=Frame Rate:', minWidth:250, topSpace:3);
+			dva_ok_cancel_row();
+		}
+	}
+}

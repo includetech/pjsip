@@ -1,0 +1,950 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>files</key>
+	<dict/>
+	<key>files2</key>
+	<dict>
+		<key>frameworks/CEPHtmlEngine Helper EH.app/Contents/Info.plist</key>
+		<data>
+		qT+Qm7nha8cgskdoadXi2PPK/oM=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper EH.app/Contents/MacOS/CEPHtmlEngine Helper EH</key>
+		<data>
+		okahYp3zuD/Lgd2JbhzBh/0dtrE=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper EH.app/Contents/PkgInfo</key>
+		<data>
+		n57qDP4tZfLD1rCS43W0B4LQjzE=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper EH.app/Contents/Resources/CEPEngine_extensions.js</key>
+		<data>
+		/PySGnHTz72sYehvnm35iS1qxzk=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper EH.app/Contents/Resources/ar.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper EH.app/Contents/Resources/cs.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper EH.app/Contents/Resources/da.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper EH.app/Contents/Resources/de.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper EH.app/Contents/Resources/en-gb.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper EH.app/Contents/Resources/en.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper EH.app/Contents/Resources/es-419.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper EH.app/Contents/Resources/es.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper EH.app/Contents/Resources/fi.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper EH.app/Contents/Resources/fr.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper EH.app/Contents/Resources/he.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper EH.app/Contents/Resources/hu.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper EH.app/Contents/Resources/it.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper EH.app/Contents/Resources/ja.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper EH.app/Contents/Resources/ko.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper EH.app/Contents/Resources/nb.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper EH.app/Contents/Resources/nl.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper EH.app/Contents/Resources/pl.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper EH.app/Contents/Resources/pt-br.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper EH.app/Contents/Resources/pt-pt.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper EH.app/Contents/Resources/ru.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper EH.app/Contents/Resources/sv.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper EH.app/Contents/Resources/tr.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper EH.app/Contents/Resources/uk.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper EH.app/Contents/Resources/zh-hans.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper EH.app/Contents/Resources/zh-hant.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper EH.app/Contents/_CodeSignature/CodeResources</key>
+		<data>
+		CL7MhBlZp7yBCcDoP+5Ag8iUuGE=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper NP.app/Contents/Info.plist</key>
+		<data>
+		f8VF2fi7Wd1PeuiAFnVLhsa9dwM=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper NP.app/Contents/MacOS/CEPHtmlEngine Helper NP</key>
+		<data>
+		6X8bO0VkGGgwJ7kK+BOz/kATJG0=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper NP.app/Contents/PkgInfo</key>
+		<data>
+		n57qDP4tZfLD1rCS43W0B4LQjzE=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper NP.app/Contents/Resources/CEPEngine_extensions.js</key>
+		<data>
+		/PySGnHTz72sYehvnm35iS1qxzk=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper NP.app/Contents/Resources/ar.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper NP.app/Contents/Resources/cs.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper NP.app/Contents/Resources/da.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper NP.app/Contents/Resources/de.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper NP.app/Contents/Resources/en-gb.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper NP.app/Contents/Resources/en.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper NP.app/Contents/Resources/es-419.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper NP.app/Contents/Resources/es.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper NP.app/Contents/Resources/fi.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper NP.app/Contents/Resources/fr.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper NP.app/Contents/Resources/he.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper NP.app/Contents/Resources/hu.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper NP.app/Contents/Resources/it.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper NP.app/Contents/Resources/ja.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper NP.app/Contents/Resources/ko.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper NP.app/Contents/Resources/nb.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper NP.app/Contents/Resources/nl.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper NP.app/Contents/Resources/pl.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper NP.app/Contents/Resources/pt-br.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper NP.app/Contents/Resources/pt-pt.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper NP.app/Contents/Resources/ru.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper NP.app/Contents/Resources/sv.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper NP.app/Contents/Resources/tr.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper NP.app/Contents/Resources/uk.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper NP.app/Contents/Resources/zh-hans.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper NP.app/Contents/Resources/zh-hant.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper NP.app/Contents/_CodeSignature/CodeResources</key>
+		<data>
+		CL7MhBlZp7yBCcDoP+5Ag8iUuGE=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper.app/Contents/Info.plist</key>
+		<data>
+		l0J2IQ4ZJ1lx8BarswgOtkmlJo8=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper.app/Contents/MacOS/CEPHtmlEngine Helper</key>
+		<data>
+		W3d+TPkyUzZ4+kb61dzdCB2mYM0=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper.app/Contents/PkgInfo</key>
+		<data>
+		n57qDP4tZfLD1rCS43W0B4LQjzE=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper.app/Contents/Resources/CEPEngine_extensions.js</key>
+		<data>
+		/PySGnHTz72sYehvnm35iS1qxzk=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper.app/Contents/Resources/ar.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper.app/Contents/Resources/cs.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper.app/Contents/Resources/da.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper.app/Contents/Resources/de.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper.app/Contents/Resources/en-gb.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper.app/Contents/Resources/en.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper.app/Contents/Resources/es-419.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper.app/Contents/Resources/es.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper.app/Contents/Resources/fi.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper.app/Contents/Resources/fr.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper.app/Contents/Resources/he.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper.app/Contents/Resources/hu.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper.app/Contents/Resources/it.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper.app/Contents/Resources/ja.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper.app/Contents/Resources/ko.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper.app/Contents/Resources/nb.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper.app/Contents/Resources/nl.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper.app/Contents/Resources/pl.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper.app/Contents/Resources/pt-br.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper.app/Contents/Resources/pt-pt.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper.app/Contents/Resources/ru.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper.app/Contents/Resources/sv.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper.app/Contents/Resources/tr.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper.app/Contents/Resources/uk.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper.app/Contents/Resources/zh-hans.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper.app/Contents/Resources/zh-hant.lproj/InfoPlist.strings</key>
+		<data>
+		4HurZX9FOY6fUK7LIXbzC4pneNY=
+		</data>
+		<key>frameworks/CEPHtmlEngine Helper.app/Contents/_CodeSignature/CodeResources</key>
+		<data>
+		CL7MhBlZp7yBCcDoP+5Ag8iUuGE=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/Info.plist</key>
+		<data>
+		wNpeZNG5yxGMsLxeqeFqcQLctmY=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/aliasCursor.png</key>
+		<data>
+		um29IuePEyoCaLYmL3A6JrQ/gaw=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/am.lproj/locale.pak</key>
+		<data>
+		5OV3BcxQik4tSSgv8Zyzx7uzl0U=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/ar.lproj/locale.pak</key>
+		<data>
+		sv7u6SLoasrGkLPGViDkgeBys1E=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/bg.lproj/locale.pak</key>
+		<data>
+		JAYcMe33Vh2SlhZYRX03T6snV8o=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/bn.lproj/locale.pak</key>
+		<data>
+		ZiLtTLt7Sk1vmGf3UHs7VQppvKw=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/ca.lproj/locale.pak</key>
+		<data>
+		oJT/Wc/KOnhgJFnILx3+QnTN7P4=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/calendarPicker.css</key>
+		<data>
+		zukRvQgQUHez/L7JH2fhtbwUr6E=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/calendarPicker.js</key>
+		<data>
+		QbwDVRK1vuTqNLILDyZMPNtrZQo=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/calendarPickerChromium.css</key>
+		<data>
+		GGPc1pphAEfNpjBwhDHjpMuhyts=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/cef.pak</key>
+		<data>
+		Z4UxrN0Wo6e7jAde2DHcsh3g7KI=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/cellCursor.png</key>
+		<data>
+		XccK2E2SuXhhAARQ7AAVwsIzogQ=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/colorSuggestionPicker.css</key>
+		<data>
+		29LCwHarSx6dwGfGG8QuG+UXu48=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/colorSuggestionPicker.js</key>
+		<data>
+		g4i8CgNTBHacpt0ZfohcS4XMcak=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/contextMenuCursor.png</key>
+		<data>
+		Li1cMDWHNr5GBaYFb67tviBZox8=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/copyCursor.png</key>
+		<data>
+		iEMyKuWhxxutVhzrKYHQRGDnNTc=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/cs.lproj/locale.pak</key>
+		<data>
+		l6+BeWuVQ1orAcOoBCCCw1bySjU=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/da.lproj/locale.pak</key>
+		<data>
+		hayYMbaIz7y1A5Oijr/LUEpkSd0=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/de.lproj/locale.pak</key>
+		<data>
+		N+QAwyUDBN6H4SZcGVR1pWvmgWs=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/deleteButton.png</key>
+		<data>
+		Nbb29tWNWYWDLN7ZwmJewSfxsKw=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/deleteButton.tiff</key>
+		<data>
+		pIrXVpRSSC4tEEliqOqX5JRaCNk=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/deleteButton@2x.png</key>
+		<data>
+		4id63Fl+QOS7sUZYNsfQ1hRqe68=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/deleteButtonPressed.png</key>
+		<data>
+		f8+JlLkzSprk+dGmntGn0C0B9Pg=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/deleteButtonPressed.tiff</key>
+		<data>
+		Fw4tx+Crh+zZAFUPEH3IXqYFSFw=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/deleteButtonPressed@2x.png</key>
+		<data>
+		CPn43VSpiUE705BlKPoGhYjE8rk=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/devtools_resources.pak</key>
+		<data>
+		uyoIhaSQYR8dz2bLzc46RDG4hkc=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/eastResizeCursor.png</key>
+		<data>
+		gKnbrYSC6NqF3lpavuA7NG46sgw=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/eastWestResizeCursor.png</key>
+		<data>
+		d5pdJJOMwA0b5b8rc/MUDbVJnMc=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/el.lproj/locale.pak</key>
+		<data>
+		u+CGBQQbc8Ij+UECOYwT7SUvoWc=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/en.lproj/locale.pak</key>
+		<data>
+		OeCoDuK5Zq51YeHEJadi5zUQbec=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/en_GB.lproj/locale.pak</key>
+		<data>
+		WQ8e33pNrFIY5kqzhy6roE14iGE=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/es.lproj/locale.pak</key>
+		<data>
+		yZ/h80l56gFZAPcjF7UfN9eqO1s=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/es_419.lproj/locale.pak</key>
+		<data>
+		3vzNG0HURw0623iXh24Yl/0jvD4=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/et.lproj/locale.pak</key>
+		<data>
+		Q3sOlmj5ErEX/iHpbF7v+LkkeTw=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/fa.lproj/locale.pak</key>
+		<data>
+		xzurbUjerdzn2WLF3rqgvXgIpTM=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/fi.lproj/locale.pak</key>
+		<data>
+		RzaTieh9jvk8xhMitDGDQnHZlJo=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/fil.lproj/locale.pak</key>
+		<data>
+		Rn6x39NP4l0co815SrOY5Jkhug0=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/fr.lproj/locale.pak</key>
+		<data>
+		WpI/WKWxlpoNEIyNsOAUL/MuL7Y=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/gu.lproj/locale.pak</key>
+		<data>
+		4d5EhMWKG0akclOvMTqcF2M2xkE=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/he.lproj/locale.pak</key>
+		<data>
+		qTwyd27xNK1W5mXYcW/pRcqxB+A=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/helpCursor.png</key>
+		<data>
+		1qToGTFN/12g0ix3/Zdwz5dbErE=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/hi.lproj/locale.pak</key>
+		<data>
+		pZycSekRf7SVjrfK3CxGE3h1MUI=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/hr.lproj/locale.pak</key>
+		<data>
+		EM//eaUi+D4iMIKzIEh5ULkxsoM=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/hu.lproj/locale.pak</key>
+		<data>
+		3hOrzpB8sIyMFGFZXDYz8ponPmU=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/id.lproj/locale.pak</key>
+		<data>
+		3l2TN+5rty+TQ+xooBREwivGwAk=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/inputSpeech.png</key>
+		<data>
+		7qhlpG6l/vnBedr7662QmuSUECo=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/inputSpeech.tiff</key>
+		<data>
+		SWPhyruesGclQSL7sYEjs2KIGkw=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/it.lproj/locale.pak</key>
+		<data>
+		+fgSa5LciKUsnhVQP60odOCiWm4=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/ja.lproj/locale.pak</key>
+		<data>
+		FrhV7RgiULB/bB6u9LveUxrTFzY=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/kn.lproj/locale.pak</key>
+		<data>
+		JlpjBBXDbIFSkpEJ6GoXtUPNQ4o=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/ko.lproj/locale.pak</key>
+		<data>
+		F22CKM8E/WKs3MVmQSGnqz+4AeY=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/linearSRGB.icc</key>
+		<data>
+		RQ68ZgGbc7GUqXdLcgX6QufW1Q0=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/linkCursor.png</key>
+		<data>
+		I5G0xORskZC3E5EzBL5md6EYaig=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/lt.lproj/locale.pak</key>
+		<data>
+		mbuP1ktaE3KXsE9xpGrignvC2/o=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/lv.lproj/locale.pak</key>
+		<data>
+		LWhDgODy7kLhwtRAUZfCsdeJKBw=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/missingImage.png</key>
+		<data>
+		xVPxBM1hdwk8enyrskBsDe4xn0A=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/missingImage.tiff</key>
+		<data>
+		3Ql9wZbBNbPrFdXETapYCOu5Ayw=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/missingImage@2x.png</key>
+		<data>
+		2fW5dUQhicPzfJpHYT4SQMXFLv8=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/ml.lproj/locale.pak</key>
+		<data>
+		JOdbUoDaAOuqtkB30ZHclUYVZf8=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/moveCursor.png</key>
+		<data>
+		LOeua0Gr4CnhH227Nf7gwP+jTvw=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/mr.lproj/locale.pak</key>
+		<data>
+		miBNkCE7Z3K9AuYcWRaYnPiprk0=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/ms.lproj/locale.pak</key>
+		<data>
+		shbXXNFzb4dkr/E5Dz7Y4Zi34R4=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/nb.lproj/locale.pak</key>
+		<data>
+		JHOpxI6v4cDMQmbjWGDnt5j6kcs=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/nl.lproj/locale.pak</key>
+		<data>
+		TejhPglB3sBrASI+RuwiGEfwbU8=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/noDropCursor.png</key>
+		<data>
+		jDqGYIU5H5jkB/pur4t4/Ct9nFY=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/noneCursor.png</key>
+		<data>
+		Yoh9UA6jR9Nm5fIrg0SzWh3Cy5o=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/northEastResizeCursor.png</key>
+		<data>
+		YpqmnvJjNu+sIrPZvFf+CBlFxwk=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/northEastSouthWestResizeCursor.png</key>
+		<data>
+		oiAZBog6M9VS5izbgAWqxztDXzc=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/northResizeCursor.png</key>
+		<data>
+		95geudpu0/qGW9vcXj2ENO3yLKw=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/northSouthResizeCursor.png</key>
+		<data>
+		cYhqkS0bzq4uSboJ+276S7Gtzro=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/northWestResizeCursor.png</key>
+		<data>
+		swKuZPms5TQLrPlfeBuNUDzX9ZQ=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/northWestSouthEastResizeCursor.png</key>
+		<data>
+		7d00Ca3ZPqvfljXZebyVU1k+Txw=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/nullPlugin.png</key>
+		<data>
+		dLWuxjc8v2tx3dYs57QSdUZ+4QQ=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/nullPlugin@2x.png</key>
+		<data>
+		S6TBnHC7tbLkdpLSbQDweF4PLZo=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/panIcon.png</key>
+		<data>
+		LOeua0Gr4CnhH227Nf7gwP+jTvw=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/pickerCommon.css</key>
+		<data>
+		0H1gfm7AOEklv0kUMvmfPsp4ovo=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/pickerCommon.js</key>
+		<data>
+		9iH5akPi6gb1ZxfQhsYP5qSBLMM=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/pickerCommonChromium.css</key>
+		<data>
+		UV4h4yNjLMcg7ib2rmgy7HnDwfQ=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/pl.lproj/locale.pak</key>
+		<data>
+		vWU4rpTbfVRFE5dhz4KBNhbjcS4=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/progressCursor.png</key>
+		<data>
+		dPTUzMvlrLN1pDasdhi0VdeI9Fc=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/pt_BR.lproj/locale.pak</key>
+		<data>
+		yRCmHTosp2sN3G1q4BTbnG1mhB4=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/pt_PT.lproj/locale.pak</key>
+		<data>
+		Jj47cd/loRbSdS7LIP9hNjkh6xc=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/ro.lproj/locale.pak</key>
+		<data>
+		JHX5iU10FT7fU56yQu5Pj847YCk=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/ru.lproj/locale.pak</key>
+		<data>
+		2nIqUu4cvE9DmbKgP0m/4uLMe9o=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/sk.lproj/locale.pak</key>
+		<data>
+		pm2tHPV+TGYfHvhdWW49akYIHUw=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/sl.lproj/locale.pak</key>
+		<data>
+		tjs40FxrQ0l9Sy4iv6LgVWBZcAc=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/southEastResizeCursor.png</key>
+		<data>
+		uxwXN8luGMoPJ4RWIS5cRA/lHP8=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/southResizeCursor.png</key>
+		<data>
+		AmkCQwMk5aeQLjzs8PjcQ3J5YoQ=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/southWestResizeCursor.png</key>
+		<data>
+		Yt1G9oo2bi57boeKTi3eLh/VHbE=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/sr.lproj/locale.pak</key>
+		<data>
+		X2Id2wyvso4ZzNewF96IpZO13nM=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/suggestionPicker.css</key>
+		<data>
+		KZhFEoHIS4xU7VJIqKH3o4ElbK8=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/suggestionPicker.js</key>
+		<data>
+		kv02oJAhyxOmESi6io5wfdOi4T0=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/sv.lproj/locale.pak</key>
+		<data>
+		a0YGzewih97gcJEVb9UOp+cVwVU=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/sw.lproj/locale.pak</key>
+		<data>
+		I98yK1He9csfZ4zgFJ0j1ii8XXg=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/ta.lproj/locale.pak</key>
+		<data>
+		2SrenoJUR/6U1OdSn94z8L4W3zs=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/te.lproj/locale.pak</key>
+		<data>
+		yAZTcC/3H6ZA92kpx6rQPYR+i3w=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/textAreaResizeCorner.png</key>
+		<data>
+		Q8KJtYOzgrGyCdHOLWqElUFMQh4=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/textAreaResizeCorner.tiff</key>
+		<data>
+		2I1jknHr5y8RNeNJETbb09wnpRU=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/textAreaResizeCorner@2x.png</key>
+		<data>
+		UoV28ZeNa8vZdvxPn+pMttmjZ4M=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/th.lproj/locale.pak</key>
+		<data>
+		sAv/LVWk6OTWqJheQCiy4i3vzLU=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/tr.lproj/locale.pak</key>
+		<data>
+		WL2G22DR6NZgIcd18j+uBuhF23c=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/uk.lproj/locale.pak</key>
+		<data>
+		LAJs92QFIXYvyBNexGDy9F729XM=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/urlIcon.png</key>
+		<data>
+		lmL81Fh2pWNS8j45mg3hS1UqYbM=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/verticalTextCursor.png</key>
+		<data>
+		aE/8lNIU+9of6nUVjBav1TsQOaI=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/vi.lproj/locale.pak</key>
+		<data>
+		SupmauOAmXUwAdEIcvuZ+yiPb5A=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/waitCursor.png</key>
+		<data>
+		rXoBLpqKxGiY7PC6yXQNILDrLPs=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/westResizeCursor.png</key>
+		<data>
+		ufEiuzxEQE8HDsN+8WX+CtyQQhU=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/zh_CN.lproj/locale.pak</key>
+		<data>
+		k7BjIwxPFj0IrDerbNhbwzyhjBs=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/zh_TW.lproj/locale.pak</key>
+		<data>
+		u/V/GaedIdgUd818n4goa66fMhs=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/zoomInCursor.png</key>
+		<data>
+		v5W/PfKgLgLMWGbalyrcvhYYNPU=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/Resources/zoomOutCursor.png</key>
+		<data>
+		saz/gg4k2VI6X9roG2W2JyNHh+A=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/_CodeSignature/CodeDirectory</key>
+		<data>
+		kpWxH6A+LNkHhoiATT9fg7kfLSE=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/_CodeSignature/CodeRequirements</key>
+		<data>
+		CLSSnBO2WmyIUt+Y7blr/Y6fNrw=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/_CodeSignature/CodeResources</key>
+		<data>
+		sbqb6lgRtkU6NX5gu/DWhmL0tHY=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/_CodeSignature/CodeSignature</key>
+		<data>
+		Y1FzrIEYSEhtttPShspF6xCwQAI=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/libraries/ffmpegsumo.so</key>
+		<data>
+		TNCPBihFjEqHIm9Cp3g6UsTBvqc=
+		</data>
+		<key>frameworks/chromium embedded framework.framework/libraries/libcef.dylib</key>
+		<data>
+		ciqNnFbi6QKfn0evQIvb86m1iCo=
+		</data>
+		<key>frameworks/libplugin_carbon_interpose.dylib</key>
+		<data>
+		cA5Rjsool/KTxISUKYhcZNrCSZs=
+		</data>
+	</dict>
+	<key>rules</key>
+	<dict>
+		<key>^Resources/</key>
+		<true/>
+		<key>^Resources/.*\.lproj/</key>
+		<dict>
+			<key>optional</key>
+			<true/>
+			<key>weight</key>
+			<real>1000</real>
+		</dict>
+		<key>^Resources/.*\.lproj/locversion.plist$</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>1100</real>
+		</dict>
+		<key>^version.plist$</key>
+		<true/>
+	</dict>
+	<key>rules2</key>
+	<dict>
+		<key>.*\.dSYM($|/)</key>
+		<dict>
+			<key>weight</key>
+			<real>11</real>
+		</dict>
+		<key>^(.*/)?\.DS_Store$</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>2000</real>
+		</dict>
+		<key>^(Frameworks|SharedFrameworks|PlugIns|Plug-ins|XPCServices|Helpers|MacOS|Library/(Automator|Spotlight|LoginItems))/</key>
+		<dict>
+			<key>nested</key>
+			<true/>
+			<key>weight</key>
+			<real>10</real>
+		</dict>
+		<key>^.*</key>
+		<true/>
+		<key>^Info\.plist$</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>20</real>
+		</dict>
+		<key>^PkgInfo$</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>20</real>
+		</dict>
+		<key>^Resources/</key>
+		<dict>
+			<key>weight</key>
+			<real>20</real>
+		</dict>
+		<key>^Resources/.*\.lproj/</key>
+		<dict>
+			<key>optional</key>
+			<true/>
+			<key>weight</key>
+			<real>1000</real>
+		</dict>
+		<key>^Resources/.*\.lproj/locversion.plist$</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>1100</real>
+		</dict>
+		<key>^[^/]+$</key>
+		<dict>
+			<key>nested</key>
+			<true/>
+			<key>weight</key>
+			<real>10</real>
+		</dict>
+		<key>^embedded\.provisionprofile$</key>
+		<dict>
+			<key>weight</key>
+			<real>20</real>
+		</dict>
+		<key>^version\.plist$</key>
+		<dict>
+			<key>weight</key>
+			<real>20</real>
+		</dict>
+	</dict>
+</dict>
+</plist>

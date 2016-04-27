@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Printer>
+	<Version value='1' />
+	<PrintLocation value='Shapeways.com' />
+	<UploadURL value='http://www.adobe.com/go/psuploadtoshapeways' />
+	<PrintVolume X='150' Y='150' Z='150' />
+	<PrinterResolution X='5' Y='5' Z='5' />
+	<MeshRepairResolution value='7' />
+	<PrinterHeads value='1' />
+	<PrinterSupportsUSB flag='0' />
+	<PreferredFileFormat value='stl' />
+  <RemoveUnintendedLooseComponents flag='1' />
+	<NeedsZip flag='1' />
+	<Quality value='high'>
+		<MeshRepairResolution value='8' />
+	</Quality>
+	<Quality value='medium'>
+		<MeshRepairResolution value='7' />
+	</Quality>
+	<Quality value='low'>
+		<MeshRepairResolution value='6' />
+	</Quality>
+</Printer>
+<Materials>
+	<Material name='Polished White, Strong and Flexible Plastic'>
+		<NeedsRaft flag='0' />
+		<NeedsSupports flag='0' />
+		<NeedsEscapeHoles flag='0' />
+		<MinimumWallThickness value='0.8' />
+		<MinimumWallThicknessFeatureSize value='0.9' />
+		<PricePerCubicCM value='0.28' />
+		<PricePerCubicCMMachineSpace value='0.21' />
+		<PricePerPart value='2.0' />
+		<Diffuse R='0.8800' G='0.8800' B='0.8800' />
+		<Specular R='0.7900' G='0.7900' B='0.7900' />
+		<Illumination R='0' G='0' B='0' />
+		<Ambient R='0.0440' G='0.0440' B='0.0440' />
+		<Shine value='0.36' />
+		<Reflection value='0.09' />
+		<Roughness value='0.09' />
+		<Bump value='0' />
+		<Opacity value='1' />
+		<Refraction value='1.003' />
+	</Material>
+</Materials>

@@ -1,0 +1,75 @@
+%%BeginResource: procset Adobe_pattern_AI6 2.0 0
+%%Title: (Universal Adobe Illustrator (R) Version 6.0 Pattern Operators)
+%%Version: 2.0 0
+%%CreationDate: (9/24/96) ()
+%%Copyright: ((C) 1987-1993 Adobe Systems Incorporated All Rights Reserved)
+currentpacking true setpacking
+userdict /Adobe_Illustrator_AI5 known not {
+	userdict /Adobe_Illustrator_AI5 90 dict put
+} if
+userdict /Adobe_Illustrator_AI5 get begin
+/@ {  } def
+/& {  } def
+/_ {
+	counttomark 5 add -4 roll
+	4 copy counttomark 1 add 4 roll
+	[ 5 1 roll /rectfill load ] cvx
+} def
+end
+userdict /Adobe_pattern_AI6 12 dict dup begin
+put
+/E {
+	20 dict begin
+		5 1 roll
+		/BBox [ 6 2 roll ] def
+		/XStep BBox 2 get BBox 0 get sub def
+		/YStep BBox 3 get BBox 1 get sub def
+		/PatternType 1 def
+		/PaintType 1 def
+		/TilingType 2 def
+		/AIprocs exch def
+		/PaintProc [
+			/begin load
+				/AIprocs /load load
+				{ cvx exec } /forall load
+			/end load
+		] cvx def
+		/Implementation null def
+		dup /PatternName exch def
+		/f { closepath _eo {eofill} {fill} ifelse } def
+		/s { stroke } def
+		/S { closepath stroke } def
+		/k { setcmykcolor } def
+		/g { setgray } def
+		/K /k load def
+		/G /g load def
+	cvn currentdict end def
+} def
+/p {
+	11 -1 roll load exch makepattern setpattern
+	9 npop
+	/_pf { _eo {eofill} {fill} ifelse } def
+	/_psf { ashow } def
+	/_pjsf { awidthshow } def
+	/_lp /none ddef
+} def
+/P {
+	11 -1 roll load exch makepattern setpattern
+	9 npop
+	/_ps { stroke } def
+	/_pss { ashow } def
+	/_pjss { awidthshow } def
+	/_lp /none ddef
+} def
+/initialize { pop pop } def
+/initialize2 {
+	pop pop
+	Adobe_pattern_AI6 begin
+} def
+/terminate { } def
+/terminate2 {
+	currentdict Adobe_pattern_AI6 eq { end } if
+} def
+end
+setpacking
+%%EndResource

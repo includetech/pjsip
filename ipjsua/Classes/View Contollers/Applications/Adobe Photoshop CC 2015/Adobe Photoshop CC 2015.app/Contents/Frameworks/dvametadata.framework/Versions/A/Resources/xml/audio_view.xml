@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<views xmlns="http://ns.adobe.com/metadata/ui/1.0/">
+
+	<!-- 
+		Audio View
+		Contains audio metadata properties.
+	-->	
+	<view 
+	    xmlns:dc="http://purl.org/dc/elements/1.1/"
+		xmlns:xmpDM="http://ns.adobe.com/xmp/1.0/DynamicMedia/"
+		xmlns:xmp="http://ns.adobe.com/xap/1.0/"
+		name="com.adobe.xmp.view.audio"
+		label="$$$/metadataui/view/audio_label=Audio Data"
+		description="$$$/metadataui/view/audio_description=Contains audio metadata properties"
+		version="1.0">
+
+		<property name="dc:title"/>
+	
+		<property name="xmpDM:artist"/>
+	
+		<property name="xmpDM:album"/>
+
+		<property
+			name="xmpDM:trackNumber"
+			label="$$$/xmp/xmpDM/custom/trackNumber_label=Track Number"/>
+		
+		<property name="xmpDM:genre"/>
+	
+		<property name="xmpDM:composer"/>
+	
+		<property name="xmpDM:engineer"/>
+	
+		<property name="xmpDM:releaseDate"/>
+	
+		<property name="xmp:CreateDate"/>
+	
+		<property
+			name="dc:rights"
+			multiLines="3"/>
+
+		<property name="xmp:CreatorTool"/>
+	
+		<property
+			name="xmpDM:logComment"
+			label="$$$/xmp/xmp/custom/logComment_label=Comments"
+			multiLines="3"/>
+	
+		<separator/>
+	
+		<property
+			name="xmpDM:audioSampleRate"
+			label="$$$/xmp/xmpDM/custom/audioSampleRate_label=Sample Rate"/>
+			
+		<property
+			name="xmpDM:audioSampleType"
+			label="$$$/xmp/xmpDM/custom/audioSampleType_label=Sample Type"/>
+			
+		<property
+			name="xmpDM:audioChannelType"
+			label="$$$/xmp/xmpDM/custom/audioChannelType_label=Channels"/>
+
+		<property name="xmpDM:duration"/>
+			
+		<!-- bugfix #2620548 (Deprecate xmpDM:relativeTimestamp in favor of new BWF Bext Schema)
+		<property
+			name="xmpDM:relativeTimestamp"
+			label="$ $ $/xmp/xmpDM/relativeTimestamp_label=BWF Time Reference"/>
+		-->
+			
+		<property
+			name="xmpDM:audioCompressor"
+			label="$$$/xmp/xmpDM/custom/audioCompressor_label=Format"/>
+
+		<property name="xmpDM:loop"/>
+
+		<property name="xmpDM:numberOfBeats"/>
+
+		<property name="xmpDM:tempo"/>
+
+		<property name="xmpDM:key"/>
+
+		<property
+			name="xmpDM:stretchMode"
+			label="$$$/xmp/xmpDM/custom/stretchMode_label=Stretch Mode"/>
+		
+		<property name="xmpDM:instrument"/>
+	</view>
+</views>

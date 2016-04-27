@@ -1,0 +1,13 @@
+layout stuntPanelBusyBox
+    {
+    view TStuntPanelBusyBox(identifier: @stuntPanelBusyBox,
+                            placement: place_column,
+                            font: staticSmallFont,
+                            qDebugDraw: false)
+        {
+        TStaticText(identifier: @stuntPanelDumpText,
+                    horizontal: align_fill,
+                    vertical: align_fill,
+                    name: "$$$/private/SuntPanelBusyBox/text=Place your text here.");
+        }
+    }

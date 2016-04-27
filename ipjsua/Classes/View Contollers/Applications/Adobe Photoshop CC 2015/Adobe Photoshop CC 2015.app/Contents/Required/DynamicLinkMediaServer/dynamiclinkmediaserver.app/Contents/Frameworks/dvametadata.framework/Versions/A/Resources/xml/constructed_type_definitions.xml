@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xmp_definitions>
+  <xmp_type name='colorant' description='$$$/xmp/xmpG/colorant_description=A structure containing the characteristics of a colorant (swatch) used in a document.' label='$$$/xmp/xmpG/colorant_label=Colorant'>
+    <xmp_field prefix='xmpG' name='swatchName' type='text' namespace='http://ns.adobe.com/xap/1.0/g/' description='$$$/xmp/xmpG/colorant/swatchName_description=Name of the swatch.' label='$$$/xmp/xmpG/colorant/swatchName_label=Swatch Name'/>
+    <xmp_field prefix='xmpG' name='mode' type='closedchoice' namespace='http://ns.adobe.com/xap/1.0/g/' description='$$$/xmp/xmpG/colorant/mode_description=The color space in which the color is defined.' element_type='text' label='$$$/xmp/xmpG/colorant/mode_label=Mode'>
+      <xmp_choice raw_value='CMYK' label='$$$/xmp/xmpG/colorant/mode/0=CMYK'/>
+      <xmp_choice raw_value='RGB' label='$$$/xmp/xmpG/colorant/mode/1=RGB'/>
+      <xmp_choice raw_value='LAB' label='$$$/xmp/xmpG/colorant/mode/2=LAB'/>
+    </xmp_field>
+    <xmp_field prefix='xmpG' name='type' type='closedchoice' namespace='http://ns.adobe.com/xap/1.0/g/' description='$$$/xmp/xmpG/colorant/type_description=The type of color.' element_type='text' label='$$$/xmp/xmpG/colorant/type_label=Type'>
+      <xmp_choice raw_value='PROCESS' label='$$$/xmp/xmpG/colorant/type/0=PROCESS'/>
+      <xmp_choice raw_value='SPOT' label='$$$/xmp/xmpG/colorant/type/1=SPOT'/>
+    </xmp_field>
+    <xmp_field prefix='xmpG' name='cyan' type='real' max='100' namespace='http://ns.adobe.com/xap/1.0/g/' description='$$$/xmp/xmpG/colorant/cyan_description=Cyan value when the mode is CMYK.' min='0' label='$$$/xmp/xmpG/colorant/cyan_label=Cyan'/>
+    <xmp_field prefix='xmpG' name='magenta' type='real' max='100' namespace='http://ns.adobe.com/xap/1.0/g/' description='$$$/xmp/xmpG/colorant/magenta_description=Magenta value when the mode is CMYK.' min='0' label='$$$/xmp/xmpG/colorant/magenta_label=Magenta'/>
+    <xmp_field prefix='xmpG' name='yellow' type='real' max='100' namespace='http://ns.adobe.com/xap/1.0/g/' description='$$$/xmp/xmpG/colorant/yellow_description=Yellow value when the mode is CMYK.' min='0' label='$$$/xmp/xmpG/colorant/yellow_label=Yellow'/>
+    <xmp_field prefix='xmpG' name='black' type='real' max='100' namespace='http://ns.adobe.com/xap/1.0/g/' description='$$$/xmp/xmpG/colorant/black_description=Black value when the mode is CMYK.' min='0' label='$$$/xmp/xmpG/colorant/black_label=Black'/>
+    <xmp_field prefix='xmpG' name='red' type='integer' max='255' namespace='http://ns.adobe.com/xap/1.0/g/' description='$$$/xmp/xmpG/colorant/red_description=Red value when the mode is RGB.' min='0' label='$$$/xmp/xmpG/colorant/red_label=Red'/>
+    <xmp_field prefix='xmpG' name='green' type='integer' max='255' namespace='http://ns.adobe.com/xap/1.0/g/' description='$$$/xmp/xmpG/colorant/green_description=Green value when the mode is RGB.' min='0' label='$$$/xmp/xmpG/colorant/green_label=Green'/>
+    <xmp_field prefix='xmpG' name='blue' type='integer' max='255' namespace='http://ns.adobe.com/xap/1.0/g/' description='$$$/xmp/xmpG/colorant/blue_description=Blue value when the mode is RGB.' min='0' label='$$$/xmp/xmpG/colorant/blue_label=Blue'/>
+    <xmp_field prefix='xmpG' name='L' type='real' max='100' namespace='http://ns.adobe.com/xap/1.0/g/' description='$$$/xmp/xmpG/colorant/L_description=L value when the mode is LAB.' min='0' label='$$$/xmp/xmpG/colorant/L_label=L'/>
+    <xmp_field prefix='xmpG' name='A' type='integer' max='127' namespace='http://ns.adobe.com/xap/1.0/g/' description='$$$/xmp/xmpG/colorant/A_description=A value when the mode is LAB.' min='-128' label='$$$/xmp/xmpG/colorant/A_label=A'/>
+    <xmp_field prefix='xmpG' name='B' type='integer' max='127' namespace='http://ns.adobe.com/xap/1.0/g/' description='$$$/xmp/xmpG/colorant/B_description=B value when the mode is LAB.' min='-128' label='$$$/xmp/xmpG/colorant/B_label=B'/>
+  </xmp_type>
+  <xmp_type name='date' extends='text' pattern='([[:digit:]]{4})|([[:digit:]]{4}-(0[0-9])|([10-12]))|([[:digit:]]{4}-(0[0-9])|([10-12])-(0[0-9])|([10-31]))|([[:digit:]]{4}-(0[0-9])|([10-12])-(0[0-9])|([10-31])T(0[0-9])|([10-23]):(0[0-9])|([10-59])(Z)|((+|-)(0[0-9])|([10-23]):(0[0-9])|([10-59])))|([[:digit:]]{4}-(0[0-9])|([10-12])-(0[0-9])|([10-31])T(0[0-9])|([10-23]):(0[0-9])|([10-59]):(0[0-9])|([10-59])(Z)|((+|-)(0[0-9])|([10-23]):(0[0-9])|([10-59])))|([[:digit:]]{4}-(0[0-9])|([10-12])-(0[0-9])|([10-31])T(0[0-9])|([10-23]):(0[0-9])|([10-59]):(0[0-9])|([10-59]).s(Z)|((+|-)(0[0-9])|([10-23]):(0[0-9])|([10-59])))' description='$$$/xmp/date_description=A date-time value which is represented using a subset of ISO RFC 8601 formatting, as described in YYYY MM = two-digit month (01=January) NOTE: The use of local times, using a time zone designator of +hh:mm or -hh:mm instead of Z, is recommended to promote human understanding. For example, if you know a file was saved at noon on October 23 a timestamp of 2004-10-23T12:00:00-06:00is understandable, while 2004-10-23T18:00:00Zis confusing.' label='$$$/xmp/date_label=Date'/>
+  <xmp_type name='dimensions' description='$$$/xmp/stDim/dimensions_description=A structure containing dimensions for a drawn object. Property Value Types' label='$$$/xmp/stDim/dimensions_label=Dimensions'>
+    <xmp_field prefix='stDim' name='w' type='real' namespace='http://ns.adobe.com/xap/1.0/sType/Dimensions#' description='$$$/xmp/stDim/dimensions/w_description=Width' label='$$$/xmp/stDim/dimensions/w_label=Width'/>
+    <xmp_field prefix='stDim' name='h' type='real' namespace='http://ns.adobe.com/xap/1.0/sType/Dimensions#' description='$$$/xmp/stDim/dimensions/h_description=Height' label='$$$/xmp/stDim/dimensions/h_label=Height'/>
+    <xmp_field prefix='stDim' name='unit' type='openchoice' namespace='http://ns.adobe.com/xap/1.0/sType/Dimensions#' description='$$$/xmp/stDim/dimensions/unit_description=Units.' element_type='text' label='$$$/xmp/stDim/dimensions/unit_label=Unit'>
+      <xmp_choice raw_value='inch' label='$$$/xmp/stDim/dimensions/unit/0=Inch'/>
+      <xmp_choice raw_value='mm' label='$$$/xmp/stDim/dimensions/unit/1=Mm'/>
+      <xmp_choice raw_value='pixel' label='$$$/xmp/stDim/dimensions/unit/2=Pixel'/>
+      <xmp_choice raw_value='pica' label='$$$/xmp/stDim/dimensions/unit/3=Pica'/>
+      <xmp_choice raw_value='point' label='$$$/xmp/stDim/dimensions/unit/4=Point'/>
+    </xmp_field>
+  </xmp_type>
+  <xmp_type name='font' description='$$$/xmp/stFnt/font_description=A structure containing the characteristics of a font used in a document.' label='$$$/xmp/stFnt/font_label=Font'>
+    <xmp_field prefix='stFnt' name='fontName' type='text' namespace='http://ns.adobe.com/xap/1.0/sType/Font#' description='$$$/xmp/stFnt/font/fontName_description=Postscript name of the font.' label='$$$/xmp/stFnt/font/fontName_label=Font Name'/>
+    <xmp_field prefix='stFnt' name='fontFamily' type='text' namespace='http://ns.adobe.com/xap/1.0/sType/Font#' description='$$$/xmp/stFnt/font/fontFamily_description=The font family name.' label='$$$/xmp/stFnt/font/fontFamily_label=Font Family'/>
+    <xmp_field prefix='stFnt' name='fontFace' type='text' namespace='http://ns.adobe.com/xap/1.0/sType/Font#' description='$$$/xmp/stFnt/font/fontFace_description=The font face name.' label='$$$/xmp/stFnt/font/fontFace_label=Font Face'/>
+    <xmp_field prefix='stFnt' name='fontType' type='openchoice' namespace='http://ns.adobe.com/xap/1.0/sType/Font#' description='$$$/xmp/stFnt/font/fontType_description=The font type, such as TrueType, Type 1, Open Type, and so on.' element_type='text' label='$$$/xmp/stFnt/font/fontType_label=Font Type'>
+      <xmp_choice raw_value='TrueType' label='$$$/xmp/stFnt/font/fontType/0=TrueType'/>
+      <xmp_choice raw_value='Type 1' label='$$$/xmp/stFnt/font/fontType/1=Type 1'/>
+      <xmp_choice raw_value='Open Type' label='$$$/xmp/stFnt/font/fontType/2=Open Type'/>
+    </xmp_field>
+    <xmp_field prefix='stFnt' name='versionString' type='text' namespace='http://ns.adobe.com/xap/1.0/sType/Font#' description='$$$/xmp/stFnt/font/versionString_description=The version string: /version for Type1 fonts nameId 5 for Apple True Type and OpenType /CIDFontVersion for CID fonts The empty string for bitmap fonts NOTE: CoolType allows two fonts with the same Postscript name and different technologies to be used at the same time, but not if they are from different versions. So even without this data for a given document you will have unique font data. However, the version can tell you if the font has changed metrics, glyph forms or other important information. This is useful for comparing fonts in two documents or fonts in a document to those in your systeml.' label='$$$/xmp/stFnt/font/versionString_label=Version String'/>
+    <xmp_field prefix='stFnt' name='composite' type='boolean' namespace='http://ns.adobe.com/xap/1.0/sType/Font#' description='$$$/xmp/stFnt/font/composite_description=When true, this is a composite font.' label='$$$/xmp/stFnt/font/composite_label=Composite'/>
+    <xmp_field prefix='stFnt' name='fontFileName' type='text' namespace='http://ns.adobe.com/xap/1.0/sType/Font#' description='$$$/xmp/stFnt/font/fontFileName_description=The font file name (not a complete path).' label='$$$/xmp/stFnt/font/fontFileName_label=Font File Name'/>
+    <xmp_field prefix='stFnt' name='childFontFiles' type='seq' namespace='http://ns.adobe.com/xap/1.0/sType/Font#' description='$$$/xmp/stFnt/font/childFontFiles_description=The list of file names for the fonts that make up a composite font.' element_type='text' label='$$$/xmp/stFnt/font/childFontFiles_label=Child Font Files'/>
+  </xmp_type>
+  <xmp_type name='locale' extends='text' pattern='[[:alpha:]]{1,8}(-[:alnum:]]{1,8})*' description='$$$/xmp/locale_description=A closed choice that identifies a language, with values from RFC 3066.' label='$$$/xmp/locale_label=Locale'/>
+  <xmp_type name='mimetype' extends='text' pattern='.*' description='$$$/xmp/mimetype_description=A text value that identifies the file format. MIME types are defined in RFC 2046.' label='$$$/xmp/mimetype_label=MIME Type'/>
+  <xmp_type name='propername' extends='text' pattern='.*' description='$$$/xmp/propername_description=A name of a person or organization, represented as a Unicode text string.' label='$$$/xmp/propername_label=Proper Name'/>
+  <xmp_type name='url' extends='text' pattern='.*' description='$$$/xmp/url_description=An Internet Uniform Resource Locator. See' label='$$$/xmp/url_label=URL'/>
+  <xmp_type name='uri' extends='text' pattern='.*' description='$$$/xmp/uri_description=An Internet Uniform Resource Identifier:a compact string of characters for identifying an abstract or physical resource. See' label='$$$/xmp/uri_label=Uri'/>
+  <xmp_type name='thumbnail' description='$$$/xmp/xapGImg/thumbnail_description=A thumbnail image for a file.' label='$$$/xmp/xapGImg/thumbnail_label=Thumbnail'>
+    <xmp_field prefix='xmpGImg' name='height' type='integer' namespace='http://ns.adobe.com/xap/1.0/g/img/' description='$$$/xmp/xapGImg/thumbnail/height_description=Height in pixels.' label='$$$/xmp/xapGImg/thumbnail/height_label=Height'/>
+    <xmp_field prefix='xmpGImg' name='width' type='integer' namespace='http://ns.adobe.com/xap/1.0/g/img/' description='$$$/xmp/xapGImg/thumbnail/width_description=Width in pixels.' label='$$$/xmp/xapGImg/thumbnail/width_label=Width'/>
+    <xmp_field prefix='xmpGImg' name='format' type='closedchoice' namespace='http://ns.adobe.com/xap/1.0/g/img/' description='$$$/xmp/xapGImg/thumbnail/format_description=The image encoding. Defined value.' element_type='text' label='$$$/xmp/xapGImg/thumbnail/format_label=Format'>
+      <xmp_choice raw_value='JPEG.' label='$$$/xmp/xapGImg/thumbnail/format/0=JPEG.'/>
+    </xmp_field>
+    <xmp_field prefix='xmpGImg' name='image' type='text' namespace='http://ns.adobe.com/xap/1.0/g/img/' description='$$$/xmp/xapGImg/thumbnail/image_description=The thumbnail image (pixel data only) converted to base 64 notation (according to section 6.8 of RFC 2045).' label='$$$/xmp/xapGImg/thumbnail/image_label=Image'/>
+  </xmp_type>
+  <xmp_type name='xpath' extends='text' pattern='.*' description='$$$/xmp/xpath_description=XML Path Language (XPath), for addressing parts of an XML document; see September 2005 Property Value Types.' label='$$$/xmp/xpath_label=XPath'/>
+  <xmp_type name='rational' extends='text' pattern='[[:digit:]]+/[[:digit:]]+' description='$$$/xmp/rational_description=To represent EXIF rational values in XMP, they must be converted to text. The recommended approach is to use a value of type September 2005 Property Value Types.' label='$$$/xmp/rational_label=Rational'/>
+  <xmp_type name='gpscoordinate' extends='text' pattern='[[:digit:]]{0,3},[[:digit:]]{0,2},[[:digit:]]{0,2}[NSEW]' description='$$$/xmp/gpscoordinate_description=A Leading zeros are not necesary for the for DDD, MM, and SS values. The DDD,MM.mmkform should be used when any of the native EXIF component rational values has a denonimator other than 1. There can be any number of fractional digits. Property Value Types.' label='$$$/xmp/gpscoordinate_label=GPS Coordinate'/>
+  <xmp_type name='langalt' extends='alt' description='$$$/xmp/langalt_description=A language alternative, which is an array of type alt Text, an alternative array of text items each of which has a language qualifier.' element_type='text' label='$$$/xmp/langalt_label=Language Alternative'/>
+  <xmp_type name='openchoice of text' extends='openchoice' element_type='text' label='$$$/xmp/openchoice_of_text_label=Open Choice Of Text'/>
+  <xmp_type name='seq of integer' extends='seq' element_type='integer' label='$$$/xmp/seq_of_integer_label=Sequence Of Integer'/>
+  <xmp_type name='rating' extends='real' description='$$$/xmp/rating_description=Star rating type' label='$$$/xmp/rating_label=Rating'/>
+  <xmp_type name='guid' extends='text' description='$$$/xmp/guid_description=A string representing a &quot;globally unique identifier&quot;.' label='$$$/xmp/guid_label=GUID'/>
+  <xmp_type name='agentname' extends='text' pattern='.*' description='$$$/xmp/agentname_description=The name of a program. The suggested convention is &quot;vendor app version&quot;---for example &quot;Adobe Acrobat Distiller 5.0&quot;.' label='$$$/xmp/agentname_label=Agent Name'/>
+</xmp_definitions>

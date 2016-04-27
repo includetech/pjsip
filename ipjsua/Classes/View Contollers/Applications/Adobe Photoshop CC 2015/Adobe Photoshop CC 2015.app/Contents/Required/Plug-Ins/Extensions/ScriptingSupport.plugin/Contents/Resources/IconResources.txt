@@ -1,0 +1,84 @@
+{
+	HighResolutionDataFile: "ScriptPsIconsHighRes.dat",
+	Include: [
+		"MondoIcons.txt",
+		"MondoCursors.txt"
+		],
+	Icons: { 
+
+		DestinationFolderIcon: {
+			HighResolution: {
+				Normal: "icons_x2/DstFolder.png"
+			},
+			LowResolution: {
+				Normal: "icons/DstFolder.png"
+			}
+		},
+
+		SourceFolderIcon: {
+			HighResolution: {
+				Normal: "icons_x2/SrcFolder.png"
+			},
+			LowResolution: {
+				Normal: "icons/SrcFolder.png"
+			}
+		},
+
+		Step1Icon: {
+			HighResolution: {
+				Normal: "icons_x2/Step1.png"
+			},
+			LowResolution: {
+				Normal: "icons/Step1.png"
+			}
+		},
+
+		Step2Icon: {
+			HighResolution: {
+				Normal: "icons_x2/Step2.png"
+			},
+			LowResolution: {
+				Normal: "icons/Step2.png"
+			}
+		},
+
+		Step3Icon: {
+			HighResolution: {
+				Normal: "icons_x2/Step3.png"
+			},
+			LowResolution: {
+				Normal: "icons/Step3.png"
+			}
+		},
+
+		Step4Icon: {
+			HighResolution: {
+				Normal: "icons_x2/Step4.png"
+			},
+			LowResolution: {
+				Normal: "icons/Step4.png"
+			}
+		}
+	},
+	LowResolutionDataFile: "ScriptPsIconsLowRes.dat",
+	Name: "ScriptPs Icon Source File",
+	Version: "1.0"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

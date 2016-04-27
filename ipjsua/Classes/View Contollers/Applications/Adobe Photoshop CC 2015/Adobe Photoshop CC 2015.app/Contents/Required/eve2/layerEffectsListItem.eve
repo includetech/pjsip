@@ -1,0 +1,60 @@
+layout layerEffectsListItem
+    {
+    interface:
+        itemType   : @checkbox;
+        canAdd     : false;
+        withIndent : false;
+        zLabel     : 'placeholder - see TDynamicEffectsListView::ItemSheetPostCreate';
+        zTooltip   : 'placeholder - see TDynamicEffectsListView::ItemSheetPostCreate';
+        doAdd      : false <== canAdd;
+
+    view TDynamicEffectsListItem(font           : staticSmallFont,
+                                 noGrowVertical : true,
+                                 spacing        : 0,
+                                 height         : 26,
+                                 qDebugDraw     : false)
+        {
+        row(horizontal : align_fill,
+            vertical   : align_center,
+            margin     : [ 0, withIndent ? 15 : 5, 0, 3])
+            {
+            overlay(vertical : align_center)
+                {
+                TOptional(bind     : @itemType,
+                          value    : @checkbox,
+                          vertical : align_center)
+                    {
+                    TMiniCheckBox (identifier : @checkbox,
+                                   name       : zLabel,
+                                   tooltip    : zTooltip,
+                                   labelHits  : true,
+                                   tinyCheck  : true);
+                    }
+
+                TOptional(bind     : @itemType,
+                          value    : @staticText,
+                          vertical : align_center)
+                    {
+                    THotText (identifier : @staticText,
+                              name       : zLabel,
+                              tooltip    : zTooltip, 
+                              width : 100);
+                    }
+                }
+
+            TOptional(bind       : @doAdd,
+                      horizontal : align_right,
+                      vertical   : align_center)
+                {
+                TIconButton(dataType     : 'int32',
+                            identifier   : @addLayerEffect,
+                            iconRootName : 'AddStyle',
+                            width        : 16,
+                            height       : 16);
+                }
+            }
+
+        TNarrowGroupSeparator(height     : 1,
+                              horizontal : align_fill);
+        }
+    }

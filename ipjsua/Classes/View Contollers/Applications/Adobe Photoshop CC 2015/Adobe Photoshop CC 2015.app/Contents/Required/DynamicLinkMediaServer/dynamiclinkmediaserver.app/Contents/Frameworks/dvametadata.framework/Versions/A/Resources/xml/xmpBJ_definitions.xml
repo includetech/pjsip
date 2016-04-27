@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xmp_definitions>
+  <xmp_schema prefix='xmpBJ' namespace='http://ns.adobe.com/xap/1.0/bj/' description='$$$/xmp/xmpBJ_description=The following schema describes very simple workflow or job information.' label='$$$/xmp/xmpBJ_label=Basic Job Ticket'>
+    <xmp_property name='JobRef' category='external' type='bag' description='$$$/xmp/xmpBJ/JobRef_description=References an external job management file for a job process in which the document is being used. Use of job names is under user control. Typical use would be to identify all documents that are part of a particular job or contract. There are multiple values because there can be more than one job using a particular document at any time, and it can also be useful to keep historical information about what jobs a document was part of previously.' element_type='job' label='$$$/xmp/xmpBJ/JobRef_label=Job Ref'/>
+  </xmp_schema>
+  <xmp_type name='job' description='$$$/xmp/xmpBJ/job_description=Describes a job for a job-management system.' label='$$$/xmp/xmpBJ/job_label=Job'>
+    <xmp_field prefix='xmpBJ' name='name' type='text' namespace='http://ns.adobe.com/xap/1.0/bj/' description='$$$/xmp/xmpBJ/job/name_description=Informal name of job. This name is for user display and informal systems.' label='$$$/xmp/xmpBJ/job/name_label=Name'/>
+    <xmp_field prefix='xmpBJ' name='id' type='text' namespace='http://ns.adobe.com/xap/1.0/bj/' description='$$$/xmp/xmpBJ/job/id_description=Unique ID for the job. This field is a reference into some external job management system.' label='$$$/xmp/xmpBJ/job/id_label=Id'/>
+    <xmp_field prefix='xmpBJ' name='url' type='url' namespace='http://ns.adobe.com/xap/1.0/bj/' description='$$$/xmp/xmpBJ/job/url_description=A file URL referencing an external job management file.' label='$$$/xmp/xmpBJ/job/url_label=URL'/>
+  </xmp_type>
+</xmp_definitions>

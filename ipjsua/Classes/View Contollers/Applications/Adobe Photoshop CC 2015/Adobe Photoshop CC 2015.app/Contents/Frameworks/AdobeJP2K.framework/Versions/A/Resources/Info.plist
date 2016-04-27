@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildDate</key>
+	<string>2015/03/15-23:45:24</string>
+	<key>BuildID</key>
+	<string>34331</string>
+	<key>BuildType</key>
+	<string>RELEASE</string>
+	<key>BuildVersion</key>
+	<string>79.257449</string>
+	<key>CFBundleExecutable</key>
+	<string>AdobeJP2K</string>
+	<key>CFBundleGetInfoString</key>
+	<string>AdobeJP2K 1.2.2.34331, © 2009 Adobe Systems Incorporated.
+ All Rights Reserved.</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.adobe.JP2K</string>
+	<key>CFBundleName</key>
+	<string>AdobeJP2K</string>
+	<key>CFBundlePackageType</key>
+	<string>FMWK</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.2.2</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.2.2.34331</string>
+	<key>JP2K_IPID</key>
+	<string>&lt;AdobeIP#0000435&gt;</string>
+</dict>
+</plist>

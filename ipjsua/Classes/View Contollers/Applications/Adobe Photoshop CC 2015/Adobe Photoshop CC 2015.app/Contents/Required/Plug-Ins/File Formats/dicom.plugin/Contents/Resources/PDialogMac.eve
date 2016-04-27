@@ -1,0 +1,834 @@
+PDialog (placement:			place_row,
+			  width:				800,
+			  height:				675,
+			  margin:				10,
+			  window_title:		    '$$$/private/Dialog/Title/Default=DICOM',
+			  window_features:		kWin_CanMove +
+									kWin_CanSize +
+									kWin_HasSizeBox +
+									kWin_CanTarget +
+									kWin_CanBullseye +
+									kWin_OpenHidden,
+			  window_position_x:	-50,
+			  window_position_y:	-33,
+			  view_id:				'Project/Dialog')
+	{
+	
+	text_font 		 = kFont_UIMedium;
+	label_font 		 = kFont_UIMedium;
+	bold_label_font  = kFont_UIMediumBold;
+	control_font 	 = kFont_UIMedium;
+	push_button_font = kFont_UILarge;
+	
+	CFramePane (placement:		place_column,
+				horizontal:		align_left,
+				vertical:		align_fill,
+				view_binding:	kBind_YSizeable,
+				view_id:		'Project/Dialog/LeftPart')
+		{
+
+		CFramePane (placement:		place_column,
+				    horizontal:		align_fill,
+				    vertical:		align_top,
+				    margin_top:		5,
+				    margin_bottom:	10,
+					frame_style:	kDividerBottom,
+				    view_binding:	kBind_XSizeable)
+			{
+			
+			CFramePane (placement:		place_column,
+					    horizontal:		align_fill,
+					    vertical:		align_top,
+					    margin:			5,
+					    spacing:		10,
+					    view_binding:	kBind_FixedTopMiddle)
+				{
+				
+				push_button_font = kFont_UISmall;
+		
+				CPushButton (horizontal:		align_center,
+							 vertical:			align_top,
+							 width:				100,
+							 view_binding:		kBind_FixedTopLeft,
+							 view_id:			'Project/Dialog/Button/SelectAll',
+							 button_label:		'$$$/AdobeDicom/Dialog/SelectAll=Select All');
+								
+				}
+				
+			}
+			
+		PPreviewScroller   (horizontal:			align_fill,
+							vertical:			align_fill,
+							view_options:		kView_Target,
+							view_binding:		kBind_Sizeable,
+							scroller_attributes:	kScroller_YBar,
+							view_id:				'Project/Dialog/PreviewScroller')
+			{
+			
+			PFilmStripPane (	width:				130,
+								vertical:			align_fill,
+								cell_options:		kCellSheet_OneDimension +
+							 						kCellSheet_VariableResizes +
+							 						kCellSheet_MultiSelect,
+						 		frame_interior:		kInterior_ScrollerPane,
+						 		view_options:		kView_Target +
+													kView_Bullseye +
+													kView_ContextClick +
+													kView_BigCoordinates +
+													kView_DrawBuffer,
+						 		view_binding:		kBind_Sizeable +
+						 	 						kBind_YScrollable + 
+						 	 						kBind_LimitTop,
+						 		view_id:			'Project/Dialog/PFilmStripPane');
+
+			}
+			
+		}
+
+	PSizeBar (horizontal:		align_left,
+			   vertical:		align_fill,
+			   view_binding:	kBind_FixedLeft + kBind_YSizeable,
+			   snap_direction:	1,
+			   view_id:			'Project/Dialog/FilmStripSizeBar',
+			   left_id:			'Project/Dialog/LeftPart',
+			   right_id:		'Project/Dialog/RightPart');
+
+	CFramePane (placement:		place_row,
+				horizontal:		align_fill,
+				vertical:		align_fill,
+				view_binding:	kBind_Sizeable,
+			    view_id:		'Project/Dialog/RightPart')
+		{
+
+		CFramePane (placement:		place_column,
+				    horizontal:		align_fill,
+				    vertical:		align_fill,
+				    margin_left:	15,
+				    margin_right:	5,
+				    margin_top:		10,
+				    view_binding:	kBind_Sizeable)
+			{
+			
+			CFramePane (placement:		place_row,
+					    horizontal:		align_fill,
+					    vertical:		align_top,
+					    margin_bottom:	5,
+					    view_binding:	kBind_XSizeable)
+				{
+
+				CToolGrid (placement:		place_offscreen,
+						   horizontal:		align_left,
+						   vertical:		align_center,
+						   view_binding:	kBind_FixedTopLeft,
+						   cell_count_x:	3,
+						   cell_count_y:	1,
+						   tool_frame:		kToolFrame_Normal)
+					{
+					
+					CToolButton (tool_set:			'AdobeDicom/Tool/MainSet',
+								 view_id:			'AdobeDicom/Tool/Zoom',
+								 view_tip:			'$$$/AdobeDicom/OptionsDialog/Tips/Zoom=Zoom Tool (Z)',
+								 frame_interior:	0);
+								
+					CToolButton (tool_set:			'AdobeDicom/Tool/MainSet',
+								 view_id:			'AdobeDicom/Tool/Pan',
+								 view_tip:			'$$$/AdobeDicom/OptionsDialog/Tips/Pan=Hand Tool (H)',
+								 frame_interior:	1);
+
+					CToolButton (tool_set:			'AdobeDicom/Tool/MainSet',
+								 view_id:			'AdobeDicom/Tool/WindowLevel',
+								 view_tip:			'$$$/AdobeDicom/OptionsDialog/Tips/WindowLevel=Window Level Tool (W)',
+								 frame_interior:	2);
+								
+					}
+				}
+							
+			CFramePane (placement:		place_column,
+					    horizontal:		align_fill,
+					    vertical:		align_fill,
+						view_id:		'Project/Dialog/MiddleCluster',
+					    view_binding:	kBind_Sizeable,
+					    frame_style:	kFrameIn3D)
+				{
+				
+				PProxyFrame (placement:		place_column,
+						      horizontal:		align_fill,
+						      vertical:			align_fill,
+							  view_id:			'Project/Dialog/ProxyFrame',
+						      view_binding:		kBind_Sizeable)
+					{
+					
+					CScroller (placement:					place_column,
+							   horizontal:					align_fill,
+							   vertical:					align_fill,
+							   view_target:					true,
+							   view_invalid_on_activate:	true,
+							   view_binding:				kBind_Sizeable,
+							   view_id:						'Project/Dialog/ProxyScroller',
+							   scroller_attributes:			kScroller_NoControls)
+						{
+						
+						PProxyPane (horizontal:	align_fill,
+									 vertical:		align_fill,
+									 view_options:	kView_Target +
+													kView_Bullseye +
+													kView_ContextClick +
+													kView_ChunkyScroll,
+									 view_binding:	kBind_Sizeable + kBind_Scrollable,
+									 view_id:		'Project/Dialog/ProxyPane');
+
+						}
+						
+					}
+					
+						PGrayFrame (placement:		place_row,
+									horizontal:		align_fill,
+									vertical:		align_top,
+									view_id:		'AdobeDicom/Dialog/DicomDirControls',
+									spacing:		5,
+									margin_right:	5,
+									view_binding:	kBind_XSizeable + kBind_FixedBottom,
+									frame_style:	kDividerTop)
+						{
+		
+							CStaticText (horizontal:		align_left,
+										 vertical:			align_center,
+										 view_binding:		kBind_SizeLeft,
+										 view_id:			'AdobeDicom/DicomDir/PatientLabel',
+										 text:				'$$$/AdobeDicom/DicomDir/PatientLabel=Patient:',
+										 text_align_x:		kAlign_Left,
+										 text_align_y:		kAlign_Center);
+
+							CRadioPopup(horizontal:		align_fill,
+											vertical:			align_center,
+											view_binding:		kBind_SizeLeft,	
+											width:				150,
+											view_id:			'Project/Dialog/PatientDrop');
+
+							CStaticText (horizontal:		align_left,
+										 vertical:			align_center,
+										 view_binding:		kBind_SizeLeft,
+										 view_id:			'AdobeDicom/DicomDir/StudyLabel',
+										 text:				'$$$/AdobeDicom/DicomDir/StudyLabel=Study:',
+										 text_align_x:		kAlign_Left,
+										 text_align_y:		kAlign_Center);
+
+							CRadioPopup (horizontal:		align_fill,
+											vertical:			align_center,
+											view_binding:		kBind_SizeLeft,
+											width:				180,
+											view_id:			'Project/Dialog/StudyDrop');
+											
+							CStaticText (horizontal:		align_left,
+										 vertical:			align_center,
+										 view_binding:		kBind_SizeLeft,
+										 view_id:			'AdobeDicom/DicomDir/SeriesLabel',
+										 text:				'$$$/AdobeDicom/DicomDir/SeriesLabel=Series:',
+										 text_align_x:		kAlign_Left,
+										 text_align_y:		kAlign_Center);
+											
+							CRadioPopup (horizontal:		align_fill,
+											vertical:			align_center,
+											view_binding:		kBind_SizeLeft,
+											width:				180,
+											view_id:			'Project/Dialog/SeriesDrop');
+						}	
+					
+				PGrayFrame (placement:		place_row,
+						     horizontal:	align_fill,
+						     vertical:		align_top,
+						     margin_right:	5,
+							 view_id:		'Project/Dialog/ViewControls',
+						     view_binding:	kBind_XSizeable + kBind_FixedBottom,
+						     frame_style:	kDividerTop)
+					{
+								
+
+					CZoomPanel (horizontal:		align_left,
+								vertical:		align_center,
+								cushion_left:	4,
+								cushion_y:		4,
+								view_binding:	kBind_FixedTopLeft,
+								view_id:		'Project/Dialog/ZoomPanel',
+								view_tip:		'$$$/AdobeDicom/Dialog/Tips/ZoomPanel=Select zoom level');
+					
+					CFramePane (placement:		place_row,
+					            horizontal:		align_right,
+							   	vertical:		align_center,
+								view_binding:	kBind_FixedTopRight,
+								view_id:		'Project/Dialog/Selector')
+						{
+
+						CStaticImage (placement:		place_row,
+								   	  horizontal:		align_left,
+								   	  vertical:			align_center,
+								   	  width:			42,
+								   	  height:			18,
+								      margin_left:		6,
+								   	  spacing:			2,
+								   	  icon:				'SelectorLeft.png',
+								   	  view_binding:		kBind_FixedTopLeft)
+							{
+													
+							CIconButton (width:					14,
+										 height:				14,
+										 horizontal:			align_left,
+										 vertical:				align_center,
+										 view_id:				'Project/Dialog/Selector/Previous',
+										 button_style_class:	'ToolbarButtonGraphic',
+										 button_kind:			kPushButton,
+										 icon:					'SelectorPrevious.png');
+										
+							CIconButton (width:					14,
+										 height:				14,
+										 horizontal:			align_left,
+										 vertical:				align_center,
+										 view_id:				'Project/Dialog/Selector/Next',
+										 button_style_class:	'ToolbarButtonGraphic',
+										 button_kind:			kPushButton,
+										 icon:					'SelectorNext.png');
+										
+							}
+
+						CStaticImage (placement:		place_row,
+								   	  horizontal:		align_left,
+								   	  vertical:			align_center,
+								   	  height:			18,
+								   	  width:			60,
+								   	  margin_width:		5,
+								   	  icon:				'SelectorMiddle.png',
+								   	  view_binding:		kBind_XSizeable)
+							{
+							
+							CStaticText (horizontal:		align_fill,
+										 vertical:			align_center,
+										 view_binding:		kBind_XSizeable,
+										 text_align_x:		kAlign_Left,
+									 	 text_align_y:		kAlign_Center,
+										 view_id:			'Project/Dialog/Selector/Text');
+									
+							}
+													
+						CStaticImage (placement:		place_row,
+								   	  horizontal:		align_left,
+								   	  vertical:			align_center,
+								   	  width:			2,
+								   	  height:			18,
+								   	  icon:				'SelectorRight.png',
+								   	  view_binding:		kBind_FixedTopRight);
+								   	  
+						}
+											
+					}
+					
+				}
+				
+			CFramePane (placement:		place_offscreen,
+						horizontal:		align_fill,
+						vertical:		align_top,
+						margin_top:		5,
+						margin_bottom:	15,
+						view_binding:	kBind_XSizeable + kBind_FixedBottom)
+				{
+				CFramePane (placement:		place_column,
+						    horizontal:		align_fill,
+						    vertical:		align_fill,
+							view_id:		'Project/Dialog/WorkflowFrame1',
+						    view_binding:	kBind_XSizeable,
+						    frame_style:	kFrameIn3D)
+					{
+				
+					CFrameInsert (placement:		place_row,
+								  horizontal:		align_fill,
+								  vertical:			align_top,
+								  view_binding:		kBind_FixedTopLeft,
+								  margin_width:		15,
+								  margin_height:	2,
+								  spacing:			4)
+						{
+							
+						CCheckButton (horizontal:		align_left,
+									  vertical:			align_center,
+									  view_binding:		kBind_FixedTopLeft,
+									  view_id:			'Project/Dialog/OptionsCheck1',
+									  button_label:		'$$$/AdobeDicom/Dialog/ShowWindowingOptions=Show Windowing Options');
+									  
+						}
+									  
+					CFramePane (placement:		place_row,
+							    horizontal:		align_left,
+							    vertical:		align_top,
+							    margin_top:		8,
+							    margin_bottom:	15,
+							    margin_left:	5,
+							    margin_right:	5,
+							    spacing:		5,
+								view_id:		'Project/Dialog/WorkflowContents',
+							    view_binding:	kBind_FixedTopLeft)
+						{
+						
+							CFramePane (placement:		place_column,
+								    horizontal:		align_left,
+								    vertical:		align_top,
+								    spacing:		8,
+									view_id:		'Project/Dialog/WorkflowControlsA',
+								    view_binding:	kBind_FixedTopLeft)
+							{
+							
+							popup_width = 140;
+							
+							CFramePane (placement:		place_row,
+									    horizontal:		align_fill,
+									    vertical:		align_top,
+									    spacing:		4,
+										margin_right:	2,
+									    view_binding:	kBind_FixedTopLeft)
+								{
+								
+								CStaticText (horizontal:	align_fill,
+											 vertical:		align_center,
+											 view_binding:	kBind_FixedTopLeft,
+											 view_id:		'Project/Dialog/WindowLevelLabel',
+											 text:			'$$$/AdobeDicom/Dialog/WindowLevel=Window Level:',
+											 text_align_x:	kAlign_Right,
+											 text_align_y:	kAlign_Center);
+											
+								CEditNumber (horizontal:		align_left,
+												vertical:			align_center,
+												view_binding:		kBind_FixedTopLeft,
+												view_id:			'Project/Dialog/WindowLevelEdit',
+												text_digits:		6,
+												number_value:		255,
+												number_minimum:	-32767,
+												number_maximum:	65535);
+
+								}
+							
+							CFramePane (placement:		place_row,
+									    horizontal:		align_fill,
+									    vertical:		align_top,
+									    spacing:		4,
+										margin_right:	2,
+									    view_binding:	kBind_FixedTopLeft)
+								{
+								
+								CStaticText (horizontal:	align_fill,
+											 vertical:		align_center,
+											 view_binding:	kBind_FixedTopLeft,
+											 view_id:		'Project/Dialog/WindowWidthLabel',
+											 text:			'$$$/AdobeDicom/Dialog/WindowWidthLabel=Window Width:',
+											 text_align_x:	kAlign_Right,
+											 text_align_y:	kAlign_Center);
+
+								CEditNumber (horizontal:		align_right,
+												vertical:			align_center,
+												view_binding:		kBind_FixedTopLeft,
+												view_id:			'Project/Dialog/WindowWidthEdit',
+												text_digits:		6,
+												number_value:		255,
+												number_minimum:	0,
+												number_maximum:	65535);
+
+								}
+								
+							}
+						
+						CFramePane(placement:		place_column,
+								   horizontal:		align_right,
+								   vertical:		align_top,
+								   spacing:			8,
+								   view_id:			'Project/Dialog/WorkflowControlsB',
+								   view_binding:	kBind_FixedTopLeft)
+							{
+							
+							popup_width = 180;
+							
+							CFramePane (placement:		place_row,
+									    horizontal:		align_fill,
+									    vertical:		align_top,
+									    spacing:		4,
+										margin_right:	2,
+									    view_binding:	kBind_FixedTop + kBind_XSizeable)
+								{
+								
+								CStaticText (horizontal:	align_fill,
+											 vertical:		align_center,
+											 view_binding:	kBind_FixedTopLeft,
+											 view_id:		'Project/Dialog/WindowPresetLabel',
+											 text:			'$$$/AdobeDicom/Dialog/WindowPresetLabel=Window Preset:',
+											 text_align_x:	kAlign_Right,
+											 text_align_y:	kAlign_Center);
+											
+								CRadioPopup (width:					popup_width,
+											 horizontal:			align_right,
+											 vertical:				align_center,
+											 view_binding:			kBind_FixedTop + kBind_XSizeable,
+											 view_id:				'Project/Dialog/WindowPresetPopup',
+											 radio_custom_items:	true);
+				
+								}
+								
+							CFramePane (placement:		place_row,
+								    horizontal:		align_fill,
+								    vertical:		align_top,
+								    spacing:		4,
+									margin_right:	2,
+								    view_binding:	kBind_FixedTop + kBind_XSizeable)
+								{
+								
+								CCheckButton (horizontal:		align_fill,
+												  vertical:			align_center,
+												  view_binding:		kBind_FixedTop + kBind_XSizeable,
+												  view_id:			'Project/Dialog/ReverseCheck',
+												  button_label:		'$$$/AdobeDicom/Dialog/ReverseCheck=Reverse Image');
+								}			
+							}
+						}		
+					}
+					
+				CFramePane (placement:		place_column,
+						    horizontal:		align_fill,
+						    vertical:		align_fill,
+							view_id:		'Project/Dialog/WorkflowFrame2',
+						    view_binding:	kBind_XSizeable)
+					{
+					
+					CCheckButton (horizontal:		align_left,
+								  vertical:			align_bottom,
+								  view_binding:		kBind_FixedTopLeft,
+								  view_id:			'Project/Dialog/OptionsCheck2',
+								  button_label:		'$$$/AdobeDicom/Dialog/ShowWindowingOptions=Show Windowing Options');
+								  
+
+								  
+					}
+
+				}
+				
+			}
+		
+		CFramePane (placement:		place_column,
+				    horizontal:		align_fill,
+				    vertical:		align_fill,
+				    margin_top:		28,
+				    margin_bottom:	10,
+				    view_binding:	kBind_FixedRight + kBind_YSizeable)
+			{
+			
+			CFramePane (placement:		place_column,
+					    horizontal:		align_fill,
+					    vertical:		align_top,
+					    spacing:		10,
+					    view_binding:	kBind_FixedTopRight,
+					    frame_style:	kFramePrimaryGroup)
+				{
+				
+					CFrameInsert (placement:		place_row,
+							horizontal:			align_fill,
+							vertical:			align_top,
+							margin_width:		15,
+							view_binding:		kBind_FixedTopLeft)
+					{
+						
+						CStaticText (horizontal:	align_left,
+									vertical:		align_center,
+									view_binding:	kBind_FixedTopLeft,
+									text:			'$$$/AdobeDicom/Dialog/FrameOptions=Frame Import Options:',
+									text_align_x:	kAlign_Left,
+									text_align_y:	kAlign_Center);
+					}
+
+					CFramePane (placement:		place_column,
+								horizontal:		align_proportional,
+								vertical:		align_fill,
+								spacing:		10,
+								margin_bottom:	10,
+								view_binding:	kBind_FixedRight + kBind_YSizeable)
+					{
+
+						CRadioButton (horizontal:		align_left,
+									vertical:			align_top,
+									view_binding:		kBind_FixedTopLeft,
+									view_id:			'Project/Dialog/RadioSelectLayers',
+									button_label:		'$$$/AdobeDicom/Dialog/Radio/RadioSelectLayers=Import frames as layers');
+
+						CRadioButton (horizontal:		align_left,
+									vertical:			align_top,
+									view_binding:		kBind_FixedTopLeft,
+									view_id:			'Project/Dialog/RadioSelectNUp',
+									button_label:		'$$$/AdobeDicom/Dialog/Radio/RadioSelectNUp=N-Up configuration');
+									
+						CRadioButton (horizontal:		align_left,
+									vertical:			align_top,
+									view_binding:		kBind_FixedTopLeft,
+									view_id:			'Project/Dialog/RadioSelectVolume',
+									button_label:		'$$$/AdobeDicom/Dialog/Radio/RadioSelectVolume=Import as volume');
+									
+						CFramePane (placement:		place_row,
+									horizontal:		align_left,
+									vertical:		align_top,
+									spacing:		4,
+									margin_top:		5,
+									margin_bottom:	5,
+									view_binding:	kBind_FixedTopLeft)
+							{
+							
+							CStaticText (horizontal:		align_left,
+										vertical:			align_center,
+										view_binding:		kBind_FixedTopLeft,
+										text:				'$$$/AdobeDicom/Dialog/SliceSpacingLabel=Slice Spacing(mm):',
+										text_align_x:		kAlign_Right,
+										text_align_y:		kAlign_Center);
+
+							CEditNumber (horizontal:		align_left,
+										vertical:			align_center,
+										view_binding:		kBind_FixedTopLeft,
+										view_id:			'Project/Dialog/SliceSpacingNumber',
+										text_digits:		4,
+										number_minimum:	0,
+										number_maximum:	100);
+							}
+
+
+						CFramePane (placement:		place_row,
+									horizontal:		align_left,
+									vertical:		align_top,
+									spacing:		4,
+									margin_top:		10,
+									margin_bottom:	15,
+									view_binding:	kBind_FixedTopLeft)
+							{
+							
+							CStaticText (horizontal:		align_left,
+										vertical:			align_center,
+										view_binding:		kBind_FixedTopLeft,
+										text:				'$$$/AdobeDicom/Dialog/RowsLabel=Rows:',
+										text_align_x:		kAlign_Right,
+										text_align_y:		kAlign_Center);
+
+							CEditNumber (horizontal:		align_left,
+										vertical:			align_center,
+										view_binding:		kBind_FixedTopLeft,
+										view_id:			'Project/Dialog/RowsNumber',
+										text_digits:		4,
+										number_minimum:	1,
+										number_maximum:	100);
+																				
+							CStaticText (horizontal:		align_left,
+										vertical:			align_center,
+										cushion_left:		10,
+										view_binding:		kBind_FixedTopLeft,
+										text:				'$$$/AdobeDicom/Dialog/ColumnsLabel=Columns:',
+										text_align_x:		kAlign_Right,
+										text_align_y:		kAlign_Center);
+
+							CEditNumber (horizontal:		align_left,
+										vertical:			align_center,
+										view_binding:		kBind_FixedTopLeft,
+										view_id:			'Project/Dialog/ColumnsNumber',
+										text_digits:		4,
+										number_minimum:	1,
+										number_maximum:	100);
+																				
+							}
+
+					 }
+							 
+				}
+		
+			CFramePane (placement:		place_column,
+					    horizontal:		align_fill,
+					    vertical:		align_top,
+					    spacing:		10,
+					    view_binding:	kBind_FixedTopRight + kBind_YSizeable,
+					    frame_style:	kFramePrimaryGroup)
+				{
+					CFrameInsert (placement:		place_row,
+									horizontal:			align_fill,
+									vertical:			align_top,
+									margin_width:		15,
+									view_binding:		kBind_FixedTopLeft)
+					{
+						
+						CStaticText (horizontal:	align_left,
+									vertical:		align_center,
+									view_binding:	kBind_FixedTopLeft,
+									text:			'$$$/AdobeDicom/Dialog/DatasetOptions=DICOM Dataset Options:',
+									text_align_x:	kAlign_Left,
+									text_align_y:	kAlign_Center);
+					}
+							
+					CFramePane (placement:		place_column,
+								horizontal:		align_proportional,
+								vertical:		align_fill,
+								spacing:		10,
+								margin_bottom:	10,
+								view_binding:	kBind_FixedRight + kBind_YSizeable)
+					{
+	
+						CCheckButton (horizontal:		align_left,
+										vertical:			align_top,
+										view_binding:		kBind_FixedTopLeft,		
+										view_id:			'Project/Dialog/AnonymizeCheck',
+										button_label:		'$$$/AdobeDicom/Dialog/AnonymizeCheck=Anonymize');
+
+						CCheckButton (horizontal:		align_left,
+										vertical:			align_top,
+										view_binding:		kBind_FixedTopLeft,
+										view_id:			'Project/Dialog/OverlayCheck',
+										button_label:		'$$$/AdobeDicom/Dialog/OverlayCheck=Show Overlays');
+					}
+
+				}
+				
+			CFramePane (placement:		place_column,
+					    horizontal:		align_fill,
+					    vertical:		align_top,
+					    spacing:		10,
+					    view_binding:	kBind_FixedTopRight + kBind_YSizeable,
+					    frame_style:	kFramePrimaryGroup)
+				{
+					CFrameInsert (placement:		place_row,
+									horizontal:			align_fill,
+									vertical:			align_top,
+									margin_width:		15,
+									view_binding:		kBind_FixedTopLeft)
+					{
+						
+						CStaticText (horizontal:	align_left,
+									vertical:		align_center,
+									view_binding:	kBind_FixedTopLeft,
+									text:			'$$$/AdobeDicom/Dialog/SaveOptions=Export Options:',
+									text_align_x:	kAlign_Left,
+									text_align_y:	kAlign_Center);
+					}
+							
+					CFramePane (placement:		place_column,
+								horizontal:		align_proportional,
+								vertical:		align_fill,
+								spacing:		10,
+								margin_bottom:	10,
+								view_binding:	kBind_FixedRight + kBind_YSizeable)
+					{
+	
+						CFramePane (placement:		place_row,
+									horizontal:		align_left,
+									vertical:		align_top,
+									spacing:		4,
+									margin_top:		5,
+									margin_bottom:	5,
+									view_binding:	kBind_FixedTopLeft)
+							{
+							
+							CStaticText (horizontal:		align_left,
+										vertical:			align_center,
+										view_binding:		kBind_FixedTopLeft,
+										text:				'$$$/AdobeDicom/Dialog/SaveNameLabel=Prefix:',
+										text_align_x:		kAlign_Right,
+										text_align_y:		kAlign_Center);
+
+							CEditString(horizontal:		align_left,
+										vertical:			align_center,
+										view_binding:		kBind_FixedTopLeft,
+										view_id:			'Project/Dialog/SavePrefix',
+										view_options:		kView_NoOptions,
+										text_align:			kAlign_Left,
+										text_framed:		true,
+										text_width:			150,
+										text_lines:			1);
+																			
+							}
+							
+						CPushButton (horizontal:		align_left,
+									vertical:			align_top,
+									view_binding:		kBind_FixedTopLeft,
+									view_id:			'Project/Dialog/Button/SaveJPEG',
+									button_label:		'$$$/AdobeDicom/Dialog/SaveJPEGButton=Export presentation (JPEG)...');
+								 
+
+					}
+
+				}
+
+			CFramePane (placement:		place_column,
+					    horizontal:		align_fill,
+					    vertical:		align_fill,
+					    view_binding:	kBind_FixedBottomRight + kBind_YSizeable,
+					    frame_style:	kFramePrimaryGroup)
+				{
+					CFrameInsert (placement:		place_row,
+									horizontal:			align_fill,
+									vertical:			align_top,
+									margin_width:		15,
+									view_binding:		kBind_FixedTopLeft)
+					{
+						
+						CStaticText (horizontal:	align_left,
+									vertical:		align_center,
+									view_binding:	kBind_FixedTopLeft,
+									text:			'$$$/AdobeDicom/Dialog/DicomHeader=Header:',
+									text_align_x:	kAlign_Left,
+									text_align_y:	kAlign_Center);
+					}
+						PHeaderScroller(placement:				place_offscreen,
+										horizontal:				align_fill,
+										vertical:				align_fill,
+										view_options:			kView_Target,
+										view_binding:			kBind_Sizeable,
+										view_id:				'Project/Dialog/HeaderScroller',
+										scroller_attributes:	kScroller_YBar + kScroller_XBar)
+						{
+							PHeaderPane(frame_interior:	kInterior_ScrollerPane,
+										view_options:	kView_Target +
+														kView_Bullseye +
+														kView_BigCoordinates +
+														kView_ContextClick,
+										view_binding:	kBind_Sizeable + kBind_YScrollable + kBind_XScrollable + kBind_LimitTopLeft,
+										view_id:		'Project/Dialog/HeaderPane',
+										control_font:	kFont_UISmall);
+						}
+
+				}
+			
+			CFramePane (placement:		place_column,
+					    horizontal:		align_fill,
+					    vertical:		align_bottom,
+					    margin_top:		10,
+					    view_binding:	kBind_FixedBottomRight)
+				{
+								 							  
+				CFramePane (placement:		place_row,
+						    horizontal:		align_left,
+						    vertical:		align_top,
+						    spacing:		15,
+						    margin_top:		10,
+						    margin_bottom:	5,
+						    margin_width:	20,
+						    view_binding:	kBind_FixedTopLeft)
+					{
+					
+					CPushButton (width:				120,
+								 horizontal:		align_left,
+								 vertical:			align_top,
+								 view_binding:		kBind_FixedTopLeft,
+								 view_id:			'Project/Dialog/Button/Open',
+								 button_label:		'$$$/AdobeDicom/Dialog/OpenButton=Open');
+
+					CPushButton (width:				120,
+								 horizontal:		align_right,
+								 vertical:			align_top,
+								 view_options:		kView_SupressSurrenders,
+								 view_binding:		kBind_FixedTopLeft,
+								 view_id:			'Project/Dialog/Button/Cancel',
+								 button_label:		'$$$/AdobeDicom/Dialog/CancelButton=Cancel',
+								 cancel_button:		true);
+						
+					}
+										
+				}
+			
+			}
+			
+		}
+	
+	}

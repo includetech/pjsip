@@ -1,0 +1,170 @@
+layout smartShapePropertiesView
+    {
+    constant:
+        zWidthLabel        : '$$$/VectorLayerOptionsBar/Width/Label=W:';
+        zWidthTooltip      : '$$$/VectorLayerOptionsBar/ToolTips/ShapeWidth=Set shape width';
+        zHeightTooltip     : '$$$/VectorLayerOptionsBar/ToolTips/ShapeHeight=Set shape height';
+        zHeightLabel       : '$$$/VectorLayerOptionsBar/Height/Label=H:';
+        zLinkTooltip       : '$$$/VectorLayerOptionsBar/ToolTips/ShapeWidthHeightLinkTooltip=Link shape width and height';
+        zXLabel            : '$$$/VectorLayerOptionsBar/X/Label=X:';
+        zXTooltip          : '$$$/VectorLayerOptionsBar/X/ToolTip=Set horizontal location';
+        zYLabel            : '$$$/VectorLayerOptionsBar/Y/Label=Y:';
+        zYTooltip          : '$$$/VectorLayerOptionsBar/Y/ToolTip=Set vertical location';
+        zShapeFillFlyout   : '$$$/VectorLayerOptionsBar/ToolTips/FillType=Set shape fill type';
+        zShapeStrokeFlyout : '$$$/VectorLayerOptionsBar/ToolTips/StrokeType=Set shape stroke type';
+        zEditSliderTooltip : '$$$/VectorLayerOptionsBar/ToolTips/StrokeWidth=Set shape stroke width';
+        zEditSliderFormat  : '$$$/override/TPopupEditSlider/StrokeWidth/FormatString=100.0 px';
+        zStrokeTypeFlyout  : '$$$/VectorLayerOptionsBar/ToolTips/StrokeType=Set shape stroke type';
+        zAlignTooltip      : '$$$/Dialog/VectorLayerMoreOptions/ToolTips/LineAlign=Set align type for stroke';
+        zCapTooltip        : '$$$/Dialog/VectorLayerMoreOptions/ToolTips/LineCaps=Set line cap type for stroke';
+        zJoinTooltip       : '$$$/Dialog/VectorLayerMoreOptions/ToolTips/LineJoin=Set line join type for stroke';
+        zUnionTooltip      : '$$$/SmartShapeProperties/ToolTips/IntersectionOperation/Union=Combine shapes';
+        zSubtractTooltip   : '$$$/SmartShapeProperties/ToolTips/IntersectionOperation/Subtract=Subtract front shape';
+        zIntersectTooltip  : '$$$/SmartShapeProperties/ToolTips/IntersectionOperation/Intersect=Intersect shape areas';
+        zXORTooltip        : '$$$/SmartShapeProperties/ToolTips/IntersectionOperation/Exclude=Exclude overlapping shapes';
+        zBoundingBoxSep    : '$$$/SmartShapeProperties/Separator/BoundingBox=Bounding Box';
+        zStrokeDetailsSep  : '$$$/SmartShapeProperties/Separator/ShapeDetails=Shape Details';
+        zIntersectionOpSep : '$$$/SmartShapeProperties/Separator/PathOperation=Path Operations';
+
+        kContentWidth : gPropertiesPaletteWidth - gScrollerInset - gOptionsMarginWidth * 2;
+
+    interface:
+        discloseBoundingBox    : true;
+        discloseStrokeDetails  : true;
+        discloseIntersectionOp : true;
+
+    view TSmartShapePropertiesView(identifier     : @smartShapePropertiesPanel,
+                                   placement      : place_column,
+                                   font           : staticSmallFont,
+                                   margin         : gOptionsMarginWidth,
+                                   noGrowVertical : true,
+                                   spacing        : gGap,
+                                   qDebugDraw     : false)
+        {
+        TDisclosureSeparator(name: zBoundingBoxSep, bind: @discloseBoundingBox);
+
+        TOptional(bind: @discloseBoundingBox, width: kContentWidth)
+            {
+            row(horizontal     : align_fill,
+                child_vertical : align_center,
+                spacing        : gGap)
+                {
+                TUnitsFixedPoint(identifier : @smartShapeWidth,
+                                 name       : zWidthLabel,
+                                 horizontal : align_fill,
+                                 width      : gFixedEditTextWidth,
+                                 tooltip    : zWidthTooltip);
+
+                TPunchButton(width        : gToolOptionsIconWidth,
+                             height       : gToolOptionsIconHeight,
+                             identifier   : @smartShapeBBoxLink,
+                             tooltip      : zLinkTooltip,
+                             iconRootName : 'CellLinkIndicator');
+
+                TUnitsFixedPoint(identifier : @smartShapeHeight,
+                                 name       : zHeightLabel,
+                                 horizontal : align_fill,
+                                 width      : gFixedEditTextWidth,
+                                 tooltip    : zHeightTooltip);
+                }
+
+            row(horizontal     : align_fill,
+                child_vertical : align_center,
+                spacing        : gGap)
+                {
+                TUnitsFixedPoint(identifier : @smartShapeLeft,
+                                 name       : zXLabel,
+                                 horizontal : align_fill,
+                                 width      : gFixedEditTextWidth,
+                                 tooltip    : zXTooltip);
+
+                TView(width: gToolOptionsIconWidth, height: gSpace);
+
+                TUnitsFixedPoint(identifier : @smartShapeTop,
+                                 name       : zYLabel,
+                                 horizontal : align_fill,
+                                 width      : gFixedEditTextWidth,
+                                 tooltip    : zYTooltip);
+                }
+            }
+
+        TDisclosureSeparator(name: zStrokeDetailsSep, bind: @discloseStrokeDetails);
+
+        TOptional(bind: @discloseStrokeDetails, width: kContentWidth)
+            {
+            row(horizontal: align_fill, spacing: gGap)
+                {
+                TCustomDrawFlyoutControl(identifier : @smartShapeFillFlyout,
+                                         tooltip    : zShapeFillFlyout,
+                                         width      : 30,
+                                         height     : 20,
+                                         vertical   : align_fill);
+
+                TCustomDrawFlyoutControl(identifier : @smartShapeStrokeFlyout,
+                                         tooltip    : zShapeStrokeFlyout,
+                                         width      : 30,
+                                         vertical   : align_fill);
+
+                TPopupEditSlider(identifier           : @smartShapeLineWeight,
+                                 tooltip              : zEditSliderTooltip,
+                                 editClassName        : 'TUnitsFixedPoint',
+                                 editDisplayFormat    : zEditSliderFormat,
+                                 editViewIdentifier   : @smartShapeLineWeightEdit,
+                                 sliderViewIdentifier : @smartShapeLineWeightSlider,
+                                 horizontal           : align_left,
+                                 vertical             : align_center,
+                                 width                : 50);
+
+                TCustomDrawFlyoutControl(identifier : @smartShapeStrokeDetailsFlyout,
+                                         tooltip    : zStrokeTypeFlyout,
+                                         width      : 20,
+                                         horizontal : align_fill,
+                                         vertical   : align_fill);
+                }
+
+            row(spacing: gGap, horizontal: align_fill)
+                {
+                ZMenuPopup(resourceIdentifier : 4803,
+                           width              : 61 + gGap,
+                           tooltip            : zAlignTooltip,
+                           identifier         : @smartShapeAlign);
+
+                ZMenuPopup(resourceIdentifier : 4804,
+                           width              : 67,
+                           tooltip            : zCapTooltip,
+                           identifier         : @smartShapeCap);
+
+                ZMenuPopup(resourceIdentifier : 4805,
+                           width              : 51,
+                           horizontal         : align_fill,
+                           tooltip            : zJoinTooltip,
+                           identifier         : @smartShapeJoin);
+                }
+            }
+
+        TDisclosureSeparator(name: zIntersectionOpSep, bind: @discloseIntersectionOp);
+
+        TOptional(bind             : @discloseIntersectionOp,
+                  width            : kContentWidth,
+                  child_horizontal : align_center)
+            {
+            TRadioBar(identifier    : @smartShapeComponentOperation,
+
+                      identifier1   : 'Unin',
+                      iconRootName1 : 'MarqueeAdd',
+                      tooltip1      : zUnionTooltip,
+
+                      identifier2   : 'Subt',
+                      iconRootName2 : 'MarqueeSubtract',
+                      tooltip2      : zSubtractTooltip,
+
+                      identifier3   : 'Intr',
+                      iconRootName3 : 'MarqueeIntersect',
+                      tooltip3      : zIntersectTooltip,
+
+                      identifier4   : 'Exor',
+                      iconRootName4 : 'MarqueeXOR',
+                      tooltip4      : zXORTooltip);
+            }
+        }
+    }

@@ -1,0 +1,150 @@
+{
+	Name: "Icon Source File",
+	Version: "1.0",
+	LowResolutionDataFile: "IconsLowRes.dat",
+	HighResolutionDataFile: "IconsHighRes.dat",
+
+	Include: [
+		"MondoIcons.txt",
+		"MondoCursors.txt"
+		],
+	Icons: {
+        Alpha_14000: {
+			HighResolution: {
+                HotX: 12,
+				HotY: 8,
+				Normal: "icons_x2/AddConstraintToolCursor.png"
+			},
+			LowResolution: {
+                HotX: 12,
+				HotY: 8,
+				Normal: "icons/AddConstraintToolCursor.png"
+			}
+		},
+        Alpha_14001: {
+			HighResolution: {
+                HotX: 12,
+				HotY: 8,
+				Normal: "icons_x2/AddPolygonCloseCursor.png"
+			},
+			LowResolution: {
+                HotX: 12,
+				HotY: 8,
+				Normal: "icons/AddPolygonCloseCursor.png"
+			}
+		},
+        FocalSolverTool: {
+			HighResolution: {
+				Normal: "icons_x2/FocalSolverToolN.png",
+				RollOver: "icons_x2/FocalSolverToolR.png"
+			},
+			LowResolution: {
+				Normal: "icons/FocalSolverToolN.png",
+				RollOver: "icons/FocalSolverToolR.png"
+			}
+		},
+        ManageConstraintTool: {
+			HighResolution: {
+				Normal: "icons_x2/SP_Constraint_Lg_N.png",
+				RollOver: "icons_x2/SP_Constraint_Lg_N.png"
+			},
+			LowResolution: {
+				Normal: "icons/SP_Constraint_Lg_N.png",
+				RollOver: "icons/SP_Constraint_Lg_N.png"
+			}
+		},
+        ConstraintTypeTool: {
+			HighResolution: {
+				Normal: "icons_x2/ConstraintTypeToolN.png",
+				RollOver: "icons_x2/ConstraintTypeToolN.png"
+			},
+			LowResolution: {
+				Normal: "icons/ConstraintTypeToolN.png",
+				RollOver: "icons/ConstraintTypeToolN.png"
+			}
+		},
+        PlaneTool: {
+			HighResolution: {
+				Normal: "icons_x2/SP_PolygonConstraintLens_Lg_N.png",
+				RollOver: "icons_x2/SP_PolygonConstraintLens_Lg_N.png"
+			},
+			LowResolution: {
+				Normal: "icons/SP_PolygonConstraintLens_Lg_N.png",
+				RollOver: "icons/SP_PolygonConstraintLens_Lg_N.png"
+			}
+		},
+        MoveImageTool: {
+			HighResolution: {
+				Normal: "icons_x2/SP_Move_Lg_N.png",
+				RollOver: "icons_x2/SP_Move_Lg_N.png"
+			},
+			LowResolution: {
+				Normal: "icons/SP_Move_Lg_N.png",
+				RollOver: "icons/SP_Move_Lg_N.png"
+			}
+		},
+        HandTool: {
+			HighResolution: {
+				Normal: "icons_x2/SP_Pan_Lg_N.png",
+				RollOver: "icons_x2/SP_Pan_Lg_N.png"
+			},
+			LowResolution: {
+				Normal: "icons/SP_Pan_Lg_N.png",
+				RollOver: "icons/SP_Pan_Lg_N.png"
+			}
+		},
+        ZoomTool: {
+			HighResolution: {
+				Normal: "icons_x2/SP_Magnification_Lg_N.png",
+				RollOver: "icons_x2/SP_Magnification_Lg_N.png"
+			},
+			LowResolution: {
+				Normal: "icons/SP_Magnification_Lg_N.png",
+				RollOver: "icons/SP_Magnification_Lg_N.png"
+			}
+		},
+        SolverFailureIcon: {
+			HighResolution: {
+				Normal: "icons_x2/SolverFailureIconN.png",
+				RollOver: "icons_x2/SolverFailureIconR.png"
+			},
+			LowResolution: {
+				Normal: "icons/SolverFailureIconN.png",
+				RollOver: "icons/SolverFailureIconR.png"
+			}
+		}
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

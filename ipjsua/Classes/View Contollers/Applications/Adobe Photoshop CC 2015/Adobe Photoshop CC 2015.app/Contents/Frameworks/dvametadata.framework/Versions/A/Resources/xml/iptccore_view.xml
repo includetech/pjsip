@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<views xmlns="http://ns.adobe.com/metadata/ui/1.0/">
+
+<!-- 
+	IPTC Core View
+-->	
+<view
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:xmpRights="http://ns.adobe.com/xap/1.0/rights/"
+	xmlns:photoshop="http://ns.adobe.com/photoshop/1.0/"
+	xmlns:Iptc4xmpCore="http://iptc.org/std/Iptc4xmpCore/1.0/xmlns/"
+	name="com.adobe.xmp.view.iptccore"
+	label="$$$/metadataui/view/iptccore_label=IPTC"
+	description="$$$/metadataui/view/iptccore_description=International Press Telecommunications Council Core schema properties"
+	version="1.0">
+
+	<note message="$$$/metadataui/view/iptccore/Introduction_note=All fields on this panel are from the IPTC Core standard(http://www.iptc.org/photometadata)."/>
+
+	<section
+		label="$$$/metadataui/view/iptccore/section/Contact_label=IPTC Contact"
+		description="$$$/metadataui/view/iptccore/section/Contact_description=Use this section to record the photographer's contact information">
+
+	    <property
+			name="dc:creator"
+			label="$$$/xmp/dc/creator_iptc_label=Creator"
+			description="$$$/xmp/dc/creator_iptc_description=Enter the name of the person that created this image"
+			hint="$$$/metadataui/view/hint/comma_separated_array=Semicolons or commas can be used to separate multiple values"/>
+
+	    <property 
+			name="photoshop:AuthorsPosition"
+			label="$$$/xmp/photoshop/AuthorsPosition_iptc_label=Creator^}s Job Title"
+			description="$$$/xmp/photoshop/AuthorsPosition_iptc_description=Enter the Job Title of the person listed in the Creator field"/>
+
+		<!-- TODO this shall be enough once we support structs
+		<property
+			name="Iptc4xmpCore:CreatorContactInfo"/>
+		-->
+
+		<property
+			name="Iptc4xmpCore:CreatorContactInfo/Iptc4xmpCore:CiAdrExtadr"
+			multiLines="3"/>
+
+		<property
+			name="Iptc4xmpCore:CreatorContactInfo/Iptc4xmpCore:CiAdrCity"/>
+
+		<property
+			name="Iptc4xmpCore:CreatorContactInfo/Iptc4xmpCore:CiAdrRegion"/>
+
+		<property
+			name="Iptc4xmpCore:CreatorContactInfo/Iptc4xmpCore:CiAdrPcode"/>
+		
+	    <property 
+			name="Iptc4xmpCore:CreatorContactInfo/Iptc4xmpCore:CiAdrCtry"/>			
+
+		<property
+			name="Iptc4xmpCore:CreatorContactInfo/Iptc4xmpCore:CiTelWork"
+			multiLines="2"/>
+
+		<property
+			name="Iptc4xmpCore:CreatorContactInfo/Iptc4xmpCore:CiEmailWork"
+			multiLines="2"/>
+
+		<property
+			name="Iptc4xmpCore:CreatorContactInfo/Iptc4xmpCore:CiUrlWork"
+			multiLines="2"/>
+	</section>
+		
+	<section
+		label="$$$/metadataui/view/iptccore/section/Image_label=IPTC Image"
+		description="$$$/metadataui/view/iptccore/section/Image_description=Use this section for formal descriptive information about the image">
+
+		<property
+			name="photoshop:DateCreated"
+			description="$$$/xmp/photoshop/DateCreated_iptc_description=Enter the Date the image was taken"/>
+
+		<property
+			name="Iptc4xmpCore:IntellectualGenre"/>
+
+		<property
+			name="Iptc4xmpCore:Scene"
+			multiLines="3"
+			hint="$$$/xmp/Iptc4xmpCore/custom/Scene_hint=Scene values are defined at http://www.newscodes.org, multiple values may be separated by a comma or semicolon"/>
+
+		<property
+			name="Iptc4xmpCore:Location"/>
+
+		<property
+			name="photoshop:City"
+			description="$$$/xmp/photoshop/City_iptc_description=Enter the name of the City pictured in this image"/>
+
+		<property
+			name="photoshop:State"
+			description="$$$/xmp/photoshop/State_iptc_description=Enter the name of the Province or State pictured in this image"/>
+		
+		<property
+			name="photoshop:Country"
+			description="$$$/xmp/photoshop/Country_iptc_description=Enter the name of the Country pictured in this image"/>
+
+		<property
+			name="Iptc4xmpCore:CountryCode"
+			hint="$$$/xmp/Iptc4xmpCore/custom/CountryCode_hint=The location above could either be the location shown in the image or the location from which the photo was taken. To make a clear distinction use the two Location properties on the IPTC Ext panel"/>
+
+	</section>
+
+	<section
+		label="$$$/metadataui/view/iptccore/section/Content_label=IPTC Content"
+		description="$$$/metadataui/view/iptccore/section/Content_description=Use this section to describe the visual content of the image">
+
+		<property
+			name="photoshop:Headline"
+			description="$$$/xmp/photoshop/Headline_iptc_description=Enter a brief publishable synopsis or summary of the contents of this image"
+			multiLines="2"/>
+
+	    <property
+			name="dc:description"
+			description="$$$/xmp/dc/description_iptc_description=Enter a ^[caption^] describing the who, what, and why of what is happening in this image, this might include names of people, and/or their role in the action that is taking place"
+			multiLines="3"/>
+
+	    <property
+			name="dc:subject"
+			label="$$$/xmp/dc/subject_iptc_label=Keywords"
+			description="$$$/xmp/dc/subject_iptc_description=Enter any number of keywords, terms or phrases used to express the subject matter in this image"
+	  		multiLines="3"
+			hint="$$$/metadataui/view/hint/comma_separated_array=Semicolons or commas can be used to separate multiple values"/>
+
+		<property
+			name="Iptc4xmpCore:SubjectCode"
+			multiLines="2"
+			hint="$$$/xmp/Iptc4xmpCore/custom/SubjectCode_hint=Subject Codes are defined at http://www.newscodes.org, semicolons or commas can be used to separate multiple values"/>
+
+		<property
+			name="photoshop:CaptionWriter"
+			label="$$$/xmp/photoshop/custom/CaptionWriter_label=Description Writer"
+			description="$$$/xmp/photoshop/CaptionWriter_iptc_description=Enter the name of the person involved in writing, editing or correcting the description of this image"/>
+	</section>
+
+	<section
+		label="$$$/metadataui/view/iptccore/section/Status_label=IPTC Status"
+		description="$$$/metadataui/view/iptccore/section/Status_description=Use this section to record workflow and copyright information">
+
+		<property
+			name="dc:title"
+			description="$$$/xmp/dc/title_iptc_description=Enter a short verbal and human readable name for this image, this may be the file name."/>
+
+		<property
+			name="photoshop:TransmissionReference"
+			label="$$$/xmp/photoshop/TransmissionReference_iptc_label=Job Identifier"
+			description="$$$/xmp/photoshop/TransmissionReference_iptc_description=Enter a number or identifier needed for workflow control or tracking"/>
+
+		<property
+			name="photoshop:Instructions"
+			description="$$$/xmp/photoshop/TransmissionReference_iptc_description=Enter a number or identifier needed for workflow control or tracking"
+			multiLines="3"/>
+
+		<property
+			name="photoshop:Credit"
+			description="$$$/xmp/photoshop/Credit_iptc_description=Enter who should be Credited when this image is published"/>
+		
+		<property
+			name="photoshop:Source"
+			description="$$$/xmp/photoshop/Source_iptc_description=Enter the original owner of the copyright of this image"/>
+
+	    <property
+			name="dc:rights"
+			description="$$$/xmp/dc/rights_iptc_description=Enter a Notice on the current owner of the Copyright for this image, such as #{copy}2008 Jane Doe"
+			multiLines="3"/>
+
+	    <property
+			name="xmpRights:UsageTerms"
+			description="$$$/xmp/xmpRights/UsageTerms_iptc_description=Enter instructions on how this image can legally be used"
+			multiLines="3"/>
+	</section>
+
+</view>
+
+</views>

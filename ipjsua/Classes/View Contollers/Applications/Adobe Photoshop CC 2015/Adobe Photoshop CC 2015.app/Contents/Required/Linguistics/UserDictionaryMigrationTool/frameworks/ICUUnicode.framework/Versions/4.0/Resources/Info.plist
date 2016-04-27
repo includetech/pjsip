@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+
+<plist version="1.0">
+
+<dict>
+
+	<key>BuildDate</key>
+
+	<string>"2012/07/04-10:20:22"</string>
+
+	<key>BuildVersion</key>
+
+	<string>"gtlib_4.0" "." "17987"</string>
+
+	<key>ReleaseCL</key>
+
+	<string>17987</string>
+
+	<key>BuildID</key>
+
+	<string>1001</string>
+
+	<key>CFBundleDevelopmentRegion</key>
+
+	<string>English</string>
+
+	<key>CFBundleExecutable</key>
+
+	<string>ICUUnicode</string>
+
+	<key>CFBundleGetInfoString</key>
+
+	<string>4.0, ©1995-2005 International Business Machines Corporation and others �2003-2006 Adobe Systems Inc. All rights reserved.</string>
+
+	<key>CFBundleIdentifier</key>
+
+	<string>com.adobe.ICUUnicode</string>
+
+	<key>CFBundleInfoDictionaryVersion</key>
+
+	<string>6.0</string>
+
+	<key>CFBundleName</key>
+
+	<string>ICUUnicode</string>
+
+	<key>CFBundlePackageType</key>
+
+	<string>FMWK</string>
+
+	<key>CFBundleShortVersionString</key>
+
+	<string>4.0</string>
+
+	<key>CFBundleSignature</key>
+
+	<string>????</string>
+
+	<key>CFBundleVersion</key>
+
+	<string>3.61</string>
+
+</dict>
+
+</plist>
+

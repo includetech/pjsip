@@ -1,0 +1,80 @@
+{
+	Name: "Icon Source File",
+	Version: "1.0",
+	LowResolutionDataFile: "IconsLowRes.dat",
+	HighResolutionDataFile: "IconsHighRes.dat",
+
+	Include: [
+		"MondoIcons.txt",
+		"MondoCursors.txt"
+		],
+	Icons: {
+
+    
+		SwapAxisR: {
+			HighResolution: {
+				Dark: "icons_x2/x2_SwapAxisR_D.png",
+				Normal: "icons_x2/x2_SwapAxisR.png"
+                },
+			LowResolution: {
+				Dark: "icons/SwapAxisR_D.png",
+				Normal: "icons/SwapAxisR.png"
+            }
+		},
+        
+		SwapAxisL: {
+			HighResolution: {
+				Dark: "icons_x2/x2_SwapAxisL_D.png",
+				Normal: "icons_x2/x2_SwapAxisL.png"
+            },
+			LowResolution: {
+				Dark: "icons/SwapAxisL_D.png",
+				Normal: "icons/SwapAxisL.png"
+            }
+		},
+
+		P_Reset_SM: {
+			HighResolution: {
+				Dark: "icons_x2/SP_x2_Reset_Sm_D.png",
+				Normal: "icons_x2/SP_x2_Reset_Sm_N.png"
+            },
+			LowResolution: {
+				Dark: "icons/SP_Reset_Sm_D.png",
+				Normal: "icons/SP_Reset_Sm_N.png"
+            }
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

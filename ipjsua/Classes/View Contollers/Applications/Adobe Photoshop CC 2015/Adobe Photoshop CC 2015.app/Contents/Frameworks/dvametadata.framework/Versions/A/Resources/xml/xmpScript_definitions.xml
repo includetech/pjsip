@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xmp_definitions>
+  <xmp_schema prefix='xmpScript' namespace='http://ns.adobe.com/xmp/1.0/Script/' description='$$$/xmp/xmpScript_description=Properties used for scripts' label='$$$/xmp/xmpScript_label=Script'>
+    <xmp_property name='sceneSetting' category='external' type='openchoice' description='$$$/xmp/xmpScript/sceneSetting_description=Interior, Exterior, both or P.O.V.' element_type='text' label='$$$/xmp/xmpScript/sceneSetting_label=Scene Setting'>
+      <xmp_choice raw_value='INT' label='$$$/xmp/xmpScript/sceneSetting/INT=INT'/>
+      <xmp_choice raw_value='EXT' label='$$$/xmp/xmpScript/sceneSetting/EXT=EXT'/>
+      <xmp_choice raw_value='INT/EXT' label='$$$/xmp/xmpScript/sceneSetting/INT_EXT=INT/EXT'/>
+      <xmp_choice raw_value='EXT/INT' label='$$$/xmp/xmpScript/sceneSetting/EXT_INT=EXT/INT'/>
+      <xmp_choice raw_value='POV' label='$$$/xmp/xmpScript/sceneSetting/POV=POV'/>
+    </xmp_property>
+    <xmp_property name='sceneTimeOfDay' category='external' type='openchoice' description='$$$/xmp/xmpScript/sceneTimeOfDay_description=At what time of day the scene is taking place' element_type='text' label='$$$/xmp/xmpScript/sceneTimeOfDay_label=Time of Day'>
+      <xmp_choice raw_value='AFTERNOON' label='$$$/xmp/xmpScript/sceneTimeOfDay/afternoon=AFTERNOON'/>
+      <xmp_choice raw_value='CONTINUOUS' label='$$$/xmp/xmpScript/sceneTimeOfDay/continuous=CONTINUOUS'/>
+      <xmp_choice raw_value='DAY' label='$$$/xmp/xmpScript/sceneTimeOfDay/day=DAY'/>
+      <xmp_choice raw_value='EVENING' label='$$$/xmp/xmpScript/sceneTimeOfDay/evening=EVENING'/>
+      <xmp_choice raw_value='LATER' label='$$$/xmp/xmpScript/sceneTimeOfDay/later=LATER'/>
+      <xmp_choice raw_value='MOMENTS LATER' label='$$$/xmp/xmpScript/sceneTimeOfDay/momentsLater=MOMENTS LATER'/>
+      <xmp_choice raw_value='MORNING' label='$$$/xmp/xmpScript/sceneTimeOfDay/morning=MORNING'/>
+      <xmp_choice raw_value='NIGHT' label='$$$/xmp/xmpScript/sceneTimeOfDay/night=NIGHT'/>
+    </xmp_property>
+    <xmp_property name='action' category='external' type='text' description='$$$/xmp/xmpScript/action_description=The action in the shot' label='$$$/xmp/xmpScript/action_label=Action'/>
+    <xmp_property name='dialogSequence' category='internal' type='seq' description='$$$/xmp/xmpScript/dialogSequence_description=List of spoken dialogue' element_type='dialogSet' label='$$$/xmp/xmpScript/dialogSet_label=Dialogue'/>
+  </xmp_schema>
+  <xmp_type name='dialogSet' description='$$$/xmp/xmpScript/marker_description=Character and dialogue group' label='$$$/xmp/xmpScript/dialogSet_label=Dialogue'>
+    <xmp_field prefix='xmpScript' name='character' type='text' namespace='http://ns.adobe.com/xmp/1.0/Script/' description='$$$/xmp/xmpScript/dialogSet/character_description=Person speaking' label='$$$/xmp/xmpScript/dialogSet/character_label=Character'/>
+    <xmp_field prefix='xmpScript' name='dialog' type='text' namespace='http://ns.adobe.com/xmp/1.0/Script/' description='$$$/xmp/xmpScript/dialogSet/dialog_description=Dialogue being spoken' label='$$$/xmp/xmpScript/dialogSet/dialog_label=Dialogue'/>
+  </xmp_type>    
+</xmp_definitions>

@@ -1,0 +1,47 @@
+        
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Printer>
+	<Version value='1' />
+	<PrintLocation value='Sculpteo.com' />
+	<PrintVolume X='250' Y='350' Z='200' />
+	<PrinterResolution X='0.5' Y='0.5' Z='0.5' />
+	<MeshRepairResolution value='8' />
+	<PrinterHeads value='1' />
+	<PrinterSupportsUSB flag='0' />
+	<PreferredFileFormat value='stl' />
+	<NeedsZip flag='1' />
+	<Quality value='high'>
+		<MeshRepairResolution value='8' />
+		<MinMeshRepairResolution value='6' />
+	</Quality>
+	<Quality value='medium'>
+		<MeshRepairResolution value='7' />
+		<MinMeshRepairResolution value='5' />
+	</Quality>
+	<Quality value='low'>
+		<MeshRepairResolution value='6' />
+		<MinMeshRepairResolution value='4' />
+	</Quality>
+</Printer>
+
+<Materials>
+	<Material name='Ceramic - Orange Tangerine'>
+		<NeedsRaft flag='0' />
+		<NeedsSupports flag='0' />
+		<NeedsEscapeHoles flag='0' />
+		<MinimumWallThickness value='3.0' /> 
+		<PricePerCubicCM value='0.35' />
+		<Handling value='6' />
+		<Diffuse R='0.9' G='0.6' B='0.4' />
+		<Specular R='0.2' G='0.2' B='0.2' />
+		<Illumination R='0' G='0' B='0' />
+		<Ambient R='0.95' G='0.95' B='0.95' />
+		<Shine value='0.4' />
+		<Reflection value='0.15' />
+		<Roughness value='0.01' />
+		<Bump value='0' />
+		<Opacity value='1' />
+		<Refraction value='1' />
+        </Material>
+</Materials>

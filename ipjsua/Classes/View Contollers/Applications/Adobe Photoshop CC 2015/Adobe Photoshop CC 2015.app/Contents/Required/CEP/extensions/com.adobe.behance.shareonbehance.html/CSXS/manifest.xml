@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ExtensionManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ExtensionBundleId="com.adobe.behance.shareonbehance.html" ExtensionBundleName="ShareOnBehance" ExtensionBundleVersion="3.0.0" Version="5.0"> <!-- VERSION-UPDATE-MARKER -->
+	<ExtensionList>
+		<!-- VERSION-UPDATE-MARKER -->
+		<Extension Id="com.adobe.behance.shareonbehance.html.extension" Version="3.0.0"/>
+	</ExtensionList>
+	<ExecutionEnvironment>
+		<HostList>
+			<Host Name="IDSN" Version="10.0"/>
+			<Host Name="ILST" Version="18.0"/>
+			<Host Name="PHSP" Version="15.0"/>
+			<Host Name="PHXS" Version="15.0"/>
+		</HostList>
+		<LocaleList>
+			<Locale Code="All"/>
+		</LocaleList>
+		<RequiredRuntimeList>
+			<RequiredRuntime Name="CSXS" Version="5.0"/>
+		</RequiredRuntimeList>
+	</ExecutionEnvironment>
+	<DispatchInfoList>
+		<Extension Id="com.adobe.behance.shareonbehance.html.extension">
+			<DispatchInfo>
+				<Resources>
+					<MainPath>./index.html</MainPath>
+					<CEFCommandLine>
+            <Parameter>--proxy-auto-detect</Parameter>
+          </CEFCommandLine>
+				</Resources>
+				<Lifecycle>
+					<AutoVisible>true</AutoVisible>
+				</Lifecycle>
+				<UI>
+					<Type>ModalDialog</Type>
+					<Menu>%UI_share_on_Behance</Menu>
+					<Geometry>
+						<Size>
+							<Height>530</Height>
+							<Width>950</Width>
+						</Size>
+					</Geometry>
+				</UI>
+			</DispatchInfo>
+			<DispatchInfo Host="IDSN">
+				<Resources>
+					<ScriptPath>./host/id.js</ScriptPath>
+				</Resources>
+			</DispatchInfo>
+			<DispatchInfo Host="ILST">
+				<Resources>
+					<ScriptPath>./host/ai.js</ScriptPath>
+				</Resources>
+			</DispatchInfo>
+			<DispatchInfo Host="PHSP">
+				<Resources>
+					<ScriptPath>./host/ps.js</ScriptPath>
+				</Resources>
+			</DispatchInfo>
+			<DispatchInfo Host="PHXS">
+				<Resources>
+					<ScriptPath>./host/ps.js</ScriptPath>
+				</Resources>
+			</DispatchInfo>
+		</Extension>
+	</DispatchInfoList>
+</ExtensionManifest>

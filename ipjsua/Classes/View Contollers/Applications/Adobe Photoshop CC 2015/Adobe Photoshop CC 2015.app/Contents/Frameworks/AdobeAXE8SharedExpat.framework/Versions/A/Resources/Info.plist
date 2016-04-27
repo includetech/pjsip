@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildDate</key>
+	<string>2015/03/13-23:40:54</string>
+	<key>BuildID</key>
+	<string>34320</string>
+	<key>BuildType</key>
+	<string>Release</string>
+	<key>BuildVersion</key>
+	<string>79.562390</string>
+	<key>BuiltWithBIB</key>
+	<string>1.2.03</string>
+	<key>CFBundleExecutable</key>
+	<string>AdobeAXE8SharedExpat</string>
+	<key>CFBundleGetInfoString</key>
+	<string>AdobeAXE8SharedExpat 3.8.0.34320, Copyright © 2003-2010 Adobe Systems Incorporated.</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.adobe.AXE8SharedExpat</string>
+	<key>CFBundleName</key>
+	<string>AdobeAXE8SharedExpat</string>
+	<key>CFBundlePackageType</key>
+	<string>FMWK</string>
+	<key>CFBundleShortVersionString</key>
+	<string>AdobeAXE8SharedExpat 3.8.0.34320</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>3.8.0.34320</string>
+	<key>Configuration</key>
+	<string>Release</string>
+</dict>
+</plist>

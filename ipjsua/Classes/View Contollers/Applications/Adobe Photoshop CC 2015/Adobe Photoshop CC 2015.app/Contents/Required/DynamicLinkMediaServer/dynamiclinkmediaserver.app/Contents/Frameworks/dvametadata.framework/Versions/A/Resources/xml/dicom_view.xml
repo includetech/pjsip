@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<views xmlns="http://ns.adobe.com/metadata/ui/1.0/">
+
+<!-- 
+	DICOM View
+-->	
+<view
+	xmlns:DICOM="http://ns.adobe.com/DICOM/"
+	name="com.adobe.xmp.view.dicom"
+	label="$$$/metadataui/view/dicom_label=DICOM"
+	description="$$$/metadataui/view/dicom_description=Contains the DICOM properties"
+	version="1.0">
+
+	<property name="DICOM:PatientName"/>
+
+	<property name="DICOM:PatientID"/>
+
+	<property name="DICOM:PatientDOB"/> 
+
+	<property
+		name="DICOM:PatientSex"
+		widget="dropdown">
+		<choice label="$$$/xmp/DICOM/custom/PatientSex_Unknown=Unknown" value=""/>
+		<choice label="$$$/xmp/DICOM/custom/PatientSex_Male=Male" value="male"/>
+		<choice label="$$$/xmp/DICOM/custom/PatientSex_Female=Female" value="female"/>
+	</property>
+
+	<separator/>
+
+	<property name="DICOM:StudyID"/>
+
+	<property name="DICOM:StudyPhysician"/>
+
+	<property name="DICOM:StudyDateTime"/>
+
+	<property name="DICOM:StudyDescription"/>
+
+	<property name="DICOM:SeriesNumber"/>
+
+	<property name="DICOM:SeriesModality"/>
+
+	<property name="DICOM:SeriesDateTime"/>
+
+	<property name="DICOM:SeriesDescription"/>
+
+	<separator/>
+	
+	<property name="DICOM:EquipmentInstitution"/>
+
+	<property name="DICOM:EquipmentManufacturer"/>
+
+	<separator/>
+
+	<property name="DICOM:FileInfoTransferSyntax"/>
+
+	<property name="DICOM:FileInfoPhotometricInterpretation"/>
+
+	<formatter
+		label="$$$/xmp/DICOM/custom/ImageSize_label=Image Size"
+		description='$$$/xmp/DICOM/custom/ImageSize_description=Image width and height in pixels'
+		separator="$$$/metadataui/view/separator/size= x ">
+
+    <property name="DICOM:FileInfoImageWidth"/>
+    <property name="DICOM:FileInfoImageHeight"/>
+    
+  </formatter>
+  
+	<property name="DICOM:FileInfoBitsPerPixel"/>
+
+	<property name="DICOM:FileInfoFrames"/>
+
+</view>
+
+</views>

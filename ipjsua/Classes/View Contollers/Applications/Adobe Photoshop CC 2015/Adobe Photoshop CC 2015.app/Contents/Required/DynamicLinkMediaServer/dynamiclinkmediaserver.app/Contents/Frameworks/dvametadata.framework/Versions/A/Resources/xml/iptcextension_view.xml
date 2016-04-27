@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<views xmlns="http://ns.adobe.com/metadata/ui/1.0/">
+	
+<!-- 
+	IPTC Extension / PLUS View
+-->	
+<view
+	xmlns:Iptc4xmpExt="http://iptc.org/std/Iptc4xmpExt/2008-02-29/"
+	xmlns:plus="http://ns.useplus.org/ldf/xmp/1.0/"
+	name="com.adobe.xmp.view.iptcextension"
+    label="$$$/metadataui/view/iptcext_label=IPTC Extension"
+    description="$$$/metadataui/view/iptcext_description=International Press Telecommunications Council Extension schema properties."
+	version="1.0">
+
+	<note message="$$$/metadataui/view/iptcext/Introduction_note=All fields on this panel are from the IPTC Extension standard (http://www.iptc.org/photometadata).\n* These fields have been included from the PLUS standard (http://www.useplus.org)."/>
+
+	<property name="Iptc4xmpExt:DigImageGUID"/>
+	
+	<section label="$$$/metadataui/view/iptcext/section/ImageDescription_label=Description of the Image">	
+		<property
+			name="Iptc4xmpExt:PersonInImage"
+			multiLines="3"
+			hint="$$$/metadataui/view/hint/comma_separated_array=Semicolons or commas can be used to separate multiple values"/>
+		<property name="Iptc4xmpExt:LocationCreated"/>
+		<!-- TODO: BUTTON "Copy this location into 'Location shown'" -->
+		<property name="Iptc4xmpExt:LocationShown"/>
+		<property name="Iptc4xmpExt:OrganisationInImageName"/>	
+		<property name="Iptc4xmpExt:OrganisationInImageCode"/>			
+		<property name="Iptc4xmpExt:Event"/>						
+	</section>
+
+	<section
+		label="$$$/metadataui/view/iptcext/section/ArtworkOrObject_label=Artwork or Object in the Image"
+		description="$$$/metadataui/view/iptcext/section/ArtworkOrObject_description=Enter details about artwork or objects shown in this image">
+		
+		<property name="Iptc4xmpExt:ArtworkOrObject"/>
+	</section>
+	
+	<section label="$$$/metadataui/view/iptcext/section/ImageModels_label=About Models in the Image">	
+		<property
+			name="Iptc4xmpExt:AddlModelInfo"
+			multiLines="3"/>
+		<property
+			name="Iptc4xmpExt:ModelAge"
+			hint="$$$/metadataui/view/hint/comma_separated_array=Semicolons or commas can be used to separate multiple values"/>
+    	<property
+			name="plus:MinorModelAgeDisclosure"
+			label="$$$/xmp/plus/custom/MinorModelAgeDisclosure_label_star=* Minor Model Age Disclosure"/>
+   		<property
+			name="plus:ModelReleaseStatus"
+			label="$$$/xmp/plus/custom/ModelReleaseStatus_label_star=* Model Release Status"/>
+   		<property
+			name="plus:ModelReleaseID"
+			label="$$$/xmp/plus/custom/ModelReleaseID_label_star=* Model Release Identifier"/>
+	</section>
+	
+	<section label="$$$/metadataui/view/iptcext/section/AdminInfo_label=Administrative Information">
+		<property
+			name="plus:ImageSupplier"
+			label="$$$/xmp/plus/custom/ImageSupplier_label_star=* Image Supplier"/>
+		<property
+			name="plus:ImageSupplierImageID"
+			label="$$$/xmp/plus/custom/ImageSupplierImageID_label_star=* Supplier's Image ID"/>
+		<property name="Iptc4xmpExt:RegistryId"/>
+		<property name="Iptc4xmpExt:MaxAvailWidth"/>
+		<property name="Iptc4xmpExt:MaxAvailHeight"/>
+		<property name="Iptc4xmpExt:DigitalSourceType"/>
+	</section>
+	
+	<section label="$$$/metadataui/view/iptcext/section/RightsInfo_label=Rights related Information">
+		<property
+			name="plus:ImageCreator"
+			label="$$$/xmp/plus/custom/ImageCreator_label_star=* Image Creator"/>
+		<!-- TODO: BUTTON "Copy Image Creators from IPTC Core" -->
+		<property
+			name="plus:CopyrightOwner"
+			label="$$$/xmp/plus/custom/CopyrightOwner_label_star=* Copyright Owner"/>
+		<property
+			name="plus:Licensor"
+			label="$$$/xmp/plus/custom/Licensor_label_star=* Licensor">
+
+			<!--TODO: restrict array items to the most important ones
+				<property name="plus:LicensorName" />
+				<property name="plus:LicensorID" />
+				<property name="plus:LicensorTelephone1" />
+				<property name="plus:LicensorTelephoneType1" />
+				<property name="plus:LicensorTelephone2" />
+				<property name="plus:LicensorTelephoneType2" />
+				<property name="plus:LicensorEmail" />
+				<property name="plus:LicensorURL" />					
+			-->
+		</property>
+		<property
+			name="plus:PropertyReleaseStatus"
+			label="$$$/xmp/plus/custom/PropertyReleaseStatus_label_star=* Property Release Status"/>
+		<property
+			name="plus:PropertyReleaseID"
+			label="$$$/xmp/plus/custom/PropertyReleaseID_label_star=* Property Release Identifier"/>
+	</section>		
+	
+</view>
+
+</views>

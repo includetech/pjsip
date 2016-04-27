@@ -1,0 +1,449 @@
+{
+	Name: "Icon Source File",
+	Version: "1.0",
+	LowResolutionDataFile: "IconsLowRes.dat",
+	HighResolutionDataFile: "IconsHighRes.dat",
+
+	Include: [
+		"MondoIcons.txt",
+		"MondoCursors.txt"
+		],
+
+	Icons: {
+    
+		ColoredPencil: {
+			HighResolution: {
+				Normal: "icons_x2/FG_x2_Colored-Pencil.png"
+            },
+			LowResolution: {
+				Normal: "icons/FG_Colored Pencil.png"
+            }
+		},
+
+        Cutout: {
+			HighResolution: {
+				Normal: "icons_x2/FG_x2_Cutout.png"
+            },
+			LowResolution: {
+				Normal: "icons/FG_Cutout.png"
+            }
+		},
+
+        DryBrush: {
+			HighResolution: {
+				Normal: "icons_x2/FG_x2_Dry-Brush.png"
+            },
+			LowResolution: {
+				Normal: "icons/FG_Dry Brush.png"
+            }
+		},
+
+        FilmGrain: {
+			HighResolution: {
+				Normal: "icons_x2/FG_x2_Film-Grain.png"
+            },
+			LowResolution: {
+				Normal: "icons/FG_Film Grain.png"
+            }
+		},
+
+        Fresco: {
+			HighResolution: {
+				Normal: "icons_x2/FG_x2_Fresco.png"
+            },
+			LowResolution: {
+				Normal: "icons/FG_Fresco.png"
+            }
+		},
+
+		NeonGlow: {
+			HighResolution: {
+				Normal: "icons_x2/FG_x2_Neon-Glow.png"
+            },
+			LowResolution: {
+				Normal: "icons/FG_Neon Glow.png"
+            }
+		},
+        
+        PaintDaubs: {
+			HighResolution: {
+				Normal: "icons_x2/FG_x2_Paint-Dubs.png"
+            },
+			LowResolution: {
+				Normal: "icons/FG_Paint Dubs.png"
+            }
+		},
+
+        PaletteKnife: {
+			HighResolution: {
+				Normal: "icons_x2/FG_x2_Palette-Knive.png"
+            },
+			LowResolution: {
+				Normal: "icons/FG_Palette Knive.png"
+            }
+		},
+
+        PlasticWrap: {
+			HighResolution: {
+				Normal: "icons_x2/FG_x2_Plastic-wrap.png"
+            },
+			LowResolution: {
+				Normal: "icons/FG_Plastic wrap.png"
+            }
+		},
+
+        PosterEdges: {
+			HighResolution: {
+				Normal: "icons_x2/FG_x2_Poster-Edges.png"
+            },
+			LowResolution: {
+				Normal: "icons/FG_Poster Edges.png"
+            }
+		},
+
+		RoughPastels: {
+			HighResolution: {
+				Normal: "icons_x2/FG_x2_Rough-Pastels.png"
+            },
+			LowResolution: {
+				Normal: "icons/FG_Rough Pastels.png"
+            }
+		},
+
+        SmudgeStick: {
+			HighResolution: {
+				Normal: "icons_x2/FG_x2_Smudge-Stick.png"
+            },
+			LowResolution: {
+				Normal: "icons/FG_Smudge Stick.png"
+            }
+		},
+
+        Sponge: {
+			HighResolution: {
+				Normal: "icons_x2/FG_x2_Sponge.png"
+            },
+			LowResolution: {
+				Normal: "icons/FG_Sponge.png"
+            }
+		},
+
+        Underpainting: {
+			HighResolution: {
+				Normal: "icons_x2/FG_x2_Underpainting.png"
+            },
+			LowResolution: {
+				Normal: "icons/FG_Underpainting.png"
+            }
+		},
+
+        Watercolor: {
+			HighResolution: {
+				Normal: "icons_x2/FG_x2_Water-Color.png"
+            },
+			LowResolution: {
+				Normal: "icons/FG_Water Color.png"
+            }
+		},
+
+		AccentedEdges: {
+			HighResolution: {
+				Normal: "icons_x2/FG_x2_Accented-edges.png"
+            },
+			LowResolution: {
+				Normal: "icons/FG_Accented-edges.png"
+            }
+		},
+    
+        AngledStrokes: {
+			HighResolution: {
+				Normal: "icons_x2/FG_x2_Angled-stroke.png"
+            },
+			LowResolution: {
+				Normal: "icons/FG_Angled stroke.png"
+            }
+		},
+
+        Crosshatch: {
+			HighResolution: {
+				Normal: "icons_x2/FG_x2_Crosshatch.png"
+            },
+			LowResolution: {
+				Normal: "icons/FG_Crosshatch.png"
+            }
+		},
+
+        DarkStrokes: {
+			HighResolution: {
+				Normal: "icons_x2/FG_x2_Dark-Strokes.png"
+            },
+			LowResolution: {
+				Normal: "icons/FG_Dark Strokes.png"
+            }
+		},
+
+        InkOutlines: {
+			HighResolution: {
+				Normal: "icons_x2/FG_x2_Ink-Outlines.png"
+            },
+			LowResolution: {
+				Normal: "icons/FG_Ink Outlines.png"
+            }
+		},
+
+        Spatter: {
+			HighResolution: {
+				Normal: "icons_x2/FG_x2_Spatter.png"
+            },
+			LowResolution: {
+				Normal: "icons/FG_Spatter.png"
+            }
+		},
+
+        SprayedStrokes: {
+			HighResolution: {
+				Normal: "icons_x2/FG_x2_Sprayed-Strokes.png"
+            },
+			LowResolution: {
+				Normal: "icons/FG_Sprayed-Strokes.png"
+            }
+		},
+         Sumie: {
+			HighResolution: {
+				Normal: "icons_x2/FG_x2_Sumi-e.png"
+            },
+			LowResolution: {
+				Normal: "icons/FG_Sumi-e.png"
+            }
+		},
+
+        DiffuseGlow: {
+			HighResolution: {
+				Normal: "icons_x2/FG_x2_Diffuse-Glow.png"
+            },
+			LowResolution: {
+				Normal: "icons/FG_Diffuse Glow.png"
+            }
+		},
+        
+		Glass: {
+			HighResolution: {
+				Normal: "icons_x2/FG_x2_Glass.png"
+            },
+			LowResolution: {
+				Normal: "icons/FG_Glass.png"
+            }
+		},
+    
+		OceanRipple: {
+			HighResolution: {
+				Normal: "icons_x2/FG_x2_Ocean-Ripple.png"
+            },
+			LowResolution: {
+				Normal: "icons/FG_Ocean-Ripple.png"
+            }
+		},
+
+		BasRelief: {
+			HighResolution: {
+				Normal: "icons_x2/FG_x2_Bas-Relief.png"
+            },
+			LowResolution: {
+				Normal: "icons/FG_Bas Relief.png"
+            }
+		},
+
+		ChalkCharcoal: {
+			HighResolution: {
+				Normal: "icons_x2/FG_x2_Chalk-and-Charcoal.png"
+            },
+			LowResolution: {
+				Normal: "icons/FG_Chalk and Charcoal.png"
+            }
+		},
+
+		Charcoal: {
+			HighResolution: {
+				Normal: "icons_x2/FG_x2_Charcoal.png"
+            },
+			LowResolution: {
+				Normal: "icons/FG_Charcoal.png"
+            }
+		},
+
+		Chrome: {
+			HighResolution: {
+				Normal: "icons_x2/FG_x2_Chrome.png"
+            },
+			LowResolution: {
+				Normal: "icons/FG_Chrome.png"
+            }
+		},
+
+		ConteCrayon: {
+			HighResolution: {
+				Normal: "icons_x2/FG_x2_Conte-Crayon.png"
+            },
+			LowResolution: {
+				Normal: "icons/FG_Conte Crayon.png"
+            }
+		},
+
+		GraphicPen: {
+			HighResolution: {
+				Normal: "icons_x2/FG_x2_Graphic-Pen.png"
+            },
+			LowResolution: {
+				Normal: "icons/FG_Graphic Pen.png"
+            }
+		},
+
+		Halftone: {
+			HighResolution: {
+				Normal: "icons_x2/FG_x2_Halfone-Pattern.png"
+            },
+			LowResolution: {
+				Normal: "icons/FG_Halfone Pattern.png"
+            }
+		},
+
+		NotePaper: {
+			HighResolution: {
+				Normal: "icons_x2/FG_x2_Note-Paper.png"
+            },
+			LowResolution: {
+				Normal: "icons/FG_Note Paper.png"
+            }
+		},
+    
+		Photocopy: {
+			HighResolution: {
+				Normal: "icons_x2/FG_x2_Photocopy.png"
+            },
+			LowResolution: {
+				Normal: "icons/FG_Photocopy.png"
+            }
+		},
+		Plaster: {
+			HighResolution: {
+				Normal: "icons_x2/FG_x2_Plaster.png"
+            },
+			LowResolution: {
+				Normal: "icons/FG_Plaster.png"
+            }
+		},
+
+		Reticulation: {
+			HighResolution: {
+				Normal: "icons_x2/FG_x2_Reticulation.png"
+            },
+			LowResolution: {
+				Normal: "icons/FG_Reticulation.png"
+            }
+		},
+
+		Stamp: {
+			HighResolution: {
+				Normal: "icons_x2/FG_x2_Stamp.png"
+            },
+			LowResolution: {
+				Normal: "icons/FG_Stamp.png"
+            }
+		},
+
+		TornEdges: {
+			HighResolution: {
+				Normal: "icons_x2/FG_x2_Torn-Edges.png"
+            },
+			LowResolution: {
+				Normal: "icons/FG_Torn Edges.png"
+            }
+		},
+
+		WaterPaper: {
+			HighResolution: {
+				Normal: "icons_x2/FG_x2_Water-Paper.png"
+            },
+			LowResolution: {
+				Normal: "icons/FG_Water Paper.png"
+            }
+		},
+
+		GlowingEdges: {
+			HighResolution: {
+				Normal: "icons_x2/FG_x2_Glowing-edges.png"
+            },
+			LowResolution: {
+				Normal: "icons/FG_Glowing edges.png"
+            }
+		},
+
+		Craquelure: {
+			HighResolution: {
+				Normal: "icons_x2/FG_x2_Craquelure.png"
+            },
+			LowResolution: {
+				Normal: "icons/FG_Craquelure.png"
+            }
+		},
+
+		Grain: {
+			HighResolution: {
+				Normal: "icons_x2/FG_x2_Grain.png"
+            },
+			LowResolution: {
+				Normal: "icons/FG_Grain.png"
+            }
+		},
+
+		MosaicTiles: {
+			HighResolution: {
+				Normal: "icons_x2/FG_x2_Mosaic-tiles.png"
+            },
+			LowResolution: {
+				Normal: "icons/FG_Mosaic tiles.png"
+            }
+		},
+
+		Patchwork: {
+			HighResolution: {
+				Normal: "icons_x2/FG_x2_Patchwork.png"
+            },
+			LowResolution: {
+				Normal: "icons/FG_Patchwork.png"
+            }
+		},
+
+		StainedGlass: {
+			HighResolution: {
+				Normal: "icons_x2/FG_x2_Stained-Glass.png"
+            },
+			LowResolution: {
+				Normal: "icons/FG_Stained Glass.png"
+            }
+		},
+
+		Texturizer: {
+			HighResolution: {
+				Normal: "icons_x2/FG_x2_Texturizer.png"
+            },
+			LowResolution: {
+				Normal: "icons/FG_Texturizer.png"
+            }
+		}
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

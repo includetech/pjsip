@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xmp_definitions>
+  <xmp_schema prefix='xmpTPg' namespace='http://ns.adobe.com/xap/1.0/t/pg/' description='$$$/xmp/xmpTPg_description=The Paged-Text schema is used for text appearing on a page in a document.' label='$$$/xmp/xmpTPg_label=Paged-Text'>
+    <xmp_property name='MaxPageSize' category='internal' type='dimensions' description='$$$/xmp/xmpTPg/MaxPageSize_description=The size of the largest page in the document (including any in contained documents).' label='$$$/xmp/xmpTPg/MaxPageSize_label=Max Page Size'/>
+    <xmp_property name='NPages' category='internal' type='integer' description='$$$/xmp/xmpTPg/NPages_description=The number of pages in the document (including any in contained documents).' label='$$$/xmp/xmpTPg/NPages_label=Number of Pages'/>
+    <xmp_property name='Fonts' category='internal' type='bag' description='$$$/xmp/xmpTPg/Fonts_description=An unordered array of fonts that are used in the document (including any in contained documents).' element_type='font' label='$$$/xmp/xmpTPg/Fonts_label=Fonts'/>
+    <xmp_property name='Colorants' category='internal' type='seq' description='$$$/xmp/xmpTPg/Colorants_description=An ordered array of colorants (swatches) that are used in the document (including any in contained documents).' element_type='colorant' label='$$$/xmp/xmpTPg/Colorants_label=Colorants'/>
+    <xmp_property name='PlateNames' category='internal' type='seq' description='$$$/xmp/xmpTPg/PlateNames_description=An ordered array of plate names that are needed to print the document (including any in contained documents).' element_type='text' label='$$$/xmp/xmpTPg/PlateNames_label=Plate Names'/>
+  </xmp_schema>
+</xmp_definitions>

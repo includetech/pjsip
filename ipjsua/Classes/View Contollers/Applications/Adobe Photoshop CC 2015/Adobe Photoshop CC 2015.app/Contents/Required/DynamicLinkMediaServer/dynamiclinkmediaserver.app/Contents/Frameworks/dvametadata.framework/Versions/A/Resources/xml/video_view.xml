@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<views xmlns="http://ns.adobe.com/metadata/ui/1.0/">
+	
+	<view
+		xmlns:xmpDM="http://ns.adobe.com/xmp/1.0/DynamicMedia/"
+		xmlns:stDim="http://ns.adobe.com/xap/1.0/sType/Dimensions#"
+		name="com.adobe.xmp.view.video"
+		label="$$$/metadataui/view/video_label=Video Data"
+		description="$$$/metadataui/view/video_description=Contains video metadata properties"
+		version="1.0">
+		
+		<property
+			name="xmpDM:videoFrameRate"
+			label="$$$/xmp/xmpDM/custom/videoFrameRate_label=Frame Rate"/>
+			
+		<property
+			name="xmpDM:videoCompressor"
+			label="$$$/xmp/xmpDM/custom/videoCompressor_label=Compressor"/>
+			
+		<property
+			name="xmpDM:videoFieldOrder"
+			label="$$$/xmp/xmpDM/custom/videoFieldOrder_label=Field Order"/>
+			
+		<property
+			name="xmpDM:videoAlphaMode"
+			label="$$$/xmp/xmpDM/custom/videoAlphaMode_label=Alpha Mode"/>
+			
+		<property
+			name="xmpDM:videoFrameSize/stDim:w"
+			label="$$$/xmp/xmpDM/custom/videoFrameSize_Width_label=Video Frame Width"
+			descriptionRef="xmpDM:videoFrameSize"
+			format="@0 px"/>
+
+		<property
+			name="xmpDM:videoFrameSize/stDim:h"
+			label="$$$/xmp/xmpDM/custom/videoFrameSize_Height_label=Video Frame Height"
+			descriptionRef="xmpDM:videoFrameSize"
+			format="@0 px"/>
+
+		<!-- TODO: formatFunction="{calculatePAR}" -->
+		<!-- TODO: is the description correct? ht/wd -->
+		<property
+			name="xmpDM:videoPixelAspectRatio"
+			label="$$$/xmp/xmpDM/custom/videoPixelAspectRatio_label=Pixel Aspect Ratio"
+			description="$$$/xmp/xmpDM/custom/videoPixelAspectRatio_description=The aspect ratio, expressed as ht/wd. For example: ^[648/720^] = 0.9"/>
+			
+		<separator/>
+	
+		<property name="xmpDM:tapeName"/>
+	
+		<property name="xmpDM:scene"/>
+	
+		<property
+			name="xmpDM:shotName"
+			label="$$$/xmp/xmpDM/custom/shotDate_label=Shot/Take"/>
+	
+		<property name="xmpDM:shotDate"/>
+	
+		<property
+			name="xmpDM:logComment"
+			multiLines="3"/>
+
+		<separator/>
+
+		<property name="xmpDM:altTapeName"/>
+	
+		<property
+			name="xmpDM:startTimecode/xmpDM:timeValue"
+			labelRef="xmpDM:startTimecode"
+			descriptionRef="xmpDM:startTimecode"/>
+	
+		<property
+			name="xmpDM:altTimecode/xmpDM:timeValue"
+			labelRef="xmpDM:altTimecode"
+			descriptionRef="xmpDM:altTimecode"/>
+	</view>
+</views>

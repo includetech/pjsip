@@ -1,0 +1,4 @@
+Detect Faces:adobe.coretech.cit.ral.facedetection.faces
+Detect Face List:adobe.coretech.cit.flg.facedetection.facelist
+Face Grouping:adobe.coretech.cit.flg.facedetection.facegrouping
+Detect Faces:adobe.coretech.cit.fa.facedetection.lite

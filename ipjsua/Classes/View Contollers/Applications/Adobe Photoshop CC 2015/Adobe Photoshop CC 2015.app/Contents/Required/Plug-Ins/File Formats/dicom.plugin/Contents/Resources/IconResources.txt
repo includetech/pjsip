@@ -1,0 +1,244 @@
+{
+	HighResolutionDataFile: "IconsHighRes.dat",
+	Include: [
+		"MondoIcons.txt",
+		"MondoCursors.txt"
+		],
+	Icons: {
+	
+		ZoomTool: {
+			HighResolution: {
+				Dark: "icons_x2/SP_x2_Magnification_Lg_N_D.png",
+				Normal: "icons_x2/SP_x2_Magnification_Lg_N.png"
+				},
+			LowResolution: {
+				Dark: "icons/SP_Magnification_Lg_N_D.png",
+				Normal: "icons/SP_Magnification_Lg_N.png"
+				}
+			},
+		Alpha_16000: {
+			HighResolution: {
+				HotX: 2,
+				HotY: 2,
+				Normal: "cursors_x2/Cur_x2_WindowLevel_2_2.png"
+				},
+			LowResolution: {
+				HotX: 1,
+				HotY: 1,
+				Normal: "cursors/Cur_WindowLevel_1_1.png"
+				}
+			},
+		Alpha_3DRotateTool: {
+			HighResolution: {
+				Dark: "icons_x2/SP_x2_3DObjectRotate_Md_N_D.png",
+				Normal: "icons_x2/SP_x2_3DObjectRotate_Md_N.png"
+				},
+			LowResolution: {
+				Dark: "icons/SP_3DObjectRotate_Md_N_D.png",
+				Normal: "icons/SP_3DObjectRotate_Md_N.png"
+				}
+			},
+		PanTool: {
+			HighResolution: {
+				Dark: "icons_x2/SP_x2_Pan_Lg_N_D.png",
+				Normal: "icons_x2/SP_x2_Pan_Lg_N.png"
+				},
+			LowResolution: {
+				Dark: "icons/SP_Pan_Lg_N_D.png",
+				Normal: "icons/SP_Pan_Lg_N.png"
+				}
+			},
+		WLWCTool: {
+			HighResolution: {
+				Dark: "icons_x2/x2_WLWCTooIN_D.png",
+				Normal: "icons_x2/x2_WLWCTooIN.png"
+				},
+			LowResolution: {
+				Dark: "icons/WLWCTooIN_D.png",
+				Normal: "icons/WLWCTooIN.png"
+				}
+			},
+		ButtonBar: {
+			LowResolution: {
+				Normal: "icons/ButtonBar.png"
+				}
+			},
+		ThumbDividerLeft: {
+			LowResolution: {
+				Normal: "icons/ThumbDividerLeft.png"
+				}
+			},
+		ThumbDividerMiddle: {
+			LowResolution: {
+				Normal: "icons/ThumbDividerMiddle.png"
+				}
+			},
+		ThumbDividerRight: {
+			LowResolution: {
+				Normal: "icons/ThumbDividerRight.png"
+				}
+			},
+		PrimaryC: {
+			LowResolution: {
+				Normal: "icons/PrimaryC.png"
+				}
+			},
+		PrimaryT: {
+			LowResolution: {
+				Normal: "icons/PrimaryT.png"
+				}
+			},
+		PrimaryL: {
+			LowResolution: {
+				Normal: "icons/PrimaryL.png"
+				}
+			},
+		PrimaryB: {
+			LowResolution: {
+				Normal: "icons/PrimaryB.png"
+				}
+			},
+		PrimaryR: {
+			LowResolution: {
+				Normal: "icons/PrimaryR.png"
+				}
+			},
+		PrimaryTL: {
+			LowResolution: {
+				Normal: "icons/PrimaryTL.png"
+				}
+			},
+		PrimaryTR: {
+			LowResolution: {
+				Normal: "icons/PrimaryTR.png"
+				}
+			},
+		PrimaryBL: {
+			LowResolution: {
+				Normal: "icons/PrimaryBL.png"
+				}
+			},
+		PrimaryBR: {
+			LowResolution: {
+				Normal: "icons/PrimaryBR.png"
+				}
+			},
+		SelectedC: {
+			LowResolution: {
+				Normal: "icons/SelectedC.png"
+				}
+			},
+		SelectedT: {
+			LowResolution: {
+				Normal: "icons/SelectedT.png"
+				}
+			},
+		SelectedL: {
+			LowResolution: {
+				Normal: "icons/SelectedL.png"
+				}
+			},
+		SelectedB: {
+			LowResolution: {
+				Normal: "icons/SelectedB.png"
+				}
+			},
+		SelectedR: {
+			LowResolution: {
+				Normal: "icons/SelectedR.png"
+				}
+			},
+		SelectedTL: {
+			LowResolution: {
+				Normal: "icons/SelectedTL.png"
+				}
+			},
+		SelectedTR: {
+			LowResolution: {
+				Normal: "icons/SelectedTR.png"
+				}
+			},
+		SelectedBL: {
+			LowResolution: {
+				Normal: "icons/SelectedBL.png"
+				}
+			},
+		SelectedBR: {
+			LowResolution: {
+				Normal: "icons/SelectedBR.png"
+				}
+			},
+		SelectorLeft: {
+			LowResolution: {
+				Normal: "icons/SelectorLeft.png"
+				}
+			},
+		SelectorMiddle: {
+			LowResolution: {
+				Normal: "icons/SelectorMiddle.png"
+				}
+			},
+		SelectorRight: {
+			LowResolution: {
+				Normal: "icons/SelectorRight.png"
+				}
+			},
+		SelectorPrevious: {
+			HighResolution: {
+				Dark: "icons_x2/SP_x2_Previous_Sm_N_D.png",
+				Normal: "icons_x2/SP_x2_Previous_Sm_N.png"
+				},
+			LowResolution: {
+				Dark: "icons/SP_Previous_Sm_N_D.png",
+				Normal: "icons/SP_Previous_Sm_N.png"
+				}
+			},
+		SelectorNext: {
+			HighResolution: {
+				Dark: "icons_x2/SP_x2_Next_Sm_N_D.png",
+				Normal: "icons_x2/SP_x2_Next_Sm_N.png"
+				},
+			LowResolution: {
+				Dark: "icons/SP_Next_Sm_N_D.png",
+				Normal: "icons/SP_Next_Sm_N.png"
+				}
+			}
+	},
+	
+	LowResolutionDataFile: "IconsLowRes.dat",
+	Name: "DiCOM Icon Source File",
+	Version: "1.0"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

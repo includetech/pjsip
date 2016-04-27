@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildDate</key>
+	<string>2014/03/31-23:39:12</string>
+	<key>BuildID</key>
+	<string>32588</string>
+	<key>BuildMachineOSBuild</key>
+	<string>12C2034</string>
+	<key>BuildVersion</key>
+	<string>79.156289</string>
+	<key>CFBundleExecutable</key>
+	<string>AdobeXMP</string>
+	<key>CFBundleGetInfoString</key>
+	<string>Adobe XMP Core 5.6 -c 11, Copyright 2002-2009, Adobe Systems Incorporated. All Rights Reserved.</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.adobe.AdobeXMPCore</string>
+	<key>CFBundleName</key>
+	<string>AdobeXMPCore</string>
+	<key>CFBundlePackageType</key>
+	<string>FMWK</string>
+	<key>CFBundleShortVersionString</key>
+	<string>Adobe XMP Core 5.6 -c 11</string>
+	<key>CFBundleSignature</key>
+	<string>XMP </string>
+	<key>CFBundleVersion</key>
+	<string>79.156289</string>
+	<key>Configuration</key>
+	<string>Release</string>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTPlatformBuild</key>
+	<string>4G2008a</string>
+	<key>DTPlatformVersion</key>
+	<string>GM</string>
+	<key>DTSDKBuild</key>
+	<string>11E52</string>
+	<key>DTSDKName</key>
+	<string>macosx10.7</string>
+	<key>DTXcode</key>
+	<string>0452</string>
+	<key>DTXcodeBuild</key>
+	<string>4G2008a</string>
+	<key>FileVersion</key>
+	<string>5.6 -c 11, 79.156289, 2014/03/31-23:39:12</string>
+	<key>ProductName</key>
+	<string>Adobe XMP Core</string>
+	<key>ProductVersion</key>
+	<string>5.6</string>
+</dict>
+</plist>

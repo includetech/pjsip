@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xmp_definitions>
+  <!-- TODO: better description for aux:Firmware and aux:FlashCompensation -->
+  <xmp_schema prefix='aux' namespace='http://ns.adobe.com/exif/1.0/aux/' description='$$$/xmp/aux_description=Properties that describe the equipment used to produce EXIF data.' label='$$$/xmp/aux_label=EXIF Schema For Additional EXIF Properties'>
+    <xmp_property name='ApproximateFocusDistance' category='internal' type='rational' description='$$$/xmp/aux/ApproximateFocusDistance_description=The approximate focus distance.' label='$$$/xmp/aux/ApproximateFocusDistance_label=Approximate Focus Distance'/>
+    <xmp_property name='Firmware' category='internal' type='text' description='$$$/xmp/aux/Firmware_description=The version of the camera firmware.' label='$$$/xmp/aux/Firmware_label=Firmware Version'/>
+    <xmp_property name='FlashCompensation' category='internal' type='rational' description='$$$/xmp/aux/FlashCompensation_description=The flash compensation value.' label='$$$/xmp/aux/FlashCompensation_label=Flash Compensation'/>
+    <xmp_property name='ImageNumber' category='internal' type='text' description='$$$/xmp/aux/ImageNumber_description=The total number of images taken.' label='$$$/xmp/aux/ImageNumber_label=Image Number'/>
+    <xmp_property name='Lens' category='internal' type='text' description='$$$/xmp/aux/Lens_description=A description of the lens used to take the photograph. For example, &quot;70-200 mm f/2.8-4.0&quot;.' label='$$$/xmp/aux/Lens_label=Lens'/>
+    <xmp_property name='LensID' category='internal' type='text' description='$$$/xmp/aux/LensID_description=The camera maker specifix identification number of the used lens' label='$$$/xmp/aux/LensID_label=Lens ID'/>
+    <xmp_property name='LensInfo' category='internal' type='text' description='$$$/xmp/aux/LensInfo_description=The minimum focal length, maximum focal length, minimum F number in the minimum focal length, and minimum F number in the maximum focal length, which are specification information for the lens that was used in photography.' label='$$$/xmp/aux/LensInfo_label=Lens Info'/>
+    <xmp_property name='LensSerialNumber' category='internal' type='text' description='$$$/xmp/aux/LensSerialNumber_description=The serial number of the lens used to take the photograph.' label='$$$/xmp/aux/LensSerialNumber_label=Lens Serial Number'/>
+    <xmp_property name='OwnerName' category='internal' type='text' description='$$$/xmp/aux/OwnerName_description=The owner of a camera used in photography.' label='$$$/xmp/aux/OwnerName_label=Camera Owner Name'/>
+    <xmp_property name='SerialNumber' category='internal' type='text' description='$$$/xmp/aux/SerialNumber_description=The serial number of the camera or camera body used to take the photograph.' label='$$$/xmp/aux/SerialNumber_label=Serial Number'/>
+  </xmp_schema>
+</xmp_definitions>

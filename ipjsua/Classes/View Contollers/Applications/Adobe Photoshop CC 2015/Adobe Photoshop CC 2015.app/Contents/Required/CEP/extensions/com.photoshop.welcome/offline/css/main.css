@@ -1,0 +1,320 @@
+@charset "utf-8";
+/* CSS Document 858 Width X 538 Height */
+body {
+    background: none repeat scroll 0 0 #f9f9f9;
+	font-family: "Adobe Clean", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #777;
+	margin: 0; 
+	padding: 0; 
+	height: 100%; 
+	
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+.shell_core{
+	margin: 0px; 
+	padding: 0px;	
+	width:857px;
+	height:100%;
+}
+a img {
+	border:none;
+}
+#shell_header{
+	background-color:#FFF;
+	border-bottom:1px solid #D7D7D7;
+	width:857px;
+	height:45px;
+    position: fixed;
+    top: 0; 
+	left: 0;    
+	z-index:999;	
+}
+#shell_header ul{
+	width:794px;	
+	margin-left: -17px;	
+}
+
+#shell_content {
+	border: none; 
+	width:857px;
+	height:100%;	
+}
+
+#mbox_iframe
+{
+	width:857px;
+	height:92%;
+	min-width:857px;	
+    position: fixed;
+    top: 45px; 
+	left: 0;     
+	border: none; 	
+	overflow-x:hidden;
+}
+
+@media (min-height: 590px) and (max-height: 639px) {#mbox_iframe{height:92.4%;}}
+@media (min-height: 640px) and (max-height: 689px) {#mbox_iframe{height:92.8%;}}
+@media (min-height: 690px) and (max-height: 739px) {#mbox_iframe{height:93.4%;}}
+@media (min-height: 740px) and (max-height: 789px) {#mbox_iframe{height:93.8%;}}
+@media (min-height: 790px) and (max-height: 889px) {#mbox_iframe{height:94.4%;}}
+@media (min-height: 890px) and (max-height: 969px) {#mbox_iframe{height:94.8%;}}
+@media (min-height: 970px) and (max-height: 1099px) {#mbox_iframe{height:95.4%;}}
+@media (min-height: 1100px) and (max-height: 1299px) {#mbox_iframe{height:95.8%;}}
+@media (min-height: 1300px){#mbox_iframe{height:96.4%;}}
+
+#mbox_offer
+{
+	visibility:hidden;
+	display:none;
+}
+
+/* menu bar */
+
+.shell_nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	display: block;
+}
+
+.shell_nav ul li {
+	float: left;
+	display: block;
+	padding: 0;
+	cursor:pointer;
+}
+
+.shell_nav ul li:first-child{
+	margin-left:0px;
+}
+
+.shell_nav ul li{
+	color: #aaadaf;
+	text-decoration: none;
+	display: block;
+	padding: 15px 0px;
+	font-size: 15px;
+	margin-left:26px;
+	position: relative;
+	text-align:center;
+}
+
+.shell_nav ul li:before{
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: -1px;
+	height: 2px;
+	width: 0;
+	background: #333333;
+}
+
+.shell_nav ul li.active{
+	color: #333333;
+	text-align:center;
+}
+
+.shell_nav ul li.active:before {
+	width: 99%;
+}
+
+/* Offline Page Styles */
+
+.offline_base_wrapper
+{
+    width: 100%;
+	height:100%;	
+	/*background-image:url(../images/00-error-spec-grid.jpg);
+	background-position:0px -45px;	*/
+	margin:0px;
+	overflow:hidden;	
+}
+.offline_base_content
+{
+	height:100%;
+	padding-top:100px;
+	width:794px;
+}
+.offline_base_text
+{
+	margin-right:16px;
+	height:100%;
+	width:524px;
+}
+.offline_error_title
+{
+	font-size: 36px; 
+	font-weight:300;
+	font-style:normal;		
+	color:#000;
+	margin:73px 0 0 0;
+}
+.offline_error_quote
+{
+	font-size: 26px; 
+	font-weight:300;
+	font-style:normal;		
+	color:#7E3886;	
+	margin:2px 0 27px 0;
+}
+.offline_error_reload
+{
+	font-weight:300;
+	font-style:italic;		
+	font-size: 15px; 
+	color:#0099F0;	
+	text-decoration:none;
+}
+.offline_error_image
+{
+}
+.offline_reload_image
+{
+	border:none;
+	width:13px;
+	margin-top:4px;
+	margin-left:10px;
+}
+
+/*************************Create Page ****************************/
+.create_base_wrapper
+{
+	margin-top:45px;
+	width:835px;
+	height:100%;
+	min-height:400px;	
+	/*background-image:url(../images/01-create-A.jpg);
+	background-position:10px -45px;*/
+}
+.create_base_container {
+	width:794px;
+	text-align:left; 	
+	padding:36px 0 0 5px;			
+}
+.create_list_container {
+	height:320px;
+}
+.create_base_title
+{
+	font-weight:300;
+	font-style:normal;		
+	height:30px;
+	width:254px;
+	padding:0 0 3px 0;
+	margin:0px;
+	font-size: 24px; 			
+	color:#1d1f1f;
+}
+#createNewContainer
+{
+	width:254px;
+	float:left;
+}
+#openRecentContainer
+{
+	width:524px;
+	float:left;
+	margin-left:16px;
+}
+
+a.new_site_button { display: block; text-decoration: none; margin:-14px 0 0 0px; cursor:pointer;}
+a.new_site_button:hover { background-color: #EBEBEB;}
+a.new_site_button p { 
+	font-size:14px; padding:5px 0px 4px 0px; color:#727272; 
+	white-space: pre;       /* css-3 */
+	word-wrap: break-word;       /* Internet Explorer 5.5+ */
+	word-break: break-all;
+}
+a.new_site_button p:hover {color:#0099F0;}
+a.new_site_button img { float:left; margin:6px 7px 0 6px; height:15px;}
+
+.create_base_footer
+{
+    position:fixed;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    margin-bottom:0px;	
+    background: none repeat scroll 0 0 #f9f9f9;		
+}
+
+/*************************Create New Create Card ****************************/
+.create_base_wrapper_new
+{
+	width:835px;
+	min-height:400px;	
+	height:100%;
+}
+#HelloCardContainer {
+    background-color: #FFFFFF;
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.45);
+    color: #000000;
+    display: block;
+    left: 55px;
+    min-height: 183px;
+    padding: 21px 16px 26px;
+    position: absolute;
+    text-decoration: none;
+    top: 127px;
+    width: 248px;	
+}
+#HelloCardContainer hr {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #2dcaf9;
+    border-image: none;
+    border-right: 0 none;
+    border-style: solid none none;
+    border-width: 1px 0 0;
+    width: 164px;
+}
+#HelloCardContainer h1 {
+    font-size: 23px;
+    margin-bottom: 11px;
+    margin-top: 0;
+    text-align: center;
+    word-wrap: break-word;
+	font-weight:500;
+}
+#HelloCardContainer h2 {
+    font-size: 16px;
+    margin-top: 16px;
+    text-align: center;
+	font-weight:500;	
+}
+#HelloCardContainer h3 {
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: -4px;
+    min-height: 30px;
+    text-align: center;
+	font-weight:100;		
+}
+#HelloCardFooter {
+    margin-top: 16px;
+    text-align: center;
+}
+.NewDocButton{
+    background-color: #4197FB;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: normal;
+	width:164px;
+	padding:10px 12px 9px 12px;
+	cursor:pointer;
+}
+.OpenDocButton{
+    color: #4197FB;
+    font-size: 15px;
+    font-weight: normal;
+	cursor:pointer;	
+	margin:20px 0 0 0;
+}
+

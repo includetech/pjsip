@@ -1,0 +1,75 @@
+layout exportPrefs
+    {
+    constant:
+      zNameQuickExportCluster : '$$$/Prefs/Export/NameQuickExportSettings=Quick Export Format';
+      zNamePNGTransparency : '$$$/Prefs/Export/PNGTransparency=Transparency';
+      zNameOptions : '$$$/Prefs/Export/Options=Options';
+      zQualitySliderFormat  : '$$$/Prefs/Export/FormatString=100';
+      zQuality              : '$$$/Prefs/Export/Quality=Quality';
+      zExportLocation       : '$$$/Prefs/Export/ExportLocation=Quick Export Location';
+      ZAsk                  : '$$$/Prefs/Export/Ask=Ask where to export each time';
+      ZSaveParent           : '$$$/Prefs/Export/SaveParent=Export files to an assets folder next to the current document';
+      ZChange               : '$$$/Prefs/Export/Change=Change...';
+    interface: 
+        defaultFileType   : @PNG;
+        isTransparentPNG  : false;
+        ZSaveTo           : 'Placeholder -- see TExportPrefsView.cpp';
+        exportLocation     : 1;
+    view TExportPrefsView(identifier     : @exportPrefs,
+                              placement      : place_column,
+                              noGrowVertical : true,
+                              spacing        : 10,
+                              qDebugDraw     : false, 
+                              horizontal: align_fill)
+        {
+        TCluster(identifier: @exportFileType, placement: place_row, horizontal: align_fill, margin : [ 30, 10, 10, 10 ], name: zNameQuickExportCluster, spacing: 15) 
+        {
+
+        ZMenuPopup(uniqueID   : true,
+                       width      : 80,
+                       identifier : @fileTypePreference,
+                       horizontal : align_left,
+                       vertical   : align_center,
+                       bind : @defaultFileType);
+
+          TOptional(bind             : @defaultFileType,
+                    child_horizontal : align_left,
+                    horizontal: align_fill,
+                    vertical   : align_center,
+                    value: @PNG)
+              {
+
+                  TCheckBox(name: zNamePNGTransparency, identifier: @PNGTransparency, bind: @isTransparentPNG);
+              }     
+
+          TOptional(bind             : @defaultFileType,
+                    child_horizontal : align_left,
+                    horizontal: align_fill,
+                    vertical   : align_center,
+                    value: @JPG,
+                    placement  : place_row
+                    )
+              {    
+                  TStaticText(name: zQuality, vertical   : align_center);
+                  TPopupEditSlider(identifier             : @exportJPGQuality,
+                                     editClassName        : 'TFixedPoint',
+                                     editDisplayFormat    : zQualitySliderFormat,
+                                     editViewIdentifier   : @exportJPGQualityEdit,
+                                     sliderViewIdentifier : @exportJPGQualitySlider,
+                                     horizontal           : align_left,
+                                     vertical             : align_center,
+                                     width                : 80);
+            } 
+       }
+      TCluster(
+            placement  : place_column,
+            horizontal: align_fill,
+            name: zExportLocation,
+            margin : [ 30, 10, 10, 10 ]
+            )
+      {
+          TRadio (name: ZAsk, identifier: @ExportAsk, bind: @exportLocation, trueValue: 3, horizontal: align_fill);
+          TRadio (name: ZSaveParent, identifier: @exportParent, bind: @exportLocation, trueValue: 1);
+      }
+  }    
+}

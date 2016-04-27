@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Printer>
+	<Version value='1' />
+	<PrintLocation value='3D Hubs' />
+	<UploadURL value='https://www.3dhubs.com/3dprint/printertype/SLA' />
+	<PrintVolume X='125' Y='125' Z='165' />
+	<PrinterResolution X='5' Y='5' Z='5' />
+	<MeshRepairResolution value='7' />
+	<PrinterHeads value='1' />
+	<PrinterSupportsUSB flag='0' />
+	<PreferredFileFormat value='stl' />
+  <RemoveUnintendedLooseComponents flag='1' />
+	<NeedsZip flag='1' />
+	<Quality value='high'>
+		<MeshRepairResolution value='8' />
+	</Quality>
+	<Quality value='medium'>
+		<MeshRepairResolution value='7' />
+	</Quality>
+	<Quality value='low'>
+		<MeshRepairResolution value='6' />
+	</Quality>
+</Printer>
+<Materials>
+	<Material name='High Detailed Plastics - Resin'>
+		<NeedsRaft flag='0' />
+		<NeedsSupports flag='0' />
+		<NeedsEscapeHoles flag='0' />
+		<MinimumWallThickness value='2.0' /> 
+		<PricePerCubicCM value='3.70' />
+		<Handling value='2.80' />
+		<Diffuse R='0.71' G='0.72' B='0.73' />
+		<Specular R='0.1' G='0.1' B='0.1' />
+		<Illumination R='0' G='0' B='0' />
+		<Ambient R='0.2' G='0.2' B='0.2' />
+		<Shine value='0.2' />
+		<Reflection value='0.15' />
+		<Roughness value='0.01' />
+		<Bump value='0' />
+		<Opacity value='1' />
+		<Refraction value='1' />
+	</Material>
+</Materials>

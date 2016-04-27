@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<views xmlns="http://ns.adobe.com/metadata/ui/1.0/">
+
+<!-- 
+	Origin View
+	Displays information about the origin of the asset.
+	TODO remove labels and retrieve them from the schema
+-->	
+<view 
+	xmlns:xmp="http://ns.adobe.com/xap/1.0/"
+	xmlns:photoshop="http://ns.adobe.com/photoshop/1.0/"
+	name="com.adobe.xmp.view.origin"
+	label="$$$/metadataui/view/origin_label=Origin"
+	description="$$$/metadataui/view/origin_description=Displays information about the origin of the asset"
+	version="1.0">
+
+	<property name="photoshop:DateCreated"/>
+
+    <property name="photoshop:City"/>
+
+    <property name="photoshop:State"/>
+
+	<!-- Could be layouted beside the State/Provice -->
+    <property name="photoshop:Country"/>
+	
+	<separator/>
+
+    <property name="photoshop:Credit"/>
+
+    <property name="photoshop:Source"/>
+
+	<separator/>
+
+    <property
+		name="photoshop:Headline"
+		multiLines="3"/>
+
+    <property
+		name="photoshop:Instructions"
+		multiLines="3"/>
+
+    <property
+		name="photoshop:TransmissionReference"
+		multiLines="3"/>
+
+    <property name="photoshop:Urgency"/>
+
+</view>
+
+</views>

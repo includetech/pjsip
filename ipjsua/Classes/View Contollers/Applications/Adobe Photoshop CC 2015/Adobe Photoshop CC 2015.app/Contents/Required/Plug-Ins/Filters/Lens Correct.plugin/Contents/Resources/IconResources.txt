@@ -1,0 +1,213 @@
+{
+	Name: "Icon Source File",
+	Version: "1.0",
+	LowResolutionDataFile: "IconsLowRes.dat",
+	HighResolutionDataFile: "IconsHighRes.dat",
+
+	Include: [
+		"MondoIcons.txt",
+		"MondoCursors.txt"
+		],
+	Icons: {
+		SP_LensDistort_Lg: {
+			HighResolution: {
+				Dark: "icons_x2/SP_x2_LensDistort_Lg_N_D.png",
+				Normal: "icons_x2/SP_x2_LensDistort_Lg_N.png"
+			},
+			LowResolution: {
+				Dark: "icons/SP_LensDistort_Lg_N_D.png",
+				Normal: "icons/SP_LensDistort_Lg_N.png"
+			}
+		},
+		SP_LensRotate_Lg: {
+			HighResolution: {
+				Dark: "icons_x2/SP_x2_LensRotate_Lg_N_D.png",
+				Normal: "icons_x2/SP_x2_LensRotate_Lg_N.png"
+			},
+			LowResolution: {
+				Dark: "icons/SP_LensRotate_Lg_N_D.png",
+				Normal: "icons/SP_LensRotate_Lg_N.png"
+			}
+		},
+		SP_LensMoveGrid_Lg: {
+			HighResolution: {
+				Dark: "icons_x2/SP_x2_LensMoveGrid_Lg_N_D.png",
+				Normal: "icons_x2/SP_x2_LensMoveGrid_Lg_N.png"
+			},
+			LowResolution: {
+				Dark: "icons/SP_LensMoveGrid_Lg_N_D.png",
+				Normal: "icons/SP_LensMoveGrid_Lg_N.png"
+			}
+		}, 
+		RPanTool: {
+			HighResolution: {
+				Dark: "icons_x2/SP_x2_Pan_Lg_N_D.png",
+				Normal: "icons_x2/SP_x2_Pan_Lg_N.png"
+			},
+			LowResolution: {
+				Dark: "icons/SP_Pan_Lg_N_D.png",
+				Normal: "icons/SP_Pan_Lg_N.png"
+			}
+		},
+		RMagnificationTool: {
+			HighResolution: {
+				Dark: "icons_x2/SP_x2_Magnification_Lg_N_D.png",
+				Normal: "icons_x2/SP_x2_Magnification_Lg_N.png"
+			},
+			LowResolution: {
+				Dark: "icons/SP_Magnification_Lg_N_D.png",
+				Normal: "icons/SP_Magnification_Lg_N.png"
+			}
+		},
+		SP_LensLeftDistort_Lg: {
+			HighResolution: {
+				Dark: "icons_x2/SP_x2_LensLeftDistort_Lg_N_D.png",
+				Normal: "icons_x2/SP_x2_LensLeftDistort_Lg_N.png"
+			},
+			LowResolution: {
+				Dark: "icons/SP_LensLeftDistort_Lg_N_D.png",
+				Normal: "icons/SP_LensLeftDistort_Lg_N.png"
+			}
+		},
+		SP_LensRightDistort_Lg: {
+			HighResolution: {
+				Dark: "icons_x2/SP_x2_LensRightDistort_Lg_N_D.png",
+				Normal: "icons_x2/SP_x2_LensRightDistort_Lg_N.png"
+			},
+			LowResolution: {
+				Dark: "icons/SP_LensRightDistort_Lg_N_D.png",
+				Normal: "icons/SP_LensRightDistort_Lg_N.png"
+			}
+		},
+		SP_LensLeftVertical_Lg: {
+			HighResolution: {
+				Dark: "icons_x2/SP_x2_LensLeftVertical_Lg_N_D.png",
+				Normal: "icons_x2/SP_x2_LensLeftVertical_Lg_N.png"
+			},
+			LowResolution: {
+				Dark: "icons/SP_LensLeftVertical_Lg_N_D.png",
+				Normal: "icons/SP_LensLeftVertical_Lg_N.png"
+			}
+		},
+		SP_LensRightVertical_Lg: {
+			HighResolution: {
+				Dark: "icons_x2/SP_x2_LensRightVertical_Lg_N_D.png",
+				Normal: "icons_x2/SP_x2_LensRightVertical_Lg_N.png"
+			},
+			LowResolution: {
+				Dark: "icons/SP_LensRightVertical_Lg_N_D.png",
+				Normal: "icons/SP_LensRightVertical_Lg_N.png"
+			}
+		},
+		SP_LensLeftHorizontal_Lg: {
+			HighResolution: {
+				Dark: "icons_x2/SP_x2_LensLeftHorizontal_Lg_N_D.png",
+				Normal: "icons_x2/SP_x2_LensLeftHorizontal_Lg_N.png"
+			},
+			LowResolution: {
+				Dark: "icons/SP_LensLeftHorizontal_Lg_N_D.png",
+				Normal: "icons/SP_LensLeftHorizontal_Lg_N.png"
+			}
+		},
+		SP_LensRightHorizontal_Lg: {
+			HighResolution: {
+				Dark: "icons_x2/SP_x2_LensRightHorizontal_Lg_N_D.png",
+				Normal: "icons_x2/SP_x2_LensRightHorizontal_Lg_N.png"
+			},
+			LowResolution: {
+				Dark: "icons/SP_LensRightHorizontal_Lg_N_D.png",
+				Normal: "icons/SP_LensRightHorizontal_Lg_N.png"
+			}
+		},
+		SP_LocalProfile_Md_N: {
+			HighResolution: {
+				Dark: "icons_x2/SP_x2_LocalProfile_Md_N_D.png",
+				Normal: "icons_x2/SP_x2_LocalProfile_Md_N.png"
+			},
+			LowResolution: {
+				Dark: "icons/SP_LocalProfile_Md_N_D.png",
+				Normal: "icons/SP_LocalProfile_Md_N.png"
+			}
+		},
+		SP_LocalProfileAlert_Md_N: {
+			HighResolution: {
+				Dark: "icons_x2/SP_x2_LocalProfileAlert_Md_N_D.png",
+				Normal: "icons_x2/SP_x2_LocalProfileAlert_Md_N.png"
+			},
+			LowResolution: {
+				Dark: "icons/SP_LocalProfileAlert_Md_N_D.png",
+				Normal: "icons/SP_LocalProfileAlert_Md_N.png"
+			}
+		},
+		SP_ServerProfile_Md_N: {
+			HighResolution: {
+				Dark: "icons_x2/SP_x2_ServerProfile_Md_N_D.png",
+				Normal: "icons_x2/SP_x2_ServerProfile_Md_N.png"
+			},
+			LowResolution: {
+				Dark: "icons/SP_ServerProfile_Md_N_D.png",
+				Normal: "icons/SP_ServerProfile_Md_N.png"
+			}
+		},
+		SP_ServerProfileAlert_Md_N: {
+			HighResolution: {
+				Dark: "icons_x2/SP_x2_ServerProfileAlert_Md_N_D.png",
+				Normal: "icons_x2/SP_x2_ServerProfileAlert_Md_N.png"
+			},
+			LowResolution: {
+				Dark: "icons/SP_ServerProfileAlert_Md_N_D.png",
+				Normal: "icons/SP_ServerProfileAlert_Md_N.png"
+			}
+		},
+		WarningSmall: {
+			HighResolution: {
+				Dark: "icons_x2/x2_WarningSmall.png",
+				Normal: "icons_x2/x2_WarningSmall.png"
+			},
+			LowResolution: {
+				Dark: "icons/WarningSmall.png",
+				Normal: "icons/WarningSmall.png"
+			}
+		},
+		StarRatingNone: {
+			HighResolution: {
+				Dark: "icons_x2/x2_StarRatingNone_D.png",
+				Normal: "icons_x2/x2_StarRatingNone.png"
+			},
+			LowResolution: {
+				Dark: "icons/StarRatingNone_D.png",
+				Normal: "icons/StarRatingNone.png"
+			}
+		},
+		StarRating1: {
+			HighResolution: {
+				Dark: "icons_x2/x2_StarRating1_D.png",
+				Normal: "icons_x2/x2_StarRating1.png"
+			},
+			LowResolution: {
+				Dark: "icons/StarRating1_D.png",
+				Normal: "icons/StarRating1.png"
+			}
+		},
+		StarRating2: {
+			HighResolution: {
+				Dark: "icons_x2/x2_StarRating2_D.png",
+				Normal: "icons_x2/x2_StarRating2.png"
+			},
+			LowResolution: {
+				Dark: "icons/StarRating2_D.png",
+				Normal: "icons/StarRating2.png"
+			}
+		},
+		StarRating3: {
+			HighResolution: {
+				Dark: "icons_x2/x2_StarRating3_D.png",
+				Normal: "icons_x2/x2_StarRating3.png"
+			},
+			LowResolution: {
+				Dark: "icons/StarRating3_D.png",
+				Normal: "icons/StarRating3.png"
+			}
+		}
+	}
+}

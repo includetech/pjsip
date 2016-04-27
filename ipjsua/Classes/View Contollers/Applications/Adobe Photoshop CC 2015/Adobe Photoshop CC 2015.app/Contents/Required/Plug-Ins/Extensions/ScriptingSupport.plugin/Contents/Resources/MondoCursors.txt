@@ -1,0 +1,963 @@
+{
+	Name: "Mondo Icon Source File",
+	Version: "1.0",
+
+	Icons: {
+
+		Alpha_26000: {
+			HighResolution: {
+				HotX: 2,
+				HotY: 2,
+				Normal: "cursor_x2/Cur_x2_Select_2_2.png"
+			},
+			LowResolution: {
+				HotX: 1,
+				HotY: 1,
+				Normal: "cursor_x1/Cur_Select_1_1.png"
+			}
+		},
+
+		Alpha_26001: {
+			HighResolution: {
+				HotX: 2,
+				HotY: 2,
+				Normal: "cursor_x2/Cur_x2_MoveCopy_2_2.png"
+			},
+			LowResolution: {
+				HotX: 1,
+				HotY: 1,
+				Normal: "cursor_x1/Cur_MoveCopy_1_1.png"
+			}
+		},
+
+		Alpha_26002: {
+			HighResolution: {
+				HotX: 8,
+				HotY: 24,
+				Normal: "cursor_x2/Cur_x2_TextEdit_8_24.png"
+			},
+			LowResolution: {
+				HotX: 4,
+				HotY: 12,
+				Normal: "cursor_x1/Cur_TextEdit_4_12.png"
+			}
+		},
+
+		Alpha_26003: {
+			HighResolution: {
+				HotX: 8,
+				HotY: 24,
+				Normal: "cursor_x2/Cur_x2_TextEdit_8_24.png"
+			},
+			LowResolution: {
+				HotX: 4,
+				HotY: 12,
+				Normal: "cursor_x1/Cur_TextEdit_4_12.png"
+			}
+		},
+
+		Alpha_26004: {
+			HighResolution: {
+				HotX: 32,
+				HotY: 32,
+				Normal: "cursor_x2/RBWCross_32x32-1.png"
+			},
+			LowResolution: {
+				HotX: 16,
+				HotY: 16,
+				Normal: "cursor_x1/RBWCross_32x32-1.png"
+			}
+		},
+
+		Alpha_26005: {
+			HighResolution: {
+				HotX: 22,
+				HotY: 22,
+				Normal: "cursor_x2/Cur_x2_Hand_22_22.png"
+			},
+			LowResolution: {
+				HotX: 11,
+				HotY: 11,
+				Normal: "cursor_x1/Cur_Hand_11_11.png"
+			}
+		},
+
+		Alpha_26006: {
+			HighResolution: {
+				HotX: 22,
+				HotY: 22,
+				Normal: "cursor_x2/Cur_x2_Fist_22_22.png"
+			},
+			LowResolution: {
+				HotX: 11,
+				HotY: 11,
+				Normal: "cursor_x1/Cur_Fist_11_11.png"
+			}
+		},
+
+		Alpha_26007: {
+			HighResolution: {
+				HotX: 16,
+				HotY: 6,
+				Normal: "cursor_x2/Cur_x2_HandPoint_16_6.png"
+			},
+			LowResolution: {
+				HotX: 8,
+				HotY: 3,
+				Normal: "cursor_x1/Cur_HandPoint_8_3.png"
+			}
+		},
+
+		Alpha_26008: {
+			HighResolution: {
+				HotX: 16,
+				HotY: 16,
+				Normal: "cursor_x2/Cur_x2_ZoomIn_16_16.png"
+			},
+			LowResolution: {
+				HotX: 8,
+				HotY: 8,
+				Normal: "cursor_x1/Cur_ZoomIn_8_8.png"
+			}
+		},
+
+		Alpha_26009: {
+			HighResolution: {
+				HotX: 16,
+				HotY: 16,
+				Normal: "cursor_x2/Cur_x2_ZoomOut_16_16.png"
+			},
+			LowResolution: {
+				HotX: 8,
+				HotY: 8,
+				Normal: "cursor_x1/Cur_ZoomOut_8_8.png"
+			}
+		},
+
+		Alpha_26010: {
+			HighResolution: {
+				HotX: 16,
+				HotY: 16,
+				Normal: "cursor_x2/Cur_x2_NoZoom_16_16.png"
+			},
+			LowResolution: {
+				HotX: 8,
+				HotY: 8,
+				Normal: "cursor_x1/Cur_NoZoom_8_8.png"
+			}
+		},
+
+		Alpha_26011: {
+			HighResolution: {
+				HotX: 4,
+				HotY: 34,
+				Normal: "cursor_x2/Cur_x2_Eyedropper_4_34.png"
+			},
+			LowResolution: {
+				HotX: 2,
+				HotY: 17,
+				Normal: "cursor_x1/Cur_Eyedropper_2_17.png"
+			}
+		},
+
+		Alpha_26012: {
+			HighResolution: {
+				HotX: 2,
+				HotY: 2,
+				Normal: "cursor_x2/Cur_x2_Select_2_2.png"
+			},
+			LowResolution: {
+				HotX: 1,
+				HotY: 1,
+				Normal: "cursor_x1/Cur_Select_1_1.png"
+			}
+		},
+
+		Alpha_26013: {
+			HighResolution: {
+				HotX: 2,
+				HotY: 2,
+				Normal: "cursor_x2/Cur_x2_Select_2_2.png"
+			},
+			LowResolution: {
+				HotX: 1,
+				HotY: 1,
+				Normal: "cursor_x1/Cur_Select_1_1.png"
+			}
+		},
+
+		Alpha_26014: {
+			HighResolution: {
+				HotX: 2,
+				HotY: 2,
+				Normal: "cursor_x2/Cur_x2_MoveCrossArrow_2_2.png"
+			},
+			LowResolution: {
+				HotX: 1,
+				HotY: 1,
+				Normal: "cursor_x1/Cur_MoveCrossArrow_1_1.png"
+			}
+		},
+
+		Alpha_26015: {
+			HighResolution: {
+				HotX: 8,
+				HotY: 30,
+				Normal: "cursor_x2/Cur_x2_Arrow45_30_8.png"
+			},
+			LowResolution: {
+				HotX: 10,
+				HotY: 2,
+				Normal: "cursor_x1/Cur_Arrow0_10_2.png"
+			}
+		},
+
+		Alpha_26016: {
+			HighResolution: {
+				HotX: 2,
+				HotY: 2,
+				Normal: "cursor_x2/Cur_x2_MoveCrossArrow_2_2.png"
+			},
+			LowResolution: {
+				HotX: 1,
+				HotY: 1,
+				Normal: "cursor_x1/Cur_MoveCrossArrow_1_1.png"
+			}
+		},
+
+		Alpha_26017: {
+			HighResolution: {
+				HotX: 20,
+				HotY: 20,
+				Normal: "cursor_x2/Cur_x2_ArrowVertical_20_20.png"
+			},
+			LowResolution: {
+				HotX: 10,
+				HotY: 10,
+				Normal: "cursor_x1/Cur_ArrowVertical_10_10.png"
+			}
+		},
+
+		Alpha_26018: {
+			HighResolution: {
+				HotX: 20,
+				HotY: 20,
+				Normal: "cursor_x2/Cur_x2_ArrowHorizontal_20_20.png"
+			},
+			LowResolution: {
+				HotX: 10,
+				HotY: 10,
+				Normal: "cursor_x1/Cur_ArrowHorizontal_10_10.png"
+			}
+		},
+
+		Alpha_26019: {
+			HighResolution: {
+				HotX: 20,
+				HotY: 20,
+				Normal: "cursor_x2/Cur_x2_ArrowTLBR_20_20.png"
+			},
+			LowResolution: {
+				HotX: 10,
+				HotY: 10,
+				Normal: "cursor_x1/Cur_ArrowTLBR_10_10.png"
+			}
+		},
+
+		Alpha_26020: {
+			HighResolution: {
+				HotX: 20,
+				HotY: 20,
+				Normal: "cursor_x2/Cur_x2_ArrowTRBL_20_20.png"
+			},
+			LowResolution: {
+				HotX: 10,
+				HotY: 10,
+				Normal: "cursor_x1/Cur_ArrowTRBL_10_10.png"
+			}
+		},
+
+		Alpha_26021: {
+			HighResolution: {
+				HotX: 18,
+				HotY: 18,
+				Normal: "cursor_x2/Cur_x2_MoveHorizontal_18_18.png"
+			},
+			LowResolution: {
+				HotX: 9,
+				HotY: 9,
+				Normal: "cursor_x1/Cur_MoveHorizontal_9_9.png"
+			}
+		},
+
+		Alpha_26022: {
+			HighResolution: {
+				HotX: 18,
+				HotY: 18,
+				Normal: "cursor_x2/Cur_x2_MoveVertical_18_18.png"
+			},
+			LowResolution: {
+				HotX: 9,
+				HotY: 9,
+				Normal: "cursor_x1/Cur_MoveVertical_9_9.png"
+			}
+		},
+
+		Alpha_26023: {
+			HighResolution: {
+				HotX: 16,
+				HotY: 16,
+				Normal: "cursor_x2/Cur_x2_SplitterHorizontalBig_16_16.png"
+			},
+			LowResolution: {
+				HotX: 8,
+				HotY: 8,
+				Normal: "cursor_x1/Cur_SplitterHorizontalBig_8_8.png"
+			}
+		},
+
+		Alpha_26024: {
+			HighResolution: {
+				HotX: 16,
+				HotY: 16,
+				Normal: "cursor_x2/Cur_x2_SplitterVerticalBig_16_16.png"
+			},
+			LowResolution: {
+				HotX: 8,
+				HotY: 8,
+				Normal: "cursor_x1/Cur_SplitterVerticalBig_8_8.png"
+			}
+		},
+
+		Alpha_26025: {
+			HighResolution: {
+				HotX: 2,
+				HotY: 2,
+				Normal: "cursor_x2/Cur_x2_Select_2_2.png"
+			},
+			LowResolution: {
+				HotX: 1,
+				HotY: 1,
+				Normal: "cursor_x1/Cur_Select_1_1.png"
+			}
+		},
+
+		Alpha_26026: {
+			HighResolution: {
+				HotX: 2,
+				HotY: 2,
+				Normal: "cursor_x2/Cur_x2_SelectAdd_2_2.png"
+			},
+			LowResolution: {
+				HotX: 1,
+				HotY: 1,
+				Normal: "cursor_x1/Cur_SelectAdd_1_1.png"
+			}
+		},
+
+		Alpha_26027: {
+			HighResolution: {
+				HotX: 2,
+				HotY: 2,
+				Normal: "cursor_x2/Cur_x2_SelectSubstract_2_2.png"
+			},
+			LowResolution: {
+				HotX: 1,
+				HotY: 1,
+				Normal: "cursor_x1/Cur_SelectSubstract_1_1.png"
+			}
+		},
+
+		Alpha_26028: {
+			HighResolution: {
+				HotX: 2,
+				HotY: 2,
+				Normal: "cursor_x2/Cur_x2_SelectStart_2_2.png"
+			},
+			LowResolution: {
+				HotX: 1,
+				HotY: 1,
+				Normal: "cursor_x1/Cur_SelectStart_1_1.png"
+			}
+		},
+
+		Alpha_26029: {
+			HighResolution: {
+				HotX: 2,
+				HotY: 2,
+				Normal: "cursor_x2/Cur_x2_Move_2_2.png"
+			},
+			LowResolution: {
+				HotX: 1,
+				HotY: 1,
+				Normal: "cursor_x1/Cur_Move_1_1.png"
+			}
+		},
+
+		Alpha_26030: {
+			HighResolution: {
+				HotX: 2,
+				HotY: 2,
+				Normal: "cursor_x2/Cur_x2_MoveCrossArrow_2_2.png"
+			},
+			LowResolution: {
+				HotX: 1,
+				HotY: 1,
+				Normal: "cursor_x1/Cur_MoveCrossArrow_1_1.png"
+			}
+		},
+
+		Alpha_26031: {
+			HighResolution: {
+				HotX: 2,
+				HotY: 2,
+				Normal: "cursor_x2/Cur_x2_MoveColorSampler_2_2.png"
+			},
+			LowResolution: {
+				HotX: 1,
+				HotY: 1,
+				Normal: "cursor_x1/Cur_MoveColorSampler_1_1.png"
+			}
+		},
+
+		Alpha_26032: {
+			HighResolution: {
+				HotX: 18,
+				HotY: 18,
+				Normal: "cursor_x2/Cur_x2_Precise_18_18.png"
+			},
+			LowResolution: {
+				HotX: 9,
+				HotY: 9,
+				Normal: "cursor_x1/Cur_Precise_9_9.png"
+			}
+		},
+
+		Alpha_26033: {
+			HighResolution: {
+				HotX: 18,
+				HotY: 18,
+				Normal: "cursor_x2/Cur_x2_PreciseAdd_18_18.png"
+			},
+			LowResolution: {
+				HotX: 9,
+				HotY: 9,
+				Normal: "cursor_x1/Cur_PreciseAdd_9_9.png"
+			}
+		},
+
+		Alpha_26034: {
+			HighResolution: {
+				HotX: 18,
+				HotY: 18,
+				Normal: "cursor_x2/Cur_x2_PreciseSubtract_18_18.png"
+			},
+			LowResolution: {
+				HotX: 9,
+				HotY: 9,
+				Normal: "cursor_x1/Cur_PreciseSubtract_9_9.png"
+			}
+		},
+
+		Alpha_26035: {
+			HighResolution: {
+				HotX: 16,
+				HotY: 16,
+				Normal: "cursor_x2/RTextIBeam_32x32-1.png"
+			},
+			LowResolution: {
+				HotX: 32,
+				HotY: 32,
+				Normal: "cursor_x1/RTextIBeam_32x32-1.png"
+			}
+		},
+
+		Alpha_26036: {
+			HighResolution: {
+				HotX: 8,
+				HotY: 24,
+				Normal: "cursor_x2/Cur_x2_TextEdit_8_24.png"
+			},
+			LowResolution: {
+				HotX: 4,
+				HotY: 12,
+				Normal: "cursor_x1/Cur_TextEdit_4_12.png"
+			}
+		},
+
+		Alpha_26037: {
+			HighResolution: {
+				HotX: 32,
+				HotY: 32,
+				Normal: "cursor_x2/RTextVBeam_32x32-1.png"
+			},
+			LowResolution: {
+				HotX: 16,
+				HotY: 16,
+				Normal: "cursor_x1/RTextVBeam_32x32-1.png"
+			}
+		},
+
+		Alpha_26038: {
+			HighResolution: {
+				HotX: 22,
+				HotY: 22,
+				Normal: "cursor_x2/Cur_x2_Spinner9_22_22.png"
+			},
+			LowResolution: {
+				HotX: 11,
+				HotY: 11,
+				Normal: "cursor_x1/Cur_Spinner1_11_11.png"
+			}
+		},
+
+		Alpha_26039: {
+			HighResolution: {
+				HotX: 22,
+				HotY: 22,
+				Normal: "cursor_x2/Cur_x2_Spinner9_22_22.png"
+			},
+			LowResolution: {
+				HotX: 11,
+				HotY: 11,
+				Normal: "cursor_x1/Cur_Spinner2_11_11.png"
+			}
+		},
+
+		Alpha_26040: {
+			HighResolution: {
+				HotX: 22,
+				HotY: 22,
+				Normal: "cursor_x2/Cur_x2_Spinner9_22_22.png"
+			},
+			LowResolution: {
+				HotX: 11,
+				HotY: 11,
+				Normal: "cursor_x1/Cur_Spinner3_11_11.png"
+			}
+		},
+
+		Alpha_26041: {
+			HighResolution: {
+				HotX: 22,
+				HotY: 22,
+				Normal: "cursor_x2/Cur_x2_Spinner9_22_22.png"
+			},
+			LowResolution: {
+				HotX: 11,
+				HotY: 11,
+				Normal: "cursor_x1/Cur_Spinner4_11_11.png"
+			}
+		},
+
+		Alpha_26042: {
+			HighResolution: {
+				HotX: 22,
+				HotY: 22,
+				Normal: "cursor_x2/Cur_x2_Spinner9_22_22.png"
+			},
+			LowResolution: {
+				HotX: 11,
+				HotY: 11,
+				Normal: "cursor_x1/Cur_Spinner5_11_11.png"
+			}
+		},
+
+		Alpha_26043: {
+			HighResolution: {
+				HotX: 22,
+				HotY: 22,
+				Normal: "cursor_x2/Cur_x2_Spinner9_22_22.png"
+			},
+			LowResolution: {
+				HotX: 11,
+				HotY: 11,
+				Normal: "cursor_x1/Cur_Spinner6_11_11.png"
+			}
+		},
+
+		Alpha_26044: {
+			HighResolution: {
+				HotX: 22,
+				HotY: 22,
+				Normal: "cursor_x2/Cur_x2_Spinner9_22_22.png"
+			},
+			LowResolution: {
+				HotX: 11,
+				HotY: 11,
+				Normal: "cursor_x1/Cur_Spinner7_11_11.png"
+			}
+		},
+
+		Alpha_26045: {
+			HighResolution: {
+				HotX: 22,
+				HotY: 22,
+				Normal: "cursor_x2/Cur_x2_Spinner9_22_22.png"
+			},
+			LowResolution: {
+				HotX: 11,
+				HotY: 11,
+				Normal: "cursor_x1/Cur_Spinner8_11_11.png"
+			}
+		},
+
+		Alpha_26048: {
+			HighResolution: {
+				HotX: 4,
+				HotY: 34,
+				Normal: "cursor_x2/Cur_x2_EyedropperGray_4_34.png"
+			},
+			LowResolution: {
+				HotX: 2,
+				HotY: 17,
+				Normal: "cursor_x1/Cur_EyedropperGray_2_17.png"
+			}
+		},
+
+		Alpha_26049: {
+			HighResolution: {
+				HotX: 4,
+				HotY: 34,
+				Normal: "cursor_x2/Cur_x2_EyedropperWhite_4_34.png"
+			},
+			LowResolution: {
+				HotX: 2,
+				HotY: 17,
+				Normal: "cursor_x1/Cur_EyedropperWhite_2_17.png"
+			}
+		},
+
+		Alpha_26050: {
+			HighResolution: {
+				HotX: 4,
+				HotY: 34,
+				Normal: "cursor_x2/Cur_x2_EyedropperAdd_4_34.png"
+			},
+			LowResolution: {
+				HotX: 2,
+				HotY: 17,
+				Normal: "cursor_x1/Cur_EyedropperAdd_2_17.png"
+			}
+		},
+
+		Alpha_26051: {
+			HighResolution: {
+				HotX: 4,
+				HotY: 34,
+				Normal: "cursor_x2/Cur_x2_EyedropperSubtract_4_34.png"
+			},
+			LowResolution: {
+				HotX: 2,
+				HotY: 17,
+				Normal: "cursor_x1/Cur_EyedropperSubtract_2_17.png"
+			}
+		},
+
+		Alpha_26052: {
+			HighResolution: {
+				HotX: 2,
+				HotY: 2,
+				Normal: "cursor_x2/Cur_x2_Crop_2_2.png"
+			},
+			LowResolution: {
+				HotX: 1,
+				HotY: 1,
+				Normal: "cursor_x1/Cur_Crop_1_1.png"
+			}
+		},
+
+		Alpha_26053: {
+			HighResolution: {
+				HotX: 2,
+				HotY: 2,
+				Normal: "cursor_x2/Cur_x2_Scissors_2_2.png"
+			},
+			LowResolution: {
+				HotX: 1,
+				HotY: 1,
+				Normal: "cursor_x1/Cur_Scissors_1_1.png"
+			}
+		},
+
+		Alpha_26054: {
+			HighResolution: {
+				HotX: 4,
+				HotY: 34,
+				Normal: "cursor_x2/Cur_x2_Eyedropper_4_34.png"
+			},
+			LowResolution: {
+				HotX: 2,
+				HotY: 17,
+				Normal: "cursor_x1/Cur_Eyedropper_2_17.png"
+			}
+		},
+
+		Alpha_26055: {
+			HighResolution: {
+				HotX: 2,
+				HotY: 2,
+				Normal: "cursor_x2/Cur_x2_MoveColorSampler_2_2.png"
+			},
+			LowResolution: {
+				HotX: 1,
+				HotY: 1,
+				Normal: "cursor_x1/Cur_MoveColorSampler_1_1.png"
+			}
+		},
+
+		Alpha_26056: {
+			HighResolution: {
+				HotX: 14,
+				HotY: 14,
+				Normal: "cursor_x2/Cur_x2_RotateFromTop_14_14.png"
+			},
+			LowResolution: {
+				HotX: 7,
+				HotY: 7,
+				Normal: "cursor_x1/Cur_RotateFromTop_7_7.png"
+			}
+		},
+
+		Alpha_26057: {
+			HighResolution: {
+				HotX: 14,
+				HotY: 14,
+				Normal: "cursor_x2/Cur_x2_RotateFromLeft_14_14.png"
+			},
+			LowResolution: {
+				HotX: 7,
+				HotY: 7,
+				Normal: "cursor_x1/Cur_RotateFromLeft_7_7.png"
+			}
+		},
+
+		Alpha_26058: {
+			HighResolution: {
+				HotX: 14,
+				HotY:14,
+				Normal: "cursor_x2/Cur_x2_RotateFromBottom_14_14.png"
+			},
+			LowResolution: {
+				HotX: 7,
+				HotY: 7,
+				Normal: "cursor_x1/Cur_RotateFromBottom_7_7.png"
+			}
+		},
+
+		Alpha_26059: {
+			HighResolution: {
+				HotX: 14,
+				HotY: 14,
+				Normal: "cursor_x2/Cur_x2_RotateFromRight_14_14.png"
+			},
+			LowResolution: {
+				HotX: 7,
+				HotY: 7,
+				Normal: "cursor_x1/Cur_RotateFromRight_7_7.png"
+			}
+		},
+
+		Alpha_26060: {
+			HighResolution: {
+				HotX: 14,
+				HotY: 14,
+				Normal: "cursor_x2/Cur_x2_RotateTopLeftCorner_14_14.png"
+			},
+			LowResolution: {
+				HotX: 7,
+				HotY: 7,
+				Normal: "cursor_x1/Cur_RotateTopLeftCorner_7_7.png"
+			}
+		},
+
+		Alpha_26061: {
+			HighResolution: {
+				HotX: 14,
+				HotY: 14,
+				Normal: "cursor_x2/Cur_x2_RotateTopRightCorner_14_14.png"
+			},
+			LowResolution: {
+				HotX: 7,
+				HotY: 7,
+				Normal: "cursor_x1/Cur_RotateTopRightCorner_7_7.png"
+			}
+		},
+
+		Alpha_26062: {
+			HighResolution: {
+				HotX: 14,
+				HotY: 14,
+				Normal: "cursor_x2/Cur_x2_RotateBottomLeftCorner_14_14.png"
+			},
+			LowResolution: {
+				HotX: 7,
+				HotY: 7,
+				Normal: "cursor_x1/Cur_RotateBottomLeftCorner_7_7.png"
+			}
+		},
+
+		Alpha_26063: {
+			HighResolution: {
+				HotX: 14,
+				HotY: 14,
+				Normal: "cursor_x2/Cur_x2_RotateBottomRightCorner_14_14.png"
+			},
+			LowResolution: {
+				HotX: 7,
+				HotY: 7,
+				Normal: "cursor_x1/Cur_RotateBottomRightCorner_7_7.png"
+			}
+		},
+
+		Alpha_26064: {
+			HighResolution: {
+				HotX: 4,
+				HotY: 32,
+				Normal: "cursor_x2/Cur_x2_Straighten_4_32.png"
+			},
+			LowResolution: {
+				HotX: 2,
+				HotY: 16,
+				Normal: "cursor_x1/Cur_Straighten_2_16.png"
+			}
+		},
+
+		Alpha_26065: {
+			HighResolution: {
+				HotX: 20,
+				HotY: 20,
+				Normal: "cursor_x2/Cur_x2_CrossArrow_20_20.png"
+			},
+			LowResolution: {
+				HotX: 10,
+				HotY: 10,
+				Normal: "cursor_x1/Cur_CrossArrow_10_10.png"
+			}
+		},
+
+		Alpha_26066: {
+			HighResolution: {
+				HotX: 16,
+				HotY: 16,
+				Normal: "cursor_x2/Cur_x2_HandPointSlider_16_6.png"
+			},
+			LowResolution: {
+				HotX: 8,
+				HotY: 3,
+				Normal: "cursor_x1/Cur_HandPointSlider_8_3.png"
+			}
+		},
+
+		Alpha_26067: {
+			HighResolution: {
+				HotX: 2,
+				HotY: 2,
+				Normal: "cursor_x2/Cur_x2_PaintBucket_2_2.png"
+			},
+			LowResolution: {
+				HotX: 1,
+				HotY: 1,
+				Normal: "cursor_x1/Cur_PaintBucket_1_1.png"
+			}
+		},
+
+		Alpha_26068: {
+			HighResolution: {
+				HotX: 32,
+				HotY: 32,
+				Normal: "cursor_x2/RBWCross_32x32-1.png"
+			},
+			LowResolution: {
+				HotX: 16,
+				HotY: 16,
+				Normal: "cursor_x1/RBWCross_32x32-1.png"
+			}
+		},
+
+		Alpha_26069: {
+			HighResolution: {
+				HotX: 10,
+				HotY: 10,
+				Normal: "cursor_x2/Cur_x2_RedEyeRemove_10_10.png"
+			},
+			LowResolution: {
+				HotX: 5,
+				HotY: 5,
+				Normal: "cursor_x1/Cur_RedEyeRemove_5_5.png"
+			}
+		},
+
+		Alpha_26070: {
+			HighResolution: {
+				HotX: 32,
+				HotY: 32,
+				Normal: "cursor_x2/RBWMove_32x32-1.png"
+			},
+			LowResolution: {
+				HotX: 16,
+				HotY: 16,
+				Normal: "cursor_x1/RBWMove_32x32-1.png"
+			}
+		},
+
+		Alpha_26071: {
+			HighResolution: {
+				HotX: 18,
+				HotY: 18,
+				Normal: "cursor_x2/Cur_x2_TargetedAdjustment_18_18.png"
+			},
+			LowResolution: {
+				HotX: 9,
+				HotY: 9,
+				Normal: "cursor_x1/Cur_TargetedAdjustment_9_9.png"
+			}
+		},
+
+		Alpha_26072: {
+			HighResolution: {
+				HotX: 32,
+				HotY: 32,
+				Normal: "cursor_x2/RInvisible_32x32-1.png"
+			},
+			LowResolution: {
+				HotX: 16,
+				HotY: 16,
+				Normal: "cursor_x1/RInvisible_32x32-1.png"
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

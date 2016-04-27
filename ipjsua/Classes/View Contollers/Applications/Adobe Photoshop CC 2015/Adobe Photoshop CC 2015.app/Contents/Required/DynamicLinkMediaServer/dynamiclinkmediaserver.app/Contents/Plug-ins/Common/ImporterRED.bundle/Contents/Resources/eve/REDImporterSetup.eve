@@ -1,0 +1,135 @@
+layout REDImporterSetupDialog
+{
+	view dva_dialog(identifier: 'REDImporterSetup', name: '$$$/MediaCoreUI/REDImporterSetupDialog/kResMediaCoreUIREDImporterSetupDialogTitle=RED R3D Source Settings', spacing: 15, canResize: 'false', resizeChildren: 'true')
+	{
+		row()
+		{
+			column(horizontalSpacing: 10, verticalSpacing: 10)
+			{
+				/*
+				** This is the main player window - no changes
+				*/
+				dva_static_image(name: '$$$/MediaCoreUI/REDImporterSetupDialog/kResDLGPreview=Preview', horizontal: align_center, identifier: 'preview', minWidth: 600, minHeight: 390, showBorder: true);
+
+				/*
+				** This row contains the timecode, dropdown and play-head slider - no changes
+				*/
+				row(horizontal: align_center)
+				{
+					column()
+					{
+						row(horizontalSpacing: 6, verticalSpacing: 0, horizontal: align_fill)
+						{
+							dva_static_text(name: '$$$/MediaCoreUI/REDImporterSetupDialog/kTimecodeStatic=00:00:00:00', identifier:'timecodeStatic', horizontal: align_left);
+							dva_popup(identifier: 'TimecodePopup', label: '$$$/MediaCoreUI/REDImporterSetupDialog/kResMediaCoreUITimecode=Timecode: ', horizontal: align_right)
+							{
+								dva_popup_item(name: '$$$/MediaCoreUI/REDImporterSetupDialog/TimecodeEdgecode=Edgecode');
+								dva_popup_item(name: '$$$/MediaCoreUI/REDImporterSetupDialog/TimecodeAbsolute=Absolute');
+							}
+						}
+						dva_slider(identifier: 'scrubSlider', horizontal: align_center, maxHeight:15, minHeight:15, direction: 'horizontal', maxLength:600, minLength:600, value: 0.0, minValue: 0.0, maxValue: 1000.0, decimalPlaces:0, increment: 1);
+					}
+				}
+				
+				/*
+				** Histogram and CurveControls
+				*/
+				row(horizontal: align_fill, width: 600)
+				{
+					/*
+					**	the histogram widget
+					*/
+					column(horizontalSpacing: 6, verticalSpacing:6, horizontal: align_center, minWidth: 300)
+					{
+						dva_subview(identifier:'kHistogramAreaSubViewID', horizontalAlignment: 'center', minWidth:255, maxWidth:255, minHeight:128, maxHeight:128);
+						dva_radio_button_group(identifier:'histogramRadioGroup', placement: place_row, horizontal: align_center, horizontal: align_center)
+						{
+							dva_radio_button(identifier:'rgb_button_hist', name:'$$$/MediaCoreUI/REDImporterSetupDialog/RGB=RGB', value: 'true');
+							dva_radio_button(identifier:'red_button_hist', name:'$$$/MediaCoreUI/REDImporterSetupDialog/Red=Red');
+							dva_radio_button(identifier:'green_button_hist', name:'$$$/MediaCoreUI/REDImporterSetupDialog/Green=Green');
+							dva_radio_button(identifier:'blue_button_hist', name:'$$$/MediaCoreUI/REDImporterSetupDialog/Blue=Blue');
+						}
+					}
+				
+					column(horizontalSpacing: 6, verticalSpacing:6, horizontal: align_center, minWidth: 300)
+					{
+						dva_subview(identifier:'kCurveEditorSubViewID', horizontal: align_center, minWidth:128, maxWidth:128, minHeight:128, maxHeight:128);
+						dva_radio_button_group(identifier:'kCurveEditorRadioGroupID', placement: place_row, horizontal: align_center)
+						{
+							dva_radio_button(identifier:'luma_button_curve', name:'$$$/MediaCoreUI/REDImporterSetupDialog/Luma=Luma', value: 'true');
+							dva_radio_button(identifier:'red_button_curve', name:'$$$/MediaCoreUI/REDImporterSetupDialog/Red=Red');
+							dva_radio_button(identifier:'green_button_curve', name:'$$$/MediaCoreUI/REDImporterSetupDialog/Green=Green');
+							dva_radio_button(identifier:'blue_button_curve', name:'$$$/MediaCoreUI/REDImporterSetupDialog/Blue=Blue');
+						}							
+					}
+				}				
+				/*
+				**	This is the end of the first column of controls
+				*/
+			}
+			dva_divider(identifier: 'VerticalDivider', direction: 'vertical', minThickness: 2, vertical: align_fill);
+				  
+			/*
+			** This is the second main column with all the group-boxes and decoding info
+			*/
+			column(horizontalSpacing: 10, verticalSpacing:10)
+			{
+				/*
+				** mgoshey - This moves the preset dropdown and 'Save Preset' button to the top of the second column
+				*/
+				row(horizontalSpacing: 6, verticalSpacing:6, horizontal: align_right)
+				{
+					dva_popup(identifier: 'presetPopup', label: '$$$/MediaCoreUI/REDImporterSetupDialog/kResMediaCoreUIPreset=Preset: ', bindRight:'true', minWidth: 180, maxWidth: 180, topMargin:20)
+					{
+						dva_popup_item(name: '$$$/MediaCoreUI/REDImporterSetupDialog/AsShot=As Shot');
+						dva_popup_item(name: '$$$/MediaCoreUI/REDImporterSetupDialog/PresetDefault=Default');
+						dva_popup_item(name: '$$$/MediaCoreUI/REDImporterSetupDialog/PresetCustom=Custom');
+						dva_popup_item(name: '$$$/MediaCoreUI/REDImporterSetupDialog/PresetSeparator=------------');
+					}
+					dva_button(name:'$$$/MediaCoreUI/REDImporterSetupDialog/SavePreset=Save Preset', identifier:'savePresetButton');
+				}
+				
+				/*
+				** mgoshey - This is the row of 2 RMD related buttons
+				*/
+				row(horizontalSpacing: 6, verticalSpacing: 6, horizontal: align_right, child_horizontal: align_right)
+				{
+					dva_button(name:'$$$/MediaCoreUI/REDImporterSetupDialog/ReloadRMD=Reload from RMD', identifier:'reset');
+					dva_button(name:'$$$/MediaCoreUI/REDImporterSetupDialog/SaveRMD=Save to RMD', identifier:'saveRMD');
+				}
+
+
+				/**
+				**	This section is the scroll view area that is replaced with UI_ScrollView and UI_SectionViews
+				**	in code.
+				*/			
+				row(horizontalSpacing: 6, verticalSpacing: 6, horizontal: align_fill)
+				{
+					dva_divider(identifier: 'Divider1', direction: 'horizontal', minThickness: 2, horizontal: align_fill);
+				}
+				row(horizontalSpacing: 6, verticalSpacing: 6, horizontal: align_fill)
+				{
+					dva_subview(identifier:'scrollAreaSubViewID', minWidth:380, minHeight:500);
+				}
+				row(horizontalSpacing: 6, verticalSpacing: 6, horizontal: align_fill)
+				{
+					dva_divider(identifier: 'Divider2', direction: 'horizontal', minThickness: 2, horizontal: align_fill);
+				}				
+				/*
+				** Adding the row to hold the "Use Rocket" dropdown and the OK-Cancel buttons
+				*/
+				row(horizontalSpacing: 6, verticalSpacing: 0, horizontal: align_fill, guide_mask:[@guide_label])
+				{
+					  dva_popup(identifier: 'enableRocket', label: '$$$/MediaCoreUI/REDImporterSetupDialog/kResMediaCoreEnableRocket=Use Rocket:', horizontal: align_left)
+					  {
+							dva_popup_item(name: '$$$/MediaCoreUI/REDImporterSetupDialog/enableRocketNone=None');
+							dva_popup_item(name: '$$$/MediaCoreUI/REDImporterSetupDialog/enableRocketOne=One (If Available)');
+							dva_popup_item(name: '$$$/MediaCoreUI/REDImporterSetupDialog/enableRocketAll=All Available');
+					  }
+					  dva_static_text(identifier:'RocketStatic');
+					  dva_ok_cancel_row();
+				}
+			}
+		}
+	}
+}

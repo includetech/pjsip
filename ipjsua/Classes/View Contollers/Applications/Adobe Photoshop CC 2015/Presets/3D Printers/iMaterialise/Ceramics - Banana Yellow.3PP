@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Printer>
+  <Version value="1" />
+  <PrintLocation value="i.materialise.com" />
+  <PrintVolume X="340.00" Y="240.00" Z="200.00" />
+  <MeshRepairResolution value="7" />
+  <PrinterHeads value="1" />
+  <PrinterSupportsUSB flag="0" />
+  <PreferredFileFormat value="stl" />
+  <NeedsZip flag="1" />
+  <FullColor flag="0" />
+  <UploadURL value="http://i.materialise.com/3dprintlab/03d3b119-7e58-415f-b167-f20d9cbe16bd/4b4ad96f-6152-4742-9199-a5d0711e2e81/b7cd1d1a-bba4-4ccf-9e87-258da402cb53" />
+  <PrinterResolution X="0.5" Y="0.5" Z="0.5" />
+  <Quality value="high">
+    <MeshRepairResolution value="8" />
+    <MinMeshRepairResolution value="6" />
+  </Quality>
+  <Quality value="medium">
+    <MeshRepairResolution value="7" />
+    <MinMeshRepairResolution value="5" />
+  </Quality>
+  <Quality value="low">
+    <MeshRepairResolution value="6" />
+    <MinMeshRepairResolution value="5" />
+  </Quality>
+</Printer>
+<Materials>
+  <Material name="Ceramics Banana Yellow">
+    <NeedsRaft flag="0" />
+    <NeedsSupports flag="0" />
+    <NeedsEscapeHoles flag="0" />
+    <MinimumWallThickness value="3.00" />
+    <PricePerSquareCMSurface value="0.18" />
+    <Diffuse R="1" G="1" B="0" />
+    <Specular R="0.1" G="0.1" B="0.1" />
+    <Illumination R="0" G="0" B="0" />
+    <Ambient R="0" G="0" B="0" />
+    <Shine value="0.9" />
+    <Reflection value="0.9" />
+    <Roughness value="0" />
+    <Bump value="0" />
+    <Opacity value="1" />
+    <Refraction value="1" />
+  </Material>
+</Materials>

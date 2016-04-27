@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<views xmlns="http://ns.adobe.com/metadata/ui/1.0/">
+	
+<!-- 
+	Photoshop View
+-->	
+<view
+	xmlns:photoshop="http://ns.adobe.com/photoshop/1.0/"
+	name="com.adobe.xmp.view.photoshop"
+	label="$$$/metadataui/view/photoshop_label=Photoshop"
+	description="$$$/metadataui/view/photoshop_description=The Photoshop History displays an accumulated log of edit history that has been done to the document. The logging capability can be turned on via the PS preference dialog under General&gt;History Log.">
+
+	<!--
+	<property name="photoshop:Category"/>
+	<property name="photoshop:SupplementalCategories" multiLines="3" hint="$$$/metadataui/view/hint/comma_separated_array=Semicolons or commas can be used to separate multiple values"/>
+	-->
+
+	<property name="photoshop:History" multiLines="20" readOnly="true"/>	
+	
+</view>
+
+</views>

@@ -1,0 +1,15 @@
+layout AERenderSettingsDialog
+{
+	view dva_dialog(name: '$$$/DynamicLink/DynamicLinkMedia/DynamicLinkSource/AERenderSettingsDialog/DialogTitle=After Effects Composition Render Settings', identifier: 'AERenderSettingsDialog', placement: place_column, spacing: 10, margin: 15, horizontal: align_fill)
+	{
+		dva_groupbox(identifier: 'gbDialogExpander', placement: place_column, horizontal: align_fill, minWidth: 500)
+		{
+			dva_popup(label: '$$$/DynamicLink/DynamicLinkMedia/DynamicLinkSource/AERenderSettingsDialog/RenderGuideLayers/PopupLabel=Guide Layers: ', identifier: 'RenderGuideLayersPopup', minWidth: 90, horizontal: align_center)
+			{
+				dva_popup_item(name: '$$$/DynamicLink/DynamicLinkMedia/DynamicLinkSource/AERenderSettingsDialog/RenderGuideLayers/PopupItemOff=Off');
+				dva_popup_item(name: '$$$/DynamicLink/DynamicLinkMedia/DynamicLinkSource/AERenderSettingsDialog/RenderGuideLayers/PopupItemOn=On');
+			}
+			dva_ok_cancel_row();
+		}
+	}
+}

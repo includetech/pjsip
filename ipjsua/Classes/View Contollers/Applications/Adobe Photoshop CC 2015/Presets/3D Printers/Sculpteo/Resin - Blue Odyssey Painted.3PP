@@ -1,0 +1,48 @@
+﻿        
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<Printer>
+	<Version value='1' />
+	<PrintLocation value='Sculpteo.com' />
+	<PrintVolume X='290' Y='190' Z='150' />
+	<PrinterResolution X='10' Y='10' Z='10' />
+	<MeshRepairResolution value='8' />
+	<PrinterHeads value='2' />
+	<PrinterSupportsUSB flag='0' />
+	<PreferredFileFormat value='stl' />
+	<NeedsZip flag='1' /> 
+	<Quality value='high'>
+		<MeshRepairResolution value='8' />
+	</Quality>
+	<Quality value='medium'>
+		<MeshRepairResolution value='7' />
+	</Quality>
+	<Quality value='low'>
+		<MeshRepairResolution value='6' />
+	</Quality>
+</Printer>
+
+<Materials>
+
+	<Material name='Resin - Blue Odyssey Painted'>
+		<NeedsRaft flag='0' />
+		<NeedsSupports flag='0' />
+		<NeedsEscapeHoles flag='0' />
+		<MinimumWallThickness value='2.0' /> 
+		<PricePerCubicCM value='3.70' />
+		<Handling value='2.80' />
+		<Diffuse R='0.43' G='0.64' B='0.75' />
+		<Specular R='0.1' G='0.1' B='0.1' />
+		<Illumination R='0' G='0' B='0' />
+		<Ambient R='0.2' G='0.2' B='0.2' />
+		<Shine value='0.2' />
+		<Reflection value='0.15' />
+		<Roughness value='0.01' />
+		<Bump value='0' />
+		<Opacity value='1' />
+		<Refraction value='1' />
+
+        </Material>
+
+</Materials>
+

@@ -1,0 +1,3179 @@
+/*
+ * Copyright (c) 2014 Adobe Systems Incorporated. All rights reserved.
+ *  
+ * Permission is hereby granted, free of charge, to any person obtaining a
+ * copy of this software and associated documentation files (the "Software"), 
+ * to deal in the Software without restriction, including without limitation 
+ * the rights to use, copy, modify, merge, publish, distribute, sublicense, 
+ * and/or sell copies of the Software, and to permit persons to whom the 
+ * Software is furnished to do so, subject to the following conditions:
+ *  
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *  
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+ * DEALINGS IN THE SOFTWARE.
+ *
+ */
+/*
+ * Copyright (c) 2014 Adobe Systems Incorporated. All rights reserved.
+ *  
+ * Permission is hereby granted, free of charge, to any person obtaining a
+ * copy of this software and associated documentation files (the "Software"), 
+ * to deal in the Software without restriction, including without limitation 
+ * the rights to use, copy, modify, merge, publish, distribute, sublicense, 
+ * and/or sell copies of the Software, and to permit persons to whom the 
+ * Software is furnished to do so, subject to the following conditions:
+ *  
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *  
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+ * DEALINGS IN THE SOFTWARE.
+ *
+ */
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  -webkit-user-select: none;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1rem;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*
+ * Copyright (c) 2014 Adobe Systems Incorporated. All rights reserved.
+ *  
+ * Permission is hereby granted, free of charge, to any person obtaining a
+ * copy of this software and associated documentation files (the "Software"), 
+ * to deal in the Software without restriction, including without limitation 
+ * the rights to use, copy, modify, merge, publish, distribute, sublicense, 
+ * and/or sell copies of the Software, and to permit persons to whom the 
+ * Software is furnished to do so, subject to the following conditions:
+ *  
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *  
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+ * DEALINGS IN THE SOFTWARE.
+ *
+ */
+.document-controls {
+  display: flex;
+  width: 4rem;
+}
+.document-controls__next,
+.document-controls__previous {
+  color: #f7f6ee;
+  flex-basis: 1rem;
+  display: none;
+}
+.document-container:hover .document-controls__next,
+.document-container:hover .document-controls__previous {
+  display: inline-flex;
+}
+.document-controls__next__disabled,
+.document-controls__previous__disabled {
+  display: none ! important;
+}
+.document-controls__next,
+.document-controls__previous {
+  text-align: right;
+  height: 1.5rem;
+}
+.document-controls__unsupported {
+  padding: 0 4px;
+  font-weight: bold;
+  color: #f11;
+}
+.document-title {
+  font-weight: 400;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 1.6rem;
+  letter-spacing: .05rem;
+  overflow: hidden;
+}
+.document-header {
+  height: 5rem;
+  line-height: 5rem;
+  max-width: 100%;
+  padding-right: 5rem;
+}
+.document-container {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  z-index: 0;
+  flex-shrink: 1;
+  flex-grow: 10;
+}
+.document-container__withdoc {
+  background: rgba(52, 51, 47, 0.24);
+}
+.document-container:hover {
+  background: rgba(52, 51, 47, 0.24);
+}
+/*
+ * Copyright (c) 2014 Adobe Systems Incorporated. All rights reserved.
+ *  
+ * Permission is hereby granted, free of charge, to any person obtaining a
+ * copy of this software and associated documentation files (the "Software"), 
+ * to deal in the Software without restriction, including without limitation 
+ * the rights to use, copy, modify, merge, publish, distribute, sublicense, 
+ * and/or sell copies of the Software, and to permit persons to whom the 
+ * Software is furnished to do so, subject to the following conditions:
+ *  
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *  
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+ * DEALINGS IN THE SOFTWARE.
+ *
+ */
+.scrim {
+  position: absolute;
+  opacity: 1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.scrim svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/*
+ * Copyright (c) 2014 Adobe Systems Incorporated. All rights reserved.
+ *  
+ * Permission is hereby granted, free of charge, to any person obtaining a
+ * copy of this software and associated documentation files (the "Software"), 
+ * to deal in the Software without restriction, including without limitation 
+ * the rights to use, copy, modify, merge, publish, distribute, sublicense, 
+ * and/or sell copies of the Software, and to permit persons to whom the 
+ * Software is furnished to do so, subject to the following conditions:
+ *  
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *  
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+ * DEALINGS IN THE SOFTWARE.
+ *
+ */
+/* -- TOOLBAR -- */
+.toolbar-current {
+  width: 5rem;
+  height: 5rem;
+  color: #f7f6ee;
+  box-sizing: border-box;
+  background: rgba(52, 51, 47, 0.24);
+  z-index: 1;
+}
+.toolbar-current > * {
+  opacity: 0;
+}
+.main__ready .toolbar-current > * {
+  opacity: 1;
+  transition: all 200ms ease;
+}
+.tool-spacer {
+  border-top: 1px solid #34332f;
+  opacity: .55;
+}
+.toolbar-current.with-options {
+  display: none;
+  box-sizing: border-box;
+  z-index: 1;
+  width: 5rem;
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.66);
+  background-color: #f7f6ee;
+  color: #34332f;
+  opacity: .88;
+}
+.toolbar-pop-over {
+  box-sizing: border-box;
+  z-index: 1;
+  width: 5rem;
+  height: 5rem;
+  background: rgba(52, 51, 47, 0.24);
+  color: #f7f6ee;
+  border-right: 1px solid rgba(38, 38, 38, 0);
+}
+.toolbar-pop-over .tool-selected {
+  display: flex;
+}
+.toolbar-pop-over li,
+.toolbar-pop-over .toolbar__backToPs.button-simple {
+  display: none;
+}
+.toolbar-pop-over.expanded {
+  height: auto;
+  background-color: rgba(45, 45, 43, 0.94);
+  border-right: 1px solid rgba(38, 38, 38, 0.97);
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.66);
+  color: #34332f;
+}
+.toolbar-pop-over.expanded li,
+.toolbar-pop-over.expanded .toolbar__backToPs.button-simple {
+  display: flex;
+}
+.toolbar-pop-over li .button-simple:first-child {
+  margin: 0;
+}
+.tool-current {
+  display: none;
+}
+.toolbar-current .tool-selected {
+  display: flex;
+}
+.toolbar-current li .button-simple {
+  width: 5rem;
+  height: 5rem;
+}
+.toolbar-pop-over li .button-simple {
+  width: 5rem;
+  height: 5rem;
+  margin: 0.1667rem 0;
+}
+/*
+ * Copyright (c) 2014 Adobe Systems Incorporated. All rights reserved.
+ *  
+ * Permission is hereby granted, free of charge, to any person obtaining a
+ * copy of this software and associated documentation files (the "Software"), 
+ * to deal in the Software without restriction, including without limitation 
+ * the rights to use, copy, modify, merge, publish, distribute, sublicense, 
+ * and/or sell copies of the Software, and to permit persons to whom the 
+ * Software is furnished to do so, subject to the following conditions:
+ *  
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *  
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+ * DEALINGS IN THE SOFTWARE.
+ *
+ */
+/* -- MASTER CONTAINER -- */
+.main {
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  cursor: default;
+  overflow: hidden;
+}
+/* -- PROPERTIES -- */
+.properties {
+  height: 100%;
+  width: 28rem;
+  overflow: hidden;
+  min-height: 100%;
+  background-color: rgba(45, 45, 43, 0.94);
+  flex-direction: column;
+  justify-content: flex-start;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.formline {
+  width: 24rem;
+  display: flex;
+  align-items: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.transform.section,
+.style .section-header,
+.pages .section-header,
+.artboard-presets .section-header,
+.recent-files .section-header {
+  padding: 0 2rem;
+}
+.recent-files {
+  flex-shrink: 1;
+}
+.artboard-launcher .section-container {
+  flex-shrink: 0;
+}
+.pages .section-container {
+  padding: 0;
+  flex-shrink: 1;
+}
+.section-container {
+  overflow-x: hidden;
+  overflow-y: auto;
+  flex-grow: 1;
+  padding: 0.5rem 0;
+  display: flex;
+  align-items: initial;
+  opacity: 0;
+}
+.layer-count {
+  opacity: 0;
+}
+.main__ready .section-container,
+.main__ready .layer-count {
+  opacity: 1;
+  transition: all 200ms ease;
+}
+.artboard-presets .section-container,
+.recent-files .section-container {
+  padding: 0;
+}
+.recent-files .section-container {
+  padding-bottom: 1rem;
+  flex-shrink: 1;
+}
+.style .section-container {
+  padding: 0 2rem;
+}
+.transform {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.transform .section-container {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.pages {
+  flex-grow: 1000;
+  flex-basis: 5rem;
+  bottom: 0;
+}
+.column-1 {
+  width: 1rem;
+  flex-shrink: 0;
+}
+.column-2 {
+  width: 2rem;
+  flex-shrink: 0;
+}
+.column-3 {
+  width: 3rem;
+  flex-shrink: 0;
+}
+.column-4 {
+  width: 4rem;
+  flex-shrink: 0;
+}
+.column-5 {
+  width: 5rem;
+  flex-shrink: 0;
+}
+.column-6 {
+  width: 6rem;
+  flex-shrink: 0;
+}
+.column-7 {
+  width: 7rem;
+  flex-shrink: 0;
+}
+.column-8 {
+  width: 8rem;
+  flex-shrink: 0;
+}
+.column-9 {
+  width: 9rem;
+  flex-shrink: 0;
+}
+.column-10 {
+  width: 10rem;
+  flex-shrink: 0;
+}
+.column-11 {
+  width: 11rem;
+  flex-shrink: 0;
+}
+.column-12 {
+  width: 12rem;
+  flex-shrink: 0;
+}
+.column-13 {
+  width: 13rem;
+  flex-shrink: 0;
+}
+.column-14 {
+  width: 14rem;
+  flex-shrink: 0;
+}
+.column-15 {
+  width: 15rem;
+  flex-shrink: 0;
+}
+.column-16 {
+  width: 16rem;
+  flex-shrink: 0;
+}
+.column-17 {
+  width: 17rem;
+  flex-shrink: 0;
+}
+.column-18 {
+  width: 18rem;
+  flex-shrink: 0;
+}
+.column-19 {
+  width: 19rem;
+  flex-shrink: 0;
+}
+.column-20 {
+  width: 20rem;
+  flex-shrink: 0;
+}
+.column-21 {
+  width: 21rem;
+  flex-shrink: 0;
+}
+.column-22 {
+  width: 22rem;
+  flex-shrink: 0;
+}
+.column-23 {
+  width: 23rem;
+  flex-shrink: 0;
+}
+.column-24 {
+  width: 24rem;
+  flex-shrink: 0;
+}
+.column-25 {
+  width: 25rem;
+  flex-shrink: 0;
+}
+.column-26 {
+  width: 26rem;
+  flex-shrink: 0;
+}
+.column-27 {
+  width: 27rem;
+  flex-shrink: 0;
+}
+.column-28 {
+  width: 28rem;
+  flex-shrink: 0;
+}
+.column-half {
+  width: 0.5rem;
+}
+/*
+ * Copyright (c) 2014 Adobe Systems Incorporated. All rights reserved.
+ *  
+ * Permission is hereby granted, free of charge, to any person obtaining a
+ * copy of this software and associated documentation files (the "Software"), 
+ * to deal in the Software without restriction, including without limitation 
+ * the rights to use, copy, modify, merge, publish, distribute, sublicense, 
+ * and/or sell copies of the Software, and to permit persons to whom the 
+ * Software is furnished to do so, subject to the following conditions:
+ *  
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *  
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+ * DEALINGS IN THE SOFTWARE.
+ *
+ */
+@-webkit-keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes revealFromCenter {
+  0% {
+    width: 0%;
+    opacity: 0;
+  }
+  100% {
+    width: 80%;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes revealFromCenter {
+  0% {
+    width: 0%;
+    opacity: 0;
+  }
+  100% {
+    width: 80%;
+    opacity: 1;
+  }
+}
+/*
+ * Copyright (c) 2014 Adobe Systems Incorporated. All rights reserved.
+ *  
+ * Permission is hereby granted, free of charge, to any person obtaining a
+ * copy of this software and associated documentation files (the "Software"), 
+ * to deal in the Software without restriction, including without limitation 
+ * the rights to use, copy, modify, merge, publish, distribute, sublicense, 
+ * and/or sell copies of the Software, and to permit persons to whom the 
+ * Software is furnished to do so, subject to the following conditions:
+ *  
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *  
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+ * DEALINGS IN THE SOFTWARE.
+ *
+ */
+.label-medium {
+  display: flex;
+  justify-content: flex-end;
+  color: #65645f;
+  user-select: none;
+  -webkit-user-select: none;
+  font-size: 1.2rem;
+  letter-spacing: .035rem;
+}
+/*
+ * Copyright (c) 2014 Adobe Systems Incorporated. All rights reserved.
+ *  
+ * Permission is hereby granted, free of charge, to any person obtaining a
+ * copy of this software and associated documentation files (the "Software"), 
+ * to deal in the Software without restriction, including without limitation 
+ * the rights to use, copy, modify, merge, publish, distribute, sublicense, 
+ * and/or sell copies of the Software, and to permit persons to whom the 
+ * Software is furnished to do so, subject to the following conditions:
+ *  
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *  
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+ * DEALINGS IN THE SOFTWARE.
+ *
+ */
+/* Basic Colors */
+/* First Launch */
+/* Text */
+/* Align | Distribute */
+/* Transform */
+/* Style */
+/* Layers */
+/* Marquee */
+/* General Utilities */
+/*
+ * Copyright (c) 2014 Adobe Systems Incorporated. All rights reserved.
+ *  
+ * Permission is hereby granted, free of charge, to any person obtaining a
+ * copy of this software and associated documentation files (the "Software"), 
+ * to deal in the Software without restriction, including without limitation 
+ * the rights to use, copy, modify, merge, publish, distribute, sublicense, 
+ * and/or sell copies of the Software, and to permit persons to whom the 
+ * Software is furnished to do so, subject to the following conditions:
+ *  
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *  
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+ * DEALINGS IN THE SOFTWARE.
+ *
+ */
+.compact-stats {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 5rem;
+  width: 14rem;
+  flex-shrink: 0;
+}
+.compact-stats .drop-down input {
+  font-size: 1.2rem;
+  outline: none;
+  width: 7rem;
+}
+.compact-stats .number-input {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  height: 1.6rem;
+}
+.compact-stats__header input {
+  font-size: 1.4rem;
+  height: 1.9rem;
+}
+.compact-stats__header input:hover {
+  border: 1px solid #22bdf9;
+}
+.compact-stats__header input:focus {
+  background: #f7f6ee;
+  color: #34332f;
+}
+.compact-stats__body {
+  padding-top: 0.5rem;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  flex-direction: row;
+  min-width: 10rem;
+}
+.compact-stats__body__column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.compact-stats__body__column .label-medium {
+  padding-bottom: 0.2rem;
+  justify-content: flex-start;
+  text-indent: 2px;
+}
+/*
+ * Copyright (c) 2014 Adobe Systems Incorporated. All rights reserved.
+ *  
+ * Permission is hereby granted, free of charge, to any person obtaining a
+ * copy of this software and associated documentation files (the "Software"), 
+ * to deal in the Software without restriction, including without limitation 
+ * the rights to use, copy, modify, merge, publish, distribute, sublicense, 
+ * and/or sell copies of the Software, and to permit persons to whom the 
+ * Software is furnished to do so, subject to the following conditions:
+ *  
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *  
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+ * DEALINGS IN THE SOFTWARE.
+ *
+ */
+.drop-down input {
+  font-size: 1.4rem;
+  outline: none;
+}
+.drop-down input:focus {
+  background: url(../img/ico-drop-down-black.svg) no-repeat right #f7f6ee;
+  background-size: 1rem;
+  color: #34332f;
+}
+.drop-down input:focus:hover {
+  background: url(../img/ico-drop-down-highlight.svg) no-repeat right #f7f6ee;
+  background-size: 1rem;
+  border: 1px solid #22bdf9;
+}
+.drop-down {
+  background: url(../img/ico-drop-down-black.svg) no-repeat right;
+  background-size: 1rem;
+  border-bottom: 1px solid rgba(81, 80, 76, 0.6);
+}
+.drop-down:hover {
+  background: url(../img/ico-drop-down-highlight.svg) no-repeat right;
+  background-size: 1rem;
+  border-bottom: 1px solid #22bdf9;
+}
+/*
+ * Copyright (c) 2014 Adobe Systems Incorporated. All rights reserved.
+ *  
+ * Permission is hereby granted, free of charge, to any person obtaining a
+ * copy of this software and associated documentation files (the "Software"), 
+ * to deal in the Software without restriction, including without limitation 
+ * the rights to use, copy, modify, merge, publish, distribute, sublicense, 
+ * and/or sell copies of the Software, and to permit persons to whom the 
+ * Software is furnished to do so, subject to the following conditions:
+ *  
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *  
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+ * DEALINGS IN THE SOFTWARE.
+ *
+ */
+.document-controls__previous {
+  background: url("../img/ico-previous-arrow-white.svg") no-repeat center;
+  background-size: .8rem;
+}
+.document-controls__next {
+  background: url("../img/ico-next-arrow-white.svg") no-repeat center;
+  background-size: .8rem;
+}
+.toolbar-button,
+.toolbar__backToPs.button-simple {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.toolbar-button svg,
+.toolbar__backToPs.button-simple svg {
+  box-sizing: content-box;
+  width: 1.6rem;
+  height: 1.6rem;
+  padding-bottom: 0.2rem;
+  border-bottom: 1px solid transparent;
+  fill: #f7f6ee;
+  stroke: #f7f6ee;
+  color: #bcbcb5;
+}
+.tool-selected svg {
+  border-bottom: 1px solid #f7f6ee;
+}
+.toolbar__backToPs.button-simple {
+  position: absolute;
+  bottom: 2rem;
+  width: 5rem;
+}
+.button-generator {
+  background: url(../img/ico-generator-white.svg) no-repeat;
+  background-size: 2rem;
+  background-position-x: 1rem;
+  background-position-y: 0.5rem;
+}
+.pop-over-header .button-generator {
+  background: url(../img/ico-generator-black.svg) no-repeat;
+  background-size: 2rem;
+  background-position-x: 1rem;
+  background-position-y: 0.5rem;
+}
+#mode-grid {
+  background: url("../img/ico-mode-grid-black.svg") no-repeat;
+  background-size: 2rem;
+}
+#mode-divide {
+  background: url("../img/ico-mode-divide-black.svg") no-repeat;
+  background-size: 2rem;
+}
+#mode-inset {
+  background: url("../img/ico-mode-inset-black.svg") no-repeat;
+  background-size: 2rem;
+}
+.button-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button-toggle svg {
+  width: 1.3rem;
+  height: 1.3rem;
+  fill: #f7f6ee;
+  stroke: #f7f6ee;
+  color: #bcbcb5;
+}
+.button-plus.button-simple {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.button-plus.button-simple svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  stroke: #51504c;
+}
+.face .button-toggle svg {
+  display: none;
+}
+.face .button-toggle[data-selected="true"] svg {
+  display: block;
+  fill: #f7f6ee;
+  stroke: #f7f6ee;
+}
+.face:hover .button-toggle:not([data-selected="true"]) {
+  opacity: 0.5;
+}
+.face:hover .button-toggle:not([data-selected="true"]) svg {
+  display: block;
+  fill: #f7f6ee;
+}
+.face [data-selected="true"] .button-toggle svg {
+  display: block;
+  fill: #34332f;
+  stroke: #34332f;
+}
+.face__select_immediate .button-toggle[data-selected="true"] svg,
+.face__select_immediate:hover .button-toggle:not([data-selected="true"]) svg {
+  fill: #34332f;
+  stroke: #34332f;
+  display: block;
+}
+.fill-list__fill .button-toggle svg,
+.stroke-list__stroke .button-toggle svg,
+.shadow-list__shadow .button-toggle svg {
+  display: none;
+}
+.fill-list__fill .button-toggle[data-selected="false"] svg,
+.stroke-list__stroke .button-toggle[data-selected="false"] svg,
+.shadow-list__shadow .button-toggle[data-selected="false"] svg {
+  display: block;
+  fill: #f7f6ee;
+  stroke: #f7f6ee;
+}
+.fill-list__fill:hover .button-toggle:not([data-selected="false"]),
+.stroke-list__stroke:hover .button-toggle:not([data-selected="false"]),
+.shadow-list__shadow:hover .button-toggle:not([data-selected="false"]) {
+  opacity: 0.5;
+}
+.fill-list__fill:hover .button-toggle:not([data-selected="false"]) svg,
+.stroke-list__stroke:hover .button-toggle:not([data-selected="false"]) svg,
+.shadow-list__shadow:hover .button-toggle:not([data-selected="false"]) svg {
+  display: block;
+  fill: #f7f6ee;
+  stroke: #f7f6ee;
+}
+.fill-list__fill .button-toggle[data-selected="true"] svg,
+.stroke-list__stroke .button-toggle[data-selected="true"] svg,
+.shadow-list__shadow .button-toggle[data-selected="true"] svg {
+  display: none;
+  fill: #34332f;
+  stroke: #34332f;
+  color: #bcbcb5;
+}
+/* STYLE ----------------------*/
+.button-combo:focus {
+  background: url(../img/ico-search-white.svg) no-repeat center;
+  background-position-x: .5rem;
+}
+.pop-over-header .button-combo:focus {
+  background: url(../img/ico-search-black.svg) no-repeat center;
+  background-position-x: .5rem;
+}
+/* PAGES ----------------------*/
+.face__kind {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.face__kind svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: #f7f6ee;
+  stroke: #f7f6ee;
+}
+.face__select_immediate .face__kind svg {
+  fill: #34332f;
+  stroke: #34332f;
+}
+.carousel__slide-button__next,
+.carousel__slide-button__prev {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousel__slide-button__next svg,
+.carousel__slide-button__prev svg {
+  width: 1rem;
+  height: 1rem;
+  fill: #34332f;
+  stroke: #34332f;
+}
+.carousel__slide-button__next:hover svg,
+.carousel__slide-button__prev:hover svg {
+  fill: #f7f6ee;
+  stroke: #f7f6ee;
+}
+/*
+ * Copyright (c) 2014 Adobe Systems Incorporated. All rights reserved.
+ *  
+ * Permission is hereby granted, free of charge, to any person obtaining a
+ * copy of this software and associated documentation files (the "Software"), 
+ * to deal in the Software without restriction, including without limitation 
+ * the rights to use, copy, modify, merge, publish, distribute, sublicense, 
+ * and/or sell copies of the Software, and to permit persons to whom the 
+ * Software is furnished to do so, subject to the following conditions:
+ *  
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *  
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+ * DEALINGS IN THE SOFTWARE.
+ *
+ */
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.button-simple {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.button-simple__disabled {
+  cursor: not-allowed;
+}
+.button-toggle__disabled {
+  cursor: not-allowed;
+}
+.button-toggle.column-1 {
+  width: 1rem;
+  height: 2rem;
+}
+.button-toggle.column-2 {
+  width: 2rem;
+  height: 2rem;
+}
+.button-toggle.column-3 {
+  width: 3rem;
+  height: 2rem;
+}
+.button-toggle.column-4 {
+  width: 4rem;
+  height: 2rem;
+}
+.button-toggle {
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  margin: 0;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+.smallButton {
+  width: 2rem;
+  height: 2rem;
+}
+.medButton {
+  width: 2rem;
+  height: 2rem;
+}
+.button-color {
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid rgba(188, 188, 181, 0.88);
+  border-radius: 3px;
+  background-color: purple;
+  padding: 0;
+  margin: 0;
+}
+.button-radio ul {
+  display: flex;
+  justify-content: center;
+}
+.button-radio li {
+  margin: 0 auto;
+  flex-grow: 1;
+}
+.button-radio li:last-child {
+  border: none;
+}
+.button-combo:focus {
+  cursor: text;
+  background: rgba(247, 246, 238, 0.3);
+}
+.button-radio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  flex-grow: 1;
+  height: 3rem;
+}
+.button-combo {
+  background: none;
+  color: #f7f6ee;
+  opacity: .66;
+  box-sizing: border-box !important;
+  height: 3rem;
+  text-align: center;
+  border: 1px solid !important;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.button-generator {
+  width: 2rem;
+  height: 2rem;
+  float: right;
+}
+.button-settings {
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.5rem;
+  color: #f7f6ee;
+  font-weight: 300;
+  opacity: .65;
+}
+.button-lorem-ipsum,
+.button-glyphs {
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #f7f6ee;
+  font-weight: 300;
+  opacity: .55;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button-lorem-ipsum svg,
+.button-glyphs svg {
+  width: 1.3rem;
+  height: 1.3rem;
+  fill: #f7f6ee;
+}
+.button-lorem-ipsum:hover,
+.button-settings:hover,
+.button-glyphs:hover {
+  opacity: .95;
+}
+.button-settings {
+  width: 2rem;
+  height: 2rem;
+}
+.button-cluster {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+}
+.ui-selectmenu-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-tool-options {
+  display: flex;
+  align-content: inherit;
+  justify-content: inherit;
+}
+.button-tool-options button {
+  padding: 0 1.5rem;
+}
+.button-tool-options button:last-child {
+  padding: 0 0 0 1.5rem;
+}
+/*
+ * Copyright (c) 2014 Adobe Systems Incorporated. All rights reserved.
+ *  
+ * Permission is hereby granted, free of charge, to any person obtaining a
+ * copy of this software and associated documentation files (the "Software"), 
+ * to deal in the Software without restriction, including without limitation 
+ * the rights to use, copy, modify, merge, publish, distribute, sublicense, 
+ * and/or sell copies of the Software, and to permit persons to whom the 
+ * Software is furnished to do so, subject to the following conditions:
+ *  
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *  
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+ * DEALINGS IN THE SOFTWARE.
+ *
+ */
+.spacer-1 {
+  width: 1px;
+}
+/*
+ * Copyright (c) 2014 Adobe Systems Incorporated. All rights reserved.
+ *  
+ * Permission is hereby granted, free of charge, to any person obtaining a
+ * copy of this software and associated documentation files (the "Software"), 
+ * to deal in the Software without restriction, including without limitation 
+ * the rights to use, copy, modify, merge, publish, distribute, sublicense, 
+ * and/or sell copies of the Software, and to permit persons to whom the 
+ * Software is furnished to do so, subject to the following conditions:
+ *  
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *  
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+ * DEALINGS IN THE SOFTWARE.
+ *
+ */
+.number-input {
+  font-size: 1.6rem;
+  color: #f7f6ee;
+}
+.number-input:hover {
+  border: 1px solid #22bdf9;
+}
+.number-input__dirty:focus,
+.number-input__clean:focus {
+  background: #f7f6ee;
+  color: #34332f;
+}
+/*
+ * Copyright (c) 2014 Adobe Systems Incorporated. All rights reserved.
+ *  
+ * Permission is hereby granted, free of charge, to any person obtaining a
+ * copy of this software and associated documentation files (the "Software"), 
+ * to deal in the Software without restriction, including without limitation 
+ * the rights to use, copy, modify, merge, publish, distribute, sublicense, 
+ * and/or sell copies of the Software, and to permit persons to whom the 
+ * Software is furnished to do so, subject to the following conditions:
+ *  
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *  
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+ * DEALINGS IN THE SOFTWARE.
+ *
+ *
+ * Portions of this code are adapted from react-simple-colorpicker
+ * https://github.com/WickyNilliams/react-simple-colorpicker
+ * 
+ * The MIT License (MIT)
+ * 
+ * Copyright (c) 2014 Nick Williams
+ * Copyright (c) 2014 George Czabania
+ * 
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ * 
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ * 
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ */
+.color-picker {
+  top: 0;
+  font-size: 100%;
+  justify-content: flex-end;
+  margin: 1rem 0 0 0;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 1rem 1rem 1rem;
+  color: #34332f;
+  overflow-y: auto;
+}
+.color-picker__type,
+.color-picker__fill,
+.color-picker__stroke,
+.color-picker__shadow {
+  right: 0;
+  width: 18rem;
+  height: 18rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.color-picker .drop-down {
+  font-size: 1.2rem;
+  outline: none;
+  width: 7rem;
+}
+.color-picker .drop-down input {
+  color: #34332f;
+  font-size: 1.2rem;
+}
+.color-picker__stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.color-picker__format {
+  height: 3rem;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  font-size: 1rem;
+}
+.color-picker__format .label-medium {
+  justify-content: flex-start;
+}
+.color-picker-map {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 13rem;
+  user-select: none;
+  overflow: hidden;
+}
+.color-picker-map.color-picker-map__active {
+  cursor: none;
+}
+.color-picker-map.color-picker-map__dark .color-picker-map__pointer {
+  border-color: #fff;
+}
+.color-picker-map.color-picker-map__light .color-picker-map__pointer {
+  border-color: #000;
+}
+.color-picker-map .color-picker-map__pointer {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  margin-left: -0.5rem;
+  margin-bottom: -0.5rem;
+  border-radius: 100%;
+  border: .25rem solid #000;
+}
+.color-picker-map .color-picker-map__background {
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.color-picker-map .color-picker-map__background:before,
+.color-picker-map .color-picker-map__background:after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.color-picker-map .color-picker-map__background:after {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #000000 100%);
+}
+.color-picker-map .color-picker-map__background:before {
+  background: linear-gradient(to right, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+}
+.color-picker-slider {
+  position: absolute;
+  user-select: none;
+}
+.color-picker-slider.color-picker-slider__vertical {
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 1rem;
+}
+.color-picker-slider.color-picker-slider__vertical .color-picker-slider__track,
+.color-picker-slider.color-picker-slider__vertical .color-picker-slider__track-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 0.6rem;
+  margin-left: -0.3rem;
+}
+.color-picker-slider.color-picker-slider__horizontal {
+  left: 0;
+  right: 0;
+  height: 1rem;
+}
+.color-picker-slider.color-picker-slider__horizontal .color-picker-slider__track,
+.color-picker-slider.color-picker-slider__horizontal .color-picker-slider__track-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 0.5rem;
+  margin-top: -0.3rem;
+}
+.color-picker-slider .color-picker-slider__track,
+.color-picker-slider .color-picker-slider__track-overlay {
+  border-radius: 0.3rem;
+  border: 1px solid #34332f;
+}
+.color-picker-slider .color-picker-slider__pointer {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  width: 1.2rem;
+  height: 1.2rem;
+  background: whitesmoke;
+  margin-left: -0.6rem;
+  margin-bottom: -0.6rem;
+  border-radius: 100%;
+  border: 1.5px solid #34332f;
+}
+@media (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 801px) and (max-device-width: 1280px) {
+  .color-picker-slider .color-picker-slider__pointer {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 1281px) and (max-device-width: 1440px) {
+  .color-picker-slider .color-picker-slider__pointer {
+    width: 11px;
+    height: 11px;
+    border-radius: 11px;
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 1441px) and (max-device-width: 1680px) {
+  .color-picker-slider .color-picker-slider__pointer {
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 1681px) and (max-device-width: 2560px) {
+  .color-picker-slider .color-picker-slider__pointer {
+    width: 13px;
+    height: 13px;
+    border-radius: 13px;
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 2561px) {
+  .color-picker-slider .color-picker-slider__pointer {
+    width: 14px;
+    height: 14px;
+    border-radius: 14px;
+  }
+}
+.color-picker__hue-slider {
+  position: absolute;
+  left: 1rem;
+  right: 1rem;
+  top: 14rem;
+}
+.color-picker__hue-slider .color-picker-slider__horizontal > .color-picker-slider__track {
+  background: linear-gradient(to left, #ff0000 0%, #ff0099 10%, #cd00ff 20%, #3200ff 30%, #0066ff 40%, #00fffd 50%, #00ff66 60%, #35ff00 70%, #cdff00 80%, #ff9900 90%, #ff0000 100%);
+}
+.color-picker__hue-slider .color-picker-slider__vertical > .color-picker-slider__track {
+  background: linear-gradient(to bottom, #ff0000 0%, #ff0099 10%, #cd00ff 20%, #3200ff 30%, #0066ff 40%, #00fffd 50%, #00ff66 60%, #35ff00 70%, #cdff00 80%, #ff9900 90%, #ff0000 100%);
+}
+.color-picker__transparency-slider {
+  position: absolute;
+  left: 1rem;
+  right: 1rem;
+  top: 16rem;
+}
+.color-picker__transparency-slider .color-picker-slider__horizontal > .color-picker-slider__track,
+.color-picker__transparency-slider .color-picker-slider__vertical > .color-picker-slider__track {
+  background-image: -webkit-linear-gradient(45deg, rgba(52, 51, 47, 0.1) 25%, transparent 25%, transparent 75%, rgba(52, 51, 47, 0.1) 75%, rgba(52, 51, 47, 0.1) 100%), -webkit-linear-gradient(45deg, rgba(52, 51, 47, 0.1) 25%, transparent 25%, transparent 75%, rgba(52, 51, 47, 0.1) 75%, rgba(52, 51, 47, 0.1) 100%);
+  background-size: 4px 4px;
+  background-position: 0 0, 2px 2px;
+}
+/*
+ * Copyright (c) 2014 Adobe Systems Incorporated. All rights reserved.
+ *  
+ * Permission is hereby granted, free of charge, to any person obtaining a
+ * copy of this software and associated documentation files (the "Software"), 
+ * to deal in the Software without restriction, including without limitation 
+ * the rights to use, copy, modify, merge, publish, distribute, sublicense, 
+ * and/or sell copies of the Software, and to permit persons to whom the 
+ * Software is furnished to do so, subject to the following conditions:
+ *  
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *  
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+ * DEALINGS IN THE SOFTWARE.
+ *
+ */
+.color-input {
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+}
+.color-input .stroke__preview {
+  width: 100%;
+  background-color: #22bdf9;
+}
+.color-input .type__preview {
+  line-height: normal;
+}
+.color-input__swatch__background {
+  background-color: #f7f6ee;
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 0;
+  border-radius: 0.2rem;
+  background-image: -webkit-linear-gradient(45deg, rgba(52, 51, 47, 0.1) 25%, transparent 25%, transparent 75%, rgba(52, 51, 47, 0.1) 75%, rgba(52, 51, 47, 0.1) 100%), -webkit-linear-gradient(45deg, rgba(52, 51, 47, 0.1) 25%, transparent 25%, transparent 75%, rgba(52, 51, 47, 0.1) 75%, rgba(52, 51, 47, 0.1) 100%);
+  background-size: 10px 10px;
+  background-position: 0 0, 5px 5px;
+  overflow: hidden;
+}
+.color-input__swatch__color {
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  flex-grow: 0;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  overflow: hidden;
+}
+.color-widget {
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+}
+.color-button-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.color-input__invalid-color .color-input__swatch__color {
+  background: rgba(0, 0, 0, 0);
+}
+.color-input__mixed .color-input__swatch__color {
+  background: rgba(0, 0, 0, 0);
+  background-size: 10px 10px;
+  background-image: repeating-linear-gradient(180deg, #96958f, #96958f 1px, transparent 1px, transparent 3.5px);
+}
+/*
+ * Copyright (c) 2014 Adobe Systems Incorporated. All rights reserved.
+ *  
+ * Permission is hereby granted, free of charge, to any person obtaining a
+ * copy of this software and associated documentation files (the "Software"), 
+ * to deal in the Software without restriction, including without limitation 
+ * the rights to use, copy, modify, merge, publish, distribute, sublicense, 
+ * and/or sell copies of the Software, and to permit persons to whom the 
+ * Software is furnished to do so, subject to the following conditions:
+ *  
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *  
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+ * DEALINGS IN THE SOFTWARE.
+ *
+ */
+.dialog__center {
+  position: fixed;
+  margin-left: -16.5rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media (-webkit-min-device-pixel-ratio: 1) and (min-device-width: 801px) and (max-device-width: 1440px) and (max-width: 960px) {
+  .dialog__center {
+    margin-left: 0;
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 1) and (min-device-width: 1441px) and (max-width: 1200px) {
+  .dialog__center {
+    margin-left: 0;
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 801px) and (max-device-width: 1280px) and (max-width: 960px) {
+  .dialog__center {
+    margin-left: 0;
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 1281px) and (max-device-width: 1440px) and (max-width: 1080px) {
+  .dialog__center {
+    margin-left: 0;
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 1441px) and (max-device-width: 1680px) and (max-width: 1200px) {
+  .dialog__center {
+    margin-left: 0;
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 1681px) and (max-device-width: 2560px) and (max-width: 1320px) {
+  .dialog__center {
+    margin-left: 0;
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 2561px) and (max-width: 1440px) {
+  .dialog__center {
+    margin-left: 0;
+  }
+}
+dialog {
+  left: inherit;
+  z-index: 10000;
+  position: absolute;
+  font-size: 100%;
+  display: flex;
+  justify-content: flex-start;
+  border: none;
+  width: 26rem;
+  max-height: 25rem;
+  height: auto;
+  border-radius: 0.4rem;
+  background: #f7f6ee;
+  box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.44), 0 -2px 0 0 #34332f;
+  padding: 0;
+  margin: 1rem;
+  overflow: hidden;
+}
+dialog:not([open]) {
+  display: none;
+}
+dialog::backdrop {
+  position: inherit;
+  top: inherit;
+  right: inherit;
+  bottom: inherit;
+  left: inherit;
+}
+.dialog-blendmodes {
+  width: 10.4rem;
+  right: 3.2rem;
+  margin-top: 2px;
+}
+.dialog-stroke-alignment {
+  width: 8.6rem;
+  right: 0;
+  margin-top: 2px;
+  height: auto;
+}
+.dialog-type-typefaces,
+.dialog-type-weights {
+  width: 18rem;
+  right: 0.6rem;
+  margin-top: 2px;
+}
+.dialog-type-typefaces {
+  overflow-y: scroll;
+}
+.dialog-type-weights {
+  overflow-y: scroll;
+}
+.select {
+  width: 100%;
+}
+/*
+ * Copyright (c) 2014 Adobe Systems Incorporated. All rights reserved.
+ *  
+ * Permission is hereby granted, free of charge, to any person obtaining a
+ * copy of this software and associated documentation files (the "Software"), 
+ * to deal in the Software without restriction, including without limitation 
+ * the rights to use, copy, modify, merge, publish, distribute, sublicense, 
+ * and/or sell copies of the Software, and to permit persons to whom the 
+ * Software is furnished to do so, subject to the following conditions:
+ *  
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *  
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+ * DEALINGS IN THE SOFTWARE.
+ *
+ */
+/* READ THIS FIRST
+
+All class names in this section come from Jquery, so don't get bent out of
+shape if you hate the naming conventions. It's out of our hands for the moment.
+Class notes come from http://api.jqueryui.com/theming/css-framework/
+
+*/
+.ui-helper-hidden-accessible {
+  display: none;
+}
+/*
+Class to be applied to the outer container of all widgets. Applies font-family
+and font size to widgets.
+*/
+.ui-widget:focus {
+  color: red;
+}
+.ui-autocomplete {
+  border-radius: 0.4rem;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  width: 26rem;
+  display: block;
+  background: rgba(52, 51, 47, 0.5);
+}
+.ui-menu-item:first-child {
+  padding: 0 0 0.4rem 0;
+}
+.ui-menu-item {
+  position: relative;
+  margin: 0;
+  padding: 0.4rem 0;
+  background: rgba(247, 246, 238, 0.9);
+  color: #34332f;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.ui-menu-item:focus {
+  color: purple;
+}
+.ui-autocomplete li:hover,
+.ui-autocomplete li.activeTypeface {
+  background: rgba(52, 51, 47, 0);
+  color: #f7f6ee;
+  font-weight: 600;
+  border: 1px solid #f7f6ee;
+  text-rendering: geometricPrecision;
+}
+/*
+ * Copyright (c) 2014 Adobe Systems Incorporated. All rights reserved.
+ *  
+ * Permission is hereby granted, free of charge, to any person obtaining a
+ * copy of this software and associated documentation files (the "Software"), 
+ * to deal in the Software without restriction, including without limitation 
+ * the rights to use, copy, modify, merge, publish, distribute, sublicense, 
+ * and/or sell copies of the Software, and to permit persons to whom the 
+ * Software is furnished to do so, subject to the following conditions:
+ *  
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *  
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+ * DEALINGS IN THE SOFTWARE.
+ *
+ */
+/* Clearing the default style */
+::-webkit-scrollbar {
+  display: none;
+}
+/* Bar */
+.section-container::-webkit-scrollbar {
+  background: transparent;
+  width: .75rem;
+  display: block;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f7f6ee;
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background: #f7f6ee;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: none;
+  background: rgba(0, 0, 0, 0.2);
+}
+/*
+ * Copyright (c) 2014 Adobe Systems Incorporated. All rights reserved.
+ *  
+ * Permission is hereby granted, free of charge, to any person obtaining a
+ * copy of this software and associated documentation files (the "Software"), 
+ * to deal in the Software without restriction, including without limitation 
+ * the rights to use, copy, modify, merge, publish, distribute, sublicense, 
+ * and/or sell copies of the Software, and to permit persons to whom the 
+ * Software is furnished to do so, subject to the following conditions:
+ *  
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *  
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+ * DEALINGS IN THE SOFTWARE.
+ *
+ */
+.range {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+input[type=range] {
+  -webkit-appearance: none;
+  /* Hides the slider so that custom slider can be made */
+  width: 100%;
+}
+input[type=range]:hover {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  bottom: 1px;
+  border: none;
+  height: 1px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-clip: padding-box;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  background-color: #82817b;
+}
+input[type="range"]:hover::-webkit-slider-runnable-track {
+  background: #f7f6ee;
+}
+input[type="range"]::-webkit-slider-thumb {
+  width: 1rem;
+  height: 1rem;
+  background-color: #34332f;
+  border: 1px solid #f7f6ee;
+  border-radius: 100%;
+  box-sizing: content-box;
+  box-shadow: 0 0 0 0.5rem #34332f;
+  -webkit-appearance: none;
+  font-size: 100%;
+  margin-top: -0.5rem;
+}
+.range input[type="range"]:hover::-webkit-slider-thumb {
+  border: 1px solid #22bdf9;
+}
+/*
+ * Copyright (c) 2014 Adobe Systems Incorporated. All rights reserved.
+ *  
+ * Permission is hereby granted, free of charge, to any person obtaining a
+ * copy of this software and associated documentation files (the "Software"), 
+ * to deal in the Software without restriction, including without limitation 
+ * the rights to use, copy, modify, merge, publish, distribute, sublicense, 
+ * and/or sell copies of the Software, and to permit persons to whom the 
+ * Software is furnished to do so, subject to the following conditions:
+ *  
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *  
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+ * DEALINGS IN THE SOFTWARE.
+ *
+ */
+.section-header,
+.sub-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 2.5rem;
+  -webkit-user-select: none;
+  cursor: default;
+  overflow: hidden;
+  flex-shrink: 0;
+  height: 5rem;
+}
+.sub-header {
+  background: none;
+  height: 4rem;
+}
+.sub-header h3 {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: #65645f;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+.sub-header-rule {
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #51504c;
+  background: none;
+  flex-shrink: 1;
+  -webkit-animation: revealFromCenter 800ms;
+}
+.section-header {
+  flex-shrink: 0;
+  flex-grow: 0;
+  color: #afaea7;
+  display: flex;
+  align-items: initial;
+}
+.section-title {
+  border-top: 1px solid #afaea7;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: .8;
+}
+.artboard-presets .section-header,
+.recent-files .section-header {
+  margin-bottom: -0.5rem;
+}
+.pages .section-title {
+  border-bottom: 1px solid #787772;
+}
+.recent-files .section-title {
+  border-top: none;
+}
+/*
+ * Copyright (c) 2014 Adobe Systems Incorporated. All rights reserved.
+ *  
+ * Permission is hereby granted, free of charge, to any person obtaining a
+ * copy of this software and associated documentation files (the "Software"), 
+ * to deal in the Software without restriction, including without limitation 
+ * the rights to use, copy, modify, merge, publish, distribute, sublicense, 
+ * and/or sell copies of the Software, and to permit persons to whom the 
+ * Software is furnished to do so, subject to the following conditions:
+ *  
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *  
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+ * DEALINGS IN THE SOFTWARE.
+ *
+ */
+.input-uber {
+  font-size: 1.2rem;
+}
+/*
+ * Copyright (c) 2014 Adobe Systems Incorporated. All rights reserved.
+ *  
+ * Permission is hereby granted, free of charge, to any person obtaining a
+ * copy of this software and associated documentation files (the "Software"), 
+ * to deal in the Software without restriction, including without limitation 
+ * the rights to use, copy, modify, merge, publish, distribute, sublicense, 
+ * and/or sell copies of the Software, and to permit persons to whom the 
+ * Software is furnished to do so, subject to the following conditions:
+ *  
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *  
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+ * DEALINGS IN THE SOFTWARE.
+ *
+ */
+.select__option {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+}
+.select__option__selected {
+  color: #f7f6ee;
+  background-color: #34332f;
+}
+/*
+ * Copyright (c) 2014 Adobe Systems Incorporated. All rights reserved.
+ *  
+ * Permission is hereby granted, free of charge, to any person obtaining a
+ * copy of this software and associated documentation files (the "Software"), 
+ * to deal in the Software without restriction, including without limitation 
+ * the rights to use, copy, modify, merge, publish, distribute, sublicense, 
+ * and/or sell copies of the Software, and to permit persons to whom the 
+ * Software is furnished to do so, subject to the following conditions:
+ *  
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *  
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+ * DEALINGS IN THE SOFTWARE.
+ *
+ */
+.split-button__item__selected {
+  opacity: 0.95 !important;
+}
+.split-button__item__disabled {
+  opacity: 0.20 !important;
+  cursor: not-allowed;
+}
+.split-button__item:hover {
+  opacity: 1;
+}
+.split-button__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.55;
+}
+.split-button__item svg {
+  box-sizing: content-box;
+  width: 1.6rem;
+  height: 1.6rem;
+  fill: #f7f6ee;
+  stroke: #f7f6ee;
+  color: #bcbcb5;
+}
+.vector-operations .split-button__item svg {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+/*
+ * Copyright (c) 2014 Adobe Systems Incorporated. All rights reserved.
+ *  
+ * Permission is hereby granted, free of charge, to any person obtaining a
+ * copy of this software and associated documentation files (the "Software"), 
+ * to deal in the Software without restriction, including without limitation 
+ * the rights to use, copy, modify, merge, publish, distribute, sublicense, 
+ * and/or sell copies of the Software, and to permit persons to whom the 
+ * Software is furnished to do so, subject to the following conditions:
+ *  
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *  
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+ * DEALINGS IN THE SOFTWARE.
+ *
+ */
+.link-list__list {
+  width: 100%;
+}
+.link-list__item {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 0.3rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-radius: 0.5rem;
+  height: 2.7rem;
+  line-height: 2.7rem;
+  font-size: 1.4rem;
+}
+.link-list__item:hover {
+  color: #f7f6ee;
+  background-color: #484848;
+}
+.link-list__item.overflow-ellipsis {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/*
+ * Copyright (c) 2014 Adobe Systems Incorporated. All rights reserved.
+ *  
+ * Permission is hereby granted, free of charge, to any person obtaining a
+ * copy of this software and associated documentation files (the "Software"), 
+ * to deal in the Software without restriction, including without limitation 
+ * the rights to use, copy, modify, merge, publish, distribute, sublicense, 
+ * and/or sell copies of the Software, and to permit persons to whom the 
+ * Software is furnished to do so, subject to the following conditions:
+ *  
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *  
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+ * DEALINGS IN THE SOFTWARE.
+ *
+ */
+.face {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 2.7rem;
+  position: relative;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 0.3rem;
+  padding-left: 0.6rem;
+  padding-right: 0.4rem;
+  border-radius: 0.5rem;
+}
+.face__separator {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  height: 3rem;
+  padding-left: 0.5rem;
+  flex-grow: 10;
+  flex-shrink: 100;
+  box-sizing: border-box;
+}
+.face__leash {
+  height: 100%;
+  align-tems: stretch;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+.face__leash.column-half {
+  width: 1.3rem;
+}
+input[type="text"].face__name {
+  font-size: 1.25rem;
+}
+.face__name {
+  flex-grow: 1;
+  flex-shrink: 100;
+  -webkit-user-select: none;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.face__name[disabled] {
+  cursor: default;
+}
+@media (resolution: 1dppx) {
+  .face__name {
+    margin-top: -1px;
+  }
+}
+.face:hover {
+  color: #f7f6ee;
+  background-color: #484848;
+  z-index: 99;
+}
+.face__name:focus {
+  background-color: #f7f6ee;
+  color: #f7f6ee;
+  -webkit-user-select: text;
+}
+.face__select_immediate .face__name {
+  color: #34332f;
+}
+.face__select_immediate:hover .face__name {
+  color: #f7f6ee;
+}
+.face__select_immediate,
+.face__select_immediate:hover {
+  background-color: #22bdf9;
+}
+.face__select_immediate .face__name,
+.face__select_immediate:hover .face__name {
+  color: #34332f;
+}
+.face__group_start {
+  margin-bottom: 0;
+}
+.face__group_start + ul {
+  padding-top: 0.3rem;
+}
+.face__select_immediate + ul {
+  position: relative;
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+.face__select_immediate + ul:after {
+  background-color: #414141;
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  content: " ";
+  left: 0;
+  height: 100%;
+  margin: 0 2rem 0 2rem;
+  position: absolute;
+  top: calc(-0.5rem);
+  width: calc(24rem);
+  z-index: -1;
+}
+.face__select_immediate + ul li:before {
+  background-color: #414141;
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  content: " ";
+  left: 0;
+  height: 100%;
+  margin: 0 0 0 2rem;
+  position: absolute;
+  top: 0;
+  width: calc(24rem);
+  z-index: -1;
+}
+.face__hover {
+  background-color: red;
+}
+.face__drag_target {
+  background-color: none;
+  opacity: 0.5;
+}
+.face__drop_target_above {
+  border-top: 0.5rem inset #22bdf9;
+  border-radius: 0;
+}
+.face__drop_target_below {
+  border-bottom: 0.5rem inset #22bdf9;
+  border-radius: 0;
+}
+.face__group_collapsed {
+  height: 0;
+  visibility: hidden;
+  border-bottom: none;
+}
+.face__group_expanded {
+  visibility: visible;
+}
+/*
+ * Copyright (c) 2014 Adobe Systems Incorporated. All rights reserved.
+ *  
+ * Permission is hereby granted, free of charge, to any person obtaining a
+ * copy of this software and associated documentation files (the "Software"), 
+ * to deal in the Software without restriction, including without limitation 
+ * the rights to use, copy, modify, merge, publish, distribute, sublicense, 
+ * and/or sell copies of the Software, and to permit persons to whom the 
+ * Software is furnished to do so, subject to the following conditions:
+ *  
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *  
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+ * DEALINGS IN THE SOFTWARE.
+ *
+ */
+.pages .section-container__collapsed {
+  display: none;
+}
+/* 
+*   This selector also appears in properties.less
+*   Leaving this particular rule here because it goes with the layer list below
+*   - EH
+*/
+.pages .section-container {
+  margin-top: 0.3rem;
+}
+.layer-list {
+  width: 28rem;
+  padding-top: 1px;
+}
+.pages .text-fancy {
+  font-style: italic;
+  letter-spacing: .2rem;
+}
+/*
+ * Copyright (c) 2014 Adobe Systems Incorporated. All rights reserved.
+ *  
+ * Permission is hereby granted, free of charge, to any person obtaining a
+ * copy of this software and associated documentation files (the "Software"), 
+ * to deal in the Software without restriction, including without limitation 
+ * the rights to use, copy, modify, merge, publish, distribute, sublicense, 
+ * and/or sell copies of the Software, and to permit persons to whom the 
+ * Software is furnished to do so, subject to the following conditions:
+ *  
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *  
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+ * DEALINGS IN THE SOFTWARE.
+ *
+ */
+.shadow__preview {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.shadow__square {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #dad9d1;
+}
+.shadow-list__shadow__disabled {
+  color: #65645f;
+}
+/*
+ * Copyright (c) 2014 Adobe Systems Incorporated. All rights reserved.
+ *  
+ * Permission is hereby granted, free of charge, to any person obtaining a
+ * copy of this software and associated documentation files (the "Software"), 
+ * to deal in the Software without restriction, including without limitation 
+ * the rights to use, copy, modify, merge, publish, distribute, sublicense, 
+ * and/or sell copies of the Software, and to permit persons to whom the 
+ * Software is furnished to do so, subject to the following conditions:
+ *  
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *  
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+ * DEALINGS IN THE SOFTWARE.
+ *
+ */
+.fill-list__fill__disabled {
+  color: #65645f;
+}
+/*
+ * Copyright (c) 2014 Adobe Systems Incorporated. All rights reserved.
+ *  
+ * Permission is hereby granted, free of charge, to any person obtaining a
+ * copy of this software and associated documentation files (the "Software"), 
+ * to deal in the Software without restriction, including without limitation 
+ * the rights to use, copy, modify, merge, publish, distribute, sublicense, 
+ * and/or sell copies of the Software, and to permit persons to whom the 
+ * Software is furnished to do so, subject to the following conditions:
+ *  
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *  
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+ * DEALINGS IN THE SOFTWARE.
+ *
+ */
+.pop-over.glyphs ul {
+  list-style-type: none;
+}
+.pop-over.glyphs li {
+  display: block;
+}
+.pop-over.glyphs .glyph-container {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 40px;
+  display: block;
+  border-left: 1px solid grey;
+  border-bottom: 1px solid grey;
+  float: left;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  vertical-align: bottom;
+  -webkit-user-select: none;
+  cursor: pointer;
+}
+.pop-over.glyphs li:nth-child(1) .glyph-container,
+.pop-over.glyphs li:nth-child(2) .glyph-container,
+.pop-over.glyphs li:nth-child(3) .glyph-container,
+.pop-over.glyphs li:nth-child(4) .glyph-container {
+  border-top: 1px solid grey;
+}
+.pop-over.glyphs li:last-child .glyph-container {
+  border-right: 1px solid grey;
+}
+.pop-over.glyphs li:nth-child(4n+4) .glyph-container {
+  border-right: 1px solid grey;
+}
+.pop-over.glyphs .glyph-container:hover {
+  background-color: #ffffff;
+}
+.pop-over.glyphs .glyph-container:active {
+  background-color: #34332f;
+  color: #f7f6ee;
+}
+.pop-over.glyphs .glyph {
+  line-height: 49px;
+  font-size: 42px;
+}
+/*
+ * Copyright (c) 2014 Adobe Systems Incorporated. All rights reserved.
+ *  
+ * Permission is hereby granted, free of charge, to any person obtaining a
+ * copy of this software and associated documentation files (the "Software"), 
+ * to deal in the Software without restriction, including without limitation 
+ * the rights to use, copy, modify, merge, publish, distribute, sublicense, 
+ * and/or sell copies of the Software, and to permit persons to whom the 
+ * Software is furnished to do so, subject to the following conditions:
+ *  
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *  
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+ * DEALINGS IN THE SOFTWARE.
+ *
+ */
+.pop-over.lorem-ipsum {
+  display: block;
+  height: 100%;
+}
+.lorem-ipsum-container textarea {
+  color: #34332f;
+  height: 100%;
+}
+/*
+ * Copyright (c) 2014 Adobe Systems Incorporated. All rights reserved.
+ *  
+ * Permission is hereby granted, free of charge, to any person obtaining a
+ * copy of this software and associated documentation files (the "Software"), 
+ * to deal in the Software without restriction, including without limitation 
+ * the rights to use, copy, modify, merge, publish, distribute, sublicense, 
+ * and/or sell copies of the Software, and to permit persons to whom the 
+ * Software is furnished to do so, subject to the following conditions:
+ *  
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *  
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+ * DEALINGS IN THE SOFTWARE.
+ *
+ */
+.stroke-list__stroke__disabled {
+  color: #65645f;
+}
+/*
+ * Copyright (c) 2014 Adobe Systems Incorporated. All rights reserved.
+ *  
+ * Permission is hereby granted, free of charge, to any person obtaining a
+ * copy of this software and associated documentation files (the "Software"), 
+ * to deal in the Software without restriction, including without limitation 
+ * the rights to use, copy, modify, merge, publish, distribute, sublicense, 
+ * and/or sell copies of the Software, and to permit persons to whom the 
+ * Software is furnished to do so, subject to the following conditions:
+ *  
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *  
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+ * DEALINGS IN THE SOFTWARE.
+ *
+ */
+.style {
+  min-height: 3rem;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.style .section-container {
+  flex-basis: 41.5rem;
+}
+.style .section-container__collapsed {
+  display: none;
+}
+.style.section.section__sibling-collapsed {
+  flex-grow: 999999;
+}
+.fill-list__fill .button-toggle,
+.stroke-list__stroke .button-toggle,
+.shadow-list__shadow .button-toggle {
+  height: 5rem;
+  padding-top: 0.2rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+/*
+ * Copyright (c) 2014 Adobe Systems Incorporated. All rights reserved.
+ *  
+ * Permission is hereby granted, free of charge, to any person obtaining a
+ * copy of this software and associated documentation files (the "Software"), 
+ * to deal in the Software without restriction, including without limitation 
+ * the rights to use, copy, modify, merge, publish, distribute, sublicense, 
+ * and/or sell copies of the Software, and to permit persons to whom the 
+ * Software is furnished to do so, subject to the following conditions:
+ *  
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *  
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+ * DEALINGS IN THE SOFTWARE.
+ *
+ */
+.type .formline {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+/*
+ * Copyright (c) 2014 Adobe Systems Incorporated. All rights reserved.
+ *  
+ * Permission is hereby granted, free of charge, to any person obtaining a
+ * copy of this software and associated documentation files (the "Software"), 
+ * to deal in the Software without restriction, including without limitation 
+ * the rights to use, copy, modify, merge, publish, distribute, sublicense, 
+ * and/or sell copies of the Software, and to permit persons to whom the 
+ * Software is furnished to do so, subject to the following conditions:
+ *  
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *  
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+ * DEALINGS IN THE SOFTWARE.
+ *
+ */
+.header-alignment {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #51504c;
+  width: 100%;
+  height: 5rem;
+}
+.button-align-distribute {
+  box-sizing: border-box;
+  border: none;
+  width: 2rem;
+  height: 2rem;
+  opacity: 0.65;
+}
+/*
+ * Copyright (c) 2014 Adobe Systems Incorporated. All rights reserved.
+ *  
+ * Permission is hereby granted, free of charge, to any person obtaining a
+ * copy of this software and associated documentation files (the "Software"), 
+ * to deal in the Software without restriction, including without limitation 
+ * the rights to use, copy, modify, merge, publish, distribute, sublicense, 
+ * and/or sell copies of the Software, and to permit persons to whom the 
+ * Software is furnished to do so, subject to the following conditions:
+ *  
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *  
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+ * DEALINGS IN THE SOFTWARE.
+ *
+ */
+.layer-bounds {
+  fill-opacity: 0.0;
+  stroke-width: 0;
+  stroke: #22bdf9;
+  stroke-opacity: 0.0;
+}
+.superselect-marquee {
+  fill: #2d8ceb;
+  fill-opacity: 0.2;
+  stroke: #2d8ceb;
+  shape-rendering: crispEdges;
+}
+.marquee-hover {
+  stroke: #2d8ceb;
+  stroke-width: 0.5;
+  stroke-opacity: 1.0;
+  shape-rendering: crispEdges;
+}
+.layer-bounds-hover {
+  stroke-opacity: 1.5;
+}
+.selection-bounds {
+  stroke-opacity: 0.7;
+  fill-opacity: 0.0;
+  stroke: #22bdf9;
+}
+.selection-parent-bounds {
+  stroke-opacity: 0.5;
+  fill-opacity: 0.0;
+  stroke: #22bdf9;
+}
+.anchor-points {
+  fill-opacity: 1.0;
+  fill: white;
+  stroke: #22bdf9;
+}
+.anchor-hover {
+  stroke: #22bdf9;
+}
+.anchor-dragging {
+  fill-opacity: 1.0;
+  fill: #22bdf9;
+}
+.rotate-areas {
+  cursor: alias;
+  fill-opacity: 0.0;
+  fill: #22bdf9;
+}
+.rotate-area-hover {
+  fill-opacity: 0.5;
+}
+.rotation-compass-horizon {
+  stroke: #bcbcb5;
+}
+.rotation-compass-circle {
+  stroke: #22bdf9;
+  fill-opacity: 0.0;
+}
+.rotation-compass-arc {
+  stroke: #22bdf9;
+  fill: #22bdf9;
+  fill-opacity: 0.5;
+}
+.rotation-compass-center {
+  fill-opacity: 1.0;
+  fill: #f7f6ee;
+  stroke: #22bdf9;
+}
+.rotation-compass-rotate-line {
+  stroke: #22bdf9;
+}
+.artboard-adder {
+  fill-opacity: 0.0;
+  stroke-opacity: 1.0;
+  stroke: #22bdf9;
+}
+/*
+ * Copyright (c) 2014 Adobe Systems Incorporated. All rights reserved.
+ *  
+ * Permission is hereby granted, free of charge, to any person obtaining a
+ * copy of this software and associated documentation files (the "Software"), 
+ * to deal in the Software without restriction, including without limitation 
+ * the rights to use, copy, modify, merge, publish, distribute, sublicense, 
+ * and/or sell copies of the Software, and to permit persons to whom the 
+ * Software is furnished to do so, subject to the following conditions:
+ *  
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *  
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+ * DEALINGS IN THE SOFTWARE.
+ *
+ */
+.first-launch__dialog,
+.keyboard-shortcut__dialog {
+  background-color: #1a1a1a;
+  color: #f7f6ee;
+  line-height: normal;
+  width: 86rem;
+  max-height: 66rem;
+  height: 66rem;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+.keyboard-shortcut__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  width: 76rem;
+  font-size: 1.5rem;
+}
+.keyboard-shortcut__content li {
+  clear: both;
+  line-height: 4.5rem;
+  height: 4.5rem;
+  border-bottom: 1px solid #34332f;
+  color: #bcbcb5;
+}
+.keyboard-shortcut__title {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #bcbcb5;
+  font-size: 1.8rem;
+}
+.keyboard-shortcut__column-1,
+.keyboard-shortcut__column-2 {
+  height: 34rem;
+}
+.keyboard-shortcut__column-1 {
+  width: 30rem;
+}
+.keyboard-shortcut__column-2 {
+  width: 40rem;
+}
+.keyboard-shortcut__name {
+  float: left;
+}
+.keyboard-shortcut__instr {
+  float: right;
+  font-weight: bold;
+  color: #f7f6ee;
+}
+.first-launch__dialog::backdrop,
+.keyboard-shortcut__dialog::backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(14, 14, 14, 0.3);
+}
+.first-launch__carousel {
+  background-color: #1a1a1a;
+  color: white;
+  font-size: 2.5rem;
+  width: 86rem;
+  height: 66rem;
+  position: relative;
+}
+.first-launch__carousel.forward .carousel-leave.carousel-leave-active {
+  opacity: 0;
+}
+.first-launch__carousel.forward .carousel-enter {
+  opacity: 0;
+  transition: opacity 0.2s ease-in;
+}
+.first-launch__carousel.forward .carousel-leave {
+  opacity: 1;
+  transition: opacity 0.2s ease-in;
+}
+.first-launch__carousel.forward .carousel-enter.carousel-enter-active {
+  opacity: 1;
+}
+.first-launch__carousel.backward .carousel-leave.carousel-leave-active {
+  opacity: 0;
+}
+.first-launch__carousel.backward .carousel-enter {
+  opacity: 0;
+  transition: opacity 0.2s ease-in;
+}
+.first-launch__carousel.backward .carousel-leave {
+  opacity: 1;
+  transition: opacity 0.2s ease-in;
+}
+.first-launch__carousel.backward .carousel-enter.carousel-enter-active {
+  opacity: 1;
+}
+.carousel__slide {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 66rem;
+}
+.carousel__slide__full {
+  padding-left: 16rem;
+  padding-right: 16rem;
+  padding-top: 16rem;
+}
+.carousel__slide__full h1 {
+  margin-bottom: 1rem;
+  font-size: 3.5rem;
+}
+.carousel__slide__full h2 {
+  margin-bottom: 2rem;
+  font-size: 2.4rem;
+}
+.carousel__slide__full p {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+}
+.carousel__slide__head {
+  height: 43.7rem;
+  background-color: #141414;
+}
+.carousel__slide__head.links {
+  display: flex;
+  justify-content: space-around;
+}
+.carousel__slide__head img,
+.carousel__slide__head video {
+  display: block;
+  max-width: 100%;
+}
+.carousel__slide__head .block-link__image {
+  width: auto;
+  height: 8rem;
+  flex-grow: 0;
+}
+.carousel__slide__body {
+  padding-top: 4rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  text-align: center;
+}
+.carousel__slide__body h1 {
+  font-size: 3rem;
+}
+.carousel__slide__body h2 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+.carousel__slide__body p {
+  color: #bcbcb5;
+  font-size: 1.8rem;
+}
+.carousel__nav {
+  position: absolute;
+  width: 100%;
+  bottom: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.carousel__nav .dot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.6rem;
+  height: 1.6rem;
+}
+.carousel__nav .dot span {
+  display: block;
+  width: 7px;
+  height: 7px;
+  border-radius: 7px;
+  background-color: #34332f;
+}
+.carousel__nav .dot.current span {
+  background-color: #f7f6ee;
+}
+.carousel__slide__head__list {
+  width: 50%;
+  float: left;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  padding-top: 6rem;
+}
+.carousel__slide__head__list h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+.carousel__slide__head__list p {
+  color: #bcbcb5;
+  font-size: 1.5rem;
+  height: 9rem;
+}
+.carousel__slide__head__list a {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.carousel__slide-button__continue {
+  position: absolute;
+  display: block;
+  top: -16rem;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border: 1px solid #f7f6ee;
+  border-radius: 2.5rem;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  cursor: pointer;
+}
+.carousel__slide-button__next,
+.carousel__slide-button__prev,
+.carousel__slide-button__started {
+  position: absolute;
+  border-radius: 2.5rem;
+  border: 1px solid #34332f;
+  bottom: -0.8rem;
+  cursor: pointer;
+}
+.carousel__slide-button__next:hover,
+.carousel__slide-button__prev:hover,
+.carousel__slide-button__started:hover {
+  border-color: #f7f6ee;
+}
+.carousel__slide-button__started {
+  width: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  border-color: #f7f6ee;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+.carousel__slide-button__next,
+.carousel__slide-button__prev {
+  width: 2.8rem;
+  height: 2.8rem;
+}
+.carousel__slide-button__prev {
+  left: 2.2rem;
+}
+.carousel__slide-button__next,
+.carousel__slide-button__started {
+  right: 2.2rem;
+}
+.carousel__slide__block {
+  width: 33%;
+  border-left: 0.5rem solid black;
+  border-right: 0.5rem solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.6rem;
+  color: #f7f6ee;
+}
+.carousel__slide__block:first-child {
+  border: none;
+}
+.carousel__slide__block:last-child {
+  border: none;
+}
+.carousel__slide__block-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.block-link__image img {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+@font-face {
+  font-family: 'Adobe Clean';
+  src: url('../font/AdobeClean-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Adobe Clean';
+  src: url('../font/AdobeClean-It.otf');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Adobe Clean';
+  src: url('../font/AdobeClean-Light.otf');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Adobe Clean';
+  src: url('../font/AdobeClean-LightIt.otf');
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Adobe Clean';
+  src: url('../font/AdobeClean-BoldSemiCn.otf');
+  font-weight: 500;
+  font-style: normal;
+}
+hr {
+  width: 100%;
+  height: 1px;
+  border: 0;
+  background: #bcbcb5;
+}
+[data-scrubby=true] {
+  cursor: col-resize;
+}
+textarea,
+input[type="text"] {
+  background: none;
+  color: #f7f6ee;
+  border: 1px solid rgba(247, 246, 238, 0);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  border-radius: .2rem;
+}
+input[list]:focus {
+  text-decoration: none;
+}
+* {
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+*:focus {
+  outline: 0;
+  border: 0;
+  box-shadow: none;
+}
+*::selection {
+  color: #34332f;
+  background: #22bdf9;
+  border-radius: .2rem;
+}
+input[disabled]::selection {
+  color: #f7f6ee;
+  background: #bcbcb5;
+}
+html {
+  height: 100%;
+  font-size: 62.5%;
+}
+body {
+  font-family: "Adobe Clean";
+  font-weight: normal;
+  text-rendering: geometricPrecision;
+  color: #f7f6ee;
+  height: 100%;
+  -webkit-font-feature-settings: "calt", "liga", "clig", "kern", "tnum";
+  font-size: 1.2rem;
+}
+input {
+  font-weight: normal;
+  font-family: "Adobe Clean";
+  text-rendering: geometricPrecision;
+  -webkit-font-feature-settings: "calt", "liga", "clig", "kern", "tnum";
+}
+@media (-webkit-min-device-pixel-ratio: 1) and (min-device-width: 801px) and (max-device-width: 1280px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 1) and (min-device-width: 1281px) and (max-device-width: 1440px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 1) and (min-device-width: 1441px) and (max-device-width: 1680px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 1) and (min-device-width: 1681px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 801px) and (max-device-width: 1280px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 1281px) and (max-device-width: 1440px) {
+  html {
+    font-size: 56.3%;
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 1441px) and (max-device-width: 1680px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 1681px) and (max-device-width: 2560px) {
+  html {
+    font-size: 68.8%;
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 2561px) {
+  html {
+    font-size: 75%;
+  }
+}

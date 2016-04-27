@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Printer>
+  <Version value="1" />
+  <PrintLocation value="i.materialise.com" />
+  <PrintVolume X="88.00" Y="63.00" Z="125.00" />
+  <MeshRepairResolution value="7" />
+  <PrinterHeads value="1" />
+  <PrinterSupportsUSB flag="0" />
+  <PreferredFileFormat value="stl" />
+  <NeedsZip flag="1" />
+  <FullColor flag="0" />
+  <UploadURL value="http://i.materialise.com/3dprintlab/03d3b119-7e58-415f-b167-f20d9cbe16bd/c8461d87-2fd6-46de-8aae-f853763e5f9e/ea4ec3d1-d22d-4b9f-b2bd-44a158b568cc" />
+  <PrinterResolution X="3.33" Y="3.33" Z="3.33" />
+  <Quality value="high">
+    <MeshRepairResolution value="8" />
+    <MinMeshRepairResolution value="6" />
+  </Quality>
+  <Quality value="medium">
+    <MeshRepairResolution value="7" />
+    <MinMeshRepairResolution value="5" />
+  </Quality>
+  <Quality value="low">
+    <MeshRepairResolution value="6" />
+    <MinMeshRepairResolution value="5" />
+  </Quality>
+</Printer>
+<Materials>
+  <Material name="Silver High Gloss">
+    <NeedsRaft flag="0" />
+    <NeedsSupports flag="0" />
+    <NeedsEscapeHoles flag="0" />
+    <MinimumWallThickness value="0.50" />
+    <PricePerCubicCM value="29.75" />
+    <Handling value="45" />
+    <Diffuse R="0.96" G="0.97" B="0.94" />
+    <Specular R="0.1" G="0.1" B="0.1" />
+    <Illumination R="0" G="0" B="0" />
+    <Ambient R="0" G="0" B="0" />
+    <Shine value="0.9" />
+    <Reflection value="0.9" />
+    <Roughness value="0" />
+    <Bump value="0" />
+    <Opacity value="1" />
+    <Refraction value="1" />
+  </Material>
+</Materials>

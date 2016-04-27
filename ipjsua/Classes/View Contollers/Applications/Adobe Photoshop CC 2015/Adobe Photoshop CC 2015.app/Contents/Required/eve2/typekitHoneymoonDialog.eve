@@ -1,0 +1,45 @@
+layout typekitHoneymoonDialog
+    {
+    view TTypekitHoneymoonDialog(identifier         : @typekitHoneymoonDialog,
+                                 placement          : place_column,
+                                 qDebugDraw         : false,
+                                 name               : "$$$/Dialog/TypekitMarketingDialog/Title=Missing Fonts",
+                                 spacing            : gLargeSpace,
+                                 isResizable        : false,
+                                 dboxProcIdentifier : -1)
+        {
+        column(spacing: 0)
+            {
+            TView(horizontal : align_fill,
+                  placement  : place_row,
+                  identifier : @blackRibbon,
+                  margin     : [ 10, 20, 10, 20 ])
+                {
+                TIconImageView(iconRootName : "CCLogoWithLabel",
+                               vertical     : align_center);
+                }
+
+            TIconImageView(iconRootName : "Typekit_Banner");
+            }
+
+        column(margin           : [ gLargeSpace * 2, gLargeSpace * 2, 45, gLargeSpace * 2 ],
+               horizontal       : align_center,
+               vertical         : align_fill,
+               child_horizontal : align_center,
+               spacing          : [ gLargeSpace + 8, gLargeSpace + 10 ])
+            {
+            TStaticText(autoWrap   : true,
+                        font       : boldFont,
+                        name       : "$$$/Dialog/TypekitMarketingDialog/Message=Resolve Missing Fonts with Typekit");
+
+            TStaticText(autoWrap   : true,
+                        horizontal : align_center,
+                        name       : "$$$/Dialog/TypekitMarketingDialog/Paragraph=This document contains fonts that are not on this computer.^rSome of these missing fonts may be available from Typekit.^rCreative Cloud can sync these fonts to your computer.^r^rPlease check that Typekit is turned on in the next screen.");
+ 
+            TButton (name       : "$$$/Dialog/TypekitMarketingDialog/Next=Next",
+                     identifier : @ok,
+                     default    : true,
+                     dismiss    : true);
+            }
+        }
+    }

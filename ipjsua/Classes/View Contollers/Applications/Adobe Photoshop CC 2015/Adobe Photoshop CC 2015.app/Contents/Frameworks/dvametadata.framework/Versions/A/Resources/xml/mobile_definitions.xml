@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xmp_definitions>
+	<xmp_schema prefix='swf' namespace='http://ns.adobe.com/swf/1.0/' label='$$$/xmp/swf_label=Mobile SWF' description='$$$/xmp/swf_description=Lets you define metadata of a mobile SWF document.'>
+		<xmp_property name='type' category='external' label='$$$/xmp/swf/type_label=Content Type' type='text'/>
+		<xmp_property name='maxstorage' category='external' description='$$$/xmp/swf/maxstorage_description=Persistent data storage for the SharedObject class; if not set, it is defined by the platform on the device' label='$$$/xmp/swf/maxstorage_label=Persistent Storage' type='real'/>
+		<xmp_property name='bgalpha' category='external' label='$$$/xmp/swf/bgalpha_label=Background Alpha' type='integer'/>
+		<xmp_property name='forwardlock' category='external' description='$$$/xmp/swf/forwardlock_description=Specifies if the content can be transferred to another device' label='$$$/xmp/swf/forwardlock_label=Forward Lock' type='boolean'/>
+	</xmp_schema>
+</xmp_definitions>

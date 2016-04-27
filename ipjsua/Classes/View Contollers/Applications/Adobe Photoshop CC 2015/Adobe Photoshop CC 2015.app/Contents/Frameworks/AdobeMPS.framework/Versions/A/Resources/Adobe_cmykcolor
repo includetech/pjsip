@@ -1,0 +1,14 @@
+%%BeginResource: procset Adobe_cmykcolor 2.0 0
+%%Title: (Universal CMYK Color Operators)
+%%Version: 2.0 0
+%%CreationDate: (9/24/96) ()
+%%Copyright: ((C) 1987-1990 Adobe Systems Incorporated All Rights Reserved)
+userdict /Adobe_cmykcolor known not
+{
+	userdict /Adobe_cmykcolor 2 dict put 
+} if
+userdict /Adobe_cmykcolor get begin
+/initialize { } def
+/terminate { } def
+end
+%%EndResource

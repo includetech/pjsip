@@ -1,0 +1,3 @@
+* Latviešu valodas pareizrakstības pārbaudes vārdnīcas - licence LPGL 
+
+Latviešu valoda

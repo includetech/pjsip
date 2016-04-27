@@ -73,18 +73,13 @@ static void on_call_media_event(pjsua_call_id call_id,
         pjsua_acc_config acc_cfg;
         pjsua_acc_config_default(&acc_cfg);
         
-        acc_cfg.vid_cap_dev = PJMEDIA_VID_DEFAULT_CAPTURE_DEV;
-        acc_cfg.vid_rend_dev = PJMEDIA_VID_DEFAULT_RENDER_DEV;
-        acc_cfg.vid_in_auto_show = PJ_TRUE;
-        acc_cfg.vid_out_auto_transmit = PJ_TRUE;
-        
-        char *sipUser = [username UTF8String];
-        char *sipDomain = [domain UTF8String];
-        char *pwd = [password UTF8String];
+        char *sipUser = (char *)[username UTF8String];
+        char *sipDomain = (char *)[domain UTF8String];
+        char *pwd = (char *)[password UTF8String];
         
         // Account ID
         char sipId[60];
-        sprintf(sipId, "sip:%s@%s", sipUser, sipDomain);
+        sprintf(sipId, "<sip:%s@%s>", sipUser, sipDomain);
         acc_cfg.id = pj_str(sipId);
         
         // Reg URI
@@ -100,7 +95,11 @@ static void on_call_media_event(pjsua_call_id call_id,
         acc_cfg.cred_info[1].username = pj_str(sipUser);
         acc_cfg.cred_info[1].data_type = PJSIP_CRED_DATA_PLAIN_PASSWD;
         acc_cfg.cred_info[1].data = pj_str(pwd);
-        
+        acc_cfg.vid_cap_dev = PJMEDIA_VID_DEFAULT_CAPTURE_DEV;
+        acc_cfg.vid_rend_dev = PJMEDIA_VID_DEFAULT_RENDER_DEV;
+        acc_cfg.vid_in_auto_show = PJ_TRUE;
+        acc_cfg.vid_out_auto_transmit = PJ_TRUE;
+
         status = pjsua_acc_add(&acc_cfg, PJ_TRUE, &_acc_id);
         
         return status;
@@ -334,32 +333,56 @@ static pj_status_t app_init()
 on_error:
     pj_pool_release(tmp_pool);
     return status;
+    
 }
 
-- (void) makeCallTo:(NSString *)user {
+- (pj_status_t) makeCallTo:(NSString *)user {
     
+    pjsua_vid_preview_param param;
+    param.rend_id = PJMEDIA_VID_DEFAULT_CAPTURE_DEV;
+    param.show = PJ_TRUE;
+    param.wnd_flags = 1;
+    pjsua_vid_preview_param_default(&param);
+    pjsua_vid_preview_start(PJMEDIA_VID_DEFAULT_CAPTURE_DEV, &param);
+
     pj_status_t status;
     char callTo[100];
     
-    sprintf(callTo, "sip:%s@%s:5060", [user UTF8String], "107.170.46.82");
+    sprintf(callTo, "sip:%s@%s:5060;transport=TCP", [user UTF8String], "107.170.46.82");
 
     pj_str_t uri = pj_str(callTo);
+    
     pjsua_call_setting settings;
     settings.aud_cnt = 1;
     settings.vid_cnt = 1;
     status = pjsua_call_make_call(_acc_id, &uri, 0, NULL, NULL, NULL);
+    return status;
 }
 
 - (void)answerCallFrom:(pjsua_call_info)callInfo withCallId:(pjsua_call_id)call_id {
     
-    pjsua_call_setting setting;
-    pjsua_call_setting_default(&setting);
+    pjsua_call_info ci;
+    pjsua_call_get_info(call_id, &ci);
     
-    setting.vid_cnt = 1;
-    setting.aud_cnt = 1;
+    pjsua_call_setting settings;
+    settings.aud_cnt = 1;
+    settings.vid_cnt = 1;
     
-    pjsua_call_answer2(call_id, &setting, 200, NULL, NULL);
-
+    // /* Automatically answer incoming calls with 200/OK */
+    pjsua_call_answer2(call_id, &settings, 200, NULL, NULL);
+    
+    // Get the window of call
+    int vid_idx;
+    pjsua_vid_win_id wid = -1;
+    
+    vid_idx = pjsua_call_get_vid_stream_idx(call_id);
+    if (vid_idx >= 0) {
+        pjsua_call_info ci;
+        
+        pjsua_call_get_info(call_id, &ci);
+        wid = ci.media[vid_idx].stream.vid.win_in;
+        pjsua_vid_win_set_show(wid, PJ_TRUE);
+    }
 }
 
 
@@ -629,17 +652,26 @@ static void on_call_state(pjsua_call_id call_id, pjsip_event *e)
             call_info.state == PJSIP_INV_STATE_CONFIRMED)
         {
             /* Schedule timer to hangup call after the specified duration */
-            app_call_data *cd = &app_config.call_data[call_id];
-            pjsip_endpoint *endpt = pjsua_get_pjsip_endpt();
-            pj_time_val delay;
+//            app_call_data *cd = &app_config.call_data[call_id];
+//            pjsip_endpoint *endpt = pjsua_get_pjsip_endpt();
+//            pj_time_val delay;
+//            
+//            cd->timer.id = call_id;
+//            delay.sec = app_config.duration;
+//            delay.msec = 0;
+//            pjsip_endpt_schedule_timer(endpt, &cd->timer, &delay);
             
-            cd->timer.id = call_id;
-            delay.sec = app_config.duration;
-            delay.msec = 0;
-            pjsip_endpt_schedule_timer(endpt, &cd->timer, &delay);
+//            pjsua_call_vid_strm_op op = nil;
+//            pjsua_call_vid_strm_op_param_default(op);
+//            op = PJSUA_CALL_VID_STRM_CHANGE_CAP_DEV;
+//            pjsua_call_vid_strm_op_param param;
+//            pjsua_call_vid_strm_op_param_default(&param);
+//            
+//            pjsua_call_set_vid_strm(call_id, op, &param);
         }
         
-        if (call_info.state == PJSIP_INV_STATE_EARLY) {
+            if (call_info.state == PJSIP_INV_STATE_EARLY) {
+                
             int code;
             pj_str_t reason;
             pjsip_msg *msg;
@@ -700,7 +732,7 @@ static void on_call_media_state(pjsua_call_id call_id)
                 on_call_audio_state(&call_info, mi, &has_error);
                 break;
             case PJMEDIA_TYPE_VIDEO:
-                on_call_video_state(&call_info, mi, &has_error);
+                on_call_video_state(&call_info, call_id, mi, &has_error);
                 break;
             default:
                 /* Make gcc happy about enum not handled by switch/case */
@@ -858,7 +890,7 @@ static void on_call_audio_state(pjsua_call_info *ci, unsigned mi,
 }
 
 /* Process video media state. "mi" is the media index. */
-static void on_call_video_state(pjsua_call_info *ci, unsigned mi,
+static void on_call_video_state(pjsua_call_info *ci, pjsua_call_id call_id, unsigned mi,
                                 pj_bool_t *has_error)
 {
     if (ci->media_status != PJSUA_CALL_MEDIA_ACTIVE)

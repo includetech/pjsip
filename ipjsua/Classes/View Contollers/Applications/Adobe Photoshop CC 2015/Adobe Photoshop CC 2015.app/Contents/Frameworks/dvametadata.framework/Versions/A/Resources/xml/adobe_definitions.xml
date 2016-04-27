@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xmp_definitions>
+<xmp_schema
+	prefix='adobe'
+	namespace='http://ns.adobe.com/xmp/aggregate/1.0/' 
+	description='$$$/xmp/adobe_description=Aggregated properties that describe combinations of multiple properties.'
+	label='$$$/xmp/adobe_label=Schema For Adobe Aggregated Properties'>
+
+	<xmp_property
+		name='ImageResolution'
+		category='internal'
+		type='text'
+		description='$$$/xmp/adobe/ImageResolution_description=Pixel density per unit.'
+		label='$$$/xmp/adobe/ImageResolution_label=Resolution'/>
+
+	<xmp_property
+		name='ImageSize'
+		category='internal'
+		type='text'
+		description='$$$/xmp/adobe/ImageSize_description=Image width and height in pixels.'
+		label='$$$/xmp/adobe/ImageSize_label=Image Size'/>
+
+	<xmp_property
+		name='ShutterSpeed'
+		category='internal'
+		type='text'
+		description='$$$/xmp/adobe/ShutterSpeed_description=Shutter Speed Value.'
+		label='$$$/xmp/adobe/ShutterSpeed_label=Shutter Speed'/>
+
+	<xmp_property
+		name='PhotographicSensitivity'
+		category='internal'
+		type='text'
+		description='$$$/xmp/adobe/PhotographicSensitivity_description=Indicates the sensitivity of the camera in either ISO, SOS (standard output sensitivity) or REI (recommended exposure index).'
+		label='$$$/xmp/adobe/PhotographicSensitivity_label=Photographic Sensitivity'/>
+
+</xmp_schema>
+</xmp_definitions>
