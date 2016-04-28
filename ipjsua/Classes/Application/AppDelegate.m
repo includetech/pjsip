@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "vid_streamutil.h"
 
 @interface AppDelegate ()
 
@@ -18,6 +18,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
     
     return YES;
 }

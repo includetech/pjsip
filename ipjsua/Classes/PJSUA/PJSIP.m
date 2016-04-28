@@ -108,6 +108,26 @@ static void on_call_media_event(pjsua_call_id call_id,
     }
 }
 
+static pj_status_t init_codecs(pj_pool_factory *pf)
+{
+    pj_status_t status;
+    
+    /* To suppress warning about unused var when all codecs are disabled */
+    PJ_UNUSED_ARG(status);
+    
+#if defined(PJMEDIA_HAS_OPENH264_CODEC) && PJMEDIA_HAS_OPENH264_CODEC != 0
+    status = pjmedia_codec_openh264_vid_init(NULL, pf);
+    PJ_ASSERT_RETURN(status == PJ_SUCCESS, status);
+#endif
+    
+#if defined(PJMEDIA_HAS_FFMPEG_VID_CODEC) && PJMEDIA_HAS_FFMPEG_VID_CODEC != 0
+    status = pjmedia_codec_ffmpeg_vid_init(NULL, pf);
+    PJ_ASSERT_RETURN(status == PJ_SUCCESS, status);
+#endif
+    
+    return PJ_SUCCESS;
+}
+
 - (pj_status_t)startPJSIP {
     pj_status_t status = 0;
     
@@ -144,7 +164,7 @@ static pj_status_t app_init()
     app_config.pool = pjsua_pool_create("pjsua-app", 1000, 1000);
     tmp_pool = pjsua_pool_create("tmp-pjsua", 1000, 1000);;
     
-//    /* Initialize application callbacks */
+    //    /* Initialize application callbacks */
     app_config.cfg.cb.on_call_state = &on_call_state;
     app_config.cfg.cb.on_call_media_state = &on_call_media_state;
     app_config.cfg.cb.on_incoming_call = &on_incoming_call;
@@ -301,22 +321,157 @@ static pj_status_t app_init()
         goto on_error;
     }
     
-    /* Optionally set codec orders */
-    for (i=0; i<app_config.codec_cnt; ++i) {
-        pjsua_codec_set_priority(&app_config.codec_arg[i],
-                                 (pj_uint8_t)(PJMEDIA_CODEC_PRIO_NORMAL+i+9));
+    pj_caching_pool cp;
+    pj_caching_pool_init(&cp, &pj_pool_factory_default_policy, 0);
 
-        pjsua_vid_codec_set_priority(&app_config.codec_arg[i],
-                                     (pj_uint8_t)(PJMEDIA_CODEC_PRIO_NORMAL+i+9));
+    pj_pool_t *pool;
+    pool = pj_pool_create( &cp.factory,	    /* pool factory	    */
+                          "app",	    /* pool name.	    */
+                          4000,	    /* init size	    */
+                          4000,	    /* increment size	    */
+                          NULL		    /* callback on error    */
+                          );
+    
+    /* Init video format manager */
+    pjmedia_video_format_mgr_create(pool, 64, 0, NULL);
+    
+    /* Init video converter manager */
+    pjmedia_converter_mgr_create(pool, NULL);
+    
+    /* Init event manager */
+    pjmedia_event_mgr_create(pool, 0, NULL);
+    
+    /* Init video codec manager */
+    pjmedia_vid_codec_mgr_create(pool, NULL);
+    
+    /* Init video subsystem */
+    pjmedia_vid_dev_subsys_init(&cp.factory);
+    
+    /* Register all supported codecs */
+    status = init_codecs(&cp.factory);
+    PJ_ASSERT_RETURN(status == PJ_SUCCESS, 1);
+    
+    char *codec_id = NULL;
+    const pjmedia_vid_codec_info *codec_info;
+    pjmedia_vid_codec_param codec_param;
+
+    unsigned codec_count;
+    pjmedia_vid_codec_info info;
+    
+    pjmedia_vid_codec_mgr_enum_codecs(NULL, &codec_count, &info, NULL);
+    
+    
+    /* Find which codec to use. */
+    if (codec_id) {
+        unsigned count = 1;
+        pj_str_t str_codec_id = pj_str(codec_id);
+        
+        status = pjmedia_vid_codec_mgr_find_codecs_by_id(NULL,
+                                                         &str_codec_id, &count,
+                                                         &codec_info, NULL);
+        if (status != PJ_SUCCESS) {
+            printf("Error: unable to find codec %s\n", codec_id);
+            return 1;
+        }
+    } else {
+        static pjmedia_vid_codec_info info[1];
+        unsigned count = PJ_ARRAY_SIZE(info);
+        
+        /* Default to first codec */
+        pjmedia_vid_codec_mgr_enum_codecs(NULL, &count, info, NULL);
+        codec_info = &info[0];
     }
     
-    if (app_config.capture_dev  != PJSUA_INVALID_ID ||
-        app_config.playback_dev != PJSUA_INVALID_ID) 
-    {
-        status = pjsua_set_snd_dev(app_config.capture_dev, 
-                                   app_config.playback_dev);
+    /* Get codec default param for info */
+    status = pjmedia_vid_codec_mgr_get_default_param(NULL, codec_info, 
+                                                     &codec_param);
+    pj_assert(status == PJ_SUCCESS);
+    
+    pjmedia_rect_size tx_size = {0};
+    tx_size.w = 320;
+    tx_size.h = 320;
+    /* Set outgoing video size */
+    if (tx_size.w && tx_size.h)
+        codec_param.enc_fmt.det.vid.size = tx_size;
+    
+#if DEF_RENDERER_WIDTH && DEF_RENDERER_HEIGHT
+    /* Set incoming video size */
+    if (DEF_RENDERER_WIDTH > codec_param.dec_fmt.det.vid.size.w)
+        codec_param.dec_fmt.det.vid.size.w = DEF_RENDERER_WIDTH;
+    if (DEF_RENDERER_HEIGHT > codec_param.dec_fmt.det.vid.size.h)
+        codec_param.dec_fmt.det.vid.size.h = DEF_RENDERER_HEIGHT;
+#endif
+    
+    pjmedia_vid_port_param vpp;
+    pjmedia_dir dir = PJMEDIA_DIR_DECODING || PJMEDIA_DIR_ENCODING;
+    pjmedia_vid_port *capture=NULL, *renderer=NULL;
+    pjmedia_vid_port_param_default(&vpp);
+    
+    /* Set as active for all video devices */
+    vpp.active = PJ_TRUE;
+    
+    /* Create video device port. */
+    if (dir & PJMEDIA_DIR_ENCODING) {
+        /* Create capture */
+        status = pjmedia_vid_dev_default_param(
+                                               pool,
+                                               PJMEDIA_VID_DEFAULT_CAPTURE_DEV,
+                                               &vpp.vidparam);
         if (status != PJ_SUCCESS)
             goto on_error;
+        
+        pjmedia_format_copy(&vpp.vidparam.fmt, &codec_param.enc_fmt);
+        vpp.vidparam.fmt.id = codec_param.dec_fmt.id;
+        vpp.vidparam.dir = PJMEDIA_DIR_CAPTURE;
+        
+        status = pjmedia_vid_port_create(pool, &vpp, &capture);
+        if (status != PJ_SUCCESS)
+            goto on_error;
+    }
+    
+    if (YES) {
+        /* Create renderer */
+        status = pjmedia_vid_dev_default_param(
+                                               pool,
+                                               PJMEDIA_VID_DEFAULT_RENDER_DEV,
+                                               &vpp.vidparam);
+        if (status != PJ_SUCCESS)
+            goto on_error;
+        
+        pjmedia_format_copy(&vpp.vidparam.fmt, &codec_param.dec_fmt);
+        vpp.vidparam.dir = PJMEDIA_DIR_RENDER;
+        vpp.vidparam.disp_size = vpp.vidparam.fmt.det.vid.size;
+        vpp.vidparam.flags |= PJMEDIA_VID_DEV_CAP_OUTPUT_WINDOW_FLAGS;
+        vpp.vidparam.window_flags = PJMEDIA_VID_DEV_WND_BORDER |
+        PJMEDIA_VID_DEV_WND_RESIZABLE;
+        
+        status = pjmedia_vid_port_create(pool, &vpp, &renderer);
+        if (status != PJ_SUCCESS)
+            goto on_error;
+    }
+
+    
+    {
+        pjsua_codec_info ci[32];
+        unsigned i, count = PJ_ARRAY_SIZE(ci);
+        char codec_id[64];
+        char desc[128];
+        
+        pjsua_vid_enum_codecs(ci, &count);
+        for (i=0; i<count; ++i) {
+            pjmedia_vid_codec_param cp;
+            pjmedia_video_format_detail *vfd;
+            pj_status_t status = PJ_SUCCESS;
+            
+            status = pjsua_vid_codec_get_param(&ci[i].codec_id, &cp);
+            if (status != PJ_SUCCESS)
+                continue;
+            
+            vfd = pjmedia_format_get_video_format_detail(&cp.enc_fmt, PJ_TRUE);
+            
+            status = pjsua_vid_codec_get_param(&ci[i].codec_id, &cp);
+
+        }
     }
     
     /* Init call setting */
@@ -326,8 +481,8 @@ static pj_status_t app_init()
     
     status = pjsua_start();
     if (status != PJ_SUCCESS) error_exit("Error starting pjsua", status);
-    
     pj_pool_release(tmp_pool);
+    
     return status;
     
 on_error:
@@ -543,7 +698,6 @@ static void loadDefault_config()
     char tmp[80];
     unsigned i;
     pjsua_app_config *cfg = &app_config;
-    
     
     
     pjsua_config_default(&cfg->cfg);
